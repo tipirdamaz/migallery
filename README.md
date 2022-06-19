@@ -140,5 +140,7 @@ If you want to turn on debug mode, set $config['debug'] = true; from CONFIG_FILE
 Type {your_domain}/project/mi-install.php in the address line and install it.
 ```
 
+# Live Demo
+
 [Live Demo](https://emlakbim.online/demo/)
 
