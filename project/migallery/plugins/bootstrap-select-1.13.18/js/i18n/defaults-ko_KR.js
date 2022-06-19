@@ -24,23 +24,23 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'ምንም አልተመረጠም',
-    noneResultsText: 'ከ{0} ጋር ተመሳሳይ ውጤት የለም',
+    noneSelectedText: '항목을 선택해주세요',
+    noneResultsText: '{0} 검색 결과가 없습니다',
     countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? '{0} ምርጫ ተመርጧል' : '{0} ምርጫዎች ተመርጠዋል';
+      return '{0}개를 선택하였습니다';
     },
     maxOptionsText: function (numAll, numGroup) {
       return [
-        (numAll == 1) ? 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫ)' : 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫዎች)',
-        (numGroup == 1) ? 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫ)' : 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫዎች)'
+        '{n}개까지 선택 가능합니다',
+        '해당 그룹은 {n}개까지 선택 가능합니다'
       ];
     },
-    selectAllText: 'ሁሉም ይመረጥ',
-    deselectAllText: 'ሁሉም አይመረጥ',
-    multipleSeparator: ' ፣ '
+    selectAllText: '전체선택',
+    deselectAllText: '전체해제',
+    multipleSeparator: ', '
   };
 })(jQuery);
 
 
 }));
-//# sourceMappingURL=defaults-am_ET.js.map
+//# sourceMappingURL=defaults-ko_KR.js.map

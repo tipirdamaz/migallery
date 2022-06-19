@@ -24,23 +24,16 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'ምንም አልተመረጠም',
-    noneResultsText: 'ከ{0} ጋር ተመሳሳይ ውጤት የለም',
-    countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? '{0} ምርጫ ተመርጧል' : '{0} ምርጫዎች ተመርጠዋል';
-    },
-    maxOptionsText: function (numAll, numGroup) {
-      return [
-        (numAll == 1) ? 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫ)' : 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫዎች)',
-        (numGroup == 1) ? 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫ)' : 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫዎች)'
-      ];
-    },
-    selectAllText: 'ሁሉም ይመረጥ',
-    deselectAllText: 'ሁሉም አይመረጥ',
-    multipleSeparator: ' ፣ '
+    noneSelectedText: 'Vyberte ze seznamu',
+    noneResultsText: 'Pro hledání {0} nebyly nalezeny žádné výsledky',
+    countSelectedText: 'Vybrané {0} z {1}',
+    maxOptionsText: ['Limit překročen ({n} {var} max)', 'Limit skupiny překročen ({n} {var} max)', ['položek', 'položka']],
+    multipleSeparator: ', ',
+    selectAllText: 'Vybrat vše',
+    deselectAllText: 'Zrušit výběr'
   };
 })(jQuery);
 
 
 }));
-//# sourceMappingURL=defaults-am_ET.js.map
+//# sourceMappingURL=defaults-cs_CZ.js.map

@@ -24,23 +24,23 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'ምንም አልተመረጠም',
-    noneResultsText: 'ከ{0} ጋር ተመሳሳይ ውጤት የለም',
+    noneSelectedText: 'Odaberite stavku',
+    noneResultsText: 'Nema rezultata pretrage {0}',
     countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? '{0} ምርጫ ተመርጧል' : '{0} ምርጫዎች ተመርጠዋል';
+      return (numSelected == 1) ? '{0} stavka selektirana' : '{0} stavke selektirane';
     },
     maxOptionsText: function (numAll, numGroup) {
       return [
-        (numAll == 1) ? 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫ)' : 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫዎች)',
-        (numGroup == 1) ? 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫ)' : 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫዎች)'
+        (numAll == 1) ? 'Limit je postignut ({n} stvar maximalno)' : 'Limit je postignut ({n} stavke maksimalno)',
+        (numGroup == 1) ? 'Grupni limit je postignut ({n} stvar maksimalno)' : 'Grupni limit je postignut ({n} stavke maksimalno)'
       ];
     },
-    selectAllText: 'ሁሉም ይመረጥ',
-    deselectAllText: 'ሁሉም አይመረጥ',
-    multipleSeparator: ' ፣ '
+    selectAllText: 'Selektiraj sve',
+    deselectAllText: 'Deselektiraj sve',
+    multipleSeparator: ', '
   };
 })(jQuery);
 
 
 }));
-//# sourceMappingURL=defaults-am_ET.js.map
+//# sourceMappingURL=defaults-hr_HR.js.map

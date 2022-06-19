@@ -24,23 +24,23 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'ምንም አልተመረጠም',
-    noneResultsText: 'ከ{0} ጋር ተመሳሳይ ውጤት የለም',
+    noneSelectedText: 'Ingen valgt',
+    noneResultsText: 'Søket gir ingen treff {0}',
     countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? '{0} ምርጫ ተመርጧል' : '{0} ምርጫዎች ተመርጠዋል';
+      return (numSelected == 1) ? '{0} alternativ valgt' : '{0} alternativer valgt';
     },
     maxOptionsText: function (numAll, numGroup) {
       return [
-        (numAll == 1) ? 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫ)' : 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫዎች)',
-        (numGroup == 1) ? 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫ)' : 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫዎች)'
+        (numAll == 1) ? 'Grense nådd (maks {n} valg)' : 'Grense nådd (maks {n} valg)',
+        (numGroup == 1) ? 'Grense for grupper nådd (maks {n} grupper)' : 'Grense for grupper nådd (maks {n} grupper)'
       ];
     },
-    selectAllText: 'ሁሉም ይመረጥ',
-    deselectAllText: 'ሁሉም አይመረጥ',
-    multipleSeparator: ' ፣ '
+    selectAllText: 'Merk alle',
+    deselectAllText: 'Fjern alle',
+    multipleSeparator: ', '
   };
 })(jQuery);
 
 
 }));
-//# sourceMappingURL=defaults-am_ET.js.map
+//# sourceMappingURL=defaults-nb_NO.js.map

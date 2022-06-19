@@ -24,23 +24,16 @@
 
 (function ($) {
   $.fn.selectpicker.defaults = {
-    noneSelectedText: 'ምንም አልተመረጠም',
-    noneResultsText: 'ከ{0} ጋር ተመሳሳይ ውጤት የለም',
-    countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? '{0} ምርጫ ተመርጧል' : '{0} ምርጫዎች ተመርጠዋል';
-    },
-    maxOptionsText: function (numAll, numGroup) {
-      return [
-        (numAll == 1) ? 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫ)' : 'ገደብ ላይ ተደርሷል  (ቢበዛ {n} ምርጫዎች)',
-        (numGroup == 1) ? 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫ)' : 'የቡድን ገደብ ላይ ተደርሷል (ቢበዛ {n} ምርጫዎች)'
-      ];
-    },
-    selectAllText: 'ሁሉም ይመረጥ',
-    deselectAllText: 'ሁሉም አይመረጥ',
-    multipleSeparator: ' ፣ '
+    noneSelectedText: 'Hautapenik ez',
+    noneResultsText: 'Emaitzarik ez {0}',
+    countSelectedText: '{1}(e)tik {0} hautatuta',
+    maxOptionsText: ['Mugara iritsita ({n} {var} gehienez)', 'Taldearen mugara iritsita ({n} {var} gehienez)', ['elementu', 'elementu']],
+    multipleSeparator: ', ',
+    selectAllText: 'Hautatu Guztiak',
+    deselectAllText: 'Desautatu Guztiak'
   };
 })(jQuery);
 
 
 }));
-//# sourceMappingURL=defaults-am_ET.js.map
+//# sourceMappingURL=defaults-eu.js.map
