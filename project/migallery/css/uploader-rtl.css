@@ -1,0 +1,46 @@
+.b-upload__hint {
+   text-align:right;
+}
+.uploader-guide, .uploader-btns-wrapper {
+   display: flex!important;
+   flex-direction: row-reverse!important;
+}
+.uploader-guide > div:first-child {
+   text-align:right!important;
+}
+.uploader-guide > div:last-child {
+   text-align:left!important;
+}
+.js-upload {
+   margin-right:10px;
+}
+.uploader-select-all-wrapper > div {
+   float:right!important;
+}
+
+@media (min-width: 768px) {
+  #btn-save-changes {
+	float:left;
+  }
+}
+@media (max-width: 767px) {
+  #btn-save-changes {
+	float:right;
+  }
+}
+
+.page-header-wrapper {
+   display: -ms-flexbox!important;
+   display: flex!important;
+   -ms-flex-pack: end!important;
+   justify-content: flex-end!important;
+}
+#gallery_form {
+   direction:rtl;
+}
+#gallery_form > .row {
+   text-align: right;
+}
+#gallery_save_info {
+   text-align: right;
+}

@@ -1,0 +1,181 @@
+
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .thumb_gal {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+.card{
+  transition:0.5s;
+}
+
+@media (max-width: 767px) {
+  .card {
+    border: 2px solid rgba(0,0,0,.25);
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    border: 1px solid rgba(0,0,0,.25);
+  }
+}
+
+.card-img-body {
+  position:relative;  	
+}
+
+.card-img-body > a {
+   display:contents;
+}
+
+.card-img-body > a > .btn {
+  	bottom:0;
+  	opacity:0.75;
+  	position: absolute;
+  	border-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .card-img-body > a > .btn {
+  	font-size:1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-img-body > a > .btn {
+  	font-size:.8rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+ .card-img {
+ 	height: 218px;
+ }
+}
+
+@media all and (min-width: 992px) {
+ .card-img {
+ 	height: 148px;
+ }
+}
+
+@media all and (min-width: 1200px) {
+ .card-img {
+ 	height: 148px;
+ }
+}
+
+@media all and (max-width: 767px) {
+ .card-img {
+ 	height: 218px;
+ }
+}
+
+.gal-number {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    background: rgb(0 0 0 / 0.5);
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.card-body {
+  padding: .5rem;
+}
+.card-text {
+  height:40px;
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+.card-date {
+  height:20px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.card-date > span:first-child {
+   margin-right: .5rem;
+   margin-left: unset;
+}
+
+.card > a > img{
+  cursor:pointer;
+}
+.card-title{  
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.35;
+  transition:1s;
+  margin-bottom: .5rem;
+}
+
+@media (max-width: 767px) {
+  .card-text {
+    font-size: .85rem;
+  }
+  .card-date {
+    font-size: .85rem;
+  }
+  .card-title{  
+    font-size:16px;
+  }
+  .btn-block {
+    font-size:.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    font-size: .8rem;
+  }
+  .card-date {
+    font-size: .8rem;
+  }
+  .card-title{  
+    font-size:15px;
+  }
+  .btn-block {
+    font-size:.8rem;
+  }
+}
+
+.card:hover{
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}

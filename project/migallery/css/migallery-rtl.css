@@ -1,0 +1,53 @@
+.modal-header, .modal-header .close > span {
+   display: flex!important;
+   flex-direction: row-reverse!important;
+}
+.modal-header .close {
+   margin-left: 0!important;
+   padding-left: 0!important;
+}
+.modal-header .close > span > span:first-child {
+   top: 6px!important;
+   left: 3px!important;
+}
+.modal-body {
+   direction: rtl;
+   text-align: right;
+}
+.modal-footer {
+   direction: rtl;
+}
+nav {
+   direction:rtl;
+}
+.navbar-collapse > div:last-child {
+   margin-left: 0!important;
+}
+.navbar-collapse > div:last-child > .nav-link {
+   direction:ltr;
+}
+.navbar-collapse > div:last-child > .nav-link > i {
+   -webkit-transform: rotate(180deg);
+   -ms-transform: rotate(180deg);
+   transform: rotate(180deg); 
+}
+@media (min-width: 768px) {
+   .navbar-collapse {
+      display: -ms-flexbox!important;
+      display: flex!important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      -ms-flex-pack: justify!important;
+      justify-content: space-between!important;
+   }
+}
+@media (max-width: 767px) {
+   .navbar-collapse {
+      text-align:right;
+   }
+}
+.navbar-brand {
+   margin-right:0;
+   margin-left: 1rem;
+   direction: ltr;
+}

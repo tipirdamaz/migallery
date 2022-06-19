@@ -1,0 +1,38 @@
+.gallery-man-wrapper {
+   display: flex!important;
+   flex-direction: row-reverse!important;
+}
+.pagination {
+   display: flex!important;
+   flex-direction: row-reverse!important;
+}
+
+.page-item:last-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.gal-number {
+  left:unset;
+  right:5px;
+}
+
+.del_gallery {
+  right:unset;
+  left: 5px;
+}
+
+.edit_gallery {
+  right:unset;
+  left: 41px;
+}

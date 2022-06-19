@@ -1,0 +1,46 @@
+.card-title {
+	direction: rtl;
+}
+.card-title, .card-text {
+	text-align: right;
+}
+.card-date {
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -ms-flex-direction: row-reverse!important;
+  flex-direction: row-reverse!important;
+}
+.card-date > span:first-child {
+   margin-left: .5rem;
+   margin-right: unset;
+}
+
+.gallery-list-header, .gallery-list-alert {
+   display: flex!important;
+   flex-direction: row-reverse!important;
+}
+.gallery-list-header > div:first-child > div:first-child, .gallery-list-alert > div:first-child > div:first-child {
+   float:right!important;
+   padding-right: 0!important;
+   text-align: right!important;
+}
+.gallery-list-header > div:first-child > div:last-child, .gallery-list-alert > div:first-child > div:last-child {
+   float:left!important;
+   padding-right: 0!important;
+}
+.gallery-list-header > div:last-child > div:first-child, .gallery-list-alert > div:last-child > div:first-child {
+   float:left!important;
+   margin-left: 0!important;
+}
+.gallery-list-header > div:last-child > div:last-child, .gallery-list-alert > div:last-child > div:last-child {
+   float:right!important;
+   padding-left: 0!important;
+}
+.gallery-list-header > div:last-child > select:first-child, .gallery-list-alert > div:last-child > select:first-child {
+   float:left!important;
+   margin-left: 0!important;
+}
+.gallery-list-header > div:last-child > select:last-child, .gallery-list-alert > div:last-child > select:last-child {
+   float:left!important;
+   padding-left: 0!important;
+}

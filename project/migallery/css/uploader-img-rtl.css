@@ -1,0 +1,17 @@
+.b-thumb, .thumb {
+  /*float: right;*/
+}
+.uploaded__files, .b-upload__files {
+  -ms-flex-direction: row-reverse!important;
+  flex-direction: row-reverse!important;
+}
+
+.img-number {
+  left:unset;
+  right:1px;
+}
+
+.thumb__del, .b-thumb__del {
+  right:unset;
+  left:2px;
+}

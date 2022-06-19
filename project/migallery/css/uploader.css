@@ -1,0 +1,504 @@
+.btn-fileapi {
+	cursor: pointer;
+	*zoom: 1;
+	*display: inline;
+	position: relative;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.btn-fileapi input {
+ 	top: -10px;
+	right: -40px;
+	z-index: 2;
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.btn-fileapi .progress {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: .5;
+	position: absolute;
+}
+
+.progress .bar {
+	width: 0;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: #f60;
+}
+
+.progress-small {
+	height: 10px;
+	padding: 1px;
+	box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.3);
+	border-radius: 10px;
+	background-color: rgba(0,0,0,.5);
+}
+
+.progress-small .bar {
+	width: 0;
+	height: 100%;
+	position: static;
+	border-radius: 10px;
+	/*background-color: orange;*/
+    background-color: #17a2b8;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-animation: progress-bar-stripes 1s linear infinite;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+
+#btn-save-changes {
+	cursor:default;
+}
+
+@media (min-width: 768px) {
+  #btn-save-changes {
+	float:right;
+  }
+}
+@media (max-width: 767px) {
+  #btn-save-changes {
+	float:left;
+  }
+}
+
+
+.thumb_unselected, .thumb_exist_bg{
+   background-color:rgba(0,0,0,.075);
+}
+.thumb_selected {
+    background-color:rgb(255 0 0 / 0.15);
+}
+.thumb_queue_bg {
+	background-color: #fff;
+}
+.thumb_uploaded_bg{
+   background-color:rgba(0,255,0,.25);
+}
+.thumb_uploaded_error_bg{
+    background-color:rgb(255 0 0 / 0.75);
+}
+.thumb_queue_bg:hover,.thumb_uploaded_bg:hover,.thumb_exist_bg:hover{
+   background-color:#d1ecf1;
+}	
+
+.b-upload__hint {
+  font-size: .85rem;	
+}
+
+
+.thumb-top-bar {
+   height: 25px;
+   position: absolute;
+   background-color: #000;
+   z-index: 1;
+   opacity: .5;
+}
+
+@media (min-width: 1025px) {
+  .thumb-top-bar {
+    opacity: 0;
+  }
+  .thumb:hover .thumb-top-bar {
+   opacity: .5;
+  }
+}
+
+.thumb-bottom-bar {
+   height: 24px;
+}
+
+.thumb {
+  width: 164px;
+  min-width: 164px;
+  max-width: 164px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  cursor:move;
+}
+
+.thumb [type="checkbox"] + label {
+    top:0;
+    left:0;
+}
+
+.thumb [type="checkbox"].filled-in:checked + label:after {
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #5a5a5a;
+    background-color: #3270A4;
+    z-index: 0;
+}
+.thumb [type="checkbox"] + label:before, .thumb [type="checkbox"]:not(.filled-in) + label:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    transition: .2s;
+}
+.thumb [type="checkbox"]:checked + label:before {
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #3270A4;
+    border-bottom: 2px solid #3270A4;
+/*
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+*/
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.thumb [type="checkbox"].filled-in + label:before, .thumb [type="checkbox"].filled-in + label:after {
+    content: '';
+    left: 0;
+    position: absolute;
+/*
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+*/
+    z-index: 1;
+}
+.thumb [type="checkbox"]:checked + label:before {
+    top: 0px;
+    left: 0px;
+    width: 11px;
+    height: 19px;
+}
+.thumb [type="checkbox"].filled-in:checked + label:before {
+    top: 2px;
+    left: 0;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+.thumb [type="checkbox"].filled-in:checked + label:before {
+    border-right: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+}
+
+.thumb__name {
+   font-size:12px;
+   white-space:nowrap;
+   overflow:hidden;
+   margin:0;
+}
+
+.b-thumb__del {
+	top: 2px;
+	right: 2px;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+    opacity: 1;
+    filter: invert(100%);
+	z-index: 99;
+	position: absolute;
+/*
+	-webkit-transition: opacity .1s ease-in;
+	-moz-transition: opacity .1s ease-in;
+	transition: opacity .1s ease-in;
+*/
+	background: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20174.239%20174.239%22%20style%3D%22enable-background%3Anew%200%200%20174.239%20174.239%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%0A%09%3Cpath%20d%3D%22M87.12%2C0C39.082%2C0%2C0%2C39.082%2C0%2C87.12s39.082%2C87.12%2C87.12%2C87.12s87.12-39.082%2C87.12-87.12S135.157%2C0%2C87.12%2C0z%20M87.12%2C159.305%20%20%20c-39.802%2C0-72.185-32.383-72.185-72.185S47.318%2C14.935%2C87.12%2C14.935s72.185%2C32.383%2C72.185%2C72.185S126.921%2C159.305%2C87.12%2C159.305z%22%2F%3E%0A%09%3Cpath%20d%3D%22M120.83%2C53.414c-2.917-2.917-7.647-2.917-10.559%2C0L87.12%2C76.568L63.969%2C53.414c-2.917-2.917-7.642-2.917-10.559%2C0%20%20%20s-2.917%2C7.642%2C0%2C10.559l23.151%2C23.153L53.409%2C110.28c-2.917%2C2.917-2.917%2C7.642%2C0%2C10.559c1.458%2C1.458%2C3.369%2C2.188%2C5.28%2C2.188%20%20%20c1.911%2C0%2C3.824-0.729%2C5.28-2.188L87.12%2C97.686l23.151%2C23.153c1.458%2C1.458%2C3.369%2C2.188%2C5.28%2C2.188c1.911%2C0%2C3.821-0.729%2C5.28-2.188%20%20%20c2.917-2.917%2C2.917-7.642%2C0-10.559L97.679%2C87.127l23.151-23.153C123.747%2C61.057%2C123.747%2C56.331%2C120.83%2C53.414z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 1025px) {
+  .b-thumb__del {
+     opacity: .5;
+     filter: none;
+  }
+  .thumb:hover .b-thumb__del {
+     opacity: 1;
+     filter: invert(100%);
+  }
+}
+
+.thumb-top-bar {
+   height: 25px;
+   position: absolute;
+   background-color: #000;
+   z-index: 1;
+   opacity: .5;
+}
+
+.thumb__del {
+	top: 2px;
+	right: 2px;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+    opacity: 1;
+    filter: invert(100%);
+	z-index: 99;
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22enable-background%3Anew%200%200%20512%20512%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20transform%3D%22translate(1%201)%22%3E%0A%09%3Cg%3E%0A%09%09%3Cg%3E%0A%09%09%09%3Cpath%20d%3D%22M489.667%2C84.333h-42.665H447h-68.675l-7.012-28.062C362.905%2C22.609%2C332.658-1%2C297.965-1h-85.931%20%20%20%20%20c-34.693%2C0-64.94%2C23.609-73.348%2C57.273l-7.012%2C28.06H63.002c0%2C0-0.001%2C0-0.001%2C0c0%2C0%2C0%2C0-0.001%2C0H20.333%20%20%20%20%20C8.551%2C84.333-1%2C93.885-1%2C105.667C-1%2C117.449%2C8.551%2C127%2C20.333%2C127h22.488l17.974%2C323.53C62.683%2C484.452%2C90.744%2C511%2C124.719%2C511%20%20%20%20%20h260.565c33.975%2C0%2C62.036-26.548%2C63.924-60.468L467.183%2C127h22.484c11.782%2C0%2C21.333-9.551%2C21.333-21.333%20%20%20%20%20C511%2C93.885%2C501.449%2C84.333%2C489.667%2C84.333z%20M180.081%2C66.614c3.663-14.664%2C16.838-24.948%2C31.954-24.948h85.931%20%20%20%20%20c15.116%2C0%2C28.291%2C10.284%2C31.953%2C24.946l4.428%2C17.721H175.653L180.081%2C66.614z%20M406.608%2C448.163%20%20%20%20%20c-0.63%2C11.311-9.993%2C20.17-21.324%2C20.17H124.719c-11.33%2C0-20.694-8.859-21.324-20.172L85.554%2C127h62.78h213.333h62.784%20%20%20%20%20L406.608%2C448.163z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M169.667%2C169.667c-11.782%2C0-21.333%2C9.551-21.333%2C21.333v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20c11.782%2C0%2C21.333-9.551%2C21.333-21.333V191C191%2C179.218%2C181.449%2C169.667%2C169.667%2C169.667z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M255%2C169.667c-11.782%2C0-21.333%2C9.551-21.333%2C21.333v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20s21.333-9.551%2C21.333-21.333V191C276.333%2C179.218%2C266.782%2C169.667%2C255%2C169.667z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M340.333%2C169.667C328.551%2C169.667%2C319%2C179.218%2C319%2C191v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20c11.782%2C0%2C21.333-9.551%2C21.333-21.333V191C361.667%2C179.218%2C352.115%2C169.667%2C340.333%2C169.667z%22%2F%3E%0A%09%09%3C%2Fg%3E%0A%09%3C%2Fg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (min-width: 1025px) {
+  .thumb__del {
+     opacity: .5;
+     filter: none;
+  }
+  .thumb:hover .thumb__del {
+     opacity: 1;
+     filter: invert(100%);
+  }
+}
+
+.b-thumb__crop {
+	opacity: 0.5;
+	top: 3px;
+	left: 8px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	z-index: 99;
+	position: relative;
+	font-size: 20px;
+	background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20297%20297%22%20style%3D%22enable-background%3Anew%200%200%20297%20297%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20d%3D%22M294.182%2C221.275c-2.965-4.389-7.987-7.275-13.682-7.275h-33.333V82l0%2C0l0%2C0V60.584l41.708-41.5%20%20c0.403-0.403%2C0.859-0.837%2C1.161-1.294c1.812-2.745%2C1.864-6.334%2C0.052-9.079c-0.302-0.457-0.628-0.891-1.031-1.294%20%20c-0.201-0.201-0.398-0.39-0.614-0.566c-0.704-0.574-1.476-1.008-2.292-1.314c-0.686-0.258-1.394-0.429-2.115-0.498%20%20c-0.263-0.025-0.525-0.038-0.789-0.038c-0.264%2C0-0.527%2C0.013-0.79%2C0.038c-0.721%2C0.069-1.432%2C0.24-2.117%2C0.498%20%20c-0.816%2C0.307-1.594%2C0.74-2.298%2C1.314c-0.216%2C0.176-0.425%2C0.365-0.626%2C0.566L235.833%2C49H214.5H82.167V16.5%20%20c0-3.417-0.872-6.592-2.651-9.225C76.55%2C2.886%2C71.612%2C0%2C65.917%2C0c-3.417%2C0-6.55%2C1.039-9.184%2C2.818%20%20c-1.756%2C1.186-3.417%2C2.701-4.603%2C4.457c-1.779%2C2.633-2.964%2C5.808-2.964%2C9.225V49H16.5h0c-3.417%2C0-6.592%2C1.039-9.225%2C2.818%20%20c-1.317%2C0.89-2.498%2C1.964-3.507%2C3.187C1.414%2C57.857%2C0%2C61.513%2C0%2C65.5s1.414%2C7.643%2C3.768%2C10.496c0.336%2C0.407%2C0.692%2C0.798%2C1.065%2C1.172%20%20C7.819%2C80.153%2C11.944%2C82%2C16.5%2C82h0h32.667v148.165c0%2C0.029%2C0.004%2C0.056%2C0.004%2C0.085c0%2C0.027-0.004%2C0.054-0.004%2C0.081%20%20c0%2C0.001%2C0%2C0.003%2C0%2C0.004v0v0.33c0%2C3.383%2C1.195%2C6.526%2C2.956%2C9.133c1.468%2C2.173%2C3.528%2C3.973%2C5.842%2C5.23%20%20c2.315%2C1.257%2C5.05%2C1.972%2C7.87%2C1.972h148.332v33.5c0%2C9.113%2C7.387%2C16.5%2C16.5%2C16.5s16.5-7.387%2C16.5-16.5V247H280.5%20%20c9.113%2C0%2C16.5-7.387%2C16.5-16.5C297%2C227.083%2C295.961%2C223.908%2C294.182%2C221.275z%20M202.833%2C82L82.167%2C202.333V82H202.833z%20M94.167%2C214%20%20L214.167%2C93.667V214H94.167z%22%2F%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.thumb:hover .b-thumb__crop {
+	opacity: 1;
+}
+
+.b-thumb__rotate {
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin: 2px 0;
+	position: relative;
+	background: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2028.265%2028.265%22%20style%3D%22enable-background%3Anew%200%200%2028.265%2028.265%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%0A%09%3Cpath%20d%3D%22M14.133%2C28.265c-7.061%2C0-12.805-5.75-12.805-12.809c0-7.06%2C5.744-12.807%2C12.805-12.807c0.469%2C0%2C0.943%2C0.027%2C1.414%2C0.08%20%20%20v-2.07c0-0.266%2C0.164-0.508%2C0.406-0.611c0.252-0.098%2C0.531-0.043%2C0.723%2C0.148l4.537%2C4.547c0.258%2C0.258%2C0.258%2C0.67%2C0%2C0.932%20%20%20l-4.535%2C4.557c-0.193%2C0.188-0.473%2C0.246-0.725%2C0.143c-0.242-0.104-0.406-0.344-0.406-0.609V7.47%20%20%20c-0.469-0.086-0.941-0.125-1.414-0.125c-4.473%2C0-8.113%2C3.639-8.113%2C8.111c0%2C4.471%2C3.641%2C8.113%2C8.113%2C8.113s8.111-3.643%2C8.111-8.113%20%20%20c0-0.363%2C0.295-0.66%2C0.662-0.66h3.369c0.365%2C0%2C0.662%2C0.297%2C0.662%2C0.66C26.937%2C22.515%2C21.189%2C28.265%2C14.133%2C28.265z%22%2F%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+}
+
+.thumb:hover .b-thumb__rotate {
+	opacity: 1;
+}
+
+.b-thumb__info {
+	opacity: 0.5;
+	top: 3px;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	margin: 0px 0 0 0px;
+	position: relative;
+	background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2018.1.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2029.535%2029.535%22%20style%3D%22enable-background%3Anew%200%200%2029.535%2029.535%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%3E%0A%09%3Cpath%20d%3D%22M14.768%2C0C6.611%2C0%2C0%2C6.609%2C0%2C14.768c0%2C8.155%2C6.611%2C14.767%2C14.768%2C14.767c8.154%2C0%2C14.766-6.612%2C14.766-14.767%20%20%20C29.534%2C6.609%2C22.923%2C0%2C14.768%2C0z%20M14.768%2C27.126c-6.83%2C0-12.361-5.532-12.361-12.359c0-6.828%2C5.531-12.362%2C12.361-12.362%20%20%20c6.824%2C0%2C12.359%2C5.535%2C12.359%2C12.362C27.128%2C21.594%2C21.592%2C27.126%2C14.768%2C27.126z%22%2F%3E%0A%09%3Cpolygon%20points%3D%2216.83%2C11.143%2012.679%2C11.143%2012.679%2C11.15%2011.134%2C11.15%2011.134%2C13.563%2012.679%2C13.563%2012.679%2C22.181%2011.039%2C22.181%20%20%20%2011.039%2C24.487%2012.679%2C24.487%2012.679%2C24.503%2016.83%2C24.503%2016.83%2C24.487%2018.188%2C24.487%2018.188%2C22.181%2016.83%2C22.181%20%20%22%2F%3E%0A%09%3Cpath%20d%3D%22M14.726%2C9.504c1.395%2C0%2C2.24-0.928%2C2.24-2.077c-0.027-1.172-0.846-2.072-2.184-2.072c-1.336%2C0-2.211%2C0.899-2.211%2C2.072%20%20%20C12.57%2C8.576%2C13.417%2C9.504%2C14.726%2C9.504z%22%2F%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%0A%09%3Cg%3E%0A%09%3C%2Fg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+	background-repeat: no-repeat;
+}
+
+.thumb:hover .b-thumb__info {
+	opacity: 1;
+}
+
+.thumb__preview, .b-thumb__preview {
+	margin: 0;
+    width: 130px;
+    height: 130px;
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	transition: transform .2s ease-in;
+}
+
+.b-thumb__preview > div > div {
+   position: relative;
+   z-index: -1;
+}
+
+.b-thumb__preview > div {
+   position: relative;
+   z-index: 0;
+}
+
+.b-thumb__preview__pic {
+	width: 100%;
+	height: 100%;
+	background: url('file-icon.png') 50% 50% no-repeat;
+}
+
+.b-thumb__progress {
+	top: 114px;
+	left: 10px;
+	right: 10px;
+	position: absolute;
+}
+
+
+/*crop popup */
+
+.themodal-lock {
+	/* when modal is opened we're removing scrollbars from the main content */
+	overflow: hidden;
+}
+
+.themodal-overlay {
+	/* overlay will stay fixed and will take all the space available */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	z-index: 100000;
+
+	/* if modal content doesn't fit inside the overlay, display scrollbars */
+	overflow: auto;
+
+	/* allow one-finger iPad scrolling */
+	-webkit-overflow-scrolling: touch;
+
+}
+
+/* fix for iPad glitches */
+.themodal-overlay > * {
+	-webkit-transform: translateZ(0px);
+}
+
+.themodal-overlay {
+	background: rgba(0, 0, 0, 0.5);
+	/* IE6–IE8 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);
+	zoom: 1;
+}
+
+.crop_popup {
+	margin: 25px;
+	float: left;
+	display: inline-block;
+	box-shadow: 0 0 5px #000;
+	background-color: #fff;
+}
+
+.crop_popup__body {
+	margin: 10px 10px 5px;
+}
+/* crop popup */
+
+
+.uploader-guide {
+	cursor:pointer;
+}
+
+.img-number {
+    top: 1px;
+    left: 1px;
+    position: absolute;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 12px;
+    background: rgb(0 0 0 / 0.5);
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    z-index: 99;
+    white-space: nowrap;
+    padding: 0;
+}
+.thumb:hover .img-number {
+    background: transparent;
+}
+
+#gallery_submit_ttip [disabled] {
+  pointer-events: none;
+}	
+
+/*card*/
+
+.card-img-body {
+   position: relative;
+}
+
+.card-body {
+  padding: 0 3px;
+  height: 46px;
+}
+
+.card{
+  width: 132px;
+  transition:0.5s;
+  /*cursor:pointer;*/
+}
+
+.card.active{
+  transform: scale(1.05);
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+}
+
+.card.active.hover{
+}
+.card.active.tapped{
+    border: 1px dashed #ff0000;
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card.active::before, .card.active::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+  .move_thumb.active.tapped {
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;	
+    opacity: .75;
+    filter: invert(100%) drop-shadow(2px 4px 6px black);
+	z-index: 99;
+	position: absolute;
+	background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='iso-8859-1'?%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 511.999 511.999' style='enable-background:new 0 0 511.999 511.999;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M506.138,241.848l-63.197-63.197c-7.81-7.812-20.474-7.811-28.285-0.001c-7.811,7.81-7.811,20.475,0,28.285l29.061,29.062 H275.994V68.275l29.061,29.061c7.81,7.811,20.475,7.809,28.285-0.001c7.811-7.809,7.811-20.474,0-28.285L270.136,5.846 c-7.863-7.863-20.56-7.725-28.285,0L178.646,69.05c-7.811,7.81-7.811,20.475,0,28.285c7.81,7.811,20.474,7.81,28.285,0.001 l29.061-29.061v167.725H68.269l29.061-29.062c7.811-7.809,7.81-20.474,0-28.285s-20.474-7.81-28.285,0.001L5.848,241.849 c-7.712,7.702-7.859,20.451,0,28.3l63.197,63.197c7.813,7.814,20.477,7.808,28.285,0.001c7.811-7.81,7.811-20.475,0-28.285 L68.269,276h167.724v167.724l-29.061-29.061c-7.81-7.811-20.474-7.81-28.285,0.001c-7.811,7.809-7.811,20.474,0,28.285 l63.205,63.204c7.718,7.719,20.415,7.87,28.285,0l63.205-63.204c7.811-7.81,7.811-20.475,0-28.285 c-7.81-7.813-20.474-7.812-28.285-0.001l-29.061,29.061V276h167.724l-29.061,29.062c-7.811,7.809-7.811,20.474,0,28.285 c7.81,7.811,20.475,7.809,28.285-0.001l63.197-63.197C513.971,262.327,513.912,249.612,506.138,241.848z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+  }

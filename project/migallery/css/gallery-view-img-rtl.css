@@ -1,0 +1,43 @@
+.gallery-view-wrapper {
+  direction: rtl;
+}
+#baguetteBox-slider {
+  -webkit-transition: right .4s ease, -webkit-transform .4s ease;
+  transition: right .4s ease, -webkit-transform .4s ease;
+  transition: right .4s ease, transform .4s ease;
+  transition: right .4s ease, transform .4s ease, -webkit-transform .4s ease, -moz-transform .4s ease;
+}
+#baguetteBox-overlay {
+  -webkit-transition: opacity .5s ease forwards;
+  transition: opacity .5s ease forwards; 
+}
+.baguetteBox-button#close-button {
+  left: 2%;
+  left: calc(2% + 6px);
+}
+.img-info {
+  bottom: 0;
+  left: unset;
+  right: 0;
+}
+.img-info .btn-toggle-expand {
+  right:unset;
+  left: 0;
+  top: 0;
+}
+.img-info .btn-toggle-expand > span {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); 
+}
+.img-info .btn-toggle-expand.active > span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg); 
+}
+.view-gal-number {
+  left:unset;
+  right:5px;
+}

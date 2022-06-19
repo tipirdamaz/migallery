@@ -1,0 +1,34 @@
+.gallery-block .heading {
+  text-align: right;
+}
+
+#baguetteBox-overlay .full-image figcaption {
+    text-align: right;
+}
+
+.gal-keyword, .img-keyword {
+   margin-right: unset;
+   margin-left: .5rem;
+}
+
+.img-info .img-info-content > p {
+   direction: rtl;
+}
+
+.img-info .img-info-content > p > span {
+   direction: ltr;
+}
+
+.img-info .img-info-content > p > .file-size {
+   margin-left: .5rem;
+   margin-right: unset;
+}
+
+.img-info .img-info-content > p > .upload-date {
+   margin-left: .5rem;
+   margin-right: unset;
+}
+
+#copy-link-msg {
+   float:right;
+}

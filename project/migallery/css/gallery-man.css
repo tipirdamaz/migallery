@@ -1,0 +1,266 @@
+
+
+@media (min-width: 540px) and (max-width: 767px) {
+  .thumb_gal {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    border: 2px solid rgba(0,0,0,.25);
+    background: linear-gradient(90deg, #c0c0c080, #c0c0c080);
+  }
+  .card.active.hover{
+  }
+  .card.active.tapped{
+    border: 2px dashed #ff0000;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    border: 1px solid rgba(0,0,0,.25);
+    background: linear-gradient(90deg, #c0c0c080, #c0c0c080);
+  }
+  .card.active.hover{
+  }
+  .card.active.tapped{
+    border: 1px dashed #ff0000;
+  }
+}
+
+.card-img-body {
+  position:relative;  	
+}
+
+.card-img-body > .btn {
+    display:contents;
+  	bottom:0;
+  	opacity:0.75;
+  	position: absolute;
+  	border-radius: 0;
+  	cursor: default!important;
+}
+
+@media (max-width: 767px) {
+  .card-img-body > .btn {
+  	font-size:1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-img-body > .btn {
+  	font-size:.8rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+ .card-img {
+ 	height: 218px;
+ }
+}
+
+@media all and (min-width: 992px) {
+ .card-img {
+ 	height: 148px;
+ }
+}
+
+@media all and (min-width: 1200px) {
+ .card-img {
+ 	height: 148px;
+ }
+}
+
+@media all and (max-width: 767px) {
+ .card-img {
+ 	height: 218px;
+ }
+}
+
+.gal-number {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+    background: rgb(0 0 0 / 0.5);
+    color: #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    white-space: nowrap;
+    padding: 0;
+}
+
+.card-body {
+  padding: .5rem;
+}
+.card-text {
+  height:40px;
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+.card-date {
+  height:20px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.card-date > span:first-child {
+   margin-right: .5rem;
+   margin-left: unset;
+}
+
+.card > a > img{
+  cursor:pointer;
+}
+.card{
+  transition:0.5s;
+}
+.card-title{  
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.35;
+  transition:1s;
+  margin-bottom: .5rem;
+}
+.card.active{
+  transform: scale(1.05);
+  background: linear-gradient(138deg, #c0c0c080, transparent);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 767px) {
+  .card-text {
+    font-size: .85rem;
+  }
+  .card-date {
+    font-size: .85rem;
+  }
+  .card-title{  
+    font-size:16px;
+  }
+  .btn-block {
+    font-size:.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-text {
+    font-size: .8rem;
+  }
+  .card-date {
+    font-size: .8rem;
+  }
+  .card-title{  
+    font-size:15px;
+  }
+  .btn-block {
+    font-size:.8rem;
+  }
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card.active::before, .card.active::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.card-top-bar {
+   height: 34px;
+   position: absolute;
+   background-color: #000;
+   z-index: 1;
+   opacity: .5;
+}
+
+@media (min-width: 1025px) {
+  .card-top-bar {
+    opacity: 0;
+  }
+  .card.active .card-top-bar {
+   opacity: .5;
+  }
+}
+
+.del_gallery {
+	top: 4px;
+	right: 4px;
+	width:24px;
+	height:24px;
+	cursor: pointer;
+    opacity: 1;
+    filter: invert(100%);
+	z-index: 99;
+	position: absolute;
+	background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200)%20%20--%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20id%3D%22Capa_1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20512%20512%22%20style%3D%22enable-background%3Anew%200%200%20512%20512%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20transform%3D%22translate(1%201)%22%3E%0A%09%3Cg%3E%0A%09%09%3Cg%3E%0A%09%09%09%3Cpath%20d%3D%22M489.667%2C84.333h-42.665H447h-68.675l-7.012-28.062C362.905%2C22.609%2C332.658-1%2C297.965-1h-85.931%20%20%20%20%20c-34.693%2C0-64.94%2C23.609-73.348%2C57.273l-7.012%2C28.06H63.002c0%2C0-0.001%2C0-0.001%2C0c0%2C0%2C0%2C0-0.001%2C0H20.333%20%20%20%20%20C8.551%2C84.333-1%2C93.885-1%2C105.667C-1%2C117.449%2C8.551%2C127%2C20.333%2C127h22.488l17.974%2C323.53C62.683%2C484.452%2C90.744%2C511%2C124.719%2C511%20%20%20%20%20h260.565c33.975%2C0%2C62.036-26.548%2C63.924-60.468L467.183%2C127h22.484c11.782%2C0%2C21.333-9.551%2C21.333-21.333%20%20%20%20%20C511%2C93.885%2C501.449%2C84.333%2C489.667%2C84.333z%20M180.081%2C66.614c3.663-14.664%2C16.838-24.948%2C31.954-24.948h85.931%20%20%20%20%20c15.116%2C0%2C28.291%2C10.284%2C31.953%2C24.946l4.428%2C17.721H175.653L180.081%2C66.614z%20M406.608%2C448.163%20%20%20%20%20c-0.63%2C11.311-9.993%2C20.17-21.324%2C20.17H124.719c-11.33%2C0-20.694-8.859-21.324-20.172L85.554%2C127h62.78h213.333h62.784%20%20%20%20%20L406.608%2C448.163z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M169.667%2C169.667c-11.782%2C0-21.333%2C9.551-21.333%2C21.333v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20c11.782%2C0%2C21.333-9.551%2C21.333-21.333V191C191%2C179.218%2C181.449%2C169.667%2C169.667%2C169.667z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M255%2C169.667c-11.782%2C0-21.333%2C9.551-21.333%2C21.333v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20s21.333-9.551%2C21.333-21.333V191C276.333%2C179.218%2C266.782%2C169.667%2C255%2C169.667z%22%2F%3E%0A%09%09%09%3Cpath%20d%3D%22M340.333%2C169.667C328.551%2C169.667%2C319%2C179.218%2C319%2C191v213.333c0%2C11.782%2C9.551%2C21.333%2C21.333%2C21.333%20%20%20%20%20c11.782%2C0%2C21.333-9.551%2C21.333-21.333V191C361.667%2C179.218%2C352.115%2C169.667%2C340.333%2C169.667z%22%2F%3E%0A%09%09%3C%2Fg%3E%0A%09%3C%2Fg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.edit_gallery {
+	top: 4px;
+	right: 41px;
+	width:28px;
+	height:24px;
+	cursor: pointer;
+    opacity: 1;
+    filter: invert(100%);
+	z-index: 99;
+	position: absolute;
+	background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='iso-8859-1'?%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 489.663 489.663' style='enable-background:new 0 0 489.663 489.663;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Cpath d='M467.144,103.963l5.6-5.6c22.5-22.5,22.5-58.9,0-81.4c-22.4-22.6-58.9-22.6-81.3-0.1l-5.6,5.6L467.144,103.963z'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M324.944,297.763v124.5h-257.5v-257.5h124.5l67.4-67.4h-244.6c-8.1,0-14.7,6.6-14.7,14.7v362.9c0,8.1,6.6,14.7,14.7,14.7 h362.9c8.1,0,14.7-6.6,14.7-14.7v-244.6L324.944,297.763z'/%3E%3C/g%3E%3Cg%3E%3Cpolygon points='360.644,47.663 132.244,276.063 114.044,375.663 213.644,357.463 442.044,129.063 '/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+  .move_gallery.active.tapped {
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;	
+    opacity: .75;
+    filter: invert(100%) drop-shadow(2px 4px 6px black);
+	z-index: 99;
+	position: absolute;
+	background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='iso-8859-1'?%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 511.999 511.999' style='enable-background:new 0 0 511.999 511.999;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M506.138,241.848l-63.197-63.197c-7.81-7.812-20.474-7.811-28.285-0.001c-7.811,7.81-7.811,20.475,0,28.285l29.061,29.062 H275.994V68.275l29.061,29.061c7.81,7.811,20.475,7.809,28.285-0.001c7.811-7.809,7.811-20.474,0-28.285L270.136,5.846 c-7.863-7.863-20.56-7.725-28.285,0L178.646,69.05c-7.811,7.81-7.811,20.475,0,28.285c7.81,7.811,20.474,7.81,28.285,0.001 l29.061-29.061v167.725H68.269l29.061-29.062c7.811-7.809,7.81-20.474,0-28.285s-20.474-7.81-28.285,0.001L5.848,241.849 c-7.712,7.702-7.859,20.451,0,28.3l63.197,63.197c7.813,7.814,20.477,7.808,28.285,0.001c7.811-7.81,7.811-20.475,0-28.285 L68.269,276h167.724v167.724l-29.061-29.061c-7.81-7.811-20.474-7.81-28.285,0.001c-7.811,7.809-7.811,20.474,0,28.285 l63.205,63.204c7.718,7.719,20.415,7.87,28.285,0l63.205-63.204c7.811-7.81,7.811-20.475,0-28.285 c-7.81-7.813-20.474-7.812-28.285-0.001l-29.061,29.061V276h167.724l-29.061,29.062c-7.811,7.809-7.811,20.474,0,28.285 c7.81,7.811,20.475,7.809,28.285-0.001l63.197-63.197C513.971,262.327,513.912,249.612,506.138,241.848z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+  }
+
+@media (min-width: 1025px) {
+  .del_gallery, .edit_gallery {
+     opacity: .5;
+     filter: none;
+  }
+  .card.active .del_gallery, .card.active .edit_gallery {
+     opacity: 1;
+     filter: invert(100%);
+  }
+}
+
+.card.active .gal-number {
+    background: transparent;
+}
