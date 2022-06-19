@@ -1,6 +1,8 @@
 # MIGallery - Image Gallery Script
 PHP Photo Gallery Script with multi image uploader, image resizer, image cropper, image rotater and image sorter features.
 
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/preview.jpg)
+
 # Overview
 
 PHP Image Gallery Script with multi-uploading, cropping, rotating and sorting features.
@@ -139,6 +141,20 @@ If you want to turn on debug mode, set $config['debug'] = true; from CONFIG_FILE
 ```
 Type {your_domain}/project/mi-install.php in the address line and install it.
 ```
+
+# Screenshots
+
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/001.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/002.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/003.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/004.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/005.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/006.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/007.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/008.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/009.jpg)
+![alt text](https://github.com/tipirdamaz/migallery/blob/main/screenshots/010.jpg)
+
 
 # Live Demo
 
