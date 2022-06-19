@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Bahasa </title>
+   <label> Pilih Bahasa </label>
+  </lang>
+
+  <timezone>
+   <title>Zon masa</title>
+   <label>Pilih Zon Waktu</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Pengurusan Galeri </gallery_man>
+   <gallery_list> Senarai Galeri </gallery_list>
+   <uploader> Buat Galeri Baru </uploader>
+   <back> Kembali </back>
+  </nav>
+
+  <install>
+ 
+   <title> Persediaan MIGallery </title>
+   <header> Persediaan MIGallery </header>
+
+   <img_direction>
+    <label> Galeri, gambar dan orientasi slaid </label>
+    <left> Kiri ke Kanan </left>
+    <right> Kanan ke Kiri </right>
+   </img_direction>
+
+   <db_info>
+    <title> Maklumat Pangkalan Data MySQL </title>
+    <host>
+     <label> Nama Host Pangkalan Data </label>
+     <placeholder> Nama Host Pangkalan Data </placeholder>
+     <validate> Masukkan Nama Hos Pangkalan Data </validate>
+    </host>
+    <user>
+     <label> Nama Pengguna Pangkalan Data </label>
+     <placeholder> Nama Pengguna Pangkalan Data </placeholder>
+     <validate> Masukkan Nama Pengguna Pangkalan Data </validate>
+    </user>
+    <pass>
+     <label> Kata Laluan Pangkalan Data </label>
+     <placeholder> Kata Laluan Pangkalan Data </placeholder>
+     <validate> Masukkan Kata Laluan Pangkalan Data </validate>
+    </pass>
+    <db>
+     <label> Nama Pangkalan Data </label>
+     <placeholder> Nama Pangkalan Data </placeholder>
+     <validate> Masukkan Nama Pangkalan Data </validate>
+    </db>
+    <gal_table>
+     <label> Nama jadual pangkalan data galeri </label>
+     <placeholder> Nama jadual pangkalan data galeri </placeholder>
+     <validate> Masukkan Nama jadual pangkalan data galeri </validate>
+    </gal_table>
+    <img_table>
+     <label> Nama jadual pangkalan data gambar </label>
+     <placeholder> Nama jadual pangkalan data gambar </placeholder>
+     <validate> Masukkan Nama jadual pangkalan data gambar </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direktori untuk kandungan dinamik yang boleh ditulis</title>
+    <db_alert>
+     <![CDATA[
+    Direktori di bawah ini adalah tempat fail <b> konfigurasi </b>, <b> log ralat </b> dan <b> definisi </b> akan dibuat. Sekiranya anda ingin menamakan semula direktori ini, ubah definisi <b> DB_DIR </b> dalam fail <b> definitions0.php </b> dan muat semula halaman ini.<br/><br/>Sekiranya anda ingin menamakan semula fail konfigurasi, fail log ralat dan fail definisi, ubah definisi <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> dan <b>DEFINITIONS_FILE</b> dalam fail definitions0.php.<br/><br/>Sekiranya sistem anda berdasarkan unix, tetapkan izin menulis ke folder dengan arahan berikut:<br/><b>%s</b><br/><br/>Sebelum memulakan pemasangan, pastikan jalan berikut ada dan anda mempunyai kebenaran untuk menulis ke direktori:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Sebelum memulakan pemasangan, pastikan direktori berikut tersedia dan anda mempunyai kebenaran untuk menulis ke direktori. <br/> <br/> Sekiranya anda akan menggunakan direktori selain daripada direktori berikut, jika direktori tersebut tidak ada, buat direktori terlebih dahulu dan tetapkan kebenaran menulis direktori ini dan mulakan pemasangan.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Fail konfigurasi, fail Log Ralat dan Laluan Fail Definisi</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Direktori berikut dibuat semasa galeri baru disimpan. <b>%d</b> adalah id galeri yang ditentukan. Direktori ini dibuat dalam direktori <b> Direktori Pangkalan Imej </b> yang dinyatakan di atas. Pastikan format direktori ini sesuai.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Fail konfigurasi telah dibuat sebelumnya. Oleh itu, anda tidak dapat menjalankan pemasangan. Anda mesti memadamkan fail konfigurasi terlebih dahulu dan kemudian menjalankan pemasangan.</config_alert>
+    <tmp_dir>
+     <label>Direktori Imej Sementara</label>
+     <placeholder>Direktori Imej Sementara</placeholder>
+     <validate>Direktori Imej Sementara</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Direktori Sementara Thumbnail</label>
+     <placeholder>Direktori Sementara Thumbnail</placeholder>
+     <validate>Direktori Sementara Thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Direktori Sementara Thumbnail yang Dipotong</label>
+     <placeholder>Direktori Sementara Thumbnail yang Dipotong</placeholder>
+     <validate>Direktori Sementara Thumbnail yang Dipotong</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Direktori Sementara fail Slaid Imej</label>
+     <placeholder>Direktori Sementara fail Slaid Imej</placeholder>
+     <validate>Direktori Sementara fail Slaid Imej</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Direktori Pangkalan Imej</label>
+     <placeholder>Direktori Pangkalan Imej</placeholder>
+     <validate>Direktori Pangkalan Imej</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Direktori Imej</label>
+     <placeholder>Direktori Imej</placeholder>
+     <validate>Direktori Imej</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direktori Thumbnail</label>
+     <placeholder>Direktori Thumbnail</placeholder>
+     <validate>Direktori Thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Direktori Thumbnail yang Dipotong</label>
+     <placeholder>Direktori Thumbnail yang Dipotong</placeholder>
+     <validate>Direktori Thumbnail yang Dipotong</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Direktori Imej Slaid</label>
+     <placeholder>Direktori Imej Slaid</placeholder>
+     <validate>Direktori Imej Slaid</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Direktori Fail XML</label>
+     <placeholder>Direktori Fail XML</placeholder>
+     <validate>Direktori Fail XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Memasang. Sila tunggu ... </installing>
+    <success> Pemasangan berjaya. </success>
+    <error> Pemasangan tidak dapat diselesaikan. </error>
+   </alert>
+  
+   <submit> Mulakan Pemasangan </submit>
+   <submit_continue> Teruskan &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Pengurusan Galeri </title>
+   <header> Pengurusan Galeri </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Senarai Galeri </title>
+   <header> Senarai Galeri </header>
+   <sort>
+    <asc> pertama hingga terakhir </asc>
+    <desc> terakhir hingga pertama </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Lihat </button>
+     <title> Lihat Galeri </title>
+    </view>
+    <delete>
+     <button> Padam </button>
+     <title> Padam Galeri </title>
+    </delete>
+    <edit>
+     <button> Edit </button>
+     <title> Edit Galeri </title>
+    </edit>
+    <images>gambar</images>
+    <date>Tarikh</date>
+    <move> Anda boleh menyusun galeri dengan menyeretnya menggunakan tetikus. </move>
+    <move_mobile>Ketuk dan tahan item dengan jari anda dan tunggu item diserlahkan. Setelah memilih item, seret jari anda untuk menyusun item.</move_mobile>
+   </card>
+   <alert> Tidak dijumpai galeri. </alert>
+   <modal>
+    <del_gallery>
+     <label> Padam Galeri </label>
+     <close> tutup </close>
+     <text> Adakah anda mahu memadam galeri ini dari laman web? </text>
+     <command> Padam </command>
+     <cancel> Batal </cancel>
+    </del_gallery>
+    <result>
+     <label> Ralat </label>
+     <close> tutup </close>
+     <text> </text>
+     <command> Tutup </command>
+    </result>
+   </modal>
+   <save_changes> Simpan susunan galeri </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Paparan Galeri </title>
+   <header> Paparan Galeri </header>
+   <alert> Gambar tidak dijumpai. </alert>
+   <share>Kongsi Galeri</share>
+   <filedate>Tarikh muat-naik</filedate>
+   <filesize>Saiz fail</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Salin Ke Papan Keratan</label>
+     <close>tutup</close>
+     <text>Pautan disalin ke papan keratan</text>
+     <command>Salinan</command>
+     <cancel>Tutup</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Buat Galeri Baru </title>
+    <header> Buat Galeri Baru </header>
+   </new>
+   <edit>
+    <title> Edit Galeri </title>
+    <header> Edit Galeri </header>
+   </edit>
+   <gallery_info>
+    <title> Maklumat Galeri </title>
+    <name>
+     <label> Nama Galeri </label>
+     <placeholder> Nama Galeri </placeholder>
+     <validate> Nama Galeri Input </validate>
+    </name>
+    <description>
+     <label> Penerangan Galeri </label>
+     <placeholder> Penerangan Galeri </placeholder>
+     <validate> Penerangan Galeri Input </validate>
+    </description>
+    <keywords>
+     <label> Kata kunci galeri dipisahkan dengan koma atau jeda baris </label>
+     <placeholder> Kata kunci galeri dipisahkan dengan koma atau jeda baris </placeholder>
+     <validate> Masukkan Kata Kunci Galeri </validate>
+    </keywords>
+    <submit>
+     <save> Simpan Galeri </save>
+     <update> Kemas kini Galeri </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Panduan Pengunggah Imej </title>
+     <body>
+      <![CDATA[
+Pilih gambar dari peranti anda dengan butang <b> Semak Imej </b> dan muat naik ke laman web dengan butang <b> Muat Naik Imej </b>. <br/> Format Gambar yang Disokong: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Resolusi Minimum yang dibenarkan: <b>%d x %d px</b> <br/> Resolusi Maksimum yang dibenarkan: <b>%d x %d px</b> <br/> Saiz Maksimum Fail Tunggal: <b>%d MB</b> <br/> Kiraan Imej setiap Galeri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Pilih Semua </select_all>
+    <select_del> Hapus Gambar Terpilih </select_del>
+    <thumb>
+     <exist>
+      <delete> Padam Gambar yang Dimuat naik Dari Tapak </delete>
+      <info> Maklumat Imej </info>
+     </exist>
+     <new>
+      <delete> Padam Gambar yang Dimuat naik Dari Tapak </delete>
+      <cancel> Batalkan Muat Naik Gambar </cancel>
+      <info> Maklumat Imej </info>
+      <rotate> Putar Imej </rotate>
+      <crop> Potong Gambar </crop>
+     </new>
+     <move> Anda boleh menyusun gambar dengan menyeretnya menggunakan tetikus. </move>
+     <move_mobile>Ketuk dan tahan item dengan jari anda dan tunggu item diserlahkan. Setelah memilih item, seret jari anda untuk menyusun item.</move_mobile>
+    </thumb>
+    <browse> Semak Imej </browse>
+    <upload> Muat naik Imej </upload>
+    <uploading> Imej sedang meningkatdiiklankan ke laman web ini. Jangan tutup halaman sehingga muat naik selesai. </uploading>
+    <uploaded> Gambar telah dimuat naik ke laman web. </uploaded>
+    <error>Beberapa kesalahan berlaku semasa memuat naik fail ke pelayan.</error>
+    <save_changes> Simpan Perubahan Imej </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Potong </crop>
+     <cancel> Batal </cancel>
+    </crop>
+    <del_up_img>
+     <label> Padam Gambar </label>
+     <close> tutup </close>
+     <text> Adakah anda mahu memadamkan gambar ini dari laman web? </text>
+     <command> Padam </command>
+     <cancel> Batal </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Padam Gambar </label>
+     <close> tutup </close>
+     <text> Adakah anda mahu memadamkan gambar ini dari laman web? </text>
+     <command> Padam </command>
+     <cancel> Batal </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Hapus Gambar Terpilih </label>
+     <close> tutup </close>
+     <text> Adakah anda mahu menghapus gambar yang dipilih dari laman web? </text>
+     <command> Padam </command>
+     <cancel> Batal </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Maklumat Imej </label>
+     <close> tutup </close>
+     <filename> Nama Fail </filename>
+     <filesize> Ukuran Fail </filesize>
+     <date> Tarikh muat-naik </date>
+     <title>
+      <label> Tajuk </label>
+      <placeholder> Tajuk Gambar </placeholder>
+     </title>
+     <desc>
+      <label> Penerangan </label>
+      <placeholder> Penerangan Imej </placeholder>
+     </desc>
+     <keyw>
+      <label> Kata kunci </label>
+      <placeholder> Kata kunci dipisahkan dengan koma atau jeda baris </placeholder>
+     </keyw>
+     <command> Simpan / Kemas kini </command>
+     <cancel> Batal </cancel>
+    </img_info>
+    <result>
+     <label> Ralat </label>
+     <close> tutup </close>
+     <text> </text>
+     <command> Tutup </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Tetapan gambar untuk muat naik yang dibenarkan </title>
+    <upload_limit>
+     <label> Kiraan gambar maksimum setiap galeri </label>
+     <placeholder> Kiraan gambar maksimum setiap galeri </placeholder>
+     <validate> Input jumlah gambar Maksimum setiap galeri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Saiz Maksimum Fail Tunggal (MB) </label>
+     <placeholder> Saiz Maksimum Fail Tunggal (MB) </placeholder>
+     <validate> Input Saiz Fail Maksimum (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Resolusi Min yang Diizinkan </label>
+     <width>
+      <placeholder> Lebar Min </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Min </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Resolusi Maksimum yang dibenarkan </label>
+     <width>
+      <placeholder> Lebar Maksimum </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Maksimum </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformasi Imej </title>
+    <full_resolution>
+     <label> Ukuran Penuh Gambar </label>
+     <width>
+      <placeholder> Lebar Maksimum </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Maksimum </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Ukuran Thumbnail </label>
+     <width>
+      <placeholder> Lebar Jempol </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Thumb Height </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Saiz Slaid </label>
+     <width>
+      <placeholder> Slide Width </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Slide Height </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kualiti Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Kompres PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Tanda Air </title>
+    <label> Gunakan Tanda Air </label>
+    <position> Kedudukan Tanda Air </position>
+    <image> Gambar Tanda Air </image>
+    <set> Tetapkan Tanda Air </set>
+    <browse> 1- Lihat Fail Imej Tanda Air </browse>
+    <adjust> 2- Sesuaikan gambar mengikut bingkai. </adjust>
+    <upload> 3- Muat Naik Fail Terpilih </upload>
+    <uploading> Memuat naik ... </uploading>
+    <uploaded> Dimuat naik. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Halaman </page>
+   <first> Halaman Pertama </first>
+   <prev> Halaman Sebelumnya </prev>
+   <next> Halaman Seterusnya </next>
+   <last> Halaman Terakhir </last>
+  </pagination>
+
+</lang>

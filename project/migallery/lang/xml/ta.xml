@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> மொழி </title>
+   <label> மொழியைத் தேர்ந்தெடுக்கவும் </label>
+  </lang>
+
+  <timezone>
+   <title>நேரம் மண்டலம்</title>
+   <label>நேர மண்டலத்தைத் தேர்ந்தெடுக்கவும்</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> கேலரி மேலாண்மை </gallery_man>
+   <gallery_list> கேலரி பட்டியல் </gallery_list>
+   <uploader> புதிய கேலரியை உருவாக்கு </uploader>
+   <back> மீண்டும் </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery அமைவு </title>
+   <header> MIGallery அமைவு </header>
+
+   <img_direction>
+    <label> கேலரி, படம் மற்றும் ஸ்லைடு நோக்குநிலை </label>
+    <left> இடமிருந்து வலமாக </left>
+    <right> வலமிருந்து இடமாக </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL தரவுத்தள தகவல் </title>
+    <host>
+     <label> தரவுத்தள ஹோஸ்ட்பெயர் </label>
+     <placeholder> தரவுத்தள ஹோஸ்ட்பெயர் </placeholder>
+     <validate> உள்ளீட்டு தரவுத்தள ஹோஸ்ட்பெயர் </validate>
+    </host>
+    <user>
+     <label> தரவுத்தள பயனர் பெயர் </label>
+     <placeholder> தரவுத்தள பயனர் பெயர் </placeholder>
+     <validate> உள்ளீட்டு தரவுத்தள பயனர் பெயர் </validate>
+    </user>
+    <pass>
+     <label> தரவுத்தள கடவுச்சொல் </label>
+     <placeholder> தரவுத்தள கடவுச்சொல் </placeholder>
+     <validate> உள்ளீட்டு தரவுத்தள கடவுச்சொல் </validate>
+    </pass>
+    <db>
+     <label> தரவுத்தள பெயர் </label>
+     <placeholder> தரவுத்தள பெயர் </placeholder>
+     <validate> உள்ளீட்டு தரவுத்தள பெயர் </validate>
+    </db>
+    <gal_table>
+     <label> கேலரி அட்டவணை பெயர் </label>
+     <placeholder> கேலரி அட்டவணை பெயர் </placeholder>
+     <validate> கேலரி அட்டவணை பெயரை உள்ளிடவும் </validate>
+    </gal_table>
+    <img_table>
+     <label> பட அட்டவணை பெயர் </label>
+     <placeholder> பட அட்டவணை பெயர் </placeholder>
+     <validate> பட அட்டவணை பெயரை உள்ளிடவும் </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>எழுதக்கூடிய டைனமிக் உள்ளடக்கங்களுக்கான கோப்பகங்கள்</title>
+    <db_alert>
+     <![CDATA[
+    <b> உள்ளமைவு </b>, <b> பிழை பதிவு </b> மற்றும் <b> வரையறைகள் </b> கோப்புகள் பின்வரும் கோப்பகத்தில் உருவாக்கப்படும். இந்த கோப்பகத்தின் பெயரை மாற்ற விரும்பினால், <b> definitions0.php </b> கோப்பில் <b> DB_DIR </b> வரையறையை மாற்றி இந்தப் பக்கத்தைப் புதுப்பிக்கவும்.<br/><br/>நீங்கள் கட்டமைப்பு கோப்பு, பிழை பதிவு கோப்பு மற்றும் வரையறைகள் கோப்பை மறுபெயரிட விரும்பினால், definitions0.php கோப்பில் <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> மற்றும் <b>DEFINITIONS_FILE</b> ஆகியவற்றின் வரையறைகளை மாற்றவும்.<br/><br/>உங்கள் அமைப்பு யூனிக்ஸ் அடிப்படையில் இருந்தால், பின்வரும் கட்டளையுடன் கோப்புறையில் எழுத அனுமதிகளை அமைக்கவும்:<br/><b>%s</b><br/><br/>நிறுவலைத் தொடங்குவதற்கு முன், உங்களிடம் பின்வரும் பாதை இருப்பதையும், கோப்பகத்திற்கு எழுத உங்களுக்கு அனுமதி உள்ளதா என்பதையும் உறுதிப்படுத்திக் கொள்ளுங்கள்:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    நிறுவலைத் தொடங்குவதற்கு முன், பின்வரும் கோப்பகங்கள் கிடைக்கின்றன என்பதையும், கோப்பகங்களுக்கு எழுத உங்களுக்கு அனுமதி இருப்பதையும் உறுதிப்படுத்திக் கொள்ளுங்கள். <br/> <br/> பின்வரும் கோப்பகங்களைத் தவிர வேறு கோப்பகங்களை நீங்கள் பயன்படுத்தப் போகிறீர்கள் என்றால், கோப்பகங்கள் வட்டில் இல்லை என்றால், முதலில் கோப்பகங்களை உருவாக்கி இந்த கோப்பகங்களின் எழுத அனுமதிகளை அமைத்து நிறுவலைத் தொடங்கவும்.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>உள்ளமைவு கோப்பு, பிழை பதிவு கோப்பு மற்றும் வரையறைகள் கோப்பு பாதை</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    புதிய கேலரி சேமிக்கப்படும் போது பின்வரும் கோப்பகங்கள் உருவாக்கப்படும். <b>%d</b> கேலரி ஐடியைக் குறிக்கிறது. இந்த கோப்பகங்கள் மேலே வரையறுக்கப்பட்ட <b> பட அடிப்படை அடைவு </b> கோப்பகத்தில் உருவாக்கப்படும். இந்த கோப்பகங்களின் வடிவம் பொருத்தமானது என்பதை உறுதிப்படுத்தவும்.
+     ]]>
+    </img_dir_alert>
+    <config_alert>உள்ளமைவு கோப்பு இதற்கு முன்பு உருவாக்கப்பட்டது. எனவே, நீங்கள் நிறுவலை இயக்க முடியாது. நீங்கள் முதலில் உள்ளமைவு கோப்பை நீக்க வேண்டும், பின்னர் நிறுவலை இயக்க வேண்டும்.</config_alert>
+    <tmp_dir>
+     <label>படங்களின் தற்காலிக அடைவு</label>
+     <placeholder>படங்களின் தற்காலிக அடைவு</placeholder>
+     <validate>படங்களின் தற்காலிக அடைவு</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>சிறுபடங்களின் தற்காலிக அடைவு</label>
+     <placeholder>சிறுபடங்களின் தற்காலிக அடைவு</placeholder>
+     <validate>சிறுபடங்களின் தற்காலிக அடைவு</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>துண்டிக்கப்பட்ட சிறு உருவங்களின் தற்காலிக அடைவு</label>
+     <placeholder>துண்டிக்கப்பட்ட சிறு உருவங்களின் தற்காலிக அடைவு</placeholder>
+     <validate>துண்டிக்கப்பட்ட சிறு உருவங்களின் தற்காலிக அடைவு</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ஸ்லைடு படங்களின் தற்காலிக அடைவு</label>
+     <placeholder>ஸ்லைடு படங்களின் தற்காலிக அடைவு</placeholder>
+     <validate>ஸ்லைடு படங்களின் தற்காலிக அடைவு</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>பட அடிப்படை அடைவு</label>
+     <placeholder>பட அடிப்படை அடைவு</placeholder>
+     <validate>பட அடிப்படை அடைவு</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>பட அடைவு</label>
+     <placeholder>பட அடைவு</placeholder>
+     <validate>பட அடைவு</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>சிறு அடைவு</label>
+     <placeholder>சிறு அடைவு</placeholder>
+     <validate>சிறு அடைவு</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>துண்டிக்கப்பட்ட சிறு உருவங்களின் அடைவு</label>
+     <placeholder>துண்டிக்கப்பட்ட சிறு உருவங்களின் அடைவு</placeholder>
+     <validate>துண்டிக்கப்பட்ட சிறு உருவங்களின் அடைவு</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ஸ்லைடு படங்களின் அடைவு</label>
+     <placeholder>ஸ்லைடு படங்களின் அடைவு</placeholder>
+     <validate>ஸ்லைடு படங்களின் அடைவு</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>எக்ஸ்எம்எல் கோப்பு அடைவு</label>
+     <placeholder>எக்ஸ்எம்எல் கோப்பு அடைவு</placeholder>
+     <validate>எக்ஸ்எம்எல் கோப்பு அடைவு</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> நிறுவுகிறது. தயவுசெய்து காத்திருங்கள் ... </installing>
+    <success> நிறுவல் வெற்றிகரமாக முடிந்தது. </success>
+    <error> நிறுவலை முடிக்க முடியவில்லை. </error>
+   </alert>
+  
+   <submit> நிறுவலைத் தொடங்கு </submit>
+   <submit_continue> தொடரவும் &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> கேலரி மேலாண்மை </title>
+   <header> கேலரி மேலாண்மை </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> கேலரி பட்டியல் </title>
+   <header> கேலரி பட்டியல் </header>
+   <sort>
+    <asc> முதல் முதல் கடைசி வரை </asc>
+    <desc> தொடக்கத்திற்கு முடிவு </desc>
+   </sort>
+   <card>
+    <view>
+     <button> காண்க </button>
+     <title> கேலரியைக் காண்க </title>
+    </view>
+    <delete>
+     <button> நீக்கு </button>
+     <title> கேலரியை நீக்கு </title>
+    </delete>
+    <edit>
+     <button> திருத்து </button>
+     <title> கேலரியைத் திருத்து </title>
+    </edit>
+    <images>படங்கள்</images>
+    <date>தேதி</date>
+    <move> கேலரிகளை மவுஸுடன் இழுத்து வரிசைப்படுத்தலாம். </move>
+    <move_mobile>ஒரு உருப்படியை உங்கள் விரலால் தட்டிப் பிடித்து, அது சிறப்பம்சமாக இருக்கும் வரை காத்திருங்கள். ஒரு பொருளைத் தேர்ந்தெடுத்த பிறகு, உருப்படிகளை வரிசைப்படுத்த உங்கள் விரலை இழுக்கவும்.</move_mobile>
+   </card>
+   <alert> கேலரி எதுவும் கிடைக்கவில்லை. </alert>
+   <modal>
+    <del_gallery>
+     <label> கேலரியை நீக்கு </label>
+     <close> மூடு </close>
+     <text> இந்த கேலரியை தளத்திலிருந்து நீக்க விரும்புகிறீர்களா? </text>
+     <command> நீக்கு </command>
+     <cancel> ரத்து </cancel>
+    </del_gallery>
+    <result>
+     <label> பிழை </label>
+     <close> மூடு </close>
+     <text> </text>
+     <command> மூடு </command>
+    </result>
+   </modal>
+   <save_changes> கேலரிகளின் ஏற்பாட்டைச் சேமிக்கவும் </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> கேலரி காட்சி </title>
+   <header> கேலரி காட்சி </header>
+   <alert> படங்கள் எதுவும் கிடைக்கவில்லை. </alert>
+   <share>பகிர் தொகுப்பு</share>
+   <filedate>பதிவேற்றும் தேதி</filedate>
+   <filesize>கோப்பின் அளவு</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>கிளிப்போர்டுக்கு நகலெடுக்கவும்</label>
+     <close>மூடு</close>
+     <text>இணைப்பு கிளிப்போர்டுக்கு நகலெடுக்கப்பட்டது</text>
+     <command>நகலெடுக்கவும்</command>
+     <cancel>மூடு</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> புதிய கேலரியை உருவாக்கவும் </title>
+    <header> புதிய கேலரியை உருவாக்கவும் </header>
+   </new>
+   <edit>
+    <title> கேலரியைத் திருத்து </title>
+    <header> கேலரியைத் திருத்து </header>
+   </edit>
+   <gallery_info>
+    <title> கேலரி தகவல் </title>
+    <name>
+     <label> கேலரி பெயர் </label>
+     <placeholder> கேலரி பெயர் </placeholder>
+     <validate> உள்ளீட்டு கேலரியின் பெயர் </validate>
+    </name>
+    <description>
+     <label> கேலரி விளக்கம் </label>
+     <placeholder> கேலரி விளக்கம் </placeholder>
+     <validate> உள்ளீட்டு தொகுப்பு விளக்கம் </validate>
+    </description>
+    <keywords>
+     <label> கேலரி சொற்கள் புதிய கோடுகள் அல்லது காற்புள்ளிகளால் பிரிக்கப்பட்டன </label>
+     <placeholder> கேலரி சொற்கள் புதிய கோடுகள் அல்லது காற்புள்ளிகளால் பிரிக்கப்பட்டன </placeholder>
+     <validate> கேலரி முக்கிய வார்த்தைகளை உள்ளிடவும் </validate>
+    </keywords>
+    <submit>
+     <save> கேலரியைச் சேமி </save>
+     <update> கேலரியைப் புதுப்பிக்கவும் </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> பட பதிவேற்றிய வழிகாட்டி </title>
+     <body>
+      <![CDATA[
+<b> படங்களை உலாவுக </b> பொத்தானைக் கொண்டு உங்கள் சாதனத்திலிருந்து படங்களைத் தேர்ந்தெடுத்து <b> படங்களை பதிவேற்றவும் </b> பொத்தானைக் கொண்டு தளத்தில் பதிவேற்றவும். <br/> ஆதரவு பட வடிவங்கள்: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> அனுமதிக்கப்பட்ட குறைந்தபட்ச தீர்மானம்: <b>%d x %d px</b> <br/> அனுமதிக்கப்பட்ட அதிகபட்ச தீர்மானம்: <b>%d x %d px</b> <br/> ஒற்றை கோப்பு அதிகபட்ச அளவு: <b>%d MB</b> <br/> கேலரிக்கு பட எண்ணிக்கை: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> அனைத்தையும் தேர்ந்தெடுக்கவும் </select_all>
+    <select_del> தேர்ந்தெடுக்கப்பட்ட படங்களை நீக்கு </select_del>
+    <thumb>
+     <exist>
+      <delete> பதிவேற்றிய படத்தை தளத்திலிருந்து நீக்கு </delete>
+      <info> படத் தகவல் </info>
+     </exist>
+     <new>
+      <delete> பதிவேற்றிய படத்தை தளத்திலிருந்து நீக்கு </delete>
+      <cancel> பட பதிவேற்றத்தை ரத்துசெய் </cancel>
+      <info> படத் தகவல் </info>
+      <rotate> படத்தை சுழற்று </rotate>
+      <crop> பயிர் படம் </crop>
+     </new>
+     <move> படங்களை மவுஸுடன் வரிசைப்படுத்தலாம். </move>
+     <move_mobile>ஒரு உருப்படியை உங்கள் விரலால் தட்டிப் பிடித்து, அது சிறப்பம்சமாக இருக்கும் வரை காத்திருங்கள். ஒரு பொருளைத் தேர்ந்தெடுத்த பிறகு, உருப்படிகளை வரிசைப்படுத்த உங்கள் விரலை இழுக்கவும்.</move_mobile>
+    </thumb>
+    <browse> படங்களை உலாவுக </browse>
+    <upload> படங்களை பதிவேற்றவும் </upload>
+    <uploading> படங்கள் மேலே உள்ளனதளத்திற்கு ஏற்றப்பட்டது. பதிவேற்றம் முடியும் வரை பக்கத்தை மூட வேண்டாம். </uploading>
+    <uploaded> படங்கள் தளத்தில் பதிவேற்றப்பட்டுள்ளன. </uploaded>
+    <error>சேவையகத்தில் கோப்புகளைப் பதிவேற்றும்போது சில பிழைகள் ஏற்பட்டன.</error>
+    <save_changes> பட மாற்றங்களைச் சேமி </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> பயிர் </crop>
+     <cancel> ரத்து </cancel>
+    </crop>
+    <del_up_img>
+     <label> படத்தை நீக்கு </label>
+     <close> மூடு </close>
+     <text> வலைத்தளத்திலிருந்து இந்த படத்தை நீக்க விரும்புகிறீர்களா? </text>
+     <command> நீக்கு </command>
+     <cancel> ரத்து </cancel>
+    </del_up_img>
+    <del_img>
+     <label> படத்தை நீக்கு </label>
+     <close> மூடு </close>
+     <text> வலைத்தளத்திலிருந்து இந்த படத்தை நீக்க விரும்புகிறீர்களா? </text>
+     <command> நீக்கு </command>
+     <cancel> ரத்து </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> தேர்ந்தெடுக்கப்பட்ட படங்களை நீக்கு </label>
+     <close> மூடு </close>
+     <text> வலைத்தளத்திலிருந்து தேர்ந்தெடுக்கப்பட்ட படங்களை நீக்க விரும்புகிறீர்களா? </text>
+     <command> நீக்கு </command>
+     <cancel> ரத்து </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> படத் தகவல் </label>
+     <close> மூடு </close>
+     <filename> கோப்பு பெயர் </filename>
+     <filesize> கோப்பு அளவு </filesize>
+     <date> பதிவேற்றும் தேதி </date>
+     <title>
+      <label> தலைப்பு </label>
+      <placeholder> பட தலைப்பு </placeholder>
+     </title>
+     <desc>
+      <label> விளக்கம் </label>
+      <placeholder> பட விளக்கம் </placeholder>
+     </desc>
+     <keyw>
+      <label> முக்கிய சொற்கள் </label>
+      <placeholder> முக்கிய சொற்கள் காற்புள்ளிகள் அல்லது புதிய வரிகளால் பிரிக்கப்பட்டன </placeholder>
+     </keyw>
+     <command> சேமி / புதுப்பித்தல் </command>
+     <cancel> ரத்து </cancel>
+    </img_info>
+    <result>
+     <label> பிழை </label>
+     <close> மூடு </close>
+     <text> </text>
+     <command> மூடு </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> பதிவேற்றக்கூடிய பட அமைப்புகள் </title>
+    <upload_limit>
+     <label> கேலரிக்கு அதிகபட்ச பட எண்ணிக்கை </label>
+     <placeholder> ஒரு கேலரிக்கு அதிகபட்ச பட எண்ணிக்கை </placeholder>
+     <validate> ஒரு கேலரிக்கு அதிகபட்ச பட எண்ணிக்கையை உள்ளிடவும் </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ஒற்றை கோப்பு அதிகபட்ச அளவு (எம்பி) </label>
+     <placeholder> ஒற்றை கோப்பு அதிகபட்ச அளவு (எம்பி) </placeholder>
+     <validate> உள்ளீட்டு ஒற்றை கோப்பு அதிகபட்ச அளவு (எம்பி) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> அனுமதிக்கப்பட்ட குறைந்தபட்ச தீர்மானம் </label>
+     <width>
+      <placeholder> குறைந்தபட்ச அகலம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </width>
+     <height>
+      <placeholder> குறைந்தபட்ச உயரம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> அனுமதிக்கப்பட்ட அதிகபட்ச தீர்மானம் </label>
+     <width>
+      <placeholder> அதிகபட்ச அகலம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </width>
+     <height>
+      <placeholder> அதிகபட்ச உயரம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> பட மாற்றம் </title>
+    <full_resolution>
+     <label> படம் முழு அளவு </label>
+     <width>
+      <placeholder> அதிகபட்ச அகலம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </width>
+     <height>
+      <placeholder> அதிகபட்ச உயரம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> சிறு அளவு </label>
+     <width>
+      <placeholder> கட்டைவிரல் அகலம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </width>
+     <height>
+      <placeholder> கட்டைவிரல் உயரம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> ஸ்லைடு அளவு </label>
+     <width>
+      <placeholder> ஸ்லைடு அகலம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </width>
+     <height>
+      <placeholder> ஸ்லைடு உயரம் </placeholder>
+      <validate> மதிப்பை உள்ளிடவும் </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg தரம் </label>
+    </jpg_quality>
+    <png_compress>
+     <label> பி.என்.ஜி அமுக்க </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> வாட்டர்மார்க் </title>
+    <label> வாட்டர்மார்க் பயன்படுத்தவும் </label>
+    <position> வாட்டர்மார்க் நிலை </position>
+    <image> வாட்டர்மார்க் படம் </image>
+    <set> வாட்டர்மார்க் அமைக்கவும் </set>
+    <browse> 1- வாட்டர்மார்க் கோப்பை உலாவுக </browse>
+    <adjust> 2- சட்டத்தின் படி படத்தை சரிசெய்யவும். </adjust>
+    <upload> 3- கோப்பை பதிவேற்றவும் </upload>
+    <uploading> பதிவேற்றுகிறது ... </uploading>
+    <uploaded> பதிவேற்றப்பட்டது. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> பக்கம் </page>
+   <first> முதல் பக்கம் </first>
+   <prev> முந்தைய பக்கம் </prev>
+   <next> அடுத்த பக்கம் </next>
+   <last> கடைசி பக்கம் </last>
+  </pagination>
+
+</lang>

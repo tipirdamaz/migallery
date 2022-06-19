@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> שפה </title>
+   <label> בחר שפה </label>
+  </lang>
+
+  <timezone>
+   <title>אזור זמן</title>
+   <label>בחר אזור זמן</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ניהול גלריה </gallery_man>
+   <gallery_list> רשימת גלריות </gallery_list>
+   <uploader> צור גלריה חדשה </uploader>
+   <back> חזרה </back>
+  </nav>
+
+  <install>
+ 
+   <title> הגדרת MIGallery </title>
+   <header> הגדרת MIGallery </header>
+
+   <img_direction>
+    <label> גלריה, תמונה וכיוון שקופיות </label>
+    <left> משמאל לימין </left>
+    <right> מימין לשמאל </right>
+   </img_direction>
+
+   <db_info>
+    <title> מידע על מסדי נתונים של MySQL </title>
+    <host>
+     <label> מארח DB </label>
+     <placeholder> מארח DB </placeholder>
+     <validate> קלט שם מארח DB </validate>
+    </host>
+    <user>
+     <label> שם משתמש של DB </label>
+     <placeholder> שם משתמש DB </placeholder>
+     <validate> קלט שם משתמש ב- DB </validate>
+    </user>
+    <pass>
+     <label> סיסמת DB </label>
+     <placeholder> סיסמת DB </placeholder>
+     <validate> קלט DB סיסמה </validate>
+    </pass>
+    <db>
+     <label> שם DB </label>
+     <placeholder> שם DB </placeholder>
+     <validate> קלט שם DB </validate>
+    </db>
+    <gal_table>
+     <label> שם טבלת הגלריה </label>
+     <placeholder> שם טבלת הגלריה </placeholder>
+     <validate> הזן את שם טבלת הגלריה </validate>
+    </gal_table>
+    <img_table>
+     <label> שם טבלת התמונות </label>
+     <placeholder> שם טבלת התמונות </placeholder>
+     <validate> הזן את שם טבלת התמונות </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>נתיבי קבצים של תוכן שניתן לכתוב</title>
+    <db_alert>
+     <![CDATA[
+    קבצים <b> תצורה </b>, <b> יומן שגיאות </b> ו <b> הגדרות </b> ייווצרו בספריה הבאה. אם ברצונך לשנות את שם הספרייה הזו, שנה את ההגדרה <b> DB_DIR </b> בקובץ <b> definitions0.php </b> ורענן דף זה. <br/> <br/> אם ברצונך לשנות שמות קובץ התצורה, קובץ יומן השגיאה וקובץ ההגדרות, שנה את ההגדרות של <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> ו- <b> DEFINITIONS_FILE </b> בקובץ definitions0.php. <br/> <br/> אם המערכת שלך מבוססת על יוניקס, הגדר את הרשאות הכתיבה באמצעות הפקודה הבאה: <br/> <b>%s</b> <br/> <br/> לפני שתתחיל בהתקנה, בצע וודא שהנתיב הבא קיים ויש לך הרשאות לכתוב לספריה:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    לפני תחילת ההתקנה, וודא שהספריות הבאות זמינות ושיש לך הרשאה לכתוב לספריות. <br/> <br/> אם אתה מתכנן להשתמש בתיקיות שאינן התיקיות הבאות, אם התיקיות אינן קיימות בדיסק, ראשית צור את התיקיות והגדר את הרשאות הכתיבה והתחל בהתקנה.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>קובץ תצורה, קובץ יומן שגיאות ונתיב קובץ הגדרה</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    הספריות הבאות נוצרות כאשר נשמרת הגלריה החדשה. <b>%d</b> מציין את מזהה הגלריה. ספריות אלה נוצרות בספריה <b> נתיב בסיס תמונה </b> שהוגדרו לעיל. בדוק אם פורמט הספריות מתאים.
+     ]]>
+    </img_dir_alert>
+    <config_alert>קובץ התצורה נוצר בעבר. לכן, אינך יכול להפעיל את ההתקנה. תחילה עליך למחוק את קובץ התצורה ואז להפעיל את ההתקנה.</config_alert>
+    <tmp_dir>
+     <label>תיקיית תמונה זמנית</label>
+     <placeholder>תיקיית תמונה זמנית</placeholder>
+     <validate>תיקיית תמונה זמנית</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>תיקייה זמנית של תמונות ממוזערות</label>
+     <placeholder>תיקייה זמנית של תמונות ממוזערות</placeholder>
+     <validate>תיקייה זמנית של תמונות ממוזערות</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>תיקייה זמנית של תמונה ממוזערת חתוכה</label>
+     <placeholder>תיקייה זמנית של תמונה ממוזערת חתוכה</placeholder>
+     <validate>תיקייה זמנית של תמונה ממוזערת חתוכה</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>תיקייה זמנית של הצגת שקופיות</label>
+     <placeholder>תיקייה זמנית של הצגת שקופיות</placeholder>
+     <validate>תיקייה זמנית של הצגת שקופיות</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>נתיב בסיס תמונה</label>
+     <placeholder>נתיב בסיס תמונה</placeholder>
+     <validate>נתיב בסיס תמונה</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>תיקיית תמונות</label>
+     <placeholder>תיקיית תמונות</placeholder>
+     <validate>תיקיית תמונות</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>תיקיית תמונות ממוזערות</label>
+     <placeholder>תיקיית תמונות ממוזערות</placeholder>
+     <validate>תיקיית תמונות ממוזערות</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>תיקיית תמונות ממוזערות גזומה</label>
+     <placeholder>תיקיית תמונות ממוזערות גזומה</placeholder>
+     <validate>תיקיית תמונות ממוזערות גזומה</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>תיקיה של תמונה בגודל שקופיות</label>
+     <placeholder>תיקיה של תמונה בגודל שקופיות</placeholder>
+     <validate>תיקיה של תמונה בגודל שקופיות</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>תיקיית קבצי XML</label>
+     <placeholder>תיקיית קבצי XML</placeholder>
+     <validate>תיקיית קבצי XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> מתקין. אנא המתן ... </installing>
+    <success> ההתקנה הושלמה בהצלחה. </success>
+    <error> לא ניתן היה להשלים את ההתקנה. </error>
+   </alert>
+  
+   <submit> התחל את ההתקנה </submit>
+   <submit_continue> המשך &lt;&lt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ניהול גלריה </title>
+   <header> ניהול גלריה </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> רשימת גלריות </title>
+   <header> רשימת גלריות </header>
+   <sort>
+    <asc> מיין מהראשון לאחרון </asc>
+    <desc> מיין מהאחרון לראשון </desc>
+   </sort>
+   <card>
+    <view>
+     <button> תצוגה </button>
+     <title> צפה בגלריה </title>
+    </view>
+    <delete>
+     <button> מחק </button>
+     <title> מחק גלריה </title>
+    </delete>
+    <edit>
+     <button> ערוך </button>
+     <title> ערוך גלריה </title>
+    </edit>
+    <images>תמונות</images>
+    <date>תַאֲרִיך</date>
+    <move> ניתן למיין את הגלריות על ידי גרירתם עם העכבר. </move>
+    <move_mobile>הקש והחזק פריט עם האצבע שלך והמתן לבחירתו. לאחר בחירת הפריט, תוכלו למיין את הפריטים באמצעות גרירה עם האצבע.</move_mobile>
+   </card>
+   <alert> לא נמצאה גלריה. </alert>
+   <modal>
+    <del_gallery>
+     <label> מחק גלריה </label>
+     <close> סגור </close>
+     <text> האם ברצונך למחוק גלריה זו מהאתר? </text>
+     <command> מחק </command>
+     <cancel> בטל </cancel>
+    </del_gallery>
+    <result>
+     <label> שגיאה </label>
+     <close> סגור </close>
+     <text> </text>
+     <command> סגור </command>
+    </result>
+   </modal>
+   <save_changes> שמור מיון גלריה </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> תצוגת גלריה </title>
+   <header> תצוגת גלריה </header>
+   <alert> לא נמצאה תמונה. </alert>
+   <share>שתף גלריה</share>
+   <filedate>תאריך העלאה</filedate>
+   <filesize>גודל הקובץ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>העתק ללוח</label>
+     <close>סגור</close>
+     <text>הקישור הועתק ללוח</text>
+     <command>עותק</command>
+     <cancel>סגור</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> צור גלריה חדשה </title>
+    <header> צור גלריה חדשה </header>
+   </new>
+   <edit>
+    <title> ערוך גלריה </title>
+    <header> ערוך גלריה </header>
+   </edit>
+   <gallery_info>
+    <title> מידע על גלריה </title>
+    <name>
+     <label> שם גלריה </label>
+     <placeholder> שם גלריה </placeholder>
+     <validate> שם גלריית קלט </validate>
+    </name>
+    <description>
+     <label> תיאור הגלריה </label>
+     <placeholder> תיאור הגלריה </placeholder>
+     <validate> תיאור גלריית קלט </validate>
+    </description>
+    <keywords>
+     <label> מילות מפתח לגלריה מופרדות באמצעות פסיקים או מעברי שורות </label>
+     <placeholder> מילות מפתח לגלריה מופרדות באמצעות פסיקים או מעברי שורות </placeholder>
+     <validate> הזן מילות מפתח לגלריה </validate>
+    </keywords>
+    <submit>
+     <save> שמור גלריה </save>
+     <update> עדכון גלריה </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> מדריך להעלאה </title>
+     <body>
+      <![CDATA[
+בחר תמונות מהמכשיר שלך באמצעות הלחצן <b> עיין בתמונות </b> והעלה לאתר באמצעות הלחצן <b> העלה תמונות </b> <br/> <b> JPG, PNG, GIF, BMP, WEBP </b> :תבניות תמונה נתמכות <br/> <b>%d x %d px</b> :רזולוציה מינימלית מותרת <br/> <b>%d x %d px</b> :רזולוציה מקסימלית מותרת <br/> <b>%d MB</b> :גודל מקסימלי של קובץ יחיד <br/> <b>%d</b> :ספירת תמונות לגלריה
+      ]]>
+     </body>
+    </info>
+    <select_all> בחר הכל </select_all>
+    <select_del> מחק את הנבחר </select_del>
+    <thumb>
+     <exist>
+      <delete> מחק תמונה שהועלתה מהאתר </delete>
+      <info> פרטי תמונה </info>
+     </exist>
+     <new>
+      <delete> מחק תמונה שהועלתה מהאתר </delete>
+      <cancel> בטל העלאת תמונה </cancel>
+      <info> פרטי תמונה </info>
+      <rotate> סובב תמונה </rotate>
+      <crop> חיתוך תמונה </crop>
+     </new>
+     <move> ניתן למיין את התמונות על ידי גרירתן עם העכבר. </move>
+     <move_mobile>הקש והחזק פריט עם האצבע שלך והמתן לבחירתו. לאחר בחירת הפריט, תוכלו למיין את הפריטים באמצעות גרירה עם האצבע.</move_mobile>
+    </thumb>
+    <browse> עיין בתמונות </browse>
+    <upload> העלה תמונות </upload>
+    <uploading> תמונות מועלות לאתר. אל תסגור את הדף עד לסיום ההעלאה. </uploading>
+    <uploaded> תמונות הועלו לאתר. </uploaded>
+    <error>שגיאות מסוימות התרחשו בעת העלאת קבצים לשרת.</error>
+    <save_changes> שמור שינויים בתמונה </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> יבול </crop>
+     <cancel> בטל </cancel>
+    </crop>
+    <del_up_img>
+     <label> מחק תמונה </label>
+     <close> סגור </close>
+     <text> האם ברצונך למחוק תמונה זו מהאתר? </text>
+     <command> מחק </command>
+     <cancel> בטל </cancel>
+    </del_up_img>
+    <del_img>
+     <label> מחק תמונה </label>
+     <close> סגור </close>
+     <text> האם ברצונך למחוק תמונה זו מהאתר? </text>
+     <command> מחק </command>
+     <cancel> בטל </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> מחק תמונות נבחרות </label>
+     <close> סגור </close>
+     <text> האם ברצונך למחוק את התמונות שנבחרו מהאתר? </text>
+     <command> מחק </command>
+     <cancel> בטל </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> פרטי תמונה </label>
+     <close> סגור </close>
+     <filename> שם קובץ </filename>
+     <filesize> גודל קובץ </filesize>
+     <date> תאריך העלאה </date>
+     <title>
+      <label> כותרת </label>
+      <placeholder> כותרת תמונה </placeholder>
+     </title>
+     <desc>
+      <label> תיאור </label>
+      <placeholder> תיאור תמונה </placeholder>
+     </desc>
+     <keyw>
+      <label> מילות מפתח </label>
+      <placeholder> מילות מפתח מופרדות באמצעות פסיקים או מעברי שורה </placeholder>
+     </keyw>
+     <command> שמור / עדכן </command>
+     <cancel> בטל </cancel>
+    </img_info>
+    <result>
+     <label> שגיאה </label>
+     <close> סגור </close>
+     <text> </text>
+     <command> סגור </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> הגדרות תמונה הניתנות להעלאה </title>
+    <upload_limit>
+     <label> מספר תמונות מקסימלי לכל גלריה </label>
+     <placeholder> מספר תמונות מקסימלי לכל גלריה </placeholder>
+     <validate> ספירת תמונות מקסימלית לכל גלריה </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> גודל מקסימלי של קובץ יחיד (MB) </label>
+     <placeholder> גודל מקסימלי של קובץ יחיד (MB) </placeholder>
+     <validate> הזן גודל קובץ מרבי (MB) (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> רזולוציה מינימלית מותרת </label>
+     <width>
+      <placeholder> רוחב מינימלי </placeholder>
+      <validate> הזן ערך </validate>
+     </width>
+     <height>
+      <placeholder> מינימום גובה </placeholder>
+      <validate> הזן ערך </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> רזולוציה מקסימלית מותרת </label>
+     <width>
+      <placeholder> רוחב מקסימלי </placeholder>
+      <validate> הזן ערך </validate>
+     </width>
+     <height>
+      <placeholder> מקסימום גובה </placeholder>
+      <validate> הזן ערך </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> שינוי תמונה </title>
+    <full_resolution>
+     <label> תמונה בגודל מלא </label>
+     <width>
+      <placeholder> רוחב מקסימלי </placeholder>
+      <validate> הזן ערך </validate>
+     </width>
+     <height>
+      <placeholder> מקסימום גובה </placeholder>
+      <validate> הזן ערך </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> גודל תמונה ממוזערת </label>
+     <width>
+      <placeholder> רוחב אגודל </placeholder>
+      <validate> הזן ערך </validate>
+     </width>
+     <height>
+      <placeholder> גובה אגודל </placeholder>
+      <validate> הזן ערך </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> גודל שקופית </label>
+     <width>
+      <placeholder> רוחב החלקה </placeholder>
+      <validate> הזן ערך </validate>
+     </width>
+     <height>
+      <placeholder> גובה החלקה </placeholder>
+      <validate> הזן ערך </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> איכות Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> דחיסת PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> סימן מים </title>
+    <label> השתמש בסימן מים </label>
+    <position> מיקום סימן מים </position>
+    <image> תמונה של סימן מים </image>
+    <set> הגדר סימן מים </set>
+    <browse> 1- עיין בקובץ תמונה של סימן מים </browse>
+    <adjust> 2- התאם את התמונה בהתאם למסגרת. </adjust>
+    <upload> 3- העלה קובץ נבחר </upload>
+    <uploading> מעלה ... </uploading>
+    <uploaded> הועלה. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> דף </page>
+   <first> דף ראשון </first>
+   <prev> העמוד הקודם </prev>
+   <next> העמוד הבא </next>
+   <last> דף אחרון </last>
+  </pagination>
+
+</lang>

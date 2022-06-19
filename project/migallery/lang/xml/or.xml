@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ଭାଷା </title>
+   <label> ଭାଷା ଚୟନ କରନ୍ତୁ | </label>
+  </lang>
+
+  <timezone>
+   <title>ସମୟ ମଣ୍ଡଳ</title>
+   <label>ଟାଇମଜୋନ ଚୟନ କରନ୍ତୁ |</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ଗ୍ୟାଲେରୀ ପରିଚାଳନା </gallery_man>
+   <gallery_list> ଗ୍ୟାଲେରୀ ତାଲିକା </gallery_list>
+   <uploader> ନୂତନ ଗ୍ୟାଲେରୀ ସୃଷ୍ଟି କରନ୍ତୁ </uploader>
+   <back> ପଛକୁ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery ସେଟଅପ୍ | </title>
+   <header> MIGallery ସେଟଅପ୍ | </header>
+
+   <img_direction>
+    <label> ଗ୍ୟାଲେରୀ, ପ୍ରତିଛବି ଏବଂ ସ୍ଲାଇଡ୍ ଦିଗ </label>
+    <left> ଡାହାଣରୁ ବାମ </left>
+    <right> ଡାହାଣରୁ ବାମକୁ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ଡାଟାବେସ୍ ସୂଚନା </title>
+    <host>
+     <label> ଡାଟାବେସ୍ ହୋଷ୍ଟନାମ </label>
+     <placeholder> ଡାଟାବେସ୍ ହୋଷ୍ଟନାମ </placeholder>
+     <validate> ଇନପୁଟ୍ ଡାଟାବେସ୍ ହୋଷ୍ଟନାମ </validate>
+    </host>
+    <user>
+     <label> ଡାଟାବେସ୍ ୟୁଜର୍ ନେମ୍ </label>
+     <placeholder> ଡାଟାବେସ୍ ବ୍ୟବହାରକାରୀ ନାମ </placeholder>
+     <validate> ଇନପୁଟ୍ ଡାଟାବେସ୍ ୟୁଜର୍ ନେମ୍ </validate>
+    </user>
+    <pass>
+     <label> ଡାଟାବେସ୍ ପାସୱାର୍ଡ </label>
+     <placeholder> ଡାଟାବେସ୍ ପାସୱାର୍ଡ </placeholder>
+     <validate> ଇନପୁଟ୍ ଡାଟାବେସ୍ ପାସୱାର୍ଡ </validate>
+    </pass>
+    <db>
+     <label> ଡାଟାବେସ୍ ନାମ </label>
+     <placeholder> ଡାଟାବେସ୍ ନାମ </placeholder>
+     <validate> ଇନପୁଟ୍ ଡାଟାବେସ୍ ନାମ </validate>
+    </db>
+    <gal_table>
+     <label> ଗ୍ୟାଲେରୀ ସାରଣୀ ନାମ </label>
+     <placeholder> ଗ୍ୟାଲେରୀ ସାରଣୀ ନାମ </placeholder>
+     <validate> ଗ୍ୟାଲେରୀ ସାରଣୀ ନାମ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+    </gal_table>
+    <img_table>
+     <label> ପ୍ରତିଛବି ସାରଣୀ ନାମ </label>
+     <placeholder> ପ୍ରତିଛବି ସାରଣୀ ନାମ </placeholder>
+     <validate> ପ୍ରତିଛବି ସାରଣୀ ନାମ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ଲେଖା ଯୋଗ୍ୟ ଗତିଶୀଳ ବିଷୟବସ୍ତୁ ପାଇଁ ଡିରେକ୍ଟୋରୀ |</title>
+    <db_alert>
+     <![CDATA[
+    ନିମ୍ନଲିଖିତ ଡିରେକ୍ଟୋରୀ ହେଉଛି ଯେଉଁଠାରେ <b> ବିନ୍ୟାସ </b>, <b> ତ୍ରୁଟି ଲଗ </b> ଏବଂ <b> ସଂଜ୍ଞା </b> ଫାଇଲଗୁଡ଼ିକ ସୃଷ୍ଟି ହେବ | ଯଦି ଆପଣ ଏହି ଡିରେକ୍ଟୋରୀର ନାମ ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହୁଁଛନ୍ତି, ତେବେ <b> definitions0.php </b> ଫାଇଲରେ <b> DB_DIR </b> ସଂଜ୍ଞା ପରିବର୍ତ୍ତନ କରନ୍ତୁ ଏବଂ ଏହି ପୃଷ୍ଠାକୁ ସତେଜ କରନ୍ତୁ |<br/><br/>ଯଦି ଆପଣ ବିନ୍ୟାସ ଫାଇଲ, ତ୍ରୁଟି ଲଗ ଫାଇଲ ଏବଂ ସଂଜ୍ଞା ଫାଇଲର ନାମ ପରିବର୍ତ୍ତନ କରିବାକୁ ଚାହୁଁଛନ୍ତି, ତେବେ definitions0.php ଫାଇଲରେ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ଏବଂ <b>DEFINITIONS_FILE</b> ର ସଂଜ୍ଞା ପରିବର୍ତ୍ତନ କରନ୍ତୁ |<br/><br/>ଯଦି ଆପଣଙ୍କର ସିଷ୍ଟମ୍ ୟୁନିକ୍ସ ଉପରେ ଆଧାରିତ, ନିମ୍ନଲିଖିତ ନିର୍ଦ୍ଦେଶ ସହିତ ଫୋଲ୍ଡରରେ ଲେଖିବା ଅନୁମତି ସେଟ୍ କରନ୍ତୁ:<br/><b>%s</b><br/><br/>ସଂସ୍ଥାପନ ଆରମ୍ଭ କରିବା ପୂର୍ବରୁ, ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ନିମ୍ନଲିଖିତ ପଥ ଅଛି ଏବଂ ଡିରେକ୍ଟୋରୀକୁ ଲେଖିବାକୁ ଆପଣଙ୍କର ଅନୁମତି ଅଛି:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ସଂସ୍ଥାପନ ଆରମ୍ଭ କରିବା ପୂର୍ବରୁ ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ନିମ୍ନଲିଖିତ ଡିରେକ୍ଟୋରୀଗୁଡ଼ିକ ଉପଲବ୍ଧ ଏବଂ ଡିରେକ୍ଟୋରୀକୁ ଲେଖିବାକୁ ଆପଣଙ୍କର ଅନୁମତି ଅଛି | <br/> <br/> ଯଦି ଆପଣ ନିମ୍ନଲିଖିତ ଡିରେକ୍ଟୋରୀ ବ୍ୟତୀତ ଅନ୍ୟ ଡିରେକ୍ଟୋରୀ ବ୍ୟବହାର କରିବାକୁ ଯାଉଛନ୍ତି, ଯଦି ଡିସ୍କରେ ଡିରେକ୍ଟୋରୀଗୁଡିକ ନାହିଁ, ତେବେ ପ୍ରଥମେ ଡିରେକ୍ଟୋରୀଗୁଡିକ ସୃଷ୍ଟି କରନ୍ତୁ ଏବଂ ଏହି ଡିରେକ୍ଟୋରୀଗୁଡ଼ିକର ଲେଖା ଅନୁମତି ସେଟ୍ କରନ୍ତୁ ଏବଂ ସ୍ଥାପନ ଆରମ୍ଭ କରନ୍ତୁ |
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ବିନ୍ୟାସ, ତ୍ରୁଟି ଲଗ୍ ଏବଂ ସଂଜ୍ଞା ଫାଇଲ୍ ପଥ |</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ନୂତନ ଗ୍ୟାଲେରୀ ସେଭ୍ ହେବାବେଳେ ନିମ୍ନଲିଖିତ ଡିରେକ୍ଟୋରୀଗୁଡ଼ିକ ସୃଷ୍ଟି ହୁଏ | <b>%d</b> ଗ୍ୟାଲେରୀ id କୁ ସୂଚିତ କରେ | ଏହି ଡିରେକ୍ଟୋରୀଗୁଡ଼ିକ ଉପରୋକ୍ତ <b> ପ୍ରତିଛବିଗୁଡ଼ିକର ମୁଖ୍ୟ ଡିରେକ୍ଟୋରୀ | </b> ଡିରେକ୍ଟୋରୀରେ ସୃଷ୍ଟି ହୋଇଛି | ନିଶ୍ଚିତ କରନ୍ତୁ ଯେ ଏହି ଡିରେକ୍ଟୋରୀଗୁଡ଼ିକର ଫର୍ମାଟ୍ ଉପଯୁକ୍ତ ଅଟେ |
+     ]]>
+    </img_dir_alert>
+    <config_alert>ବିନ୍ୟାସ ଫାଇଲ ପୂର୍ବରୁ ସୃଷ୍ଟି ହୋଇଛି | ତେଣୁ, ଆପଣ ସ୍ଥାପନକୁ ଚଲାଇ ପାରିବେ ନାହିଁ | ଆପଣ ପ୍ରଥମେ ବିନ୍ୟାସ ଫାଇଲକୁ ବିଲୋପ କରିବା ଉଚିତ ଏବଂ ତାପରେ ସଂସ୍ଥାପନ ଚଲାଇବା ଉଚିତ |</config_alert>
+    <tmp_dir>
+     <label>ପ୍ରତିଛବିର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ପ୍ରତିଛବିର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ପ୍ରତିଛବିର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ଥମ୍ବନେଲର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ଥମ୍ବନେଲର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ଥମ୍ବନେଲର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>କଟା ଥମ୍ବନେଲଗୁଡିକର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>କଟା ଥମ୍ବନେଲଗୁଡିକର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>କଟା ଥମ୍ବନେଲଗୁଡିକର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ର ଅସ୍ଥାୟୀ ଡିରେକ୍ଟୋରୀ |</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ପ୍ରତିଛବିଗୁଡ଼ିକର ମୁଖ୍ୟ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ପ୍ରତିଛବିଗୁଡ଼ିକର ମୁଖ୍ୟ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ପ୍ରତିଛବିଗୁଡ଼ିକର ମୁଖ୍ୟ ଡିରେକ୍ଟୋରୀ |</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ପ୍ରତିଛବି ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ପ୍ରତିଛବି ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ପ୍ରତିଛବି ଡିରେକ୍ଟୋରୀ |</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ଥମ୍ବନେଲ୍ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ଥମ୍ବନେଲ୍ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ଥମ୍ବନେଲ୍ ଡିରେକ୍ଟୋରୀ |</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ଟ୍ରିମ୍ ହୋଇଥିବା ଥମ୍ବନେଲଗୁଡ଼ିକର ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ଟ୍ରିମ୍ ହୋଇଥିବା ଥମ୍ବନେଲଗୁଡ଼ିକର ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ଟ୍ରିମ୍ ହୋଇଥିବା ଥମ୍ବନେଲଗୁଡ଼ିକର ଡିରେକ୍ଟୋରୀ |</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>ସ୍ଲାଇଡ୍ ଇମେଜ୍ ଡିରେକ୍ଟୋରୀ |</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ଫାଇଲ୍ ଡିରେକ୍ଟୋରୀ |</label>
+     <placeholder>XML ଫାଇଲ୍ ଡିରେକ୍ଟୋରୀ |</placeholder>
+     <validate>XML ଫାଇଲ୍ ଡିରେକ୍ଟୋରୀ |</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ସଂସ୍ଥାପନ ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ ... </installing>
+    <success> ସଂସ୍ଥାପନ ସଫଳତାର ସହିତ ସମାପ୍ତ ହେଲା | </success>
+    <error> ସଂସ୍ଥାପନ ସମାପ୍ତ ହୋଇପାରିଲା ନାହିଁ | </error>
+   </alert>
+  
+   <submit> ସ୍ଥାପନ ଆରମ୍ଭ </submit>
+   <submit_continue> ଜାରି ରଖନ୍ତୁ &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ଗ୍ୟାଲେରୀ ପରିଚାଳନା </title>
+   <header> ଗ୍ୟାଲେରୀ ପରିଚାଳନା </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ଗ୍ୟାଲେରୀ ତାଲିକା </title>
+   <header> ଗ୍ୟାଲେରୀ ତାଲିକା </header>
+   <sort>
+    <asc> ପ୍ରଥମରୁ ଶେଷ ପର୍ଯ୍ୟନ୍ତ </asc>
+    <desc> ଶେଷରୁ ପ୍ରଥମ ପର୍ଯ୍ୟନ୍ତ </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ଗ୍ୟାଲେରୀ ଦେଖନ୍ତୁ | </button>
+     <title> ଗ୍ୟାଲେରୀ ଦେଖନ୍ତୁ | </title>
+    </view>
+    <delete>
+     <button> ଡିଲିଟ୍ କରନ୍ତୁ </button>
+     <title> ଗ୍ୟାଲେରୀ ବିଲୋପ କରନ୍ତୁ </title>
+    </delete>
+    <edit>
+     <button> ସଂପାଦନ </button>
+     <title> ଗ୍ୟାଲେରୀ ସଂପାଦନ </title>
+    </edit>
+    <images>ପ୍ରତିଛବିଗୁଡିକ</images>
+    <date>ତାରିଖ</date>
+    <move> ଆପଣ ଗ୍ୟାଲେରୀଗୁଡ଼ିକୁ ମାଉସ୍ ସହିତ ଡ୍ରାଗ୍ କରି ସର୍ଟ କରିପାରିବେ | </move>
+    <move_mobile>ଆଙ୍ଗୁଠି ସହିତ ଏକ ଆଇଟମ୍ ଟ୍ୟାପ୍ ଏବଂ ଧରି ରଖ ଏବଂ ଏହାକୁ ହାଇଲାଇଟ୍ ହେବା ପାଇଁ ଅପେକ୍ଷା କର | ଏକ ଆଇଟମ୍ ବାଛିବା ପରେ, ଆଇଟମଗୁଡିକର ବ୍ୟବସ୍ଥା କରିବାକୁ ଆଙ୍ଗୁଠି ଟାଣ |</move_mobile>
+   </card>
+   <alert> କ gallery ଣସି ଗ୍ୟାଲେରୀ ମିଳିଲା ନାହିଁ | </alert>
+   <modal>
+    <del_gallery>
+     <label> ଗ୍ୟାଲେରୀ ବିଲୋପ କରନ୍ତୁ </label>
+     <close> ବନ୍ଦ </close>
+     <text> ଆପଣ ଏହି ଗ୍ୟାଲେରୀକୁ ସାଇଟରୁ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? </text>
+     <command> ଡିଲିଟ୍ </command>
+     <cancel> ବାତିଲ୍ </cancel>
+    </del_gallery>
+    <result>
+     <label> ତ୍ରୁଟି </label>
+     <close> ବନ୍ଦ </close>
+     <text> </text>
+     <command> ବନ୍ଦ </command>
+    </result>
+   </modal>
+   <save_changes> ଗ୍ୟାଲେରୀ ବ୍ୟବସ୍ଥା ସଞ୍ଚୟ କରନ୍ତୁ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ଗ୍ୟାଲେରୀ ଦର୍ଶନ </title>
+   <header> ଗ୍ୟାଲେରୀ ଦର୍ଶନ </header>
+   <alert> କ image ଣସି ପ୍ରତିଛବି ମିଳିଲା ନାହିଁ | </alert>
+   <share>ଗ୍ୟାଲେରୀ ଅଂଶୀଦାର କରନ୍ତୁ |</share>
+   <filedate>ତାରିଖ ଅପଲୋଡ୍ କରନ୍ତୁ |</filedate>
+   <filesize>ଫାଇଲ୍ ଆକାର |</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>କ୍ଲିପବୋର୍ଡକୁ କପି କରନ୍ତୁ |</label>
+     <close>ବନ୍ଦ</close>
+     <text>ଲିଙ୍କ୍ କ୍ଲିପବୋର୍ଡରେ କପି ହୋଇଛି |</text>
+     <command>କପି କରନ୍ତୁ |</command>
+     <cancel>ବନ୍ଦ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ନୂତନ ଗ୍ୟାଲେରୀ ସୃଷ୍ଟି କରନ୍ତୁ </title>
+    <header> ନୂତନ ଗ୍ୟାଲେରୀ ସୃଷ୍ଟି କରନ୍ତୁ </header>
+   </new>
+   <edit>
+    <title> ଗ୍ୟାଲେରୀ ସଂପାଦନ </title>
+    <header> ଗ୍ୟାଲେରୀ ସଂପାଦନ </header>
+   </edit>
+   <gallery_info>
+    <title> ଗ୍ୟାଲେରୀ ସୂଚନା </title>
+    <name>
+     <label> ଗ୍ୟାଲେରୀ ନାମ </label>
+     <placeholder> ଗ୍ୟାଲେରୀ ନାମ </placeholder>
+     <validate> ଇନପୁଟ୍ ଗ୍ୟାଲେରୀ ନାମ </validate>
+    </name>
+    <description>
+     <label> ଗ୍ୟାଲେରୀ ବର୍ଣ୍ଣନା </label>
+     <placeholder> ଗ୍ୟାଲେରୀ ବର୍ଣ୍ଣନା </placeholder>
+     <validate> ଇନପୁଟ୍ ଗ୍ୟାଲେରୀ ବର୍ଣ୍ଣନା </validate>
+    </description>
+    <keywords>
+     <label> ଗ୍ୟାଲେରୀ କୀ ଶବ୍ଦଗୁଡ଼ିକ କମା କିମ୍ବା ରେଖା ବ୍ରେକ୍ ଦ୍ୱାରା ପୃଥକ | </label>
+     <placeholder> ଗ୍ୟାଲେରୀ କୀ ଶବ୍ଦଗୁଡ଼ିକ କମା କିମ୍ବା ରେଖା ବ୍ରେକ୍ ଦ୍ୱାରା ପୃଥକ | </placeholder>
+     <validate> ଗ୍ୟାଲେରୀର କୀ ଶବ୍ଦ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+    </keywords>
+    <submit>
+     <save> ଗ୍ୟାଲେରୀ ସଞ୍ଚୟ କରନ୍ତୁ </save>
+     <update> ଗ୍ୟାଲେରୀ ଅପଡେଟ୍ </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> ପ୍ରତିଛବି ଅପଲୋଡର୍ ଗାଇଡ୍ </title>
+     <body>
+      <![CDATA[
+<b> ପ୍ରତିଛବିଗୁଡିକ ବ୍ରାଉଜ୍ କରନ୍ତୁ | </b> ବଟନ୍ ସହିତ ଆପଣଙ୍କର ଡିଭାଇସରୁ ପ୍ରତିଛବି ଚୟନ କରନ୍ତୁ ଏବଂ <b> ପ୍ରତିଛବିଗୁଡିକ ଅପଲୋଡ୍ କରନ୍ତୁ | </b> ବଟନ୍ ସହିତ ସାଇଟକୁ ଅପଲୋଡ୍ କରନ୍ତୁ | <br/> ସମର୍ଥିତ ପ୍ରତିଛବି ଫର୍ମାଟ୍: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ଅନୁମତିପ୍ରାପ୍ତ ସର୍ବନିମ୍ନ ରେଜୋଲୁସନ: <b>%d x %d px</b> <br/> ଅନୁମତି ପ୍ରାପ୍ତ ସର୍ବାଧିକ ରିଜୋଲ୍ୟୁସନ୍: <b>%d x %d px</b> <br/> ଏକକ ଫାଇଲ୍ ସର୍ବାଧିକ ଆକାର: <b>%d MB</b> <br/> ପ୍ରତି ଗ୍ୟାଲେରୀରେ ପ୍ରତିଛବି ଗଣନା: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> ସମସ୍ତ </select_all> ଚୟନ କରନ୍ତୁ
+    <select_del> ମନୋନୀତ ପ୍ରତିଛବିଗୁଡିକ ବିଲୋପ କରନ୍ତୁ </select_del>
+    <thumb>
+     <exist>
+      <delete> ସାଇଟ୍ ରୁ ଅପଲୋଡ୍ ହୋଇଥିବା ପ୍ରତିଛବି ଡିଲିଟ୍ କରନ୍ତୁ </delete>
+      <info> ପ୍ରତିଛବି ସୂଚନା </info>
+     </exist>
+     <new>
+      <delete> ସାଇଟରୁ ଅପଲୋଡ୍ ହୋଇଥିବା ପ୍ରତିଛବି ବିଲୋପ କରନ୍ତୁ </delete>
+      <cancel> ପ୍ରତିଛବି ଅପଲୋଡ୍ ବାତିଲ୍ କରନ୍ତୁ </cancel>
+      <info> ପ୍ରତିଛବି ସୂଚନା </info>
+      <rotate> ପ୍ରତିଛବି ଘୂର୍ଣ୍ଣନ କରନ୍ତୁ </rotate>
+      <crop> କ୍ରପ୍ ପ୍ରତିଛବି </crop>
+     </new>
+     <move> ଆପଣ ପ୍ରତିଛବିଗୁଡ଼ିକୁ ମାଉସ୍ ସହିତ ଡ୍ରାଗ୍ କରି ସର୍ଟ କରିପାରିବେ | </move>
+     <move_mobile>ଆଙ୍ଗୁଠି ସହିତ ଏକ ଆଇଟମ୍ ଟ୍ୟାପ୍ ଏବଂ ଧରି ରଖ ଏବଂ ଏହାକୁ ହାଇଲାଇଟ୍ ହେବା ପାଇଁ ଅପେକ୍ଷା କର | ଏକ ଆଇଟମ୍ ବାଛିବା ପରେ, ଆଇଟମଗୁଡିକର ବ୍ୟବସ୍ଥା କରିବାକୁ ଆଙ୍ଗୁଠି ଟାଣ |</move_mobile>
+    </thumb>
+    <browse> ପ୍ରତିଛବିଗୁଡିକ ବ୍ରାଉଜ୍ କରନ୍ତୁ | </browse>
+    <upload> ପ୍ରତିଛବିଗୁଡିକ ଅପଲୋଡ୍ କରନ୍ତୁ | </upload>
+    <uploading> ପ୍ରତିଛବିଗୁଡିକ ଅପଲୋଡ୍ ହେଉଛି |ସାଇଟକୁ ଉତ୍ସର୍ଗ କରନ୍ତୁ | ଅପଲୋଡ୍ ସମ୍ପୂର୍ଣ୍ଣ ନହେବା ପର୍ଯ୍ୟନ୍ତ ପୃଷ୍ଠା ବନ୍ଦ କରନ୍ତୁ ନାହିଁ | </uploading>
+    <uploaded> ପ୍ରତିଛବିଗୁଡିକ ସାଇଟରେ ଅପଲୋଡ୍ ହୋଇଛି | </uploaded>
+    <error>ସର୍ଭରରେ ଫାଇଲ ଅପଲୋଡ୍ କରିବା ସମୟରେ କିଛି ତ୍ରୁଟି ଘଟିଥିଲା |</error>
+    <save_changes> ପ୍ରତିଛବି ପରିବର୍ତ୍ତନଗୁଡିକ ସଂରକ୍ଷଣ କରନ୍ତୁ | </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> ଫସଲ </crop>
+     <cancel> ବାତିଲ୍ </cancel>
+    </crop>
+    <del_up_img>
+     <label> ପ୍ରତିଛବି ବିଲୋପ କରନ୍ତୁ </label>
+     <close> ବନ୍ଦ </close>
+     <text> ଆପଣ ଏହି ପ୍ରତିଛବିକୁ ୱେବସାଇଟରୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? </text>
+     <command> ଡିଲିଟ୍ </command>
+     <cancel> ବାତିଲ୍ </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ପ୍ରତିଛବି ବିଲୋପ କରନ୍ତୁ </label>
+     <close> ବନ୍ଦ </close>
+     <text> ଆପଣ ଏହି ପ୍ରତିଛବିକୁ ୱେବସାଇଟରୁ ଡିଲିଟ୍ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? </text>
+     <command> ଡିଲିଟ୍ </command>
+     <cancel> ବାତିଲ୍ </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ମନୋନୀତ ପ୍ରତିଛବିଗୁଡିକ ବିଲୋପ କରନ୍ତୁ </label>
+     <close> ବନ୍ଦ </close>
+     <text> ଆପଣ ୱେବସାଇଟରୁ ମନୋନୀତ ପ୍ରତିଛବିଗୁଡିକ ବିଲୋପ କରିବାକୁ ଚାହୁଁଛନ୍ତି କି? </text>
+     <command> ଡିଲିଟ୍ </command>
+     <cancel> ବାତିଲ୍ </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ପ୍ରତିଛବି ସୂଚନା </label>
+     <close> ବନ୍ଦ </close>
+     <filename> ଫାଇଲ ନାମ </filename>
+     <filesize> ଫାଇଲ୍ ଆକାର </filesize>
+     <date> ଅପଲୋଡ୍ ତାରିଖ | </date>
+     <title>
+      <label> ଆଖ୍ୟା </label>
+      <placeholder> ପ୍ରତିଛବି ଆଖ୍ୟା </placeholder>
+     </title>
+     <desc>
+      <label> ବର୍ଣ୍ଣନା </label>
+      <placeholder> ପ୍ରତିଛବି ବର୍ଣ୍ଣନା </placeholder>
+     </desc>
+     <keyw>
+      <label> ମୁଖ୍ୟ ଶବ୍ଦଗୁଡ଼ିକ | </label>
+      <placeholder> କମା କିମ୍ବା ରେଖା ବ୍ରେକ୍ ଦ୍ୱାରା ପୃଥକ କୀ ଶବ୍ଦ | </placeholder>
+     </keyw>
+     <command> ସେଭ୍ / ଅପଡେଟ୍ </command>
+     <cancel> ବାତିଲ୍ </cancel>
+    </img_info>
+    <result>
+     <label> ତ୍ରୁଟି </label>
+     <close> ବନ୍ଦ </close>
+     <text> </text>
+     <command> ବନ୍ଦ </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> ଅପଲୋଡ୍ ଯୋଗ୍ୟ ପ୍ରତିଛବି ସେଟିଂସମୂହ </title>
+    <upload_limit>
+     <label> ପ୍ରତ୍ୟେକ ଗ୍ୟାଲେରୀ ପାଇଁ ସର୍ବାଧିକ ପ୍ରତିଛବି ସଂଖ୍ୟା | </label>
+     <placeholder> ପ୍ରତ୍ୟେକ ଗ୍ୟାଲେରୀ ପାଇଁ ସର୍ବାଧିକ ପ୍ରତିଛବି ସଂଖ୍ୟା | </placeholder>
+     <validate> ଗ୍ୟାଲେରୀ ପ୍ରତି ସର୍ବାଧିକ ସଂଖ୍ୟକ ପ୍ରତିଛବି ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ଏକକ ଫାଇଲ୍ ସର୍ବାଧିକ ଆକାର (MB) </label>
+     <placeholder> ଏକକ ଫାଇଲ୍ ସର୍ବାଧିକ ଆକାର (MB) </placeholder>
+     <validate> ଇନପୁଟ୍ ଏକକ ଫାଇଲ୍ ସର୍ବାଧିକ ଆକାର (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> ଅନୁମତିପ୍ରାପ୍ତ ସର୍ବନିମ୍ନ ସଂକଳ୍ପ | </label>
+     <width>
+      <placeholder> ସର୍ବନିମ୍ନ ଓସାର </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </width>
+     <height>
+      <placeholder> ସର୍ବନିମ୍ନ ଉଚ୍ଚତା </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> ଅନୁମୋଦିତ ସର୍ବାଧିକ ରେଜୋଲୁସନ | </label>
+     <width>
+      <placeholder> ସର୍ବାଧିକ ଓସାର </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </width>
+     <height>
+      <placeholder> ସର୍ବାଧିକ ଉଚ୍ଚତା </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ପ୍ରତିଛବି ରୂପାନ୍ତର </title>
+    <full_resolution>
+     <label> ପ୍ରତିଛବି ପୂର୍ଣ୍ଣ ଆକାର </label>
+     <width>
+      <placeholder> ସର୍ବାଧିକ ଓସାର </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </width>
+     <height>
+      <placeholder> ସର୍ବାଧିକ ଉଚ୍ଚତା </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ଥମ୍ବନେଲ୍ ଆକାର </label>
+     <width>
+      <placeholder> ଥମ୍ବନେଲ ଓସାର | </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </width>
+     <height>
+      <placeholder> ଥମ୍ବନେଲ ଉଚ୍ଚତା | </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> ସ୍ଲାଇଡ୍ ସାଇଜ୍ </label>
+     <width>
+      <placeholder> ସ୍ଲାଇଡ୍ ଓସାର </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </width>
+     <height>
+      <placeholder> ସ୍ଲାଇଡ୍ ଉଚ୍ଚତା </placeholder>
+      <validate> ଏକ ମୂଲ୍ୟ ପ୍ରବେଶ କରନ୍ତୁ | </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg ଗୁଣବତ୍ତା </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG ସଙ୍କୋଚନ </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ୱାଟର ମାର୍କ </title>
+    <label> ୱାଟର ମାର୍କ ବ୍ୟବହାର କରନ୍ତୁ | </label>
+    <position> ୱାଟର ମାର୍କ ପୋଜିସନ୍ </position>
+    <image> ୱାଟରମାର୍କ ପ୍ରତିଛବି </image>
+    <set> ୱାଟର ମାର୍କ ସେଟ୍ କରନ୍ତୁ | </set>
+    <browse> 1- ୱାଟର ମାର୍କ ପ୍ରତିଛବି ଫାଇଲ୍ ବ୍ରାଉଜ୍ କରନ୍ତୁ </browse>
+    <adjust> 2- ଫ୍ରେମ୍ ଅନୁଯାୟୀ ପ୍ରତିଛବି ଆଡଜଷ୍ଟ୍ କରନ୍ତୁ | </adjust>
+    <upload> 3- ସିଲେକ୍ଟ ହୋଇଥିବା ଫାଇଲ୍ ଅପଲୋଡ୍ କରନ୍ତୁ </upload>
+    <uploading> ଅପଲୋଡ୍ ... </uploading>
+    <uploaded> ଅପଲୋଡ୍ ହୋଇଛି। </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> ପୃଷ୍ଠା </page>
+   <first> ପ୍ରଥମ ପୃଷ୍ଠା </first>
+   <prev> ପୂର୍ବ ପୃଷ୍ଠା </prev>
+   <next> ପରବର୍ତ୍ତୀ ପୃଷ୍ଠା </next>
+   <last> ଶେଷ ପୃଷ୍ଠା </last>
+  </pagination>
+
+</lang>

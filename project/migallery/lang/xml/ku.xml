@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Ziman </title>
+   <label> Ziman hilbijêrin </label>
+  </lang>
+
+  <timezone>
+   <title>Qada demê</title>
+   <label>Timezone hilbijêrin</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Birêvebiriya Galeriyê </gallery_man>
+   <gallery_list> Lîsteya Galeriyê </gallery_list>
+   <uploader> Galeriyek Nû çêbikin </uploader>
+   <back> Vegerîn </back>
+  </nav>
+
+  <install>
+ 
+   <title> Sazkirina MIGallery </title>
+   <header> Sazkirina MIGallery </header>
+
+   <img_direction>
+    <label> Galeri, wêne û slayt rêsandinan </label>
+    <left> ji Çep ber bi Rast </left>
+    <right> ji Rast ber bi Çep ve </right>
+   </img_direction>
+
+   <db_info>
+    <title> Agahdariya Databasa MySQL </title>
+    <host>
+     <label> Navê Mêvandarê Databasê </label>
+     <placeholder> Navê Mêvandarê Databasê </placeholder>
+     <validate> Têkevin Navê Mêvandarê Databasê </validate>
+    </host>
+    <user>
+     <label> Navê Bikarhênerê Databasê </label>
+     <placeholder> Navê Bikarhêner Databasê </placeholder>
+     <validate> Têkevin Navê Bikarhêner Databasa </validate>
+    </user>
+    <pass>
+     <label> Passwordîfreya Databasê </label>
+     <placeholder> Passwordîfreya Databasê </placeholder>
+     <validate> Têkevin Passwordîfreya Databasê </validate>
+    </pass>
+    <db>
+     <label> Navê Databasê </label>
+     <placeholder> Navê Databasê </placeholder>
+     <validate> Têkevin Navê Databasê </validate>
+    </db>
+    <gal_table>
+     <label> Navê Maseya Galeriyê </label>
+     <placeholder> Navê Maseya Galeriyê </placeholder>
+     <validate> Têkevin Navê Maseya Galeriyê </validate>
+    </gal_table>
+    <img_table>
+     <label> Navê Sifra Wêne </label>
+     <placeholder> Navê Sifra Wêne </placeholder>
+     <validate> Têkevin Navê Sifra Wêne </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Dîrektoriyên ku destûr tê dayîn ku pel werin nivîsandin</title>
+    <db_alert>
+     <![CDATA[
+    Pelên <b> veavakirina </b>, <b> têketina çewtiyê </b> û <b> pênasekirinan </b> di pelrêça jêrîn de têne afirandin. Heke hûn dixwazin navê vê pelrêçê biguherînin, di pelê <b> definitions0.php </b> de pênaseya <b> DB_DIR </b> biguherînin û vê rûpelê nû bikin.<br/><br/>Heke hûn dixwazin navê pelê vesazkirinê, navê pelê têketina xeletiyê, û navê pelê pênasînê biguherînin, nirxa danasînên <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b>, û <b>DEFINITIONS_FILE</b> di definitions0.php de biguherînin.<br/><br/>Heke pergala we li ser bingeha unix e, bi fermana jêrîn destûrên nivîsandinê saz bikin:<br/><b>%s</b><br/><br/>Berî destpêkirina sazkirinê, piştrast bikin ku riya jêrîn heye û destûrên we hene ku hûn ji bo pelrêçê binivîsin:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Berî destpêkirina sazkirinê, pê ewle bine ku peldankên jêrîn hene û destûra we heye ku hûn li peldankan binivîsin. <br/> <br/> Heke hûn ê ji bilî pelrêçên jêrîn peldankan bikar bînin, heke peldank li ser dîskê tune ne, pêşî pelrêçan biafirînin û destûrên nivîsandinê yên van derhêneran saz bikin û dest bi sazkirinê bikin.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Pelê Veavakirina, Pelê Têketina Çewtiyê û Peldanka Pelê ya Pênaseyan</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Dema ku galeriya nû hate tomarkirin peldankên jêrîn têne afirandin. <b>%d</b> nasnameya galeriyê nîşan dike. Van peldankan li ser peldanka <b> Peldanka Base ya wêneyan </b> li jor hatî diyar kirin têne afirandin. Kontrol bikin ka formatê van peldankan guncan e an na.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Pelê veavakirina berî hate afirandin. Ji ber vê yekê, hûn nikarin sazkirinê bimeşînin. Pêdivî ye ku hûn yekem pelê veavakirina jê bikin û dûv re sazkirinê bimeşînin.</config_alert>
+    <tmp_dir>
+     <label>Peldanka demkî ya pelên Wêne</label>
+     <placeholder>Peldanka demkî ya pelên Wêne</placeholder>
+     <validate>Peldanka demkî ya pelên Wêne</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Peldanka demkî ya pelên wêneyên Thumbnail</label>
+     <placeholder>Peldanka demkî ya pelên wêneyên Thumbnail</placeholder>
+     <validate>Peldanka demkî ya pelên wêneyên Thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Peldanka demkî ya pelên thumbnail ên birîn</label>
+     <placeholder>Peldanka demkî ya pelên thumbnail ên birîn</placeholder>
+     <validate>Peldanka demkî ya pelên thumbnail ên birîn</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Peldanka demkî ya pelên ên Slide Wêne</label>
+     <placeholder>Peldanka demkî ya pelên ên Slide Wêne</placeholder>
+     <validate>Peldanka demkî ya pelên ên Slide Wêne</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Peldanka Base ya wêneyan</label>
+     <placeholder>Peldanka Base ya wêneyan</placeholder>
+     <validate>Peldanka Base ya wêneyan</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Peldanka Wêne</label>
+     <placeholder>Peldanka Wêne</placeholder>
+     <validate>Peldanka Wêne</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Peldanka pelên thumbnail</label>
+     <placeholder>Peldanka pelên thumbnail</placeholder>
+     <validate>Peldanka pelên thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Peldanka pelên thumbnail ên birîn</label>
+     <placeholder>Peldanka pelên thumbnail ên birîn</placeholder>
+     <validate>Peldanka pelên thumbnail ên birîn</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Peldanka pelên ên Slide Wêne</label>
+     <placeholder>Peldanka pelên ên Slide Wêne</placeholder>
+     <validate>Peldanka pelên ên Slide Wêne</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Peldanka Pelên XML</label>
+     <placeholder>Peldanka Pelên XML</placeholder>
+     <validate>Peldanka Pelên XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Sazkirin. Ji kerema xwe bisekinin ... </installing>
+    <success> Sazkirin bi serfirazî qediya. </success>
+    <error> Sazkirin nehate qedandin. </error>
+   </alert>
+  
+   <submit> Sazkirinê Dest pê bikin </submit>
+   <submit_continue> Berdewam &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Birêvebiriya Galeriyê </title>
+   <header> Birêvebiriya Galeriyê </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lîsteya Galeriyê </title>
+   <header> Lîsteya Galeriyê </header>
+   <sort>
+    <asc> ji yekem heya paşîn </asc>
+    <desc> ji paşîn heya yekem </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Dîtin </button>
+     <title> Galeriyê Dîtin </title>
+    </view>
+    <delete>
+     <button> Paqij bike </button>
+     <title> Galeriyê Paqij bike </title>
+    </delete>
+    <edit>
+     <button> Biguherîne </button>
+     <title> Galeriyê Biguherînin </title>
+    </edit>
+    <images>wêne</images>
+    <date>Rojek</date>
+    <move> Hûn dikarin galeriyan bi mişkê bikişînin wan rêz bikin. </move>
+    <move_mobile>Tiştek bi tiliya xwe bixin û bigirin û li benda ronîkirina wê bimînin. Piştî hilbijartina hêmanek, tiliya xwe bikişînin da ku tiştan rêz bike.</move_mobile>
+   </card>
+   <alert> Galeriyek nehat dîtin. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galeriyê Jêbirin </label>
+     <close> nêzîkî </close>
+     <text> Ma hûn dixwazin vê galeriyê ji malperê paqij bikin? </text>
+     <command> Jêbirin </command>
+     <cancel> Bişûndekirin </cancel>
+    </del_gallery>
+    <result>
+     <label> Çewtî </label>
+     <close> nêzîkî </close>
+     <text> </text>
+     <command> Nêzîkî </command>
+    </result>
+   </modal>
+   <save_changes> Rêzkirina Galeriyê xilas bikin </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Dîmena Galeriyê </title>
+   <header> Dîmena Galeriyê </header>
+   <alert> Wêne nehat dîtin. </alert>
+   <share>Galeriyê parve bikin</share>
+   <filedate>Dîroka Upload</filedate>
+   <filesize>Mezinahiya Pelê</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopî bikî clipboard</label>
+     <close>nêzîkî</close>
+     <text>Zencîre ji bo clipboard hatî kopî kirin</text>
+     <command>Copy</command>
+     <cancel>Nêzîkî</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Galeriyek Nû çêbikin </title>
+    <header> Galeriyek Nû çêbikin </header>
+   </new>
+   <edit>
+    <title> Galeriyê Biguherînin </title>
+    <header> Galeriyê Biguherîne </header>
+   </edit>
+   <gallery_info>
+    <title> Agahdariya Galeriyê </title>
+    <name>
+     <label> Navê Galeriyê </label>
+     <placeholder> Navê Galeriyê </placeholder>
+     <validate> Navê Galeriya Input </validate>
+    </name>
+    <description>
+     <label> Danasîna Galeriyê </label>
+     <placeholder> Danasîna Galeriyê </placeholder>
+     <validate> Danasîna Galeriya Input </validate>
+    </description>
+    <keywords>
+     <label> Bêjeyên sereke yên galeriyê bi kumikên ji hev hatine veqetandin an qutbûnên rêzê </label>
+     <placeholder> Bêjeyên sereke yên galeriyê bi kumikên ji hev hatine veqetandin an qutbûnên rêzê </placeholder>
+     <validate> Bêjeyên sereke yên galeriyê </validate>
+    </keywords>
+    <submit>
+     <save> Galeriyê hilînin </save>
+     <update> Galeriya Nûvekirinê </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Rêbernameya Uploader </title>
+     <body>
+      <![CDATA[
+Bi bişkoja <b> Li Wêneyan Vegerin </b> wêneyan ji amûrê xwe hilbijêrin û bi bişkoja <b> Wêneyan Bişînin </b> ve li malperê bar bikin. <br/> Formatên Wêne yên Piştgirî: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Çareseriya Kêmtirîn a Destûr: <b>%d x %d px</b> <br/> Biryara Mezin a Destûr: <b>%d x %d px</b> <br/> Mezinahiya Zêdetir Pelika Tekane: <b>%d MB</b> <br/> Hejmara Wêne ya Galeriyê: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Hemî Hilbijêrin </select_all>
+    <select_del> Wêneyên Hilbijartî Jêbirin </select_del>
+    <thumb>
+     <exist>
+      <delete> Wêneyê Barkirî Ji Malperê Paqij Bike </delete>
+      <info> Agahdariya Wêne </info>
+     </exist>
+     <new>
+      <delete> Wêneyê Barkirî Ji Malperê Paqij Bike </delete>
+      <cancel> Betalkirina barkirina wêneyê </cancel>
+      <info> Agahdariya Wêne </info>
+      <rotate> Zivirandina Wêne </rotate>
+      <crop> Wêneyê Rake </crop>
+     </new>
+     <move> Hûn dikarin wêneyan bi mişkê bikişînin û rêz bikin. </move>
+     <move_mobile>Tiştek bi tiliya xwe bixin û bigirin û li benda ronîkirina wê bimînin. Piştî hilbijartina hêmanek, tiliya xwe bikişînin da ku tiştan rêz bike.</move_mobile>
+    </thumb>
+    <browse> Li Wêneyan Vegerin </browse>
+    <upload> Wêneyan Bişînin </upload>
+    <uploading> Wêne têne barkirinmalperê. Heya barkirina pelê neqebûl nekin. </uploading>
+    <uploaded> Wêne li ser malperê hatine barkirin. </uploaded>
+    <error>Dema ku pelên li servekê dihatin barkirin hin çewtî hebûn.</error>
+    <save_changes> Guherandinên Wêne Biparêzînin </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Crop </crop>
+     <cancel> Bişûndekirin </cancel>
+    </crop>
+    <del_up_img>
+     <label> Wêneyê Paqij Bike </label>
+     <close> nêzîkî </close>
+     <text> Ma hûn dixwazin vê wêneyê ji malperê paqij bikin? </text>
+     <command> Jêbirin </command>
+     <cancel> Bişûndekirin </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Wêneyê Paqij Bike </label>
+     <close> nêzîkî </close>
+     <text> Ma hûn dixwazin vê wêneyê ji malperê paqij bikin? </text>
+     <command> Jêbirin </command>
+     <cancel> Bişûndekirin </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Wêneyên Hilbijartî Jêbirin </label>
+     <close> nêzîkî </close>
+     <text> Ma hûn dixwazin wêneyên bijarte ji malperê paqij bikin? </text>
+     <command> Jêbirin </command>
+     <cancel> Bişûndekirin </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Agahdariya Wêne </label>
+     <close> nêzîkî </close>
+     <filename> Navê Dosya </filename>
+     <filesize> Mezinahiya Pelê </filesize>
+     <date> Dîroka Upload </date>
+     <title>
+      <label> Sernav </label>
+      <placeholder> Sernavê Wêne </placeholder>
+     </title>
+     <desc>
+      <label> Danasîn </label>
+      <placeholder> Danasîna Wêne </placeholder>
+     </desc>
+     <keyw>
+      <label> Bêjeyên sereke </label>
+      <placeholder> Bêjeyên sereke bi kumikên ji hev veqetiyan an qutbûnên rêzê </placeholder>
+     </keyw>
+     <command> Tomar bike / Nûve bike </command>
+     <cancel> Bişûndekirin </cancel>
+    </img_info>
+    <result>
+     <label> Çewtî </label>
+     <close> nêzîkî </close>
+     <text> </text>
+     <command> Nêzîkî </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Mîhengên Wêne yên Barkirinbar </title>
+    <upload_limit>
+     <label> Hejmara herî zêde ya wêneyên her galeriyê </label>
+     <placeholder> Hejmara herî zêde ya wêneyên her galeriyê </placeholder>
+     <validate> Di her galeriyê de hejmara herî zêde ya wêneyan binivîse </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Mezinahiya herî zêde ya pelê (MB) </label>
+     <placeholder> Mezinahiya herî zêde ya pelê (MB) </placeholder>
+     <validate> Mezinahiya herî zêde ya pelê (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Çareserkirina Wêne ya Kêmtirîn Destûr </label>
+     <width>
+      <placeholder> Firehiya Kêmtirîn </placeholder>
+      <validate> nirx binivîse </validate>
+     </width>
+     <height>
+      <placeholder> bilindahiya herî kêm </placeholder>
+      <validate> nirx binivîse </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Çareserkirina Wêne ya Zêdetir Destûr </label>
+     <width>
+      <placeholder> firehiya herî zêde </placeholder>
+      <validate> nirx binivîse </validate>
+     </width>
+     <height>
+      <placeholder> bilindahiya herî zêde </placeholder>
+      <validate> nirx binivîse </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Veguherîn Wêne </title>
+    <full_resolution>
+     <label> Wêneya Mezinahiya Tevahî </label>
+     <width>
+      <placeholder> firehiya herî zêde </placeholder>
+      <validate> nirx binivîse </validate>
+     </width>
+     <height>
+      <placeholder> bilindahiya herî zêde </placeholder>
+      <validate> nirx binivîse </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Mezinahiya Thumbnail </label>
+     <width>
+      <placeholder> Firehiya Thumb </placeholder>
+      <validate> nirx binivîse </validate>
+     </width>
+     <height>
+      <placeholder> Bilindahiya Thumb </placeholder>
+      <validate> nirx binivîse </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Mezinahiya Slide </label>
+     <width>
+      <placeholder> Firehiya Slide </placeholder>
+      <validate> nirx binivîse </validate>
+     </width>
+     <height>
+      <placeholder> Bilindahiya Slide </placeholder>
+      <validate> nirx binivîse </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kalîteya Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Compress </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Watermark bikar bînin </label>
+    <position> Helwesta Watermark </position>
+    <image> Wêneya Watermark </image>
+    <set> Watermark danîn </set>
+    <browse> 1- Di Pelê Wêne ya Watermark de bigerin </browse>
+    <adjust> 2- wêneyê li gorî çarçoveyê verast bikin. </adjust>
+    <upload> 3- Pelê Hilbijartî Bipelînin </upload>
+    <uploading> Daxistin ... </uploading>
+    <uploaded> Uploaded. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Rûpel </page>
+   <first> Rûpela Yekem </first>
+   <prev> Rûpela Berê </prev>
+   <next> Rûpelê Dûvre </next>
+   <last> Rûpela Dawîn </last>
+  </pagination>
+
+</lang>

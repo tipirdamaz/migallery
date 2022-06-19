@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Nyelv </title>
+   <label> Nyelv kiválasztása </label>
+  </lang>
+
+  <timezone>
+   <title>Időzóna</title>
+   <label>Válassza az Időzóna lehetőséget</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galériakezelés </gallery_man>
+   <gallery_list> Galéria lista </gallery_list>
+   <uploader> Új galéria létrehozása </uploader>
+   <back> Vissza </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Setup </title>
+   <header> MIGallery Setup </header>
+
+   <img_direction>
+    <label> Galéria, kép és a dia iránya </label>
+    <left> balról jobbra </left>
+    <right> jobbról balra </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL adatbázis-információk </title>
+    <host>
+     <label> DB gazdagép </label>
+     <placeholder> DB Host </placeholder>
+     <validate> Adja meg a DB gazdagép nevét </validate>
+    </host>
+    <user>
+     <label> DB felhasználói név </label>
+     <placeholder> DB felhasználónév </placeholder>
+     <validate> Adja meg a DB felhasználói nevet </validate>
+    </user>
+    <pass>
+     <label> DB jelszó </label>
+     <placeholder> DB jelszó </placeholder>
+     <validate> Adja meg a DB jelszavát </validate>
+    </pass>
+    <db>
+     <label> DB neve </label>
+     <placeholder> DB neve </placeholder>
+     <validate> Adja meg a DB nevét </validate>
+    </db>
+    <gal_table>
+     <label> Galéria táblázat neve </label>
+     <placeholder> Galéria táblázat neve </placeholder>
+     <validate> Írja be a Galéria táblázat nevét </validate>
+    </gal_table>
+    <img_table>
+     <label> Képtábla neve </label>
+     <placeholder> Képtábla neve </placeholder>
+     <validate> Írja be a képtábla neve </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Könyvtárak írható dinamikus tartalmakhoz</title>
+    <db_alert>
+     <![CDATA[
+    A <b> konfigurációs </b>, <b> hibanapló </b> és <b> definíciós </b> fájlok a következő könyvtárban jönnek létre. Ha meg akarja változtatni ennek a könyvtárnak a nevét, módosítsa a <b> DB_DIR </b> definíciót a <b> definitions0.php </b> fájlban, és frissítse ezt az oldalt.<br/><br/>Ha át akarja nevezni a konfigurációs fájlt, a hibanaplófájlt és a definíciós fájlt, módosítsa a <b>CONFIG_FILE</b>, az <b>ERROR_LOG_FILE</b> és a <b>DEFINITIONS_FILE</b> definíciókat a definitions0.php fájlban.<br/><br/>Ha a rendszer unix alapú, állítsa be az írási engedélyeket a következő paranccsal:<br/><b>%s</b><br/><br/>A telepítés megkezdése előtt ellenőrizze, hogy a következő elérési út létezik-e, és rendelkezik-e engedéllyel a könyvtárba történő íráshoz:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    A telepítés megkezdése előtt győződjön meg arról, hogy a következő könyvtárak elérhetőek-e, és hogy rendelkezik-e engedéllyel a könyvtárakba történő íráshoz. <br/> <br/> Ha a következő könyvtáraktól eltérő könyvtárakat fog használni, ha a könyvtárak nem léteznek a lemezen, akkor először hozza létre a könyvtárakat, állítsa be az írási engedélyeket és indítsa el a telepítést.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurációs fájl, Hibanapló fájl és Definíciók Fájlútvonal</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    A következő könyvtárak jönnek létre az új galéria mentésekor. <b>% d </b> a galéria azonosítóját jelzi. Ezek a könyvtárak a fent definiált <b> Képek alapkönyvtára </b> könyvtárban jönnek létre. Ellenőrizze, hogy a könyvtárak formátuma megfelelő-e.
+     ]]>
+    </img_dir_alert>
+    <config_alert>A konfigurációs fájl már korábban készült. Ezért nem tudja futtatni a telepítést. Először törölnie kell a konfigurációs fájlt, majd futtatnia kell a telepítést.</config_alert>
+    <tmp_dir>
+     <label>Képek ideiglenes útja</label>
+     <placeholder>Képek ideiglenes útja</placeholder>
+     <validate>Képek ideiglenes útja</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>A miniatűrök ideiglenes útja</label>
+     <placeholder>A miniatűrök ideiglenes útja</placeholder>
+     <validate>A miniatűrök ideiglenes útja</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>A levágott indexképek ideiglenes útja</label>
+     <placeholder>A levágott indexképek ideiglenes útja</placeholder>
+     <validate>A levágott indexképek ideiglenes útja</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Ideiglenes út a dia méretű képekhez</label>
+     <placeholder>Ideiglenes út a dia méretű képekhez</placeholder>
+     <validate>Ideiglenes út a dia méretű képekhez</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Képek alapkönyvtára</label>
+     <placeholder>Képek alapkönyvtára</placeholder>
+     <validate>Képek alapkönyvtára</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Képek útja</label>
+     <placeholder>Képek útja</placeholder>
+     <validate>Képek útja</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Miniatűr képek elérési útja</label>
+     <placeholder>Miniatűr képek elérési útja</placeholder>
+     <validate>Miniatűr képek elérési útja</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>A levágott indexképek elérési útja</label>
+     <placeholder>A levágott indexképek elérési útja</placeholder>
+     <validate>A levágott indexképek elérési útja</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Csúsztatható méretű képek elérési útja</label>
+     <placeholder>Csúsztatható méretű képek elérési útja</placeholder>
+     <validate>Csúsztatható méretű képek elérési útja</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML fájlok könyvtár</label>
+     <placeholder>XML fájlok könyvtár</placeholder>
+     <validate>XML fájlok könyvtár</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Telepítés. Kérjük, várjon ... </installing>
+    <success> A telepítés sikeresen befejeződött. </success>
+    <error> A telepítése nem fejeződött be. </error>
+   </alert>
+  
+   <submit> Telepítés indítása </submit>
+   <submit_continue> Folytatás &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galériakezelés </title>
+   <header> Galériakezelés </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galéria lista </title>
+   <header> Galéria lista </header>
+   <sort>
+    <asc> rendezés az elejétől az utolsóig </asc>
+    <desc> rendezés az utolsótól az elsőig </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Nézet </button>
+     <title> Galéria megtekintése </title>
+    </view>
+    <delete>
+     <button> Törlés </button>
+     <title> Galéria törlése </title>
+    </delete>
+    <edit>
+     <button> Szerkesztés </button>
+     <title> Galéria szerkesztése </title>
+    </edit>
+    <images>képek</images>
+    <date>Dátum</date>
+    <move> A galériákat az egérrel húzva rendezheti. </move>
+    <move_mobile>Érintsen meg és tartson egy elemet az ujjával, és várja meg, amíg ki lesz jelölve. Az elem kiválasztása után az ujjával húzva rendezheti az elemeket.</move_mobile>
+   </card>
+   <alert> Nem található galéria. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galéria törlése </label>
+     <close> bezárás </close>
+     <text> Törli a galériát a webhelyről? </text>
+     <command> Törlés </command>
+     <cancel> Cancel </cancel>
+    </del_gallery>
+    <result>
+     <label> hiba </label>
+     <close> bezárás </close>
+     <text> </text>
+     <command> Bezárás </command>
+    </result>
+   </modal>
+   <save_changes> Galéria rendezési sorrendjének mentése </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galéria nézet </title>
+   <header> Galéria megtekintése </header>
+   <alert> Nincs kép. </alert>
+   <share>Galéria megosztása</share>
+   <filedate>Feltöltés dátuma</filedate>
+   <filesize>Fájl méret</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Másolja a vágólapra</label>
+     <close>bezárás</close>
+     <text>A link a vágólapra másolva</text>
+     <command>Másolat</command>
+     <cancel>Bezárás</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Új galéria létrehozása </title>
+    <header> Új galéria létrehozása </header>
+   </new>
+   <edit>
+    <title> Galéria szerkesztése </title>
+    <header> Galéria szerkesztése </header>
+   </edit>
+   <gallery_info>
+    <title> Galéria információ </title>
+    <name>
+     <label> Galéria neve </label>
+     <placeholder> Galéria neve </placeholder>
+     <validate> Beviteli galéria neve </validate>
+    </name>
+    <description>
+     <label> Galéria leírása </label>
+     <placeholder> Galéria leírása </placeholder>
+     <validate> Beviteli galéria leírása </validate>
+    </description>
+    <keywords>
+     <label> A galéria kulcsszavai vesszővel vagy sortöréssel elválasztva </label>
+     <placeholder> A galéria kulcsszavai vesszővel vagy sortöréssel elválasztva </placeholder>
+     <validate> Írja be a Galéria Kulcsszavakat </validate>
+    </keywords>
+    <submit>
+     <save> Galéria mentése </save>
+     <update> Galéria frissítése </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Képfeltöltő útmutató </title>
+     <body>
+      <![CDATA[
+Válassza ki a képeket a készülékéről a <b> Képek tallózása </b> gombbal, és töltse fel a webhelyre a <b> Képek feltöltése </b> gombbal. <br/> Támogatott képformátumok: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Megengedett minimális felbontás: <b>%d x %d px</b> <br/> Megengedett maximális felbontás: <b>%d x %d px</b> <br/> Egyetlen fájl maximális mérete: <b>%d MB</b> <br/> Képek száma galériánként: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Összes kijelölése </select_all>
+    <select_del> Kiválasztott törlése </select_del>
+    <thumb>
+     <exist>
+      <delete> Feltöltött kép törlése a webhelyről </delete>
+      <info> Képinformációk </info>
+     </exist>
+     <new>
+      <delete> Feltöltött kép törlése a webhelyről </delete>
+      <cancel> Képfeltöltés megszakítása </cancel>
+      <info> Képinformációk </info>
+      <rotate> Kép elforgatása </rotate>
+      <crop> Kép kivágása </crop>
+     </new>
+     <move> A képeket az egérrel húzva rendezheti. </move>
+     <move_mobile>Érintsen meg és tartson egy elemet az ujjával, és várja meg, amíg ki lesz jelölve. Az elem kiválasztása után az ujjával húzva rendezheti az elemeket.</move_mobile>
+    </thumb>
+    <browse> Képek tallózása </browse>
+    <upload> Képek feltöltése </upload>
+    <uploading> Képek feltöltése a webhelyre történik. Ne zárja be az oldalt, amíg a feltöltés nem fejeződött be. </uploading>
+    <uploaded> Képeket feltöltöttünk a webhelyre. </uploaded>
+    <error>Néhány hiba történt a fájlok szerverre történő feltöltésekor.</error>
+    <save_changes> Képmódosítások mentése </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Vágás </crop>
+     <cancel> Cancel </cancel>
+    </crop>
+    <del_up_img>
+     <label> Kép törlése </label>
+     <close> bezárás </close>
+     <text> Törli ezt a képet a webhelyről? </text>
+     <command> Törlés </command>
+     <cancel> Cancel </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Kép törlése </label>
+     <close> bezárás </close>
+     <text> Törli ezt a képet a webhelyről? </text>
+     <command> Törlés </command>
+     <cancel> Cancel </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Kiválasztott képek törlése </label>
+     <close> bezárás </close>
+     <text> Törli a kijelölt képeket a webhelyről? </text>
+     <command> Törlés </command>
+     <cancel> Cancel </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Képinformáció </label>
+     <close> bezárás </close>
+     <filename> Fájlnév </filename>
+     <filesize> Fájlméret </filesize>
+     <date> Feltöltés dátuma </date>
+     <title>
+      <label> Cím </label>
+      <placeholder> Kép címe </placeholder>
+     </title>
+     <desc>
+      <label> Leírás </label>
+      <placeholder> Képleírás </placeholder>
+     </desc>
+     <keyw>
+      <label> Kulcsszavak </label>
+      <placeholder> A kulcsszavak vesszővel vagy sortöréssel elválasztva </placeholder>
+     </keyw>
+     <command> Mentés / frissítés </command>
+     <cancel> Cancel </cancel>
+    </img_info>
+    <result>
+     <label> hiba </label>
+     <close> bezárás </close>
+     <text> </text>
+     <command> Bezárás </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Feltölthető képbeállítások </title>
+    <upload_limit>
+     <label> Galériaenként maximális képszám </label>
+     <placeholder> Galériaenként maximális képszám </placeholder>
+     <validate> Adja meg a galériánként a képek maximális számát </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Egyetlen fájl maximális mérete (MB) </label>
+     <placeholder> Egyetlen fájl maximális mérete (MB) </placeholder>
+     <validate> Adjon meg egyetlen fájl maximális méretét (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Megengedett min felbontás </label>
+     <width>
+      <placeholder> Min. szélesség </placeholder>
+      <validate> adja meg az értéket </validate>
+     </width>
+     <height>
+      <placeholder> Min. magasság </placeholder>
+      <validate> adja meg az értéket </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Megengedett maximális felbontás </label>
+     <width>
+      <placeholder> Maximális szélesség </placeholder>
+      <validate> adja meg az értéket </validate>
+     </width>
+     <height>
+      <placeholder> Max Magasság </placeholder>
+      <validate> adja meg az értéket </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Képátalakítás </title>
+    <full_resolution>
+     <label> Kép teljes méretű </label>
+     <width>
+      <placeholder> Maximális szélesség </placeholder>
+      <validate> adja meg az értéket </validate>
+     </width>
+     <height>
+      <placeholder> Max Magasság </placeholder>
+      <validate> adja meg az értéket </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatűr méret </label>
+     <width>
+      <placeholder> Hüvelykujj szélessége </placeholder>
+      <validate> adja meg az értéket </validate>
+     </width>
+     <height>
+      <placeholder> Hüvelykujj magassága </placeholder>
+      <validate> adja meg az értéket </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Dia mérete </label>
+     <width>
+      <placeholder> Dia szélessége </placeholder>
+      <validate> adja meg az értéket </validate>
+     </width>
+     <height>
+      <placeholder> Dia magassága </placeholder>
+      <validate> adja meg az értéket </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG minőség </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG tömörítés </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vízjel </title>
+    <label> Vízjel használata </label>
+    <position> Vízjel pozíció </position>
+    <image> Vízjel kép </image>
+    <set> Vízjel beállítása </set>
+    <browse> 1- Tallózás a vízjel képfájlban </browse>
+    <adjust> 2- Állítsa be a képet a keretnek megfelelően. </adjust>
+    <upload> 3- A kijelölt fájl feltöltése </upload>
+    <uploading> Feltöltés ... </uploading>
+    <uploaded> feltöltve. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> oldal </page>
+   <first> Első oldal </first>
+   <prev> Előző oldal </prev>
+   <next> Következő oldal </next>
+   <last> Utolsó oldal </last>
+  </pagination>
+
+</lang>

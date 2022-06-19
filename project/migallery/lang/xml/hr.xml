@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Jezik </title>
+   <label> Odaberite jezik </label>
+  </lang>
+
+  <timezone>
+   <title>Vremenska zona</title>
+   <label>Odaberite Vremenska zona</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Upravljanje galerijom </gallery_man>
+   <gallery_list> Popis galerija </gallery_list>
+   <uploader> Stvori novu galeriju </uploader>
+   <back> Natrag </back>
+  </nav>
+
+  <install>
+ 
+   <title> Postavljanje MIGallery </title>
+   <header> Postavljanje MIGallery </header>
+
+   <img_direction>
+    <label> Galerija, smjer slike i smjer slajda </label>
+    <left> Lijevo nadesno </left>
+    <right> Desno nalijevo </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informacije o MySQL bazi podataka </title>
+    <host>
+     <label> DB domaćin </label>
+     <placeholder> DB domaćin </placeholder>
+     <validate> Unesite ime DB hosta </validate>
+    </host>
+    <user>
+     <label> DB korisničko ime </label>
+     <placeholder> DB korisničko ime </placeholder>
+     <validate> Unesite korisničko ime DB-a </validate>
+    </user>
+    <pass>
+     <label> DB lozinka </label>
+     <placeholder> DB lozinka </placeholder>
+     <validate> Unesite lozinku DB </validate>
+    </pass>
+    <db>
+     <label> DB ime </label>
+     <placeholder> DB ime </placeholder>
+     <validate> Unesite naziv DB-a </validate>
+    </db>
+    <gal_table>
+     <label> Naziv tablice galerije </label>
+     <placeholder> Naziv tablice galerije </placeholder>
+     <validate> Unesite naziv tablice galerije </validate>
+    </gal_table>
+    <img_table>
+     <label> Naziv tablice slike </label>
+     <placeholder> Naziv tablice slike </placeholder>
+     <validate> Unesite naziv tablice slike </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direktoriji dinamičkog sadržaja koji se mogu pisati</title>
+    <db_alert>
+     <![CDATA[
+    Slijedi direktorij u kojem će se stvoriti datoteke <b> konfiguracije </b>, <b> dnevnika pogrešaka </b> i <b> definicije </b>. Ako želite preimenovati ovaj direktorij, promijenite definiciju <b> DB_DIR </b> u datoteci <b> definitions0.php </b> i osvježite ovu stranicu. <br/> <br/> Ako želite preimenovati konfiguracijsku datoteku, datoteku dnevnika pogrešaka i datoteku definicija, promijenite definicije <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> i <b>DEFINITIONS_FILE</b> u datoteci definitions0.php. <br/> <br/> Ako se vaš sustav temelji na unixu, postavite dozvole za pisanje sljedećom naredbom: <br/> <b>%s</b> <br/> <br/> Prije početka instalacije, provjerite postoji li sljedeća staza i imate li dozvole za pisanje u direktorij:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Prije početka instalacije provjerite jesu li dostupni sljedeći direktoriji i imate li dopuštenje za pisanje u direktorije. <br/> <br/> Ako ćete koristiti direktorije koji nisu sljedeći, ako direktoriji ne postoje na disku, prvo stvorite direktorije i postavite dozvole za pisanje i započnite instalaciju.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Put datoteka do konfiguracije, dnevnika pogrešaka i definicija</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Sljedeći se direktoriji kreiraju kada se nova galerija spremi. <b>%d</b> označava ID galerije. Ovi se direktoriji kreiraju u gore definiranom direktoriju <b> Osnovni direktorij slika </b>. Provjerite je li format direktorija prikladan.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Datoteka za konfiguraciju već je kreirana. Stoga ne možete pokrenuti instalaciju. Prvo morate izbrisati konfiguracijsku datoteku, a zatim pokrenuti instalaciju.</config_alert>
+    <tmp_dir>
+     <label>Privremeni direktorij slika</label>
+     <placeholder>Privremeni direktorij slika</placeholder>
+     <validate>Privremeni direktorij slika</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Privremeni direktorij sličica</label>
+     <placeholder>Privremeni direktorij sličica</placeholder>
+     <validate>Privremeni direktorij sličica</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Privremeni direktorij izrezane sličice</label>
+     <placeholder>Privremeni direktorij izrezane sličice</placeholder>
+     <validate>Privremeni direktorij izrezane sličice</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Privremeni direktorij dijapozitiva</label>
+     <placeholder>Privremeni direktorij dijapozitiva</placeholder>
+     <validate>Privremeni direktorij dijapozitiva</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Osnovni direktorij slika</label>
+     <placeholder>Osnovni direktorij slika</placeholder>
+     <validate>Osnovni direktorij slika</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Imenik slika</label>
+     <placeholder>Imenik slika</placeholder>
+     <validate>Imenik slika</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direktorij minijatura</label>
+     <placeholder>Direktorij minijatura</placeholder>
+     <validate>Direktorij minijatura</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Obrezani direktorij minijatura</label>
+     <placeholder>Obrezani direktorij minijatura</placeholder>
+     <validate>Obrezani direktorij minijatura</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Klizni direktorij slika</label>
+     <placeholder>Klizni direktorij slika</placeholder>
+     <validate>Klizni direktorij slika</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML direktorij datoteka</label>
+     <placeholder>XML direktorij datoteka</placeholder>
+     <validate>XML direktorij datoteka</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instaliranje. Molimo pričekajte ... </installing>
+    <success> Instalacija je uspješno dovršena. </success>
+    <error> Instalacija se nije mogla dovršiti. </error>
+   </alert>
+  
+   <submit> Započni instalaciju </submit>
+   <submit_continue> Nastavi &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Upravljanje galerijom </title>
+   <header> Upravljanje galerijom </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Popis galerija </title>
+   <header> Popis galerija </header>
+   <sort>
+    <asc> razvrstavanje od prvog do zadnjeg </asc>
+    <desc> sortiraj od zadnjeg do prvog </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Prikaz </button>
+     <title> Pogledajte galeriju </title>
+    </view>
+    <delete>
+     <button> Izbriši </button>
+     <title> Izbriši galeriju </title>
+    </delete>
+    <edit>
+     <button> Uredi </button>
+     <title> Uredi galeriju </title>
+    </edit>
+    <images>slike</images>
+    <date>Datum</date>
+    <move> Galerije možete sortirati povlačenjem miša. </move>
+    <move_mobile>Dodirnite i držite stavku prstom i pričekajte da bude odabrana. Nakon odabira stavke, stavke možete sortirati povlačenjem prsta.</move_mobile>
+   </card>
+   <alert> Nije pronađena galerija. </alert>
+   <modal>
+    <del_gallery>
+     <label> Izbriši galeriju </label>
+     <close> zatvori </close>
+     <text> Želite li izbrisati ovu galeriju sa web mjesta? </text>
+     <command> Izbriši </command>
+     <cancel> Otkaži </cancel>
+    </del_gallery>
+    <result>
+     <label> Pogreška </label>
+     <close> zatvori </close>
+     <text> </text>
+     <command> Zatvori </command>
+    </result>
+   </modal>
+   <save_changes> Spremi sortiranje galerije </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Pogled galerije </title>
+   <header> Pogled galerije </header>
+   <alert> Nije pronađena slika. </alert>
+   <share>Podijeli galeriju</share>
+   <filedate>Datum prijenosa</filedate>
+   <filesize>Veličina datoteke</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopirati u međuspremnik</label>
+     <close>zatvori</close>
+     <text>Veza je kopirana u međuspremnik</text>
+     <command>Kopirati</command>
+     <cancel>Zatvori</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Izradite novu galeriju </title>
+    <header> Stvori novu galeriju </header>
+   </new>
+   <edit>
+    <title> Uredi galeriju </title>
+    <header> Uredi galeriju </header>
+   </edit>
+   <gallery_info>
+    <title> Informacije o galeriji </title>
+    <name>
+     <label> Naziv galerije </label>
+     <placeholder> Naziv galerije </placeholder>
+     <validate> Unesite naziv galerije </validate>
+    </name>
+    <description>
+     <label> Opis galerije </label>
+     <placeholder> Opis galerije </placeholder>
+     <validate> Ulaz Opis galerije </validate>
+    </description>
+    <keywords>
+     <label> Ključne riječi u galeriji odvojene zarezima ili prijelomima redaka </label>
+     <placeholder> Ključne riječi u galeriji odvojene zarezima ili prijelomima redaka </placeholder>
+     <validate> Unesite ključne riječi galerije </validate>
+    </keywords>
+    <submit>
+     <save> Spremi galeriju </save>
+     <update> Ažuriraj galeriju </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Vodič za prijenos </title>
+     <body>
+      <![CDATA[
+Odaberite slike sa svog uređaja gumbom <b> Pregledajte slike </b> i prenesite ih na web mjesto gumbom <b> Učitaj slike </b>. <br/> Podržani formati slika: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Dopuštena minimalna razlučivost: <b>%d x %d px</b> <br/> Dopuštena maksimalna razlučivost: <b>%d x %d px</b> <br/> Maksimalna veličina pojedinačne datoteke: <b>%d MB</b> <br/> Broj slika po galeriji: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Odaberite sve </select_all>
+    <select_del> Izbriši odabrano </select_del>
+    <thumb>
+     <exist>
+      <delete> Izbriši prenesenu sliku sa web mjesta </delete>
+      <info> Informacije o slici </info>
+     </exist>
+     <new>
+      <delete> Izbriši prenesenu sliku sa web mjesta </delete>
+      <cancel> Otkaži prijenos slike </cancel>
+      <info> Informacije o slici </info>
+      <rotate> Rotiranje slike </rotate>
+      <crop> Izreži sliku </crop>
+     </new>
+     <move> Slike možete razvrstati povlačenjem miša. </move>
+     <move_mobile>Dodirnite i držite stavku prstom i pričekajte da bude odabrana. Nakon odabira stavke, stavke možete sortirati povlačenjem prsta.</move_mobile>
+    </thumb>
+    <browse> Pregledajte slike </browse>
+    <upload> Učitaj slike </upload>
+    <uploading> Slike se prenose na web mjesto. Nemojte zatvarati stranicu dok prijenos nije završen. </uploading>
+    <uploaded> Slike su prenesene na web mjesto. </uploaded>
+    <error>Dogodile su se neke pogreške prilikom prijenosa datoteka na poslužitelj.</error>
+    <save_changes> Spremi promjene slika </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Izreži </crop>
+     <cancel> Otkaži </cancel>
+    </crop>
+    <del_up_img>
+     <label> Izbriši sliku </label>
+     <close> zatvori </close>
+     <text> Želite li izbrisati ovu sliku s web mjesta? </text>
+     <command> Izbriši </command>
+     <cancel> Otkaži </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Izbriši sliku </label>
+     <close> zatvori </close>
+     <text> Želite li izbrisati ovu sliku s web mjesta? </text>
+     <command> Izbriši </command>
+     <cancel> Otkaži </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Izbriši odabrane slike </label>
+     <close> zatvori </close>
+     <text> Želite li izbrisati odabrane slike s web mjesta? </text>
+     <command> Izbriši </command>
+     <cancel> Otkaži </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informacije o slici </label>
+     <close> zatvori </close>
+     <filename> Naziv datoteke </filename>
+     <filesize> Veličina datoteke </filesize>
+     <date> Datum prijenosa </date>
+     <title>
+      <label> Naslov </label>
+      <placeholder> Naslov slike </placeholder>
+     </title>
+     <desc>
+      <label> Opis </label>
+      <placeholder> Opis slike </placeholder>
+     </desc>
+     <keyw>
+      <label> Ključne riječi </label>
+      <placeholder> Ključne riječi odvojene zarezima ili prijelomima redaka </placeholder>
+     </keyw>
+     <command> Spremi / ažuriraj </command>
+     <cancel> Otkaži </cancel>
+    </img_info>
+    <result>
+     <label> Pogreška </label>
+     <close> zatvori </close>
+     <text> </text>
+     <command> Zatvori </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Uploadable Image Settings </title>
+    <upload_limit>
+     <label> Maksimalni broj slika po galeriji </label>
+     <placeholder> Maksimalan broj slika po galeriji </placeholder>
+     <validate> Unesite maksimalan broj slika po galeriji </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maksimalna veličina pojedinačne datoteke (MB) </label>
+     <placeholder> Maksimalna veličina pojedinačne datoteke (MB) </placeholder>
+     <validate> Unesite maksimalnu veličinu jedne datoteke (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Dopuštena minimalna razlučivost </label>
+     <width>
+      <placeholder> Min. širina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </width>
+     <height>
+      <placeholder> Min visina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Dopuštena maksimalna razlučivost </label>
+     <width>
+      <placeholder> Maksimalna širina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </width>
+     <height>
+      <placeholder> Maksimalna visina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformacija slike </title>
+    <full_resolution>
+     <label> Slika u punoj veličini </label>
+     <width>
+      <placeholder> Maksimalna širina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </width>
+     <height>
+      <placeholder> Maksimalna visina </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Veličina minijature </label>
+     <width>
+      <placeholder> Širina palca </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </width>
+     <height>
+      <placeholder> Visina palca </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Veličina slajda </label>
+     <width>
+      <placeholder> Širina slajda </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </width>
+     <height>
+      <placeholder> Visina klizanja </placeholder>
+      <validate> Unesite vrijednost </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg kvaliteta </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG komprimiranje </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vodeni žig </title>
+    <label> Upotrijebite vodeni žig </label>
+    <position> Položaj vodenog žiga </position>
+    <image> Slika vodenog žiga </image>
+    <set> Postavi vodeni žig </set>
+    <browse> 1- Pregledajte datoteku slike vodenog žiga </browse>
+    <adjust> 2- Prilagodite sliku prema okviru. </adjust>
+    <upload> 3- Prenesite odabranu datoteku </upload>
+    <uploading> Učitavanje ... </uploading>
+    <uploaded> Otpremljeno. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Stranica </page>
+   <first> Prva stranica </first>
+   <prev> Prethodna stranica </prev>
+   <next> Sljedeća stranica </next>
+   <last> Zadnja stranica </last>
+  </pagination>
+
+</lang>

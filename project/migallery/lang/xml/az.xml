@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>Dil</title>
+   <label>Dil Seçin</label>
+  </lang>
+
+  <timezone>
+   <title>Saat qurşağı</title>
+   <label>Saat qurşağını seçin</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>Qalereya İdarəetmə</gallery_man>
+   <gallery_list>Qalereya Siyahısı</gallery_list>
+   <uploader>Yeni Qalereya Oluştur</uploader>
+   <back>Geri</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGallery Qurmaq</title>
+   <header>MIGallery Qurmaq</header>
+
+   <img_direction>
+    <label>Qalereya, şəkil və slayd istiqaməti</label>
+    <left>Soldan Sağa</left>
+    <right>Sağdan Sola</right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL qiymətləndirmə bazası məlumatları </title>
+    <host>
+     <label>DB Host</label>
+     <placeholder>DB Host</placeholder>
+     <validate>DB Host adını daxil edin</validate>
+    </host>
+    <user>
+     <label>DB İstifadəçi Adı</label>
+     <placeholder>DB İstifadəçi Adı</placeholder>
+     <validate>Giriş DB istifadəçi adı</validate>
+    </user>
+    <pass>
+     <label>DB Şifrə</label>
+     <placeholder>DB Şifrə</placeholder>
+     <validate>DB şifrəsini daxil edin</validate>
+    </pass>
+    <db>
+     <label>DB Adı</label>
+     <placeholder>DB Adı</placeholder>
+     <validate>DB adını daxil edin</validate>
+    </db>
+    <gal_table>
+     <label> Qalereya Cədvəlinin adı </label>
+     <placeholder> Qalereya Cədvəlinin adı </placeholder>
+     <validate> Qalereya Cədvəlinin adını daxil edin </validate>
+    </gal_table>
+    <img_table>
+     <label> Şəkil Cədvəlinin Adı </label>
+     <placeholder> Şəkil Cədvəlinin Adı </placeholder>
+     <validate> Şəkil cədvəlinin adını daxil edin </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Yazıla bilən dinamik məzmun üçün fayl kataloqu</title>
+    <db_alert>
+     <![CDATA[
+    Aşağıdakı qovluq <b> konfiqurasiya </b>, <b> səhvlər jurnalı </b> və <b> təriflər </b> sənədlərinin yaradılacağı yerdir. Bu qovluğun adını dəyişdirmək istəyirsinizsə, <b> definitions0.php </b> sənədindəki <b> DB_DIR </b> tərifini dəyişdirin və bu səhifəni yeniləyin.<br/><br/>Konfiqurasiya adlarını, səhvlər jurnalını və təriflər sənədlərini dəyişdirmək istəyirsinizsə, <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> və <b>DEFINITIONS_FILE</b> təriflərini definitions0.php faylında dəyişdirin.<br/><br/>Sisteminiz unix əsaslıdırsa, aşağıdakı əmrlə yazma icazələrini təyin edin:<br/><b>%s</b><br/><br/>Quraşdırmaya başlamazdan əvvəl aşağıdakı yolun olduğundan və yazma icazələrinin olduğundan əmin olun.
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Quraşdırmaya başlamazdan əvvəl aşağıdakı qovluqların mövcudluğundan və qovluqlara yazmaq üçün icazənizin olduğundan əmin olun.<br/><br/>Aşağıdakı qovluqlardan başqa qovluqlardan istifadə edəcəksinizsə, qovluqlar diskdə yoxdursa, əvvəlcə qovluqları yaradın və yazma icazələrini təyin edin və quraşdırmaya başlayın.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfiqurasiya, Xəta Giriş və Təriflər Faylları Yolu</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Yeni qalereya saxlanıldıqda aşağıdakı qovluqlar yaradılır. <b>%d</b> qalereya kimliyini göstərir. Bu qovluqlar yuxarıda göstərilən <b> Şəkil faylları baza yolu </b> qovluğunda yaradılmışdır. Kataloqların formatının uyğun olub olmadığını yoxlayın.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfiqurasiya faylı əvvəllər yaradılmışdır. Buna görə də quraşdırma işləyə bilməzsiniz. Əvvəlcə konfiqurasiya sənədini silməlisiniz və sonra quraşdırma işlətməlisiniz.</config_alert>
+    <tmp_dir>
+     <label>Şəklin müvəqqəti fayl yolu</label>
+     <placeholder>Şəklin müvəqqəti fayl yolu</placeholder>
+     <validate>Şəklin müvəqqəti fayl yolu</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Kiçikliyin müvəqqəti fayl yolu</label>
+     <placeholder>Kiçikliyin müvəqqəti fayl yolu</placeholder>
+     <validate>Kiçikliyin müvəqqəti fayl yolu</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Kırpılmış kiçik şəkilin müvəqqəti fayl yolu</label>
+     <placeholder>Kırpılmış kiçik şəkilin müvəqqəti fayl yolu</placeholder>
+     <validate>Kırpılmış kiçik şəkilin müvəqqəti fayl yolu</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Slayd ölçülü görüntünün müvəqqəti fayl yolu</label>
+     <placeholder>Slayd ölçülü görüntünün müvəqqəti fayl yolu</placeholder>
+     <validate>Slayd ölçülü görüntünün müvəqqəti fayl yolu</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Şəkil faylları baza yolu</label>
+     <placeholder>Şəkil faylları baza yolu</placeholder>
+     <validate>Şəkil faylları baza yolu</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Şəkil Fayl Yolu</label>
+     <placeholder>Şəkil Fayl Yolu</placeholder>
+     <validate>Şəkil Fayl Yolu</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Kiçik şəkil yolu</label>
+     <placeholder>Kiçik şəkil yolu</placeholder>
+     <validate>Kiçik şəkil yolu</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kəsilmiş kiçik şəklin fayl yolu</label>
+     <placeholder>Kəsilmiş kiçik şəklin fayl yolu</placeholder>
+     <validate>Kəsilmiş kiçik şəklin fayl yolu</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slayd ölçülü şəkil faylı yolu</label>
+     <placeholder>Slayd ölçülü şəkil faylı yolu</placeholder>
+     <validate>Slayd ölçülü şəkil faylı yolu</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML Dosyaları Yolu</label>
+     <placeholder>XML Dosyaları Yolu</placeholder>
+     <validate>XML Dosyaları Yolu</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Quraşdırma. Xahiş edirəm gözləyin ... </installing>
+    <success> Quraşdırma uğurla başa çatdı. </success>
+    <error> Quraşdırma başa çatmadı. </error>
+   </alert>
+  
+   <submit> Quraşdırmaya başlayın </submit>
+   <submit_continue> Davam et &gt; &gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>Qalereya İdarəetmə</title>
+   <header>Qalereya İdarəetmə</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Qalereya siyahısı </title>
+   <header> Qalereya siyahısı </header>
+   <sort>
+    <asc> əvvəldən sona sırala </asc>
+    <desc> sondan birinciyə sırala </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Bax </button>
+     <title> Qalereya bax </title>
+    </view>
+    <delete>
+     <button> Sil </button>
+     <title> Qalereyanı sil </title>
+    </delete>
+    <edit>
+     <button> Düzenle </button>
+     <title> Qalereyanı Düzenle </title>
+    </edit>
+    <images>şəkillər</images>
+    <date>Tarix</date>
+    <move> Qalereyaları siçanla sürükləyərək sıralaya bilərsiniz. </move>
+    <move_mobile>Barmağınızla bir maddəyə toxunub saxlayın və seçilməsini gözləyin. Maddə seçildikdən sonra barmağınızla sürükləyərək maddəleri sıralaya bilərsiniz.</move_mobile>
+   </card>
+   <alert> Qalereya tapılmadı. </alert>
+   <modal>
+    <del_gallery>
+     <label> Qalereyanı Sil </label>
+     <close> yaxın </close>
+     <text> Bu qalereyanı saytdan silmək istəyirsiniz? </text>
+     <command> Sil </command>
+     <cancel> Ləğv et </cancel>
+    </del_gallery>
+    <result>
+     <label> Xəta </label>
+     <close> yaxın </close>
+     <text> </text>
+     <command> Yaxın </command>
+    </result>
+   </modal>
+   <save_changes> Qalereya Çeşidlənməsini Saxla </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Qalereya görünüşü </title>
+   <header> Qalereya görünüşü </header>
+   <alert> Heç bir şəkil tapılmadı. </alert>
+   <share>Qalereyanı paylaşın</share>
+   <filedate>Yükləmə tarixi</filedate>
+   <filesize>Fayl ölçüsü</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Panoya kopyalayın</label>
+     <close>yaxın</close>
+     <text>Bağlantı panoya kopyalandı</text>
+     <command>Kopyala</command>
+     <cancel>Yaxın</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Yeni Qalereya Oluşdur </title>
+    <header> Yeni Qalereya Oluşdur </header>
+   </new>
+   <edit>
+    <title> Qalereyanı redaktə et </title>
+    <header> Qalereyanı redaktə et </header>
+   </edit>
+   <gallery_info>
+    <title> Qalereya məlumatları </title>
+    <name>
+     <label> Qalereya Adı </label>
+     <placeholder> Qalereya Adı </placeholder>
+     <validate> Qalereya adını daxil edin </validate>
+    </name>
+    <description>
+     <label> Qalereya Açıklaması </label>
+     <placeholder> Qalereya Açıklaması </placeholder>
+     <validate> Qalereya Təsviri daxil edin </validate>
+    </description>
+    <keywords>
+     <label>Qalereya açar sözləri vergül və ya yeni xətlərlə ayrılır</label>
+     <placeholder>Qalereya açar sözləri vergül və ya yeni xətlərlə ayrılır</placeholder>
+     <validate>Qalereya açar sözlərini daxil edin</validate>
+    </keywords>
+    <submit>
+     <save> Qalereyanı saxla </save>
+     <update> Qalereyanı Yeniləyin </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Yükləyici Kılavuzu </title>
+     <body>
+      <![CDATA[
+<b> Şəkillərə Baxın </b> düyməsinə ilə cihazınızdan şəkillər seçin və <b> Şəkillər Yüklə </b> düyməsinə basaraq sayta yükləyin. <br/> Dəstəklənən Şəkil Formatları: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> İcazəli Minimum Çözünürlük: <b>%d x %d px</b> <br/> İcazəli Maksimum Çözünürlük: <b>%d x %d px</b> <br/> Tək Fayl Maksimum Ölçüsü: <b>%d MB</b> <br/> Qalereya başına şəkil sayı: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Hamısını Seç </select_all>
+    <select_del> Seçilmişləri sil </select_del>
+    <thumb>
+     <exist>
+      <delete> Saytdan Yüklənmiş Şəkli Sil </delete>
+      <info> Şəkil Məlumatı </info>
+     </exist>
+     <new>
+      <delete> Saytdan Yüklənmiş Şəkli Sil </delete>
+      <cancel> Şəkil yükləməsini ləğv et </cancel>
+      <info> Şəkil Məlumatı </info>
+      <rotate> Şəkli döndür </rotate>
+      <crop> Şəkli kəsmək </crop>
+     </new>
+     <move> Şəkilləri siçanla sürükləyərək sıralaya bilərsiniz. </move>
+     <move_mobile>Barmağınızla bir maddəyə toxunub saxlayın və seçilməsini gözləyin. Maddə seçildikdən sonra barmağınızla sürükləyərək maddəleri sıralaya bilərsiniz.</move_mobile>
+    </thumb>
+    <browse> Şəkillərə Baxın </browse>
+    <upload> Şəkillər Yüklə </upload>
+    <uploading> Şəkillər sayta yüklənir. Yükləmə bitənə qədər səhifəni bağlamayın. </uploading>
+    <uploaded> Şəkillər sayta yükləndi. </uploaded>
+    <error>Faylları serverə yükləyərkən bəzi səhvlər meydana gəldi.</error>
+    <save_changes> Şəkil Dəyişikliklərini Saxla </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kəsmək </crop>
+     <cancel> Ləğv et </cancel>
+    </crop>
+    <del_up_img>
+     <label> Şəkil sil </label>
+     <close> yaxın </close>
+     <text> Bu şəkli saytdan silmək istəyirsiniz? </text>
+     <command> Sil </command>
+     <cancel> Ləğv et </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Şəkli sil </label>
+     <close> yaxın </close>
+     <text> Bu şəkli saytdan silmək istəyirsiniz? </text>
+     <command> Sil </command>
+     <cancel> Ləğv et </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Seçilmiş Şəkillər Sil </label>
+     <close> yaxın </close>
+     <text> Seçilmiş şəkilləri saytdan silmək istəyirsiniz? </text>
+     <command> Sil </command>
+     <cancel> Ləğv et </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Şəkil Məlumatı </label>
+     <close> yaxın </close>
+     <filename> Fayl adı </filename>
+     <filesize> Fayl ölçüsü </filesize>
+     <date>Yükləmə tarixi</date>
+     <title>
+      <label> Başlıq </label>
+      <placeholder> Şəklin adı </placeholder>
+     </title>
+     <desc>
+      <label> Təsvir </label>
+      <placeholder> Şəkil Təsviri </placeholder>
+     </desc>
+     <keyw>
+      <label>Açar sözlər</label>
+      <placeholder>Açar sözlər vergül və ya yeni xətlərlə ayrılır</placeholder>
+     </keyw>
+     <command> Saxla / Yeniləyin </command>
+     <cancel> Ləğv et </cancel>
+    </img_info>
+    <result>
+     <label> Xəta </label>
+     <close> yaxın </close>
+     <text> </text>
+     <command> Close </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Yüklənə bilən şəkil parametrləri </title>
+    <upload_limit>
+     <label> Qalereya başına maksimum şəkil sayı </label>
+     <placeholder> Qalereya başına maksimum şəkil sayı </placeholder>
+     <validate> Hər qalereya üçün maksimum şəkil sayı daxil edin </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Tək Fayl Maksimum Ölçüsü (MB) </label>
+     <placeholder> Tək Fayl Maksimum Ölçüsü (MB) </placeholder>
+     <validate> Tək faylın maksimum ölçüsünü daxil edin (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> İcazəli Minimum Çözünürlük </label>
+     <width>
+      <placeholder> Minimum Genişlik </placeholder>
+      <validate> Dəyəri girin </validate>
+     </width>
+     <height>
+      <placeholder> Minimum Boy </placeholder>
+      <validate> Dəyəri girin </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> İcazəli Maksimum Çözünürlük </label>
+     <width>
+      <placeholder> Maksimum Genişlik </placeholder>
+      <validate> Dəyəri girin </validate>
+     </width>
+     <height>
+      <placeholder> Maksimum Hündürlük </placeholder>
+      <validate> Dəyəri girin </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Şəkil Transformatı </title>
+    <full_resolution>
+     <label> Tam şəkil ölçüsü </label>
+     <width>
+      <placeholder> Maksimum Genişlik </placeholder>
+      <validate> Dəyəri girin </validate>
+     </width>
+     <height>
+      <placeholder> Maksimum hündürlük </placeholder>
+      <validate> Dəyəri girin </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatür ölçüsü </label>
+     <width>
+      <placeholder> Miniatür genişlik </placeholder>
+      <validate> Dəyəri girin </validate>
+     </width>
+     <height>
+      <placeholder> Miniatür hündürlüyü </placeholder>
+      <validate> Dəyəri girin </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Slayd Ölçüsü </label>
+     <width>
+      <placeholder> Slayd genişlik </placeholder>
+      <validate> Dəyəri girin </validate>
+     </width>
+     <height>
+      <placeholder> Slayd hündürlüyü </placeholder>
+      <validate> Dəyəri girin </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Keyfiyyəti </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Kompres </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigran </title>
+    <label> Filigranı istifadə edin </label>
+    <position> Filigran mövqeyi </position>
+    <image> Filigran Resmi </image>
+    <set> Filigranı qurun </set>
+    <browse> 1- Filigran Şəkil Faylına baxın </browse>
+    <adjust> 2- Görüntüyü çərçivəyə uyğun olaraq tənzimləyin. </adjust>
+    <upload> 3- Seçilmiş Dosyayı Yükləyin </upload>
+    <uploading> Yüklənir ... </uploading>
+    <uploaded> Yüklənib. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Səhifə </page>
+   <first> İlk Səhifə </first>
+   <prev> Əvvəlki Səhifə </prev>
+   <next> Növbəti Səhifə </next>
+   <last> Son Səhifə </last>
+  </pagination>
+
+</lang>

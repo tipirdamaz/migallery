@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Sprache </title>
+   <label> Sprache auswählen </label>
+  </lang>
+
+  <timezone>
+   <title>Zeitzone</title>
+   <label>Wähle Zeitzone aus</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerieverwaltung </gallery_man>
+   <gallery_list> Galerieliste </gallery_list>
+   <uploader> Neue Galerie erstellen </uploader>
+   <back> Zurück </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Setup </title>
+   <header> MIGallery Setup </header>
+
+   <img_direction>
+    <label> Galerie-, Bild- und Folienrichtung </label>
+    <left> von links nach rechts </left>
+    <right> Von rechts nach links </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-Datenbankinformationen </title>
+    <host>
+     <label> Datenbank-Hostname </label>
+     <placeholder> Datenbank-Hostname </placeholder>
+     <validate> Geben Sie den Hostnamen der Datenbank ein </validate>
+    </host>
+    <user>
+     <label> Datenbankbenutzername </label>
+     <placeholder> Datenbankbenutzername </placeholder>
+     <validate> Geben Sie den Datenbank-Benutzernamen ein </validate>
+    </user>
+    <pass>
+     <label> Datenbankkennwort </label>
+     <placeholder> Datenbankkennwort </placeholder>
+     <validate> Geben Sie das Datenbankkennwort ein </validate>
+    </pass>
+    <db>
+     <label> Name der Datenbank </label>
+     <placeholder> Name der Datenbank </placeholder>
+     <validate> Geben Sie den Namen der Datenbank ein </validate>
+    </db>
+    <gal_table>
+     <label> Name der Galerietabelle </label>
+     <placeholder> Name der Galerietabelle </placeholder>
+     <validate> Geben Sie den Namen der Galerietabelle ein </validate>
+    </gal_table>
+    <img_table>
+     <label> Name der Bildtabelle </label>
+     <placeholder> Name der Bildtabelle </placeholder>
+     <validate> Geben Sie den Namen der Bildtabelle ein </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Verzeichnisse für beschreibbare dynamische Inhalte</title>
+    <db_alert>
+     <![CDATA[
+    Im folgenden Verzeichnis werden die Dateien <b> Konfiguration </b>, <b> Fehlerprotokoll </b> und <b> Definitionen </b> erstellt. Wenn Sie den Namen dieses Verzeichnisses ändern möchten, ändern Sie die Definition <b> DB_DIR </b> in der Datei <b> definition0.php </b> und aktualisieren Sie diese Seite. <br/> <br/> Wenn Sie Wenn Sie die Namen von Konfigurations-, Fehlerprotokoll- und Definitionsdateien ändern möchten, ändern Sie die Definitionen von <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> und <b>DEFINITIONS_FILE</b> in der Datei definition0.php. <br/> <br/> Wenn Ihr System Unix-basiert ist, legen Sie die Schreibberechtigungen mit fest Sie den folgenden Befehl ein: <br/> <b>%s</b> <br/> <br/> Stellen Sie vor dem Start der Installation sicher, dass der folgende Pfad vorhanden ist und Sie über Berechtigungen zum Schreiben in das Verzeichnis verfügen:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Stellen Sie vor dem Starten der Installation sicher, dass die folgenden Verzeichnisse vorhanden sind und dass Sie zum Schreiben in die Verzeichnisse berechtigt sind. <br/> <br/> Wenn Sie andere Verzeichnisse als die folgenden Verzeichnisse verwenden möchten, wenn die Verzeichnisse nicht vorhanden sind Erstellen Sie auf der Festplatte zuerst die Verzeichnisse, legen Sie die Schreibberechtigungen fest und starten Sie die Installation.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Pfad für Konfigurations-, Fehlerprotokoll- und Definitionsdateien</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Die folgenden Verzeichnisse werden erstellt, wenn die neue Galerie gespeichert wird. <b>%d</b> gibt die Galerie-ID an. Diese Verzeichnisse werden im oben definierten Verzeichnis <b> Bildbasispfad </b> erstellt. Überprüfen Sie, ob das Format der Verzeichnisse geeignet ist.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Die Konfigurationsdatei wurde bereits erstellt. Daher können Sie das Setup nicht ausführen. Sie müssen zuerst die Konfigurationsdatei löschen und dann das Setup ausführen.</config_alert>
+    <tmp_dir>
+     <label>Temporäres Bildverzeichnis</label>
+     <placeholder>Temporäres Bildverzeichnis</placeholder>
+     <validate>Temporäres Bildverzeichnis</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Temporäres Verzeichnis der Miniaturansichten</label>
+     <placeholder>Temporäres Verzeichnis der Miniaturansichten</placeholder>
+     <validate>Temporäres Verzeichnis der Miniaturansichten</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Temporäres Verzeichnis von beschnittenen Miniaturansichten</label>
+     <placeholder>Temporäres Verzeichnis von beschnittenen Miniaturansichten</placeholder>
+     <validate>Temporäres Verzeichnis von beschnittenen Miniaturansichten</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Temporäres Verzeichnis des Dia-Bildes</label>
+     <placeholder>Temporäres Verzeichnis des Dia-Bildes</placeholder>
+     <validate>Temporäres Verzeichnis des Dia-Bildes</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Bildbasispfad</label>
+     <placeholder>Bildbasispfad</placeholder>
+     <validate>Bildbasispfad</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Bildverzeichnis</label>
+     <placeholder>Bildverzeichnis</placeholder>
+     <validate>Bildverzeichnis</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Miniaturverzeichnis</label>
+     <placeholder>Miniaturverzeichnis</placeholder>
+     <validate>Miniaturverzeichnis</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Beschnittenes Miniaturbildverzeichnis</label>
+     <placeholder>Beschnittenes Miniaturbildverzeichnis</placeholder>
+     <validate>Beschnittenes Miniaturbildverzeichnis</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Verzeichnis der Foliengröße Bild</label>
+     <placeholder>Verzeichnis der Foliengröße Bild</placeholder>
+     <validate>Verzeichnis der Foliengröße Bild</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-Dateiverzeichnis</label>
+     <placeholder>XML-Dateiverzeichnis</placeholder>
+     <validate>XML-Dateiverzeichnis</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <install> Installation. Bitte warten Sie ... </install>
+    <success> Installation erfolgreich abgeschlossen. </success>
+    <error> Die Installation konnte nicht abgeschlossen werden. </error>
+   </alert>
+  
+   <submit> Installation starten </submit>
+   <submit_continue> Weiter &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerieverwaltung </title>
+   <header> Galerieverwaltung </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galerieliste </title>
+   <header> Galerieliste </header>
+   <sort>
+    <asc> vom ersten bis zum letzten </asc>
+    <desc> vom letzten zum ersten </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Ansicht </button>
+     <title> Galerie anzeigen </title>
+    </view>
+    <delete>
+     <button> Löschen </button>
+     <title> Galerie löschen </title>
+    </delete>
+    <edit>
+     <button> Bearbeiten </button>
+     <title> Galerie bearbeiten </title>
+    </edit>
+    <images>bilder</images>
+    <date>Datum</date>
+    <move> Sie können die Galerien sortieren, indem Sie sie mit der Maus ziehen. </move>
+    <move_mobile>Tippen und halten Sie ein Element mit Ihrem Finger und warten Sie, bis es ausgewählt ist. Nachdem das Element ausgewählt wurde, können Sie die Elemente durch Ziehen mit dem Finger sortieren.</move_mobile>
+   </card>
+   <alert> Keine Galerie gefunden. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galerie löschen </label>
+     <close> schließen </close>
+     <text> Möchten Sie diese Galerie von der Site löschen? </text>
+     <command> Löschen </command>
+     <cancel> Abbrechen </cancel>
+    </del_gallery>
+    <result>
+     <label> Fehler </label>
+     <close> schließen </close>
+     <text> </text>
+     <command> Schließen </command>
+    </result>
+   </modal>
+   <save_changes> Galerie-Sortierung speichern </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galerieansicht </title>
+   <header> Galerieansicht </header>
+   <alert> Kein Bild gefunden. </alert>
+   <share>Galerie teilen</share>
+   <filedate>Datum des Hochladens</filedate>
+   <filesize>Dateigröße</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>In die Zwischenablage kopieren</label>
+     <close>schließen</close>
+     <text>Link in die Zwischenablage kopiert</text>
+     <command>Kopieren</command>
+     <cancel>Schließen</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Neue Galerie erstellen </title>
+    <header> Neue Galerie erstellen </header>
+   </new>
+   <edit>
+    <title> Galerie bearbeiten </title>
+    <header> Galerie bearbeiten </header>
+   </edit>
+   <gallery_info>
+    <title> Galerie-Informationen </title>
+    <name>
+     <label> Name der Galerie </label>
+     <placeholder> Galerie-Name </placeholder>
+     <validate> Name der Eingabegalerie </validate>
+    </name>
+    <description>
+     <label> Galeriebeschreibung </label>
+     <placeholder> Galeriebeschreibung </placeholder>
+     <validate> Beschreibung der Eingabegalerie </validate>
+    </description>
+    <keywords>
+     <label> Galerie-Schlüsselwörter, die durch Kommas oder Zeilenumbrüche getrennt sind </label>
+     <placeholder> Galerie-Schlüsselwörter, die durch Kommas oder Zeilenumbrüche getrennt sind </placeholder>
+     <validate> Geben Sie Galerie-Schlüsselwörter ein </validate>
+    </keywords>
+    <submit>
+     <save> Galerie speichern </save>
+     <update> Galerie aktualisieren </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Uploader-Handbuch </title>
+     <body>
+      <![CDATA[
+Wählen Sie Bilder von Ihrem Gerät mit der Schaltfläche <b> Bilder durchsuchen </b> aus und laden Sie sie mit der Schaltfläche <b> Bilder hochladen </b> auf die Site hoch. <br/> Unterstützte Bildformate: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Zulässige Mindestauflösung: <b>%d x %d px</b> <br/> Zulässige Höchstauflösung: <b>%d x %d px</b> <br/> Einzelne Datei Maximale Größe: <b>%d MB</b> <br/> Bildanzahl pro Galerie: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Alle auswählen </select_all>
+    <select_del> Ausgewählte löschen </select_del>
+    <thumb>
+     <exist>
+      <delete> Hochgeladenes Bild von Site löschen </delete>
+      <info> Bildinfo </info>
+     </exist>
+     <new>
+      <delete> Hochgeladenes Bild von Site löschen </delete>
+      <cancel> Bild-Upload abbrechen </cancel>
+      <info> Bildinfo </info>
+      <rotate> Bild drehen </rotate>
+      <crop> Bild zuschneiden </crop>
+     </new>
+     <move> Sie können die Bilder sortieren, indem Sie sie mit der Maus ziehen. </move>
+     <move_mobile>Tippen und halten Sie ein Element mit Ihrem Finger und warten Sie, bis es ausgewählt ist. Nachdem das Element ausgewählt wurde, können Sie die Elemente durch Ziehen mit dem Finger sortieren.</move_mobile>
+    </thumb>
+    <browse> Bilder durchsuchen </browse>
+    <upload> Bilder hochladen </upload>
+    <uploading> Bilder werden auf die Site hochgeladen. Schließen Sie die Seite erst, wenn der Upload abgeschlossen ist. </uploading>
+    <uploaded> Bilder wurden auf die Site hochgeladen. </uploaded>
+    <error>Beim Hochladen von Dateien auf den Server sind einige Fehler aufgetreten.</error>
+    <save_changes> Bildänderungen speichern </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Zuschneiden </crop>
+     <cancel> Abbrechen </cancel>
+    </crop>
+    <del_up_img>
+     <label> Bild löschen </label>
+     <close> schließen </close>
+     <text> Möchten Sie dieses Bild von der Site löschen? </text>
+     <command> Löschen </command>
+     <cancel> Abbrechen </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Bild löschen </label>
+     <close> schließen </close>
+     <text> Möchten Sie dieses Bild von der Site löschen? </text>
+     <command> Löschen </command>
+     <cancel> Abbrechen </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ausgewählte Bilder löschen </label>
+     <close> schließen </close>
+     <text> Möchten Sie die ausgewählten Bilder von der Site löschen? </text>
+     <command> Löschen </command>
+     <cancel> Abbrechen </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Bildinfo </label>
+     <close> schließen </close>
+     <filename> Dateiname </filename>
+     <filesize> Dateigröße </filesize>
+     <date> Hochladedatum </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> Bildtitel </placeholder>
+     </title>
+     <desc>
+      <label> Beschreibung </label>
+      <placeholder> Bildbeschreibung </placeholder>
+     </desc>
+     <keyw>
+      <label> Schlüsselwörter </label>
+      <placeholder> Durch Kommas oder Zeilenumbrüche getrennte Schlüsselwörter </placeholder>
+     </keyw>
+     <command> Speichern / Aktualisieren </command>
+     <cancel> Abbrechen </cancel>
+    </img_info>
+    <result>
+     <label> Fehler </label>
+     <close> schließen </close>
+     <text> </text>
+     <command> Schließen </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Uploadable Image Settings </title>
+    <upload_limit>
+     <label> Maximale Anzahl von Bildern pro Galerie </label>
+     <placeholder> Maximale Anzahl von Bildern pro Galerie </placeholder>
+     <validate> Eingabe Maximale Anzahl von Bildern pro Galerie </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Max. Größe einer einzelnen Datei (MB) </label>
+     <placeholder> Max. Größe einer einzelnen Datei (MB) </placeholder>
+     <validate> Geben Sie die maximale Größe einer einzelnen Datei (MB) ein. </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Zulässige Mindestauflösung </label>
+     <width>
+      <placeholder> Min. Breite </placeholder>
+      <validate> Eingabewert </validate>
+     </width>
+     <height>
+      <placeholder> Min. Höhe </placeholder>
+      <validate> Eingabewert </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Zulässige maximale Auflösung </label>
+     <width>
+      <placeholder> Maximale Breite </placeholder>
+      <validate> Eingabewert </validate>
+     </width>
+     <height>
+      <placeholder> Maximale Höhe </placeholder>
+      <validate> Eingabewert </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Bildtransformation </title>
+    <full_resolution>
+     <label> Bild in voller Größe </label>
+     <width>
+      <placeholder> Maximale Breite </placeholder>
+      <validate> Eingabewert </validate>
+     </width>
+     <height>
+      <placeholder> Maximale Höhe </placeholder>
+      <validate> Eingabewert </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniaturbildgröße </label>
+     <width>
+      <placeholder> Daumenbreite </placeholder>
+      <validate> Eingabewert </validate>
+     </width>
+     <height>
+      <placeholder> Daumenhöhe </placeholder>
+      <validate> Eingabewert </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Foliengröße </label>
+     <width>
+      <placeholder> Folienbreite </placeholder>
+      <validate> Eingabewert </validate>
+     </width>
+     <height>
+      <placeholder> Schiebehöhe </placeholder>
+      <validate> Eingabewert </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG-Qualität </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Compress </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Wasserzeichen </title>
+    <label> Wasserzeichen verwenden </label>
+    <position> Wasserzeichenposition </position>
+    <image> Wasserzeichenbild </image>
+    <set> Wasserzeichen setzen </set>
+    <browse> 1- Durchsuchen Sie die Wasserzeichen-Bilddatei </browse>
+    <adjust> 2- Passen Sie das Bild entsprechend dem Rahmen an. </adjust>
+    <upload> 3- Ausgewählte Datei hochladen </upload>
+    <uploading> Hochladen ... </uploading>
+    <uploaded> Hochgeladen. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Seite </page>
+   <first> Erste Seite </first>
+   <prev> Vorherige Seite </prev>
+   <next> Nächste Seite </next>
+   <last> Letzte Seite </last>
+  </pagination>
+
+</lang>

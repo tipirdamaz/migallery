@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Ngôn ngữ </title>
+   <label> Chọn ngôn ngữ </label>
+  </lang>
+
+  <timezone>
+   <title>Múi giờ</title>
+   <label>Chọn múi giờ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Quản lý phòng trưng bày </gallery_man>
+   <gallery_list> Danh sách các phòng trưng bày </gallery_list>
+   <uploader> Tạo một triển lãm ảnh ảnh mới </uploader>
+   <back> Quay lại </back>
+  </nav>
+
+  <install>
+ 
+   <title> Thiết lập MIGallery </title>
+   <header> Thiết lập MIGallery </header>
+
+   <img_direction>
+    <label> Thư viện, hình ảnh và hướng trang chiếu </label>
+    <left> Trái sang phải </left>
+    <right> Phải sang trái </right>
+   </img_direction>
+
+   <db_info>
+    <title> Thông tin cơ sở dữ liệu MySQL </title>
+    <host>
+     <label> Tên máy chủ cơ sở dữ liệu </label>
+     <placeholder> Tên máy chủ cơ sở dữ liệu </placeholder>
+     <validate> Nhập tên máy chủ cơ sở dữ liệu </validate>
+    </host>
+    <user>
+     <label> Tên người dùng cơ sở dữ liệu </label>
+     <placeholder> Tên người dùng cơ sở dữ liệu </placeholder>
+     <validate> Tên người dùng của cơ sở dữ liệu đầu vào </validate>
+    </user>
+    <pass>
+     <label> Mật khẩu cơ sở dữ liệu </label>
+     <placeholder> Mật khẩu cơ sở dữ liệu </placeholder>
+     <validate> Mật khẩu cơ sở dữ liệu đầu vào </validate>
+    </pass>
+    <db>
+     <label> Tên cơ sở dữ liệu </label>
+     <placeholder> Tên cơ sở dữ liệu </placeholder>
+     <validate> Nhập tên cơ sở dữ liệu </validate>
+    </db>
+    <gal_table>
+     <label> Tên bảng Cơ sở dữ liệu Thư viện Hình ảnh </label>
+     <placeholder> Tên bảng Cơ sở dữ liệu Thư viện Hình ảnh </placeholder>
+     <validate> Nhập Tên Bảng Cơ sở dữ liệu Thư viện Hình ảnh </validate>
+    </gal_table>
+    <img_table>
+     <label> Tên bảng cơ sở dữ liệu hình ảnh </label>
+     <placeholder> Tên bảng cơ sở dữ liệu hình ảnh </placeholder>
+     <validate> Nhập tên bảng cơ sở dữ liệu hình ảnh </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Thư mục cho nội dung động có thể ghi</title>
+    <db_alert>
+     <![CDATA[
+    Thư mục sau là nơi các tệp <b> cấu hình </b>, <b> nhật ký lỗi </b> và <b> định nghĩa </b> sẽ được tạo. Nếu bạn muốn thay đổi tên của thư mục này, hãy thay đổi định nghĩa <b> DB_DIR </b> trong tệp <b> định definitions0.php </b> và làm mới trang này.<br/><br/>Nếu bạn muốn đổi tên tệp cấu hình, tệp nhật ký lỗi và tệp định nghĩa, hãy thay đổi định nghĩa của <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> và <b>DEFINITIONS_FILE</b> trong tệp definitions0.php.<br/><br/>Nếu hệ thống của bạn dựa trên unix, hãy đặt quyền ghi vào thư mục bằng lệnh sau:<br/><b>%s</b><br/><br/>Trước khi bắt đầu cài đặt, hãy đảm bảo rằng đường dẫn sau tồn tại và bạn có quyền ghi vào thư mục:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Trước khi bắt đầu cài đặt, hãy đảm bảo rằng các thư mục sau có sẵn và bạn có quyền ghi vào các thư mục. <br/> <br/> Nếu bạn định sử dụng các thư mục khác với các thư mục sau, nếu các thư mục không tồn tại trên đĩa, trước tiên hãy tạo các thư mục và đặt quyền ghi của các thư mục này và bắt đầu cài đặt.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Tệp cấu hình, tệp nhật ký lỗi và đường dẫn tệp định nghĩa</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Thư mục sau sẽ được tạo khi bộ sưu tập mới được lưu. <b>%d</b> chỉ định id bộ sưu tập. Thư mục này sẽ được tạo trong thư mục <b> Thư mục cơ sở hình ảnh </b> được chỉ định ở trên. Đảm bảo rằng định dạng của thư mục này phù hợp.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Tệp cấu hình đã được tạo trước đó. Do đó, bạn không thể chạy cài đặt. Trước tiên, bạn phải xóa tệp cấu hình và sau đó chạy cài đặt.</config_alert>
+    <tmp_dir>
+     <label>Thư mục tạm thời của hình ảnh</label>
+     <placeholder>Thư mục tạm thời của hình ảnh</placeholder>
+     <validate>Thư mục tạm thời của hình ảnh</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Thư mục tạm thời của hình thu nhỏ</label>
+     <placeholder>Thư mục tạm thời của hình thu nhỏ</placeholder>
+     <validate>Thư mục tạm thời của hình thu nhỏ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Thư mục tạm thời các hình thu nhỏ bị cắt</label>
+     <placeholder>Thư mục tạm thời các hình thu nhỏ bị cắt</placeholder>
+     <validate>Thư mục tạm thời các hình thu nhỏ bị cắt</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Thư mục tạm thời của hình ảnh trang trình bày</label>
+     <placeholder>Thư mục tạm thời của hình ảnh trang trình bày</placeholder>
+     <validate>Thư mục tạm thời của hình ảnh trang trình bày</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Thư mục cơ sở hình ảnh</label>
+     <placeholder>Thư mục cơ sở hình ảnh</placeholder>
+     <validate>Thư mục cơ sở hình ảnh</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Thư mục hình ảnh</label>
+     <placeholder>Thư mục hình ảnh</placeholder>
+     <validate>Thư mục hình ảnh</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Thư mục của hình thu nhỏ</label>
+     <placeholder>Thư mục của hình thu nhỏ</placeholder>
+     <validate>Thư mục của hình thu nhỏ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Thư mục các hình thu nhỏ bị cắt</label>
+     <placeholder>Thư mục các hình thu nhỏ bị cắt</placeholder>
+     <validate>Thư mục các hình thu nhỏ bị cắt</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Thư mục của hình ảnh trang trình bày</label>
+     <placeholder>Thư mục của hình ảnh trang trình bày</placeholder>
+     <validate>Thư mục của hình ảnh trang trình bày</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Thư mục tệp XML</label>
+     <placeholder>Thư mục tệp XML</placeholder>
+     <validate>Thư mục tệp XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Đang cài đặt. Vui lòng đợi ... </installing>
+    <success> Cài đặt hoàn tất thành công. </success>
+    <error> Không thể hoàn tất cài đặt. </error>
+   </alert>
+  
+   <submit> Bắt đầu cài đặt </submit>
+   <submit_continue> Tiếp tục &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Quản lý phòng trưng bày </title>
+   <header> Quản lý phòng trưng bày </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Danh sách các phòng trưng bày </title>
+   <header> Danh sách các phòng trưng bày </header>
+   <sort>
+    <asc> từ đầu đến cuối </asc>
+    <desc> từ cuối cùng đến đầu tiên </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Xem </button>
+     <title> Xem triển lãm ảnh </title>
+    </view>
+    <delete>
+     <button> Xóa </button>
+     <title> Xóa triển lãm ảnh </title>
+    </delete>
+    <edit>
+     <button> Chỉnh sửa </button>
+     <title> Chỉnh sửa Triển lãm ảnh </title>
+    </edit>
+    <images>hình ảnh</images>
+    <date>Ngày</date>
+    <move> Bạn có thể sắp xếp các phòng trưng bày bằng cách kéo chúng bằng chuột. </move>
+    <move_mobile>Chạm và giữ một mục bằng ngón tay của bạn và đợi nó được đánh dấu. Sau khi chọn một mục, hãy kéo ngón tay của bạn để sắp xếp các mục.</move_mobile>
+   </card>
+   <alert> Không tìm thấy phòng trưng bày nào. </alert>
+   <modal>
+    <del_gallery>
+     <label> Xóa triển lãm ảnh </label>
+     <close> đóng </close>
+     <text> Bạn có muốn xóa triển lãm ảnh này khỏi trang web không? </text>
+     <command> Xóa </command>
+     <cancel> Huỷ </cancel>
+    </del_gallery>
+    <result>
+     <label> Lỗi </label>
+     <close> đóng </close>
+     <text> </text>
+     <command> Đóng </command>
+    </result>
+   </modal>
+   <save_changes> Lưu sắp xếp phòng trưng bày </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Chế độ xem triển lãm ảnh </title>
+   <header> Chế độ xem triển lãm ảnh </header>
+   <alert> Không tìm thấy hình ảnh nào. </alert>
+   <share>Chia sẻ thư viện</share>
+   <filedate>Ngày tải lên</filedate>
+   <filesize>Kích thước tập tin</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Sao chép vào clipboard</label>
+     <close>đóng</close>
+     <text>Liên kết được sao chép vào khay nhớ tạm</text>
+     <command>Sao chép</command>
+     <cancel>Đóng</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Tạo một triển lãm ảnh ảnh mới </title>
+    <header> Tạo một triển lãm ảnh ảnh mới </header>
+   </new>
+   <edit>
+    <title> Chỉnh sửa Triển lãm ảnh </title>
+    <header> Chỉnh sửa Triển lãm ảnh </header>
+   </edit>
+   <gallery_info>
+    <title> Thông tin triển lãm ảnh </title>
+    <name>
+     <label> Tên triển lãm ảnh </label>
+     <placeholder> Tên triển lãm ảnh </placeholder>
+     <validate> Tên triển lãm ảnh đầu vào </validate>
+    </name>
+    <description>
+     <label> Mô tả Triển lãm ảnh </label>
+     <placeholder> Mô tả Triển lãm ảnh </placeholder>
+     <validate> Mô tả triển lãm ảnh đầu vào </validate>
+    </description>
+    <keywords>
+     <label> Các từ khóa thư viện được phân tách bằng dấu phẩy hoặc dấu ngắt dòng </label>
+     <placeholder> Các từ khóa thư viện được phân tách bằng dấu phẩy hoặc dấu ngắt dòng </placeholder>
+     <validate> Nhập từ khóa bộ sưu tập </validate>
+    </keywords>
+    <submit>
+     <save> Lưu Triển lãm ảnh </save>
+     <update> Cập nhật Triển lãm ảnh </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Hướng dẫn về Trình tải lên Hình ảnh </title>
+     <body>
+      <![CDATA[
+Chọn hình ảnh từ thiết bị của bạn bằng nút <b> Duyệt qua Hình ảnh </b> và tải lên trang web bằng nút <b> Tải ảnh lên </b>. <br/> Các Định dạng Hình ảnh được Hỗ trợ: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Độ phân giải tối thiểu cho phép: <b>%d x %d px</b> <br/> Độ phân giải tối đa cho phép: <b>%d x %d px</b> <br/> Kích thước tối đa của một tệp: <b>%d MB</b> <br/> Số lượng hình ảnh trên mỗi triển lãm ảnh: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Chọn tất cả </select_all>
+    <select_del> Xóa hình ảnh đã chọn </select_del>
+    <thumb>
+     <exist>
+      <delete> Xóa hình ảnh đã tải lên khỏi trang web </delete>
+      <info> Thông tin hình ảnh </info>
+     </exist>
+     <new>
+      <delete> Xóa hình ảnh đã tải lên khỏi trang web </delete>
+      <cancel> Hủy Tải lên Hình ảnh </cancel>
+      <info> Thông tin hình ảnh </info>
+      <rotate> Xoay hình ảnh này </rotate>
+      <crop> Cắt hình ảnh </crop>
+     </new>
+     <move> Bạn có thể sắp xếp hình ảnh bằng cách kéo chúng bằng chuột. </move>
+     <move_mobile>Chạm và giữ một mục bằng ngón tay của bạn và đợi nó được đánh dấu. Sau khi chọn một mục, hãy kéo ngón tay của bạn để sắp xếp các mục.</move_mobile>
+    </thumb>
+    <browse> Duyệt qua Hình ảnh </browse>
+    <upload> Tải ảnh lên </upload>
+    <uploading> Hình ảnh đang đượcđược tải lên trang web. Không đóng trang cho đến khi quá trình tải lên hoàn tất. </uploading>
+    <uploaded> Hình ảnh đã được tải lên trang web. </uploaded>
+    <error>Đã xảy ra một số lỗi khi tải tệp lên máy chủ.</error>
+    <save_changes> Lưu thay đổi hình ảnh </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Cắt </crop>
+     <cancel> Huỷ </cancel>
+    </crop>
+    <del_up_img>
+     <label> Xóa hình ảnh </label>
+     <close> đóng </close>
+     <text> Bạn có muốn xóa hình ảnh này khỏi trang web không? </text>
+     <command> Xóa </command>
+     <cancel> Huỷ </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Xóa hình ảnh </label>
+     <close> đóng </close>
+     <text> Bạn có muốn xóa hình ảnh này khỏi trang web không? </text>
+     <command> Xóa </command>
+     <cancel> Huỷ </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Xóa hình ảnh đã chọn </label>
+     <close> đóng </close>
+     <text> Bạn có muốn xóa các hình ảnh đã chọn khỏi trang web không? </text>
+     <command> Xóa </command>
+     <cancel> Huỷ </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Thông tin hình ảnh </label>
+     <close> đóng </close>
+     <filename> Tên tệp </filename>
+     <filesize> Kích thước tệp </filesize>
+     <date> Ngày tải lên </date>
+     <title>
+      <label> Tiêu đề </label>
+      <placeholder> Tiêu đề hình ảnh </placeholder>
+     </title>
+     <desc>
+      <label> Mô tả </label>
+      <placeholder> Mô tả hình ảnh </placeholder>
+     </desc>
+     <keyw>
+      <label> Từ khóa </label>
+      <placeholder> Các từ khóa được phân tách bằng dấu phẩy hoặc ngắt dòng </placeholder>
+     </keyw>
+     <command> Lưu / Cập nhật </command>
+     <cancel> Huỷ </cancel>
+    </img_info>
+    <result>
+     <label> Lỗi </label>
+     <close> đóng </close>
+     <text> </text>
+     <command> Đóng </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Cài đặt hình ảnh có thể tải lên </title>
+    <upload_limit>
+     <label> Số lượng hình ảnh tối đa trên mỗi triển lãm ảnh </label>
+     <placeholder> Số lượng hình ảnh tối đa trên mỗi triển lãm ảnh </placeholder>
+     <validate> Nhập số lượng hình ảnh tối đa cho mỗi thư viện </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Kích thước tối đa của một tệp (MB) </label>
+     <placeholder> Kích thước tối đa của một tệp (MB) </placeholder>
+     <validate> Đầu vào Kích thước tối đa của một tệp duy nhất (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Độ phân giải tối thiểu cho phép </label>
+     <width>
+      <placeholder> Chiều rộng tối thiểu </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </width>
+     <height>
+      <placeholder> Chiều cao tối thiểu </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Độ phân giải tối đa cho phép </label>
+     <width>
+      <placeholder> Chiều rộng tối đa </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </width>
+     <height>
+      <placeholder> Chiều cao tối đa </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Chuyển đổi hình ảnh </title>
+    <full_resolution>
+     <label> Kích thước đầy đủ của hình ảnh </label>
+     <width>
+      <placeholder> Chiều rộng tối đa </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </width>
+     <height>
+      <placeholder> Chiều cao tối đa </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Kích thước hình thu nhỏ </label>
+     <width>
+      <placeholder> Chiều rộng ngón tay cái </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </width>
+     <height>
+      <placeholder> Chiều cao ngón tay cái </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Kích thước trang trình bày </label>
+     <width>
+      <placeholder> Chiều rộng của Trang trình bày </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </width>
+     <height>
+      <placeholder> Chiều cao của trang trình bày </placeholder>
+      <validate> Giá trị đầu vào </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Chất lượng Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Nén PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Chữ ký ảnh </title>
+    <label> Sử dụng Chữ ký ảnh </label>
+    <position> Vị trí Chữ ký ảnh </position>
+    <image> Chữ ký ảnh </image>
+    <set> Đặt Chữ ký ảnh </set>
+    <browse> 1- Duyệt Tệp Hình ảnh Chữ ký ảnh </browse>
+    <adjust> 2- Điều chỉnh hình ảnh theo khung hình. </adjust>
+    <upload> 3- Tải lên tệp đã chọn </upload>
+    <uploading> Đang tải lên ... </uploading>
+    <uploaded> Đã tải lên. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Trang </page>
+   <first> Trang đầu tiên </first>
+   <prev> Trang trước </prev>
+   <next> Trang tiếp theo </next>
+   <last> Trang cuối cùng </last>
+  </pagination>
+
+</lang>

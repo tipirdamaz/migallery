@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>Language</title>
+   <label>Select Language</label>
+  </lang>
+
+  <timezone>
+   <title>Timezone</title>
+   <label>Select Timezone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>Gallery Management</gallery_man>
+   <gallery_list>Gallery List</gallery_list>
+   <uploader>Create New Gallery</uploader>
+   <back>Back</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGallery Setup</title>
+   <header>MIGallery Setup</header>
+
+   <img_direction>
+    <label>Gallery, image and slide orientation</label>
+    <left>Left to Right</left>
+    <right>Right to Left</right>
+   </img_direction>
+
+   <db_info>
+    <title>MySQL Database Information</title>
+    <host>
+     <label>Database Hostname</label>
+     <placeholder>Database Hostname</placeholder>
+     <validate>Input Database Hostname</validate>
+    </host>
+    <user>
+     <label>Database UserName</label>
+     <placeholder>Database UserName</placeholder>
+     <validate>Input Database UserName</validate>
+    </user>
+    <pass>
+     <label>Database Password</label>
+     <placeholder>Database Password</placeholder>
+     <validate>Input Database Password</validate>
+    </pass>
+    <db>
+     <label>Database Name</label>
+     <placeholder>Database Name</placeholder>
+     <validate>Input Database Name</validate>
+    </db>
+    <gal_table>
+     <label>Gallery Table Name</label>
+     <placeholder>Gallery Table Name</placeholder>
+     <validate>Input Gallery Table Name</validate>
+    </gal_table>
+    <img_table>
+     <label>Image Table Name</label>
+     <placeholder>Image Table Name</placeholder>
+     <validate>Input Image Table Name</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Directories for writable dynamic contents</title>
+    <db_alert>
+     <![CDATA[
+    The following directory is where the <b>configuration</b>, <b>error log</b> and <b>definitions</b> files will be created. If you want to change the name of this directory, change the <b>DB_DIR</b> definition in the <b>definitions0.php</b> file and refresh this page.<br/><br/>If you want to change the names of configuration, error log and definitions files, change the definitions of <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> and <b>DEFINITIONS_FILE</b> in the definitions0.php file.<br/><br/>If your system is based on unix, set the write permissions to the folder with the following command:<br/><b>%s</b><br/><br/>Before starting the installation, make sure the following path exist and you have permissions to write to directory:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Before starting the installation, make sure that the following directories are available and that you have permission to write to the directories. <br/> <br/> If you are going to use directories other than the following directories, if the directories do not exist on the disk, first create the directories and set the write permissions of these directories and start the installation.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Configuration, Error Log and Definitions Files Path</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    The following directories will be created when the new gallery is saved. <b>%d</b> indicates the gallery id. These directories will be created on the <b>Image Base Directory</b> directory defined above. Make sure the format of these directories is appropriate.
+     ]]>
+    </img_dir_alert>
+    <config_alert>The configuration file has been created before. Therefore, you cannot run the installation. You must first delete the configuration file and then run the installation.</config_alert>
+    <tmp_dir>
+     <label>Temporary Directory of Image</label>
+     <placeholder>Temporary Directory of Image</placeholder>
+     <validate>Input Temporary Directory of Image</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Temporary Directory of Thumbnail</label>
+     <placeholder>Temporary Directory of Thumbnail</placeholder>
+     <validate>Input Temporary Directory of Thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Temporary Directory of Cropped Thumbnail</label>
+     <placeholder>Temporary Directory of Cropped Thumbnail</placeholder>
+     <validate>Input Temporary Directory of Cropped Thumbnail</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Temporary Directory of Slide Image</label>
+     <placeholder>Temporary Directory of Slide Image</placeholder>
+     <validate>Input Temporary Directory of Slide Image</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Image Base Directory</label>
+     <placeholder>Image Base Directory</placeholder>
+     <validate>Input Image Base Directory</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Image Directory</label>
+     <placeholder>Image Directory</placeholder>
+     <validate>Input Image Directory</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Thumbnail Directory</label>
+     <placeholder>Thumbnail Directory</placeholder>
+     <validate>Input Thumbnail Directory</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Cropped Thumbnail Directory</label>
+     <placeholder>Cropped Thumbnail Directory</placeholder>
+     <validate>Input Cropped Thumbnail Directory</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slide Image Directory</label>
+     <placeholder>Slide Image Directory</placeholder>
+     <validate>Input Slide Image Directory</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML File Directory</label>
+     <placeholder>XML File Directory</placeholder>
+     <validate>Input XML File Directory</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>Installing. Please wait...</installing>
+    <success>Installation completed successfully.</success>
+    <error>Installation could not be completed.</error>
+   </alert>
+  	
+   <submit>Start Installation</submit>
+   <submit_continue>Continue &gt;&gt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>Gallery Management</title>
+   <header>Gallery Management</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>Gallery List</title>
+   <header>Gallery List</header>
+   <sort>
+    <asc>sort from first to last</asc>
+    <desc>sort from last to first</desc>
+   </sort>
+   <card>
+    <view>
+     <button>View</button>
+     <title>View Gallery</title>
+    </view>
+    <delete>
+     <button>Delete</button>
+     <title>Delete Gallery</title>
+    </delete>
+    <edit>
+     <button>Edit</button>
+     <title>Edit Gallery</title>
+    </edit>
+    <images>images</images>
+    <date>Date</date>
+    <move>You can sort the galleries by dragging them with the mouse.</move>
+    <move_mobile>Tap and hold an item with your finger and wait for it to be highlighted. After selecting an item, drag your finger to sort the items.</move_mobile>
+   </card>
+   <alert>No galleries found.</alert>
+   <modal>
+    <del_gallery>
+     <label>Delete Gallery</label>
+     <close>close</close>
+     <text>Do you want to delete this gallery from the site?</text>
+     <command>Delete</command>
+     <cancel>Cancel</cancel>
+    </del_gallery>
+    <result>
+     <label>Error</label>
+     <close>close</close>
+     <text></text>
+     <command>Close</command>
+    </result>
+   </modal> 
+   <save_changes>Save galleries arrangement</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>Gallery View</title>
+   <header>Gallery View</header>
+   <alert>No images found.</alert>
+   <share>Share Gallery</share>
+   <filedate>Upload Date</filedate>
+   <filesize>File Size</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copy To Clipboard</label>
+     <close>close</close>
+     <text>Link copied to clipboard</text>
+     <command>Copy</command>
+     <cancel>Close</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>Create New Gallery</title>
+    <header>Create New Gallery</header>
+   </new>
+   <edit>
+    <title>Edit Gallery</title>
+    <header>Edit Gallery</header>
+   </edit>
+   <gallery_info>
+    <title>Gallery Information</title>
+    <name>
+     <label>Gallery Name</label>
+     <placeholder>Gallery Name</placeholder>
+     <validate>Input Gallery Name</validate>
+    </name>
+    <description>
+     <label>Gallery Description</label>
+     <placeholder>Gallery Description</placeholder>
+     <validate>Input Gallery Description</validate>
+    </description>
+    <keywords>
+     <label>Gallery keywords separated by commas or line breaks &#x23CE;</label>
+     <placeholder>Gallery keywords separated by commas or line breaks &#x23CE;</placeholder>
+     <validate>Input Gallery Keywords</validate>
+    </keywords>
+    <submit>
+     <save>Save Gallery</save>
+     <update>Update Gallery</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>Image Uploader Guide</title>
+     <body>
+      <![CDATA[
+Select images from your device with the <b>Browse Images</b> button and upload to the site with the <b>Upload Images</b> button.<br/>Supported Image Formats: <b>JPG, PNG, GIF, BMP, WEBP</b> <br/> Permissible Minimum Resolution: <b>%d x %d px</b> <br/> Permissible Maximum Resolution: <b>%d x %d px</b> <br/> Single File Maximum Size: <b>%d MB</b> <br/> Image Count per Gallery: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>Select All</select_all>
+    <select_del>Delete Selected Images</select_del>
+    <thumb>
+     <exist>
+      <delete>Delete Uploaded Image From Site</delete>
+      <info>Image Info</info>
+     </exist>
+     <new>
+      <delete>Delete Uploaded Image From Site</delete>
+      <cancel>Cancel Image Upload</cancel>
+      <info>Image Info</info>
+      <rotate>Rotate Image</rotate>
+      <crop>Crop Image</crop>
+     </new>
+     <move>You can sort the images by dragging them with the mouse.</move>
+     <move_mobile>Tap and hold an item with your finger and wait for it to be highlighted. After selecting an item, drag your finger to sort the items.</move_mobile>
+    </thumb>
+    <browse>Browse Images</browse>
+    <upload>Upload Images</upload>
+    <uploading>Images are being uploaded to the site. Do not close the page until the upload is complete.</uploading>
+    <uploaded>Images have been uploaded to the site.</uploaded>
+    <error>Some errors occurred while uploading files to the server.</error>
+    <save_changes>Save Image Changes</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>Crop</crop>
+     <cancel>Cancel</cancel>
+    </crop>
+    <del_up_img>
+     <label>Delete Image</label>
+     <close>close</close>
+     <text>Do you want to delete this image from the website?</text>
+     <command>Delete</command>
+     <cancel>Cancel</cancel>
+    </del_up_img>
+    <del_img>
+     <label>Delete Image</label>
+     <close>close</close>
+     <text>Do you want to delete this image from the website?</text>
+     <command>Delete</command>
+     <cancel>Cancel</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>Delete Selected Images</label>
+     <close>close</close>
+     <text>Do you want to delete the selected images from the website?</text>
+     <command>Delete</command>
+     <cancel>Cancel</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>Image Info</label>
+     <close>close</close>
+     <filename>File Name</filename>
+     <filesize>File Size</filesize>
+     <date>Upload Date</date>
+     <title>
+      <label>Title</label>
+      <placeholder>Image Title</placeholder>
+     </title>
+     <desc>
+      <label>Description</label>
+      <placeholder>Image Description</placeholder>
+     </desc>
+     <keyw>
+      <label>Keywords</label>
+      <placeholder>Keywords separated by commas or line breaks &#x23CE; </placeholder>
+     </keyw>
+     <command>Save / Update</command>
+     <cancel>Cancel</cancel>
+    </img_info>
+    <result>
+     <label>Error</label>
+     <close>close</close>
+     <text></text>
+     <command>Close</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>Image settings for permitted upload</title>
+    <upload_limit>
+     <label>Max image count per gallery</label>
+     <placeholder>Max image count per gallery</placeholder>
+     <validate>Input Max image count per gallery</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>Maximum size of one file (MB)</label>
+     <placeholder>Maximum size of one file (MB)</placeholder>
+     <validate>Input maximum size of one file (MB)</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>Permissible Min Resolution</label>
+     <width>
+      <placeholder>Min Width</placeholder>
+      <validate>Input value</validate>
+     </width>
+     <height>
+      <placeholder>Min Height</placeholder>
+      <validate>Input value</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>Permissible Max Resolution</label>
+     <width>
+      <placeholder>Max Width</placeholder>
+      <validate>Input value</validate>
+     </width>
+     <height>
+      <placeholder>Max Height</placeholder>
+      <validate>Input value</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>Image Transform</title>
+    <full_resolution>
+     <label>Image Full Size</label>
+     <width>
+      <placeholder>Max Width</placeholder>
+      <validate>Input value</validate>
+     </width>
+     <height>
+      <placeholder>Max Height</placeholder>
+      <validate>Input value</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>Thumbnail Size</label>
+     <width>
+      <placeholder>Thumb Width</placeholder>
+      <validate>Input value</validate>
+     </width>
+     <height>
+      <placeholder>Thumb Height</placeholder>
+      <validate>Input value</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>Slide Size</label>
+     <width>
+      <placeholder>Slide Width</placeholder>
+      <validate>Input value</validate>
+     </width>
+     <height>
+      <placeholder>Slide Height</placeholder>
+      <validate>Input value</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>Jpeg Quality</label>
+    </jpg_quality>
+    <png_compress>
+     <label>PNG Compression</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>Watermark</title>
+    <label>Use Watermark</label>
+    <position>Watermark Position</position>
+    <image>Watermark Image</image>
+    <set>Set Watermark</set>
+    <browse>1- Browse Watermark Image File</browse>
+    <adjust>2- Adjust the image according to the frame.</adjust>
+    <upload>3- Upload Selected File</upload>
+    <uploading>Uploading...</uploading>
+    <uploaded>Uploaded.</uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page>Page</page>
+   <first>First Page</first>
+   <prev>Previous Page</prev>
+   <next>Next Page</next>
+   <last>Last Page</last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Limbă </title>
+   <label> Selectați limba </label>
+  </lang>
+
+  <timezone>
+   <title>Fus orar</title>
+   <label>Selectați Fus orar</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Managementul galeriei </gallery_man>
+   <gallery_list> Listă de galerii </gallery_list>
+   <uploader> Creați o galerie nouă </uploader>
+   <back> Înapoi </back>
+  </nav>
+
+  <install>
+ 
+   <title> Configurare MIGallery </title>
+   <header> Configurare MIGallery </header>
+
+   <img_direction>
+    <label> Galerie, direcția imaginii și a diapozitivului </label>
+    <left> De la stânga la dreapta </left>
+    <right> De la dreapta la stânga </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informații despre baza de date MySQL </title>
+    <host>
+     <label> Nume gazdă bază de date </label>
+     <placeholder> Nume gazdă bază de date </placeholder>
+     <validate> Introduceți numele gazdei bazei de date </validate>
+    </host>
+    <user>
+     <label> Nume utilizator bază de date </label>
+     <placeholder> Nume utilizator bază de date </placeholder>
+     <validate> Introduceți numele de utilizator al bazei de date </validate>
+    </user>
+    <pass>
+     <label> Parola bazei de date </label>
+     <placeholder> Parola bazei de date </placeholder>
+     <validate> Introduceți parola bazei de date </validate>
+    </pass>
+    <db>
+     <label> Nume bază de date </label>
+     <placeholder> Nume bază de date </placeholder>
+     <validate> Nume bază de date de intrare </validate>
+    </db>
+    <gal_table>
+     <label> Nume tabel galerie </label>
+     <placeholder> Nume tabel galerie </placeholder>
+     <validate> Introduceți numele tabelului galeriei </validate>
+    </gal_table>
+    <img_table>
+     <label> Nume tabel imagine </label>
+     <placeholder> Nume tabel imagine </placeholder>
+     <validate> Introduceți numele tabelului de imagini </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Directoare cu permisiuni de scriere a fișierelor</title>
+    <db_alert>
+     <![CDATA[
+    Următorul director este locul unde vor fi create fișierele <b> configurație </b>, <b> jurnal de erori </b> și <b> definiții </b>. Dacă doriți să schimbați numele acestui director, modificați definiția <b> DB_DIR </b> din fișierul <b> definitions0.php </b> și actualizați această pagină.<br/><br/>Dacă doriți să redenumiți fișierul de configurare, fișierul jurnal de erori și fișierul de definiții, modificați definițiile <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> și <b>DEFINITIONS_FILE</b> în fișierul definitions0.php.<br/><br/>Dacă sistemul dvs. se bazează pe unix, setați permisiunile de scriere în folder cu următoarea comandă:<br/><b>%s</b><br/><br/>Înainte de a începe instalarea, asigurați-vă că există următoarea cale și că aveți permisiuni pentru a scrie în director:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Înainte de a începe instalarea, asigurați-vă că următoarele directoare sunt disponibile și că aveți permisiunea de a scrie în directoare. <br/> <br/> Dacă aveți de gând să utilizați alte directoare decât următoarele directoare, dacă directoarele nu există pe disc, creați mai întâi directoarele și setați permisiunile de scriere ale acestor directoare și începeți instalarea.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Fișier de configurare, fișier jurnal erori și cale fișier definiție</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Următoarele directoare sunt create la salvarea noii galerii. <b>%d</b> indică ID-ul galeriei. Aceste directoare sunt create în directorul <b> Director de bază de imagini </b> definit mai sus. Asigurați-vă că formatul acestor directoare este adecvat.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Fișierul de configurare a fost creat anterior. Prin urmare, nu puteți rula instalarea. Mai întâi trebuie să ștergeți fișierul de configurare și apoi să rulați instalarea.</config_alert>
+    <tmp_dir>
+     <label>Dosar temporar pentru fișierul imagine</label>
+     <placeholder>Dosar temporar pentru fișierul imagine</placeholder>
+     <validate>Dosar temporar pentru fișierul imagine</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Dosar temporar pentru fișierul de miniaturi</label>
+     <placeholder>Dosar temporar pentru fișierul de miniaturi</placeholder>
+     <validate>Dosar temporar pentru fișierul de miniaturi</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Dosar temporar pentru fișierul de miniatură decupat</label>
+     <placeholder>Dosar temporar pentru fișierul de miniatură decupat</placeholder>
+     <validate>Dosar temporar pentru fișierul de miniatură decupat</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Dosar temporar pentru fișiere de imagini cu diapozitive</label>
+     <placeholder>Dosar temporar pentru fișiere de imagini cu diapozitive</placeholder>
+     <validate>Dosar temporar pentru fișiere de imagini cu diapozitive</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Director de bază de imagini</label>
+     <placeholder>Director de bază de imagini</placeholder>
+     <validate>Director de bază de imagini</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Dosar pentru fișiere imagine</label>
+     <placeholder>Dosar pentru fișiere imagine</placeholder>
+     <validate>Dosar pentru fișiere imagine</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Dosar pentru fișiere miniatură</label>
+     <placeholder>Dosar pentru fișiere miniatură</placeholder>
+     <validate>Dosar pentru fișiere miniatură</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Dosar pentru fișierele miniatură decupate</label>
+     <placeholder>Dosar pentru fișierele miniatură decupate</placeholder>
+     <validate>Dosar pentru fișierele miniatură decupate</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Dosar pentru fișiere imagine de dimensiuni diapozitive</label>
+     <placeholder>Dosar pentru fișiere imagine de dimensiuni diapozitive</placeholder>
+     <validate>Dosar pentru fișiere imagine de dimensiuni diapozitive</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Director de fișiere XML</label>
+     <placeholder>Director de fișiere XML</placeholder>
+     <validate>Director de fișiere XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instalare. Vă rugăm să așteptați ... </installing>
+    <success> Instalarea sa încheiat cu succes. </success>
+    <error> Instalarea nu a putut fi finalizată. </error>
+   </alert>
+  
+   <submit> Porniți instalarea </submit>
+   <submit_continue> Continuați &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gestionarea galeriei </title>
+   <header> Gestionarea galeriei </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Listă galerie </title>
+   <header> Listă galerie </header>
+   <sort>
+    <asc> sortează de la primul la ultim </asc>
+    <desc> sortează de la ultimul la primul </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Vizualizare </button>
+     <title> Vizualizați galeria </title>
+    </view>
+    <delete>
+     <button> Șterge </button>
+     <title> Ștergeți galeria </title>
+    </delete>
+    <edit>
+     <button> Editați </button>
+     <title> Editați galeria </title>
+    </edit>
+    <images>imagini</images>
+    <date>Data</date>
+    <move> Puteți sorta galeriile trăgându-le cu mouse-ul. </move>
+    <move_mobile>Țineți apăsat un element cu degetul și așteptați să fie evidențiat. După selectarea unui element, trageți degetul pentru a sorta articolele.</move_mobile>
+   </card>
+   <alert> Nu s-a găsit nicio galerie. </alert>
+   <modal>
+    <del_gallery>
+     <label> Ștergeți galeria </label>
+     <close> închide </close>
+     <text> Doriți să ștergeți această galerie de pe site? </text>
+     <command> Șterge </command>
+     <cancel> Anulați </cancel>
+    </del_gallery>
+    <result>
+     <label> Eroare </label>
+     <close> închide </close>
+     <text> </text>
+     <command> Închide </command>
+    </result>
+   </modal>
+   <save_changes> Salvează aranjamentul galeriilor </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Vizualizare galerie </title>
+   <header> Vizualizare galerie </header>
+   <alert> Nu s-au găsit imagini. </alert>
+   <share>Distribuiți galeria</share>
+   <filedate>Data de incarcare</filedate>
+   <filesize>Mărime fișier</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copiați în clipboard</label>
+     <close>închide</close>
+     <text>Linkul a fost copiat în clipboard</text>
+     <command>Copie</command>
+     <cancel>Închide</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Creați o galerie nouă </title>
+    <header> Creați o galerie nouă </header>
+   </new>
+   <edit>
+    <title> Editați galeria </title>
+    <header> Editați galeria </header>
+   </edit>
+   <gallery_info>
+    <title> Informații despre galerie </title>
+    <name>
+     <label> Nume galerie </label>
+     <placeholder> Nume galerie </placeholder>
+     <validate> Introduceți numele galeriei </validate>
+    </name>
+    <description>
+     <label> Descriere galerie </label>
+     <placeholder> Descriere galerie </placeholder>
+     <validate> Descriere galerie de intrare </validate>
+    </description>
+    <keywords>
+     <label> Galerie separată prin virgule sau întreruperi de linie </label>
+     <placeholder> Galerie separată prin virgule sau întreruperi de linie </placeholder>
+     <validate> Introduceți cuvinte cheie pentru galerie </validate>
+    </keywords>
+    <submit>
+     <save> Salvați galeria </save>
+     <update> Galerie de actualizări </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Ghid de încărcare a imaginilor </title>
+     <body>
+      <![CDATA[
+Selectați imagini de pe dispozitivul dvs. cu butonul <b> Răsfoiți imagini </b> și încărcați pe site cu butonul <b> Incarca Imagini </b>. <br/> Formate de imagine acceptate: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Rezoluție minimă permisă: <b>%d x %d px</b> <br/> Rezoluție maximă permisă: <b>%d x %d px</b> <br/> Un singur fișier Dimensiune maximă: <b>%d MB</b> <br/> Numărul de imagini pe galerie: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Selectați tot </select_all>
+    <select_del> Ștergeți imaginile selectate </select_del>
+    <thumb>
+     <exist>
+      <delete> Ștergeți imaginea încărcată de pe site </delete>
+      <info> Informații despre imagine </info>
+     </exist>
+     <new>
+      <delete> Ștergeți imaginea încărcată de pe site </delete>
+      <cancel> Anulați încărcarea imaginii </cancel>
+      <info> Informații despre imagine </info>
+      <rotate> Rotire imagine </rotate>
+      <crop> Decupează imaginea </crop>
+     </new>
+     <move> Puteți sorta imaginile trăgându-le cu mouse-ul. </move>
+     <move_mobile>Țineți apăsat un element cu degetul și așteptați să fie evidențiat. După selectarea unui element, trageți degetul pentru a sorta articolele.</move_mobile>
+    </thumb>
+    <browse> Răsfoiți imagini </browse>
+    <upload> Incarca Imagini </upload>
+    <uploading> Imaginile sunt în curs de activareîncărcat pe site. Nu închideți pagina până când încărcarea nu este completă. </uploading>
+    <uploaded> Imaginile au fost încărcate pe site. </uploaded>
+    <error>Au apărut unele erori la încărcarea fișierelor pe server.</error>
+    <save_changes> Salvați modificările de imagine </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Decupare </crop>
+     <cancel> Anulați </cancel>
+    </crop>
+    <del_up_img>
+     <label> Ștergeți imaginea </label>
+     <close> închide </close>
+     <text> Doriți să ștergeți această imagine de pe site? </text>
+     <command> Șterge </command>
+     <cancel> Anulați </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Ștergeți imaginea </label>
+     <close> închide </close>
+     <text> Doriți să ștergeți această imagine de pe site? </text>
+     <command> Șterge </command>
+     <cancel> Anulați </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ștergeți imaginile selectate </label>
+     <close> închide </close>
+     <text> Doriți să ștergeți imaginile selectate de pe site? </text>
+     <command> Șterge </command>
+     <cancel> Anulați </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informații despre imagine </label>
+     <close> închide </close>
+     <filename> Nume fișier </filename>
+     <filesize> Dimensiune fișier </filesize>
+     <date> Data de incarcare </date>
+     <title>
+      <label> Titlu </label>
+      <placeholder> Titlul imaginii </placeholder>
+     </title>
+     <desc>
+      <label> Descriere </label>
+      <placeholder> Descrierea imaginii </placeholder>
+     </desc>
+     <keyw>
+      <label> Cuvinte cheie </label>
+      <placeholder> Cuvinte cheie separate prin virgule sau întreruperi de linie </placeholder>
+     </keyw>
+     <command> Salvare / Actualizare </command>
+     <cancel> Anulați </cancel>
+    </img_info>
+    <result>
+     <label> Eroare </label>
+     <close> închide </close>
+     <text> </text>
+     <command> Închide </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Setări imagine încărcabile </title>
+    <upload_limit>
+     <label> Numărul maxim de imagini pe galerie </label>
+     <placeholder> Numărul maxim de imagini pe galerie </placeholder>
+     <validate> Introduceți numărul maxim de imagini pe galerie </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Dimensiune maximă a fișierului unic (MB) </label>
+     <placeholder> Dimensiune maximă a fișierului unic (MB) </placeholder>
+     <validate> Introduceți dimensiunea maximă a unui fișier (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Rezoluție minimă permisă </label>
+     <width>
+      <placeholder> Lățime minimă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </width>
+     <height>
+      <placeholder> Înălțimea minimă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Rezoluție maximă permisă </label>
+     <width>
+      <placeholder> Lățime maximă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </width>
+     <height>
+      <placeholder> Înălțimea maximă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformare imagine </title>
+    <full_resolution>
+     <label> Imagine la dimensiune completă </label>
+     <width>
+      <placeholder> Lățime maximă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </width>
+     <height>
+      <placeholder> Înălțime maximă </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Dimensiune miniatură </label>
+     <width>
+      <placeholder> Lățimea degetului mare </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </width>
+     <height>
+      <placeholder> Înălțimea degetului mare </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Dimensiune diapozitiv </label>
+     <width>
+      <placeholder> Lățimea diapozitivului </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </width>
+     <height>
+      <placeholder> Înălțimea diapozitivului </placeholder>
+      <validate> Introduceți valoarea </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Calitate Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Comprimare PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Utilizați filigran </label>
+    <position> Poziția filigranului </position>
+    <image> Watermark Image </image>
+    <set> Set Watermark </set>
+    <browse> 1- Răsfoiți fișierul de imagine filigran </browse>
+    <adjust> 2- Reglați imaginea în funcție de cadru. </adjust>
+    <upload> 3- Încărcați fișierul selectat </upload>
+    <uploading> Se încarcă ... </uploading>
+    <uploaded> Încărcat. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Pagina </page>
+   <first> Prima Pagină </first>
+   <prev> Pagina anterioară </prev>
+   <next> Pagina următoare </next>
+   <last> Ultima pagină </last>
+  </pagination>
+
+</lang>

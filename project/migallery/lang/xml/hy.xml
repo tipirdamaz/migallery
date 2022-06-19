@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Լեզուն </title>
+   <label> Ընտրեք լեզուն </label>
+  </lang>
+
+  <timezone>
+   <title>Ժամային գոտի</title>
+   <label>Ընտրեք ժամային գոտի</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Կառավարում </gallery_man>
+   <gallery_list> Պատկերասրահներ </gallery_list>
+   <uploader> Նոր պատկերասրահ </uploader>
+   <back> Վերադառնալ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery- ի տեղադրում </title>
+   <header> MIGallery- ի տեղադրում </header>
+
+   <img_direction>
+    <label> Պատկերասրահի, պատկերի և սլայդերի ուղղություն </label>
+    <left> ձախից աջ </left>
+    <right> աջից ձախ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL տվյալների շտեմարանի տեղեկատվություն </title>
+    <host>
+     <label> DB հյուրընկալող </label>
+     <placeholder> DB հյուրընկալող </placeholder>
+     <validate> Մուտքագրեք DB Հոսթերի անունը </validate>
+    </host>
+    <user>
+     <label> DB օգտվողի անուն </label>
+     <placeholder> DB օգտվողի անունը </placeholder>
+     <validate> Մուտքագրեք DB օգտվողի անունը </validate>
+    </user>
+    <pass>
+     <label> DB գաղտնաբառ </label>
+     <placeholder> DB գաղտնաբառ </placeholder>
+     <validate> Մուտքագրեք DB գաղտնաբառ </validate>
+    </pass>
+    <db>
+     <label> DB անուն </label>
+     <placeholder> DB անունը </placeholder>
+     <validate> Մուտքագրեք DB Անունը </validate>
+    </db>
+    <gal_table>
+     <label> Պատկերասրահի սեղանի անունը </label>
+     <placeholder> Պատկերասրահի սեղանի անունը </placeholder>
+     <validate> Մուտքագրեք պատկերասրահի սեղանի անունը </validate>
+    </gal_table>
+    <img_table>
+     <label> Պատկերի աղյուսակի անունը </label>
+     <placeholder> Պատկերի աղյուսակի անունը </placeholder>
+     <validate> Մուտքագրեք պատկերի աղյուսակի անունը </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Գրելի ֆայլերի գրացուցակներ</title>
+    <db_alert>
+     <![CDATA[
+    Հաջորդ գրացուցակն այն վայրն է, որտեղ կստեղծվեն <b> կազմաձևում </b> <b> սխալի մատյան </b> և <b> սահմանումներ </b>: Եթե ցանկանում եք փոխել այս գրացուցակի անունը, փոխեք <b>DB_DIR</b> սահմանումը <b>definitions0.php</b> ֆայլում և թարմացրեք այս էջը:<br/><br/>Եթե ցանկանում եք վերանվանել կազմաձևման ֆայլը, սխալի գրանցամատյանի ֆայլը և սահմանման ֆայլը, փոխեք <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> և <b> DEFINITIONS_FILE </b> սահմանումները definitions0.php- ում ֆայլ<br/><br/>Եթե ձեր համակարգը հիմնված է unix- ի վրա, գրելու թույլտվությունները տեղադրեք այս գրացուցակում հետևյալ հրահանգով.<br/><b>%s</b><br/><br/>Տեղադրումը սկսելուց առաջ համոզվեք, որ հետևյալ ուղին գոյություն ունի և որ այս գրացուցակում գրելու թույլտվություններ ունեք.
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Տեղադրումը սկսելուց առաջ համոզվեք, որ հետևյալ գրացուցակները մատչելի են և գրացուցակներին գրելու թույլտվություն ունեք: <br/> <br/> Եթե դուք պատրաստվում եք օգտագործել այլ գրացուցակներ, քան հետևյալ գրացուցակները, եթե գրացուցակները սկավառակի վրա գոյություն չունեն, նախ ստեղծեք գրացուցակները և սահմանեք գրելու թույլտվությունները և սկսեք տեղադրումը:
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Կազմաձևման ֆայլ, սխալի տեղեկամատյան ֆայլ և սահմանումների ֆայլի ուղի</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Հետևյալ դիրեկտորիաները ստեղծվում են նոր պատկերասրահի ստեղծման ժամանակ: <b>% d </b> նշում է պատկերասրահի ID- ն: Այս գրացուցակները ստեղծվում են վերը սահմանված <b> Պատկերի հիմնական ուղին </b> գրացուցակում: Ստուգեք, թե արդյոք համապատասխան է թղթապանակների ձեւաչափը:
+     ]]>
+    </img_dir_alert>
+    <config_alert>Կազմաձևման ֆայլը նախկինում ստեղծվել է: Հետեւաբար, դուք չեք կարող գործարկել տեղադրումը: Նախ պետք է ջնջեք կազմաձևման ֆայլը, այնուհետև գործարկեք տեղադրումը:</config_alert>
+    <tmp_dir>
+     <label>Պատկերի ժամանակավոր տեղեկատու</label>
+     <placeholder>Պատկերի ժամանակավոր տեղեկատու</placeholder>
+     <validate>Պատկերի ժամանակավոր տեղեկատու</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Մանրապատկերի ժամանակավոր տեղեկատու</label>
+     <placeholder>Մանրապատկերի ժամանակավոր տեղեկատու</placeholder>
+     <validate>Մանրապատկերի ժամանակավոր տեղեկատու</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>կտրված մանրապատկերների ժամանակավոր գրացուցակ</label>
+     <placeholder>կտրված մանրապատկերների ժամանակավոր գրացուցակ</placeholder>
+     <validate>կտրված մանրապատկերների ժամանակավոր գրացուցակ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Սլայդի պատկերի ժամանակավոր տեղեկատու</label>
+     <placeholder>Սլայդի պատկերի ժամանակավոր տեղեկատու</placeholder>
+     <validate>Սլայդի պատկերի ժամանակավոր տեղեկատու</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Պատկերի հիմնական ուղին</label>
+     <placeholder>Պատկերի հիմնական ուղին</placeholder>
+     <validate>Պատկերի հիմնական ուղին</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Պատկերների տեղեկատու</label>
+     <placeholder>Պատկերների տեղեկատու</placeholder>
+     <validate>Պատկերների տեղեկատու</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Մանրապատկերների տեղեկատու</label>
+     <placeholder>Մանրապատկերների տեղեկատու</placeholder>
+     <validate>Մանրապատկերների տեղեկատու</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Կտրված մանրապատկերների գրացուցակ</label>
+     <placeholder>Կտրված մանրապատկերների գրացուցակ</placeholder>
+     <validate>Կտրված մանրապատկերների գրացուցակ</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Սլայդ պատկերների գրացուցակ</label>
+     <placeholder>Սլայդ պատկերների գրացուցակ</placeholder>
+     <validate>Սլայդ պատկերների գրացուցակ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ֆայլերի տեղեկատու</label>
+     <placeholder>XML ֆայլերի տեղեկատու</placeholder>
+     <validate>XML ֆայլերի տեղեկատու</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Տեղադրում Խնդրում ենք սպասել ... </installing>
+    <success> Տեղադրումը հաջողությամբ ավարտվեց: </success>
+    <error> Տեղադրումը հնարավոր չէ ավարտել: </error>
+   </alert>
+  
+   <submit> Սկսեք տեղադրումը </submit>
+   <submit_continue> Շարունակել &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Կառավարում </title>
+   <header> Կառավարում </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Պատկերասրահներ </title>
+   <header> Պատկերասրահներ </header>
+   <sort>
+    <asc> առաջինը վերջինը </asc>
+    <desc> վերջից առաջինը </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Դիտել </button>
+     <title> Դիտել պատկերասրահը </title>
+    </view>
+    <delete>
+     <button> ջնջել </button>
+     <title> ջնջել պատկերասրահը </title>
+    </delete>
+    <edit>
+     <button> Խմբագրել </button>
+     <title> Պատկերասրահի խմբագրում </title>
+    </edit>
+    <images>պատկերներ</images>
+    <date>Ամսաթիվ</date>
+    <move> Պատկերասրահները կարող եք տեսակավորել ՝ մկնիկով քարշ տալով: </move>
+    <move_mobile>Հպեք և պահեք իրը ձեր մատով, սպասեք, թե երբ կընտրվի: Նյութ ընտրելուց հետո ձեր մատը քաշեք ՝ իրերը տեսակավորելու համար:</move_mobile>
+   </card>
+   <alert> Պատկերասրահ չի գտնվել: </alert>
+   <modal>
+    <del_gallery>
+     <label> ջնջել պատկերասրահը </label>
+     <close> փակել </close>
+     <text> անկանու՞մ եք ջնջել այս պատկերասրահը կայքից: </text>
+     <command> ջնջել </command>
+     <cancel> Չեղարկել </cancel>
+    </del_gallery>
+    <result>
+     <label> Սխալ </label>
+     <close> փակել </close>
+     <text> </text>
+     <command> Փակել </command>
+    </result>
+   </modal>
+   <save_changes> Պահել տեսակավորումը </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Պատկերասրահի դիտում </title>
+   <header> Պատկերասրահի դիտում </header>
+   <alert> Պատկեր չի գտնվել: </alert>
+   <share>Կիսվեք այս պատկերասրահով</share>
+   <filedate>Վերբեռնման ամսաթիվը</filedate>
+   <filesize>Ֆայլի չափը</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>պատճենել clipboard- ին</label>
+     <close>փակել</close>
+     <text>Հղումը պատճենվեց սեղմատախտակին</text>
+     <command>Պատճենել</command>
+     <cancel>Փակել</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Ստեղծել նոր պատկերասրահ </title>
+    <header> Ստեղծել նոր պատկերասրահ </header>
+   </new>
+   <edit>
+    <title> Պատկերասրահի խմբագրում </title>
+    <header> Խմբագրել պատկերասրահը </header>
+   </edit>
+   <gallery_info>
+    <title> Տեղեկատվություն պատկերասրահի մասին </title>
+    <name>
+     <label> Պատկերասրահի անունը </label>
+     <placeholder> Պատկերասրահի անունը </placeholder>
+     <validate> Ներածման պատկերասրահի անունը </validate>
+    </name>
+    <description>
+     <label> Պատկերասրահի նկարագրություն </label>
+     <placeholder> Պատկերասրահի նկարագրություն </placeholder>
+     <validate> Ներածման պատկերասրահի նկարագրությունը </validate>
+    </description>
+    <keywords>
+     <label> Պատկերասրահի հիմնաբառեր, որոնք առանձնացված են ստորակետերով կամ գծերի ընդմիջումներով </label>
+     <placeholder> Պատկերասրահի հիմնաբառեր, որոնք առանձնացված են ստորակետերով կամ գծերի ընդմիջումներով </placeholder>
+     <validate> Մուտքագրեք պատկերասրահի հիմնաբառեր </validate>
+    </keywords>
+    <submit>
+     <save> Պահել պատկերասրահը </save>
+     <update> Թարմացնել պատկերասրահը </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Վերբեռնողի ուղեցույց </title>
+     <body>
+      <![CDATA[
+Ընտրեք պատկերները ձեր սարքից <b> Նայիր պատկերներ </b> կոճակով և վերբեռնիր կայք <b> Վերբեռնել պատկերները </b> կոճակով: <br/> Աջակցվող պատկերի ձևաչափեր. <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Թույլատրելի նվազագույն լուծաչափ ՝ <b>%d x %d px</b> <br/> Թույլատրելի առավելագույն լուծաչափ ՝ <b>%d x %d px</b> <br/> Մեկ ֆայլի առավելագույն չափը. <b>%d MB</b> <br/> Պատկերի քանակը ըստ պատկերասրահի ՝ <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Ընտրեք բոլորը </select_all>
+    <select_del> ջնջել ընտրվածը </select_del>
+    <thumb>
+     <exist>
+      <delete> ջնջել վերբեռնված նկարը կայքից </delete>
+      <info> Պատկերային տեղեկատվություն </info>
+     </exist>
+     <new>
+      <delete> ջնջել վերբեռնված նկարը կայքից </delete>
+      <cancel> Չեղարկել պատկերի վերբեռնումը </cancel>
+      <info> Պատկերային տեղեկատվություն </info>
+      <rotate> Պտտեցնել պատկերը </rotate>
+      <crop> Բերել պատկեր </crop>
+     </new>
+     <move> Պատկերները կարող եք տեսակավորել ՝ մկնիկով քարշ տալով: </move>
+     <move_mobile>Հպեք և պահեք իրը ձեր մատով, սպասեք, թե երբ կընտրվի: Նյութ ընտրելուց հետո ձեր մատը քաշեք ՝ իրերը տեսակավորելու համար:</move_mobile>
+    </thumb>
+    <browse> Նայիր պատկերներ </browse>
+    <upload> Վերբեռնել պատկերները </upload>
+    <uploading> Նկարները վերբեռնվում են կայք: Մի փակեք էջը մինչև վերբեռնումն ավարտվի: </uploading>
+    <uploaded> Պատկերները վերբեռնվել են կայք: </uploaded>
+    <error>Որոշ սխալներ առաջացան ֆայլեր սերվեր վերբեռնելիս:</error>
+    <save_changes> Պահեք Img փոփոխությունները </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Բերք </crop>
+     <cancel> Չեղարկել </cancel>
+    </crop>
+    <del_up_img>
+     <label> ջնջել պատկերը </label>
+     <close> փակել </close>
+     <text> անկանու՞մ եք ջնջել այս պատկերը կայքից: </text>
+     <command> ջնջել </command>
+     <cancel> Չեղարկել </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ջնջել պատկերը </label>
+     <close> փակել </close>
+     <text> անկանու՞մ եք ջնջել այս պատկերը կայքից: </text>
+     <command> ջնջել </command>
+     <cancel> Չեղարկել </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ջնջել ընտրված պատկերները </label>
+     <close> փակել </close>
+     <text> wantանկանու՞մ եք ջնջել ընտրված պատկերները կայքից: </text>
+     <command> ջնջել </command>
+     <cancel> Չեղարկել </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Պատկեր Տեղեկություն </label>
+     <close> փակել </close>
+     <filename> Ֆայլի անուն </filename>
+     <filesize> Ֆայլի չափը </filesize>
+     <date> Վերբեռնման ամսաթիվը </date>
+     <title>
+      <label> Վերնագիր </label>
+      <placeholder> Պատկերի վերնագիրը </placeholder>
+     </title>
+     <desc>
+      <label> Նկարագրություն </label>
+      <placeholder> Պատկերի նկարագրություն </placeholder>
+     </desc>
+     <keyw>
+      <label> Հիմնաբառեր </label>
+      <placeholder> Հիմնաբառեր ՝ բաժանված ստորակետերով կամ գծերի ընդմիջումներով </placeholder>
+     </keyw>
+     <command> Պահել / Թարմացնել </command>
+     <cancel> Չեղարկել </cancel>
+    </img_info>
+    <result>
+     <label> Սխալ </label>
+     <close> փակել </close>
+     <text> </text>
+     <command> Փակել </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Վերբեռնվող պատկերի կարգավորումներ </title>
+    <upload_limit>
+     <label> Պատկերների առավելագույն քանակը ըստ պատկերասրահի </label>
+     <placeholder> Պատկերների առավելագույն քանակը ըստ պատկերասրահի </placeholder>
+     <validate> Մուտքագրեք պատկերների առավելագույն քանակը ըստ պատկերասրահի </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Մեկ ֆայլի առավելագույն չափը (MB) </label>
+     <placeholder> Մեկ ֆայլի առավելագույն չափը (MB) </placeholder>
+     <validate> Մուտքագրեք մեկ ֆայլի առավելագույն չափը (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Նկարի թույլատրելի նվազագույն թույլատրելիությունը </label>
+     <width>
+      <placeholder> Մին լայնություն </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </width>
+     <height>
+      <placeholder> Մին բարձրությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Թույլատրելի առավելագույն բանաձև </label>
+     <width>
+      <placeholder> Առավելագույն լայնությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </width>
+     <height>
+      <placeholder> Մաքս բարձրություն </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Պատկերի փոխակերպում </title>
+    <full_resolution>
+     <label> Պատկերի ամբողջական չափը </label>
+     <width>
+      <placeholder> Առավելագույն լայնությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </width>
+     <height>
+      <placeholder> Մաքս բարձրություն </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Մանրապատկերի չափը </label>
+     <width>
+      <placeholder> Բութ մատի լայնությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </width>
+     <height>
+      <placeholder> Thumb բարձրությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Սլայդի չափը </label>
+     <width>
+      <placeholder> Սլայդի լայնությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </width>
+     <height>
+      <placeholder> Սլայդի բարձրությունը </placeholder>
+      <validate> մուտքագրեք արժեք </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg որակի </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG կոմպրես </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Ջրանիշի պատկեր </title>
+    <label> Օգտագործեք ջրանիշի պատկեր </label>
+    <position> ջրանիշի պատկերի դիրքը </position>
+    <image> Ջրանիշի պատկեր </image>
+    <set> Սահմանել ջրանիշի պատկեր </set>
+    <browse> 1- թերթեք ջրանշանի պատկերի ֆայլը </browse>
+    <adjust> 2- Պատկերը կարգավորեք ըստ շրջանակի: </adjust>
+    <upload> 3- Վերբեռնել ընտրված ֆայլը </upload>
+    <uploading> Վերբեռնում ... </uploading>
+    <uploaded> Վերբեռնված: </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> էջ </page>
+   <first> առաջին էջ </first>
+   <prev> Նախորդ էջը </prev>
+   <next> հաջորդ էջը </next>
+   <last> Վերջին էջը </last>
+  </pagination>
+
+</lang>

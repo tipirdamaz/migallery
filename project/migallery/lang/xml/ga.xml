@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Teanga </title>
+   <label> Roghnaigh Teanga </label>
+  </lang>
+
+  <timezone>
+   <title>Crios ama</title>
+   <label>Roghnaigh Crios Ama</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Bainistíocht Gailearaí </gallery_man>
+   <gallery_list> Liosta Gailearaí </gallery_list>
+   <uploader> Cruthaigh Gailearaí Nua </uploader>
+   <back> Ar ais </back>
+  </nav>
+
+  <install>
+ 
+   <title> Socrú MIGallery </title>
+   <header> Socrú MIGallery </header>
+
+   <img_direction>
+    <label> Gailearaí, íomhá agus treo sleamhnáin </label>
+    <left> Clé go Deas </left>
+    <right> Ceart chun Clé </right>
+   </img_direction>
+
+   <db_info>
+    <title> Faisnéis maidir le Bunachar Sonraí MySQL </title>
+    <host>
+     <label> Óstach an Bhunachair Sonraí </label>
+     <placeholder> Óstach an Bhunachair Sonraí </placeholder>
+     <validate> Iontráil Óstach Bunachar Sonraí </validate>
+    </host>
+    <user>
+     <label> Ainm Úsáideora an Bhunachair Sonraí </label>
+     <placeholder> Ainm Úsáideora an Bhunachair Sonraí </placeholder>
+     <validate> Iontráil Ainm Úsáideora an Bhunachair Sonraí </validate>
+    </user>
+    <pass>
+     <label> Pasfhocal Bunachar Sonraí </label>
+     <placeholder> Pasfhocal Bunachar Sonraí </placeholder>
+     <validate> Iontráil Pasfhocal Bunachar Sonraí </validate>
+    </pass>
+    <db>
+     <label> Ainm Bunachar Sonraí </label>
+     <placeholder> Ainm Bunachar Sonraí </placeholder>
+     <validate> Iontráil Ainm an Bhunachair Sonraí </validate>
+    </db>
+    <gal_table>
+     <label> Ainm Tábla Gailearaí </label>
+     <placeholder> Ainm Tábla Gailearaí </placeholder>
+     <validate> Iontráil Ainm Tábla an Ghailearaí </validate>
+    </gal_table>
+    <img_table>
+     <label> Ainm Tábla Íomhá </label>
+     <placeholder> Ainm Tábla Íomhá </placeholder>
+     <validate> Iontráil Ainm Tábla Íomhá </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Eolaire in-scríofa</title>
+    <db_alert>
+     <![CDATA[
+    Is é an t-eolaire seo a leanas an áit a gcruthaítear na comhaid <b> cumraíocht </b>, <b> log earráide </b> agus <b> sainmhínithe </b>. Más mian leat an t-eolaire seo a athainmniú, athraigh an sainmhíniú <b> DB_DIR </b> sa chomhad <b> definitions0.php </b> agus déan an leathanach seo a athnuachan. <br/> <br/> Más mian leat an comhad cumraíochta, an comhad loga earráide agus an comhad sainmhínithe a athainmniú, athraigh <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> agus <b> DEFINITIONS_FILE </b> sainmhínithe sa chomhad definitions0.php. <br/> <br/> Má tá do chóras bunaithe ar unix, socraigh ceadanna scríbhneoireachta leis an ordú seo a leanas: <br/> <b>%s</b> <br/> <br/> Sula dtosaíonn tú an tsuiteáil, déan cinnte go bhfuil an t-eolaire seo a leanas ann agus go bhfuil cead agat scríobh chuig an eolaire:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Sula dtosaíonn tú ar an tsuiteáil, déan cinnte go bhfuil na heolairí seo a leanas ar fáil agus go bhfuil cead agat scríobh chuig na heolairí. <br/> <br/> Má tá tú chun eolairí seachas na heolairí seo a leanas a úsáid, mura bhfuil na heolairí ann ar an diosca, cruthaigh na heolairí ar dtús agus socraigh na ceadanna scríbhneoireachta agus cuir tús leis an tsuiteáil.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Comhad cumraíochta, comhad Logáil Earráide agus Conair Comhad Sainmhínithe</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Cruthaítear na heolairí seo a leanas nuair a shábhálfar an gailearaí nua. <b>%d</b> sonraíonn id an ghailearaí. Cruthaítear na heolairí seo san eolaire <b> Eolaire Bonn Íomhá </b> a shainmhínítear thuas. Seiceáil go bhfuil formáid na n-eolairí oiriúnach.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Cruthaíodh an comhad cumraíochta roimhe seo. Dá bhrí sin, ní féidir leat an socrú a rith. Caithfidh tú an comhad cumraíochta a scriosadh ar dtús agus ansin an socrú a rith.</config_alert>
+    <tmp_dir>
+     <label>Eolaire Sealadach Íomhá</label>
+     <placeholder>Eolaire Sealadach Íomhá</placeholder>
+     <validate>Eolaire Sealadach Íomhá</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Eolaire Sealadach Mionsamhail</label>
+     <placeholder>Eolaire Sealadach Mionsamhail</placeholder>
+     <validate>Eolaire Sealadach Mionsamhail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Conair chomhad mionsamhlacha teasctha sealadach</label>
+     <placeholder>Conair chomhad mionsamhlacha teasctha sealadach</placeholder>
+     <validate>Conair chomhad mionsamhlacha teasctha sealadach</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Eolaire Sealadach Íomhá Sleamhnáin</label>
+     <placeholder>Eolaire Sealadach Íomhá Sleamhnáin</placeholder>
+     <validate>Eolaire Sealadach Íomhá Sleamhnáin</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Eolaire Bonn Íomhá</label>
+     <placeholder>Eolaire Bonn Íomhá</placeholder>
+     <validate>Eolaire Bonn Íomhá</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Eolaire Íomhá</label>
+     <placeholder>Eolaire Íomhá</placeholder>
+     <validate>Eolaire Íomhá</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Eolaire Mionsamhail</label>
+     <placeholder>Eolaire Mionsamhail</placeholder>
+     <validate>Eolaire Mionsamhail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Eolaire Mionsamhail Teasctha</label>
+     <placeholder>Eolaire Mionsamhail Teasctha</placeholder>
+     <validate>Eolaire Mionsamhail Teasctha</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Eolaire Íomhá Sleamhnáin</label>
+     <placeholder>Eolaire Íomhá Sleamhnáin</placeholder>
+     <validate>Eolaire Íomhá Sleamhnáin</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Eolaire Comhaid XML</label>
+     <placeholder>Eolaire Comhaid XML</placeholder>
+     <validate>Eolaire Comhaid XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Suiteáil. Fan le do thoil ... </installing>
+    <success> Críochnaíodh an suiteáil go rathúil. </success>
+    <error> Níorbh fhéidir an suiteáil a chríochnú. </error>
+   </alert>
+  
+   <submit> Start Installation </submit>
+   <submit_continue> Lean ar aghaidh &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Bainistíocht Gailearaí </title>
+   <header> Bainistíocht Gailearaí </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Liosta Gailearaí </title>
+   <header> Liosta Gailearaí </header>
+   <sort>
+    <asc> ón gcéad go dtí an ceann deireanach </asc>
+    <desc> ón gceann deireanach go dtí an chéad </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Amharc </button>
+     <title> Féach ar an nGailearaí </title>
+    </view>
+    <delete>
+     <button> Scrios </button>
+     <title> Scrios Gailearaí </title>
+    </delete>
+    <edit>
+     <button> Cuir in eagar </button>
+     <title> Cuir Gailearaí in Eagar </title>
+    </edit>
+    <images>íomhánna</images>
+    <date>Dáta</date>
+    <move> Is féidir leat na dánlanna a shórtáil trí iad a tharraingt leis an luch. </move>
+    <move_mobile>Beartaíonn agus coinnigh mír le do mhéar agus fan go roghnófar é. Tar éis an earra a roghnú, is féidir leat na míreanna a shórtáil trí tharraingt le do mhéar.</move_mobile>
+   </card>
+   <alert> Níor aimsíodh gailearaí. </alert>
+   <modal>
+    <del_gallery>
+     <label> Scrios Gailearaí </label>
+     <close> dhúnadh </close>
+     <text> Ar mhaith leat an gailearaí seo a scriosadh ón suíomh? </text>
+     <command> Scrios </command>
+     <cancel> Cealaigh </cancel>
+    </del_gallery>
+    <result>
+     <label> Earráid </label>
+     <close> dhúnadh </close>
+     <text> </text>
+     <command> Dún </command>
+    </result>
+   </modal>
+   <save_changes> Sábháil Sórtáil Gailearaí </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Amharc ar an nGailearaí </title>
+   <header> Amharc Gailearaí </header>
+   <alert> Ní bhfuarthas íomhá. </alert>
+   <share>Gailearaí Comhroinn</share>
+   <filedate>Dáta Uaslódála</filedate>
+   <filesize>Méid an Chomhaid</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Cóip chuig an gearrthaisce</label>
+     <close>dhúnadh</close>
+     <text>Cóipeáladh an nasc chuig an gearrthaisce</text>
+     <command>Cóip</command>
+     <cancel>Dún</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Cruthaigh Gailearaí Nua </title>
+    <header> Cruthaigh Gailearaí Nua </header>
+   </new>
+   <edit>
+    <title> Cuir Gailearaí in Eagar </title>
+    <header> Cuir Gailearaí in Eagar </header>
+   </edit>
+   <gallery_info>
+    <title> Faisnéis Gailearaí </title>
+    <name>
+     <label> Ainm an Ghailearaí </label>
+     <placeholder> Ainm an Ghailearaí </placeholder>
+     <validate> Ionchuir Ghailearaí Ainm </validate>
+    </name>
+    <description>
+     <label> Cur síos ar an nGailearaí </label>
+     <placeholder> Cur síos ar an nGailearaí </placeholder>
+     <validate> Cur síos ar an nGailearaí Ionchuir </validate>
+    </description>
+    <keywords>
+     <label> Eochairfhocail an ghailearaí scartha le camóga nó le briseadh líne </label>
+     <placeholder> Eochairfhocail an ghailearaí scartha le camóga nó le briseadh líne </placeholder>
+     <validate> Iontráil Eochairfhocail an Ghailearaí </validate>
+    </keywords>
+    <submit>
+     <save> Sábháil Gailearaí </save>
+     <update> Nuashonraigh Gailearaí </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Treoir Uaslódóra </title>
+     <body>
+      <![CDATA[
+Roghnaigh íomhánna ó do ghléas leis an gcnaipe <b> Brabhsáil Íomhánna </b> agus uaslódáil chuig an suíomh iad leis an gcnaipe <b> Uaslódáil Íomhánna </b>. <br/> Formáidí Íomhá Tacaithe: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Rún Íosta Incheadaithe: <b>%d x %d px</b> <br/> Rún Uasta Incheadaithe: <b>%d x %d px</b> <br/> Uasmhéid an Chomhaid Aonair: <b>%d MB</b> <br/> Líon Íomhá in aghaidh an Ghailearaí: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Roghnaigh Gach </select_all>
+    <select_del> Scrios Roghnaithe </select_del>
+    <thumb>
+     <exist>
+      <delete> Scrios Íomhá Uaslódáilte Ón Suíomh </delete>
+      <info> Faisnéis Íomhá </info>
+     </exist>
+     <new>
+      <delete> Scrios Íomhá Uaslódáilte Ón Suíomh </delete>
+      <cancel> Cealaigh Uaslódáil Íomhá </cancel>
+      <info> Faisnéis Íomhá </info>
+      <rotate> Íomhá Rothlaigh </rotate>
+      <crop> Íomhá Barraí </crop>
+     </new>
+     <move> Is féidir leat na híomhánna a shórtáil trí iad a tharraingt leis an luch. </move>
+     <move_mobile>Beartaíonn agus coinnigh mír le do mhéar agus fan go roghnófar é. Tar éis an earra a roghnú, is féidir leat na míreanna a shórtáil trí tharraingt le do mhéar.</move_mobile>
+    </thumb>
+    <browse> Brabhsáil Íomhánna </browse>
+    <upload> Uaslódáil Íomhánna </upload>
+    <uploading> Tá íomhánna á n-uaslódáil ar an suíomh. Ná dún an leathanach go dtí go mbeidh an uaslódáil críochnaithe. </uploading>
+    <uploaded> Uaslódáladh íomhánna ar an suíomh. </uploaded>
+    <error>Tharla roinnt earráidí agus comhaid á n-uaslódáil chuig an bhfreastalaí.</error>
+    <save_changes> Sábháil Athruithe Íomhá </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Barraí </crop>
+     <cancel> Cealaigh </cancel>
+    </crop>
+    <del_up_img>
+     <label> Scrios Íomhá </label>
+     <close> dhúnadh </close>
+     <text> Ar mhaith leat an íomhá seo a scriosadh ón suíomh? </text>
+     <command> Scrios </command>
+     <cancel> Cealaigh </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Scrios Íomhá </label>
+     <close> dhúnadh </close>
+     <text> Ar mhaith leat an íomhá seo a scriosadh ón suíomh? </text>
+     <command> Scrios </command>
+     <cancel> Cealaigh </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Scrios Íomhánna Roghnaithe </label>
+     <close> dhúnadh </close>
+     <text> Ar mhaith leat na híomhánna roghnaithe a scriosadh ón suíomh? </text>
+     <command> Scrios </command>
+     <cancel> Cealaigh </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Faisnéis Íomhá </label>
+     <close> dhúnadh </close>
+     <filename> Ainm an Chomhaid </filename>
+     <filesize> Méid an Chomhaid </filesize>
+     <date> Dáta Uaslódála </date>
+     <title>
+      <label> Teideal </label>
+      <placeholder> Teideal Íomhá </placeholder>
+     </title>
+     <desc>
+      <label> Tuairisc </label>
+      <placeholder> Cur síos ar an Íomhá </placeholder>
+     </desc>
+     <keyw>
+      <label> Keywords </label>
+      <placeholder> Keywords scartha le camóga nó sosanna líne </placeholder>
+     </keyw>
+     <command> Sábháil / Nuashonraigh </command>
+     <cancel> Cealaigh </cancel>
+    </img_info>
+    <result>
+     <label> Earráid </label>
+     <close> dhúnadh </close>
+     <text> </text>
+     <command> Dún </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Uaslódáil socruithe íomhá </title>
+    <upload_limit>
+     <label> Líon íomhá uasta in aghaidh an ghailearaí </label>
+     <placeholder> Líon íomhá uasta in aghaidh an ghailearaí </placeholder>
+     <validate> Iontráil uimhir íomhá Max in aghaidh an ghailearaí </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Uasmhéid an Chomhaid Aonair (MB) </label>
+     <placeholder> Uasmhéid Comhad Aonair (MB) </placeholder>
+     <validate> Iontráil Méid Uasmhéid Comhad Aonair (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Rún Íosta Incheadaithe </label>
+     <width>
+      <placeholder> Leithead Íosta </placeholder>
+      <validate> Iontráil luach </validate>
+     </width>
+     <height>
+      <placeholder> Airde Íosta </placeholder>
+      <validate> Iontráil luach </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Rún Uasta Incheadaithe </label>
+     <width>
+      <placeholder> Leithead Uasta </placeholder>
+      <validate> Iontráil luach </validate>
+     </width>
+     <height>
+      <placeholder> Airde Uasta </placeholder>
+      <validate> Iontráil luach </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Image Transform </title>
+    <full_resolution>
+     <label> Íomhá Méid Iomlán </label>
+     <width>
+      <placeholder> Leithead Uasta </placeholder>
+      <validate> Iontráil luach </validate>
+     </width>
+     <height>
+      <placeholder> Airde Uasta </placeholder>
+      <validate> Iontráil luach </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Méid Mionsamhail </label>
+     <width>
+      <placeholder> Leithead Mionsamhail </placeholder>
+      <validate> Iontráil luach </validate>
+     </width>
+     <height>
+      <placeholder> Airde Thumb </placeholder>
+      <validate> Iontráil luach </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Méid na Sleamhnán </label>
+     <width>
+      <placeholder> Leithead Sleamhnáin </placeholder>
+      <validate> Iontráil luach </validate>
+     </width>
+     <height>
+      <placeholder> Airde Sleamhnáin </placeholder>
+      <validate> Iontráil luach </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Cáilíocht Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Comhbhrú PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Comhartha uisce </title>
+    <label> Úsáid Comhartha Uisce </label>
+    <position> Seasamh Comhartha Uisce </position>
+    <image> Íomhá Comhartha Uisce </image>
+    <set> Socraigh Comhartha Uisce </set>
+    <browse> 1- Brabhsáil Comhad Íomhá Comhartha Uisce </browse>
+    <adjust> 2- Coigeartaigh an íomhá de réir an fhráma. </adjust>
+    <upload> 3- Uaslódáil Comhad Roghnaithe </upload>
+    <uploading> Uaslódáil ... </uploading>
+    <uploaded> Uaslódáilte. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Leathanach </page>
+   <first> An Chéad Leathanach </first>
+   <prev> Leathanach Roimhe Seo </prev>
+   <next> An chéad leathanach eile </next>
+   <last> Leathanach Deireanach </last>
+  </pagination>
+
+</lang>

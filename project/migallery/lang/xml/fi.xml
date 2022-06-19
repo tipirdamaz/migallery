@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Kieli </title>
+   <label> Valitse kieli </label>
+  </lang>
+
+  <timezone>
+   <title>Aikavyöhyke</title>
+   <label>Valitse Aikavyöhyke</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Gallerian hallinta </gallery_man>
+   <gallery_list> Gallerialuettelo </gallery_list>
+   <uploader> Luo uusi galleria </uploader>
+   <back> Takaisin </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Setup </title>
+   <header> MIGallery Setup </header>
+
+   <img_direction>
+    <label> Galleria, kuva ja dian suunta </label>
+    <left> vasemmalta oikealle </left>
+    <right> oikealta vasemmalle </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-tietokantatiedot </title>
+    <host>
+     <label> DB-isäntä </label>
+     <placeholder> DB-isäntä </placeholder>
+     <validate> Syötä DB-isäntänimi </validate>
+    </host>
+    <user>
+     <label> DB-käyttäjänimi </label>
+     <placeholder> DB-käyttäjänimi </placeholder>
+     <validate> Syötä DB-käyttäjänimi </validate>
+    </user>
+    <pass>
+     <label> DB-salasana </label>
+     <placeholder> DB-salasana </placeholder>
+     <validate> Syötä DB-salasana </validate>
+    </pass>
+    <db>
+     <label> DB Name </label>
+     <placeholder> tietokannan nimi </placeholder>
+     <validate> Syötä tietokannan nimi </validate>
+    </db>
+    <gal_table>
+     <label> Gallerian taulukon nimi </label>
+     <placeholder> Gallerian taulukon nimi </placeholder>
+     <validate> Syötä gallerian taulukon nimi </validate>
+    </gal_table>
+    <img_table>
+     <label> Kuvataulukon nimi </label>
+     <placeholder> Kuvataulukon nimi </placeholder>
+     <validate> Kirjoita Kuvataulukon nimi </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Hakemistot kirjoitettavaa dynaamista sisältöä varten</title>
+    <db_alert>
+     <![CDATA[
+    <b> kokoonpano </b>, <b> virheloki </b> ja <b> määritykset </b> -tiedostot luodaan seuraavaan hakemistoon. Jos haluat muuttaa tämän hakemiston nimeä, muuta <b>DB_DIR</b>-määritelmää <b>definitions0.php</b>-tiedostossa ja päivitä tämä sivu.<br/><br/>Jos haluat muuttaa kokoonpano-, virheloki- ja määritystiedostojen nimiä, muuta <b>CONFIG_FILE</b>-, <b>ERROR_LOG_FILE</b>- ja <b>DEFINITIONS_FILE</b>-määritelmiä definitions0.php-tiedostossa.<br/><br/>Jos järjestelmäsi on unix-pohjainen, aseta kirjoitusoikeudet seuraavalla komennolla:<br/><b>%s</b><br/><br/>Ennen asennuksen aloittamista varmista, että seuraava polku on olemassa ja sinulla on oikeudet kirjoittaa hakemistoon:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Ennen asennuksen aloittamista varmista, että seuraavat hakemistot ovat käytettävissä ja että sinulla on lupa kirjoittaa hakemistoihin. <br/> <br/> Jos aiot käyttää muita hakemistoja kuin seuraavat hakemistot, jos hakemistoja ei ole levyllä, luo ensin hakemistot, aseta kirjoitusoikeudet ja aloita asennus.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Määritystiedosto, virhelokitiedosto ja määritelmätiedoston polku</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Seuraavat hakemistot luodaan, kun uusi galleria tallennetaan. <b>%d</b> osoittaa gallerian tunnuksen. Nämä hakemistot luodaan yllä määritettyyn <b> Kuvatiedostojen peruspolku </b> -hakemistoon. Tarkista, onko hakemistojen muoto sopiva.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Kokoonpanotiedosto on luotu aiemmin. Siksi et voi suorittaa asennusta. Sinun on ensin poistettava määritystiedosto ja suoritettava sitten asennus.</config_alert>
+    <tmp_dir>
+     <label>Kuvan väliaikainen hakemisto</label>
+     <placeholder>Kuvan väliaikainen hakemisto</placeholder>
+     <validate>Kuvan väliaikainen hakemisto</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Pikkukuvan väliaikainen hakemisto</label>
+     <placeholder>Pikkukuvan väliaikainen hakemisto</placeholder>
+     <validate>Pikkukuvan väliaikainen hakemisto</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Rajatun pikkukuvan väliaikainen hakemisto</label>
+     <placeholder>Rajatun pikkukuvan väliaikainen hakemisto</placeholder>
+     <validate>Rajatun pikkukuvan väliaikainen hakemisto</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Diakokoisen kuvan väliaikainen hakemisto</label>
+     <placeholder>Diakokoisen kuvan väliaikainen hakemisto</placeholder>
+     <validate>Diakokoisen kuvan väliaikainen hakemisto</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Kuvatiedostojen peruspolku</label>
+     <placeholder>Kuvatiedostojen peruspolku</placeholder>
+     <validate>Kuvatiedostojen peruspolku</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Kuvahakemisto</label>
+     <placeholder>Kuvahakemisto</placeholder>
+     <validate>Kuvahakemisto</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Pikkukuvatiedostojen polku</label>
+     <placeholder>Pikkukuvatiedostojen polku</placeholder>
+     <validate>Pikkukuvatiedostojen polku</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Rajatun pikkukuvatiedoston polku</label>
+     <placeholder>Rajatun pikkukuvatiedoston polku</placeholder>
+     <validate>Rajatun pikkukuvatiedoston polku</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Dian kuvahakemisto</label>
+     <placeholder>Dian kuvahakemisto</placeholder>
+     <validate>Dian kuvahakemisto</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-tiedostohakemisto</label>
+     <placeholder>XML-tiedostohakemisto</placeholder>
+     <validate>XML-tiedostohakemisto</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Asennus. Odota ... </installing>
+    <success> Asennus valmistui onnistuneesti. </success>
+    <error> Asennusta ei voitu suorittaa loppuun. </error>
+   </alert>
+  
+   <submit> Aloita asennus </submit>
+   <submit_continue> Jatka &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gallerian hallinta </title>
+   <header> Gallerian hallinta </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Gallerialuettelo </title>
+   <header> Gallerialuettelo </header>
+   <sort>
+    <asc> lajittele ensimmäisestä viimeiseen </asc>
+    <desc> lajittele viimeisestä ensimmäiseen </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Näytä </button>
+     <title> Näytä galleria </title>
+    </view>
+    <delete>
+     <button> Poista </button>
+     <title> Poista galleria </title>
+    </delete>
+    <edit>
+     <button> Muokkaa </button>
+     <title> Muokkaa galleriaa </title>
+    </edit>
+    <images>kuvia</images>
+    <date>Päivämäärä</date>
+    <move> Voit lajitella galleriat vetämällä niitä hiirellä. </move>
+    <move_mobile>Napauta ja pidä kohdetta sormella ja odota, että se valitaan. Kun kohde on valittu, voit lajitella kohteet vetämällä sormella.</move_mobile>
+   </card>
+   <alert> Galleriaa ei löytynyt. </alert>
+   <modal>
+    <del_gallery>
+     <label> Poista galleria </label>
+     <close> sulje </close>
+     <text> Haluatko poistaa tämän gallerian sivustolta? </text>
+     <command> Poista </command>
+     <cancel> Peruuta </cancel>
+    </del_gallery>
+    <result>
+     <label> Virhe </label>
+     <close> sulje </close>
+     <text> </text>
+     <command> Sulje </command>
+    </result>
+   </modal>
+   <save_changes> Tallenna gallerian lajittelu </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Gallerianäkymä </title>
+   <header> Gallerianäkymä </header>
+   <alert> kuvaa ei löytynyt. </alert>
+   <share>Jaa galleria</share>
+   <filedate>Julkaisupäivä</filedate>
+   <filesize>Tiedoston koko</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopioi leikepöydälle</label>
+     <close>sulje</close>
+     <text>Linkki kopioitu leikepöydälle</text>
+     <command>Kopio</command>
+     <cancel>Sulje</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Luo uusi galleria </title>
+    <header> Luo uusi galleria </header>
+   </new>
+   <edit>
+    <title> Muokkaa galleriaa </title>
+    <header> Muokkaa galleriaa </header>
+   </edit>
+   <gallery_info>
+    <title> Gallerian tiedot </title>
+    <name>
+     <label> Gallerian nimi </label>
+     <placeholder> Gallerian nimi </placeholder>
+     <validate> Syötä gallerian nimi </validate>
+    </name>
+    <description>
+     <label> Gallerian kuvaus </label>
+     <placeholder> Gallerian kuvaus </placeholder>
+     <validate> Syötä gallerian kuvaus </validate>
+    </description>
+    <keywords>
+     <label> Gallerian avainsanat pilkuilla tai rivinvaihdoilla erotettuna </label>
+     <placeholder> Gallerian avainsanat pilkuilla tai rivinvaihdoilla erotettuna </placeholder>
+     <validate> Anna Galleria-avainsanat </validate>
+    </keywords>
+    <submit>
+     <save> Tallenna galleria </save>
+     <update> Päivitä galleria </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Lähettäjäopas </title>
+     <body>
+      <![CDATA[
+Valitse kuvat laitteestasi <b> Selaa kuvia </b> -painikkeella ja lataa sivustoon <b> Lähetä kuvia </b> -painikkeella. <br/> Tuetut kuvamuodot: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Sallittu vähimmäistarkkuus: <b>%d x %d px</b> <br/> Sallittu enimmäistarkkuus: <b>%d x %d px</b> <br/> Yhden tiedoston enimmäiskoko: <b>%d MB</b> <br/> Kuvamäärä galleriaa kohti: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Valitse kaikki </select_all>
+    <select_del> Poista valittu </select_del>
+    <thumb>
+     <exist>
+      <delete> Poista ladattu kuva sivustolta </delete>
+      <info> Kuvatiedot </info>
+     </exist>
+     <new>
+      <delete> Poista ladattu kuva sivustolta </delete>
+      <cancel> Peruuta kuvan lataus </cancel>
+      <info> Kuvatiedot </info>
+      <rotate> Kierrä kuvaa </rotate>
+      <crop> Rajaa kuva </crop>
+     </new>
+     <move> Voit lajitella kuvat vetämällä niitä hiirellä. </move>
+     <move_mobile>Napauta ja pidä kohdetta sormella ja odota, että se valitaan. Kun kohde on valittu, voit lajitella kohteet vetämällä sormella.</move_mobile>
+    </thumb>
+    <browse> Selaa kuvia </browse>
+    <upload> Lähetä kuvia </upload>
+    <uploading> Kuvia ladataan sivustolle. Älä sulje sivua, ennen kuin lataus on valmis. </uploading>
+    <uploaded> Kuvat on ladattu sivustolle. </uploaded>
+    <error>Joitakin virheitä tapahtui ladattaessa tiedostoja palvelimelle.</error>
+    <save_changes> Tallenna kuvamuutokset </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Raja </crop>
+     <cancel> Peruuta </cancel>
+    </crop>
+    <del_up_img>
+     <label> Poista kuva </label>
+     <close> sulje </close>
+     <text> Haluatko poistaa tämän kuvan sivustolta? </text>
+     <command> Poista </command>
+     <cancel> Peruuta </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Poista kuva </label>
+     <close> sulje </close>
+     <text> Haluatko poistaa tämän kuvan sivustolta? </text>
+     <command> Poista </command>
+     <cancel> Peruuta </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Poista valitut kuvat </label>
+     <close> sulje </close>
+     <text> Haluatko poistaa valitut kuvat sivustolta? </text>
+     <command> Poista </command>
+     <cancel> Peruuta </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Kuvan tiedot </label>
+     <close> sulje </close>
+     <filename> Tiedostonimi </filename>
+     <filesize> Tiedoston koko </filesize>
+     <date> Latauspäivämäärä </date>
+     <title>
+      <label> Otsikko </label>
+      <placeholder> Kuvan nimi </placeholder>
+     </title>
+     <desc>
+      <label> Kuvaus </label>
+      <placeholder> Kuvan kuvaus </placeholder>
+     </desc>
+     <keyw>
+      <label> Avainsanat </label>
+      <placeholder> Pilkuilla tai rivinvaihdoilla erotetut avainsanat </placeholder>
+     </keyw>
+     <command> Tallenna / Päivitä </command>
+     <cancel> Peruuta </cancel>
+    </img_info>
+    <result>
+     <label> Virhe </label>
+     <close> sulje </close>
+     <text> </text>
+     <command> Sulje </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Kuvien lataamisen asetukset </title>
+    <upload_limit>
+     <label> Suurin kuvamäärä galleriaa kohti </label>
+     <placeholder> Suurin kuvamäärä galleriaa kohti </placeholder>
+     <validate> Syötä kuvien enimmäismäärä galleriaa kohti </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Yhden tiedoston suurin koko (MB) </label>
+     <placeholder> Yhden tiedoston suurin koko (MB) </placeholder>
+     <validate> Syötä yksittäisen tiedoston enimmäiskoko (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Pienin sallittu resoluutio </label>
+     <width>
+      <placeholder> Pienin leveys </placeholder>
+      <validate> Syötä arvo </validate>
+     </width>
+     <height>
+      <placeholder> Pienin korkeus </placeholder>
+      <validate> Syötä arvo </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Suurin sallittu resoluutio </label>
+     <width>
+      <placeholder> enimmäisleveys </placeholder>
+      <validate> Syötä arvo </validate>
+     </width>
+     <height>
+      <placeholder> Suurin korkeus </placeholder>
+      <validate> Syötä arvo </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Kuvan muunnos </title>
+    <full_resolution>
+     <label> Kuva täysikokoinen </label>
+     <width>
+      <placeholder> enimmäisleveys </placeholder>
+      <validate> Syötä arvo </validate>
+     </width>
+     <height>
+      <placeholder> Suurin korkeus </placeholder>
+      <validate> Syötä arvo </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> pikkukuvan koko </label>
+     <width>
+      <placeholder> peukalon leveys </placeholder>
+      <validate> Syötä arvo </validate>
+     </width>
+     <height>
+      <placeholder> Peukalon korkeus </placeholder>
+      <validate> Syötä arvo </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Dian koko </label>
+     <width>
+      <placeholder> Dian leveys </placeholder>
+      <validate> Syötä arvo </validate>
+     </width>
+     <height>
+      <placeholder> Dian korkeus </placeholder>
+      <validate> Syötä arvo </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG-laatu </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG-pakkaus </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> vesileima </title>
+    <label> Käytä vesileimaa </label>
+    <position> Vesileiman sijainti </position>
+    <image> Vesileimakuva </image>
+    <set> Aseta vesileima </set>
+    <browse> 1- Selaa vesileimatiedostoja </browse>
+    <adjust> 2- Säädä kuvaa kehyksen mukaan. </adjust>
+    <upload> 3- Lähetä valittu tiedosto </upload>
+    <uploading> Lähetetään ... </uploading>
+    <uploaded> Lähetetty. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Sivu </page>
+   <first> Ensimmäinen sivu </first>
+   <prev> Edellinen sivu </prev>
+   <next> Seuraava sivu </next>
+   <last> Viimeinen sivu </last>
+  </pagination>
+
+</lang>

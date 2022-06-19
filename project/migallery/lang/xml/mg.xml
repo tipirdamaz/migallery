@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Fiteny </title>
+   <label> Safidio ny fiteny </label>
+  </lang>
+
+  <timezone>
+   <title> Timezone </title>
+   <label> Safidio ny Timezone </label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Fitantanana Gallery </gallery_man>
+   <gallery_list> Lisitry ny Gallery </gallery_list>
+   <uploader> Mamorona Galerie vaovao </uploader>
+   <back> Miverena </back>
+  </nav>
+
+  <install>
+ 
+   <title> Fampiorenana MIGallery </title>
+   <header> Fampiorenana MIGallery </header>
+
+   <img_direction>
+    <label> Gallerie, sary ary slide fisehon'ny </label>
+    <left> Avy Havia ka Havanana </left>
+    <right> Avy Havanana ka Havia </right>
+   </img_direction>
+
+   <db_info>
+    <title> Fampahalalana momba ny database MySQL </title>
+    <host>
+     <label> Anaran'ny mpampiantrano banky angona </label>
+     <placeholder> Anaran'ny mpampiantrano banky angona </placeholder>
+     <validate> Ampidiro ny Anaran'ny mpampiantrano banky angona </validate>
+    </host>
+    <user>
+     <label> Anaran'ny mpampiasa banky angona </label>
+     <placeholder> Anaran'ny mpampiasa banky angona </placeholder>
+     <validate> Ampidiro ny Anaran'ny mpampiasa banky angona </validate>
+    </user>
+    <pass>
+     <label> Tenimiafina banky angona </label>
+     <placeholder> Tenimiafina banky angona </placeholder>
+     <validate> Ampidiro ny Tenimiafina banky angona </validate>
+    </pass>
+    <db>
+     <label> Anaran'ny banky angona </label>
+     <placeholder> Anaran'ny banky angona </placeholder>
+     <validate> Ampidiro ny Anaran'ny banky angona </validate>
+    </db>
+    <gal_table>
+     <label> Anaran'ny latabatra galerie </label>
+     <placeholder> Anaran'ny latabatra galerie </placeholder>
+     <validate> Ampidiro ny Anaran'ny latabatra galerie </validate>
+    </gal_table>
+    <img_table>
+     <label> Anaran'ny latabatra sary </label>
+     <placeholder> Anaran'ny latabatra sary </placeholder>
+     <validate> Ampidiro ny Anaran'ny latabatra sary </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title> Lahatahiry ho an'ny atiny azo soratana </title>
+    <db_alert>
+     <![CDATA[
+    Ity lahatahiry manaraka ity dia eo no hamoronana ny fisie <b> fanahafana </b>, <b>error log </b> ary <b> famaritana </b>. Raha te hanova ny an'ity lahatahiry ity ianao dia ovao ny famaritana <b> DB_DIR </b> ao amin'ny rakitra <b> definitions0.php </b> ary havaozy ity pejy ity. <br/> <br/> Raha te hanova ny anaran'ny fampifanarahana, ny rakitra diso sy ny rakitra famaritana ianao dia ovao ny famaritana ny <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ary <b>DEFINITIONS_FILE</b> amin'ny rakitra definitions0.php. <br/> <br/> Raha mifototra amin'ny unix ny rafitrao, hametraka ny alalana hanoratra miaraka amin'ity baiko manaraka ity: <br/> <b>%s</b> <br/> <br/> Alohan'ny hanombohana ny fametrahana dia alao antoka fa misy ity lalana manaraka ity ary manana alalana hanoratra:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Alohan'ny hanombohana ny fametrahana dia alao antoka fa misy ireo lahatahiry manaraka ary manana alalana hanoratra.<br/><br/>Raha hampiasa lahatahiry hafa ankoatra ireto lahatahiry manaraka ireto ianao, raha tsy misy ny lahatahiry amin'ny kapila, mamorona ny lahatahiry aloha ary apetraho ny fahazoan-dàlana hanoratra ary atombohy ny fametrahana.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label> Lahatahiry an'ny fanahafana, error.log ary famaritana </label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Ireo lahatahiry manaraka dia noforonina rehefa voatahiry ny galeriana vaovao. <b>%d</b> manondro ny id gallery. Ireo lahatahiry ireo dia noforonina ao amin'ny lahatahiry <b>Lahatahiry Fototra Sary</b> voafaritra etsy ambony. Hamarino raha mety ny endrik'ireo lahatahiry.
+     ]]>
+    </img_dir_alert>
+    <config_alert> Ny rakitra fikirakirana dia efa noforonina taloha. Noho izany, tsy afaka mihazakazaka ny fananganana ianao. Tsy maintsy mamafa ny rakitra fikirakirana aloha ianao ary avy eo mihazakazaka ny hametraka. </config_alert>
+    <tmp_dir>
+     <label> Vonjimaika Lahatahiry an'ny Sary </label>
+     <placeholder> Vonjimaika Lahatahiry an'ny Sary </placeholder>
+     <validate> Ampidiro ny Vonjimaika Lahatahiry an'ny Sary </validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label> Vonjimaika Lahatahiry an'ny Thumbnail </label>
+     <placeholder> Vonjimaika Lahatahiry an'ny Thumbnail </placeholder>
+     <validate> Ampidiro ny Vonjimaika Lahatahiry an'ny Thumbnail </validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label> Vonjimaika Lahatahiry an'ny Thumbnail voapaika </label>
+     <placeholder> Vonjimaika Lahatahiry an'ny Thumbnail voapaika </placeholder>
+     <validate> Ampidiro ny Vonjimaika Lahatahiry an'ny Thumbnail voapaika </validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label> Vonjimaika Lahatahiry an'ny sary haben'ny slide </label>
+     <placeholder> Vonjimaika Lahatahiry an'ny sary haben'ny slide </placeholder>
+     <validate> Ampidiro ny vonjimaika Lahatahiry an'ny sary haben'ny slide </validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label> Lahatahiry an'ny Fototra Sary </label>
+     <placeholder> Lahatahiry an'ny Fototra Sary </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny Fototra Sary </validate>
+    </img_base_dir>
+    <img_dir>
+     <label> Lahatahiry an'ny Sary </label>
+     <placeholder> Lahatahiry an'ny Sary </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny Sary </validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label> Lahatahiry an'ny Thumbnail </label>
+     <placeholder> Lahatahiry an'ny Thumbnail </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny Thumbnail </validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label> Lahatahiry an'ny Thumbnail voapaika </label>
+     <placeholder> Lahatahiry an'ny Thumbnail voapaika </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny Thumbnail voapaika </validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label> Lahatahiry an'ny sary haben'ny slide </label>
+     <placeholder> Lahatahiry an'ny sary haben'ny slide </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny sary haben'ny slide </validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label> Lahatahiry an'ny XML </label>
+     <placeholder> Lahatahiry an'ny XML </placeholder>
+     <validate> Ampidiro ny Lahatahiry an'ny XML </validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Mametraka. Andraso azafady ... </installing>
+    <success> Vita soa aman-tsara ny fametrahana. </success>
+    <error> Tsy vita ny fametrahana. </error>
+   </alert>
+  
+   <submit> Atombohy ny fametrahana </submit>
+   <submit_continue> hanohy &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> fitantanana galeriana </title>
+   <header> fitantanana galeri </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lisitry ny galerie </title>
+   <header> Lisitry ny galeraly </header>
+   <sort>
+    <asc> manomboka mifarana </asc>
+    <desc> farany hatramin'ny voalohany </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Hijery </button>
+     <title> Hijery Gallery </title>
+    </view>
+    <delete>
+     <button> Mamafa </button>
+     <title> Mamafa galeriana </title>
+    </delete>
+    <edit>
+     <button> Ovay </button>
+     <title> Ovay galeriana </title>
+    </edit>
+    <images> sary </images>
+    <date> daty </date>
+    <move> Azonao atao ny handahatra galeriana amin'ny fisintomana azy ireo amin'ny totozy. </move>
+    <move_mobile> Tsindrio ary tazomy amin'ny rantsan-tànanao ny singa iray ary andraso ny hisafidianana azy. Aorian'ny fisafidianana singa iray dia hisintona ny rantsan-tananao mba handamina ireo zavatra ireo. </move_mobile>
+   </card>
+   <alert> Tsy misy galeria hita. </alert>
+   <modal>
+    <del_gallery>
+     <label> Mamafa galeriana </label>
+     <close> akaiky </close>
+     <text> Te hamafa ity galeriana ity amin'ny tranokala ve ianao? </text>
+     <command> Mamafa </command>
+     <cancel> Hanafoana </cancel>
+    </del_gallery>
+    <result>
+     <label> fahadisoana </label>
+     <close> akaiky </close>
+     <text> </text>
+     <command> Akaiky </command>
+    </result>
+   </modal>
+   <save_changes> Tehirizo ny filaharana manasokajy ny galeria </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Fijerena galerier </title>
+   <header> Fijerena galeraly </header>
+   <alert> Tsy misy sary hita. </alert>
+   <share> Mizarà Galerie </share>
+   <filedate> Date upload </filedate>
+   <filesize> haben'ny rakitra </filesize>
+   <modal>
+    <copy_clipboard>
+     <label> Adikao amin'ny solaitrabe </label>
+     <close> akaiky </close>
+     <text> Ny rohy dia nalaina an-tsokosoko tamin'ny clipboard </text>
+     <command> Handika </command>
+     <cancel> Akaiky </cancel>
+    </copy_clipboard>
+   </modal>
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Mamorona Galerie vaovao </title>
+    <header> Mamorona Galerie vaovao </header>
+   </new>
+   <edit>
+    <title> Manova Galerie </title>
+    <header> Amboary ny Gallery </header>
+   </edit>
+   <gallery_info>
+    <title> Fampahalalana momba ny galeria </title>
+    <name>
+     <label> Anaran'ny Gallery </label>
+     <placeholder> Anaran'ny Gallery </placeholder>
+     <validate> Anaran'ny Gallery fampidirana </validate>
+    </name>
+    <description>
+     <label> Famaritana galerie </label>
+     <placeholder> famaritana galerie </placeholder>
+     <validate> Fampidirana galeriana fampidirana </validate>
+    </description>
+    <keywords>
+     <label> Teny fanalahidy ao amin'ny galerià nosarahana komas na tsipika vaovao &#x23CE; </label>
+     <placeholder> Teny fanalahidy ao amin'ny galerià nosarahana komas na tsipika vaovao &#x23CE; </placeholder>
+     <validate> Ampidiro ny teny lakile gallery </validate>
+    </keywords>
+    <submit>
+     <save> Vonjeo Galerie </save>
+     <update> Update Galerie </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Torolàlana momba ny uploader sary </title>
+     <body>
+      <![CDATA[
+Misafidiana sary avy amin'ny fitaovanao miaraka amin'ny bokotra <b>Misafidiana sary</b> ary ampidiro amin'ilay tranokala miaraka amin'ny bokotra <b>Mampakatra sary</b>. <br/> Endrika endrika tohanan'ny: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Fanapahan-kevitra farany ambany azo ekena: <b>%d x %d px</b> <br/> Fanapahan-kevitra faratampony azo ekena: <b>%d x %d px</b> <br/> Fisie tokana faratampony habe: <b>%d MB</b> <br/> Fanisana sary isaky ny Gallery: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Safidio ny rehetra </select_all>
+    <select_del> Hamafana ny sary voafantina </select_del>
+    <thumb>
+     <exist>
+      <delete> Delete ny sary nakarina avy amin'ny tranokala </delete>
+      <info> Info momba ny sary </info>
+     </exist>
+     <new>
+      <delete> Delete ny sary nakarina avy amin'ny tranokala </delete>
+      <cancel> Hanafoana ny upload </cancel>
+      <info> Info momba ny sary </info>
+      <rotate> Ahodino ny sary </rotate>
+      <crop> Hetezo ny sary </crop>
+     </new>
+     <move> Azonao atao ny handahatra ny sary amin'ny fisintomana azy ireo amin'ny totozy. </move>
+     <move_mobile> Tsindrio ary tazomy amin'ny rantsan-tànanao ny singa iray ary andraso ny hisafidianana azy. Aorian'ny fisafidianana singa iray dia hisintona ny rantsan-tananao mba handamina ireo zavatra ireo. </move_mobile>
+    </thumb>
+    <browse> Misafidiana sary </browse>
+    <upload> Mampakatra sary </upload>
+    <uploading> Atao ao anaty tranonkala ny sary. Aza manidy ny pejy mandra-pahatapitry ny fampakaram-bahiny. </uploading>
+    <uploaded> Ny sary dia nakarina tao amin'ilay tranonkala. </uploaded>
+    <error> Nisy lesoka sasany teo am-pamoahana ireo rakitra tamin'ny mpizara. </error>
+    <save_changes> Tehirizo ny fiovan'ny sary </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Hetezo ny sary </crop>
+     <cancel> Hanafoana </cancel>
+    </crop>
+    <del_up_img>
+     <label> Mamafa ny sary </label>
+     <close> akaiky </close>
+     <text> Te hamafa an'ity sary ity ao amin'ny tranokala ve ianao? </text>
+     <command>Mamafa </command>
+     <cancel> Hanafoana </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Mamafa ny sary </label>
+     <close> akaiky </close>
+     <text> Te hamafa an'ity sary ity ao amin'ny tranokala ve ianao? </text>
+     <command>Mamafa </command>
+     <cancel> Hanafoana </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Mamafa ny sary voafantina </label>
+     <close> akaiky </close>
+     <text> Te hamafa ireo sary voafantina ao amin'ilay tranokala ve ianao? </text>
+     <command>Mamafa </command>
+     <cancel> Hanafoana </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Info momba ny sary </label>
+     <close> akaiky </close>
+     <filename> Anaran'ny rakitra </filename>
+     <filesize> haben'ny rakitra </filesize>
+     <date> Daty mampakatra </date>
+     <title>
+      <label> Lohateny </label>
+      <placeholder> Lohatenin'ny sary </placeholder>
+     </title>
+     <desc>
+      <label> Famaritana </label>
+      <placeholder> Famaritana sary </placeholder>
+     </desc>
+     <keyw>
+      <label> Teny lakile </label>
+      <placeholder> Teny lakile nosarahana commas na tsipika vaovao &#x23CE; </placeholder>
+     </keyw>
+     <command> Vonjeo / havaozy </command>
+     <cancel> Hanafoana </cancel>
+    </img_info>
+    <result>
+     <label> Fahadisoana </label>
+     <close> akaiky </close>
+     <text> </text>
+     <command> Akaiky </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Fikirana sary fampitana azo ekena </title>
+    <upload_limit>
+     <label> Isan'ny sary Max isaky ny galeriana </label>
+     <placeholder> Isa isa mavesatra isaky ny galeriana </placeholder>
+     <validate> Fidio isa isa Max isaky ny galeriana </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> habe indrindra faran'ny rakitra iray (MB) </label>
+     <placeholder> habe farafahakeliny rakitra iray (MB) </placeholder>
+     <validate> ampidiro habe ambony indrindra amin'ny fisie iray (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Fanapahan-kevitra faran'izay kely azo ekena </label>
+     <width>
+      <placeholder> sakany </placeholder>
+      <validate> mampiditra sanda </validate>
+     </width>
+     <height>
+      <placeholder> hahavony </placeholder>
+      <validate> mampiditra sanda </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Fanapahan-kevitra faratampony azo ekena </label>
+     <width>
+      <placeholder> sakany </placeholder>
+      <validate> mampiditra sanda </validate>
+     </width>
+     <height>
+      <placeholder> hahavony </placeholder>
+      <validate> mampiditra sanda </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Mamadika sary </title>
+    <full_resolution>
+     <label> Refin'ny Sary feno habe </label>
+     <width>
+      <placeholder> sakany </placeholder>
+      <validate> mampiditra sanda </validate>
+     </width>
+     <height>
+      <placeholder> hahavony </placeholder>
+      <validate> mampiditra sanda </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Refin'ny Thumbnail </label>
+     <width>
+      <placeholder> sakany </placeholder>
+      <validate> mampiditra sanda </validate>
+     </width>
+     <height>
+      <placeholder> hahavony </placeholder>
+      <validate> mampiditra sanda </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Refin'ny Slide </label>
+     <width>
+      <placeholder> sakany </placeholder>
+      <validate> mampiditra sanda </validate>
+     </width>
+     <height>
+      <placeholder> hahavony </placeholder>
+      <validate> mampiditra sanda </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kalitaon'ny Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Famatrarana'ny PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Sary mari-drano </title>
+    <label> Ampiasao sary mari-drano </label>
+    <position> Toerana misy ny sary mari-drano </position>
+    <image> Sary mari-drano </image>
+    <set> Mametraka a sary mari-drano </set>
+    <browse> 1- Mizahava fisie sary mari-drano </browse>
+    <adjust> 2- Amboary ny sary mifanaraka amin'ny frame. </adjust>
+    <upload> 3- Ampidiro amin'ny mpizara </upload>
+    <uploading> Mampakatra ... </uploading>
+    <uploaded> Nampakatra. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Pejy </page>
+   <first> Pejy voalohany </first>
+   <prev> Pejy teo aloha </prev>
+   <next> Pejy manaraka </next>
+   <last> Pejy farany </last>
+  </pagination>
+
+</lang>

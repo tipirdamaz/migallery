@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>لغة</title>
+   <label>اختار اللغة</label>
+  </lang>
+
+  <timezone>
+   <title>وحدة زمنية</title>
+   <label>اختر المجال الزمني</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>إدارة معرض الصور</gallery_man>
+   <gallery_list>معارض الصور</gallery_list>
+   <uploader>إنشاء معرض جديد</uploader>
+   <back>عودة</back>
+  </nav>
+
+  <install>
+
+   <title>نصب MIGallery</title>
+   <header>نصب MIGallery</header>
+
+   <img_direction>
+    <label>المعرض والصورة واتجاه الشريحة</label>
+    <left>من اليسار إلى اليمين</left>
+    <right>من اليمين الى اليسار</right>
+   </img_direction>
+
+   <db_info>
+    <title>معلومات قاعدة بيانات MySQL</title>
+    <host>
+     <label>اسم مضيف قاعدة البيانات</label>
+     <placeholder>اسم مضيف قاعدة البيانات</placeholder>
+     <validate>أدخل اسم مضيف قاعدة البيانات</validate>
+    </host>
+    <user>
+     <label>اسم مستخدم قاعدة البيانات</label>
+     <placeholder>اسم مستخدم قاعدة البيانات</placeholder>
+     <validate>أدخل اسم مستخدم قاعدة البيانات</validate>
+    </user>
+    <pass>
+     <label>كلمة مرور قاعدة البيانات</label>
+     <placeholder>كلمة مرور قاعدة البيانات</placeholder>
+     <validate>أدخل كلمة مرور قاعدة البيانات</validate>
+    </pass>
+    <db>
+     <label>اسم قاعدة البيانات</label>
+     <placeholder>اسم قاعدة البيانات</placeholder>
+     <validate>أدخل اسم قاعدة البيانات</validate>
+    </db>
+    <gal_table>
+     <label>اسم جدول معرض الصور</label>
+     <placeholder>اسم جدول معرض الصور</placeholder>
+     <validate>أدخل اسم اسم جدول المعرض</validate>
+    </gal_table>
+    <img_table>
+     <label>اسم جدول الصورة</label>
+     <placeholder>اسم جدول الصورة</placeholder>
+     <validate>أدخل اسم جدول الصورة</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>أدلة الملفات للمحتوى الديناميكي القابل للكتابة</title>
+    <db_alert>
+     <![CDATA[
+    دليل الملف التالي هو المكان الذي سيتم فيه إنشاء ملفات <b> التكوين </b> و <b> سجل الأخطاء </b> و <b> التعريفات </b>. إذا كنت تريد تغيير اسم دليل الملف هذا ، فقم بتغيير تعريف <b> DB_DIR </b> في ملف <b> definitions0.php </b> وقم بتحديث هذه الصفحة.<br/><br/>إذا كنت تريد تغيير أسماء ملف التكوين وملف سجل الأخطاء وملف التعريفات ، فقم بتغيير تعريفات <b> CONFIG_FILE </b> و <b> ERROR_LOG_FILE </b> و <b> DEFINITIONS_FILE </b> في ملف  definitions0.php<br/><br/>إذا كان نظامك يعتمد على نظام unix ، فقم بتعيين أذونات الكتابة باستخدام الأمر التالي:<br/><b>%s</b><br/><br/>قبل بدء التثبيت ، تأكد من وجود المسار التالي ولديه أذونات الكتابة:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    قبل بدء التثبيت ، تأكد من وجود الدلائل التالية وأن لديك الإذن بالكتابة إلى الدلائل.<br/><br/>إذا كنت ستستخدم أدلة أخرى غير الدلائل التالية ، إذا لم تكن الدلائل موجودة على القرص ، فقم أولاً بإنشاء الدلائل وتعيين أذونات الكتابة وابدأ التثبيت.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ملف سجل الخطأ وملف التكوين ومسار ملف التعريفات</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    يتم إنشاء الدلائل التالية عند حفظ المعرض الجديد. يحدد <b>%d</b> معرف المعرض. تم إنشاء هذه الأدلة في دليل <b> مسار قاعدة الصورة </b> المحدد أعلاه. تحقق مما إذا كان تنسيق الدلائل مناسبًا.
+     ]]>
+    </img_dir_alert>
+    <config_alert>تم إنشاء ملف التكوين من قبل. لذلك ، لا يمكنك تشغيل برنامج الإعداد. يجب عليك أولاً حذف ملف التكوين ثم تشغيل الإعداد.</config_alert>
+    <tmp_dir>
+     <label>مسار الصور المؤقت</label>
+     <placeholder>مسار الصور المؤقت</placeholder>
+     <validate>أدخل اسم مسار الصورة المؤقت</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>دليل الصور المصغرة المؤقتة</label>
+     <placeholder>دليل الصور المصغرة المؤقتة</placeholder>
+     <validate>أدخل اسم دليل الصور المصغرة المؤقتة</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>المسار المؤقت للصورة المصغرة التي تم اقتصاصها</label>
+     <placeholder>المسار المؤقت للصورة المصغرة التي تم اقتصاصها</placeholder>
+     <validate>المسار المؤقت للصورة المصغرة التي تم اقتصاصها</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>مسار مؤقت لصورة الشريحة</label>
+     <placeholder>مسار مؤقت لصورة الشريحة</placeholder>
+     <validate>مسار مؤقت لصورة الشريحة</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>مسار قاعدة الصورة</label>
+     <placeholder>مسار قاعدة الصورة</placeholder>
+     <validate>أدخل اسم مسار قاعدة الصورة</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>مسار الصورة</label>
+     <placeholder>مسار الصورة</placeholder>
+     <validate>أدخل اسم مسار الصورة</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>دليل الصور المصغرة</label>
+     <placeholder>دليل الصور المصغرة</placeholder>
+     <validate>أدخل اسم دليل الصور المصغرة</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>دليل الصور المصغرة التي تم اقتصاصها</label>
+     <placeholder>دليل الصور المصغرة التي تم اقتصاصها</placeholder>
+     <validate>دليل الصور المصغرة التي تم اقتصاصها</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>مسار صورة حجم الشريحة</label>
+     <placeholder>مسار صورة حجم الشريحة</placeholder>
+     <validate>مسار صورة حجم الشريحة</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>مسار ملفات XML</label>
+     <placeholder>مسار ملفات XML</placeholder>
+     <validate>مسار ملفات XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>التثبيت يرجى الانتظار</installing>
+    <success>اكتمل التثبيت بنجاح</success>
+    <error>تعذر إكمال الإعداد</error>
+   </alert>
+
+   <submit>ابدأ التثبيت</submit>
+   <submit_continue>استمر &lt;&lt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>إدارة معرض الصور</title>
+   <header>إدارة معرض الصور</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>قائمة المعرض</title>
+   <header>قائمة المعرض</header>
+   <sort>
+    <asc>فرز من الأول إلى الأخير</asc>
+    <desc>فرز من الأخير إلى الأول</desc>
+   </sort>
+   <card>
+    <view>
+     <button>رأي</button>
+     <title>عرض المعرض</title>
+    </view>
+    <delete>
+     <button>حذف</button>
+     <title>حذف المعرض</title>
+    </delete>
+    <edit>
+     <button>تعديل</button>
+     <title>تحرير المعرض</title>
+    </edit>
+    <images>الصور</images>
+    <date>تاريخ</date>
+    <move>يمكنك فرز المعارض عن طريق سحبها بالماوس</move>
+    <move_mobile>المس مع الاستمرار عنصرًا بإصبعك وانتظر حتى يتم تحديده. بعد تحديد العنصر ، يمكنك فرز العناصر عن طريق سحب إصبعك.</move_mobile>
+   </card>
+   <alert>لم يتم العثور على معرض.</alert>
+   <modal>
+    <del_gallery>
+     <label>حذف المعرض</label>
+     <close>أغلق</close>
+     <text>هل تريد حذف هذا المعرض من الموقع؟</text>
+     <command>حذف</command>
+     <cancel>إلغاء</cancel>
+    </del_gallery>
+    <result>
+     <label>خطأ</label>
+     <close>أغلق</close>
+     <text></text>
+     <command>أغلق</command>
+    </result>
+   </modal> 
+   <save_changes>حفظ فرز المعرض</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>عرض المعرض</title>
+   <header>عرض المعرض</header>
+   <alert>لم يتم العثور على صورة</alert>
+   <share>شارك معرض الصور</share>
+   <filedate>تاريخ الرفع</filedate>
+   <filesize>حجم الملف</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>نسخ إلى الحافظة</label>
+     <close>أغلق</close>
+     <text>تم نسخ الرابط إلى الحافظة</text>
+     <command>نسخ الوصلة</command>
+     <cancel>أغلق</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+  
+  <uploader>
+   <new>
+    <title>إنشاء معرض جديد</title>
+    <header>إنشاء معرض جديد</header>
+   </new>
+   <edit>
+    <title>تحرير معرض الصور</title>
+    <header>تحرير معرض الصور</header>
+   </edit>
+   <gallery_info>
+    <title>معلومات معرض الصور</title>
+    <name>
+     <label>اسم معرض الصور</label>
+     <placeholder>اسم معرض الصور</placeholder>
+     <validate>أدخل اسم المعرض</validate>
+    </name>
+    <description>
+     <label>وصف معرض الصور</label>
+     <placeholder>وصف معرض الصور</placeholder>
+     <validate>أدخل وصفًا لمعرض الصور</validate>
+    </description>
+    <keywords>
+     <label>الكلمات الرئيسية في المعرض مفصولة بفواصل أو أسطر جديدة</label>
+     <placeholder>الكلمات الرئيسية في المعرض مفصولة بفواصل أو أسطر جديدة</placeholder>
+     <validate>أدخل الكلمات الرئيسية للمعرض</validate>
+    </keywords>
+    <submit>
+     <save>حفظ المعرض</save>
+     <update>معرض التحديث</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>دليل رفع الصور</title>
+     <body>
+      <![CDATA[
+حدد الصور من جهازك باستخدام الزر <b> تصفح الصور </b> وقم بتحميلها إلى الموقع باستخدام الزر <b> تحميل الصور </b> <br/> <b> JPG و PNG و GIF و BMP و WEBP </b> : تنسيقات الصور المدعومة <br/> <b> %d x %d px </b> : الحد الأدنى من القرار المسموح به <br/> <b> %d x %d px </b> : القرار الأقصى المسموح به <br/> <b> %d MB </b> : الحد الأقصى لحجم الملف الفردي <br/> <b> %d </b> : عدد الصور لكل معرض
+      ]]>
+     </body>
+    </info>
+    <select_all>اختر الكل</select_all>
+    <select_del>احذف المختار</select_del>
+    <thumb>
+     <exist>
+      <delete>حذف الصورة المرفوعة من الموقع</delete>
+      <info>معلومات الصورة</info>
+     </exist>
+     <new>
+      <delete>حذف الصورة المرفوعة من الموقع</delete>
+      <cancel>إلغاء الرفع</cancel>
+      <info>معلومات الصورة</info>
+      <rotate>ادر الصورة</rotate>
+      <crop>قص الصوره</crop>
+     </new>
+     <move>يمكنك فرز الصور عن طريق سحبها بالماوس</move>
+     <move_mobile>المس مع الاستمرار عنصرًا بإصبعك وانتظر حتى يتم تحديده. بعد تحديد العنصر ، يمكنك فرز العناصر عن طريق سحب إصبعك.</move_mobile>
+    </thumb>
+    <browse>تصفح الصور</browse>
+    <upload>تحميل الصور</upload>
+    <uploading>يتم تحميل الصور على الموقع. لا تغلق الصفحة حتى انتهاء التحميل.</uploading>
+    <uploaded>تم تحميل الصور على الموقع.</uploaded>
+    <error>حدثت بعض الأخطاء أثناء تحميل الملفات على الخادم.</error>
+    <save_changes>حفظ تغييرات الصورة</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>قص</crop>
+     <cancel>إلغاء</cancel>
+    </crop>
+    <del_up_img>
+     <label>حذف صورة</label>
+     <close>أغلق</close>
+     <text>هل تريد حذف هذه الصورة من الموقع؟</text>
+     <command>حذف</command>
+     <cancel>إلغاء</cancel>
+    </del_up_img>
+    <del_img>
+     <label>حذف صورة</label>
+     <close>أغلق</close>
+     <text>هل تريد حذف هذه الصورة من الموقع؟</text>
+     <command>حذف</command>
+     <cancel>إلغاء</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>حذف الصور المختارة</label>
+     <close>أغلق</close>
+     <text>هل تريد حذف الصور المختارة من الموقع؟</text>
+     <command>حذف</command>
+     <cancel>إلغاء</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>معلومات الصورة</label>
+     <close>أغلق</close>
+     <filename>اسم الملف</filename>
+     <filesize>حجم الملف</filesize>
+     <date>تاريخ الرفع</date>
+     <title>
+      <label>عنوان</label>
+      <placeholder>عنوان الصورة</placeholder>
+     </title>
+     <desc>
+      <label>وصف</label>
+      <placeholder>وصف الصورة</placeholder>
+     </desc>
+     <keyw>
+      <label>الكلمات الدالة</label>
+      <placeholder>الكلمات الرئيسية مفصولة بفواصل أو أسطر جديدة</placeholder>
+     </keyw>
+     <command>حفظ / تحديث</command>
+     <cancel>إلغاء</cancel>
+    </img_info>
+    <result>
+     <label>خطأ</label>
+     <close>أغلق</close>
+     <text></text>
+     <command>أغلق</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>إعدادات تحميل الصور</title>
+    <upload_limit>
+     <label>أقصى عدد من الصور لكل معرض</label>
+     <placeholder>أقصى عدد من الصور لكل معرض</placeholder>
+     <validate>أدخل الحد الأقصى لعدد الصور لكل معرض</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>(MB) الحجم الأقصى لملف واحد</label>
+     <placeholder>(MB) الحجم الأقصى لملف واحد</placeholder>
+     <validate>(MB) أدخل الحجم الأقصى لملف واحد</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>الحد الأدنى من القرار المسموح به</label>
+     <width>
+      <placeholder>عرض</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </width>
+     <height>
+      <placeholder>ارتفاع</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>القرار الأقصى المسموح به</label>
+     <width>
+      <placeholder>عرض</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </width>
+     <height>
+      <placeholder>ارتفاع</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>تحول الصورة</title>
+    <full_resolution>
+     <label>الحجم الكامل للصورة</label>
+     <width>
+      <placeholder>عرض</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </width>
+     <height>
+      <placeholder>ارتفاع</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>حجم الصورة المصغرة</label>
+     <width>
+      <placeholder>عرض</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </width>
+     <height>
+      <placeholder>ارتفاع</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>حجم صورة الشريحة</label>
+     <width>
+      <placeholder>عرض</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </width>
+     <height>
+      <placeholder>ارتفاع</placeholder>
+      <validate>قيمة المدخلات</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>جودة Jpeg</label>
+    </jpg_quality>
+    <png_compress>
+     <label>ضغط PNG</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>علامة مائية</title>
+    <label>استخدم علامة مائية</label>
+    <position>موضع العلامة المائية</position>
+    <image>صورة العلامة المائية</image>
+    <set>ضع علامة مائية</set>
+    <browse>١- تصفح صورة العلامة المائية</browse>
+    <adjust>٢ - اضبط الصورة وفقًا للإطار</adjust>
+    <upload>٣ - رفع الملف المحدد</upload>
+    <uploading>تحميل</uploading>
+    <uploaded>تم الرفع بنجاح</uploaded>
+   </watermark>
+
+  </image>
+
+  <pagination>
+   <page>الصفحة</page>
+   <first>الصفحة الأولى</first>
+   <prev>الصفحة السابقة</prev>
+   <next>الصفحة التالية</next>
+   <last>آخر صفحة</last>
+  </pagination>
+
+</lang>

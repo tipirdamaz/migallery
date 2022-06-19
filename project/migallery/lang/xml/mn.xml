@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Хэл </title>
+   <label> Хэлийг сонго </label>
+  </lang>
+
+  <timezone>
+   <title>Цагийн бүс</title>
+   <label>Цагийн бүсийг сонгоно уу</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Галерейн менежмент </gallery_man>
+   <gallery_list> Галерейн жагсаалт </gallery_list>
+   <uploader> Шинэ галерей үүсгэх </uploader>
+   <back> Буцах </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery тохиргоо </title>
+   <header> MIGallery тохиргоо </header>
+
+   <img_direction>
+    <label> Галерей, дүрс, слайд чиглэл </label>
+    <left> Зүүнээс баруун тийш </left>
+    <right> Баруунаас зүүн тийш </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL мэдээллийн баазын мэдээлэл </title>
+    <host>
+     <label> Мэдээллийн сангийн хостын нэр </label>
+     <placeholder> Database Hostname </placeholder>
+     <validate> Оруулах мэдээллийн баазын хостын нэр </validate>
+    </host>
+    <user>
+     <label> Мэдээллийн сангийн хэрэглэгчийн нэр </label>
+     <placeholder> мэдээллийн баазын хэрэглэгчийн нэр </placeholder>
+     <validate> Оруулах мэдээллийн сангийн хэрэглэгчийн нэр </validate>
+    </user>
+    <pass>
+     <label> Мэдээллийн сангийн нууц үг </label>
+     <placeholder> мэдээллийн сангийн нууц үг </placeholder>
+     <validate> Мэдээллийн сангийн нууц үгийг оруулах </validate>
+    </pass>
+    <db>
+     <label> Мэдээллийн сангийн нэр </label>
+     <placeholder> мэдээллийн баазын нэр </placeholder>
+     <validate> Оруулах мэдээллийн сангийн нэр </validate>
+    </db>
+    <gal_table>
+     <label> Галерейн хүснэгтийн нэр </label>
+     <placeholder> галерейн хүснэгтийн нэр </placeholder>
+     <validate> Оруулах галерейн хүснэгтийн нэр </validate>
+    </gal_table>
+    <img_table>
+     <label> Зургийн хүснэгтийн нэр </label>
+     <placeholder> Зургийн хүснэгтийн нэр </placeholder>
+     <validate> Оруулах зургийн хүснэгтийн нэр </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Файл бичих зөвшөөрөлтэй директорууд</title>
+    <db_alert>
+     <![CDATA[
+    <b> тохиргоо </b>, <b> алдааны бүртгэл </b> ба <b> тодорхойлолт </b> файлуудыг дараахь директор дотор үүсгэх болно. Хэрэв та энэ директорын нэрийг өөрчлөхийг хүсвэл <b> definitions0.php </b> файл дахь <b> DB_DIR </b> тодорхойлолтыг өөрчилж энэ хуудсыг дахин ачаална уу.<br/><br/>Хэрэв та тохиргооны файл, алдааны бүртгэлийн файл, тодорхойлолтын файлын нэрийг өөрчлөхийг хүсвэл definitions0.php файл доторх <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> болон <b>DEFINITIONS_FILE</b>-ийн тодорхойлолтыг өөрчил.<br/><br/>Хэрэв таны систем unix дээр суурилсан бол бичих зөвшөөрлийг дараах тушаалаар фолдерт тохируулна уу.<br/><b>%s</b><br/><br/>Суулгацыг эхлүүлэхийн өмнө дараахь зам байгаа эсэхийг шалгаад лавлах бичих зөвшөөрөлтэй байна.
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Суулгацыг эхлүүлэхийн өмнө дараахь лавлах сангууд байгаа эсэхийг шалгаж, лавлах бичих зөвшөөрөлтэй эсэхээ шалгаарай. <br/> <br/> Хэрэв та дараахь лавлахаас өөр директор ашиглах гэж байгаа бол, директор дотор дискэн дээр байхгүй бол эхлээд каталогоо үүсгээд эдгээр директорын бичих зөвшөөрлийг тохируулаад суулгалтаа эхлүүлээрэй.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Тохиргоо, алдааны бүртгэл ба тодорхойлолтын файлын зам</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Шинэ галерейг хадгалахад дараахь лавлах сангууд үүснэ. <b>%d</b> нь галерейн id-г заана. Эдгээр сангууд дээр тодорхойлсон <b> Зургийн үндсэн лавлах </b> директор дээр байгуулагдсан болно. Эдгээр сангуудын формат тохиромжтой эсэхийг шалгаарай.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Тохиргооны файлыг өмнө нь үүсгэсэн. Тиймээс та суулгацыг ажиллуулж чадахгүй. Та эхлээд тохиргооны файлыг устгаад дараа нь суулгалтыг ажиллуулах хэрэгтэй.</config_alert>
+    <tmp_dir>
+     <label>Зургийн түр лавлах</label>
+     <placeholder>Зургийн түр лавлах</placeholder>
+     <validate>Зургийн түр лавлах</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Өнгөц зургийн файлуудын түр лавлах</label>
+     <placeholder>Өнгөц зургийн файлуудын түр лавлах</placeholder>
+     <validate>Өнгөц зургийн файлуудын түр лавлах</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Таслагдсан бяцхан зургийн түр хавтас</label>
+     <placeholder>Таслагдсан бяцхан зургийн түр хавтас</placeholder>
+     <validate>Таслагдсан бяцхан зургийн түр хавтас</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Слайд зургийн файлын түр лавлах</label>
+     <placeholder>Слайд зургийн файлын түр лавлах</placeholder>
+     <validate>Слайд зургийн файлын түр лавлах</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Зургийн үндсэн лавлах</label>
+     <placeholder>Зургийн үндсэн лавлах</placeholder>
+     <validate>Зургийн үндсэн лавлах</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Зургийн лавлах</label>
+     <placeholder>Зургийн лавлах</placeholder>
+     <validate>Зургийн лавлах</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Өнгөц зургийн файлуудын лавлах</label>
+     <placeholder>Өнгөц зургийн файлуудын лавлах</placeholder>
+     <validate>Өнгөц зургийн файлуудын лавлах</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Таслагдсан бяцхан зургийн лавлах</label>
+     <placeholder>Таслагдсан бяцхан зургийн лавлах</placeholder>
+     <validate>Таслагдсан бяцхан зургийн лавлах</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Слайд зургийн файлын лавлах</label>
+     <placeholder>Слайд зургийн файлын лавлах</placeholder>
+     <validate>Слайд зургийн файлын лавлах</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML файлын лавлах</label>
+     <placeholder>XML файлын лавлах</placeholder>
+     <validate>XML файлын лавлах</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> суулгах. Түр хүлээнэ үү ... </installing>
+    <success> Суулгалт амжилттай дууслаа. </success>
+    <error> Суулгалтыг хийж чадсангүй. </error>
+   </alert>
+  
+   <submit> Суулгацыг эхлүүлэх </submit>
+   <submit_continue> Үргэлжлүүлэх &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Галерейн менежмент </title>
+   <header> Галерейн менежмент </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Галерейн жагсаалт </title>
+   <header> Галерейн жагсаалт </header>
+   <sort>
+    <asc> эхнээс нь сүүлд нь ангилах </asc>
+    <desc> сүүлээс эхний рүү эрэмбэлэх </desc>
+   </sort>
+   <card>
+    <view>
+     <button> харах </button>
+     <title> Галерей үзэх </title>
+    </view>
+    <delete>
+     <button> Устгах </button>
+     <title> Галерейг устгах </title>
+    </delete>
+    <edit>
+     <button> Засах </button>
+     <title> Галерейг засах </title>
+    </edit>
+    <images>зураг</images>
+    <date>Огноо</date>
+    <move> Та галерейг хулганаар чирж ангилах боломжтой. </move>
+    <move_mobile>Хуруугаараа объектыг товшоод удаан дараад түүнийг сонгохыг хүлээнэ үү. Зүйлийг сонгосны дараа хуруугаа чирж зүйлүүдийг ангилах хэрэгтэй.</move_mobile>
+   </card>
+   <alert> Галерей олдсонгүй. </alert>
+   <modal>
+    <del_gallery>
+     <label> Галерейг устгах </label>
+     <close> хаах </close>
+     <text> Та энэ галерейг сайтаас устгах уу? </text>
+     <command> Устгах </command>
+     <cancel> Цуцлах </cancel>
+    </del_gallery>
+    <result>
+     <label> алдаа </label>
+     <close> хаах </close>
+     <text> </text>
+     <command> Хаах </command>
+    </result>
+   </modal>
+   <save_changes> галерейн зэрэглэлийг хадгалах </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Галерей харах </title>
+   <header> Галерей харах </header>
+   <alert> Зураг олдсонгүй. </alert>   
+   <share>Галерейг хуваалцах</share>
+   <filedate>Байршуулсан огноо</filedate>
+   <filesize>Файлын хэмжээ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Clipboard уруу хуулах</label>
+     <close>хаах</close>
+     <text>Холбоосыг түр санах ойд хуулав</text>
+     <command>Хуулах</command>
+     <cancel>Хаах</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Шинэ галерей үүсгэх </title>
+    <header> Шинэ галерей үүсгэх </header>
+   </new>
+   <edit>
+    <title> Галерейг засах </title>
+    <header> Галерейг засах </header>
+   </edit>
+   <gallery_info>
+    <title> Галерейн мэдээлэл </title>
+    <name>
+     <label> Галерейн нэр </label>
+     <placeholder> галерейн нэр </placeholder>
+     <validate> Оруулах галлерейн нэр </validate>
+    </name>
+    <description>
+     <label> Галерейн тодорхойлолт </label>
+     <placeholder> галерейн тодорхойлолт </placeholder>
+     <validate> Оруулах галлерейн тодорхойлолт </validate>
+    </description>
+    <keywords>
+     <label> Таслал эсвэл мөрний завсараар тусгаарлагдсан галерейн түлхүүр үгс </label>
+     <placeholder> Таслал эсвэл мөрний завсараар тусгаарлагдсан галерейн түлхүүр үгс </placeholder>
+     <validate> Галерейн түлхүүр үгсийг оруулна уу </validate>
+    </keywords>
+    <submit>
+     <save> Галерейг хадгалах </save>
+     <update> Галерейг шинэчлэх </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Зураг байршуулах гарын авлага </title>
+     <body>
+      <![CDATA[
+<b> Зургийг үзэх </b> товчийг ашиглан төхөөрөмжөөсөө зураг сонгоод, <b> Зураг байршуулах </b> товчийг ашиглан сайтад байршуулна уу. <br/> Дэмжигдсэн зургийн формат: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Зөвшөөрөгдөх хамгийн бага нягтрал: <b>%d x %d px</b> <br/> Зөвшөөрөгдөх дээд хэмжээ: <b>%d x %d px</b> <br/> Нэг файлын дээд хэмжээ: <b>%d MB</b> <br/> Нэг галлерейд зургийн тоо: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Бүгдийг сонго </select_all>
+    <select_del> Сонгосон зургуудыг устгах </select_del>
+    <thumb>
+     <exist>
+      <delete> Сайтаас байршуулсан зургийг устгах </delete>
+      <info> Зургийн мэдээлэл </info>
+     </exist>
+     <new>
+      <delete> Сайтаас байршуулсан зургийг устгах </delete>
+      <cancel> Зургийн байршуулалтыг цуцлах </cancel>
+      <info> Зургийн мэдээлэл </info>
+      <rotate> Зургийг эргүүлэх </rotate>
+      <crop> Зургийг тайрах </crop>
+     </new>
+     <move> Та зургийг хулганаар чирж ангилах боломжтой. </move>
+     <move_mobile>Хуруугаараа объектыг товшоод удаан дараад түүнийг сонгохыг хүлээнэ үү. Зүйлийг сонгосны дараа хуруугаа чирж зүйлүүдийг ангилах хэрэгтэй.</move_mobile>
+    </thumb>
+    <browse> Зургийг үзэх </browse>
+    <upload> Зураг байршуулах </upload>
+    <uploading> Зургийг байршуулж байна to сайт. Байршуулж дуустал хуудсыг битгий хааж байгаарай. </uploading>
+    <uploaded> Зургийг сайтад байршуулсан. </uploaded>
+    <error>Сервер рүү файл байршуулах явцад зарим алдаа гарав.</error>
+    <save_changes> зургийн өөрчлөлтийг хадгалах </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> зураг тайрах </crop>
+     <cancel> Цуцлах </cancel>
+    </crop>
+    <del_up_img>
+     <label> Зургийг устгах </label>
+     <close> хаах </close>
+     <text> Та энэ зургийг вэбсайтаас устгахыг хүсэж байна уу? </text>
+     <command> Устгах </command>
+     <cancel> Цуцлах </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Зургийг устгах </label>
+     <close> хаах </close>
+     <text> Та энэ зургийг вэбсайтаас устгахыг хүсэж байна уу? </text>
+     <command> Устгах </command>
+     <cancel> Цуцлах </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Сонгосон зургуудыг устгах </label>
+     <close> хаах </close>
+     <text> Та сонгосон зургуудаа вэбсайтаас устгах уу? </text>
+     <command> Устгах </command>
+     <cancel> Цуцлах </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Зургийн мэдээлэл </label>
+     <close> хаах </close>
+     <filename> Файлын нэр </filename>
+     <filesize> Файлын хэмжээ </filesize>
+     <date> Байршуулсан огноо </date>
+     <title>
+      <label> Гарчиг </label>
+      <placeholder> Зургийн гарчиг </placeholder>
+     </title>
+     <desc>
+      <label> Тодорхойлолт </label>
+      <placeholder> Зургийн тодорхойлолт </placeholder>
+     </desc>
+     <keyw>
+      <label> Түлхүүр үгс </label>
+      <placeholder> Таслал эсвэл мөрний завсараар тусгаарлагдсан түлхүүр үгс </placeholder>
+     </keyw>
+     <command> Хадгалах / шинэчлэх </command>
+     <cancel> Цуцлах </cancel>
+    </img_info>
+    <result>
+     <label> алдаа </label>
+     <close> хаах </close>
+     <text> </text>
+     <command> Хаах </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Байршуулж болох зургийн тохиргоо </title>
+    <upload_limit>
+     <label> Нэг галлерейд хамгийн их зургийн тоо </label>
+     <placeholder> Нэг галлерейд хамгийн их зургийн тоо </placeholder>
+     <validate> Нэг галлерейд оруулах хамгийн их зургийн тоог оруулах </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Нэг файлын дээд хэмжээ (MB) </label>
+     <placeholder> Нэг файлын дээд хэмжээ (MB) </placeholder>
+     <validate> Оруулах нэг файлын хамгийн дээд хэмжээ (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Зургийн хамгийн бага нарийвчлалыг зөвшөөрнө </label>
+     <width>
+      <placeholder> Хамгийн бага өргөн </placeholder>
+      <validate> Оролтын утга </validate>
+     </width>
+     <height>
+      <placeholder> хамгийн бага өндөр </placeholder>
+      <validate> Оролтын утга </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Хамгийн дээд хэмжээ нь зургийн нягтралыг зөвшөөрдөг </label>
+     <width>
+      <placeholder> Хамгийн их өргөн </placeholder>
+      <validate> Оролтын утга </validate>
+     </width>
+     <height>
+      <placeholder> Хамгийн их өндөр </placeholder>
+      <validate> Оролтын утга </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Зургийн хувиргалт </title>
+    <full_resolution>
+     <label> Зургийн бүрэн хэмжээ </label>
+     <width>
+      <placeholder> Хамгийн их өргөн </placeholder>
+      <validate> Оролтын утга </validate>
+     </width>
+     <height>
+      <placeholder> Хамгийн их өндөр </placeholder>
+      <validate> Оролтын утга </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> өнгөц зураг хэмжээ </label>
+     <width>
+      <placeholder> өнгөц зураг өргөн </placeholder>
+      <validate> Оролтын утга </validate>
+     </width>
+     <height>
+      <placeholder> өнгөц зураг өндөр </placeholder>
+      <validate> Оролтын утга </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Слайдын хэмжээ </label>
+     <width>
+      <placeholder> Слайдын өргөн </placeholder>
+      <validate> Оролтын утга </validate>
+     </width>
+     <height>
+      <placeholder> Слайдны өндөр </placeholder>
+      <validate> Оролтын утга </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg чанар </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Шахах </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Усан тэмдэг </title>
+    <label> Усны тэмдэг ашиглана </label>
+    <position> Усны тэмдэгийн байрлал </position>
+    <image> Усны тэмдэг </image>
+    <set> Усны тэмдэг тохируулах </set>
+    <browse> 1- Усны тэмдэг зургийн файлыг үзэх </browse>
+    <adjust> 2- Зургийн хүрээний дагуу тохируулна. </adjust>
+    <upload> 3- Сонгосон файлыг байршуулах </upload>
+    <uploading> Байршуулж байна ... </uploading>
+    <uploaded> Байршуулсан. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Хуудас </page>
+   <first> Эхний хуудас </first>
+   <prev> Өмнөх хуудас </prev>
+   <next> дараагийн хуудас </next>
+   <last> Сүүлийн хуудас </last>
+  </pagination>
+
+</lang>

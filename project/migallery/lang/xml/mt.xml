@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Lingwa </title>
+   <label> Agħżel Lingwa </label>
+  </lang>
+
+  <timezone>
+   <title>Żona tal-ħin</title>
+   <label>Agħżel Timezone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Ġestjoni tal-Gallerija </gallery_man>
+   <gallery_list> Lista tal-Gallerija </gallery_list>
+   <uploader> Oħloq Gallerija Ġdida </uploader>
+   <back> Lura </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Setup </title>
+   <header> MIGallery Setup </header>
+
+   <img_direction>
+    <label> Gallerija, immaġni u direzzjoni tal-pjastra </label>
+    <left> Xellug għal-Lemin </left>
+    <right> Mill-Lemin għax-Xellug </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informazzjoni tad-Database MySQL </title>
+    <host>
+     <label> Isem l-Ospitanti tad-Database </label>
+     <placeholder> Isem l-Ospitanti tad-Database </placeholder>
+     <validate> Input Database Hostname </validate>
+    </host>
+    <user>
+     <label> Isem tal-Utent tad-Database </label>
+     <placeholder> Isem tal-Utent tad-Database </placeholder>
+     <validate> Daħħal l-Isem tal-Utent tad-Database </validate>
+    </user>
+    <pass>
+     <label> Password tal-Bażi tad-Dejta </label>
+     <placeholder> Password tal-Bażi tad-Dejta </placeholder>
+     <validate> Daħħal il-Password tad-Database </validate>
+    </pass>
+    <db>
+     <label> Isem tad-Database </label>
+     <placeholder> Isem tad-Database </placeholder>
+     <validate> Daħħal l-Isem tad-Database </validate>
+    </db>
+    <gal_table>
+     <label> Isem it-Tabella tal-Gallerija </label>
+     <placeholder> Isem Tabella tal-Gallerija </placeholder>
+     <validate> Daħħal Isem Tabella tal-Gallerija </validate>
+    </gal_table>
+    <img_table>
+     <label> Isem it-Tabella tal-Immaġini </label>
+     <placeholder> Isem it-Tabella tal-Immaġini </placeholder>
+     <validate> Daħħal l-Isem tat-Tabella tal-Immaġni </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direttorji fejn il-fajls jitħallew jinkitbu</title>
+    <db_alert>
+     <![CDATA[
+    Id-direttorju li ġej huwa fejn se jinħolqu l-fajls <b> konfigurazzjoni </b>, <b> reġistru tal-iżbalji </b> u <b> definizzjonijiet </b>. Jekk trid tibdel l-isem ta 'dan id-direttorju, ibdel id-definizzjoni <b> DB_DIR </b> fil-fajl <b> definitions0.php </b> u aggornata din il-paġna.<br/><br/>Jekk trid tibdel isem il-fajl tal-konfigurazzjoni, il-fajl tar-reġistru tal-iżbalji, u l-fajl tad-definizzjonijiet, ibdel id-definizzjonijiet ta '<b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> u <b>DEFINITIONS_FILE</b> mill-fajl definitions0.php.<br/><br/>Jekk is-sistema tiegħek hija bbażata fuq unix, issettja l-permessi tal-kitba fil-folder bil-kmand li ġej:<br/><b>%s</b><br/><br/>Qabel ma tibda l-installazzjoni, kun żgur li teżisti t-triq li ġejja u li għandek permessi biex tikteb fid-direttorju:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Qabel ma tibda l-installazzjoni, kun żgur li d-direttorji li ġejjin huma disponibbli u li għandek permess biex tikteb fid-direttorji. <br/> <br/> Jekk inti se tuża direttorji għajr id-direttorji li ġejjin, jekk id-direttorji ma jeżistux, l-ewwel ħoloq id-direttorji u ssettja l-permessi tal-kitba ta 'dawn id-direttorji u ibda l-installazzjoni.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurazzjoni, Log tal-Iżbalji u Mogħdija tal-Fajls tad-Definizzjonijiet</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Id-direttorji li ġejjin jinħolqu meta tiġi salvata l-gallerija l-ġdida. <b>%d</b> tindika l-id tal-gallerija. Dawn id-direttorji huma maħluqa fuq id-direttorju <b> Direttorju tal-Bażi tal-Immaġni </b> definit hawn fuq. Kun żgur li l-format ta 'dawn id-direttorji huwa xieraq.
+     ]]>
+    </img_dir_alert>
+    <config_alert>The configuration file has been created before. Therefore, you cannot run the installation. You must first delete the configuration file and then run the installation.</config_alert>
+    <tmp_dir>
+     <label>Direttorju Temporanju tal-Immaġni</label>
+     <placeholder>Direttorju Temporanju tal-Immaġni</placeholder>
+     <validate>Direttorju Temporanju tal-Immaġni</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Direttorju Temporanju tal-Minjatura</label>
+     <placeholder>Direttorju Temporanju tal-Minjatura</placeholder>
+     <validate>Direttorju Temporanju tal-Minjatura</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Direttorju ta 'immaġni minjatura Cropped Temporanja</label>
+     <placeholder>Direttorju ta 'immaġni minjatura Cropped Temporanja</placeholder>
+     <validate>Direttorju ta 'immaġni minjatura Cropped Temporanja</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Direttorju Temporanju ta 'Slide Image</label>
+     <placeholder>Direttorju Temporanju ta 'Slide Image</placeholder>
+     <validate>Direttorju Temporanju ta 'Slide Image</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Direttorju tal-Bażi tal-Immaġni</label>
+     <placeholder>Direttorju tal-Bażi tal-Immaġni</placeholder>
+     <validate>Direttorju tal-Bażi tal-Immaġni</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Direttorju tal-Immaġni</label>
+     <placeholder>Direttorju tal-Immaġni</placeholder>
+     <validate>Direttorju tal-Immaġni</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direttorju ta 'immaġni minjatura</label>
+     <placeholder>Direttorju ta 'immaġni minjatura</placeholder>
+     <validate>Direttorju ta 'immaġni minjatura</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Direttorju ta 'immaġni minjatura Cropped</label>
+     <placeholder>Direttorju ta 'immaġni minjatura Cropped</placeholder>
+     <validate>Direttorju ta 'immaġni minjatura Cropped</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Direttorju ta 'Immaġni Slide</label>
+     <placeholder>Direttorju ta 'Immaġni Slide</placeholder>
+     <validate>Direttorju ta 'Immaġni Slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Direttorju tal-Fajl XML</label>
+     <placeholder>Direttorju tal-Fajl XML</placeholder>
+     <validate>Direttorju tal-Fajl XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Installing. Jekk jogħġbok stenna ... </installing>
+    <success> L-installazzjoni tlestiet b'suċċess. </success>
+    <error> L-installazzjoni ma setgħetx titlesta. </error>
+   </alert>
+  
+   <submit> Ibda l-Installazzjoni </submit>
+   <submit_continue> Kompli &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Ġestjoni tal-Gallerija </title>
+   <header> Ġestjoni tal-Gallerija </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lista tal-Gallerija </title>
+   <header> Lista tal-Gallerija </header>
+   <sort>
+    <asc> issortja mill-ewwel sal-aħħar </asc>
+    <desc> issortja mill-aħħar għall-ewwel </desc>
+   </sort>
+   <card>
+    <view>
+     <button> View </button>
+     <title> Ara l-Gallerija </title>
+    </view>
+    <delete>
+     <button> Ħassar </button>
+     <title> Ħassar Gallerija </title>
+    </delete>
+    <edit>
+     <button> Editja </button>
+     <title> Edit Galerija </title>
+    </edit>
+    <images>immaġini</images>
+    <date>Data</date>
+    <move> Tista 'tirranġa l-galleriji billi tkaxkruhom bil-maws. </move>
+    <move_mobile>Tap and hold an item with your finger and wait for it to highlight. After selecting an item, bring your finger to sort the items.</move_mobile>
+   </card>
+   <alert> Ma nstabet l-ebda gallerija. </alert>
+   <modal>
+    <del_gallery>
+     <label> Ħassar Gallerija </label>
+     <close> agħlaq </close>
+     <text> Trid tħassar din il-gallerija mis-sit? </text>
+     <command> Ħassar </command>
+     <cancel> Ikkanċella </cancel>
+    </del_gallery>
+    <result>
+     <label> Żball </label>
+     <close> agħlaq </close>
+     <text> </text>
+     <command> Agħlaq </command>
+    </result>
+   </modal>
+   <save_changes> Salv l-arranġament tal-gallerija </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Gallerija View </title>
+   <header> View tal-Gallerija </header>
+   <alert> L-ebda stampa ma nstabet. </alert>
+   <share>Aqsam il-Gallerija</share>
+   <filedate>Data tat-tagħbija</filedate>
+   <filesize>Daqs tal-Fajl</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Ikkopja Għal Clipboard</label>
+     <close>agħlaq</close>
+     <text>Rabta kkupjata fil-clipboard</text>
+     <command>Ikkopja</command>
+     <cancel>Agħlaq</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Oħloq Gallerija Ġdida </title>
+    <header> Oħloq Gallerija Ġdida </header>
+   </new>
+   <edit>
+    <title> Edit Galerija </title>
+    <header> Edit Galerija </header>
+   </edit>
+   <gallery_info>
+    <title> Informazzjoni dwar il-Gallerija </title>
+    <name>
+     <label> Isem tal-Gallerija </label>
+     <placeholder> Isem tal-Gallerija </placeholder>
+     <validate> Isem tal-Gallerija tal-Input </validate>
+    </name>
+    <description>
+     <label> Deskrizzjoni tal-Gallerija </label>
+     <placeholder> Deskrizzjoni tal-Gallerija </placeholder>
+     <validate> Deskrizzjoni tal-Gallerija tal-Input </validate>
+    </description>
+    <keywords>
+     <label> Kliem ewlieni tal-gallerija separati b'virgoli jew pawżi tal-linja </label>
+     <placeholder> Kliem ewlieni tal-gallerija separati b'virgoli jew pawżi tal-linja </placeholder>
+     <validate> Daħħal il-Keywords tal-Gallerija </validate>
+    </keywords>
+    <submit>
+     <save> Save Gallery </save>
+     <update> Gallerija tal-Aġġornamenti </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Gwida għat-tlugħ tal-immaġni </title>
+     <body>
+      <![CDATA[
+Agħżel immaġini mit-tagħmir tiegħek bil-buttuna <b> Ibbrawżja Stampi </b> u ittella 'fuq is-sit bil-buttuna <b> Ittella 'Stampi </b>. <br/> Formati ta 'Immaġini Supportati: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Riżoluzzjoni Minima Permissibbli: <b>%d x %d px</b> <br/> Riżoluzzjoni Massima Permissibbli: <b>%d x %d px</b> <br/> Daqs Massimu ta 'Fajl Uniku: <b>%d MB</b> <br/> Għadd ta' Immaġini għal kull Gallerija: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Agħżel Kollha </select_all>
+    <select_del> Ħassar Stampi Magħżula </select_del>
+    <thumb>
+     <exist>
+      <delete> Ħassar Immaġni Mtella 'Mis-Sit </delete>
+      <info> Informazzjoni dwar l-Immaġni </info>
+     </exist>
+     <new>
+      <delete> Ħassar Immaġni Mtella 'Mis-Sit </delete>
+      <cancel> Ikkanċella Image Upload </cancel>
+      <info> Informazzjoni dwar l-Immaġni </info>
+      <rotate> Dawwar l-Immaġni </rotate>
+      <crop> immaġni tal-għelejjel </crop>
+     </new>
+     <move> Tista 'ssortja l-istampi billi tkaxkruhom bil-maws. </move>
+     <move_mobile>Tap and hold an item with your finger and wait for it to highlight. After selecting an item, bring your finger to sort the items.</move_mobile>
+    </thumb>
+    <browse> Ibbrawżja Stampi </browse>
+    <upload> Ittella 'Stampi </upload>
+    <uploading> L-immaġini qed jiġu umgħottija fuq is-sit. M'għandekx tagħlaq il-paġna sakemm it-tlugħ ikun lest. </uploading>
+    <uploaded> L-istampi ttellgħu fuq is-sit. </uploaded>
+    <error>Xi żbalji seħħew waqt li ttellgħu fajls fuq is-server.</error>
+    <save_changes> Żomm Bidliet fl-Immaġni </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> immaġni tal-għelejjel </crop>
+     <cancel> Ikkanċella </cancel>
+    </crop>
+    <del_up_img>
+     <label> Ħassar Image </label>
+     <close> agħlaq </close>
+     <text> Trid tħassar din l-immaġni mill-websajt? </text>
+     <command> Ħassar </command>
+     <cancel> Ikkanċella </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Ħassar Image </label>
+     <close> agħlaq </close>
+     <text> Trid tħassar din l-immaġni mill-websajt? </text>
+     <command> Ħassar </command>
+     <cancel> Ikkanċella </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ħassar Stampi Magħżula </label>
+     <close> agħlaq </close>
+     <text> Trid tħassar l-istampi magħżula mill-websajt? </text>
+     <command> Ħassar </command>
+     <cancel> Ikkanċella </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informazzjoni dwar l-Immaġni </label>
+     <close> agħlaq </close>
+     <filename> Isem tal-Fajl </filename>
+     <filesize> Daqs tal-Fajl </filesize>
+     <date> Data tat-tagħbija </date>
+     <title>
+      <label> Titlu </label>
+      <placeholder> Titolu tal-Immaġni </placeholder>
+     </title>
+     <desc>
+      <label> Deskrizzjoni </label>
+      <placeholder> Deskrizzjoni tal-Immaġni </placeholder>
+     </desc>
+     <keyw>
+      <label> Kliem ewlieni </label>
+      <placeholder> Kliem ewlieni mifrud b'virgola jew pawżi tal-linja </placeholder>
+     </keyw>
+     <command> Save / Update </command>
+     <cancel> Ikkanċella </cancel>
+    </img_info>
+    <result>
+     <label> Żball </label>
+     <close> agħlaq </close>
+     <text> </text>
+     <command> Agħlaq </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> L-issettjar tal-immaġni għal upload permissibbli </title>
+    <upload_limit>
+     <label> Għadd massimu ta 'immaġini għal kull gallerija </label>
+     <placeholder> Għadd massimu ta 'immaġini għal kull gallerija </placeholder>
+     <validate> Daħħal l-għadd massimu ta 'immaġini għal kull gallerija </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Daqs Max Fajl Uniku (MB) </label>
+     <placeholder> Daqs Max Fajl Uniku (MB) </placeholder>
+     <validate> Daħħal Daqs Max Fajl Uniku (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Riżoluzzjoni Minima Permissibbli </label>
+     <width>
+      <placeholder> wisa 'minima </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </width>
+     <height>
+      <placeholder> għoli minimu </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Riżoluzzjoni Max Permissibbli </label>
+     <width>
+      <placeholder> Wisa 'Massimu </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </width>
+     <height>
+      <placeholder> għoli massimu </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Trasformazzjoni tal-Immaġni </title>
+    <full_resolution>
+     <label> Daqs sħiħ tal-Immaġni </label>
+     <width>
+      <placeholder> Wisa 'Massimu </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </width>
+     <height>
+      <placeholder> għoli massimu </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Daqs tal-Minjatura </label>
+     <width>
+      <placeholder> Wisa 'tal-Minjatura </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </width>
+     <height>
+      <placeholder> għoli 'tal-Minjatura </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Daqs tas-Slajd </label>
+     <width>
+      <placeholder> Slajd Wisa </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </width>
+     <height>
+      <placeholder> Slajd Għoli </placeholder>
+      <validate> Daħħal il-valur </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kwalità Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Kompress </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigrana </title>
+    <label> Uża Filigrana </label>
+    <position> Pożizzjoni tal-Filigrana </position>
+    <image> Immaġni tal-Filigrana </image>
+    <set> Issettja Filigrana </set>
+    <browse> 1- Ibbrawżja l-Fajl tal-Immaġni tal-Filigrana </browse>
+    <adjust> 2- Aġġusta l-immaġni skond il-qafas. </adjust>
+    <upload> 3- Tella 'l-Fajl Magħżul </upload>
+    <uploading> Uploading ... </uploading>
+    <uploaded> Imtella '. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Paġna </page>
+   <first> L-Ewwel Paġna </first>
+   <prev> Paġna Preċedenti </prev>
+   <next> Paġna li jmiss </next>
+   <last> L-aħħar paġna </last>
+  </pagination>
+
+</lang>

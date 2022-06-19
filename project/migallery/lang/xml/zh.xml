@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>语言</title>
+   <label>选择语言</label>
+  </lang>
+
+  <timezone>
+   <title>时区</title>
+   <label>选择时区</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>画廊管理</gallery_man>
+   <gallery_list>画廊列表</gallery_list>
+   <uploader>创建新图库</uploader>
+   <back>返回</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGallery设置</title>
+   <header>MIGallery设置</header>
+
+   <img_direction>
+    <label>画廊，图像和幻灯片方向</label>
+    <left>从左到右</left>
+    <right>从右到左</right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL数据库信息</title>
+    <host>
+     <label>数据库主机名</label>
+     <placeholder>数据库主机名</placeholder>
+     <validate>输入数据库主机名</validate>
+    </host>
+    <user>
+     <label>数据库用户名</label>
+     <placeholder>数据库用户名</placeholder>
+     <validate>输入数据库用户名</validate>
+    </user>
+    <pass>
+     <label>数据库密码</label>
+     <placeholder>数据库密码</placeholder>
+     <validate>输入数据库密码</validate>
+    </pass>
+    <db>
+     <label>数据库名称</label>
+     <placeholder>数据库名称</placeholder>
+     <validate>输入数据库名称</validate>
+    </db>
+    <gal_table>
+     <label>画廊表名称</label>
+     <placeholder>画廊表名称</placeholder>
+     <validate>输入图库表名称</validate>
+    </gal_table>
+    <img_table>
+     <label>图像表名称</label>
+     <placeholder>图像表名称</placeholder>
+     <validate>输入图像表名称</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>可写动态内容目录</title>
+    <db_alert>
+     <![CDATA[
+    在以下目录中将创建<b>配置</b>，<b>错误日志</b>和<b>定义</b>文件。 如果要更改此目录的名称，请在<b> definitions0.php </b>文件中更改<b> DB_DIR </b>定义，并刷新此页面。<br/><br/>如果要重命名配置文件，错误日志文件和定义文件，请在definitions0.php文件中更改<b>CONFIG_FILE</b>，<b>ERROR_LOG_FILE</b>和<b>DEFINITIONS_FILE</b>的定义。<br/><br/>如果您的系统基于unix，请使用以下命令设置对文件夹的写许可权：<br/><b>%s</b><br/><br/>在开始安装之前，请确保存在以下路径，并且您具有写入目录的权限：
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    在开始安装之前，请确保以下目录可用，并且您具有写这些目录的权限。 <br/> <br/>如果要使用以下目录以外的目录，则磁盘上不存在该目录，请首先创建目录并设置这些目录的写许可权，然后开始安装。
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>配置，错误日志和定义文件路径</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    保存新图库时，将创建以下目录。 <b>%d</b>表示图库ID。 这些目录将在上面定义的<b> 图像基本目录 </b>目录中创建。 确保这些目录的格式合适。
+     ]]>
+    </img_dir_alert>
+    <config_alert>配置文件之前已经创建。 因此，您将无法运行安装。 您必须首先删除配置文件，然后运行安装。</config_alert>
+    <tmp_dir>
+     <label>图像文件临时目录</label>
+     <placeholder>图像文件临时目录</placeholder>
+     <validate>图像文件临时目录</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>缩略图的临时目录</label>
+     <placeholder>缩略图的临时目录</placeholder>
+     <validate>缩略图的临时目录</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>裁剪的缩略图图像的临时目录</label>
+     <placeholder>裁剪的缩略图图像的临时目录</placeholder>
+     <validate>裁剪的缩略图图像的临时目录</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>幻灯片图像的临时目录</label>
+     <placeholder>幻灯片图像的临时目录</placeholder>
+     <validate>幻灯片图像的临时目录</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>图像基本目录</label>
+     <placeholder>图像基本目录</placeholder>
+     <validate>图像基本目录</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>图像文件目录</label>
+     <placeholder>图像文件目录</placeholder>
+     <validate>图像文件目录</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>缩略图图像目录</label>
+     <placeholder>缩略图图像目录</placeholder>
+     <validate>缩略图图像目录</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>裁剪缩略图的目录</label>
+     <placeholder>裁剪缩略图的目录</placeholder>
+     <validate>裁剪缩略图的目录</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>幻灯片图像文件目录</label>
+     <placeholder>幻灯片图像文件目录</placeholder>
+     <validate>幻灯片图像文件目录</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML文件目录</label>
+     <placeholder>XML文件目录</placeholder>
+     <validate>XML文件目录</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>安装。请稍候... </installing>
+    <success>安装成功完成。</success>
+    <error>安装无法完成。</error>
+   </alert>
+  
+   <submit>开始安装</submit>
+   <submit_continue>继续 &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>画廊管理</title>
+   <header>画廊管理</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>图库列表</title>
+   <header>画廊列表</header>
+   <sort>
+    <asc>从头到尾排序</asc>
+    <desc>从最后到第一排序</desc>
+   </sort>
+   <card>
+    <view>
+     <button>查看</button>
+     <title>查看图库</title>
+    </view>
+    <delete>
+     <button>删除</button>
+     <title>删除图库</title>
+    </delete>
+    <edit>
+     <button>编辑</button>
+     <title>编辑库</title>
+    </edit>
+    <images>图片</images>
+    <date>日期</date>
+    <move>您可以通过使用鼠标拖动画廊来对其进行排序。</move>
+    <move_mobile>用手指点击并按住一个项目，然后等待其突出显示。 选择一个项目后，请用手指对项目进行排序。</move_mobile>
+   </card>
+   <alert>未找到画廊。</alert>
+   <modal>
+    <del_gallery>
+     <label>删除画廊</label>
+     <close>关闭</close>
+     <text>您要从站点中删除此图库吗？</text>
+     <command>删除</command>
+     <cancel>取消</cancel>
+    </del_gallery>
+    <result>
+     <label>错误</label>
+     <close>关闭</close>
+     <text> </text>
+     <command>关闭</command>
+    </result>
+   </modal>
+   <save_changes>保存画廊安排</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>图库视图</title>
+   <header>画廊视图</header>
+   <alert>未找到图像。</alert>
+   <share>分享图库</share>
+   <filedate>上传日期</filedate>
+   <filesize>文件大小</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>复制到剪贴板</label>
+     <close>关闭</close>
+     <text>链接已复制到剪贴板</text>
+     <command>复制</command>
+     <cancel>关闭</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>创建新画廊</title>
+    <header>创建新画廊</header>
+   </new>
+   <edit>
+    <title>编辑库</title>
+    <header>编辑库</header>
+   </edit>
+   <gallery_info>
+    <title>图库信息</title>
+    <name>
+     <label>画廊名称</label>
+     <placeholder>画廊名称</placeholder>
+     <validate>输入图库名称</validate>
+    </name>
+    <description>
+     <label>图库说明</label>
+     <placeholder>画廊说明</placeholder>
+     <validate>输入库说明</validate>
+    </description>
+    <keywords>
+     <label>用逗号或换行符分隔的图库关键字 &#x23CE;</label>
+     <placeholder>用逗号或换行符分隔的图库关键字 &#x23CE;</placeholder>
+     <validate>输入图库关键字</validate>
+    </keywords>
+    <submit>
+     <save>保存画廊</save>
+     <update>更新库</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>图片上传器指南</title>
+     <body>
+      <![CDATA[
+使用<b>浏览图像</b>按钮从设备中选择图像，然后使用<b>上传图片</b>按钮上传到站点。<br/>支持的图像格式：<b> JPG，PNG， GIF，BMP，WEBP </b> <br/>允许的最小分辨率：<b>%d x %d px</b> <br/>允许的最大分辨率：<b>%d x %d px</b> <br/>单个文件的最大大小：<b>%d MB</b> <br/>每个图库的图像计数：<b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>全选</select_all>
+    <select_del>删除所选图像</select_del>
+    <thumb>
+     <exist>
+      <delete>从网站删除上传的图片</delete>
+      <info>图片信息</info>
+     </exist>
+     <new>
+      <delete>从网站删除上传的图片</delete>
+      <cancel>取消图像上传</cancel>
+      <info>图片信息</info>
+      <rotate>旋转图像</rotate>
+      <crop>裁剪图像</crop>
+     </new>
+     <move>您可以通过使用鼠标拖动来对图像进行排序。</move>
+     <move_mobile>用手指点击并按住一个项目，然后等待其突出显示。 选择一个项目后，请用手指对项目进行排序。</move_mobile>
+    </thumb>
+    <browse>浏览图像</browse>
+    <upload>上传图片</upload>
+    <uploading>图像正在上传到网站。上传完成之前，请勿关闭页面。</uploading>
+    <uploaded>图像已上传到站点。</uploaded>
+    <error>将文件上传到服务器时发生一些错误。</error>
+    <save_changes>保存图像更改</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>裁剪图像</crop>
+     <cancel>取消</cancel>
+    </crop>
+    <del_up_img>
+     <label>删除图像</label>
+     <close>关闭</close>
+     <text>您要从网站上删除此图片吗？</text>
+     <command>删除</command>
+     <cancel>取消</cancel>
+    </del_up_img>
+    <del_img>
+     <label>删除图像</label>
+     <close>关闭</close>
+     <text>您要从网站上删除此图片吗？</text>
+     <command>删除</command>
+     <cancel>取消</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>删除所选图像</label>
+     <close>关闭</close>
+     <text>是否要从网站上删除所选图像？</text>
+     <command>删除</command>
+     <cancel>取消</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>图片信息</label>
+     <close>关闭</close>
+     <filename>文件名</filename>
+     <filesize>文件大小</filesize>
+     <date>上传日期</date>
+     <title>
+      <label>标题</label>
+      <placeholder>图像标题</placeholder>
+     </title>
+     <desc>
+      <label>说明</label>
+      <placeholder>图像描述</placeholder>
+     </desc>
+     <keyw>
+      <label>关键词</label>
+      <placeholder>以逗号或换行符分隔的关键字 &#x23CE;</placeholder>
+     </keyw>
+     <command>保存/更新</command>
+     <cancel>取消</cancel>
+    </img_info>
+    <result>
+     <label>错误</label>
+     <close>关闭</close>
+     <text> </text>
+     <command>关闭</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>可上传图像设置</title>
+    <upload_limit>
+     <label>每个图库的最大图片计数</label>
+     <placeholder>每个图库的最大图像计数</placeholder>
+     <validate>输入每个画廊的最大图像数</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>单个文件的最大大小（MB）</label>
+     <placeholder>单个文件的最大大小（MB）</placeholder>
+     <validate>输入单个文件的最大大小（MB）</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>允许的最小分辨率</label>
+     <width>
+      <placeholder>最小宽度</placeholder>
+      <validate>输入值</validate>
+     </width>
+     <height>
+      <placeholder>最小高度</placeholder>
+      <validate>输入值</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>允许的最大分辨率</label>
+     <width>
+      <placeholder>最大宽度</placeholder>
+      <validate>输入值</validate>
+     </width>
+     <height>
+      <placeholder>最大高度</placeholder>
+      <validate>输入值</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>图像变换</title>
+    <full_resolution>
+     <label>图片全尺寸</label>
+     <width>
+      <placeholder>最大宽度</placeholder>
+      <validate>输入值</validate>
+     </width>
+     <height>
+      <placeholder>最大高度</placeholder>
+      <validate>输入值</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>缩略图大小</label>
+     <width>
+      <placeholder>拇指宽度</placeholder>
+      <validate>输入值</validate>
+     </width>
+     <height>
+      <placeholder>拇指高度</placeholder>
+      <validate>输入值</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>幻灯片大小</label>
+     <width>
+      <placeholder>幻灯片宽度</placeholder>
+      <validate>输入值</validate>
+     </width>
+     <height>
+      <placeholder>滑动高度</placeholder>
+      <validate>输入值</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg质量</label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG压缩</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>水印</title>
+    <label>使用水印</label>
+    <position>水印位置</position>
+    <image>水印图像</image>
+    <set>设置水印</set>
+    <browse> 1-浏览水印图像文件</browse>
+    <adjust> 2-根据帧调整图像。</adjust>
+    <upload> 3-上传所选文件</upload>
+    <uploading>正在上传... </uploading>
+    <uploaded>已上传。</uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page>页面</page>
+   <first>首页</first>
+   <prev>上一页</prev>
+   <next>下一页</next>
+   <last>最后一页</last>
+  </pagination>
+
+</lang>

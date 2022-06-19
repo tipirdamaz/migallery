@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Lugha </title>
+   <label> Chagua Lugha </label>
+  </lang>
+
+  <timezone>
+   <title>Saa za eneo</title>
+   <label>Chagua saa za eneo</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Usimamizi wa nyumba ya sanaa </gallery_man>
+   <gallery_list> Orodha ya nyumba ya sanaa </gallery_list>
+   <uploader> Unda nyumba ya sanaa mpya </uploader>
+   <back> Nyuma </back>
+  </nav>
+
+  <install>
+ 
+   <title> Usanidi wa MIGallery </title>
+   <header> Usanidi wa MIGallery </header>
+
+   <img_direction>
+    <label> Matunzio ya picha, picha na mwelekeo wa onyesho la slaidi </label>
+    <left> Kushoto kwenda Kulia </left>
+    <right> kutoka Kulia kwenda kushoto </right>
+   </img_direction>
+
+   <db_info>
+    <title> Habari ya Hifadhidata ya MySQL </title>
+    <host>
+     <label> Jina la mwenyeji la Hifadhidata </label>
+     <placeholder> Jina la mwenyeji la Hifadhidata </placeholder>
+     <validate> Ingiza Jina la mwenyeji wa Hifadhidata </validate>
+    </host>
+    <user>
+     <label> Jina la Mtumiaji la Hifadhidata </label>
+     <placeholder> Jina la Mtumiaji la Hifadhidata </placeholder>
+     <validate> Jina la Mtumiaji la Hifadhidata ya Kuingiza </validate>
+    </user>
+    <pass>
+     <label> Nywila ya Hifadhidata </label>
+     <placeholder> Nywila ya Hifadhidata </placeholder>
+     <validate> Nywila ya Kuingiza Hifadhidata </validate>
+    </pass>
+    <db>
+     <label> Jina la Hifadhidata </label>
+     <placeholder> Jina la Hifadhidata </placeholder>
+     <validate> Jina la Hifadhidata ya Kuingiza </validate>
+    </db>
+    <gal_table>
+     <label> Jina la meza ya nyumba ya sanaa </label>
+     <placeholder> Jina la meza ya nyumba ya sanaa </placeholder>
+     <validate> Ingiza Jina la meza ya nyumba ya sanaa </validate>
+    </gal_table>
+    <img_table>
+     <label> Jina la Jedwali la Picha </label>
+     <placeholder> Jina la Jedwali la Picha </placeholder>
+     <validate> Ingiza Jina la Jedwali la Picha </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Saraka ambapo faili zinaruhusiwa kuandikwa</title>
+    <db_alert>
+     <![CDATA[
+    Saraka ifuatayo ni mahali ambapo faili za <b> usanidi </b>, <b> kumbukumbu ya makosa </b> na <b> ufafanuzi </b> zitaundwa. Ikiwa unataka kubadilisha jina la saraka hii, badilisha ufafanuzi wa <b> DB_DIR </b> katika faili ya <b> definitions0.php </b> na uonyeshe ukurasa huu upya.<br/><br/>Ikiwa unataka kubadilisha jina la faili ya usanidi, faili ya kumbukumbu ya makosa na faili ya ufafanuzi, badilisha ufafanuzi wa <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> na <b>DEFINITIONS_FILE</b> katika faili ya definitions0.php.<br/><br/>Ikiwa mfumo wako unategemea unix, weka ruhusa ya kuandika faili kwa za saraka na amri ifuatayo:<br/><b>%s</b><br/><br/>Kabla ya kuanza usanikishaji, hakikisha njia ifuatayo ipo na una ruhusa za kuandika saraka:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Kabla ya kuanza usanikishaji, hakikisha kuwa saraka zifuatazo zinapatikana na kwamba una ruhusa ya kuandika kwa saraka. <br/> <br/> Ikiwa utatumia saraka zaidi ya saraka zifuatazo, ikiwa saraka hazipo, kwanza tengeneza saraka na uweke ruhusa za kuandika za saraka hizi na uanze usanidi.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Faili ya Usanidi, Faili ya Ingia ya Kosa na Njia ya Faili ya Ufafanuzi</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Saraka zifuatazo zitaundwa wakati nyumba ya sanaa mpya yamehifadhiwa. <b>%d</b> inabainisha nyumba ya sanaa ID. Saraka hizi zitaundwa kwenye saraka ya <b> Saraka ya Msingi wa Picha </b> iliyofafanuliwa hapo juu. Hakikisha muundo wa saraka hizi ni sahihi.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Faili ya usanidi imeundwa hapo awali. Kwa hivyo, huwezi kuendesha usanikishaji. Lazima kwanza ufute faili ya usanidi kisha uendeshe usanidi.</config_alert>
+    <tmp_dir>
+     <label>Saraka ya Picha ya Muda</label>
+     <placeholder>Saraka ya Picha ya Muda</placeholder>
+     <validate>Saraka ya Picha ya Muda</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Saraka ya Muda ya Vijipicha</label>
+     <placeholder>Saraka ya Muda ya Vijipicha</placeholder>
+     <validate>Saraka ya Muda ya Vijipicha</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Saraka ya muda ya vijipicha vilivyokatwa</label>
+     <placeholder>Saraka ya muda ya vijipicha vilivyokatwa</placeholder>
+     <validate>Saraka ya muda ya vijipicha vilivyokatwa</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Saraka ya Muda ya Faili za Picha za Slide</label>
+     <placeholder>Saraka ya Muda ya Faili za Picha za Slide</placeholder>
+     <validate>Saraka ya Muda ya Faili za Picha za Slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Saraka ya Msingi wa Picha</label>
+     <placeholder>Saraka ya Msingi wa Picha</placeholder>
+     <validate>Saraka ya Msingi wa Picha</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Saraka ya Picha</label>
+     <placeholder>Saraka ya Picha</placeholder>
+     <validate>Saraka ya Picha</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Saraka ya Vijipicha</label>
+     <placeholder>Saraka ya Vijipicha</placeholder>
+     <validate>Saraka ya Vijipicha</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Saraka ya vijipicha vilivyokatwa</label>
+     <placeholder>Saraka ya vijipicha vilivyokatwa</placeholder>
+     <validate>Saraka ya vijipicha vilivyokatwa</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Saraka ya Faili za Picha za Slide</label>
+     <placeholder>Saraka ya Faili za Picha za Slide</placeholder>
+     <validate>Saraka ya Faili za Picha za Slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Saraka ya Faili ya XML</label>
+     <placeholder>Saraka ya Faili ya XML</placeholder>
+     <validate>Saraka ya Faili ya XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Kufunga. Tafadhali subiri ... </installing>
+    <success> Usakinishaji umekamilika kwa mafanikio. </success>
+    <error> Usakinishaji haukuweza kukamilika. </error>
+   </alert>
+  
+   <submit> Anza Usakinishaji </submit>
+   <submit_continue> Endelea &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Usimamizi wa Nyumba ya sanaa </title>
+   <header> Usimamizi wa Nyumba ya sanaa </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Orodha ya nyumba ya sanaa </title>
+   <header> Orodha ya nyumba ya sanaa </header>
+   <sort>
+    <asc> kutoka kwanza hadi mwisho </asc>
+    <desc> kutoka mwisho hadi kwanza </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Angalia </button>
+     <title> Angalia nyumba ya sanaa </title>
+    </view>
+    <delete>
+     <button> Futa </button>
+     <title> Futa nyumba ya sanaa </title>
+    </delete>
+    <edit>
+     <button> Hariri </button>
+     <title> Hariri nyumba ya sanaa </title>
+    </edit>
+    <images>Picha</images>
+    <date>Tarehe</date>
+    <move> Unaweza kupanga nyumba ya sanaa kwa kuwavuta na panya. </move>
+    <move_mobile>Gonga na ushikilie kitu hicho kwa kidole chako na subiri ichaguliwe. Baada ya kuchagua kipengee, buruta kidole kupanga vitu.</move_mobile>
+   </card>
+   <alert> Hakuna nyumba ya sanaa yaliyopatikana. </alert>
+   <modal>
+    <del_gallery>
+     <label> Futa nyumba ya sanaa </label>
+     <close> funga </close>
+     <text> Je! unataka kufuta nyumba ya sanaa haya kutoka kwa wavuti? </text>
+     <command> Futa </command>
+     <cancel> Ghairi </cancel>
+    </del_gallery>
+    <result>
+     <label> Kosa </label>
+     <close> funga </close>
+     <maandishi> </maandishi>
+     <command> Funga </command>
+    </result>
+   </modal>
+   <save_changes> Hifadhi mpangilio wa nyumba za sanaa </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Mwonekano wa nyumba ya sanaa </title>
+   <header> Mwonekano wa nyumba ya sanaa </header>
+   <alert> Hakuna picha zilizopatikana. </alert>
+   <share>Shiriki Nyumba ya sanaa</share>
+   <filedate>Tarehe ya Kupakia</filedate>
+   <filesize>Ukubwa wa faili</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Nakili kwa Ubao Uliofungwa</label>
+     <close>funga</close>
+     <text>Kiungo kimenakiliwa kwenye clipboard</text>
+     <command>Nakili</command>
+     <cancel>Funga</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Unda nyumba ya sanaa mpya </title>
+    <header> Unda nyumba ya sanaa mpya </header>
+   </new>
+   <edit>
+    <title> Hariri nyumba ya sanaa </title>
+    <header> Hariri nyumba ya sanaa </header>
+   </edit>
+   <gallery_info>
+    <title> Habari ya nyumba ya sanaa </title>
+    <name>
+     <label> Jina la nyumba ya sanaa </label>
+     <placeholder> Jina la nyumba ya sanaa </placeholder>
+     <validate> Ingiza Jina la nyumba ya sanaa </validate>
+    </name>
+    <description>
+     <label> Maelezo ya nyumba ya sanaa </label>
+     <placeholder> Maelezo ya nyumba ya sanaa </placeholder>
+     <validate> Maelezo ya nyumba ya sanaa ya Uingizaji </validate>
+    </description>
+    <keywords>
+     <label> Maneno muhimu yaliyotengwa na koma au mistari mpya katika mkusanyiko </label>
+     <placeholder> Maneno muhimu yaliyotengwa na koma au mistari mpya katika mkusanyiko </placeholder>
+     <validate> Ingiza maneno muhimu ya mkusanyiko </validate>
+    </keywords>
+    <submit>
+     <save> Hifadhi nyumba ya sanaa </save>
+     <update> Sasisha nyumba ya sanaa </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Mwongozo wa Upakiaji Picha </title>
+     <body>
+      <![CDATA[
+Chagua picha kutoka kifaa chako na kitufe cha <b> Vinjari Picha </b> na upakie kwenye wavuti na kitufe cha <b> Pakia Picha </b>. <br/> Muundo wa Picha Zinazoungwa mkono: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Azimio la chini linaloruhusiwa: <b>%d x %d px</b> <br/> Azimio la juu linaloruhusiwa: <b>%d x %d px</b> <br/> Ukubwa wa Juu wa Faili Moja: <b>%d MB</b> <br/> Hesabu ya Picha kwa nyumba ya sanaa: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Chagua Zote </select_all>
+    <select_del> Futa Picha Zilizochaguliwa </select_del>
+    <thumb>
+     <exist>
+      <delete> Futa Picha Iliyopakiwa Kwenye Tovuti </delete>
+      <info> Maelezo ya Picha </info>
+     </exist>
+     <new>
+      <delete> Futa Picha Iliyopakiwa Kwenye Tovuti </delete>
+      <cancel> Ghairi Upakiaji wa Picha </cancel>
+      <info> Maelezo ya Picha </info>
+      <rotate> Zungusha picha hii </rotate>
+      <crop> Kata Picha Hii </crop>
+     </new>
+     <move> Unaweza kupanga picha kwa kuzivuta na panya. </move>
+     <move_mobile>Gonga na ushikilie kitu hicho kwa kidole chako na subiri ichaguliwe. Baada ya kuchagua kipengee, buruta kidole kupanga vitu.</move_mobile>
+    </thumb>
+    <browse> Vinjari Picha </browse>
+    <upload> Pakia Picha </upload>
+    <uploading> Picha zinaendeleakubeba kwenye wavuti. Usifunge ukurasa hadi upakiaji ukamilike. </uploading>
+    <uploaded> Picha zimepakiwa kwenye wavuti. </uploaded>
+    <error>Hitilafu zingine zilitokea wakati wa kupakia faili kwenye seva.</error>
+    <save_changes> Hifadhi Mabadiliko ya Picha </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kata Picha Hii </crop>
+     <cancel> Ghairi </cancel>
+    </crop>
+    <del_up_img>
+     <label> Futa Picha </label>
+     <close> funga </close>
+     <text> Je! unataka kufuta picha hii kutoka kwa wavuti? </text>
+     <command> Futa </command>
+     <cancel> Ghairi </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Futa Picha </label>
+     <close> funga </close>
+     <text> Je! unataka kufuta picha hii kutoka kwa wavuti? </text>
+     <command> Futa </command>
+     <cancel> Ghairi </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Futa Picha Zilizochaguliwa </label>
+     <close> funga </close>
+     <text> Je! unataka kufuta picha zilizochaguliwa kutoka kwa wavuti? </text>
+     <command> Futa </command>
+     <cancel> Ghairi </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Maelezo ya Picha </label>
+     <close> funga </close>
+     <filename> Jina la faili </filename>
+     <filesize> Ukubwa wa Faili </filesize>
+     <date> Tarehe ya Kupakia </date>
+     <title>
+      <label> Kichwa </label>
+      <placeholder> Kichwa cha Picha </placeholder>
+     </title>
+     <desc>
+      <label> Maelezo </label>
+      <placeholder> Maelezo ya Picha </placeholder>
+     </desc>
+     <keyw>
+      <label> Maneno muhimu </label>
+      <placeholder> Maneno muhimu yaliyotengwa na koma au mistari mpya </placeholder>
+     </keyw>
+     <command> Hifadhi / Sasisha </command>
+     <cancel> Ghairi </cancel>
+    </img_info>
+    <result>
+     <label> Kosa </label>
+     <close> funga </close>
+     <text> </text>
+     <command> Funga </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Imeruhusiwa mipangilio ya picha ya kupakia </title>
+    <upload_limit>
+     <label> Idadi ya juu ya Picha kwa kila gallery ya picha </label>
+     <placeholder> Idadi ya juu ya Picha kwa kila gallery ya picha </placeholder>
+     <validate> Ingiza idadi ya juu ya picha kwa kila gallery ya picha </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Ukubwa wa juu wa faili moja (MB) </label>
+     <placeholder> Ukubwa wa juu wa faili moja (MB) </placeholder>
+     <validate> Ingiza Ukubwa wa juu wa faili moja (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Azimio la chini la kuruhusiwa </label>
+     <width>
+      <placeholder> Upana wa chini </placeholder>
+      <validate> Ingiza thamani </validate>
+     </width>
+     <height>
+      <placeholder> Urefu wa chini </placeholder>
+      <validate> Ingiza thamani </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Upeo wa azimio unaruhusiwa </label>
+     <width>
+      <placeholder> Upana wa juu </placeholder>
+      <validate> Ingiza thamani </validate>
+     </width>
+     <height>
+      <placeholder> Urefu wa juu </placeholder>
+      <validate> Ingiza thamani </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Kubadilisha Picha </title>
+    <full_resolution>
+     <label> Picha Ukubwa kamili </label>
+     <width>
+      <placeholder> Upana wa juu </placeholder>
+      <validate> Ingiza thamani </validate>
+     </width>
+     <height>
+      <placeholder> Urefu wa juu </placeholder>
+      <validate> Ingiza thamani </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Ukubwa wa Picha ndogo </label>
+     <width>
+      <placeholder> Upana wa kidole gumba </placeholder>
+      <validate> Ingiza thamani </validate>
+     </width>
+     <height>
+      <placeholder> Urefu wa kidole gumba </placeholder>
+      <validate> Ingiza thamani </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Ukubwa wa slaidi </label>
+     <width>
+      <placeholder> Upana wa slaidi </placeholder>
+      <validate> Ingiza thamani </validate>
+     </width>
+     <height>
+      <placeholder> Urefu wa slaidi </placeholder>
+      <validate> Ingiza thamani </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Ubora wa Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Compress ya PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Tumia Watermark </label>
+    <position> Nafasi ya Watermark </position>
+    <image> Picha ya Watermark </image>
+    <set> Weka Watermark </set>
+    <browse> 1- Vinjari Faili ya Picha ya Watermark </browse>
+    <adjust> 2- Rekebisha picha kulingana na fremu. </adjust>
+    <upload> 3- Pakia faili iliyochaguliwa </upload>
+    <uploading> Inapakia ... </uploading>
+    <uploaded> Imepakiwa. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Ukurasa </page>
+   <first> Ukurasa wa Kwanza </first>
+   <prev> Ukurasa uliotangulia </prev>
+   <next> Ukurasa Ufuatao </next>
+   <last> Ukurasa wa Mwisho </last>
+  </pagination>
+
+</lang>

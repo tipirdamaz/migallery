@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Reo </title>
+   <label> Whiriwhiria te Reo </label>
+  </lang>
+
+  <timezone>
+   <title>rohe wa</title>
+   <label>tohua te roherohe</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Whakahaere Taiwhanga </gallery_man>
+   <gallery_list> Rarangi Taiwhanga </gallery_list>
+   <uploader> Hangaia te Taiwhanga Hou </uploader>
+   <back> Hoki whakamuri </back>
+  </nav>
+
+  <install>
+ 
+   <title>  Tatūnga MIGallery </title>
+   <header> Tatūnga MIGallery </header>
+
+   <img_direction>
+    <label> Taiwhanga, atahanga me te ahunga retireti </label>
+    <left> Mauī ki te Matau </left>
+    <right> Matau ki te Maui </right>
+   </img_direction>
+
+   <db_info>
+    <title> Nga korero Putauranga MySQL </title>
+    <host>
+     <label> Ingoa Kaihautū pātengi raraunga </label>
+     <placeholder> Ingoa Kaihautū pātengi raraunga </placeholder>
+     <validate> Whakauru Ingoa Kaihautū pātengi raraunga </validate>
+    </host>
+    <user>
+     <label> Ingoa Kaiwhakamahi pātengi raraunga </label>
+     <placeholder> Ingoa Kaiwhakamahi pātengi raraunga </placeholder>
+     <validate> Whakauru Ingoa Kaiwhakamahi pātengi raraunga </validate>
+    </user>
+    <pass>
+     <label> Kupuhipa pātengi raraunga </label>
+     <placeholder> Kupuhipa pātengi raraunga </placeholder>
+     <validate> Whakauru Kupuhipa pātengi raraunga </validate>
+    </pass>
+    <db>
+     <label> Ingoa pātengi raraunga </label>
+     <placeholder> Ingoa pātengi raraunga </placeholder>
+     <validate> Whakauru Ingoa pātengi raraunga </validate>
+    </db>
+    <gal_table>
+     <label> Ingoa Ripanga Taiwhanga </label>
+     <placeholder> Ingoa Ripanga Taiwhanga </placeholder>
+     <validate> Whakauruhia Ingoa Ripanga Taiwhanga </validate>
+    </gal_table>
+    <img_table>
+     <label> Pikitia Ingoa Ripanga </label>
+     <placeholder> Pikitia Ingoa Ripanga </placeholder>
+     <validate> Whakauru Pikitia Ingoa Ripanga </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Nga whaiaronga e whakaaetia ana nga konae kia tuhia</title>
+    <db_alert>
+     <![CDATA[
+    Ko te whaiaronga e whai ake nei ko te wahi hei hanga i te <b> whirihoranga </b>, <b> ripoata hapa </b> me te <b> whakamāramatanga </b> konae. Mena kei te hiahia koe ki te huri i te ingoa o tenei kōpaki, hurihia te whakamaaritanga <b> DB_DIR </b> i roto i te konae <b> definitions0.php </b> ka whakahou i tenei whaarangi.<br/><br/>Mena kei te hiahia whakaingoa i te konae whirihora, ripoata hapa, me te konae whakamaarama, hurihia nga whakamaaramatanga o <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> me <b>DEFINITIONS_FILE</b> mai i te konae definitions0.php.<br/><br/>Mena kei te hangai to punaha i te unix, tohua nga whakaaetanga tuhi ki te kōpaki me te whakahau e whai ake nei:<br/><b>%s</b><br/><br/>I mua i te tiimata o te whakauru, kia mohio kei te noho mai te kōpaki e whai ake nei i runga i te kōpae a kei a koe nga mana tuhituhi ki te kōpaki.
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    I mua i te tiimata o te taunga, kia mahara kei te waatea nga kopaki e whai ake nei i runga i te kopae a kua whakamanahia koe ki te tuhi i nga konae ki nga kopaki. <br/> <br/> Mena kei te whakamahi koe i nga kōpaki i tua atu o nga kōpaki e whai ake nei, a kaore enei kōpaki i te tīariari, waihangahia tuatahihia enei kōpaki ka tautuhi whakaaetanga tuhi mo enei kōpaki ka tiimata te whakauru.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Kei te kōpaki te whirihoranga, ripoata hapa me konae whakamāramatanga</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Ka waihangahia nga kōpaki e whai ake nei i te wa e tiakina ana te taiwhanga hou. <b>%d</b> tohu i te id taiwhanga. Ko enei kōpaki i hangaia i runga i te kōpaki <b> Ara turanga o nga whakaahua </b> i tautuhia i runga ake nei. Tirohia mēnā e tika ana te whakatakotoranga o enei kōpaki.
+     ]]>
+    </img_dir_alert>
+    <config_alert>I hangaia te konae whirihoranga i mua. Na reira, kaore e taea e koe te whakahaere i te whakatu. Me matua whakakorea e koe te konae whirihoranga ka whakahaere i te tatanga.</config_alert>
+    <tmp_dir>
+     <label>Kōpaki rangitahi o nga Atahanga</label>
+     <placeholder>Kōpaki rangitahi o nga Atahanga</placeholder>
+     <validate>Kōpaki rangitahi o nga Atahanga</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Kōpaki Rangitahi o karakōnui</label>
+     <placeholder>Kōpaki Rangitahi o karakōnui</placeholder>
+     <validate>Kōpaki Rangitahi o karakōnui</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Kōpaki Rangitahi o ngā konae karakōnui tapatapahi</label>
+     <placeholder>Kōpaki Rangitahi o ngā konae karakōnui tapatapahi</placeholder>
+     <validate>Kōpaki Rangitahi o ngā konae karakōnui tapatapahi</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Kōpaki Rangitahi o nga konae Atahanga Kiriata</label>
+     <placeholder>Kōpaki Rangitahi o nga konae Atahanga Kiriata</placeholder>
+     <validate>Kōpaki Rangitahi o nga konae Atahanga Kiriata</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Ara turanga o nga whakaahua</label>
+     <placeholder>Ara turanga o nga whakaahua</placeholder>
+     <validate>Ara turanga o nga whakaahua</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Whaiaronga Atahanga</label>
+     <placeholder>Whaiaronga Atahanga</placeholder>
+     <validate>Whaiaronga Atahanga</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Kōpaki o karakōnui</label>
+     <placeholder>Kōpaki o karakōnui</placeholder>
+     <validate>Kōpaki o karakōnui</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kōpaki o ngā konae karakōnui tapatapahi</label>
+     <placeholder>Kōpaki o ngā konae karakōnui tapatapahi</placeholder>
+     <validate>Kōpaki o ngā konae karakōnui tapatapahi</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Kōpaki o nga konae Atahanga Kiriata</label>
+     <placeholder>Kōpaki o nga konae Atahanga Kiriata</placeholder>
+     <validate>Kōpaki o nga konae Atahanga Kiriata</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Whaiaronga Kōnae XML</label>
+     <placeholder>Whaiaronga Kōnae XML</placeholder>
+     <validate>Whaiaronga Kōnae XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Whakauru. Tatari koa ... </installing>
+    <success> I tutuki angitu te whakaurunga. </success>
+    <error> Kare i oti te whakauru. </error>
+   </alert>
+  
+   <submit> Timata Whakauru </submit>
+   <submit_continue> Haere tonu &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Whakahaere Taiwhanga </title>
+   <header> Whakahaere Taiwhanga </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Rarangi Taiwhanga </title>
+   <header> Rarangi Taiwhanga </header>
+   <sort>
+    <asc> tuatahi ki te whakamutunga </asc>
+    <desc> whakamutunga ki te tuatahi </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Tirohanga </button>
+     <title> Tirohia te Taiwhanga </title>
+    </view>
+    <delete>
+     <button> Muku </button>
+     <title> Mukua Taiwhanga </title>
+    </delete>
+    <edit>
+     <button> Whakatika </button>
+     <title> Whakatika Taiwhanga </title>
+    </edit>
+    <images>whakapakoko</images>
+    <date>rā</date>
+    <move> Ka taea e koe te whakariterite i nga ara ma te kukume ma te kiore. </move>
+    <move_mobile>Paato ka pupuri i tetahi taonga ki to maihao ka tatari kia kowhiria. I muri i te kowhiri i tetahi taonga, toia to maihao ki te whakarite i nga taonga.</move_mobile>
+   </card>
+   <alert> Kare i kitea he taiwhanga. </alert>
+   <modal>
+    <del_gallery>
+     <label> Muku Taiwhanga </label>
+     <close> kati </close>
+     <text> Kei te hiahia tango koe i tenei Taiwhanga mai i to paetukutuku? </text>
+     <command> Muku </command>
+     <cancel> Whakakore </cancel>
+    </del_gallery>
+    <result>
+     <label> Hapa </label>
+     <close> kati </close>
+     <text> </text>
+     <command> Katia </command>
+    </result>
+   </modal>
+   <save_changes> Penapena te ota Taiwhanga </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Tirohanga Taiwhanga </title>
+   <header> Tirohanga Taiwhanga </header>
+   <alert> Kaore i kitea he ahua. </alert>
+   <share>Taiwhanga Tiri</share>
+   <filedate>rā tukuake</filedate>
+   <filesize>Rahinga Kōnae</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>kape ki te papatopenga</label>
+     <close>kati</close>
+     <text>hono kua taatatia ki te papatopenga</text>
+     <command>Tārua</command>
+     <cancel>Katia</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Hanga Taiwhanga Hou </title>
+    <header> Hangaia te Taiwhanga Hou </header>
+   </new>
+   <edit>
+    <title> Whakatika Taiwhanga </title>
+    <header> Whakatika Taiwhanga </header>
+   </edit>
+   <gallery_info>
+    <title> Korero Taiwhanga </title>
+    <name>
+     <label> Ingoa Taiwhanga </label>
+     <placeholder> Ingoa Taiwhanga </placeholder>
+     <validate> Ingoa Taiwhanga Whakauru </validate>
+    </name>
+    <description>
+     <label> Whakaahuatanga Taiwhanga </label>
+     <placeholder> Whakaahuatanga Taiwhanga </placeholder>
+     <validate> Whakaaturanga Taiwhanga Whakauru </validate>
+    </description>
+    <keywords>
+     <label> Ko nga kupu matua Taiwhanga ka wehea e te piko, e nga raina hou ranei </label>
+     <placeholder> Ko nga kupu matua Taiwhanga ka wehea e te piko, e nga raina hou ranei </placeholder>
+     <validate> Whakauruhia nga Kupu Matua o te Taiwhanga </validate>
+    </keywords>
+    <submit>
+     <save> Tiaki Taiwhanga </save>
+     <update> Whakahōu Taiwhanga </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Kaiarahi Tukuatu </title>
+     <body>
+      <![CDATA[
+Tīpakohia nga whakaahua mai i to taputapu me te paatene <b> Tirotiro Atahanga </b> ka tuku ki te papaanga me te paatene paatene <b> Tukuatu Whakaahua </b>. <br/> Puka Atahanga Tautoko: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Whakatau Itinga Iti: <b>%d x %d px</b> <br/> Whakatau Moni Nui e whakaaetia ana: <b>%d x %d px</b> <br/> Rahinga Kotahi te Rahinga Mutunga: <b>%d MB</b> <br/> Kaute Whakaahua mo ia Taiwhanga: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Tīpakohia Katoa </select_all>
+    <select_del> Mukua Nga Atahanga i Tohua </select_del>
+    <thumb>
+     <exist>
+      <delete> Mukua te Atahanga Whakauru Mai i te Pae </delete>
+      <info> Mōhiohio Atahanga </info>
+     </exist>
+     <new>
+      <delete> Mukua te Atahanga Whakauru Mai i te Pae </delete>
+      <cancel> Whakakorea te Tukuake Atahanga </cancel>
+      <info> Mōhiohio Atahanga </info>
+      <rotate> Hurihuri Atahanga </rotate>
+      <crop> Whakaahua Crop </crop>
+     </new>
+     <move> Ka taea e koe te wehe i nga whakaahua ma te toia ki te kiore. </move>
+     <move_mobile>Paato ka pupuri i tetahi taonga ki to maihao ka tatari kia kowhiria. I muri i te kowhiri i tetahi taonga, toia to maihao ki te whakarite i nga taonga.</move_mobile>
+    </thumb>
+    <browse> Tirotiro Atahanga </browse>
+    <upload> Tukuatu Whakaahua </upload>
+    <uploading> Kei te tukuake nga whakaahua to te papaanga. Kaua e kati te whaarangi kia oti ra ano te tukunga ake. </uploading>
+    <uploaded> Kua tukuna nga whakaahua ki te papanga. </uploaded>
+    <error>I puta he raru i te wa e tuku ana i nga konae ki te tūmau.</error>
+    <save_changes> Tiakina nga Huringa Atahanga </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kotinga </crop>
+     <cancel> Whakakore </cancel>
+    </crop>
+    <del_up_img>
+     <label> Mukua te Whakaahua </label>
+     <close> kati </close>
+     <text> Kei te hiahia koe ki te whakakore i tenei ahua mai i te paetukutuku? </text>
+     <command> Muku </command>
+     <cancel> Whakakore </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Mukua te Whakaahua </label>
+     <close> kati </close>
+     <text> Kei te hiahia koe ki te whakakore i tenei ahua mai i te paetukutuku? </text>
+     <command> Muku </command>
+     <cancel> Whakakore </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Mukua Nga Atahanga i Tohua </label>
+     <close> kati </close>
+     <text> Kei te hiahia koe ki te whakakore i nga whakaahua kua tohua mai i te papaanga? </text>
+     <command> Muku </command>
+     <cancel> Whakakore </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Mōhiohio Atahanga </label>
+     <close> kati </close>
+     <filename> Ingoa Kōnae </filename>
+     <filesize> Rahi Kōnae </filesize>
+     <date> Tukuatu Ra </date>
+     <title>
+      <label> Taitara </label>
+      <placeholder> Taitara Whakaahua </placeholder>
+     </title>
+     <desc>
+      <label> Whakaahuatanga </label>
+      <placeholder> Whakaahuatanga Whakaahua </placeholder>
+     </desc>
+     <keyw>
+      <label> Kupu matua </label>
+      <placeholder> Ko nga kupu matua ka wehea e te piko, e nga raina hou ranei </placeholder>
+     </keyw>
+     <command> Tiaki / Whakahou </command>
+     <cancel> Whakakore </cancel>
+    </img_info>
+    <result>
+     <label> Hapa </label>
+     <close> kati </close>
+     <text> </text>
+     <command> Katia </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Tautuhinga pikitia kia whakaaetia te tuku ake </title>
+    <upload_limit>
+     <label> Ko nga kaute whakaahua Mōrahi mo ia taiwhanga </label>
+     <placeholder> Ko nga kaute whakaahua Mōrahi mo ia taiwhanga </placeholder>
+     <validate> Whakauru Ko nga kaute whakaahua Mōrahi mo ia taiwhanga </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Te rahinga mōrahi o te konae kotahi (MB) </label>
+     <placeholder> Te rahinga mōrahi o te konae kotahi (MB) </placeholder>
+     <validate> Whakauru Te rahinga mōrahi o te konae kotahi (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Ka taea te whakatau atahanga iti rawa </label>
+     <width>
+      <placeholder> Whanui Iti </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </width>
+     <height>
+      <placeholder> Teitei Iti </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Ka whakaaetia te whakataunga whakaahua mōrahi </label>
+     <width>
+      <placeholder> mōrahi Whanui </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </width>
+     <height>
+      <placeholder> mōrahi Teitei </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> whakapakoko panoni </title>
+    <full_resolution>
+     <label> Atahanga Rahi Katoa </label>
+     <width>
+      <placeholder> mōrahi Whanui </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </width>
+     <height>
+      <placeholder> mōrahi Teitei </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Rahinga karakōnui </label>
+     <width>
+      <placeholder> Whanui Karakōnui </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </width>
+     <height>
+      <placeholder> Teitei Karakōnui </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Rahi Kiriata </label>
+     <width>
+      <placeholder> Whanui Kiriata </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </width>
+     <height>
+      <placeholder> Kiriata Teitei </placeholder>
+      <validate> Whakauruhia he uara </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Kounga </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Kōpeke </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Tohuwai </title>
+    <label> Whakamahia Tohuwai </label>
+    <position> Tūnga Tohuwai </position>
+    <image> Atahanga Tohuwai </image>
+    <set> Whakatakotoria Tohuwai </set>
+    <browse> 1- Tirotiro Kōnae Atahanga Watermark </browse>
+    <adjust> 2- Whakaritehia te ahua kia rite ki te anga. </adjust>
+    <upload> 3- Tukuake i te konae i kowhiria </upload>
+    <uploading> Kei te Tukuatu ... </uploading>
+    <uploaded> Tukuake. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Wharangi </page>
+   <first> Wharangi Tuatahi </first>
+   <prev> Whārangi o Mua </prev>
+   <next> Panuku Panuku </next>
+   <last> Wharangi Whakamutunga </last>
+  </pagination>
+
+</lang>

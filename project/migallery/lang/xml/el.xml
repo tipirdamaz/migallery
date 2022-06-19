@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Γλώσσα </title>
+   <label> Επιλογή γλώσσας </label>
+  </lang>
+
+  <timezone>
+   <title>Ζώνη ώρας</title>
+   <label>Επιλέξτε Ζώνη ώρας</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Διαχείριση συλλογής </gallery_man>
+   <gallery_list> Λίστα συλλογών </gallery_list>
+   <uploader> Δημιουργία νέας συλλογής </uploader>
+   <back> Πίσω </back>
+  </nav>
+
+  <install>
+ 
+   <title> Ρύθμιση MIGallery </title>
+   <header> Ρύθμιση MIGallery </header>
+
+   <img_direction>
+    <label> Γκαλερί, εικόνα και κατεύθυνση ολίσθηση </label>
+    <left> Αριστερά προς Δεξιά </left>
+    <right> Δεξιά προς Αριστερά </right>
+   </img_direction>
+
+   <db_info>
+    <title> Πληροφορίες βάσης δεδομένων MySQL </title>
+    <host>
+     <label> Κεντρικός υπολογιστής DB </label>
+     <placeholder> Κεντρικός υπολογιστής DB </placeholder>
+     <validate> Εισαγωγή ονόματος κεντρικού υπολογιστή DB </validate>
+    </host>
+    <user>
+     <label> Όνομα χρήστη DB </label>
+     <placeholder> Όνομα χρήστη DB </placeholder>
+     <validate> Όνομα χρήστη DB εισαγωγής </validate>
+    </user>
+    <pass>
+     <label> Κωδικός πρόσβασης DB </label>
+     <placeholder> Κωδικός πρόσβασης DB </placeholder>
+     <validate> Εισαγωγή κωδικού πρόσβασης DB </validate>
+    </pass>
+    <db>
+     <label> Όνομα DB </label>
+     <placeholder> Όνομα DB </placeholder>
+     <validate> Όνομα DB εισαγωγής </validate>
+    </db>
+    <gal_table>
+     <label> Όνομα πίνακα γκαλερί εικόνων </label>
+     <placeholder> Όνομα πίνακα γκαλερί εικόνων </placeholder>
+     <validate> Εισαγάγετε το όνομα του ονόματος του πίνακα συλλογής </validate>
+    </gal_table>
+    <img_table>
+     <label> Όνομα πίνακα εικόνων </label>
+     <placeholder> Όνομα πίνακα εικόνων </placeholder>
+     <validate> Εισαγάγετε το όνομα του πίνακα εικόνων </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Κατάλογοι για εγγράψιμο δυναμικό περιεχόμενο</title>
+    <db_alert>
+     <![CDATA[
+    Ο παρακάτω κατάλογος είναι όπου θα δημιουργηθούν τα αρχεία <b> διαμόρφωσης </b>, <b> αρχείο καταγραφής σφαλμάτων </b> και <b> ορισμού </b>. Εάν θέλετε να μετονομάσετε αυτόν τον κατάλογο, αλλάξτε τον ορισμό <b> DB_DIR </b> στο αρχείο <b> definitions0.php </b> και ανανεώστε αυτήν τη σελίδα. <br/> <br/> Εάν θέλετε να μετονομάσετε το αρχείο διαμόρφωσης, το αρχείο καταγραφής σφαλμάτων και το αρχείο ορισμού, αλλάξτε τους ορισμούς των <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> και <b> DEFINITIONS_FILE </b> στο αρχείο definitions0.php. Εάν το σύστημά σας βασίζεται σε unix, ορίστε τα δικαιώματα γραφής με την ακόλουθη εντολή: <br/> <b>%s</b> <br/> <br/> Πριν ξεκινήσετε την εγκατάσταση, βεβαιωθείτε ότι υπάρχει η ακόλουθη διαδρομή και έχετε άδεια γραφής:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Πριν ξεκινήσετε την εγκατάσταση, βεβαιωθείτε ότι οι ακόλουθοι κατάλογοι είναι διαθέσιμοι και ότι έχετε άδεια να γράψετε αρχείο στους καταλόγους. <br/> <br/> Εάν πρόκειται να χρησιμοποιήσετε καταλόγους διαφορετικούς από τους ακόλουθους καταλόγους, εάν οι κατάλογοι δεν υπάρχουν στο δίσκο, δημιουργήστε πρώτα τους καταλόγους και ορίστε τα δικαιώματα εγγραφής και ξεκινήστε την εγκατάσταση.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Διαμόρφωση, καταγραφή σφαλμάτων και διαδρομή αρχείων ορισμών</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Οι ακόλουθοι κατάλογοι δημιουργούνται όταν αποθηκεύεται η νέα συλλογή εικόνων. Το <b>%d</b> υποδεικνύει το αναγνωριστικό συλλογής εικόνων. Αυτοί οι κατάλογοι δημιουργούνται στον <b> Κατάλογος βάσης εικόνας </b> που ορίζεται παραπάνω. Ελέγξτε ότι η μορφή των καταλόγων είναι κατάλληλη.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Το αρχείο διαμόρφωσης έχει δημιουργηθεί πριν. Επομένως, δεν μπορείτε να πραγματοποιήσετε την εγκατάσταση. Πρέπει πρώτα να διαγράψετε το αρχείο διαμόρφωσης και μετά να εκτελέσετε την εγκατάσταση.</config_alert>
+    <tmp_dir>
+     <label>Προσωρινή διαδρομή εικόνας</label>
+     <placeholder>Προσωρινή διαδρομή εικόνας</placeholder>
+     <validate>Προσωρινή διαδρομή εικόνας</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Προσωρινή διαδρομή μικρογραφιών</label>
+     <placeholder>Προσωρινή διαδρομή μικρογραφιών</placeholder>
+     <validate>Προσωρινή διαδρομή μικρογραφιών</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Προσωρινή διαδρομή περικομμένης μικρογραφίας</label>
+     <placeholder>Προσωρινή διαδρομή περικομμένης μικρογραφίας</placeholder>
+     <validate>Προσωρινή διαδρομή περικομμένης μικρογραφίας</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Προσωρινός κατάλογος εικόνας διαφανειών</label>
+     <placeholder>Προσωρινός κατάλογος εικόνας διαφανειών</placeholder>
+     <validate>Προσωρινός κατάλογος εικόνας διαφανειών</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Κατάλογος βάσης εικόνας</label>
+     <placeholder>Κατάλογος βάσης εικόνας</placeholder>
+     <validate>Κατάλογος βάσης εικόνας</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Διαδρομή εικόνων</label>
+     <placeholder>Διαδρομή εικόνων</placeholder>
+     <validate>Διαδρομή εικόνων</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Διαδρομή μικρογραφιών</label>
+     <placeholder>Διαδρομή μικρογραφιών</placeholder>
+     <validate>Διαδρομή μικρογραφιών</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Διαδρομή περικομμένης μικρογραφίας</label>
+     <placeholder>Διαδρομή περικομμένης μικρογραφίας</placeholder>
+     <validate>Διαδρομή περικομμένης μικρογραφίας</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Φάκελος διαφανειών εικόνων</label>
+     <placeholder>Φάκελος διαφανειών εικόνων</placeholder>
+     <validate>Φάκελος διαφανειών εικόνων</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Διαδρομή αρχείων XML</label>
+     <placeholder>Διαδρομή αρχείων XML</placeholder>
+     <validate>Διαδρομή αρχείων XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Εγκατάσταση. Περιμένετε ... </installing>
+    <success> Η εγκατάσταση ολοκληρώθηκε με επιτυχία. </success>
+    <error> Δεν ήταν δυνατή η ολοκλήρωση της εγκατάστασης. </error>
+   </alert>
+  
+   <submit> Έναρξη εγκατάστασης </submit>
+   <submit_continue> Συνέχεια &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Διαχείριση συλλογής </title>
+   <header> Διαχείριση συλλογής </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Λίστα συλλογών </title>
+   <header> Λίστα συλλογών </header>
+   <sort>
+    <asc> πρώτη έως τελευταία </asc>
+    <desc> διαρκεί στην πρώτη </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Προβολή </button>
+     <title> Προβολή συλλογής </title>
+    </view>
+    <delete>
+     <button> Διαγραφή </button>
+     <title> Διαγραφή συλλογής </title>
+    </delete>
+    <edit>
+     <button> Επεξεργασία </button>
+     <title> Επεξεργασία συλλογής </title>
+    </edit>
+    <images>εικόνες</images>
+    <date>Ημερομηνία</date>
+    <move> Μπορείτε να ταξινομήσετε τις γκαλερί σύροντάς τις με το ποντίκι. </move>
+    <move_mobile>Αγγίξτε παρατεταμένα ένα στοιχείο με το δάχτυλό σας και περιμένετε να επιλεγεί. Μόλις επιλεγεί το αντικείμενο, μπορείτε να ταξινομήσετε τα στοιχεία σύροντας με το δάχτυλό σας.</move_mobile>
+   </card>
+   <alert> Δεν βρέθηκε συλλογή. </alert>
+   <modal>
+    <del_gallery>
+     <label> Διαγραφή συλλογής </label>
+     <close> Κλείσε </close>
+     <text> Θέλετε να διαγράψετε αυτήν τη συλλογή από τον ιστότοπο; </text>
+     <command> Διαγραφή </command>
+     <cancel> Ακύρωση </cancel>
+    </del_gallery>
+    <result>
+     <label> Σφάλμα </label>
+     <close> Κλείσε </close>
+     <text> </text>
+     <command> Κλείσιμο </command>
+    </result>
+   </modal>
+   <save_changes> Αποθήκευση ταξινόμησης γκαλερί </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Προβολή συλλογής </title>
+   <header> Προβολή συλλογής </header>
+   <alert> Δεν βρέθηκε εικόνα. </alert>
+   <share>Κοινή χρήση συλλογής</share>
+   <filedate>Ημερομηνία ανεβάσματος</filedate>
+   <filesize>Μέγεθος αρχείου</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Αντιγραφή στο πρόχειρο</label>
+     <close>Κλείσε</close>
+     <text>Ο σύνδεσμος αντιγράφηκε στο πρόχειρο</text>
+     <command>Αντίγραφο</command>
+     <cancel>Κλείσιμο</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Δημιουργία νέας συλλογής </title>
+    <header> Δημιουργία νέας συλλογής </header>
+   </new>
+   <edit>
+    <title> Επεξεργασία συλλογής </title>
+    <header> Επεξεργασία συλλογής </header>
+   </edit>
+   <gallery_info>
+    <title> Πληροφορίες συλλογής </title>
+    <name>
+     <label> Όνομα συλλογής </label>
+     <placeholder> Όνομα συλλογής </placeholder>
+     <validate> Όνομα συλλογής εισαγωγής </validate>
+    </name>
+    <description>
+     <label> Περιγραφή συλλογής </label>
+     <placeholder> Περιγραφή συλλογής </placeholder>
+     <validate> Περιγραφή συλλογής εισόδων </validate>
+    </description>
+    <keywords>
+     <label> Οι λέξεις-κλειδιά της συλλογής διαχωρίζονται με κόμματα ή αλλαγές γραμμής </label>
+     <placeholder> Οι λέξεις-κλειδιά της συλλογής διαχωρίζονται με κόμματα ή αλλαγές γραμμής </placeholder>
+     <validate> Εισαγάγετε λέξεις-κλειδιά συλλογής </validate>
+    </keywords>
+    <submit>
+     <save> Αποθήκευση συλλογής </save>
+     <update> Ενημέρωση συλλογής </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Οδηγός μεταφόρτωσης </title>
+     <body>
+      <![CDATA[
+Επιλέξτε εικόνες από τη συσκευή σας με το κουμπί <b> Αναζήτηση εικόνων </b> και μεταφορτώστε στον ιστότοπο με το κουμπί <b> Μεταφόρτωση εικόνων </b>. <br/> Υποστηριζόμενες μορφές εικόνας: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Επιτρεπόμενη ελάχιστη ανάλυση: <b>%d x %d px</b> <br/> Επιτρεπόμενη μέγιστη ανάλυση: <b>%d x %d px</b> <br/> Μέγιστο μέγεθος ενός αρχείου: <b>%d MB</b> <br/> Αριθμός εικόνων ανά συλλογή: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Επιλογή όλων </select_all>
+    <select_del> Διαγραφή επιλεγμένων </select_del>
+    <thumb>
+     <exist>
+      <delete> Διαγραφή μεταφορτωμένης εικόνας από ιστότοπο </delete>
+      <info> Πληροφορίες εικόνας </info>
+     </exist>
+     <new>
+      <delete> Διαγραφή μεταφορτωμένης εικόνας από ιστότοπο </delete>
+      <cancel> Ακύρωση μεταφόρτωσης εικόνας </cancel>
+      <info> Πληροφορίες εικόνας </info>
+      <rotate> Περιστροφή εικόνας </rotate>
+      <crop> Περικοπή εικόνας </crop>
+     </new>
+     <move> Μπορείτε να ταξινομήσετε τις εικόνες σύροντάς τις με το ποντίκι. </move>
+     <move_mobile>Αγγίξτε παρατεταμένα ένα στοιχείο με το δάχτυλό σας και περιμένετε να επιλεγεί. Μόλις επιλεγεί το αντικείμενο, μπορείτε να ταξινομήσετε τα στοιχεία σύροντας με το δάχτυλό σας.</move_mobile>
+    </thumb>
+    <browse> Αναζήτηση εικόνων </browse>
+    <upload> Μεταφόρτωση εικόνων </upload>
+    <uploading> Οι εικόνες φορτώνονται στον ιστότοπο. Μην κλείσετε τη σελίδα έως ότου ολοκληρωθεί η μεταφόρτωση. </uploading>
+    <uploaded> Οι εικόνες έχουν μεταφορτωθεί στον ιστότοπο. </uploaded>
+    <error>Παρουσιάστηκαν ορισμένα σφάλματα κατά τη μεταφόρτωση αρχείων στο διακομιστή.</error>
+    <save_changes> Αποθήκευση αλλαγών εικόνας </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Περικοπή </crop>
+     <cancel> Ακύρωση </cancel>
+    </crop>
+    <del_up_img>
+     <label> Διαγραφή εικόνας </label>
+     <close> Κλείσε </close>
+     <text> Θέλετε να διαγράψετε αυτήν την εικόνα από τον ιστότοπο; </text>
+     <command> Διαγραφή </command>
+     <cancel> Ακύρωση </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Διαγραφή εικόνας </label>
+     <close> Κλείσε </close>
+     <text> Θέλετε να διαγράψετε αυτήν την εικόνα από τον ιστότοπο; </text>
+     <command> Διαγραφή </command>
+     <cancel> Ακύρωση </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Διαγραφή επιλεγμένων εικόνων </label>
+     <close> Κλείσε </close>
+     <text> Θέλετε να διαγράψετε τις επιλεγμένες εικόνες από τον ιστότοπο; </text>
+     <command> Διαγραφή </command>
+     <cancel> Ακύρωση </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Πληροφορίες εικόνας </label>
+     <close> Κλείσε </close>
+     <filename> Όνομα αρχείου </filename>
+     <filesize> Μέγεθος αρχείου </filesize>
+     <date> Ημερομηνία ανεβάσματος </date>
+     <title>
+      <label> Τίτλος </label>
+      <placeholder> Τίτλος εικόνας </placeholder>
+     </title>
+     <desc>
+      <label> Περιγραφή </label>
+      <placeholder> Περιγραφή εικόνας </placeholder>
+     </desc>
+     <keyw>
+      <label> Λέξεις-κλειδιά </label>
+      <placeholder> Λέξεις-κλειδιά διαχωρισμένες με κόμματα ή αλλαγές γραμμής </placeholder>
+     </keyw>
+     <command> Αποθήκευση / Ενημέρωση </command>
+     <cancel> Ακύρωση </cancel>
+    </img_info>
+    <result>
+     <label> Σφάλμα </label>
+     <close> Κλείσε </close>
+     <text> </text>
+     <command> Κλείσιμο </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Ρυθμίσεις εικόνας με δυνατότητα μεταφόρτωσης </title>
+    <upload_limit>
+     <label> Μέγιστος αριθμός εικόνων ανά συλλογή </label>
+     <placeholder> Μέγιστος αριθμός εικόνων ανά συλλογή </placeholder>
+     <validate> Μέγιστος αριθμός εικόνων εισαγωγής ανά συλλογή </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Μέγιστο μέγεθος ενός αρχείου (MB) </label>
+     <placeholder> Μέγιστο μέγεθος ενός αρχείου (MB) </placeholder>
+     <validate> Μέγιστο μέγεθος εισόδου μεμονωμένου αρχείου (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Επιτρεπόμενο ελάχιστο ψήφισμα </label>
+     <width>
+      <placeholder> Ελάχ. πλάτος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </width>
+     <height>
+      <placeholder> Ελάχιστο ύψος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Επιτρεπόμενη μέγιστη ανάλυση </label>
+     <width>
+      <placeholder> Μέγιστο πλάτος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </width>
+     <height>
+      <placeholder> Μέγιστο ύψος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Μετασχηματισμός εικόνας </title>
+    <full_resolution>
+     <label> Εικόνα πλήρους μεγέθους </label>
+     <width>
+      <placeholder> Μέγιστο πλάτος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </width>
+     <height>
+      <placeholder> Μέγιστο ύψος </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Μέγεθος μικρογραφίας </label>
+     <width>
+      <placeholder> Πλάτος αντίχειρα </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </width>
+     <height>
+      <placeholder> Ύψος αντίχειρα </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Μέγεθος ολίσθηση </label>
+     <width>
+      <placeholder> Πλάτος ολίσθηση </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </width>
+     <height>
+      <placeholder> Ύψος ολίσθηση </placeholder>
+      <validate> Εισαγάγετε μια τιμή </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Ποιότητα Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Συμπίεση PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Υδατογράφημα </title>
+    <label> Χρήση υδατογραφήματος </label>
+    <position> Θέση υδατογραφήματος </position>
+    <image> Εικόνα υδατογραφήματος </image>
+    <set> Ορισμός υδατογραφήματος </set>
+    <browse> 1- Περιήγηση στο αρχείο εικόνας υδατογραφήματος </browse>
+    <adjust> 2- Προσαρμόστε την εικόνα σύμφωνα με το πλαίσιο. </adjust>
+    <upload> 3- Μεταφόρτωση επιλεγμένου αρχείου </upload>
+    <uploading> Μεταφόρτωση ... </uploading>
+    <uploaded> Μεταφορτώθηκε. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Σελίδα </page>
+   <first> Πρώτη σελίδα </first>
+   <prev> Προηγούμενη σελίδα </prev>
+   <next> Επόμενη σελίδα </next>
+   <last> Τελευταία σελίδα </last>
+  </pagination>
+
+</lang>

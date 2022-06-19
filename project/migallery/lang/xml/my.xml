@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ဘာသာစကား </title>
+   <label> ဘာသာစကားရွေးချယ်ရန် </label>
+  </lang>
+
+  <timezone>
+   <title>အချိန်ဇုန်</title>
+   <label>အချိန်ဇုန်ကိုရွေးပါ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ပြခန်းစီမံခန့်ခွဲမှု </gallery_man>
+   <gallery_list> ပြခန်းစာရင်း </gallery_list>
+   <uploader> ပြခန်းအသစ်ဖန်တီးပါ </uploader>
+   <back> နောက်သို့ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery တည်ဆောက်သည် </title>
+   <header> MIGallery တည်ဆောက်သည် </header>
+
+   <img_direction>
+    <label> ပြခန်းပုံနှင့်ဆလိုက်ရှိုး ဦး တည်ချက် </label>
+    <left> ဘယ်မှညာသို့ </left>
+    <right> ညာဘက်မှလက်ဝဲသို့ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ဒေတာဘေ့စ်အချက်အလက်များ </title>
+    <host>
+     <label> ဒေတာဘေ့စ် hostname </label>
+     <placeholder> ဒေတာဘေ့စ် hostname </placeholder>
+     <validate> ထည့်သွင်းပါ ဒေတာဘေ့စ Hostname </validate>
+    </host>
+    <user>
+     <label> ဒေတာဘေ့စ်သုံးစွဲသူအမည် </label>
+     <placeholder> ဒေတာဘေ့စ်သုံးစွဲသူအမည် </placeholder>
+     <validate> ထည့်သွင်းပါဒေတာဘေ့စ အသုံးပြုသူအမည် </validate>
+    </user>
+    <pass>
+     <label> ဒေတာဘေ့စ်စကားဝှက် </label>
+     <placeholder> ဒေတာဘေ့စ်စကားဝှက် </placeholder>
+     <validate> ဒေတာဘေ့စ်စကားဝှက်ကိုထည့်သွင်းပါ </validate>
+    </pass>
+    <db>
+     <label> ဒေတာဘေ့စ်အမည် </label>
+     <placeholder> ဒေတာဘေ့စ်၏အမည် </placeholder>
+     <validate> ထည့်သွင်းပါဒေတာဘေ့စ်အမည် </validate>
+    </db>
+    <gal_table>
+     <label> ပြခန်းဇယားအမည် </label>
+     <placeholder> ပြခန်းဇယားအမည် </placeholder>
+     <validate> ပြခန်းစားပွဲတင်အမည်ရိုက်ထည့်ပါ </validate>
+    </gal_table>
+    <img_table>
+     <label> ပုံရိပ်စားပွဲအမည် </label>
+     <placeholder> ပုံရိပ်စားပွဲအမည် </placeholder>
+     <validate> ဒေတာဘေ့စပုံရိပ်စားပွဲတင်အမည်ရိုက်ထည့်ပါ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ဖိုင်များကိုရေးသားခွင့်ပြုသည့်ဖိုင်တွဲများ</title>
+    <db_alert>
+     <![CDATA[
+    <b> စီစဉ်ဖွဲ့စည်းမှု </b>၊ <b> အမှားမှတ်တမ်း </b> နှင့် <b> အဓိပ္ပာယ်သတ်မှတ်ချက် </b> ဖိုင်များကိုအောက်ပါဖိုင်တွဲတွင်ဖန်တီးလိမ့်မည်။ အကယ်၍ သင်သည်ဤဖိုင်တွဲ၏အမည်ကိုပြောင်းလဲလိုပါက <b> definitions0.php </b> ဖိုင်ရှိ <b>DB_DIR</b> ဆက်တင်ကိုပြောင်းပြီးဤစာမျက်နှာကိုအသစ်ပြုပြင်ပါ။<br/><br/>စီစဉ်ဖွဲ့စည်းမှု ဖိုင်, အမှားမှတ်တမ်းဖိုင် နှင့် အဓိပ္ပါယ်ဖွင့်ဆိုချက် ကိုအမည်ပြောင်းချင်တယ်ဆိုရင် definitions0.php ဖိုင်ထဲမှာ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> နှင့် <b>DEFINITIONS_FILE</b> ရဲ့အဓိပ္ပါယ်ကိုပြောင်းပါ။<br/><br/>သင်၏ စနစ် သည် unix ပေါ်တွင်အခြေခံပါကဤဖိုင်တွဲ၏ရေးသားခွင့်ပြုချက်ကိုအောက်ပါ command ဖြင့်ထားပါ။<br/><b>%s</b><br/><br/>တပ်ဆင်မှုမစတင်မီအောက်ပါဖိုင်တွဲတည်ရှိပြီးဤဖိုလ်ဒါတွင်ရေးခွင့်ခွင့်ရှိသည်သေချာအောင်လုပ်ပါ -
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    တပ်ဆင်မှုမစတင်မီသင့်တွင်အောက်ပါဖိုလ်ဒါများရေးသားရန်ခွင့်ပြုချက်သေချာပါစေ။ <br/> <br/> အကယ်၍ သင်သည်အောက်ဖော်ပြပါဖိုလ်ဒါများအပြင်အခြားဖိုလ်ဒါများကိုအသုံးပြုမည်ဆိုပါကဖိုလ်ဒါများမရှိလျှင်၊ ဦး စွာဖိုလ်ဒါများကိုဖန်တီးပြီး၎င်းဖိုင်တွဲများ၏ရေးသားခွင့်ပြုချက်ကိုသတ်မှတ်ပြီးစတင်ပါ။
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ဖွဲ့စည်းမှု ဖိုင်၊ အမှားမှတ်တမ်းဖိုင်နှင့်အဓိပ္ပါယ်သတ်မှတ်ချက်ဖိုင်လမ်းကြောင်း</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ပြခန်းအသစ်ကိုသိမ်းဆည်းသောအခါအောက်ပါဖိုလ်ဒါများကိုဖန်တီးသည်။ <b>%d</b> ပြခန်း ID ကိုသတ်မှတ်ပါတယ်။ ၎င်းဖိုင်တွဲများအားအထက်တွင်သတ်မှတ်ထားသော <b> ပုံများ၏အခြေခံဖိုင်တွဲ </b> ဖိုင်တွဲတွင်ဖန်တီးထားသည်။ ဤဖိုင်တွဲများ၏ပုံစံသည်သင့်တော်မှုရှိမရှိစစ်ဆေးပါ။
+     ]]>
+    </img_dir_alert>
+    <config_alert>စီစဉ်ဖွဲ့စည်းမှု ဖိုင်ရှိပြီးသား။ ထို့ကြောင့်သင် တပ်ဆင်ခြင်း ကိုမ ပြေး နိုင်ပါ။ ပထမ ဦး စွာ စီစဉ်ဖွဲ့စည်းမှု ဖိုင် ကိုဖျက်ပြီး တပ်ဆင်ခြင်း ကို ပြေး ရမည်။</config_alert>
+    <tmp_dir>
+     <label>ပုံရိပ်များ၏ယာယီဖိုင်တွဲ</label>
+     <placeholder>ပုံရိပ်များ၏ယာယီဖိုင်တွဲ</placeholder>
+     <validate>ပုံရိပ်များ၏ယာယီဖိုင်တွဲ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>သေးငယ်တဲ့ရုပ်ပုံဖိုင်များ၏ယာယီဖိုင်တွဲ</label>
+     <placeholder>သေးငယ်တဲ့ရုပ်ပုံဖိုင်များ၏ယာယီဖိုင်တွဲ</placeholder>
+     <validate>သေးငယ်တဲ့ရုပ်ပုံဖိုင်များ၏ယာယီဖိုင်တွဲ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ဖြတ်တောက်ထားသောသေးငယ်သောပုံရိပ်များ၏ယာယီဖိုင်တွဲ</label>
+     <placeholder>ဖြတ်တောက်ထားသောသေးငယ်သောပုံရိပ်များ၏ယာယီဖိုင်တွဲ</placeholder>
+     <validate>ဖြတ်တောက်ထားသောသေးငယ်သောပုံရိပ်များ၏ယာယီဖိုင်တွဲ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ဆလိုက်အရွယ်အစားပုံရိပ်များ၏ယာယီ ဖိုလ်ဒါ ကို</label>
+     <placeholder>ဆလိုက်အရွယ်အစားပုံရိပ်များ၏ယာယီ ဖိုလ်ဒါ ကို</placeholder>
+     <validate>ဆလိုက်အရွယ်အစားပုံရိပ်များ၏ယာယီ ဖိုလ်ဒါ ကို</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ပုံများ၏အခြေခံဖိုင်တွဲ</label>
+     <placeholder>ပုံများ၏အခြေခံဖိုင်တွဲ</placeholder>
+     <validate>ပုံများ၏အခြေခံဖိုင်တွဲ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</label>
+     <placeholder>ပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</placeholder>
+     <validate>ပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>သေးသေးလေးပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</label>
+     <placeholder>သေးသေးလေးပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</placeholder>
+     <validate>သေးသေးလေးပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>သေးငယ်တဲ့ဖြတ်ထားသောပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</label>
+     <placeholder>သေးငယ်တဲ့ဖြတ်ထားသောပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</placeholder>
+     <validate>သေးငယ်တဲ့ဖြတ်ထားသောပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ဆလိုက်အရွယ်အစားပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</label>
+     <placeholder>ဆလိုက်အရွယ်အစားပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</placeholder>
+     <validate>ဆလိုက်အရွယ်အစားပုံရိပ်ဖိုင်များ၏လမ်းကြောင်း</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ဖိုင်လမ်းညွှန်</label>
+     <placeholder>XML ဖိုင်လမ်းညွှန်</placeholder>
+     <validate>XML ဖိုင်လမ်းညွှန်</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ထည့်သွင်းခြင်း ကျေးဇူးပြု၍ ခဏစောင့်ပါ။ </installing>
+    <success> ထည့်သွင်းမှုအောင်မြင်စွာပြီးဆုံးပါပြီ။ </success>
+    <error> ထည့်သွင်းမှုအားမပြီးစီးနိုင်ပါ။ </error>
+   </alert>
+  
+   <submit> ထည့်သွင်းမှုကိုစတင်ပါ။ </submit>
+   <submit_continue> ဆက်လက် &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ပြခန်းစီမံခန့်ခွဲမှု </title>
+   <header> ပြခန်းစီမံခန့်ခွဲမှု </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ပြခန်းစာရင်း </title>
+   <header> ပြခန်းစာရင်း </header>
+   <sort>
+    <asc> ပထမ ဦး ဆုံးမှနောက်ဆုံးသို့ မျိုး </asc>
+    <desc> နောက်ဆုံးကနေပထမသို့မျိုး </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ကြည့်ရန် </button>
+     <title> ပြခန်းကြည့်ရန် </title>
+    </view>
+    <delete>
+     <button> ဖျက်ပါ </button>
+     <title> ပြခန်းကိုဖျက်ပါ </title>
+    </delete>
+    <edit>
+     <button> တည်းဖြတ်ပါ </button>
+     <title> ပြခန်းကို တည်းဖြတ်ပါ </title>
+    </edit>
+    <images>ပုံများ</images>
+    <date>ရက်စွဲ</date>
+    <move> ပြခန်းများကို မောက်စ် ဖြင့်ဆွဲယူခြင်းအားဖြင့်သင် မျိုး လုပ်နိုင်သည်။ </move>
+    <move_mobile>သင့်လက်ချောင်းဖြင့်အရာတစ်ခုကိုအသာပုတ်ပါ၊ ၎င်းကိုမီးမောင်းထိုးပြရန်စောင့်ပါ။ ပစ္စည်းတစ်ခုကိုရွေးချယ်ပြီးသည့်အခါပစ္စည်းများကို sort ရန်သင့်လက်ချောင်းကိုဆွဲယူပါ။</move_mobile>
+   </card>
+   <alert> ပြခန်းမရှိပါ။ </alert>
+   <modal>
+    <del_gallery>
+     <label> ပြခန်းကိုဖျက်ရန် </label>
+     <close> ပိတ် </close>
+     <text> ဒီပြခန်းကိုဆိုဒ်မှဖျက်လိုပါသလား။ </text>
+     <command> ဖျက်ပါ </command>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </del_gallery>
+    <result>
+     <label> အမှား </label>
+     <close> ပိတ် </close>
+     <text> </text>
+     <command> ပိတ် </command>
+    </result>
+   </modal>
+   <save_changes> ပြခန်း မျိုး သိမ်းဆည်းပါ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ပြခန်းကြည့်ရန် </title>
+   <header> ပြခန်းကြည့်ရန် </header>
+   <alert> ပုံမတွေ့ပါ။ </alert>
+   <share>ပြခန်းမျှဝေပါ</share>
+   <filedate>တင်ရက်စွဲ</filedate>
+   <filesize>ဖိုင်အရွယ်အစား</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Clipboard သို့ကူးယူပါ</label>
+     <close>ပိတ်</close>
+     <text>Link ကို clipboard မှကူးယူ</text>
+     <command>ကူးပါ</command>
+     <cancel>ပိတ်</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ပြခန်းအသစ်ဖန်တီးပါ </title>
+    <header> ပြခန်းအသစ်ဖန်တီးပါ </header>
+   </new>
+   <edit>
+    <title> ပြခန်းကို တည်းဖြတ်ပါ </title>
+    <header> ပြခန်းကို တည်းဖြတ်ပါ </header>
+   </edit>
+   <gallery_info>
+    <title> ပြခန်းအချက်အလက် </title>
+    <name>
+     <label> ပြခန်းအမည် </label>
+     <placeholder> ပြခန်းအမည် </placeholder>
+     <validate> ထည့်သွင်းပြခန်းအမည် </validate>
+    </name>
+    <description>
+     <label> ပြခန်းဖော်ပြချက် </label>
+     <placeholder> ပြခန်းဖော်ပြချက် </placeholder>
+     <validate> ထည့်သွင်းမှုပြခန်းဖော်ပြချက် </validate>
+    </description>
+    <keywords>
+     <label> ကော်မာ (သို့) လိုင်းကျိုးခြင်းဖြင့်ကွဲကွာသည့်ပြခန်းသော့ချက်စာလုံးများ </label>
+     <placeholder> ကော်မာ (သို့) လိုင်းကျိုးခြင်းဖြင့်ကွဲကွာသည့်ပြခန်းသော့ချက်စာလုံးများ </placeholder>
+     <validate> ပြခန်းသော့ချက်စာလုံးများကိုရိုက်ထည့်ပါ </validate>
+    </keywords>
+    <submit>
+     <save> ပြခန်းသိမ်းဆည်းပါ </save>
+     <update> ပြခန်းကို နောက်ဆုံးသတင်း လုပ်ရန် </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> တင်ပါ လမ်းညွှန် </title>
+     <body>
+      <![CDATA[
+သင့်ကိရိယာမှ <b> ဓါတ်ပုံများကိုရှာဖွေသည် </b> ခလုတ်ဖြင့်ပုံများကိုရွေးချယ်ပြီး <b> ပုံများတင်ပါ </b> ခလုတ်ဖြင့်ဆိုက်သို့တင်ပါ။ <br/> ထောက်ပံ့ထားသောပုံများပုံစံ - <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ခွင့်ပြုနိုင်သောအနိမ့်ဆုံးဆုံးဖြတ်ချက် - <b>%d x %d px</b> <br/> ခွင့်ပြုနိုင်သောအမြင့်ဆုံး resolution: <b>%d x %d px</b> <br/> ဖိုင်တွဲတစ်ခုအမြင့်ဆုံးအရွယ်အစား - <b>%d MB</b> <br/> ပြခန်းတစ်ခုအတွက်ပုံအရေအတွက် - <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> အားလုံးရွေးပါ </select_all>
+    <select_del> ရွေးချယ်ထားသောရုပ်ပုံများကိုဖျက်ပါ </select_del>
+    <thumb>
+     <exist>
+      <delete> တင်ထားသောပုံအားဆိုဒ်မှဖျက်ပါ </delete>
+      <info> ပုံရိပ်အချက်အလက် </info>
+     </exist>
+     <new>
+      <delete> တင်ထားသောပုံအားဆိုဒ်မှဖျက်ပါ </delete>
+      <cancel> ရုပ်ပုံတင်ခြင်းကိုပယ်ဖျက်ပါ </cancel>
+      <info> ပုံရိပ်အချက်အလက် </info>
+      <rotate> ပုံကိုလှည့်ပါ </rotate>
+      <crop> ပုံရိပ်ဖြတ်သည် </crop>
+     </new>
+     <move> ပုံတွေကိုမောက်စ်နဲ့ဆွဲယူပြီးစီနိုင်ပါတယ်။ </move>
+     <move_mobile>သင့်လက်ချောင်းဖြင့်အရာတစ်ခုကိုအသာပုတ်ပါ၊ ၎င်းကိုမီးမောင်းထိုးပြရန်စောင့်ပါ။ ပစ္စည်းတစ်ခုကိုရွေးချယ်ပြီးသည့်အခါပစ္စည်းများကို sort ရန်သင့်လက်ချောင်းကိုဆွဲယူပါ။</move_mobile>
+    </thumb>
+    <browse> ဓါတ်ပုံများကိုရှာဖွေသည် </browse>
+    <upload> ပုံများတင်ပါ </upload>
+    <uploading> ရုပ်ပုံများကိုသင်ဖြစ်နေပြီsite ကိုမှတင်ခဲ့သည်။ အပ်လုဒ်မပြီးမချင်းဤစာမျက်နှာကိုမပိတ်ပါနှင့်။ </uploading>
+    <uploaded> ပုံများသည်ဆိုဒ်သို့တင်ထားသည်။ </uploaded>
+    <error>ဆာဗာသို့ဖိုင်များတင်စဉ်အမှားအယွင်းအချို့ရှိပါသည်။</error>
+    <save_changes> သိမ်းဆည်းပါ ပုံပြောင်းခြင်း </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> သီးနှံ </crop>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </crop>
+    <del_up_img>
+     <label> ဓာတ်ပုံကိုဖျက်သည် </label>
+     <close> ပိတ် </close>
+     <text> ဒီပုံကိုဝဗ်ဆိုက်မှဖျက်လိုပါသလား။ </text>
+     <command> ဖျက်ပါ </command>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ဓာတ်ပုံကိုဖျက်သည် </label>
+     <close> ပိတ် </close>
+     <text> ဒီပုံကိုဝဗ်ဆိုက်မှဖျက်လိုပါသလား။ </text>
+     <command> ဖျက်ပါ </command>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ရွေးချယ်ထားသောရုပ်ပုံများကိုဖျက်ရန် </label>
+     <close> ပိတ် </close>
+     <text> ရွေးထားသောရုပ်ပုံများကိုဝဗ်ဆိုက်မှဖျက်လိုပါသလား။ </text>
+     <command> ဖျက်ပါ </command>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ပုံ အင်ဖို </label>
+     <close> ပိတ် </close>
+     <filename> ဖိုင်အမည် </filename>
+     <filesize> ဖိုင်အရွယ်အစား </filesize>
+     <date> တင်ရက်စွဲ </date>
+     <title>
+      <label> ခေါင်းစဉ် </label>
+      <placeholder> ရုပ်ပုံခေါင်းစဉ် </placeholder>
+     </title>
+     <desc>
+      <label> ဖော်ပြချက် </label>
+      <placeholder> ပုံဖော်ပြချက် </placeholder>
+     </desc>
+     <keyw>
+      <label> သော့ချက်စာလုံးများ </label>
+      <placeholder> ကော်မာ (သို့) အသစ်လိုင်းများဖြင့်ခွဲခြားသောသော့ချက်စာလုံးများ </placeholder>
+     </keyw>
+     <command> သိမ်းရန် / အသစ်ပြောင်းရန် </command>
+     <cancel> ပယ်ဖျက်ရန် </cancel>
+    </img_info>
+    <result>
+     <label> အမှား </label>
+     <close> ပိတ် </close>
+     <text> </text>
+     <command> ပိတ် </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> တင်ယူနိုင်သောပုံချိန်ညှိချက်များ </title>
+    <upload_limit>
+     <label> ပြခန်းတစ်ခုလျှင်ပုံရိပ်အရေအတွက် </label>
+     <placeholder> ပြခန်းတစ်ခုလျှင်အများဆုံးဓာတ်ပုံအရေအတွက် </placeholder>
+     <validate> ပြခန်းတွင်အများဆုံးဓာတ်ပုံအရေအတွက်ကိုရိုက်ထည့်ပါ </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ဖိုင်တစ်ခု၏အများဆုံးအရွယ်အစား (MB) </label>
+     <placeholder> ဖိုင်တစ်ခု၏အများဆုံးအရွယ်အစား (MB) </placeholder>
+     <validate> ဖိုင်တစ်ခု၏အများဆုံးအရွယ်အစား (MB) ရိုက်ထည့်ပါ </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> အနည်းဆုံးခွင့်ပြုထားသောပုံရိပ်ပြတ်သားမှု </label>
+     <width>
+      <placeholder> အနိမ့်ဆုံးအကျယ် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </width>
+     <height>
+      <placeholder> နိမ့်ဆုံးအမြင့် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> ခွင့်ပြုထားသောအများဆုံးဓာတ်ပုံအရွယ်အစား </label>
+     <width>
+      <placeholder> အများဆုံးအကျယ် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </width>
+     <height>
+      <placeholder> အများဆုံးအမြင့် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ရုပ်ပုံအသွင်ပြောင်း </title>
+    <full_resolution>
+     <label> ပုံအပြည့်အစုံ </label>
+     <width>
+      <placeholder> အများဆုံးအကျယ် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </width>
+     <height>
+      <placeholder> အများဆုံးအမြင့် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> သေးသေးလေးပုံအရွယ်အစား </label>
+     <width>
+      <placeholder> အသေးစားအကျယ် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </width>
+     <height>
+      <placeholder> သေးငယ်တဲ့အမြင့် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> လျှောအရွယ်အစား </label>
+     <width>
+      <placeholder> လျှောအကျယ် </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </width>
+     <height>
+      <placeholder> ပုံအမြင့်လျှော </placeholder>
+      <validate> တန်ဖိုးထည့်ပါ </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg အရည်အသွေး </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG ချုံ့သည် </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ရေအမှတ်အသားပုံရိပ် </title>
+    <label> ရေအမှတ်အသားပုံကိုသုံးပါ </label> 
+    <position> ရေအမှတ်အသားပုံရိပ်တည်နေရာ </position>
+    <image> ရေအမှတ်အသားပုံရိပ် </image>
+    <set> ရေအမှတ်အသားပုံရိပ်ကိုသတ်မှတ်ပါ </set> 
+    <browse> ၁- ရေအမှတ်အသားဖိုင်မှတ်တမ်းကိုရွေးချယ်ပါ </browse>
+    <adjust> ၂- ပုံကိုဘောင်နှင့်အညီညှိပါ </adjust>
+    <upload> ၃- ရွေးချယ်ထားသောဖိုင်တင်ပါ </upload>
+    <uploading> တင်ခြင်း ... </uploading>
+    <uploaded> တင်ယူ။ ။ </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> စာမျက်နှာ </page>
+   <first> ပထမစာမျက်နှာ </first>
+   <prev> ယခင်စာမျက်နှာ </prev>
+   <next> နောက်စာမျက်နှာ </next>
+   <last> နောက်ဆုံးစာမျက်နှာ </last>
+  </pagination>
+
+</lang>

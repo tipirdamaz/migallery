@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> زبان </title>
+   <label> انتخاب زبان </label>
+  </lang>
+
+  <timezone>
+   <title>منطقه زمانی</title>
+   <label>منطقه زمانی را انتخاب کنید</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> مدیریت گالری </gallery_man>
+   <gallery_list> فهرست گالری </gallery_list>
+   <uploader> ایجاد گالری جدید </uploader>
+   <back> بازگشت </back>
+  </nav>
+
+  <install>
+ 
+   <title> نصب MIGallery </title>
+   <header> نصب MIGallery </header>
+
+   <img_direction>
+    <label> جهت گالری ، تصویر و اسلاید </label>
+    <left> چپ به راست </left>
+    <right> راست به چپ </right>
+   </img_direction>
+
+   <db_info>
+    <title> اطلاعات پایگاه داده MySQL </title>
+    <host>
+     <label> میزبان DB </label>
+     <placeholder> میزبان DB </placeholder>
+     <validate> نام میزبان DB را وارد کنید </validate>
+    </host>
+    <user>
+     <label> نام کاربری DB </label>
+     <placeholder> نام کاربری DB </placeholder>
+     <validate> نام کاربری DB ورودی </validate>
+    </user>
+    <pass>
+     <label> رمز عبور DB </label>
+     <placeholder> رمز عبور DB </placeholder>
+     <validate> گذرواژه DB را وارد کنید </validate>
+    </pass>
+    <db>
+     <label> نام DB </label>
+     <placeholder> نام DB </placeholder>
+     <validate> نام پایگاه داده را وارد کنید </validate>
+    </db>
+    <gal_table>
+     <label> نام جدول گالری </label>
+     <placeholder> نام جدول گالری </placeholder>
+     <validate> نام جدول گالری را وارد کنید </validate>
+    </gal_table>
+    <img_table>
+     <label> نام جدول تصویر </label>
+     <placeholder> نام جدول تصویر </placeholder>
+     <validate> نام جدول تصویر را وارد کنید </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>دایرکتوری برای مطالب پویای قابل نوشتن</title>
+    <db_alert>
+     <![CDATA[
+    مسیر زیر محلی است که پرونده های <b> پیکربندی </b> ، <b> گزارش خطا </b> و <b> تعاریف </b> ایجاد می شود. اگر می خواهید نام این دایرکتوری را تغییر دهید ، تعریف <b> DB_DIR </b> را در پرونده <b> definitions0.php </b> تغییر دهید و این صفحه را تازه کنید.<br/><br/>اگر می خواهید نام فایل پیکربندی ، پرونده ثبت خطا و پرونده تعاریف را تغییر دهید ، تعاریف <b>CONFIG_FILE</b> ، <b>ERROR_LOG_FILE</b> و <b>DEFINITIONS_FILE</b> را در فایل definitions0.php تغییر دهید.<br/><br/>اگر سیستم شما مبتنی بر یونیکس است ، مجوزهای نوشتن را با دستور زیر تنظیم کنید:<br/><b>%s</b><br/><br/>قبل از شروع نصب ، مطمئن شوید که مسیر زیر وجود دارد و اجازه نوشتن در پوشه را دارید:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    قبل از شروع نصب ، مطمئن شوید که مسیرهای زیر موجود است و اجازه نوشتن در پوشه ها را دارید. <br/> <br/> اگر قصد دارید از دایرکتوری های دیگری به غیر از دایرکتوری های زیر استفاده کنید ، اگر دایرکتوری ها روی دیسک وجود ندارند ، ابتدا دایرکتوری ها را ایجاد کرده و مجوزهای نوشتن را تنظیم کرده و نصب را شروع کنید.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>پرونده پیکربندی ، پرونده ورود به سیستم خطا و مسیر پرونده تعاریف</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    هنگام ذخیره یک گالری جدید ، دایرکتوری های زیر ایجاد می شوند. <b> %d </b> شناسه گالری را مشخص می کند. این دایرکتوری ها در <b> مسیر پایه تصاویر </b> تعریف شده در بالا ایجاد می شوند. بررسی کنید که قالب این دایرکتوری ها مناسب است.
+     ]]>
+    </img_dir_alert>
+    <config_alert>پرونده پیکربندی قبلاً ایجاد شده است. بنابراین ، نمی توانید نصب را اجرا کنید. ابتدا باید فایل پیکربندی را حذف کرده و سپس نصب را اجرا کنید.</config_alert>
+    <tmp_dir>
+     <label>پوشه تصویر موقت</label>
+     <placeholder>پوشه تصویر موقت</placeholder>
+     <validate>پوشه تصویر موقت</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>پوشه موقت تصویر بند انگشتی</label>
+     <placeholder>پوشه موقت تصویر بند انگشتی</placeholder>
+     <validate>پوشه موقت تصویر بند انگشتی</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>مسیر فایل تصویر بند انگشتی موقت بریده شده</label>
+     <placeholder>مسیر فایل تصویر بند انگشتی موقت بریده شده</placeholder>
+     <validate>مسیر فایل تصویر بند انگشتی موقت بریده شده</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>مسیر موقت تصاویر اسلاید</label>
+     <placeholder>مسیر موقت تصاویر اسلاید</placeholder>
+     <validate>مسیر موقت تصاویر اسلاید</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>مسیر پایه تصاویر</label>
+     <placeholder>مسیر پایه تصاویر</placeholder>
+     <validate>مسیر پایه تصاویر</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>پوشه تصویر</label>
+     <placeholder>پوشه تصویر</placeholder>
+     <validate>پوشه تصویر</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>پوشه عکسهای کوچک</label>
+     <placeholder>پوشه عکسهای کوچک</placeholder>
+     <validate>پوشه عکسهای کوچک</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>مسیر فایل تصویر کوچک که بریده شده است</label>
+     <placeholder>مسیر فایل تصویر کوچک که بریده شده است</placeholder>
+     <validate>مسیر فایل تصویر کوچک که بریده شده است</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>پوشه پرونده تصویری به اندازه اسلاید</label>
+     <placeholder>پوشه پرونده تصویری به اندازه اسلاید</placeholder>
+     <validate>پوشه پرونده تصویری به اندازه اسلاید</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>پوشه پرونده های XML</label>
+     <placeholder>پوشه پرونده های XML</placeholder>
+     <validate>پوشه پرونده های XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <install> نصب لطفا صبر کنید ... </install>
+    <success> نصب با موفقیت انجام شد. </success>
+    <error> نصب انجام نشد. </error>
+   </alert>
+  
+   <submit> شروع به نصب کنید </submit>
+   <submit_continue> ادامه &lt;&lt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> مدیریت گالری </title>
+   <header> مدیریت گالری </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> لیست گالری </title>
+   <header> لیست گالری </header>
+   <sort>
+    <asc> مرتب سازی از اول به آخرین </asc>
+    <desc> مرتب سازی از آخرین به اول </desc>
+   </sort>
+   <card>
+    <view>
+     <button> دیدن </button>
+     <title> مشاهده گالری </title>
+    </view>
+    <delete>
+     <button> حذف </button>
+     <title> حذف گالری </title>
+    </delete>
+    <edit>
+     <button> ویرایش </button>
+     <title> ویرایش گالری </title>
+    </edit>
+    <images>تصاویر</images>
+    <date>تاریخ</date>
+    <move> می توانید گالری ها را با کشیدن آنها با ماوس مرتب کنید. </move>
+    <move_mobile>با انگشت خود روی موردی ضربه بزنید و نگه دارید و منتظر انتخاب آن بمانید. پس از انتخاب مورد ، می توانید با کشیدن انگشت ، موارد را مرتب کنید.</move_mobile>
+   </card>
+   <alert> هیچ گالری پیدا نشد. </alert>
+   <modal>
+    <del_gallery>
+     <label> حذف گالری </label>
+     <close> بستن </close>
+     <text> آیا می خواهید این گالری را از سایت حذف کنید؟ </text>
+     <command> حذف </command>
+     <cancel> لغو </cancel>
+    </del_gallery>
+    <result>
+     <label> خطا </label>
+     <close> بستن </close>
+     <text> </text>
+     <command> بستن </command>
+    </result>
+   </modal>
+   <save_changes> ذخیره مرتب سازی گالری </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> نمای گالری </title>
+   <header> نمای گالری </header>
+   <alert> هیچ تصویری پیدا نشد. </alert>
+   <share>گالری را به اشتراک بگذارید</share>
+   <filedate>تاریخ بارگذاری</filedate>
+   <filesize>حجم پرونده</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>کپی به کلیپ بورد</label>
+     <close>بستن</close>
+     <text>پیوند در کلیپ بورد کپی شد</text>
+     <command>کپی ����</command>
+     <cancel>بستن</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ایجاد گالری جدید </title>
+    <header> ایجاد گالری جدید </header>
+   </new>
+   <edit>
+    <title> ویرایش گالری </title>
+    <header> ویرایش گالری </header>
+   </edit>
+   <gallery_info>
+    <title> اطلاعات گالری </title>
+    <name>
+     <label> نام گالری </label>
+     <placeholder> نام گالری </placeholder>
+     <validate> نام گالری ورودی </validate>
+    </name>
+    <description>
+     <label> توضیحات گالری </label>
+     <placeholder> توضیحات گالری </placeholder>
+     <validate> شرح گالری ورودی </validate>
+    </description>
+    <keywords>
+     <label> کلمات کلیدی گالری با ویرگول یا خط جدید از هم جدا می شوند </label>
+     <placeholder> کلمات کلیدی گالری با ویرگول یا خط جدید از هم جدا می شوند </placeholder>
+     <validate> کلمات کلیدی گالری را وارد کنید </validate>
+    </keywords>
+    <submit>
+     <save> ذخیره گالری </save>
+     <update> به روزرسانی گالری </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> راهنمای بارگذاری کننده </title>
+     <body>
+      <![CDATA[
+با دکمه <b> مرور تصاویر </b> تصاویر را از دستگاه خود انتخاب کنید و با دکمه <b> بارگذاری تصاویر </b> در سایت بارگذاری کنید. <br/> <b> JPG ، PNG ، GIF ، BMP ، WEBP </b> :قالب های پشتیبانی شده تصویر <br/> <b>%d x %d px</b> :حداقل وضوح مجاز <br/> <b>%d x %d px</b> :حداکثر وضوح مجاز <br/> <b>%d MB</b> :حداکثر اندازه تک پرونده <br/> <b>%d</b> :تعداد عکس در هر گالری
+      ]]>
+     </body>
+    </info>
+    <select_all> All را انتخاب کنید </select_all>
+    <select_del> حذف موارد انتخاب شده </select_del>
+    <thumb>
+     <exist>
+      <delete> حذف تصویر بارگذاری شده از سایت </delete>
+      <info> اطلاعات تصویر </info>
+     </exist>
+     <new>
+      <delete> حذف تصویر بارگذاری شده از سایت </delete>
+      <cancel> لغو بارگذاری تصویر </cancel>
+      <info> اطلاعات تصویر </info>
+      <rotate> چرخاندن تصویر </rotate>
+      <crop> برش تصویر </crop>
+     </new>
+     <move> می توانید تصاویر را با کشیدن آنها با موس مرتب کنید. </move>
+     <move_mobile>با انگشت خود روی موردی ضربه بزنید و نگه دارید و منتظر انتخاب آن بمانید. پس از انتخاب مورد ، می توانید با کشیدن انگشت ، موارد را مرتب کنید.</move_mobile>
+    </thumb>
+    <browse> مرور تصاویر </browse>
+    <upload> بارگذاری تصاویر </upload>
+    <uploading> تصاویر در حال بارگذاری در سایت هستند. صفحه را تا زمان بارگذاری کامل نکنید. </uploading>
+    <uploaded> تصاویر در سایت بارگذاری شده اند. </uploaded>
+    <error>هنگام بارگذاری پرونده ها در سرور ، برخی خطاها رخ داده است.</error>
+    <save_changes> ذخیره تغییرات تصویر </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> برش </crop>
+     <cancel> لغو </cancel>
+    </crop>
+    <del_up_img>
+     <label> حذف تصویر </label>
+     <close> بستن </close>
+     <text> آیا می خواهید این تصویر را از سایت حذف کنید؟ </text>
+     <command> حذف </command>
+     <cancel> لغو </cancel>
+    </del_up_img>
+    <del_img>
+     <label> حذف تصویر </label>
+     <close> بستن </close>
+     <text> آیا می خواهید این تصویر را از سایت حذف کنید؟ </text>
+     <command> حذف </command>
+     <cancel> لغو </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> حذف تصاویر انتخاب شده </label>
+     <close> بستن </close>
+     <text> آیا می خواهید تصاویر انتخاب شده را از سایت حذف کنید؟ </text>
+     <command> حذف </command>
+     <cancel> لغو </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> اطلاعات تصویر </label>
+     <close> بستن </close>
+     <filename> نام پرونده </filename>
+     <filesize> اندازه پرونده </filesize>
+     <date> تاریخ بارگذاری </date>
+     <title>
+      <label> عنوان </label>
+      <placeholder> عنوان تصویر </placeholder>
+     </title>
+     <desc>
+      <label> توضیحات </label>
+      <placeholder> توضیحات تصویر </placeholder>
+     </desc>
+     <keyw>
+      <label> کلید واژه ها </label>
+      <placeholder> کلمات کلیدی با ویرگول یا خط جدید از هم جدا می شوند </placeholder>
+     </keyw>
+     <command> ذخیره / به روزرسانی </command>
+     <cancel> لغو </cancel>
+    </img_info>
+    <result>
+     <label> خطا </label>
+     <close> بستن </close>
+     <text> </text>
+     <command> بستن </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> تنظیمات تصویر قابل بارگذاری </title>
+    <upload_limit>
+     <label> حداکثر تعداد تصاویر در هر گالری </label>
+     <placeholder> حداکثر تعداد تصاویر در هر گالری </placeholder>
+     <validate> ورودی حداکثر تعداد عکس در هر گالری </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> حداکثر اندازه تک پرونده (MB) </label>
+     <placeholder> حداکثر اندازه تک پرونده (MB) </placeholder>
+     <validate> حداکثر اندازه پرونده تک (MB) را وارد کنید </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> حداقل وضوح مجاز </label>
+     <width>
+      <placeholder> حداقل عرض </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </width>
+     <height>
+      <placeholder> حداقل قد </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> حداکثر وضوح مجاز </label>
+     <width>
+      <placeholder> حداکثر عرض </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </width>
+     <height>
+      <placeholder> حداکثر قد </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> تبدیل تصویر </title>
+    <full_resolution>
+     <label> تصویر در اندازه کامل </label>
+     <width>
+      <placeholder> حداکثر عرض </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </width>
+     <height>
+      <placeholder> حداکثر قد </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> اندازه بند انگشتی </label>
+     <width>
+      <placeholder> عرض تصویر بند انگشتی </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </width>
+     <height>
+      <placeholder> ارتفاع تصویر بند انگشتی </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> اندازه اسلاید </label>
+     <width>
+      <placeholder> عرض اسلاید </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </width>
+     <height>
+      <placeholder> ارتفاع اسلاید </placeholder>
+      <validate> مقدار را وارد کنید </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> کیفیت Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> فشرده سازی PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> علامت </title>
+    <label> ا ستفاده کنید علامت </label>
+    <position> موقعیت علامت </position>
+    <image> تصویر علامت </image>
+    <set> علامت تنظیم </set>
+    <browse>۱- به مرور فایل تصویر علامت بپردازید </browse>
+    <adjust>۲- تصویر را با توجه به کادر تنظیم کنید. </adjust>
+    <upload>۳- بارگذاری پرونده انتخابی </upload>
+    <uploading> در حال بارگذاری ... </uploading>
+    <uploaded> آپلود شد. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> صفحه </page>
+   <first> صفحه اول </first>
+   <prev> صفحه قبلی </prev>
+   <next> صفحه بعدی </next>
+   <last> آخرین صفحه </last>
+  </pagination>
+
+</lang>

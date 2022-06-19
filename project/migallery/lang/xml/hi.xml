@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> भाषा </title>
+   <label> भाषा चुनें </label>
+  </lang>
+
+  <timezone>
+   <title>समय क्षेत्र</title>
+   <label>समय क्षेत्र का चयन करें</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> गैलरी प्रबंधन </gallery_man>
+   <gallery_list> गैलरी सूची </gallery_list>
+   <uploader> नई गैलरी बनाएं </uploader>
+   <back> वापस </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery सेटअप </title>
+   <header> MIGallery सेटअप </header>
+
+   <img_direction>
+    <label> गैलरी, छवि और स्लाइड दिशा </label>
+    <left> बाएँ से दाएँ </left>
+    <right> बाएं से दाएं </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL डाटाबेस की जानकारी </title>
+    <host>
+     <label> DB होस्ट </label>
+     <placeholder> DB होस्ट </placeholder>
+     <validate> डेटाबेस होस्टनाम दर्ज करें </validate>
+    </host>
+    <user>
+     <label> DB उपयोगकर्ता नाम </label>
+     <placeholder> DB उपयोगकर्ता नाम </placeholder>
+     <validate> डेटाबेस उपयोगकर्ता नाम दर्ज करें </validate>
+    </user>
+    <pass>
+     <label> DB पासवर्ड </label>
+     <placeholder> DB पासवर्ड </placeholder>
+     <validate> डेटाबेस पासवर्ड दर्ज करें </validate>
+    </pass>
+    <db>
+     <label> DB नाम </label>
+     <placeholder> DB नाम </placeholder>
+     <validate> डेटाबेस का नाम दर्ज करें </validate>
+    </db>
+    <gal_table>
+     <label> गैलरी तालिका का नाम </label>
+     <placeholder> गैलरी तालिका का नाम </placeholder>
+     <validate> गैलरी तालिका नाम दर्ज करें </validate>
+    </gal_table>
+    <img_table>
+     <label> छवि तालिका नाम </label>
+     <placeholder> छवि तालिका नाम </placeholder>
+     <validate> छवि तालिका नाम दर्ज करें </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>लेखन योग्य गतिशील सामग्री के लिए निर्देशिकाएँ</title>
+    <db_alert>
+     <![CDATA[
+    निम्नलिखित निर्देशिका वह जगह है जहां <b> कॉन्फ़िगरेशन </b>, <b> त्रुटि लॉग </b> और <b> परिभाषाएं </b> फाइलें बनाई जाएंगी। यदि आप इस निर्देशिका का नाम बदलना चाहते हैं, तो <b> definitions0.php </b> फ़ाइल में <b> DB_DIR </b> परिभाषा बदलें और इस पृष्ठ को ताज़ा करें।<br/><br/>यदि आप कॉन्फ़िगरेशन, त्रुटि लॉग और परिभाषा फ़ाइलों के नाम बदलना चाहते हैं, तो definitions0.php में <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> और <b> DEFINITIONS_FILE </b> की परिभाषाएं बदलें। फ़ाइल।<br/><br/>यदि आपका सिस्टम यूनिक्स-आधारित है, तो निम्न आदेशों के साथ लिखने की अनुमति दें:<br/><b>%s</b><br/><br/>स्थापना शुरू करने से पहले, सुनिश्चित करें कि निम्न पथ मौजूद है और आपके पास निर्देशिका लिखने की अनुमति है:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    स्थापना शुरू करने से पहले, सुनिश्चित करें कि निम्नलिखित निर्देशिका उपलब्ध हैं और आपको निर्देशिकाओं को लिखने की अनुमति है। <br/> <br/> यदि आप निम्न निर्देशिकाओं के अलावा अन्य निर्देशिकाओं का उपयोग करने जा रहे हैं, यदि निर्देशिकाएँ डिस्क पर मौजूद नहीं हैं, तो पहले निर्देशिकाएँ बनाएँ और लेखन अनुमतियाँ सेट करें और स्थापना प्रारंभ करें।
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>कॉन्फ़िगरेशन, त्रुटि लॉग और परिभाषाएँ फ़ाइलें पथ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    नई गैलरी सहेजे जाने पर निम्न निर्देशिका बनाई जाती हैं। <b>%d</b> गैलरी आईडी इंगित करता है। ये निर्देशिका ऊपर परिभाषित <b> छवि आधार निर्देशिका </b> निर्देशिका पर बनाई गई हैं। जाँचें कि क्या निर्देशिका का प्रारूप उचित है।
+     ]]>
+    </img_dir_alert>
+    <config_alert>कॉन्फ़िगरेशन फ़ाइल पहले बनाई गई है। इसलिए, आप सेटअप नहीं चला सकते। आपको पहले कॉन्फ़िगरेशन फ़ाइल को हटाना होगा और फिर सेटअप चलाना होगा।</config_alert>
+    <tmp_dir>
+     <label>छवि की अस्थायी निर्देशिका</label>
+     <placeholder>छवि की अस्थायी निर्देशिका</placeholder>
+     <validate>छवि की अस्थायी निर्देशिका</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>थंबनेल की अस्थायी निर्देशिका</label>
+     <placeholder>थंबनेल की अस्थायी निर्देशिका</placeholder>
+     <validate>थंबनेल की अस्थायी निर्देशिका</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>फसली थम्बनेल की अस्थायी निर्देशिका</label>
+     <placeholder>फसली थम्बनेल की अस्थायी निर्देशिका</placeholder>
+     <validate>फसली थम्बनेल की अस्थायी निर्देशिका</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>स्लाइड छवि की अस्थायी निर्देशिका</label>
+     <placeholder>स्लाइड छवि की अस्थायी निर्देशिका</placeholder>
+     <validate>स्लाइड छवि की अस्थायी निर्देशिका</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>छवि आधार निर्देशिका</label>
+     <placeholder>छवि आधार निर्देशिका</placeholder>
+     <validate>छवि आधार निर्देशिका</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>छवि निर्देशिका</label>
+     <placeholder>छवि निर्देशिका</placeholder>
+     <validate>छवि निर्देशिका</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>थंबनेल निर्देशिका</label>
+     <placeholder>थंबनेल निर्देशिका</placeholder>
+     <validate>थंबनेल निर्देशिका</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>क्रॉप्ड थम्बनेल की निर्देशिका</label>
+     <placeholder>क्रॉप्ड थम्बनेल की निर्देशिका</placeholder>
+     <validate>क्रॉप्ड थम्बनेल की निर्देशिका</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>स्लाइड छवि निर्देशिका</label>
+     <placeholder>स्लाइड छवि निर्देशिका</placeholder>
+     <validate>स्लाइड छवि निर्देशिका</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML फ़ाइलें निर्देशिका</label>
+     <placeholder>XML फ़ाइलें निर्देशिका</placeholder>
+     <validate>XML फ़ाइलें निर्देशिका</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> स्थापित कर रहा है। कृपया प्रतीक्षा करें ... </installing>
+    <success> स्थापना सफलतापूर्वक पूर्ण हुई। </success>
+    <error> स्थापना पूर्ण नहीं की जा सकी। </error>
+   </alert>
+  
+   <submit> स्थापना प्रारंभ करें </submit>
+   <submit_continue> जारी रखें &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> गैलरी प्रबंधन </title>
+   <header> गैलरी प्रबंधन </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> गैलरी सूची </title>
+   <header> गैलरी सूची </header>
+   <sort>
+    <asc> पहली से आखिरी तक की तरह </asc>
+    <desc> अंतिम से प्रथम तक छाँटें </desc>
+   </sort>
+   <card>
+    <view>
+     <button> देखें </button>
+     <title> देखें गैलरी </title>
+    </view>
+    <delete>
+     <button> हटाएं </button>
+     <title> गैलरी हटाएं </title>
+    </delete>
+    <edit>
+     <button> संपादित करें </button>
+     <title> गैलरी संपादित करें </title>
+    </edit>
+    <images>इमेजिस</images>
+    <date>तारीख</date>
+    <move> आप दीर्घाओं को माउस से खींचकर सॉर्ट कर सकते हैं। </move>
+    <move_mobile>अपनी उंगली से किसी आइटम को टैप और होल्ड करें और उसके चयन की प्रतीक्षा करें। आइटम चयनित होने के बाद, आप अपनी उंगली से खींचकर आइटम को सॉर्ट कर सकते हैं।</move_mobile>
+   </card>
+   <alert> कोई गैलरी नहीं मिली। </alert>
+   <modal>
+    <del_gallery>
+     <label> गैलरी हटाएं </label>
+     <close> बंद करे </close>
+     <text> क्या आप इस गैलरी को साइट से हटाना चाहते हैं? </text>
+     <command> हटाएं </command>
+     <cancel> रद्द करें </cancel>
+    </del_gallery>
+    <result>
+     <label> त्रुटि </label>
+     <close> बंद करे </close>
+     <text></text>
+     <command> बंद करें </command>
+    </result>
+   </modal>
+   <save_changes> सेव गैलरी सॉर्टिंग </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> गैलरी दृश्य </title>
+   <header> गैलरी देखें </header>
+   <alert> कोई छवि नहीं मिली। </alert>
+   <share>शेयर गैलरी</share>
+   <filedate>अपलोड की तारीख</filedate>
+   <filesize>फ़ाइल का साइज़</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>क्लिपबोर्ड पर कॉपी करें</label>
+     <close>बंद करे</close>
+     <text>लिंक को क्लिपबोर्ड पर कॉपी किया गया</text>
+     <command>प्रतिलिपि</command>
+     <cancel>बंद करे</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> नई गैलरी बनाएं </title>
+    <header> नई गैलरी बनाएं </header>
+   </new>
+   <edit>
+    <title> गैलरी संपादित करें </title>
+    <header> गैलरी संपादित करें </header>
+   </edit>
+   <gallery_info>
+    <title> गैलरी जानकारी </title>
+    <name>
+     <label> गैलरी का नाम </label>
+     <placeholder> गैलरी का नाम </placeholder>
+     <validate> इनपुट गैलरी का नाम </validate>
+    </name>
+    <description>
+     <label> गैलरी विवरण </label>
+     <placeholder> गैलरी विवरण </placeholder>
+     <validate> इनपुट गैलरी विवरण </validate>
+    </description>
+    <keywords>
+     <label> गैलरी कीवर्ड कॉमा या लाइन ब्रेक द्वारा अलग किए गए </label>
+     <placeholder> गैलरी कीवर्ड कॉमा या लाइन ब्रेक द्वारा अलग किए गए </placeholder>
+     <validate> गैलरी कीवर्ड दर्ज करें </validate>
+    </keywords>
+    <submit>
+     <save> गैलरी सहेजें </save>
+     <update> गैलरी अपडेट करें </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> अपलोडर गाइड </title>
+     <body>
+      <![CDATA[
+<b> छवियां ब्राउज़ करें </b> बटन के साथ अपने डिवाइस से छवियों का चयन करें और <b> चित्र अपलोड करें </b> बटन के साथ साइट पर अपलोड करें। <br/> समर्थित छवि प्रारूप: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> अनुमेय न्यूनतम रिज़ॉल्यूशन: <b>%d x %d px</b> <br/> अनुमेय अधिकतम रिज़ॉल्यूशन: <b>%d x %d px</b> <br/> एकल फ़ाइल अधिकतम आकार: <b>%d MB</b> <br/> प्रति गैलरी गणना: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> सभी का चयन करें </select_all>
+    <select_del> चयनित हटाएं </select_del>
+    <thumb>
+     <exist>
+      <delete> साइट से अपलोड की गई छवि हटाएं </delete>
+      <info> छवि जानकारी </info>
+     </exist>
+     <new>
+      <delete> साइट से अपलोड की गई छवि हटाएं </delete>
+      <cancel> छवि अपलोड रद्द करें </cancel>
+      <info> छवि जानकारी </info>
+      <rotate> छवि घुमाएँ </rotate>
+      <crop> फसल छवि </crop>
+     </new>
+     <move> आप चित्रों को माउस से खींचकर सॉर्ट कर सकते हैं। </move>
+     <move_mobile>अपनी उंगली से किसी आइटम को टैप और होल्ड करें और उसके चयन की प्रतीक्षा करें। आइटम चयनित होने के बाद, आप अपनी उंगली से खींचकर आइटम को सॉर्ट कर सकते हैं।</move_mobile>
+    </thumb>
+    <browse> छवियां ब्राउज़ करें </browse>
+    <upload> चित्र अपलोड करें </upload>
+    <uploading> छवियाँ साइट पर अपलोड की जा रही हैं। अपलोड पूरा होने तक पृष्ठ को बंद न करें। </uploading>
+    <uploaded> छवियाँ साइट पर अपलोड कर दी गई हैं। </uploaded>
+    <error>सर्वर पर फाइल अपलोड करते समय कुछ त्रुटियां हुईं।</error>
+    <save_changes> छवि परिवर्तन सहेजें </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> फसल </crop>
+     <cancel> रद्द करें </cancel>
+    </crop>
+    <del_up_img>
+     <label> छवि हटाएं </label>
+     <close> बंद करे </close>
+     <text> क्या आप इस छवि को साइट से हटाना चाहते हैं? </text>
+     <command> हटाएं </command>
+     <cancel> रद्द करें </cancel>
+    </del_up_img>
+    <del_img>
+     <label> छवि हटाएं </label>
+     <close> बंद करे </close>
+     <text> क्या आप इस छवि को साइट से हटाना चाहते हैं? </text>
+     <command> हटाएं </command>
+     <cancel> रद्द करें </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> चयनित चित्र हटाएं </label>
+     <close> बंद करे </close>
+     <text> क्या आप साइट से चयनित छवियों को हटाना चाहते हैं? </text>
+     <command> हटाएं </command>
+     <cancel> रद्द करें </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> छवि जानकारी </label>
+     <close> बंद करे </close>
+     <filename> फ़ाइल नाम </filename>
+     <filesize> फ़ाइल का आकार </filesize>
+     <date> अपलोड की तारीख </date>
+     <title>
+      <label> शीर्षक </label>
+      <placeholder> छवि शीर्षक </placeholder>
+     </title>
+     <desc>
+      <label> विवरण </label>
+      <placeholder> छवि विवरण </placeholder>
+     </desc>
+     <keyw>
+      <label> कीवर्ड </label>
+      <placeholder> अल्पविराम या पंक्ति विराम द्वारा अलग किए गए कीवर्ड </placeholder>
+     </keyw>
+     <command> सहेजें / अपडेट करें </command>
+     <cancel> रद्द करें </cancel>
+    </img_info>
+    <result>
+     <label> त्रुटि </label>
+     <close> बंद करे </close>
+     <text></text>
+     <command> बंद करें </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> अपलोड करने योग्य छवि सेटिंग </title>
+    <upload_limit>
+     <label> प्रति गैलरी अधिकतम छवि गणना </label>
+     <placeholder> प्रति गैलरी अधिकतम छवि गणना </placeholder>
+     <validate> प्रति गैलरी अधिकतम छवि गणना दर्ज करें </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> एकल फ़ाइल अधिकतम आकार (एमबी) </label>
+     <placeholder> एकल फ़ाइल अधिकतम आकार (MB) </placeholder>
+     <validate> एकल फ़ाइल अधिकतम आकार (MB) दर्ज करें </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> अनुमेय न्यूनतम रिज़ॉल्यूशन </label>
+     <width>
+      <placeholder> न्यूनतम चौड़ाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </width>
+     <height>
+      <placeholder> मिन हाइट </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> अनुमेय अधिकतम रिज़ॉल्यूशन </label>
+     <width>
+      <placeholder> अधिकतम चौड़ाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </width>
+     <height>
+      <placeholder> अधिकतम ऊंचाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> छवि रूपांतरण </title>
+    <full_resolution>
+     <label> छवि पूर्ण आकार </label>
+     <width>
+      <placeholder> अधिकतम चौड़ाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </width>
+     <height>
+      <placeholder> अधिकतम ऊंचाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> थंबनेल का आकार </label>
+     <width>
+      <placeholder> अंगूठे की चौड़ाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </width>
+     <height>
+      <placeholder> थंब हाइट </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> स्लाइड आकार </label>
+     <width>
+      <placeholder> स्लाइड चौड़ाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </width>
+     <height>
+      <placeholder> स्लाइड ऊंचाई </placeholder>
+      <validate> एक मान दर्ज करें </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> जेपीईजी गुणवत्ता </label>
+    </jpg_quality>
+    <png_compress>
+     <label> पीएनजी संपीड़ित </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> वॉटरमार्क </title>
+    <label> वॉटरमार्क का उपयोग करें </label>
+    <position> वॉटरमार्क स्थिति </position>
+    <image> वॉटरमार्क छवि </image>
+    <set> वॉटरमार्क सेट करें </set>
+    <browse> 1- ब्राउज़ वॉटरमार्क छवि फ़ाइल </browse>
+    <adjust> 2- फ्रेम के अनुसार छवि को समायोजित करें। </adjust>
+    <upload> 3- चयनित फ़ाइल अपलोड करें </upload>
+    <uploading> अपलोड हो रहा है ... </uploading>
+    <uploaded> अपलोड की गई। </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> पृष्ठ </page>
+   <first> पहला पृष्ठ </first>
+   <prev> पिछला पृष्ठ </prev>
+   <next> अगला पृष्ठ </next>
+   <last> अंतिम पृष्ठ </last>
+  </pagination>
+
+</lang>

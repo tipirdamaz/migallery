@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ژبه </title>
+   <label> ژبه وټاکئ </label>
+  </lang>
+
+  <timezone>
+   <title>ټایم زون</title>
+   <label>ټایم زون وټاکئ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> د ګالري مدیریت </gallery_man>
+   <gallery_list> د ګالري لیست </gallery_list>
+   <uploader> نوی ګالري جوړه کړئ </uploader>
+   <back> بیرته </back>
+  </nav>
+
+  <install>
+ 
+   <title> چمتو کول MIGallery </title>
+   <header> چمتو کول MIGallery </header>
+
+   <img_direction>
+    <label> ګالري ، عکس او د سلایډ ځای ورکول </label>
+    <left> له کیڼ څخه ښی ته </left>
+    <right> له ښی نه تر چپ </right>
+   </img_direction>
+
+   <db_info>
+    <title> د MySQL ډیټابیس معلومات </title>
+    <host>
+     <label> د ډیټابیس کوربه نوم </label>
+     <placeholder> د ډیټابیس کوربه نوم </placeholder>
+     <validate> د معلوماتو ډیټابیس کوربه نوم </validate>
+    </host>
+    <user>
+     <label> د ډیټابیس کارن نوم </label>
+     <placeholder> د ډیټابیس کارن نوم </placeholder>
+     <validate> ننوت ډیټابیس کارن نوم </validate>
+    </user>
+    <pass>
+     <label> د ډیټابیس پټنوم </label>
+     <placeholder> د ډیټابیس پټنوم </placeholder>
+     <validate> ننوت ډیټابیس پټنوم </validate>
+    </pass>
+    <db>
+     <label> د ډیټابیس نوم </label>
+     <placeholder> د ډیټابیس نوم </placeholder>
+     <validate> د معلوماتو ډیټابیس نوم </validate>
+    </db>
+    <gal_table>
+     <label> د ګالري جدول نوم </label>
+     <placeholder> د ګالري جدول نوم </placeholder>
+     <validate> د ګالري جدول نوم دننه کړئ </validate>
+    </gal_table>
+    <img_table>
+     <label> د عکس جدول نوم </label>
+     <placeholder> د عکس جدول نوم </placeholder>
+     <validate> د عکس جدول نوم دننه کړئ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>پوښیو ته د فایلونو لیکلو اجازه ورکړل شوې</title>
+    <db_alert>
+     <![CDATA[
+    لاندې فولډر دی چیرې چې د <b> تنظیمات </b> ، <b> غلطي لاگ </b> او <b> تعریفونه </b> فایلونه به رامینځته شي. که تاسو غواړئ د دې فولډر نوم بدل کړئ ، نو په <b>definitions0.php</b> فایل کې د <b>DB_DIR</b> تعریف بدل کړئ او دا پا reه بیا پورته کړئ.<br/><br/>که تاسو غواړئ د ترتیب فایل ، د غلطي لاگ فایل او تعریف فایل نوم بدل کړئ ، په definitions0.php فایل کې <b>CONFIG_FILE</b> ، <b>ERROR_LOG_FILE</b> او <b>DEFINITIONS_FILE</b>  کې تعریفونه بدل کړئ.<br/><br/>که ستاسو سیسټم د یونیکس پراساس وي ، د لاندې قوماندې سره پوښۍ ته د لیکلو اجازه ترتیب کړئ:<br/><b>%s</b><br/><br/>د نصب کولو دمخه ، ډاډ ترلاسه کړئ چې لاندې لاره شتون لري او دا چې تاسو فولډر ته د لیکلو اجازه لرئ:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    د نصب کولو پیل کولو دمخه ، ډاډ ترلاسه کړئ چې لاندې فولډرې شتون لري او دا چې تاسو فولډرو ته د لیکلو اجازه لرئ. <br/> <br/> که تاسو د لاندې فولډرونو پرته نور فولډرې وکاروئ ، که دا فولډرې شتون ونلري ، مخکې له دې فولډرې جوړ کړئ او د دې فولډرو لیکلو اجازه تنظیم کړئ او نصب یې پیل کړئ.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>تشکیلات ، د خطا لاگ او تعریفاتو فایلونو لاره</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    لاندې فولډرې رامینځته کیږي کله چې نوی ګالري خوندي شي. <b>%d</b> د ګالري ID ته اشاره کوي. دا فولډرې د <b>د اساس عکس پوښۍ</b> فولډرونو کې رامینځته شوي چې پورته تعریف شوي. ډاډ ترلاسه کړئ چې د دې فولډرونو ب appropriateه مناسب ده.
+     ]]>
+    </img_dir_alert>
+    <config_alert>د سازونې دوتنه لا دمخه جوړه شوې وه. له همدې امله ، تاسو نشي نصب کولی. تاسو باید لومړی د تشکیلاتو فایل حذف کړئ او بیا نصب یې پیل کړئ.</config_alert>
+    <tmp_dir>
+     <label>د عکسونو لپاره لنډمهاله فولډر</label>
+     <placeholder>د عکسونو لپاره لنډمهاله فولډر</placeholder>
+     <validate>د عکسونو لپاره لنډمهاله فولډر</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>د کوچني عکسونو لپاره لنډمهاله فولډر</label>
+     <placeholder>د کوچني عکسونو لپاره لنډمهاله فولډر</placeholder>
+     <validate>د کوچني عکسونو لپاره لنډمهاله فولډر</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>د کښت شوي کوچني عکسونو لپاره لنډمهاله فولډر</label>
+     <placeholder>د کښت شوي کوچني عکسونو لپاره لنډمهاله فولډر</placeholder>
+     <validate>د کښت شوي کوچني عکسونو لپاره لنډمهاله فولډر</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>د سلایډ عکسونو لپاره لنډمهاله فولډر</label>
+     <placeholder>د سلایډ عکسونو لپاره لنډمهاله فولډر</placeholder>
+     <validate>د سلایډ عکسونو لپاره لنډمهاله فولډر</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>د اساس عکس پوښۍ</label>
+     <placeholder>د اساس عکس پوښۍ</placeholder>
+     <validate>د اساس عکس پوښۍ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>د عکسونو فولډر</label>
+     <placeholder>د عکسونو فولډر</placeholder>
+     <validate>د عکسونو فولډر</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>د کوچني عکسونو لپاره فولډر</label>
+     <placeholder>د کوچني عکسونو لپاره فولډر</placeholder>
+     <validate>د کوچني عکسونو لپاره فولډر</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>د کښت شوي کوچني عکسونو لپاره فولډر</label>
+     <placeholder>د کښت شوي کوچني عکسونو لپاره فولډر</placeholder>
+     <validate>د کښت شوي کوچني عکسونو لپاره فولډر</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>د سلایډ عکسونو لپاره فولډر</label>
+     <placeholder>د سلایډ عکسونو لپاره فولډر</placeholder>
+     <validate>د سلایډ عکسونو لپاره فولډر</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML د فایل فولډر</label>
+     <placeholder>XML د فایل فولډر</placeholder>
+     <validate>XML د فایل فولډر</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> لګول. مهرباني وکړئ انتظار وکړئ ... </installing>
+    <success> لګول په بریالیتوب سره بشپړ شو. </success>
+    <error> انسټالټ ندي بشپړ شوي. </error>
+   </alert>
+  
+   <submit> لګول پیل کړئ </submit>
+   <submit_continue> &lt;&lt; ادامه ورکړه </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> د ګالري مدیریت </title>
+   <header> د ګالري مدیریت </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> د ګالري لیست </title>
+   <header> د ګالري لیست </header>
+   <sort>
+    <asc> له اول نه تر اخر پورې </asc>
+    <desc> د اخري نه تر پیل پورې </desc>
+   </sort>
+   <card>
+    <view>
+     <button> وګوره </button>
+     <title> ګالري وګورئ </title>
+    </view>
+    <delete>
+     <button> ړنګ </button>
+     <title> ګالري ړنګ کړئ </title>
+    </delete>
+    <edit>
+     <button> سمول </button>
+     <title> د ګالري ایډیټ کول </title>
+    </edit>
+    <images>انځورونه</images>
+    <date>نیټه</date>
+    <move> تاسو کولی شئ د ګیلریانو سره د موږک په ایستلو سره یې تنظیم کړئ. </move>
+    <move_mobile>تر هغه چې دا غوره نه کړي یو شی ستاسو د ګوتو سره ټچ او ونیسئ د توکي غوره کولو وروسته ، د توکو ترتیب کولو لپاره خپله ګوته راکښ کړئ.</move_mobile>
+   </card>
+   <alert> هیڅ ګالري ونه موندل شوه. </alert>
+   <modal>
+    <del_gallery>
+     <label> ګالري له مینځه وړئ </label>
+     <close> بنده کړئ </close>
+     <text> ایا تاسو غواړئ دا ګالري له سایټ څخه حذف کړئ؟ </text>
+     <command> ړنګول </command>
+     <cancel> لغوه کول </cancel>
+    </del_gallery>
+    <result>
+     <label> تېروتنه </label>
+     <close> بنده کړئ </close>
+     <text> </text>
+     <command> وتړئ </command>
+    </result>
+   </modal>
+   <save_changes> د ګیلري بندوبست خوندي کړئ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> د ګالري لید </title>
+   <header> د ګالري لید </header>
+   <alert> هیڅ انځور ونه موندل شو. </alert>
+   <share>ګالري شریک کړئ</share>
+   <filedate>د اپلوډ نیټه</filedate>
+   <filesize>د فایل اندازه</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>کليپ بورډ ته کاپي کړئ</label>
+     <close>بنده کړئ</close>
+     <text>لینک کليپ بورډ ته کاپي شوی</text>
+     <command>کاپي</command>
+     <cancel>بنده کړئ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> نوې ګالري جوړه کړئ </title>
+    <header> نوی ګالري جوړه کړئ </header>
+   </new>
+   <edit>
+    <title> د ګالري ایډیټ کول </title>
+    <header> د ګالري سمون کول </header>
+   </edit>
+   <gallery_info>
+    <title> د ګالري معلومات </title>
+    <name>
+     <label> د ګالري نوم </label>
+     <placeholder> د ګالري نوم </placeholder>
+     <validate> د ننوتۍ ګالري نوم </validate>
+    </name>
+    <description>
+     <label> د ګالري تفصیل </label>
+     <placeholder> د ګالري تفصیل </placeholder>
+     <validate> د ننوتنې ګالري شرحه </validate>
+    </description>
+    <keywords>
+     <label> د ګالري کلیدي کلمه د کوما یا لاین وقفو سره جلا شوې </label>
+     <placeholder> د ګالري کلیدي کلمه د کوما یا لاین وقفو سره جلا شوې </placeholder>
+     <validate> د ګالري کلیدي ټکي داخل کړئ </validate>
+    </keywords>
+    <submit>
+     <save> ګالري خوندي کړئ </save>
+     <update> د ګالري تازه کول </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> د عکس اپلوډر لارښود </title>
+     <body>
+      <![CDATA[
+د خپل وسیلې څ <b> انځورونه لټول </b> ت ت .ۍ ۍ سره انځورونه غوره کړئ او سایټ ته <b> انځورونه پورته کړئ </b> ت اپلوډ ۍ سره اپلوډ کړئ <br/> <b> JPG ، PNG ، GIF ، BMP ، WEBP </b> : د عکس ملاتړ شوي ډولونه <br/> <b>%d x %d px</b> :د منلو وړ لږترلږه حل <br/> <b>%d x %d px</b> :د نه منلو وړ اعظمي حل <br/> <b>%d MB</b> :د فایل ساده اعظمي اندازه <br/> د ګالري عکس عکس: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> ټول وټاکئ </select_all>
+    <select_del> غوره شوي انځورونه حذف کړئ </select_del>
+    <thumb>
+     <exist>
+      <delete> له سایټ څخه اپلوډ شوی عکس حذف کړئ </delete>
+      <info> د عکس معلومات </info>
+     </exist>
+     <new>
+      <delete> له سایټ څخه اپلوډ شوی عکس حذف کړئ </delete>
+      <cancel> د عکس اپلوډ لغوه کړئ </cancel>
+      <info> د عکس معلومات </info>
+      <rotate> عکس وګرځئ </rotate>
+      <crop> کټ عکس </crop>
+     </new>
+     <move> تاسو کولی شئ انځورونه د موږک سره په راکښلو سره تنظیم کړئ. </move>
+     <move_mobile>تر هغه چې دا غوره نه کړي یو شی ستاسو د ګوتو سره ټچ او ونیسئ د توکي غوره کولو وروسته ، د توکو ترتیب کولو لپاره خپله ګوته راکښ کړئ.</move_mobile>
+    </thumb>
+    <browse> انځورونه لټول </browse>
+    <upload> انځورونه پورته کړئ </upload>
+    <uploading> عکسونه پورته کیږيسایټ ته وقف شوی. پا theه مه تړئ تر هغه چې اپلوډ بشپړ نه وي. </uploading>
+    <uploaded> انځورونه سایټ ته پورته شوي. </uploaded>
+    <error>سرور ته د فایلونو د پورته کولو پر مهال ځینې غلطي شوې</error>
+    <save_changes> د عکس بدلونونه خوندي کړئ </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> انځور پرې کړئ </crop>
+     <cancel> لغوه کول </cancel>
+    </crop>
+    <del_up_img>
+     <label> عکس له مینځه وړئ </label>
+     <close> بنده کړئ </close>
+     <text> ایا تاسو غواړئ دا عکس له ویب پا deleteې څخه حذف کړئ؟ </text>
+     <command> ړنګول </command>
+     <cancel> لغوه کول </cancel>
+    </del_up_img>
+    <del_img>
+     <label> عکس له مینځه وړئ </label>
+     <close> بنده کړئ </close>
+     <text> ایا تاسو غواړئ دا عکس له ویب پا deleteې څخه حذف کړئ؟ </text>
+     <command> ړنګول </command>
+     <cancel> لغوه کول </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ټاکل شوي انځورونه حذف کړئ </label>
+     <close> بنده کړئ </close>
+     <text> ایا تاسو غواړئ منتخب شوي عکسونه له ویب پا fromې څخه حذف کړئ؟ </text>
+     <command> ړنګول </command>
+     <cancel> لغوه کول </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> د عکس معلومات </label>
+     <close> بنده کړئ </close>
+     <filename> د دوتنې نوم </filename>
+     <filesize> د فایل اندازه </filesize>
+     <date> د اپلوډ نیټه </date>
+     <title>
+      <label> سرلیک </label>
+      <placeholder> د انځور سرلیک </placeholder>
+     </title>
+     <desc>
+      <label> توضیحات </label>
+      <placeholder> د انځور تشریح </placeholder>
+     </desc>
+     <keyw>
+      <label> کلیدي ټکي </label>
+      <placeholder> کلیدي کلمه د کوما یا نوي کرښو سره جلا شوې </placeholder>
+     </keyw>
+     <command> خوندي کول / تازه کول </command>
+     <cancel> لغوه کول </cancel>
+    </img_info>
+    <result>
+     <label> تېروتنه </label>
+     <close> بنده کړئ </close>
+     <text> </text>
+     <command> وتړئ </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> د پورته کولو وړ عکس امستنې </title>
+    <upload_limit>
+     <label> د هر ګالري لپاره د اعظمي عکس حساب </label>
+     <placeholder> په هر ګالري کې د عکس د اعظمي شمیر </placeholder>
+     <validate> په هر ګالري کې د اعظمي عکس شمیره دننه کړئ </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> د یوې فایل اعظمي اندازه (MB) </label>
+     <placeholder> د یوې فایل اعظمي اندازه (MB) </placeholder>
+     <validate> د یوې فایل (MB) اعظمي اندازه دننه کړئ </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> د منلو وړ لږترلږه پریکړه </label>
+     <width>
+      <placeholder> لږترلږه عرض </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </width>
+     <height>
+      <placeholder> لږترلږه قد </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> د اجازه وړ اعظمي ریزولوشن </label>
+     <width>
+      <placeholder> پلنوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </width>
+     <height>
+      <placeholder> لوړوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> د انځور بدلون </title>
+    <full_resolution>
+     <label> د عکس بشپړ اندازه </label>
+     <width>
+      <placeholder> پلنوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </width>
+     <height>
+      <placeholder> لوړوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> د کوچني عکس اندازه </label>
+     <width>
+      <placeholder> پلنوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </width>
+     <height>
+      <placeholder> لوړوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> د سلایډ اندازه </label>
+     <width>
+      <placeholder> د سلایډ پلنوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </width>
+     <height>
+      <placeholder> د سلاید لوړوالی </placeholder>
+      <validate> ارزښت دننه کړئ </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> د Jpeg کیفیت </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG کمپرس </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> واټر مارک </title>
+    <label> د واټر مارک څخه کار واخلئ </label>
+    <position> د واټر مارک موقعیت </position>
+    <image> د واټرمارک عکس </image>
+    <set> واټر مارک تنظیم کړئ </set>
+    <browse> 1- د واټرمارک عکس فایل براوز کړئ </browse>
+    <adjust> 2- عکس د چوکاټ مطابق تنظیم کړئ. </adjust>
+    <upload> 3- ټاکل شوې فایل اپلوډ کړئ </upload>
+    <uploading> پورته کول ... </uploading>
+    <uploaded> پورته شوی. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> پا .ه </page>
+   <first> لومړۍ پا .ه </first>
+   <prev> مخکینۍ پا .ه </prev>
+   <next> بل مخ </next>
+   <last> وروستی پا .ه </last>
+  </pagination>
+
+</lang>

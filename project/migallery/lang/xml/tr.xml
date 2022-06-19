@@ -1,1 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
 
+<lang>
+
+  <lang>
+   <title>Dil</title>
+   <label>Dil Seçiniz</label>
+  </lang>
+
+  <timezone>
+   <title>Saat Dilimi</title>
+   <label>Saat Dilimi Seçin</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>Galeri Yönetimi</gallery_man>
+   <gallery_list>Galeri Listesi</gallery_list>
+   <uploader>Yeni Galeri Oluştur</uploader>
+   <back>Geri</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGallery Kurulumu</title>
+   <header>MIGallery Kurulumu</header>
+
+   <img_direction>
+    <label>Galeri, resim ve slayt yönü</label>
+    <left>Soldan sağa</left>
+    <right>Sağdan sola</right>
+   </img_direction>
+
+   <db_info>
+    <title>MySQL Veritabanı Bilgileri</title>
+    <host>
+     <label>DB Host</label>
+     <placeholder>DB Host</placeholder>
+     <validate>Ana bilgisayar adını girin</validate>
+    </host>
+    <user>
+     <label>DB Kullanıcı Adı</label>
+     <placeholder>DB Kullanıcı Adı</placeholder>
+     <validate>Veritabanı Kullanıcı Adını girin</validate>
+    </user>
+    <pass>
+     <label>DB Şifre</label>
+     <placeholder>DB Şifre</placeholder>
+     <validate>Veritabanı Şifresini girin</validate>
+    </pass>
+    <db>
+     <label>Veritabanı Adı</label>
+     <placeholder>Veritabanı Adı</placeholder>
+     <validate>Veritabanı Adını girin</validate>
+    </db>
+    <gal_table>
+     <label>Galeri Tablo Adı</label>
+     <placeholder>Galeri Tablo Adı</placeholder>
+     <validate>Galeri Tablo Adını girin</validate>
+    </gal_table>
+    <img_table>
+     <label>Resim Tablo Adı</label>
+     <placeholder>Resim Tablo Adı</placeholder>
+     <validate>Resim Tablo Adını girin</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Yazılabilir dinamik içerikler için dizinler</title>
+    <db_alert>
+     <![CDATA[
+    Aşağıdaki dizin, <b> yapılandırma </b>, <b> hata günlüğü </b> ve <b> tanımlar </b> dosyalarının oluşturulacağı yerdir. Bu dizinin adını değiştirmek istiyorsanız, <b> definitions0.php </b> dosyasındaki <b> DB_DIR </b> tanımını değiştirin ve bu sayfayı yenileyin. <br/> <br/> Eğer  yapılandırma, hata günlüğü ve tanım dosyalarının adlarını değiştirmek istiyorsanız, definitions0.php dosyasında <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> ve <b> DEFINITIONS_FILE </b> tanımlarını değiştirin. <br/> <br/> Sisteminiz unix tabanlıysa, aşağıdaki komutla yazma izinlerini ayarlayın: <br/> <b>%s</b> <br/> <br/> Kuruluma başlamadan önce , aşağıdaki yolun var olduğundan ve yazma izinlerine sahip olduğundan emin olun:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Kuruluma başlamadan önce aşağıdaki dizinlerin mevcut olduğundan ve yazma izinlerine sahip olduğunuzdan emin olun. <br/> <br/> Aşağıdaki dizinler dışında dizinler kullanacaksanız, dizinler diskte yoksa önce dizinleri oluşturun, yazma izinlerini ayarlayın ve kurulumu başlatın.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Yapılandırma, Hata Günlüğü ve Tanımlar Dosya Yolu</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Yeni galeri kaydedildiğinde aşağıdaki dizinler oluşturulur. <b>%d</b> galeri kimliğini gösterir. Bu dizinler, yukarıda tanımlanan <b> Resim Temel Dizini </b> dizininde oluşturulur. Dizinlerin formatının uygun olup olmadığını kontrol edin.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Yapılandırma dosyası daha önce oluşturulmuştur. Bu nedenle, kurulumu çalıştıramazsınız. Önce yapılandırma dosyasını silmeli ve ardından kurulumu çalıştırmalısınız.</config_alert>
+    <tmp_dir>
+     <label>Geçici Resim Dizini</label>
+     <placeholder>Geçici Resim Dizini</placeholder>
+     <validate>Geçici Resim Dizinini Girin</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Geçici Küçük Resim Dizini</label>
+     <placeholder>Geçici Küçük Resim Dizini</placeholder>
+     <validate>Geçici Küçük Resim Dizinini Girin</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Geçici Kırpılmış Küçük Resim Dizini</label>
+     <placeholder>Geçici Kırpılmış Küçük Resim Dizini</placeholder>
+     <validate>Geçici Kırpılmış Küçük Resim Dizinini Girin</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Geçici Slayt Resmi Dizini</label>
+     <placeholder>Geçici Slayt Resmi Dizini</placeholder>
+     <validate>Geçici Slayt Resmi Dizinini Girin</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Resim Temel Dizini</label>
+     <placeholder>Resim Temel Dizini</placeholder>
+     <validate>Resim Temel Dizinini Girin</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Resim Dizini</label>
+     <placeholder>Resim Dizini</placeholder>
+     <validate>Resim Dizinini Girin</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Küçük Resim Dizini</label>
+     <placeholder>Küçük Resim Dizini</placeholder>
+     <validate>Küçük Resim Dizinini Girin</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kırpılmış Küçük Resim Dizini</label>
+     <placeholder>Kırpılmış Küçük Resim Dizini</placeholder>
+     <validate>Kırpılmış Küçük Resim Dizinini Girin</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slayt Resmi Dizini</label>
+     <placeholder>Slayt Resmi Dizini</placeholder>
+     <validate>Slayt Resmi Dizinini Girin</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML Dizini</label>
+     <placeholder>XML Dizini</placeholder>
+     <validate>XML Dizinini Girin</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>Kurulum yapılıyor. Lütfen bekleyiniz...</installing>
+    <success>Kurulum başarıyla tamamlandı.</success>
+    <error>Kurulum tamamlanamadı.</error>
+   </alert>
+
+   <submit>Kuruluma Başla</submit>
+   <submit_continue>Devam &gt;&gt;</submit_continue>
+  	
+  </install>
+
+  <gallery_man>
+   <title>Galeri Yönetimi</title>
+   <header>Galeri Yönetimi</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>Galeri Listesi</title>
+   <header>Galeri Listesi</header>
+   <sort>
+    <asc>baştan sona doğru sırala</asc>
+    <desc>sondan başa doğru sırala</desc>
+   </sort>
+   <card>
+    <view>
+     <button>Gözat</button>
+     <title>Galeriye Gözat</title>
+    </view>
+    <delete>
+     <button>Sil</button>
+     <title>Galeriyi Sil</title>
+    </delete>
+    <edit>
+     <button>Düzenle</button>
+     <title>Galeri Düzenle</title>
+    </edit>
+    <images>resim</images>
+    <date>Tarih</date>
+    <move>Galerileri fare ile sürükleyerek sıralayabilirsiniz.</move>
+    <move_mobile>Parmağınızla bir öğeye dokunun ve basılı tutun ve seçilmesini bekleyin. Öğe seçildikten sonra parmağınızla sürükleyerek öğeleri sıralayabilirsiniz.</move_mobile>
+   </card>
+   <alert>Galeri bulunamadı.</alert>
+   <modal>
+    <del_gallery>
+     <label>Galeriyi Sil</label>
+     <close>kapat</close>
+     <text>Bu galeriyi siteden silmek istiyor musunuz?</text>
+     <command>Sil</command>
+     <cancel>İptal</cancel>
+    </del_gallery>
+    <result>
+     <label>Hata</label>
+     <close>kapat</close>
+     <text></text>
+     <command>Kapat</command>
+    </result>
+   </modal> 
+   <save_changes>Galeri Sıralamasını Kaydet</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>Galeriye Gözat</title>
+   <header>Galeriye Gözat</header>
+   <alert>Resim bulunamadı.</alert>
+   <share>Galeriyi Paylaş</share>
+   <filedate>Yüklenme Tarihi</filedate>
+   <filesize>Dosya Büyüklüğü</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Panoya Kopyala</label>
+     <close>kapat</close>
+     <text>Bağlantı panoya kopyalandı</text>
+     <command>Kopyala</command>
+     <cancel>Kapat</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>Yeni Galeri Oluştur</title>
+    <header>Yeni Galeri Oluştur</header>
+   </new>
+   <edit>
+    <title>Galeri Düzenle</title>
+    <header>Galeri Düzenle</header>
+   </edit>
+   <gallery_info>
+    <title>Galeri Bilgileri</title>
+    <name>
+     <label>Galeri Adı</label>
+     <placeholder>Galeri Adı</placeholder>
+     <validate>Galeri adını giriniz</validate>
+    </name>
+    <description>
+     <label>Galeri Açıklaması</label>
+     <placeholder>Galeri Açıklaması</placeholder>
+     <validate>Galeri açıklaması giriniz</validate>
+    </description>
+    <keywords>
+     <label> Virgülle veya satır sonu (enter) ile ayrılmış galeri anahtar kelimeleri </label>
+     <placeholder> Virgülle veya satır sonu (enter) ile ayrılmış galeri anahtar kelimeleri </placeholder>
+     <validate> Galeri anahtar kelimelerini giriniz </validate>
+    </keywords>
+    <submit>
+     <save>Galeriyi Kaydet</save>
+     <update>Galeriyi Güncelle</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>Yükleyici Rehberi</title>
+     <body>
+      <![CDATA[
+<b>Resimlere Gözat</b> butonu ile yükleyeceğiniz resimleri seçip <b>Resimleri Yükle</b> butonu ile siteye yükleyiniz.<br/>Desteklenen Resim Formatları: <b>JPG, PNG, GIF, BMP, WEBP</b> <br/> İzin verilen en düşük çözünürlük: <b>%d x %d px</b> <br/> İzin verilen en yüksek çözünürlük: <b>%d x %d px</b> <br/> Tek Dosya Maksimum Büyüklüğü: <b>%d MB</b> <br/> Galeri Başına Resim Sayısı: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>Tümünü Seç</select_all>
+    <select_del>Seçilenleri Sil</select_del>
+    <thumb>
+     <exist>
+      <delete>Yüklenen resmi siteden sil</delete>
+      <info>Resim Bilgileri</info>
+     </exist>
+     <new>
+      <delete>Yüklenen resmi siteden sil</delete>
+      <cancel>Resmi yüklemeyi iptal et</cancel>
+      <info>Resim Bilgileri</info>
+      <rotate>Resmi Döndür</rotate>
+      <crop>Resmi Kırp</crop>
+     </new>
+     <move>Resimleri fare ile sürükleyerek sıralayabilirsiniz.</move>
+     <move_mobile>Parmağınızla bir öğeye dokunun ve basılı tutun ve seçilmesini bekleyin. Öğe seçildikten sonra parmağınızla sürükleyerek öğeleri sıralayabilirsiniz.</move_mobile>
+    </thumb>
+    <browse>Resimlere Gözat</browse>
+    <upload>Resimleri Yükle</upload>
+    <uploading>Resimler siteye yükleniyor. Yükleme bitene kadar sayfayı kapatmayınız.</uploading>
+    <uploaded>Resimler siteye yüklendi.</uploaded>
+    <error>Resimler siteye yüklenirken bazı hatalar meydana geldi.</error>
+    <save_changes>Resim Değişikliklerini Kaydet</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>Kırp</crop>
+     <cancel>İptal</cancel>
+    </crop>
+    <del_up_img>
+     <label>Resmi Sil</label>
+     <close>kapat</close>
+     <text>Bu resmi siteden silmek istiyor musunuz?</text>
+     <command>Sil</command>
+     <cancel>İptal</cancel>
+    </del_up_img>
+    <del_img>
+     <label>Resmi Sil</label>
+     <close>kapat</close>
+     <text>Bu resmi siteden silmek istiyor musunuz?</text>
+     <command>Sil</command>
+     <cancel>İptal</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>Seçilen Resimleri Sil</label>
+     <close>kapat</close>
+     <text>Seçilen resimleri siteden silmek istiyor musunuz?</text>
+     <command>Sil</command>
+     <cancel>İptal</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>Resim Bilgileri</label>
+     <close>kapat</close>
+     <filename>Dosya Adı</filename>
+     <filesize>Dosya Boyutu</filesize>
+     <date> Yüklenme Tarihi </date>
+     <title>
+      <label>Başlık</label>
+      <placeholder>Resim Başlığı</placeholder>
+     </title>
+     <desc>
+      <label>Açıklama</label>
+      <placeholder>Resim Açıklaması</placeholder>
+     </desc>
+     <keyw>
+      <label> Anahtar Kelimeler </label>
+      <placeholder> Virgülle veya satır sonu (enter) ile ayrılmış anahtar kelimeler </placeholder>
+     </keyw>
+     <command>Kaydet / Güncelle</command>
+     <cancel>İptal</cancel>
+    </img_info>
+    <result>
+     <label>Hata</label>
+     <close>kapat</close>
+     <text></text>
+     <command>Kapat</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>Yüklenebilir Resim Ayarları</title>
+    <upload_limit>
+     <label>Galeri başına maksimum resim sayısı</label>
+     <placeholder>Galeri başına maksimum resim sayısı</placeholder>
+     <validate>Galeri başına maksimum resim sayısını girin</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>Tek dosya maksimum boyutu (MB)</label>
+     <placeholder>Tek dosya maksimum boyutu (MB)</placeholder>
+     <validate>Tek dosya maksimum boyutunu girin (MB)</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>İzin verilen en düşük çözünürlük</label>
+     <width>
+      <placeholder>Min genişlik</placeholder>
+      <validate>Değer girin</validate>
+     </width>
+     <height>
+      <placeholder>Min yükseklik</placeholder>
+      <validate>Değer girin</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>İzin verilen en yüksek çözünürlük</label>
+     <width>
+      <placeholder>Maks genişlik</placeholder>
+      <validate>Değer girin</validate>
+     </width>
+     <height>
+      <placeholder>Maks yükseklik</placeholder>
+      <validate>Değer girin</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>Resim Dönüşümü</title>
+    <full_resolution>
+     <label>Tam Resim Boyutları</label>
+     <width>
+      <placeholder>Maks genişlik</placeholder>
+      <validate>Değer girin</validate>
+     </width>
+     <height>
+      <placeholder>Maks yükseklik</placeholder>
+      <validate>Değer girin</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>Küçük Resim Boyutları</label>
+     <width>
+      <placeholder>Genişlik</placeholder>
+      <validate>Değer girin</validate>
+     </width>
+     <height>
+      <placeholder>Yükseklik</placeholder>
+      <validate>Değer girin</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>Slayt Resmi Boyutları</label>
+     <width>
+      <placeholder>Genişlik</placeholder>
+      <validate>Değer girin</validate>
+     </width>
+     <height>
+      <placeholder>Yükseklik</placeholder>
+      <validate>Değer girin</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>Jpeg Kalitesi</label>
+    </jpg_quality>
+    <png_compress>
+     <label>PNG Sıkıştırma</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>Filigran</title>
+    <label>Filigran Kullan</label>
+    <position>Filigran Pozisyonu</position>
+    <image>Filigran Resmi</image>
+    <set>Filigran Ayarla</set>
+    <browse>1- Filigran resmine gözat</browse>
+    <adjust>2- Resmi çerçeveye göre ayarla.</adjust>
+    <upload>3- Seçilen resmi yükle</upload>
+    <uploading>Yükleniyor...</uploading>
+    <uploaded>Yüklendi.</uploaded>
+   </watermark>
+
+  </image>
+
+  <pagination>
+   <page>Sayfa</page>
+   <first>İlk Sayfa</first>
+   <prev>Önceki Sayfa</prev>
+   <next>Sonraki Sayfa</next>
+   <last>Son Sayfa</last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Мова </title>
+   <label> Абярыце мову </label>
+  </lang>
+
+  <timezone>
+   <title>Часавы пояс</title>
+   <label>Абярыце Часовы пояс</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Кіраванне галерэяй </gallery_man>
+   <gallery_list> Спіс галерэі </gallery_list>
+   <uploader> Стварыць новую галерэю </uploader>
+   <back> Назад </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Усталяваць </title>
+   <header> MIGallery Усталяваць </header>
+
+   <img_direction>
+    <label> Галерэя, кірунак выявы і слайда </label>
+    <left> Злева направа </left>
+    <right> Справа налева </right>
+   </img_direction>
+
+   <db_info>
+    <title> Інфармацыя пра базу дадзеных MySQL </title>
+    <host>
+     <label> Імя хоста базы дадзеных </label>
+     <placeholder> Імя хоста базы дадзеных </placeholder>
+     <validate> Увядзіце імя хоста базы дадзеных </validate>
+    </host>
+    <user>
+     <label> Імя карыстальніка базы дадзеных </label>
+     <placeholder> Імя карыстальніка базы дадзеных </placeholder>
+     <validate> Увядзіце імя карыстальніка базы дадзеных </validate>
+    </user>
+    <pass>
+     <label> Пароль базы дадзеных </label>
+     <placeholder> Пароль базы дадзеных </placeholder>
+     <validate> Увядзіце пароль базы дадзеных </validate>
+    </pass>
+    <db>
+     <label> Імя БД </label>
+     <placeholder> Імя БД </placeholder>
+     <validate> Увядзіце імя БД </validate>
+    </db>
+    <gal_table>
+     <label> Назва табліцы галерэі </label>
+     <placeholder> Назва табліцы галерэі </placeholder>
+     <validate> Увядзіце назву табліцы галерэі </validate>
+    </gal_table>
+    <img_table>
+     <label> Назва табліцы малюнкаў </label>
+     <placeholder> Назва табліцы малюнкаў </placeholder>
+     <validate> Імя табліцы ўваходнага малюнка </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Шлях да змесціва, якое можна запісаць</title>
+    <db_alert>
+     <![CDATA[
+    Наступны шлях, дзе будуць створаны файлы <b>канфігурацыі</b>, <b>часопіса памылак</b> і <b>азначэнняў</b>. Калі вы хочаце змяніць назву гэтага каталога, зменіце вызначэнне <b> DB_DIR </b> у файле <b> definitions0.php </b> і абнавіце гэтую старонку.<br/><br/>Калі вы хочаце змяніць імёны файлаў канфігурацыі, часопісаў памылак і файлаў азначэнняў, зменіце азначэнні <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> i <b>DEFINITIONS_FILE</b> у файле definitions0.php.<br/><br/>Калі ваша сістэма працуе на Unix, усталюйце дазволы на запіс наступнай камандай:<br/><b>%s</b><br/><br/>Перад пачаткам усталёўкі пераканайцеся, што існуе наступны шлях і мае дазволы на запіс:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Перад пачаткам усталёўкі пераканайцеся, што існуюць наступныя каталогі і ў вас ёсць дазвол на запіс у каталогі.<br/><br/>Калі вы збіраецеся выкарыстоўваць каталогі, акрамя наступных, калі каталогаў няма на дыску, спачатку стварыце каталогі і ўсталюйце дазволы на запіс і пачніце ўстаноўку.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Шлях да канфігурацыі, часопіса памылак і файлаў азначэнняў</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Пры захаванні новай галерэі ствараюцца наступныя каталогі. <b>%d</b> вызначае ідэнтыфікатар галерэі. Гэтыя каталогі ствараюцца ў вызначаным вышэй каталогу <b> Базавы шлях да файла выявы </b>. Праверце, ці правільна фармат каталогаў.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Файл канфігурацыі быў створаны раней. Такім чынам, вы не можаце запусціць ўстаноўку. Спачатку трэба выдаліць файл канфігурацыі, а потым запусціць устаноўку.</config_alert>
+    <tmp_dir>
+     <label>Часовы шлях да файла выявы</label>
+     <placeholder>Часовы шлях да файла выявы</placeholder>
+     <validate>Часовы шлях да файла выявы</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Часовы шлях да эскіза файла</label>
+     <placeholder>Часовы шлях да эскіза файла</placeholder>
+     <validate>Часовы шлях да эскіза файла</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Часовы шлях да абрэзанай мініяцюры</label>
+     <placeholder>Часовы шлях да абрэзанай мініяцюры</placeholder>
+     <validate>Часовы шлях да абрэзанай мініяцюры</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Часовы шлях да файла памеру слайда</label>
+     <placeholder>Часовы шлях да файла памеру слайда</placeholder>
+     <validate>Часовы шлях да файла памеру слайда</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Базавы шлях да файла выявы</label>
+     <placeholder>Базавы шлях да файла выявы</placeholder>
+     <validate>Базавы шлях да файла выявы</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Шлях малюнкаў</label>
+     <placeholder>Шлях малюнкаў</placeholder>
+     <validate>Шлях малюнкаў</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Шлях мініяцюры</label>
+     <placeholder>Шлях мініяцюры</placeholder>
+     <validate>Шлях мініяцюры</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Шлях абрэзанай мініяцюры</label>
+     <placeholder>Шлях абрэзанай мініяцюры</placeholder>
+     <validate>Шлях абрэзанай мініяцюры</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Шлях да выявы памеру слайда</label>
+     <placeholder>Шлях да выявы памеру слайда</placeholder>
+     <validate>Шлях да выявы памеру слайда</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Шлях да XML-файлаў</label>
+     <placeholder>Шлях да XML-файлаў</placeholder>
+     <validate>Шлях да XML-файлаў</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Усталёўка. Пачакайце ... </installing>
+    <success> Усталяванне завершана паспяхова. </success>
+    <error> Не ўдалося завяршыць усталёўку. </error>
+   </alert>
+  
+   <submit> Пачаць усталёўку </submit>
+   <submit_continue> Працягнуць &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>Кіраванне галерэяй</title>
+   <header>Кіраванне галерэяй</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Спіс галерэі </title>
+   <header> Спіс галерэі </header>
+   <sort>
+    <asc> першы да апошняга </asc>
+    <desc> ад апошняга да першага </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Праглядзець </button>
+     <title> Прагледзець галерэю </title>
+    </view>
+    <delete>
+     <button> Выдаліць </button>
+     <title> Выдаліць галерэю </title>
+    </delete>
+    <edit>
+     <button> Рэдагаваць </button>
+     <title> Рэдагаваць галерэю </title>
+    </edit>
+    <images>выявы</images>
+    <date>Дата</date>
+    <move> Вы можаце сартаваць галерэі, перацягваючы іх мышшу. </move>
+    <move_mobile>Націсніце і ўтрымлівайце элемент пальцам і дачакайцеся яго выбару. Пасля выбару элемента можна сартаваць элементы, перацягваючы пальцам.</move_mobile>
+   </card>
+   <alert> Галерэя не знойдзена. </alert>
+   <modal>
+    <del_gallery>
+     <label> Выдаліць галерэю </label>
+     <close> закрыць </close>
+     <text> Вы хочаце выдаліць гэту галерэю з сайта? </text>
+     <command> Выдаліць </command>
+     <cancel> Скасаваць </cancel>
+    </del_gallery>
+    <result>
+     <label> Памылка </label>
+     <close> закрыць </close>
+     <text> </text>
+     <command> Зачыніць </command>
+    </result>
+   </modal>
+   <save_changes> Захаваць сартаванне галерэі </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Выгляд галерэі </title>
+   <header> Выгляд галерэі </header>
+   <alert> Відарыс не знойдзены. </alert>
+   <share>Падзяліцца галерэяй</share>
+   <filedate>Дата загрузкі</filedate>
+   <filesize>Памер файла</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Капіраваць у буфер абмену</label>
+     <close>блізка</close>
+     <text>Спасылка скапіравана ў буфер абмену</text>
+     <command>Капіяваць</command>
+     <cancel>Блізка</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Стварыць новую галерэю </title>
+    <header> Стварыць новую галерэю </header>
+   </new>
+   <edit>
+    <title> Рэдагаваць галерэю </title>
+    <header> Рэдагаваць галерэю </header>
+   </edit>
+   <gallery_info>
+    <title> Інфармацыя пра галерэю </title>
+    <name>
+     <label> Назва галерэі </label>
+     <placeholder> Назва галерэі </placeholder>
+     <validate> Увядзіце назву галерэі </validate>
+    </name>
+    <description>
+     <label> Апісанне галерэі </label>
+     <placeholder> Апісанне галерэі </placeholder>
+     <validate> Апісанне галерэі ўводу </validate>
+    </description>
+    <keywords>
+     <label>Ключавыя словы ў галерэі, падзеленыя коскамі ці новымі радкамі</label>
+     <placeholder>Ключавыя словы ў галерэі, падзеленыя коскамі ці новымі радкамі</placeholder>
+     <validate>Увядзіце ключавыя словы галерэі</validate>
+    </keywords>
+    <submit>
+     <save> Захаваць галерэю </save>
+     <update> Галерэя абнаўленняў </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Кіраўніцтва па запампоўцы </title>
+     <body>
+      <![CDATA[
+Выберыце выявы са сваёй прылады кнопкай <b> праглядаць выявы </b> і загрузіце на сайт кнопкай <b> Загрузіць выявы </b>. <br/> Падтрымліваюцца фарматы малюнкаў: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Дапушчальнае мінімальнае дазвол: <b>%d x %d px</b> <br/> Дапушчальнае максімальнае дазвол: <b>%d x %d px</b> <br/> Максімальны памер аднаго файла: <b>%d МБ</b> <br/> Колькасць малюнкаў у галерэі: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Абярыце ўсё </select_all>
+    <select_del> Выдаліць выбранае </select_del>
+    <thumb>
+     <exist>
+      <delete> Выдаліць загружанае выява з сайта </delete>
+      <info> Інфармацыя пра выяву </info>
+     </exist>
+     <new>
+      <delete> Выдаліць загружанае выява з сайта </delete>
+      <cancel> Адмяніць загрузку малюнка </cancel>
+      <info> Інфармацыя пра выяву </info>
+      <rotate> Павярнуць малюнак </rotate>
+      <crop> Абрэзаць малюнак </crop>
+     </new>
+     <move> Вы можаце сартаваць выявы, перацягваючы іх мышшу. </move>
+     <move_mobile>Націсніце і ўтрымлівайце элемент пальцам і дачакайцеся яго выбару. Пасля выбару элемента можна сартаваць элементы, перацягваючы пальцам.</move_mobile>
+    </thumb>
+    <browse> праглядаць выявы </browse>
+    <upload> Загрузіць выявы </upload>
+    <uploading> Выявы загружаюцца на сайт. Не зачыняйце старонку, пакуль загрузка не скончыцца. </uploading>
+    <uploaded> Выявы былі загружаныя на сайт. </uploaded>
+    <error>Пры загрузцы файлаў на сервер адбыліся некаторыя памылкі.</error>
+    <save_changes> Захаваць змены выявы </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Абрэзаць </crop>
+     <cancel> Скасаваць </cancel>
+    </crop>
+    <del_up_img>
+     <label> Выдаліць малюнак </label>
+     <close> закрыць </close>
+     <text> Вы хочаце выдаліць гэты малюнак з сайта? </text>
+     <command> Выдаліць </command>
+     <cancel> Скасаваць </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Выдаліць малюнак </label>
+     <close> закрыць </close>
+     <text> Вы хочаце выдаліць гэты малюнак з сайта? </text>
+     <command> Выдаліць </command>
+     <cancel> Скасаваць </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Выдаліць выбраныя выявы </label>
+     <close> закрыць </close>
+     <text> Вы хочаце выдаліць выбраныя выявы з сайта? </text>
+     <command> Выдаліць </command>
+     <cancel> Скасаваць </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Інфармацыя пра выяву </label>
+     <close> закрыць </close>
+     <filename> Імя файла </filename>
+     <filesize> Памер файла </filesize>
+     <date>Дата загрузкі</date>
+     <title>
+      <label> Загаловак </label>
+      <placeholder> Назва выявы </placeholder>
+     </title>
+     <desc>
+      <label> Апісанне </label>
+      <placeholder> Апісанне выявы </placeholder>
+     </desc>
+     <keyw>
+      <label>Ключавыя словы</label>
+      <placeholder>Ключавыя словы, падзеленыя коскамі ці новымі радкамі</placeholder>
+     </keyw>
+     <command> Захаваць / абнавіць </command>
+     <cancel> Скасаваць </cancel>
+    </img_info>
+    <result>
+     <label> Памылка </label>
+     <close> закрыць </close>
+     <text> </text>
+     <command> Зачыніць </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Налады выявы, якія можна загрузіць </title>
+    <upload_limit>
+     <label> Максімальная колькасць малюнкаў у галерэі </label>
+     <placeholder> Максімальная колькасць малюнкаў на галерэю </placeholder>
+     <validate> Максімальная колькасць уваходных малюнкаў на галерэю </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Максімальны памер аднаго файла (МБ) </label>
+     <placeholder> Максімальны памер аднаго файла (МБ) </placeholder>
+     <validate> Увядзіце максімальны памер аднаго файла (МБ) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Дапушчальная мінімальная дазвол </label>
+     <width>
+      <placeholder> Мінімальная шырыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </width>
+     <height>
+      <placeholder> Мінімальная вышыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Дапушчальнае максімальнае дазвол </label>
+     <width>
+      <placeholder> Максімальная шырыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </width>
+     <height>
+      <placeholder> Максімальная вышыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Пераўтварэнне малюнка </title>
+    <full_resolution>
+     <label> Поўны памер выявы </label>
+     <width>
+      <placeholder> Максімальная шырыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </width>
+     <height>
+      <placeholder> Максімальная вышыня </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Памер эскіза </label>
+     <width>
+      <placeholder> Шырыня вялікага пальца </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </width>
+     <height>
+      <placeholder> Вышыня вялікага пальца </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Памер слайда </label>
+     <width>
+      <placeholder> Шырыня слайда </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </width>
+     <height>
+      <placeholder> Вышыня слайда </placeholder>
+      <validate> Уваходнае значэнне </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Якасць JPEG </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Сціск PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Вадзяны знак </title>
+    <label> Выкарыстоўваць вадзяны знак </label>
+    <position> Пазіцыя вадзянога знака </position>
+    <image> Выява вадзянога знака </image>
+    <set> Усталяваць вадзяны знак </set>
+    <browse> 1- Прагляд файла вадзянога знака </browse>
+    <adjust> 2- Наладзьце малюнак на рамку. </adjust>
+    <upload> 3- Загрузіць выбраны файл </upload>
+    <uploading> Загрузка ... </uploading>
+    <uploaded> Загружана. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Старонка </page>
+   <first> Першая старонка </first>
+   <prev> Папярэдняя старонка </prev>
+   <next> Наступная старонка </next>
+   <last> Апошняя старонка </last>
+  </pagination>
+
+</lang>

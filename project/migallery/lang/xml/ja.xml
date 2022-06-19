@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>言語</title>
+   <label>言語の選択</label>
+  </lang>
+
+  <timezone>
+   <title>タイムゾーン</title>
+   <label>タイムゾーンを選択</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>ギャラリー管理</gallery_man>
+   <gallery_list>ギャラリーリスト</gallery_list>
+   <uploader>新しいギャラリーを作成</uploader>
+   <back>戻る</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGalleryのセットアップ</title>
+   <header>MIGalleryのセットアップ</header>
+
+   <img_direction>
+    <label>ギャラリー、画像、スライドの方向</label>
+    <left>左から右</left>
+    <right>右から左</right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQLデータベース情報</title>
+    <host>
+     <label>データベースのホスト名</label>
+     <placeholder>データベースのホスト名</placeholder>
+     <validate>入力データベースのホスト名</validate>
+    </host>
+    <user>
+     <label>データベースユーザー名</label>
+     <placeholder>データベースユーザー名</placeholder>
+     <validate>入力データベースユーザー名</validate>
+    </user>
+    <pass>
+     <label>データベースパスワード</label>
+     <placeholder>データベースパスワード</placeholder>
+     <validate>データベースパスワードの入力</validate>
+    </pass>
+    <db>
+     <label>データベース名</label>
+     <placeholder>データベース名</placeholder>
+     <validate>入力データベース名</validate>
+    </db>
+    <gal_table>
+     <label>ギャラリーテーブル名</label>
+     <placeholder>ギャラリーテーブル名</placeholder>
+     <validate>ギャラリーテーブル名を入力してください</validate>
+    </gal_table>
+    <img_table>
+     <label>画像テーブル名</label>
+     <placeholder>画像テーブル名</placeholder>
+     <validate>画像テーブル名を入力してください</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>書き込み可能な動的コンテンツのディレクトリ</title>
+    <db_alert>
+     <![CDATA[
+    次のディレクトリは、<b>構成</b>、<b>エラーログ</b>、および<b>定義</b>ファイルが作成される場所です。 このディレクトリの名前を変更する場合は、<b> definitions0.php </b>ファイルの<b> DB_DIR </b>定義を変更して、このページを更新してください。<br/> <br/> 構成ファイル、エラーログファイル、定義ファイルの名前を変更したい場合は、definitions0.phpファイルの<b>CONFIG_FILE</b>、<b>ERROR_LOG_FILE</b>、<b>DEFINITIONS_FILE</b>の定義を変更します。<br/> <br/>システムがunixベースの場合は、次のコマンドで書き込み権限を設定します。 次のコマンド：<br/> <b>%s</b> <br/> <br/>インストールを開始する前に、次のパスが存在し、ディレクトリへの書き込み権限があることを確認してください。
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    インストールを開始する前に、次のディレクトリが使用可能であり、ディレクトリへの書き込み権限があることを確認してください。 <br/> <br/>以下のディレクトリ以外のディレクトリを使用する場合、ディスク上にディレクトリが存在しない場合は、まずディレクトリを作成し、書き込み権限を設定してインストールを開始してください。
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>構成、エラーログ、および定義ファイルのパス</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    新しいギャラリーを保存すると、次のディレクトリが作成されます。 <b>％d </b>はギャラリーIDを示します。 これらのディレクトリは、上記で定義した<b> 画像のベースディレクトリ </b>ディレクトリに作成されます。 ディレクトリの形式が適切かどうかを確認してください。
+     ]]>
+    </img_dir_alert>
+    <config_alert>構成ファイルは以前に作成されています。 したがって、セットアップを実行することはできません。 最初に構成ファイルを削除してから、セットアップを実行する必要があります。</config_alert>
+    <tmp_dir>
+     <label>画像の一時ディレクトリ</label>
+     <placeholder>画像の一時ディレクトリ</placeholder>
+     <validate>画像の一時ディレクトリ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>サムネイルの一時ディレクトリ</label>
+     <placeholder>サムネイルの一時ディレクトリ</placeholder>
+     <validate>サムネイルの一時ディレクトリ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>トリミングされたサムネイルの一時ディレクトリ</label>
+     <placeholder>トリミングされたサムネイルの一時ディレクトリ</placeholder>
+     <validate>トリミングされたサムネイルの一時ディレクトリ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>スライド画像の一時ディレクトリ</label>
+     <placeholder>スライド画像の一時ディレクトリ</placeholder>
+     <validate>スライド画像の一時ディレクトリ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>画像のベースディレクトリ</label>
+     <placeholder>画像のベースディレクトリ</placeholder>
+     <validate>画像のベースディレクトリ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>画像ディレクトリ</label>
+     <placeholder>画像ディレクトリ</placeholder>
+     <validate>画像ディレクトリ</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>サムネイルディレクトリ</label>
+     <placeholder>サムネイルディレクトリ</placeholder>
+     <validate>サムネイルディレクトリ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>トリミングされたサムネイルディレクトリ</label>
+     <placeholder>トリミングされたサムネイルディレクトリ</placeholder>
+     <validate>トリミングされたサムネイルディレクトリ</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>スライド画像ディレクトリ</label>
+     <placeholder>スライド画像ディレクトリ</placeholder>
+     <validate>スライド画像ディレクトリ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XMLファイルディレクトリ</label>
+     <placeholder>XMLファイルディレクトリ</placeholder>
+     <validate>XMLファイルディレクトリ</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>インストール。お待ちください... </installing>
+    <success>インストールは正常に完了しました。</success>
+    <error>インストールを完了できませんでした。</error>
+   </alert>
+  
+   <submit>インストールの開始</submit>
+   <submit_continue>続行 &gt;&gt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>ギャラリー管理</title>
+   <header>ギャラリー管理</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>ギャラリーリスト</title>
+   <header>ギャラリーリスト</header>
+   <sort>
+    <asc>最初から最後に並べ替え</asc>
+    <desc>最後から最初に並べ替え</desc>
+   </sort>
+   <card>
+    <view>
+     <button>表示</button>
+     <title>ギャラリーを見る</title>
+    </view>
+    <delete>
+     <button>削除</button>
+     <title>ギャラリーの削除</title>
+    </delete>
+    <edit>
+     <button>編集</button>
+     <title>ギャラリーの編集</title>
+    </edit>
+    <images>画像</images>
+    <date>日付</date>
+    <move>ギャラリーをマウスでドラッグすると、ギャラリーを並べ替えることができます。</move>
+    <move_mobile>アイテムを指で長押しして、強調表示されるのを待ちます。 アイテムを選択したら、指をドラッグしてアイテムを並べ替えます。</move_mobile>
+   </card>
+   <alert>ギャラリーが見つかりません。</alert>
+   <modal>
+    <del_gallery>
+     <label>ギャラリーを削除</label>
+     <close>閉じる</close>
+     <text>このギャラリーをサイトから削除しますか？</text>
+     <command>削除</command>
+     <cancel>キャンセル</cancel>
+    </del_gallery>
+    <result>
+     <label>エラー</label>
+     <close>閉じる</close>
+     <text> </text>
+     <command>閉じる</command>
+    </result>
+   </modal>
+   <save_changes>ギャラリーの並べ替え順序を保存</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>ギャラリービュー</title>
+   <header>ギャラリービュー</header>
+   <alert>画像が見つかりません。</alert>
+   <share>ギャラリーを共有する</share>
+   <filedate>アップロード日</filedate>
+   <filesize>ファイルサイズ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>クリップボードにコピー</label>
+     <close>閉じる</close>
+     <text>リンクがクリップボードにコピーされました</text>
+     <command>コピー</command>
+     <cancel>閉じる</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>新しいギャラリーを作成する</title>
+    <header>新しいギャラリーを作成</header>
+   </new>
+   <edit>
+    <title>ギャラリーの編集</title>
+    <header>ギャラリーの編集</header>
+   </edit>
+   <gallery_info>
+    <title>ギャラリー情報</title>
+    <name>
+     <label>ギャラリー名</label>
+     <placeholder>ギャラリー名</placeholder>
+     <validate>入力ギャラリー名</validate>
+    </name>
+    <description>
+     <label>ギャラリーの説明</label>
+     <placeholder>ギャラリーの説明</placeholder>
+     <validate>入力ギャラリーの説明</validate>
+    </description>
+    <keywords>
+     <label> カンマまたは改行で区切られたギャラリーキーワード </label>
+     <placeholder> カンマまたは改行で区切られたギャラリーキーワード </placeholder>
+     <validate> ギャラリーキーワードを入力してください </validate>
+    </keywords>
+    <submit>
+     <save>ギャラリーを保存</save>
+     <update>ギャラリーの更新</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>アップローダーガイド</title>
+     <body>
+      <![CDATA[
+<b>画像を閲覧</b> ボタンを使用してデバイスから画像を選択し、<b>画像のアップロード</b> ボタンを使用してサイトにアップロードします。<br/>サポートされている画像形式：<b> JPG、PNG、 GIF、BMP、WEBP </b> <br/>許容最小解像度：<b>%d x %d px</b> <br/>許容最大解像度：<b>%d x %d px</b> <br/>単一ファイルの最大サイズ：<b>%d MB</b> <br/>ギャラリーあたりの画像数：<b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>すべて選択</select_all>
+    <select_del>選択した画像を削除</select_del>
+    <thumb>
+     <exist>
+      <delete>アップロードした画像をサイトから削除</delete>
+      <info>画像情報</info>
+     </exist>
+     <new>
+      <delete>アップロードした画像をサイトから削除</delete>
+      <cancel>画像のアップロードをキャンセル</cancel>
+      <info>画像情報</info>
+      <rotate>画像を回転</rotate>
+      <crop>切り抜き画像</crop>
+     </new>
+     <move>画像をマウスでドラッグして並べ替えることができます。</move>
+     <move_mobile>アイテムを指で長押しして、強調表示されるのを待ちます。 アイテムを選択したら、指をドラッグしてアイテムを並べ替えます。</move_mobile>
+    </thumb>
+    <browse>画像を閲覧</browse>
+    <upload>画像のアップロード</upload>
+    <uploading>画像はにアップロードされていますサイト。アップロードが完了するまでページを閉じないでください。</uploading>
+    <uploaded>画像がサイトにアップロードされました。</uploaded>
+    <error>サーバーへのファイルのアップロード中にいくつかのエラーが発生しました。</error>
+    <save_changes>画像の変更を保存</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> 作物 </crop>
+     <cancel>キャンセル</cancel>
+    </crop>
+    <del_up_img>
+     <label>画像の削除</label>
+     <close>閉じる</close>
+     <text>この画像をサイトから削除しますか？</text>
+     <command>削除</command>
+     <cancel>キャンセル</cancel>
+    </del_up_img>
+    <del_img>
+     <label>画像の削除</label>
+     <close>閉じる</close>
+     <text>この画像をサイトから削除しますか？</text>
+     <command>削除</command>
+     <cancel>キャンセル</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>選択した画像を削除</label>
+     <close>閉じる</close>
+     <text>選択した画像をサイトから削除しますか？</text>
+     <command>削除</command>
+     <cancel>キャンセル</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>画像情報</label>
+     <close>閉じる</close>
+     <filename>ファイル名</filename>
+     <filesize>ファイルサイズ</filesize>
+     <date> アップロード日 </date>
+     <title>
+      <label>タイトル</label>
+      <placeholder>画像のタイトル</placeholder>
+     </title>
+     <desc>
+      <label>説明</label>
+      <placeholder>画像の説明</placeholder>
+     </desc>
+     <keyw>
+      <label> キーワード </label>
+      <placeholder> コンマまたは改行で区切られたキーワード </placeholder>
+     </keyw>
+     <command>保存/更新</command>
+     <cancel>キャンセル</cancel>
+    </img_info>
+    <result>
+     <label>エラー</label>
+     <close>閉じる</close>
+     <text> </text>
+     <command>閉じる</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>アップロード可能な画像設定</title>
+    <upload_limit>
+     <label>ギャラリーあたりの最大画像数</label>
+     <placeholder>ギャラリーあたりの最大画像数</placeholder>
+     <validate>ギャラリーあたりの最大画像数を入力してください</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>単一ファイルの最大サイズ（MB）</label>
+     <placeholder>単一ファイルの最大サイズ（MB）</placeholder>
+     <validate>単一ファイルの最大サイズ（MB）を入力してください</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>許容最小解像度</label>
+     <width>
+      <placeholder>最小幅</placeholder>
+      <validate>値を入力してください</validate>
+     </width>
+     <height>
+      <placeholder>最小の高さ</placeholder>
+      <validate>値を入力してください</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>許容最大解像度</label>
+     <width>
+      <placeholder>最大幅</placeholder>
+      <validate>値を入力してください</validate>
+     </width>
+     <height>
+      <placeholder>最大高さ</placeholder>
+      <validate>値を入力してください</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>画像変換</title>
+    <full_resolution>
+     <label>画像のフルサイズ</label>
+     <width>
+      <placeholder>最大幅</placeholder>
+      <validate>値を入力してください</validate>
+     </width>
+     <height>
+      <placeholder>最大高さ</placeholder>
+      <validate>値を入力してください</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>サムネイルサイズ</label>
+     <width>
+      <placeholder>親指の幅</placeholder>
+      <validate>値を入力してください</validate>
+     </width>
+     <height>
+      <placeholder>親指の高さ</placeholder>
+      <validate>値を入力してください</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>スライドサイズ</label>
+     <width>
+      <placeholder>スライド幅</placeholder>
+      <validate>値を入力してください</validate>
+     </width>
+     <height>
+      <placeholder>スライドの高さ</placeholder>
+      <validate>値を入力してください</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg品質</label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG圧縮</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>ウォーターマーク</title>
+    <label>透かしを使用</label>
+    <position>透かしの位置</position>
+    <image>透かし画像</image>
+    <set>透かしを設定</set>
+    <browse> 1-透かし画像ファイルを参照</browse>
+    <adjust> 2-フレームに合わせて画像を調整します。</adjust>
+    <upload> 3-選択したファイルをアップロード</upload>
+    <uploading>アップロード中... </uploading>
+    <uploaded>アップロード済み。</uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page>ページ</page>
+   <first>最初のページ</first>
+   <prev>前のページ</prev>
+   <next>次のページ</next>
+   <last>最後のページ</last>
+  </pagination>
+
+</lang>

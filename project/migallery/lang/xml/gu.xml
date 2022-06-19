@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ભાષા </title>
+   <label> ભાષા પસંદ કરો </label>
+  </lang>
+
+  <timezone>
+   <title>સમય ઝોન</title>
+   <label>ટાઇમઝોન પસંદ કરો</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ગેલેરી મેનેજમેન્ટ </gallery_man>
+   <gallery_list> ગેલેરી સૂચિ </gallery_list>
+   <uploader> નવી ગેલેરી બનાવો </uploader>
+   <back> પાછા </back>
+  </nav>
+
+  <install>
+ 
+   <title> Migallery સેટઅપ </title>
+   <header> Migallery સેટઅપ </header>
+
+   <img_direction>
+    <label> ગેલેરી, છબી અને સ્લાઇડ દિશા </label>
+    <left> ડાબેથી જમણે </left>
+    <right> જમણે થી ડાબે </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ડેટાબેસ માહિતી </title>
+    <host>
+     <label> ડીબી હોસ્ટ </label>
+     <placeholder> ડીબી હોસ્ટ </placeholder>
+     <validate> ઇનપુટ ડીબી હોસ્ટ નામ </validate>
+    </host>
+    <user>
+     <label> ડીબી વપરાશકર્તા નામ </label>
+     <placeholder> ડીબી વપરાશકર્તા નામ </placeholder>
+     <validate> ઇનપુટ ડીબી વપરાશકર્તા નામ </validate>
+    </user>
+    <pass>
+     <label> ડીબી પાસવર્ડ </label>
+     <placeholder> ડીબી પાસવર્ડ </placeholder>
+     <validate> ઇનપુટ ડીબી પાસવર્ડ </validate>
+    </pass>
+    <db>
+     <label> ડીબી નામ </label>
+     <placeholder> ડીબી નામ </placeholder>
+     <validate> ઇનપુટ ડીબી નામ </validate>
+    </db>
+    <gal_table>
+     <label> ગેલેરી ટેબલ નામ </label>
+     <placeholder> ગેલેરી કોષ્ટકનું નામ </placeholder>
+     <validate> ગેલેરી કોષ્ટક નામ દાખલ કરો </validate>
+    </gal_table>
+    <img_table>
+     <label> ઇમેજ ટેબલ નામ </label>
+     <placeholder> છબી કોષ્ટકનું નામ </placeholder>
+     <validate> છબી કોષ્ટક નામ દાખલ કરો </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>લખી શકાય તેવા ગતિશીલ સમાવિષ્ટો માટેની ડિરેક્ટરીઓ</title>
+    <db_alert>
+     <![CDATA[
+    નીચેની ડિરેક્ટરી તે છે જ્યાં <b> ગોઠવણી </b>, <b> ભૂલ લોગ </b> અને <b> વ્યાખ્યાઓ </b> ફાઇલો બનાવવામાં આવશે. જો તમે આ ડિરેક્ટરીનું નામ બદલવા માંગતા હો, તો <b> definitions0.php </b> ફાઇલમાંથી <b> DB_DIR </b> વ્યાખ્યા બદલો અને આ પૃષ્ઠને તાજું કરો. <br/> <br/> જો તમે રૂપરેખાંકન ફાઇલ, ભૂલ લોગ ફાઇલ અને વ્યાખ્યા ફાઇલનું નામ બદલવા માંગતા હો, તો <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> અને <b> DEFINITIONS_FILE ની વ્યાખ્યા બદલો. </b> definitions0.php ફાઇલમાં. <br/> <br/> જો તમારી સિસ્ટમ યુનિક્સ-આધારિત છે, તો નીચેના આદેશ સાથે લખવાની પરવાનગી સેટ કરો: <br/> <b>%s</b> <br/> <br/> ઇન્સ્ટોલેશન શરૂ કરતા પહેલા , ખાતરી કરો કે નીચેનો પાથ અસ્તિત્વમાં છે અને તમને ડિરેક્ટરીમાં લખવાની મંજૂરી છે:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    સ્થાપન શરૂ કરતા પહેલા, ખાતરી કરો કે નીચેની ડિરેક્ટરીઓ ઉપલબ્ધ છે અને તમને ડિરેક્ટરીઓમાં લખવાની પરવાનગી છે. <br/> <br/> જો તમે નીચેની ડિરેક્ટરીઓ સિવાયની ડિરેક્ટરીઓનો ઉપયોગ કરવા જઇ રહ્યા છો, જો ડિરેક્ટરીઓ ડિસ્ક પર અસ્તિત્વમાં નથી, તો પ્રથમ ડિરેક્ટરીઓ બનાવો અને લખવાની પરવાનગી સેટ કરો અને ઇન્સ્ટોલેશન શરૂ કરો.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>રૂપરેખાંકન, ભૂલ લોગ અને વ્યાખ્યાઓ ફાઇલો પાથ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    નવી ગેલેરી સાચવવામાં આવે ત્યારે નીચેની ડિરેક્ટરીઓ બનાવવામાં આવે છે. <b>%d</b> ગેલેરી આઈડી સૂચવે છે. આ ડિરેક્ટરીઓ ઉપર નિર્ધારિત <b> ઇમેજ બેઝ ડિરેક્ટરી </b> ડિરેક્ટરી પર બનાવવામાં આવી છે. ડિરેક્ટરીઓનું બંધારણ યોગ્ય છે કે કેમ તે તપાસો.
+     ]]>
+    </img_dir_alert>
+    <config_alert>રૂપરેખાંકન ફાઇલ પહેલાં બનાવવામાં આવી છે. તેથી, તમે સેટઅપ ચલાવી શકતા નથી. તમારે પહેલા કન્ફિગરેશન ફાઇલને દૂર કરવું આવશ્યક છે અને પછી સેટઅપ ચલાવો.</config_alert>
+    <tmp_dir>
+     <label>છબીની અસ્થાયી ડિરેક્ટરી</label>
+     <placeholder>છબીની અસ્થાયી ડિરેક્ટરી</placeholder>
+     <validate>છબીની અસ્થાયી ડિરેક્ટરી</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>થંબનેલની અસ્થાયી ડિરેક્ટરી</label>
+     <placeholder>થંબનેલની અસ્થાયી ડિરેક્ટરી</placeholder>
+     <validate>થંબનેલની અસ્થાયી ડિરેક્ટરી</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>કાપેલ થંબનેલ્સ અસ્થાયી ડિરેક્ટરી</label>
+     <placeholder>કાપેલ થંબનેલ્સ અસ્થાયી ડિરેક્ટરી</placeholder>
+     <validate>કાપેલ થંબનેલ્સ અસ્થાયી ડિરેક્ટરી</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>સ્લાઇડ ઇમેજની અસ્થાયી ડિરેક્ટરી</label>
+     <placeholder>સ્લાઇડ ઇમેજની અસ્થાયી ડિરેક્ટરી</placeholder>
+     <validate>સ્લાઇડ ઇમેજની અસ્થાયી ડિરેક્ટરી</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ઇમેજ બેઝ ડિરેક્ટરી</label>
+     <placeholder>ઇમેજ બેઝ ડિરેક્ટરી</placeholder>
+     <validate>ઇમેજ બેઝ ડિરેક્ટરી</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>છબી ડિરેક્ટરી</label>
+     <placeholder>છબી ડિરેક્ટરી</placeholder>
+     <validate>છબી ડિરેક્ટરી</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>થંબનેલ ડિરેક્ટરી</label>
+     <placeholder>થંબનેલ ડિરેક્ટરી</placeholder>
+     <validate>થંબનેલ ડિરેક્ટરી</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>કાપાયેલ થંબનેલ ડિરેક્ટરી</label>
+     <placeholder>કાપાયેલ થંબનેલ ડિરેક્ટરી</placeholder>
+     <validate>કાપાયેલ થંબનેલ ડિરેક્ટરી</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>સ્લાઇડ ઇમેજ ડિરેક્ટરી</label>
+     <placeholder>સ્લાઇડ ઇમેજ ડિરેક્ટરી</placeholder>
+     <validate>સ્લાઇડ ઇમેજ ડિરેક્ટરી</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ફાઇલો ડિરેક્ટરી</label>
+     <placeholder>XML ફાઇલો ડિરેક્ટરી</placeholder>
+     <validate>XML ફાઇલો ડિરેક્ટરી</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> સ્થાપિત કરી રહ્યું છે. કૃપા કરી પ્રતીક્ષા કરો ... </installing>
+    <success> ઇન્સ્ટોલેશન સફળતાપૂર્વક પૂર્ણ થયું. </success>
+    <error> ઇન્સ્ટોલેશન પૂર્ણ થઈ શક્યું નથી. </error>
+   </alert>
+  
+   <submit> ઇન્સ્ટોલેશન પ્રારંભ કરો </submit>
+   <submit_continue> ચાલુ રાખો &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ગેલેરી મેનેજમેન્ટ </title>
+   <header> ગેલેરી મેનેજમેન્ટ </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ગેલેરી સૂચિ </title>
+   <header> ગેલેરી સૂચિ </header>
+   <sort>
+    <asc> પ્રથમથી છેલ્લા સુધી સર્ટ કરો </asc>
+    <desc> છેલ્લાથી પ્રથમ સુધી સર્ટ કરો </desc>
+   </sort>
+   <card>
+    <view>
+     <button> જુઓ </button>
+     <title> ગેલેરી જુઓ </title>
+    </view>
+    <delete>
+     <button> કા .ી નાખો </button>
+     <title> ગેલેરી કા .ી નાખો </title>
+    </delete>
+    <edit>
+     <button> સંપાદિત કરો </button>
+     <title> ગેલેરીમાં ફેરફાર કરો </title>
+    </edit>
+    <images>છબીઓ</images>
+    <date>તારીખ</date>
+    <move> તમે ગેલેરીઓને માઉસથી ખેંચીને તેમને સ .ર્ટ કરો શકો છો. </move>
+    <move_mobile>તમારી આંગળીથી કોઈ વસ્તુને ટેપ કરો અને પકડી રાખો અને તેની પસંદગીની રાહ જુઓ. આઇટમ પસંદ થયા પછી, તમે તમારી આંગળીથી ખેંચીને વસ્તુઓને સ sortર્ટ કરી શકો છો.</move_mobile>
+   </card>
+   <alert> કોઈ ગેલેરી મળી નથી. </alert>
+   <modal>
+    <del_gallery>
+     <label> ગેલેરી કા .ી નાખો </label>
+     <close> બંધ </close>
+     <text> શું તમે આ ગેલેરીને સાઇટ પરથી કા .ી નાખો માંગો છો? </text>
+     <command> કા .ી નાખો </command>
+     <cancel> રદ કરો </cancel>
+    </del_gallery>
+    <result>
+     <label> ભૂલ </label>
+     <close> બંધ </close>
+     <text> </text>
+     <command> બંધ કરો </command>
+    </result>
+   </modal>
+   <save_changes> ગેલેરી સortર્ટિંગ સેવ કરો </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ગેલેરી દૃશ્ય </title>
+   <header> ગેલેરી દૃશ્ય </header>
+   <alert> કોઈ છબી મળી નથી. </alert>
+   <share>શેર ગેલેરી</share>
+   <filedate>તારીખ અપલોડ કરો</filedate>
+   <filesize>ફાઇલ કદ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ક્લિપબોર્ડ પર નકલ</label>
+     <close>બંધ</close>
+     <text>ક્લિપબોર્ડ પર લિંક ક .પિ કરી</text>
+     <command>નકલ કરો</command>
+     <cancel>બંધ કરો</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> નવી ગેલેરી બનાવો </title>
+    <header> નવી ગેલેરી બનાવો </header>
+   </new>
+   <edit>
+    <title> ગેલેરીમાં ફેરફાર કરો </title>
+    <header> ગેલેરી સંપાદિત કરો </header>
+   </edit>
+   <gallery_info>
+    <title> ગેલેરી માહિતી </title>
+    <name>
+     <label> ગેલેરી નામ </label>
+     <placeholder> ગેલેરી નામ </placeholder>
+     <validate> ઇનપુટ ગેલેરી નામ </validate>
+    </name>
+    <description>
+     <label> ગેલેરીનું વર્ણન </label>
+     <placeholder> ગેલેરી વર્ણન </placeholder>
+     <validate> ઇનપુટ ગેલેરી વર્ણન </validate>
+    </description>
+    <keywords>
+     <label> ગેલેરી કીવર્ડ્સ અલ્પવિરામ અથવા લાઇન બ્રેક્સ દ્વારા અલગ </label>
+     <placeholder> ગેલેરી કીવર્ડ્સ અલ્પવિરામ અથવા લાઇન બ્રેક્સ દ્વારા અલગ </placeholder>
+     <validate> ગેલેરી કીવર્ડ્સ દાખલ કરો </validate>
+    </keywords>
+    <submit>
+     <save> ગેલેરી સાચવો </save>
+     <update> ગેલેરી અપડેટ કરો </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> અપલોડર માર્ગદર્શિકા </title>
+     <body>
+      <![CDATA[
+<b> છબીઓ બ્રાઉઝ કરો </b> બટનથી તમારા ઉપકરણમાંથી છબીઓ પસંદ કરો અને <b> છબીઓ અપલોડ કરો </b> બટન સાથે સાઇટ પર અપલોડ કરો. <br/> સપોર્ટેડ ઇમેજ ફોર્મેટ્સ: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> અનુમતિપાત્ર ન્યુનત્તમ ઠરાવ: <b>%d x %d px</b> <br/> અનુમતિપાત્ર મહત્તમ ઠરાવ: <b>%d x %d px</b> <br/> એક ફાઇલ મહત્તમ કદ: <b>%d MB</b> <br/> ગેલેરી દીઠ છબીની ગણતરી: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> બધા પસંદ કરો </select_all>
+    <select_del> કા Deleteી નાંખો પસંદ </select_del>
+    <thumb>
+     <exist>
+      <delete> સાઇટ પરથી અપલોડ કરેલી છબી કા </delete>
+      <info> છબી માહિતી </info>
+     </exist>
+     <new>
+      <delete> સાઇટ પરથી અપલોડ કરેલી છબી કા </delete>
+      <cancel> છબી અપલોડ રદ કરો </cancel>
+      <info> છબી માહિતી </info>
+      <rotate> ફેરવો છબી </rotate>
+      <crop> ક્રોપ ઇમેજ </crop>
+     </new>
+     <move> તમે છબીઓને માઉસથી ખેંચીને સ .ર્ટ કરો શકો છો. </move>
+     <move_mobile>તમારી આંગળીથી કોઈ વસ્તુને ટેપ કરો અને પકડી રાખો અને તેની પસંદગીની રાહ જુઓ. આઇટમ પસંદ થયા પછી, તમે તમારી આંગળીથી ખેંચીને વસ્તુઓને સ sortર્ટ કરી શકો છો.</move_mobile>
+    </thumb>
+    <browse> છબીઓ બ્રાઉઝ કરો </browse>
+    <upload> છબીઓ અપલોડ કરો </upload>
+    <uploading> છબીઓ સાઇટ પર અપલોડ કરવામાં આવી રહી છે. અપલોડ પૂર્ણ થાય ત્યાં સુધી પૃષ્ઠને બંધ કરશો નહીં. </uploading>
+    <uploaded> છબીઓ સાઇટ પર અપલોડ કરવામાં આવી છે. </uploaded>
+    <error>સર્વર પર ફાઇલો અપલોડ કરતી વખતે કેટલીક ભૂલો આવી.</error>
+    <save_changes> ઇમેજ ચેંજ્સ સેવ કરો </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> ક્રોપ </crop>
+     <cancel> રદ કરો </cancel>
+    </crop>
+    <del_up_img>
+     <label> ઇમેજ કા .ી નાખો </label>
+     <close> બંધ </close>
+     <text> શું તમે આ છબીને સાઇટ પરથી કા .ી નાખો માંગો છો? </text>
+     <command> કા .ી નાખો </command>
+     <cancel> રદ કરો </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ઇમેજ કા .ી નાખો </label>
+     <close> બંધ </close>
+     <text> શું તમે આ છબીને સાઇટ પરથી કા .ી નાખો માંગો છો? </text>
+     <command> કા .ી નાખો </command>
+     <cancel> રદ કરો </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> પસંદ કરેલી છબીઓ કા .ી નાખો </label>
+     <close> બંધ </close>
+     <text> શું તમે સાઇટ પરથી પસંદ કરેલી છબીઓને કા .ી નાખો માંગો છો? </text>
+     <command> કા .ી નાખો </command>
+     <cancel> રદ કરો </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> છબી માહિતી </label>
+     <close> બંધ </close>
+     <filename> ફાઇલ નામ </filename>
+     <filesize> ફાઇલનું કદ </filesize>
+     <date> તારીખ અપલોડ કરો </date>
+     <title>
+      <label> શીર્ષક </label>
+      <placeholder> છબીનું શીર્ષક </placeholder>
+     </title>
+     <desc>
+      <label> વર્ણન </label>
+      <placeholder> છબી વર્ણન </placeholder>
+     </desc>
+     <keyw>
+      <label> કીવર્ડ્સ </label>
+      <placeholder> અલ્પવિરામ અથવા લાઇન બ્રેક્સ દ્વારા અલગ કરાયેલા કીવર્ડ્સ </placeholder>
+     </keyw>
+     <command> સાચવો / અપડેટ કરો </command>
+     <cancel> રદ કરો </cancel>
+    </img_info>
+    <result>
+     <label> ભૂલ </label>
+     <close> બંધ </close>
+     <text> </text>
+     <command> બંધ કરો </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> અપલોડ કરવા યોગ્ય છબી સેટિંગ્સ </title>
+    <upload_limit>
+     <label> ગેલેરી દીઠ મહત્તમ છબીની ગણતરી </label>
+     <placeholder> ગેલેરી દીઠ મહત્તમ છબીની સંખ્યા </placeholder>
+     <validate> ગેલેરી દીઠ મેક્સ ઇમેજ કાઉન્ટ દાખલ કરો </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> સિંગલ ફાઇલ મેક્સ સાઇઝ (એમબી) </label>
+     <placeholder> સિંગલ ફાઇલ મેક્સ સાઇઝ (એમબી) </placeholder>
+     <validate> ઇનપુટ સિંગલ ફાઇલ મેક્સ સાઇઝ (એમબી) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> અનુમતિપાત્ર ન્યૂનતમ ઠરાવ </label>
+     <width>
+      <placeholder> ન્યૂનતમ પહોળાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </width>
+     <height>
+      <placeholder> ન્યૂનતમ .ંચાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> અનુમતિપાત્ર મહત્તમ ઠરાવ </label>
+     <width>
+      <placeholder> મહત્તમ પહોળાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </width>
+     <height>
+      <placeholder> મહત્તમ .ંચાઇ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ઇમેજ ટ્રાન્સફોર્મ </title>
+    <full_resolution>
+     <label> છબી પૂર્ણ કદ </label>
+     <width>
+      <placeholder> મહત્તમ પહોળાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </width>
+     <height>
+      <placeholder> મહત્તમ .ંચાઇ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> થંબનેલનું કદ </label>
+     <width>
+      <placeholder> અંગૂઠાની પહોળાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </width>
+     <height>
+      <placeholder> અંગૂઠાની .ંચાઇ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> સ્લાઇડ કદ </label>
+     <width>
+      <placeholder> સ્લાઇડ પહોળાઈ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </width>
+     <height>
+      <placeholder> સ્લાઇડ .ંચાઇ </placeholder>
+      <validate> કિંમત દાખલ કરો </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> જેપીગ ગુણવત્તા </label>
+    </jpg_quality>
+    <png_compress>
+     <label> પી.એન.જી. કમ્પ્રેસ </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> વોટરમાર્ક </title>
+    <label> વોટરમાર્ક ઉપયોગ કરો </label>
+    <position> વોટરમાર્ક પોઝિશન </position>
+    <image> વોટરમાર્ક છબી </image>
+    <set> વોટરમાર્ક સેટ કરો </set>
+    <browse> 1- વોટરમાર્ક છબી ફાઇલ બ્રાઉઝ કરો </browse>
+    <adjust> 2- ફ્રેમ અનુસાર છબીને સમાયોજિત કરો. </adjust>
+    <upload> 3- પસંદ કરેલી ફાઇલ અપલોડ કરો </upload>
+    <uploading> અપલોડ કરી રહ્યું છે ... </uploading>
+    <uploaded> અપલોડ કરેલું. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> પૃષ્ઠ </page>
+   <first> પ્રથમ પૃષ્ઠ </first>
+   <prev> પાછલું પૃષ્ઠ </prev>
+   <next> આગલું પૃષ્ઠ </next>
+   <last> છેલ્લું પૃષ્ઠ </last>
+  </pagination>
+
+</lang>

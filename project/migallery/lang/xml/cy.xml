@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Iaith </title>
+   <label> Dewis Iaith </label>
+  </lang>
+
+  <timezone>
+   <title>Parth amser</title>
+   <label>Dewiswch Parth Amser</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Rheoli Oriel </gallery_man>
+   <gallery_list> Rhestr Oriel </gallery_list>
+   <uploader> Creu Oriel Newydd </uploader>
+   <back> Yn ôl </back>
+  </nav>
+
+  <install>
+ 
+   <title> Gosodiad MIGallery </title>
+   <header> Gosodiad MIGallery </header>
+
+   <img_direction>
+    <label> Oriel, delwedd a chyfeiriad sleidiau </label>
+    <left> Chwith i'r Dde </left>
+    <right> Hawl i'r Chwith </right>
+   </img_direction>
+
+   <db_info>
+    <title> Gwybodaeth am Gronfa Ddata MySQL </title>
+    <host>
+     <label> Enw Gwesteiwr Cronfa Ddata </label>
+     <placeholder> Enw Gwesteiwr Cronfa Ddata </placeholder>
+     <validate> Rhowch Enw Gwesteiwr y Gronfa Ddata </validate>
+    </host>
+    <user>
+     <label> Enw Defnyddiwr Cronfa Ddata </label>
+     <placeholder> Enw Defnyddiwr Cronfa Ddata </placeholder>
+     <validate> Rhowch Enw Defnyddiwr y Gronfa Ddata </validate>
+    </user>
+    <pass>
+     <label> Cyfrinair Cronfa Ddata </label>
+     <placeholder> Cyfrinair Cronfa Ddata </placeholder>
+     <validate> Rhowch Gyfrinair Cronfa Ddata </validate>
+    </pass>
+    <db>
+     <label> Enw Cronfa Ddata </label>
+     <placeholder> Enw Cronfa Ddata </placeholder>
+     <validate> Rhowch Enw'r Gronfa Ddata </validate>
+    </db>
+    <gal_table>
+     <label> Enw Tabl Oriel </label>
+     <placeholder> Enw Tabl Oriel </placeholder>
+     <validate> Rhowch Enw Tabl Oriel </validate>
+    </gal_table>
+    <img_table>
+     <label> Enw Tabl Delwedd </label>
+     <placeholder> Enw Tabl Delwedd </placeholder>
+     <validate> Rhowch Enw Tabl Delwedd </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Cyfeiriaduron ar gyfer cynnwys deinamig ysgrifenadwy</title>
+    <db_alert>
+     <![CDATA[
+    Y cyfeiriadur canlynol yw lle bydd y ffeiliau <b> cyfluniad </b>, <b> log gwall </b> a <b> diffiniadau </b> yn cael eu creu. Os ydych chi am newid enw'r cyfeiriadur hwn, newidiwch y diffiniad <b> DB_DIR </b> yn y ffeil <b> definitions0.php </b> ac adnewyddwch y dudalen hon. <br/> <br/> Os ydych chi am newid enw ffeil ffurfweddu, enw ffeil log gwall a diffiniadau enw ffeil, newid diffiniadau <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> a <b> DEFINITIONS_FILE </b> yn y ffeil definitions0.php. <br/> <br/> Os yw'ch system wedi'i seilio ar unix, gosodwch y caniatâd ysgrifennu gyda'r gorchymyn canlynol: <br/> <b>%s</b> <br/> <br/> Cyn dechrau'r gosodiad, gwnewch yn siŵr bod y llwybr canlynol yn bodoli a bod ganddo ganiatâd ysgrifenedig:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Cyn dechrau'r gosodiad, gwnewch yn siŵr bod y cyfeirlyfrau canlynol yn bodoli a bod gennych ganiatâd i ysgrifennu at y cyfeirlyfrau. <br/> <br/> Os ydych chi'n mynd i ddefnyddio cyfeirlyfrau heblaw'r cyfeirlyfrau canlynol, os nad yw'r cyfeirlyfrau'n bodoli ar ddisg, crëwch y cyfeirlyfrau yn gyntaf a gosodwch y caniatâd ysgrifennu a chychwyn y gosodiad.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Ffeil Ffurfweddu, ffeil Log Gwall a llwybr ffeil Diffiniadau</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Mae'r cyfeirlyfrau canlynol yn cael eu creu pan fydd yr oriel newydd yn cael ei chadw. Mae <b>%d</b> yn nodi id yr oriel. Mae'r cyfeirlyfrau hyn yn cael eu creu ar y cyfeiriadur <b> Llwybr Sylfaen Delwedd </b> a ddiffinnir uchod. Gwiriwch a yw fformat y cyfeirlyfrau yn briodol.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Mae'r ffeil ffurfweddu wedi'i chreu o'r blaen. Felly, ni allwch redeg y setup. Yn gyntaf rhaid i chi ddileu'r ffeil ffurfweddu ac yna rhedeg y setup.</config_alert>
+    <tmp_dir>
+     <label>Cyfeiriadur Delwedd Dros Dro</label>
+     <placeholder>Cyfeiriadur Delwedd Dros Dro</placeholder>
+     <validate>Cyfeiriadur Delwedd Dros Dro</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Cyfeiriadur Dros Dro Bawd</label>
+     <placeholder>Cyfeiriadur Dros Dro Bawd</placeholder>
+     <validate>Cyfeiriadur Dros Dro Bawd</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Cyfeiriadur dros dro o fawd torri</label>
+     <placeholder>Cyfeiriadur dros dro o fawd torri</placeholder>
+     <validate>Cyfeiriadur dros dro o fawd torri</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Cyfeiriadur Dros Dro Delwedd Sleid</label>
+     <placeholder>Cyfeiriadur Dros Dro Delwedd Sleid</placeholder>
+     <validate>Cyfeiriadur Dros Dro Delwedd Sleid</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Llwybr Sylfaen Delwedd</label>
+     <placeholder>Llwybr Sylfaen Delwedd</placeholder>
+     <validate>Llwybr Sylfaen Delwedd</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>cyfeiriadur delwedd</label>
+     <placeholder>cyfeiriadur delwedd</placeholder>
+     <validate>cyfeiriadur delwedd</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Cyfeiriadur o ddelwedd bawd</label>
+     <placeholder>Cyfeiriadur o ddelwedd bawd</placeholder>
+     <validate>Cyfeiriadur o ddelwedd bawd</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Cyfeiriadur Bawd Cnwd</label>
+     <placeholder>Cyfeiriadur Bawd Cnwd</placeholder>
+     <validate>Cyfeiriadur Bawd Cnwd</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Cyfeiriadur Delwedd Sleidiau</label>
+     <placeholder>Cyfeiriadur Delwedd Sleidiau</placeholder>
+     <validate>Cyfeiriadur Delwedd Sleidiau</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Cyfeiriadur Ffeiliau XML</label>
+     <placeholder>Cyfeiriadur Ffeiliau XML</placeholder>
+     <validate>Cyfeiriadur Ffeiliau XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Gosod. Arhoswch ... </installing>
+    <success> Cwblhawyd y gosodiad yn llwyddiannus. </success>
+    <error> Ni ellid cwblhau'r gosodiad. </error>
+   </alert>
+  
+   <submit> Start Installation </submit>
+   <submit_continue> Parhau &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Rheoli Oriel </title>
+   <header> Rheoli Oriel </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Rhestr Oriel </title>
+   <header> Rhestr Oriel </header>
+   <sort>
+    <asc> didoli o'r cyntaf i'r olaf </asc>
+    <desc> didoli o'r olaf i'r cyntaf </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Gweld </button>
+     <title> Gweld Oriel </title>
+    </view>
+    <delete>
+     <button> Dileu </button>
+     <title> Dileu Oriel </title>
+    </delete>
+    <edit>
+     <button> Golygu </button>
+     <title> Golygu Oriel </title>
+    </edit>
+    <images>delweddau</images>
+    <date>Dyddiad</date>
+    <move> Gallwch chi ddidoli'r orielau trwy eu llusgo gyda'r llygoden. </move>
+    <move_mobile>Tap a dal eitem gyda'ch bys ac aros iddi gael ei dewis. Ar ôl i'r eitem gael ei dewis, gallwch chi ddidoli'r eitemau trwy lusgo â'ch bys.</move_mobile>
+   </card>
+   <alert> Ni ddarganfuwyd oriel. </alert>
+   <modal>
+    <del_gallery>
+     <label> Dileu Oriel </label>
+     <close> cau </close>
+     <text> Ydych chi am ddileu'r oriel hon o'r wefan? </text>
+     <command> Dileu </command>
+     <cancel> Canslo </cancel>
+    </del_gallery>
+    <result>
+     <label> Gwall </label>
+     <close> cau </close>
+     <text> </text>
+     <command> Caewch </command>
+    </result>
+   </modal>
+   <save_changes> Cadw Trefnu Oriel </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> View View </title>
+   <header> View View </header>
+   <alert> Ni ddarganfuwyd delwedd. </alert>
+   <share>Oriel Rhannu</share>
+   <filedate>Dyddiad Llwytho</filedate>
+   <filesize>Maint Ffeil</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copïo I'r clipfwrdd</label>
+     <close>cau</close>
+     <text>Copïwyd y ddolen i'r clipfwrdd</text>
+     <command>Copi</command>
+     <cancel>Caewch</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Creu Oriel Newydd </title>
+    <header> Creu Oriel Newydd </header>
+   </new>
+   <edit>
+    <title> Golygu Oriel </title>
+    <header> Golygu Oriel </header>
+   </edit>
+   <gallery_info>
+    <title> Gwybodaeth Oriel </title>
+    <name>
+     <label> Enw'r Oriel </label>
+     <placeholder> Enw'r Oriel </placeholder>
+     <validate> Enw Oriel Mewnbwn </validate>
+    </name>
+    <description>
+     <label> Disgrifiad Oriel </label>
+     <placeholder> Disgrifiad Oriel </placeholder>
+     <validate> Disgrifiad Oriel Mewnbwn </validate>
+    </description>
+    <keywords>
+     <label> Allweddeiriau oriel wedi'u gwahanu gan linellau neu atalnodau newydd </label>
+     <placeholder> Allweddeiriau oriel wedi'u gwahanu gan linellau neu atalnodau newydd </placeholder>
+     <validate> Rhowch Allweddeiriau Oriel </validate>
+    </keywords>
+    <submit>
+     <save> Save Gallery </save>
+     <update> Diweddariad Oriel </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Canllaw Llwythwr </title>
+     <body>
+      <![CDATA[
+Dewiswch ddelweddau o'ch dyfais gyda'r botwm <b> Pori Delweddau </b> a'u huwchlwytho i'r wefan gyda'r botwm <b> Llwytho Delweddau </b>. <br/> Fformatau Delwedd â Chefnogaeth: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Isafswm Datrysiad a Ganiateir: <b>%d x %d px</b> <br/> Datrysiad Uchaf a Ganiateir: <b>%d x %d px</b> <br/> Uchafswm Ffeil Sengl: <b>%d MB</b> <br/> Cyfrif Delwedd fesul Oriel: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Dewiswch Bawb </select_all>
+    <select_del> Dileu Dethol </select_del>
+    <thumb>
+     <exist>
+      <delete> Dileu Delwedd wedi'i Llwytho i Lawr O'r Safle </delete>
+      Gwybodaeth Delwedd <info> </info>
+     </exist>
+     <new>
+      <delete> Dileu Delwedd wedi'i Uwchlwytho o'r Safle </delete>
+      <cancel> Canslo Llwythiad Delwedd </cancel>
+      <info> Gwybodaeth Delwedd </info>
+      <rotate> Cylchdroi Delwedd </rotate>
+      <crop> Delwedd Cnwd </crop>
+     </new>
+     <move> Gallwch chi ddidoli'r delweddau trwy eu llusgo gyda'r llygoden. </move>
+     <move_mobile>Tap a dal eitem gyda'ch bys ac aros iddi gael ei dewis. Ar ôl i'r eitem gael ei dewis, gallwch chi ddidoli'r eitemau trwy lusgo â'ch bys.</move_mobile>
+    </thumb>
+    <browse> Pori Delweddau </browse>
+    <upload> Llwytho Delweddau </upload>
+    <uploading> Mae delweddau'n cael eu huwchlwytho i'r wefan. Peidiwch â chau'r dudalen nes bod y llwythiad wedi'i gwblhau. </uploading>
+    <uploaded> Mae delweddau wedi'u huwchlwytho i'r wefan. </uploaded>
+    <error>Digwyddodd rhai gwallau wrth uwchlwytho ffeiliau i'r gweinydd.</error>
+    <save_changes> Cadw Newidiadau Delwedd </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Cnwd </crop>
+     <cancel> Canslo </cancel>
+    </crop>
+    <del_up_img>
+     <label> Dileu Delwedd </label>
+     <close> cau </close>
+     <text> Ydych chi am ddileu'r ddelwedd hon o'r wefan? </text>
+     <command> Dileu </command>
+     <cancel> Canslo </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Dileu Delwedd </label>
+     <close> cau </close>
+     <text> Ydych chi am ddileu'r ddelwedd hon o'r wefan? </text>
+     <command> Dileu </command>
+     <cancel> Canslo </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Dileu Delweddau Dethol </label>
+     <close> cau </close>
+     <text> Ydych chi am ddileu'r delweddau a ddewiswyd o'r wefan? </text>
+     <command> Dileu </command>
+     <cancel> Canslo </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Gwybodaeth Delwedd </label>
+     <close> cau </close>
+     <filename> Enw Ffeil </filename>
+     <filesize> Maint Ffeil </filesize>
+     <date> Dyddiad y llwytho i fyny </date>
+     <title>
+      <label> Teitl </label>
+      <placeholder> Teitl Delwedd </placeholder>
+     </title>
+     <desc>
+      <label> Disgrifiad </label>
+      <placeholder> Disgrifiad Delwedd </placeholder>
+     </desc>
+     <keyw>
+      <label> Geiriau allweddol </label>
+      <placeholder> Geiriau allweddol wedi'u gwahanu gan linellau neu atalnodau newydd </placeholder>
+     </keyw>
+     <command> Cadw / Diweddaru </command>
+     <cancel> Canslo </cancel>
+    </img_info>
+    <result>
+     <label> Gwall </label>
+     <close> cau </close>
+     <text> </text>
+     <command> Caewch </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Llwythwch i fyny Gosodiadau Delwedd </title>
+    <upload_limit>
+     <label> Uchafswm y ddelwedd fesul oriel </label>
+     <placeholder> Uchafswm y ddelwedd fesul oriel </placeholder>
+     <validate> Rhowch Uchafswm y ddelwedd fesul oriel </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Uchafswm Maint Ffeil Sengl (MB) </label>
+     <placeholder> Uchafswm Maint Ffeil Sengl (MB) </placeholder>
+     <validate> Rhowch Uchafswm Maint Ffeil Sengl (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Isafswm Datrysiad a Ganiateir </label>
+     <width>
+      <placeholder> Lled Lleiaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </width>
+     <height>
+      <placeholder> Uchder lleiaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Datrysiad Max a Ganiateir </label>
+     <width>
+      <placeholder> lled mwyaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </width>
+     <height>
+      <placeholder> Uchder Uchaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Trawsnewid Delwedd </title>
+    <full_resolution>
+     <label> Delwedd Maint Llawn </label>
+     <width>
+      <placeholder> lled mwyaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </width>
+     <height>
+      <placeholder> Uchder Uchaf </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Maint Bawd </label>
+     <width>
+      <placeholder> Lled Bawd </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </width>
+     <height>
+      <placeholder> Uchder Bawd </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Maint Sleid </label>
+     <width>
+      <placeholder> Lled Sleid </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </width>
+     <height>
+      <placeholder> Uchder Sleid </placeholder>
+      <validate> Gwerth mewnbwn </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Quality </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Compress </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Dyfrnod </title>
+    <label> Defnyddiwch Watermark </label>
+    <position> Swydd Dyfrnod </position>
+    <image> Delwedd Dyfrnod </image>
+    <set> Gosod Dyfrnod </set>
+    <browse> 1- Porwch Ffeil Delwedd Dyfrnod </browse>
+    <adjust> 2- Addaswch y ddelwedd yn ôl y ffrâm. </adjust>
+    <upload> 3- Llwythwch Ffeil Dethol i fyny </upload>
+    <uploading> Llwytho i fyny ... </uploading>
+    <uploaded> Llwythwyd i fyny. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Tudalen </page>
+   <first> Tudalen Gyntaf </first>
+   <prev> Tudalen Blaenorol </prev>
+   <next> Tudalen Nesaf </next>
+   <last> Tudalen Olaf </last>
+  </pagination>
+
+</lang>

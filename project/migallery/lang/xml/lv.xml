@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Valoda </title>
+   <label> Atlasiet valodu </label>
+  </lang>
+
+  <timezone>
+   <title>Laika zona</title>
+   <label>Atlasiet Laika josla</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerijas pārvaldība </gallery_man>
+   <gallery_list> Galeriju saraksts </gallery_list>
+   <uploader> Izveidot jaunu galeriju </uploader>
+   <back> atpakaļ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery iestatīšana </title>
+   <header> MIGallery iestatīšana </header>
+
+   <img_direction>
+    <label> Galerija, attēls un slaida virziens </label>
+    <left> no kreisās uz labo </left>
+    <right> no labās uz kreiso </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL datu bāzes informācija </title>
+    <host>
+     <label> Datu bāzes resursdatora nosaukums </label>
+     <placeholder> Datu bāzes resursdatora nosaukums </placeholder>
+     <validate> Ievades datu bāzes resursdatora nosaukums </validate>
+    </host>
+    <user>
+     <label> Datu bāzes lietotājvārds </label>
+     <placeholder> Datu bāzes lietotājvārds </placeholder>
+     <validate> ievades datu bāzes lietotājvārds </validate>
+    </user>
+    <pass>
+     <label> Datu bāzes parole </label>
+     <placeholder> Datu bāzes parole </placeholder>
+     <validate> Ievades datu bāzes parole </validate>
+    </pass>
+    <db>
+     <label> Datu bāzes nosaukums </label>
+     <placeholder> Datu bāzes nosaukums </placeholder>
+     <validate> ievades datu bāzes nosaukums </validate>
+    </db>
+    <gal_table>
+     <label> Galerijas tabulas nosaukums </label>
+     <placeholder> galerijas tabulas nosaukums </placeholder>
+     <validate> Ievades galerijas tabulas nosaukums </validate>
+    </gal_table>
+    <img_table>
+     <label> Attēlu tabulas nosaukums </label>
+     <placeholder> Attēla tabulas nosaukums </placeholder>
+     <validate> Ievades attēla tabulas nosaukums </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Katalogi rakstāmam dinamiskam saturam</title>
+    <db_alert>
+     <![CDATA[
+    Faili <b> konfigurācija </b>, <b> kļūdu žurnāls </b> un <b> definīcija </b> tiks izveidoti zemāk esošajā direktorijā. Ja vēlaties mainīt šīs direktorijas nosaukumu, mainiet <b> DB_DIR </b> definīciju failā <b> definitions0.php </b> un atsvaidziniet šo lapu.<br/><br/>Ja vēlaties pārdēvēt konfigurācijas failu, kļūdu žurnāla failu un definīciju failu, mainiet <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> un <b>DEFINITIONS_FILE</b> vērtības failā definitions0.php.<br/><br/>Ja jūsu sistēma ir balstīta uz unix, iestatiet rakstīšanas atļaujas ar šādu komandu:<br/><b>%s</b><br/><br/>Pirms instalēšanas sākšanas pārliecinieties, vai pastāv šāds ceļš un vai jums ir atļaujas rakstīt direktorijā:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Pirms instalēšanas sākšanas pārliecinieties, vai ir pieejami šādi direktoriji un vai jums ir atļauja rakstīt direktorijiem. <br/> <br/> Ja jūs izmantojat citus direktorijus, nevis šos direktorijus, ja diskā nepastāv direktoriji, vispirms izveidojiet direktorijus un iestatiet šo direktoriju rakstīšanas atļaujas un sāciet instalēšanu.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurācijas, kļūdu žurnāla un definīciju failu ceļš</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Saglabājot jauno galeriju, tiek izveidoti šādi direktoriji. <b>%d</b> norāda galerijas ID. Šie direktoriji tiek izveidoti iepriekš definētajā direktorijā <b> Attēlu bāzes mape </b>. Pārliecinieties, vai šo direktoriju formāts ir piemērots.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfigurācijas fails ir izveidots iepriekš. Tāpēc iestatīšanu nevar palaist. Vispirms jums jāizdzēš konfigurācijas fails un pēc tam jāveic iestatīšana.</config_alert>
+    <tmp_dir>
+     <label>Pagaidu attēlu mape</label>
+     <placeholder>Pagaidu attēlu mape</placeholder>
+     <validate>Pagaidu attēlu mape</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Pagaidu sīktēlu mape</label>
+     <placeholder>Pagaidu sīktēlu mape</placeholder>
+     <validate>Pagaidu sīktēlu mape</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Pagaidu apgriezti sīktēli mape</label>
+     <placeholder>Pagaidu apgriezti sīktēli mape</placeholder>
+     <validate>Pagaidu apgriezti sīktēli mape</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Pagaidu slaidu attēlu mape</label>
+     <placeholder>Pagaidu slaidu attēlu mape</placeholder>
+     <validate>Pagaidu slaidu attēlu mape</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Attēlu bāzes mape</label>
+     <placeholder>Attēlu bāzes mape</placeholder>
+     <validate>Attēlu bāzes mape</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Attēlu mape</label>
+     <placeholder>Attēlu mape</placeholder>
+     <validate>Attēlu mape</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Sīktēlu mape</label>
+     <placeholder>Sīktēlu mape</placeholder>
+     <validate>Sīktēlu mape</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Apgriezti sīktēli mape</label>
+     <placeholder>Apgriezti sīktēli mape</placeholder>
+     <validate>Apgriezti sīktēli mape</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slaidu attēlu mape</label>
+     <placeholder>Slaidu attēlu mape</placeholder>
+     <validate>Slaidu attēlu mape</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML failu direktorijs</label>
+     <placeholder>XML failu direktorijs</placeholder>
+     <validate>XML failu direktorijs</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instalēšana. Lūdzu, uzgaidiet ... </installing>
+    <success> Instalēšana ir veiksmīgi pabeigta. </success>
+    <error> Instalēšanu nevarēja pabeigt. </error>
+   </alert>
+  
+   <submit> Sākt instalēšanu </submit>
+   <submit_continue> Turpināt &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerijas pārvaldība </title>
+   <header> Galerijas pārvaldība </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galeriju saraksts </title>
+   <header> Galeriju saraksts </header>
+   <sort>
+    <asc> kārtot no pirmā uz pēdējo </asc>
+    <desc> kārtot no pēdējā uz pirmo </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Skatīt </button>
+     <title> Skatīt galeriju </title>
+    </view>
+    <delete>
+     <button> Dzēst </button>
+     <title> Dzēst galeriju </title>
+    </delete>
+    <edit>
+     <button> Rediģēt </button>
+     <title> Rediģēt galeriju </title>
+    </edit>
+    <images>attēlus</images>
+    <date>Datums</date>
+    <move> Galerijas var kārtot, velkot ar peli. </move>
+    <move_mobile>Pieskarieties vienumam un turiet to ar pirkstu un gaidiet, kamēr tas tiks iezīmēts. Pēc vienuma atlasīšanas velciet pirkstu, lai kārtotu vienumus.</move_mobile>
+   </card>
+   <alert> Galerija nav atrasta. </alert>
+   <modal>
+    <del_gallery>
+     <label> Dzēst galeriju </label>
+     <close> aizvērt </close>
+     <text> Vai vēlaties dzēst šo galeriju no servera? </text>
+     <command> Dzēst </command>
+     <cancel> atcelt </cancel>
+    </del_gallery>
+    <result>
+     <label> kļūda </label>
+     <close> aizvērt </close>
+     <text> </text>
+     <command> Aizvērt </command>
+    </result>
+   </modal>
+   <save_changes> Saglabāt galeriju kārtošanas secību </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galerijas skats </title>
+   <header> Galerijas skats </header>
+   <alert> Attēls nav atrasts. </alert>
+   <share>Kopīgot galeriju</share>
+   <filedate>Augšuplādes datums</filedate>
+   <filesize>Faila lielums</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopēt starpliktuvē</label>
+     <close>aizvērt</close>
+     <text>Saite nokopēta starpliktuvē</text>
+     <command>Kopēt</command>
+     <cancel>Aizvērt</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Izveidot jaunu galeriju </title>
+    <header> Izveidot jaunu galeriju </header>
+   </new>
+   <edit>
+    <title> Rediģēt galeriju </title>
+    <header> Rediģēt galeriju </header>
+   </edit>
+   <gallery_info>
+    <title> Galerijas informācija </title>
+    <name>
+     <label> Galerijas nosaukums </label>
+     <placeholder> Galerijas nosaukums </placeholder>
+     <validate> Ievades galerijas nosaukums </validate>
+    </name>
+    <description>
+     <label> Galerijas apraksts </label>
+     <placeholder> Galerijas apraksts </placeholder>
+     <validate> Ievades galerijas apraksts </validate>
+    </description>
+    <keywords>
+     <label> Galerijas atslēgvārdi atdalīti ar komatiem vai rindiņu pārtraukumiem </label>
+     <placeholder> Galerijas atslēgvārdi atdalīti ar komatiem vai rindiņu pārtraukumiem </placeholder>
+     <validate> Ievadiet galerijas atslēgvārdus </validate>
+    </keywords>
+    <submit>
+     <save> Saglabāt galeriju </save>
+     <update> Atjaunināt galeriju </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Augšupielādētāju ceļvedis </title>
+     <body>
+      <![CDATA[
+Atlasiet attēlus no savas ierīces, izmantojot pogu <b> Pārlūkot attēlus </b> un augšupielādējiet vietnē, izmantojot pogu <b> Augšupielādēt attēlus </b>. <br/> Atbalstītie attēlu formāti: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Pieļaujamā minimālā izšķirtspēja: <b>%d x %d px</b> <br/> Pieļaujamā maksimālā izšķirtspēja: <b>%d x %d px</b> <br/> Viena faila maksimālais lielums: <b>%d MB</b> <br/> Attēlu skaits vienā galerijā: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Atlasīt visu </select_all>
+    <select_del> Dzēst atlasītos attēlus </select_del>
+    <thumb>
+     <exist>
+      <delete> Dzēst augšupielādēto attēlu no vietnes </delete>
+      <info> Informācija par attēlu </info>
+     </exist>
+     <new>
+      <delete> Dzēst augšupielādēto attēlu no vietnes </delete>
+      <cancel> Atcelt attēla augšupielādi </cancel>
+      <info> Informācija par attēlu </info>
+      <rotate> Pagriezt attēlu </rotate>
+      <crop> Apgriezt attēlu </crop>
+     </new>
+     <move> Jūs varat kārtot attēlus, velkot tos ar peli. </move>
+     <move_mobile>Pieskarieties vienumam un turiet to ar pirkstu un gaidiet, kamēr tas tiks iezīmēts. Pēc vienuma atlasīšanas velciet pirkstu, lai kārtotu vienumus.</move_mobile>
+    </thumb>
+    <browse> Pārlūkot attēlus </browse>
+    <upload> Augšupielādēt attēlus </upload>
+    <uploading> Attēli tiek augšupielādēti to vietne. Neaizveriet lapu, kamēr augšupielāde nav pabeigta. </uploading>
+    <uploaded> Attēli ir augšupielādēti vietnē. </uploaded>
+    <error>Augšupielādējot failus serverī, radās dažas kļūdas.</error>
+    <save_changes> Saglabāt attēla izmaiņas </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Apgriezt </crop>
+     <cancel> atcelt </cancel>
+    </crop>
+    <del_up_img>
+     <label> Dzēst attēlu </label>
+     <close> aizvērt </close>
+     <text> Vai vēlaties izdzēst šo attēlu no servera? </text>
+     <command> Dzēst </command>
+     <cancel> atcelt </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Dzēst attēlu </label>
+     <close> aizvērt </close>
+     <text> Vai vēlaties izdzēst šo attēlu no servera? </text>
+     <command> Dzēst </command>
+     <cancel> atcelt </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Dzēst atlasītos attēlus </label>
+     <close> aizvērt </close>
+     <text> Vai vēlaties dzēst atlasītos attēlus no vietnes? </text>
+     <command> Dzēst </command>
+     <cancel> atcelt </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informācija par attēlu </label>
+     <close> aizvērt </close>
+     <filename> faila nosaukums </filename>
+     <filesize> Faila lielums </filesize>
+     <date> Augšuplādes datums </date>
+     <title>
+      <label> Nosaukums </label>
+      <placeholder> Attēla nosaukums </placeholder>
+     </title>
+     <desc>
+      <label> Apraksts </label>
+      <placeholder> Attēla apraksts </placeholder>
+     </desc>
+     <keyw>
+      <label> Atslēgvārdi </label>
+      <placeholder> Atslēgvārdi atdalīti ar komatiem vai līniju pārtraukumiem </placeholder>
+     </keyw>
+     <command> Saglabāt / atjaunināt </command>
+     <cancel> atcelt </cancel>
+    </img_info>
+    <result>
+     <label> kļūda </label>
+     <close> aizvērt </close>
+     <text> </text>
+     <command> Aizvērt </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Attēla iestatījumi atļautai augšupielādei </title>
+    <upload_limit>
+     <label> Maksimālais attēlu skaits vienā galerijā </label>
+     <placeholder> Maksimālais attēlu skaits vienā galerijā </placeholder>
+     <validate> Ievadiet maksimālo attēlu skaitu vienā galerijā </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Viena faila maksimālais lielums (MB) </label>
+     <placeholder> Viena faila maksimālais lielums (MB) </placeholder>
+     <validate> Ievadiet viena faila maksimālo lielumu (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Pieļaujamā minimālā izšķirtspēja </label>
+     <width>
+      <placeholder> Minimālais platums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </width>
+     <height>
+      <placeholder> Minimālais augstums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Pieļaujamā maksimālā izšķirtspēja </label>
+     <width>
+      <placeholder> Maksimālais platums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </width>
+     <height>
+      <placeholder> Maksimālais augstums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Attēla pārveidošana </title>
+    <full_resolution>
+     <label> Pilna izmēra attēls </label>
+     <width>
+      <placeholder> Maksimālais platums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </width>
+     <height>
+      <placeholder> Maksimālais augstums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Sīktēla izmērs </label>
+     <width>
+      <placeholder> Īkšķa platums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </width>
+     <height>
+      <placeholder> Īkšķa augstums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Slaida izmērs </label>
+     <width>
+      <placeholder> Slaida platums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </width>
+     <height>
+      <placeholder> Slaida augstums </placeholder>
+      <validate> Ievadiet vērtību </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG kvalitāte </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG saspiest </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Ūdenszīme </title>
+    <label> Izmantojiet ūdenszīmi </label>
+    <position> Ūdenszīmes novietojums </position>
+    <image> Ūdenszīmes attēls </image>
+    <set> Iestatīt ūdenszīmi </set>
+    <browse> 1- Pārlūkot ūdenszīmes attēla failu </browse>
+    <adjust> 2- Pielāgojiet attēlu atbilstoši rāmim. </adjust>
+    <upload> 3- Augšupielādēt atlasīto failu </upload>
+    <uploading> Augšupielāde ... </uploading>
+    <uploaded> Augšupielādēts. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> lapa </page>
+   <first> pirmā lapa </first>
+   <prev> Iepriekšējā lapa </prev>
+   <next> Nākamā lapa </next>
+   <last> pēdējā lapa </last>
+  </pagination>
+
+</lang>

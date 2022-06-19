@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Luqad </title>
+   <label> Xullo Luqad </label>
+  </lang>
+
+  <timezone>
+   <title>Aaga waqtiga</title>
+   <label>Xulo Aaga Waqtiga</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Maamulka Gallery </gallery_man>
+   <gallery_list> Liistada Gawaarida </gallery_list>
+   <uploader> Abuur Gallery Cusub </uploader>
+   <back> Dib </back>
+  </nav>
+
+  <install>
+ 
+   <title> Dejinta MIGallery </title>
+   <header> Dejinta MIGallery </header>
+
+   <img_direction>
+    <label> Gallery, sawirka iyo jihada isbadalka </label>
+    <left> Bidix ilaa Midig </left>
+    <right> midig ilaa bidix </right>
+   </img_direction>
+
+   <db_info>
+    <title> Dejinta keydka macluumaadka MySQL </title>
+    <host>
+     <label> keydka macluumaadka magaca martida </label>
+     <placeholder> keydka macluumaadka magaca martida </placeholder>
+     <validate> keydka macluumaadka magaca martida </validate>
+    </host>
+    <user>
+     <label> magaca isticmaalaha keydka macluumaadka </label>
+     <placeholder> magaca isticmaalaha keydka macluumaadka </placeholder>
+     <validate> Gali magaca isticmaalaha keydka macluumaadka </validate>
+    </user>
+    <pass>
+     <label> lambarka sirta ah keydka macluumaadka  </label>
+     <placeholder> lambarka sirta ah keydka macluumaadka  </placeholder>
+     <validate> Gali lambarka sirta ah keydka macluumaadka </validate>
+    </pass>
+    <db>
+     <label> magaca keydka macluumaadka </label>
+     <placeholder> magaca keydka macluumaadka </placeholder>
+     <validate> Gali magaca keydka macluumaadka </validate>
+    </db>
+    <gal_table>
+     <label> Magaca miiska gallery ee keydka macluumaadka </label>
+     <placeholder> Magaca miiska gallery ee keydka macluumaadka </placeholder>
+     <validate> Magaca miiska gallery ee keydka macluumaadka </validate>
+    </gal_table>
+    <img_table>
+     <label> Magaca Miiska Sawirka </label>
+     <placeholder> Magaca Miiska Sawirka </placeholder>
+     <validate> Magaca Miiska Sawirka </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Dariiqyada faylasha loo oggol yahay in lagu qoro</title>
+    <db_alert>
+     <![CDATA[
+    Jidka soo socda ayaa ah halka <b>qaabeynta</b>, <b>khalad gal</b> iyo faylasha <b>qeexitaanka</b> la abuuri doono. Haddii aad rabto inaad bedesho magaca galkaan, beddel qeexitaanka <b> DB_DIR </b> ee kujira feylka <b> definitions0.php </b> oo dib u cusbooneysii boggan.<br/><br/>Haddii aad rabto inaad dib u magacawdo feylka qaabeynta, feylka qaladka, iyo feylasha qeexitaanka, bedel qeexitaannada <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> iyo <b>DEFINITIONS_FILE</b> oo laga soo rogay feylka definitions0.php.<br/><br/>Haddii nidaamkaagu unix ku saleysan yahay, ka dibna u deji rukhsadda faylka la qori karo galka adoo adeegsanaya amarka soo socda:<br/><b>%s</b><br/><br/>Kahor intaadan bilaabin rakibaadda, hubi inaad haysato dariiqa soo socda iyo inaad ogolaansho kuqorto galka:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Kahor intaadan bilaabin rakibaadda, hubi in galka soo socda la heli karo iyo inaad fasax u haysato qoraal ugu dirto tusaha. <br/> <br/> Haddii aad qorsheyneyso inaad adeegsato tusayaal aan ka ahayn hageyaasha soo socda, haddii tusaaluhu uusan ka jirin diskiga, marka hore abuur tusaha oo deji rukhsad qoraal ah oo ku saabsan agaasimayaashaas oo bilow rakibidda.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Jidka loo maro feylasha qaabeynta, qoraalka qaladka, iyo qeexitaanada</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Tusaha soo socda ayaa la abuuri doonaa markii la keydinayo gallery-ka cusub. <b>% d </b> waxay muujineysaa Aqoonsiga gallery. Tusahaani waxaa lagu abuuri doonaa galka <b>Jidka sawirka aasaasiga ah</b> ee kor lagu sharaxay. Hubso in qaabka cinwaanadaasi sax yihiin.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Faylka qaabeynta ayaa la abuuray kahor. Sidaa darteed, ma ordi kartid rakibidda. Waa inaad marka hore tirtirtaa feylka qaabeynta ka dibna aad ku rakibtaa rakibidda.</config_alert>
+    <tmp_dir>
+     <label>Buugga ku-meelgaarka ah ee feylasha sawirka</label>
+     <placeholder>Buugga ku-meelgaarka ah ee feylasha sawirka</placeholder>
+     <validate>Buugga ku-meelgaarka ah ee feylasha sawirka</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Fayl ku meelgaar ah faylasha thumbnail</label>
+     <placeholder>Fayl ku meelgaar ah faylasha thumbnail</placeholder>
+     <validate>Fayl ku meelgaar ah faylasha thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Fayl ku-meelgaar ah oo loogu talagalay faylasha thumbnail la gooyay</label>
+     <placeholder>Fayl ku-meelgaar ah oo loogu talagalay faylasha thumbnail la gooyay</placeholder>
+     <validate>Fayl ku-meelgaar ah oo loogu talagalay faylasha thumbnail la gooyay</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Fayl kumeelgaar ah oo ah sawirro cabbirka slide</label>
+     <placeholder>Fayl kumeelgaar ah oo ah sawirro cabbirka slide</placeholder>
+     <validate>Fayl kumeelgaar ah oo ah sawirro cabbirka slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Jidka sawirka aasaasiga ah</label>
+     <placeholder>Jidka sawirka aasaasiga ah</placeholder>
+     <validate>Jidka sawirka aasaasiga ah</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Tusaha Sawirka</label>
+     <placeholder>Tusaha Sawirka</placeholder>
+     <validate>Tusaha Sawirka</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Fayl ku ah faylasha thumbnail</label>
+     <placeholder>Fayl ku ah faylasha thumbnail</placeholder>
+     <validate>Fayl ku ah faylasha thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Fayl oo loogu talagalay faylasha thumbnail la gooyay</label>
+     <placeholder>Fayl oo loogu talagalay faylasha thumbnail la gooyay</placeholder>
+     <validate>Fayl oo loogu talagalay faylasha thumbnail la gooyay</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Fayl oo ah sawirro cabbirka slide</label>
+     <placeholder>Fayl oo ah sawirro cabbirka slide</placeholder>
+     <validate>Fayl oo ah sawirro cabbirka slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Diiwaanka faylka XML</label>
+     <placeholder>Diiwaanka faylka XML</placeholder>
+     <validate>Diiwaanka faylka XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Ku rakibidda. Fadlan sug... </installing>
+    <success> Rakiibinta si guul leh baa loo dhammeeyay. </success>
+    <error> Rakibaadda lama dhammaystiri karo. </error>
+   </alert>
+  
+   <submit> Start Rakibaadda </submit>
+   <submit_continue> Sii wad &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Maamulka Gallery </title>
+   <header> Maamulka Gallery </header>
+  </gallery_man>
+  
+  <gallery_list>
+  <title> Liiska Gawaarida</title>
+   <header> Liiska Gawaarida </header>
+   <sort>
+    <asc> min bilaw ilaa dhamaad </asc>
+    <desc> min dhamaadka ilaa bilowga </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Fiiri </button>
+     <title> Arag Gallery </title>
+    </view>
+    <delete>
+     <button> Tirtir </button>
+     <title> Tirtir Gallery </title>
+    </delete>
+    <edit>
+     <button> Tafatir </button>
+     <title> Tafatir Gallery </title>
+    </edit>
+    <images>sawirro</images>
+    <date>Taariikhda</date>
+    <move> Waad kala sooci kartaa galleries adigoo jiidaya jiirka. </move>
+    <move_mobile>Taabo oo farta ku hay shayga fartaada kuna sug inay doorato. Kadib xulashada shay, jiido fartaada si aad u kala saarto waxyaabaha.</move_mobile>
+   </card>
+   <alert> Lama helin gallery. </alert>
+   <modal>
+    <del_gallery>
+     <label> Delete Gallery </label>
+     <close> xidho </close>
+     <text> Miyaad dooneysaa inaad ka tirtirto galeylka goobta? </text>
+     <command> tirtir </command>
+     <cancel> baajin </cancel>
+    </del_gallery>
+    <result>
+     <label> Khalad </label>
+     <close> xidho </close>
+     <text> </text>
+     <command> Xidh </command>
+    </result>
+   </modal>
+   <save_changes> Kaydi qabanqaabada galleries </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Muuqaalka Gawaarida</title>
+   <header> Muuqaalka Gawaarida </header>
+   <alert> Wax sawirro ah lama helin. </alert>
+   <share>Share Gallery</share>
+   <filedate>Taariikhda Gelinta</filedate>
+   <filesize>Cabirka Faylka</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Nuqul loo sabuuradda</label>
+     <close>xidho</close>
+     <text>Xiriirinta loo guuriyey sabuuradda</text>
+     <command>Nuqul</command>
+     <cancel>Xidh</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Abuur Gallery Cusub </title>
+    <header> Abuur Gallery Cusub </header>
+   </new>
+   <edit>
+    <title> Tafatirka Gallery </title>
+    <header> Tafatirka Gallery </header>
+   </edit>
+   <gallery_info>
+   <title> Macluumaadka Gawaarida</title>
+    <name>
+     <label> Magaca Gallery </label>
+     <placeholder> Magaca Gallery </placeholder>
+     <validate> Magaca Gallery </validate>
+    </name>
+    <description>
+     <label> Faahfaahinta Gallery </label>
+     <placeholder> Faahfaahinta Gallery </placeholder>
+     <validate> Faahfaahinta Gallery </validate>
+    </description>
+    <keywords>
+     <label> Comma ama khadadka cusub kala ereyada muhiimka ah </label>
+     <placeholder> Comma ama khadadka cusub kala ereyada muhiimka ah </placeholder>
+     <validate> Comma ama khadadka cusub kala ereyada muhiimka ah </validate>
+    </keywords>
+    <submit>
+     <save> Keydka Gallery </save>
+     <update> Cusboonaysiinta Gallery </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Hagaha soo rar sawirka </title>
+     <body>
+      <![CDATA[
+Xulo sawirrada qalabkaaga badhanka <b> Baadh Sawirro </b> oo ku dhaji goobta adoo wata badhanka <b> Soo rar Sawirro </b> b. <br/> Foomamka Sawirka La Taageeray: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Xallinta Ugu Yar ee La Oggol yahay: <b>%d x %d px</b> <br/> Xallinta Ugu Badan ee La Ogolyahay: <b>%d x %d px</b> <br/> Faylka Kaliya Xajmiga Ugu Badan: <b>%d MB</b> <br/> Sawirka Tirakoobka Gawaarida: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Dooro Dhammaan </select_all>
+    <select_del> Tirtir Sawirada Xullan </select_del>
+    <thumb>
+     <exist>
+      <delete> Tirtir Sawirka la soo galiyay Goobta </delete>
+      <info> Macluumaadka Sawirka </info>
+     </exist>
+     <new>
+      <delete> Tirtir Sawirka la soo galiyay Goobta </delete>
+      <cancel> Baajin Soo rar Sawirka </cancel>
+      <info> Macluumaadka Sawirka </info>
+      <rotate> Wareeji Sawirka </rotate>
+      <crop> Sawirka Dalagga </crop>
+     </new>
+     <move> Sawirada waad ku kala sooci kartaa adigoo jiirka ku jiidaya. </move>
+     <move_mobile>Taabo oo farta ku hay shayga fartaada kuna sug inay doorato. Kadib xulashada shay, jiido fartaada si aad u kala saarto waxyaabaha.</move_mobile>
+    </thumb>
+    <browse> Baadh Sawirro </browse>
+    <upload> Soo rar Sawirro </upload>
+    <uploading> Sawirro ayaa kor u kacayaku raran goobta. Ha xidhin bogga illaa inta buuxintu dhammaato. </uploading>
+    <uploaded> Sawirro ayaa la galiyay goobta. </uploaded>
+    <error>Khaladaadka qaar ayaa dhacay intii faylalka loo dirayay serverka.</error>
+    <save_changes> Keydso Isbedelada Sawirka </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Dalag </crop>
+     <cancel> baajin </cancel>
+    </crop>
+    <del_up_img>
+     <label> Tirtir Sawirka </label>
+     <close> xidho </close>
+     <text> Ma waxaad dooneysaa inaad ka tirtirto sawirkan websaydhka? </text>
+     <command> tirtir </command>
+     <cancel> baajin </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Tirtir Sawirka </label>
+     <close> xidho </close>
+     <text> Ma waxaad dooneysaa inaad ka tirtirto sawirkan websaydhka? </text>
+     <command> tirtir </command>
+     <cancel> baajin </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Tirtir Sawirada Xullan </label>
+     <close> xidho </close>
+     <text> Miyaad dooneysaa inaad ka tirtirto sawirada la soo xulay bogga? </text>
+     <command> tirtir </command>
+     <cancel> baajin </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Macluumaadka Sawirka </label>
+     <close> xidho </close>
+     <filename> Magaca Faylka </filename>
+     <filesize> Cabirka Faylka </filesize>
+     <date> Taariikhda Gelinta </date>
+     <title>
+      <label> Cinwaan </label>
+      <placeholder> Cinwaanka Sawirka </placeholder>
+     </title>
+     <desc>
+      <label> Sharaxaad </label>
+      <placeholder> Sharaxaadda Sawirka </placeholder>
+     </desc>
+     <keyw>
+      <label> ereyada muhiimka ah </label>
+      <placeholder> Comma ama khadadka cusub kala ereyada muhiimka ah </placeholder>
+     </keyw>
+     <command> Badbaadi / Cusbooneysii </command>
+     <cancel> baajin </cancel>
+    </img_info>
+    <result>
+     <label> Khalad </label>
+     <close> xidho </close>
+     <text> </text>
+     <command> Xidh </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Dejinta sawirro la oggol yahay </title>
+    <upload_limit>
+     <label> Tirada ugu badan ee sawirada ee gallery </label>
+     <placeholder> Tirada ugu badan ee sawirada ee gallery </placeholder>
+     <validate> Gali Tirada ugu badan ee sawirada ee gallery </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Cabirka ugu badan ee hal ee fayl (MB) </label>
+     <placeholder> Cabirka ugu badan ee hal ee fayl (MB) </placeholder>
+     <validate> Gali Cabirka ugu badan ee hal ee fayl (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Xalinta ugu yar ee sawirka la ogolyahay </label>
+     <width>
+      <placeholder> ballaca ugu yar </placeholder>
+      <validate> Gali qiimaha </validate>
+     </width>
+     <height>
+      <placeholder> dhererka ugu yar </placeholder>
+      <validate> Gali qiimaha </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Xalinta ugu badan ee sawirka la ogolyahay </label>
+     <width>
+      <placeholder> ballaca ugu badan </placeholder>
+      <validate> Gali qiimaha </validate>
+     </width>
+     <height>
+      <placeholder> dhererka ugu badan </placeholder>
+      <validate> Gali qiimaha </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> U beddelo sawirrada </title>
+    <full_resolution>
+     <label> Sawir Cabbir Buuxa </label>
+     <width>
+      <placeholder> ballaca ugu badan </placeholder>
+      <validate> Gali qiimaha </validate>
+     </width>
+     <height>
+      <placeholder> dhererka ugu badan </placeholder>
+      <validate> Gali qiimaha </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Cabirka Thumbnail </label>
+     <width>
+      <placeholder> Balladhka Suulka </placeholder>
+      <validate> Gali qiimaha </validate>
+     </width>
+     <height>
+      <placeholder> Dhererka Suulka </placeholder>
+      <validate> Gali qiimaha </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Cabbirka slide </label>
+     <width>
+      <placeholder> Slide Balladhka </placeholder>
+      <validate> Gali qiimaha </validate>
+     </width>
+     <height>
+      <placeholder> Slide Dhererka </placeholder>
+      <validate> Gali qiimaha </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Tayada Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Cadaadiska PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Isticmaal Watermark </label>
+    <position> Mawqifka Watermark </position>
+    <image> Sawirka Watermark </image>
+    <set> Calaamadee Watermark </set>
+    <browse> 1- Raadi Faylka Watermark </browse>
+    <adjust> 2- Ku hagaaji sawirka si waafaqsan guddiga. </adjust>
+    <upload> 3- Soo rar Fayl Xul ah </upload>
+    <uploading> Soo rarka ... </uploading>
+    <uploaded> Waa lasoo galiyay. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Bog </page>
+   <first> Bogga Koowaad </first>
+   <prev> Boggii Hore </prev>
+   <next> Bogga Xiga </next>
+   <last> Bogga Dambe </last>
+  </pagination>
+
+</lang>

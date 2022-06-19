@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Tungumál </title>
+   <label> Veldu tungumál </label>
+  </lang>
+
+  <timezone>
+   <title>Tímabelti</title>
+   <label>Veldu Tímabelti</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Stjórnun myndasafns </gallery_man>
+   <gallery_list> Gallerílisti </gallery_list>
+   <uploader> Búðu til nýtt gallerí </uploader>
+   <back> Til baka </back>
+  </nav>
+
+  <install>
+ 
+   <title> Uppsetning MIGallery </title>
+   <header> Uppsetning MIGallery </header>
+
+   <img_direction>
+    <label> Gallerí, mynd og renna átt </label>
+    <left> Vinstri til hægri </left>
+    <right> Hægri til vinstri </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL gagnagrunnsupplýsingar </title>
+    <host>
+     <label> Gagnagrunnur Hostname </label>
+     <placeholder> Gagnagrunnur Hostname </placeholder>
+     <validate> Sláðu inn Gagnagrunnur Hostname </validate>
+    </host>
+    <user>
+     <label> Gagnagrunnur notandanafn </label>
+     <placeholder> Gagnagrunnur notandanafn </placeholder>
+     <validate> Sláðu inn Gagnagrunnur notandanafn </validate>
+    </user>
+    <pass>
+     <label> Gagnasafns lykilorð </label>
+     <placeholder> Gagnasafns lykilorð </placeholder>
+     <validate> Sláðu inn Gagnasafns lykilorð </validate>
+    </pass>
+    <db>
+     <label> Nafn gagnagrunns </label>
+     <placeholder> Nafn gagnagrunns </placeholder>
+     <validate> Sláðu inn Nafn gagnagrunns </validate>
+    </db>
+    <gal_table>
+     <label> Gallerí Tafla Nafn </label>
+     <placeholder> Gallerí Tafla Nafn </placeholder>
+     <validate> Sláðu inn Gallerí Tafla Nafn </validate>
+    </gal_table>
+    <img_table>
+     <label> Nafn Gagnasafnsmyndatafla </label>
+     <placeholder> Nafn Gagnasafnsmyndatafla </placeholder>
+     <validate> Sláðu inn Nafn Gagnasafnsmyndatafla </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Möppur fyrir ritanlegt innihald</title>
+    <db_alert>
+     <![CDATA[
+    <b> stillingar </b>, <b> villuskráin </b> og <b> skilgreiningar </b> skrár verða búnar til í eftirfarandi möppu. Ef þú vilt endurnefna þessa möppu skaltu breyta <b> DB_DIR </b> skilgreiningunni í <b>definitions0.php</b> skránni og endurnýja þessa síðu.<br/><br/>Ef þú vilt breyta nöfnum á stillingum, villuskrá og skilgreiningarskrám, breyttu skilgreiningunum á <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> og <b> DEFINITIONS_FILE </b> í definitions0.php skjal.<br/><br/>Ef kerfið þitt er byggt á unix skaltu stilla skrifheimildir með eftirfarandi skipun:<br/><b>%s</b><br/><br/>Áður en þú byrjar að setja upp skaltu ganga úr skugga um að eftirfarandi mappa sé til og að þú hafir heimild til að skrifa í möppuna:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Áður en byrjað er að setja upp, vertu viss um að eftirfarandi möppur séu tiltækar og að þú hafir heimild til að skrifa í möppurnar. <br/> <br/> Ef þú ætlar að nota aðrar möppur en eftirfarandi möppur, ef möppurnar eru ekki til á disknum, skaltu fyrst búa til möppurnar og setja skrifheimildir og hefja uppsetningu.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Stillingar, villuskrá og skilgreiningarskrárleið</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Eftirfarandi möppur eru búnar til þegar nýja myndasafnið er vistað. <b>%d</b> gefur til kynna auðkenni myndasafns. Þessar möppur eru búnar til í <b> Grunnmöppu myndaskrár </b> möppunni sem skilgreind er hér að ofan. Athugaðu hvort snið framkvæmdarstjóra er viðeigandi.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Stillingarskráin hefur verið búin til áður. Þess vegna geturðu ekki keyrt uppsetninguna. Þú verður fyrst að eyða stillingarskránni og keyra síðan uppsetninguna.</config_alert>
+    <tmp_dir>
+     <label>Tímabundin myndamappa</label>
+     <placeholder>Tímabundin myndamappa</placeholder>
+     <validate>Tímabundin myndamappa</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Tímabundin smámyndamappa</label>
+     <placeholder>Tímabundin smámyndamappa</placeholder>
+     <validate>Tímabundin smámyndamappa</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Tímabundin skrá yfir klippta smámyndir</label>
+     <placeholder>Tímabundin skrá yfir klippta smámyndir</placeholder>
+     <validate>Tímabundin skrá yfir klippta smámyndir</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tímabundin leið skyggnimynda</label>
+     <placeholder>Tímabundin leið skyggnimynda</placeholder>
+     <validate>Tímabundin leið skyggnimynda</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Grunnmöppu myndaskrár</label>
+     <placeholder>Grunnmöppu myndaskrár</placeholder>
+     <validate>Grunnmöppu myndaskrár</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Myndamappa</label>
+     <placeholder>Myndamappa</placeholder>
+     <validate>Myndamappa</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Smámyndamöppu</label>
+     <placeholder>Smámyndamöppu</placeholder>
+     <validate>Smámyndamöppu</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>skrá yfir klippta smámyndir</label>
+     <placeholder>skrá yfir klippta smámyndir</placeholder>
+     <validate>skrá yfir klippta smámyndir</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Leið skyggnimynda</label>
+     <placeholder>Leið skyggnimynda</placeholder>
+     <validate>Leið skyggnimynda</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML skrár mappa</label>
+     <placeholder>XML skrár mappa</placeholder>
+     <validate>XML skrár mappa</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Uppsetning. Bíddu ... </installing>
+    <success> Uppsetningu lokið. </success>
+    <error> Ekki var hægt að ljúka uppsetningu. </error>
+   </alert>
+  
+   <submit> Hefja uppsetningu </submit>
+   <submit_continue> Haltu áfram &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Stjórnun myndasafns </title>
+   <header> Stjórnun myndasafns </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Listi yfir gallerí </title>
+   <header> Listi yfir gallerí </header>
+   <sort>
+    <asc> raða frá fyrsta til síðasta </asc>
+    <desc> raða frá síðasta til fyrsta </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Skoða </button>
+     <title> Skoða myndasafn </title>
+    </view>
+    <delete>
+     <button> Eyða </button>
+     <title> Eyða myndasafni </title>
+    </delete>
+    <edit>
+     <button> Breyta </button>
+     <title> Breyta myndasafni </title>
+    </edit>
+    <images>myndir</images>
+    <date>Dagsetning</date>
+    <move> Þú getur flokkað myndasöfnin með því að draga þau með músinni. </move>
+    <move_mobile>Pikkaðu á og haltu hlut með fingrinum og bíddu eftir að hann verði auðkenndur. Eftir að þú hefur valið hlut, dragðu fingurinn til að raða hlutunum.</move_mobile>
+   </card>
+   <alert> Ekkert gallerí fannst. </alert>
+   <modal>
+    <del_gallery>
+     <label> Eyða myndasafni </label>
+     <close> loka </close>
+     <text> Viltu eyða þessu myndasafni af síðunni? </text>
+     <command> Eyða </command>
+     <cancel> Hætta við </cancel>
+    </del_gallery>
+    <result>
+     <label> Villa </label>
+     <close> loka </close>
+     <text> </text>
+     <command> Loka </command>
+    </result>
+   </modal>
+   <save_changes> Vista Pöntun Gallerís </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Myndasafn </title>
+   <header> Myndasafn </header>
+   <alert> Engin mynd fannst. </alert>
+   <share>Deila myndasafni</share>
+   <filedate>Upphleðsludagur</filedate>
+   <filesize>Skjala stærð</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Afrita á klemmuspjald</label>
+     <close>loka</close>
+     <text>Tengill afritaður á klemmuspjald</text>
+     <command>Afrita</command>
+     <cancel>Loka</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Búðu til nýtt gallerí </title>
+    <header> Búðu til nýtt gallerí </header>
+   </new>
+   <edit>
+    <title> Breyta myndasafni </title>
+    <header> Breyta myndasafni </header>
+   </edit>
+   <gallery_info>
+    <title> Upplýsingar um gallerí </title>
+    <name>
+     <label> Nafn myndasafns </label>
+     <placeholder> Nafn myndasafns </placeholder>
+     <validate> Heiti innsláttargallerís </validate>
+    </name>
+    <description>
+     <label> Lýsing myndasafns </label>
+     <placeholder> Lýsing myndasafns </placeholder>
+     <validate> Lýsing innsláttargallerís </validate>
+    </description>
+    <keywords>
+     <label> Leitarorð í myndasafni aðgreind með kommum eða nýjum línum </label>
+     <placeholder> Leitarorð í myndasafni aðgreind með kommum eða nýjum línum </placeholder>
+     <validate> Færa inn gallerí leitarorð </validate>
+    </keywords>
+    <submit>
+     <save> Vista myndasafn </save>
+     <update> Update Gallery </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Handbók fyrir upphleðslu </title>
+     <body>
+      <![CDATA[
+Veldu myndir úr tækinu þínu með <b> Flettu myndum </b> takkanum og hlaðið inn á síðuna með hnappnum <b> Hlaða inn myndum </b>. <br/> Styður myndformat: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Leyfileg lágmarksupplausn: <b>%d x %d px</b> <br/> Leyfileg hámarksupplausn: <b>%d x %d px</b> <br/> Hámarksstærð stakrar skráar: <b>%d MB</b> <br/> Fjöldi mynda í myndasafni: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Veldu allt </select_all>
+    <select_del> Eyða völdum myndum </select_del>
+    <thumb>
+     <exist>
+      <delete> Eyða mynd sem hlaðið hefur verið upp af vefsíðu </delete>
+      <info> Myndupplýsingar </info>
+     </exist>
+     <new>
+      <delete> Eyða mynd sem hlaðið hefur verið upp af </delete>
+      <cancel> Hætta við myndupphleðslu </cancel>
+      <info> Upplýsingar um myndir </info>
+      <rotate> Snúa mynd </rotate>
+      <crop> Skera mynd </crop>
+     </new>
+     <move> Þú getur flokkað myndirnar með því að draga þær með músinni. </move>
+     <move_mobile>Pikkaðu á og haltu hlut með fingrinum og bíddu eftir að hann verði auðkenndur. Eftir að þú hefur valið hlut, dragðu fingurinn til að raða hlutunum.</move_mobile>
+    </thumb>
+    <browse> Flettu myndum </browse>
+    <upload> Hlaða inn myndum </upload>
+    <uploading> Myndir eru að hlaðast upp á síðuna. Ekki loka síðunni fyrr en upphleðslu er lokið. </uploading>
+    <uploaded> Myndir hafa verið settar inn á síðuna. </uploaded>
+    <error>Sumar villur áttu sér stað við að hlaða skrám upp á netþjóninn.</error>
+    <save_changes> Vista breytingar á mynd </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Skera </crop>
+     <cancel> Hætta við </cancel>
+    </crop>
+    <del_up_img>
+     <label> Eyða mynd </label>
+     <close> loka </close>
+     <text> Viltu eyða þessari mynd af síðunni? </text>
+     <command> Eyða </command>
+     <cancel> Hætta við </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Eyða mynd </label>
+     <close> loka </close>
+     <text> Viltu eyða þessari mynd af síðunni? </text>
+     <command> Eyða </command>
+     <cancel> Hætta við </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Eyða völdum myndum </label>
+     <close> loka </close>
+     <text> Viltu eyða völdum myndum af síðunni? </text>
+     <command> Eyða </command>
+     <cancel> Hætta við </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Upplýsingar um mynd </label>
+     <close> loka </close>
+     <filename> File Name </filename>
+     <filesize> Skráarstærð </filesize>
+     <date> Upphleðsludagur </date>
+     <title>
+      <label> Titill </label>
+      <placeholder> Titill myndar </placeholder>
+     </title>
+     <desc>
+      <label> Lýsing </label>
+      <placeholder> Lýsing myndar </placeholder>
+     </desc>
+     <keyw>
+      <label> Leitarorð </label>
+      <placeholder> Leitarorð aðgreind með kommum eða nýjum línum </placeholder>
+     </keyw>
+     <command> Vista / uppfæra </command>
+     <cancel> Hætta við </cancel>
+    </img_info>
+    <result>
+     <label> Villa </label>
+     <close> loka </close>
+     <text> </text>
+     <command> Loka </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Myndstillingar sem hægt er að hlaða upp </title>
+    <upload_limit>
+     <label> Hámarksfjöldi mynda á hvert gallerí </label>
+     <placeholder> Hámarksfjöldi mynda á hvert gallerí </placeholder>
+     <validate> Sláðu inn hámarksfjölda mynda á hvert gallerí </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Ein skrá Hámarksstærð (MB) </label>
+     <placeholder> Ein skrá Hámarksstærð (MB) </placeholder>
+     <validate> Sláðu inn eina skrá Hámarksstærð (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Leyfileg lágmarksupplausn </label>
+     <width>
+      <placeholder> lágmarksbreidd </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </width>
+     <height>
+      <placeholder> Lágmarkshæð </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Leyfileg hámarksupplausn </label>
+     <width>
+      <placeholder> Hámarksbreidd </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </width>
+     <height>
+      <placeholder> Hámarkshæð </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Umbreyting ljósmynda </title>
+    <full_resolution>
+     <label> Mynd í fullri stærð </label>
+     <width>
+      <placeholder> Hámarksbreidd </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </width>
+     <height>
+      <placeholder> Hámarkshæð </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Stærð smámyndar </label>
+     <width>
+      <placeholder> þumalbreidd </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </width>
+     <height>
+      <placeholder> þumalhæð </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Stærð skyggna </label>
+     <width>
+      <placeholder> Renna breidd </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </width>
+     <height>
+      <placeholder> Renna hæð </placeholder>
+      <validate> Sláðu inn gildi </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg gæði </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG þjappa </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vatnsmerki </title>
+    <label> Notaðu vatnsmerki </label>
+    <position> Vatnsmerknastaða </position>
+    <image> Vatnsmerknamynd </image>
+    <set> Stilltu vatnsmerki </set>
+    <browse> 1- Flettu vatnsmerkismyndaskrá </browse>
+    <adjust> 2- Stilltu myndina í samræmi við rammann. </adjust>
+    <upload> 3- Hlaða inn völdum skrá </upload>
+    <uploading> Hleður inn ... </uploading>
+    <uploaded> hlaðið. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Síða </page>
+   <first> Fyrsta síða </first>
+   <prev> Fyrri síða </prev>
+   <next> Næsta síða </next>
+   <last> Síðasta síða </last>
+  </pagination>
+
+</lang>

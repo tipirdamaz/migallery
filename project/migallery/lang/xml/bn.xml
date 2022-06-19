@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>ভাষা</title>
+   <label>ভাষা নির্বাচন কর</label>
+  </lang>
+
+  <timezone>
+   <title>সময় অঞ্চল</title>
+   <label>টাইমজোন নির্বাচন করুন</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>গ্যালারী পরিচালনা</gallery_man>
+   <gallery_list>গ্যালারী তালিকা</gallery_list>
+   <uploader>নতুন গ্যালারী তৈরি করুন</uploader>
+   <back>পেছনে</back>
+  </nav>
+
+  <install>
+ 
+   <title>MIGallery সেটআপ</title>
+   <header>MIGallery সেটআপ</header>
+
+   <img_direction>
+    <label>গ্যালারী, চিত্র এবং স্লাইড দিকনির্দেশ</label>
+    <left>বাম থেকে ডান</left>
+    <right>ডান থেকে বাম</right>
+   </img_direction>
+
+   <db_info>
+    <title>মাইএসকিউএল ডাটাবেস তথ্য</title>
+    <host>
+     <label>ডাটাবেস হোস্ট-নেম</label>
+     <placeholder>ডাটাবেস হোস্ট-নেম</placeholder>
+     <validate>ডাটাবেস হোস্টের নাম লিখুন</validate>
+    </host>
+    <user>
+     <label>ডাটাবেস ব্যবহারকারীর নাম</label>
+     <placeholder>ডাটাবেস ব্যবহারকারীর নাম</placeholder>
+     <validate>ডাটাবেস ব্যবহারকারীর নাম লিখুন</validate>
+    </user>
+    <pass>
+     <label>ডাটাবেস পাসওয়ার্ড</label>
+     <placeholder>ডাটাবেস পাসওয়ার্ড</placeholder>
+     <validate>ডাটাবেস পাসওয়ার্ড লিখুন</validate>
+    </pass>
+    <db>
+     <label>ডাটাবেস নাম</label>
+     <placeholder>ডাটাবেস নাম</placeholder>
+     <validate>ডাটাবেস নাম লিখুন</validate>
+    </db>
+    <gal_table>
+     <label>গ্যালারী সারণির নাম</label>
+     <placeholder>গ্যালারী সারণির নাম</placeholder>
+     <validate>গ্যালারী সারণির নাম প্রবেশ করান</validate>
+    </gal_table>
+    <img_table>
+     <label>চিত্র সারণীর নাম</label>
+     <placeholder>চিত্র সারণীর নাম</placeholder>
+     <validate>চিত্র সারণীর নাম প্রবেশ করান</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>লেখার যোগ্য গতিশীল বিষয়বস্তুর জন্য ডিরেক্টরি</title>
+    <db_alert>
+     <![CDATA[
+    নিম্নলিখিত ডিরেক্টরিটি যেখানে <b> কনফিগারেশন </b>, <b> ত্রুটি লগ </b> এবং <b> সংজ্ঞা </b> ফাইল তৈরি হবে। আপনি যদি এই ডিরেক্টরিটির নাম পরিবর্তন করতে চান তবে <b>definitions0.php</b> ফাইলে <b>DB_DIR</b> সংজ্ঞা পরিবর্তন করুন এবং এই পৃষ্ঠাটি রিফ্রেশ করুন।<br/><br/>আপনি যদি কনফিগারেশন ফাইলের নাম, ত্রুটি লগ ফাইলের নাম এবং সংজ্ঞা ফাইলের নাম পরিবর্তন করতে চান তবে আপনি definitions0.php ফাইলে <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b>, এবং <b>DEFINITIONS_FILE</b> এর সংজ্ঞা পরিবর্তন করতে পারেন।<br/><br/>যদি আপনার সিস্টেমটি ইউনিক্স ভিত্তিক হয় তবে নিম্নলিখিত কমান্ডের সাহায্যে লেখার অনুমতিগুলি সেট করুন:<br/><b>%s</b><br/><br/>ইনস্টলেশন শুরুর আগে নিশ্চিত হয়ে নিন যে নীচের পথটি রয়েছে এবং এতে লেখার অনুমতি রয়েছে:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ইনস্টলেশন শুরু করার আগে, নিশ্চিত হয়ে নিন যে নিম্নলিখিত ডিরেক্টরিগুলি উপস্থিত রয়েছে এবং আপনাকে ডিরেক্টরিতে লেখার অনুমতি রয়েছে।<br/><br/>আপনি যদি নিম্নলিখিত ডিরেক্টরিগুলি বাদে ডিরেক্টরি ব্যবহার করতে যাচ্ছেন, যদি ডিস্কে ডিরেক্টরি উপস্থিত না থাকে, প্রথমে ডিরেক্টরিগুলি তৈরি করুন এবং লেখার অনুমতিগুলি সেট করুন এবং ইনস্টলেশন শুরু করুন।
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>কনফিগারেশন, ত্রুটি লগ এবং সংজ্ঞা ফাইলের পথ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    নতুন গ্যালারী সংরক্ষণ করা হলে নিম্নলিখিত ডিরেক্টরিগুলি তৈরি করা হয়। <b>%d</b> গ্যালারী আইডি নির্দেশ করে। এই ডিরেক্টরিগুলি উপরে বর্ণিত <b> চিত্র বেস ডিরেক্টরি </b> ডিরেক্টরিতে তৈরি করা হয়েছে। ডিরেক্টরিগুলির ফর্ম্যাটটি যথাযথ কিনা তা পরীক্ষা করে দেখুন।
+     ]]>
+    </img_dir_alert>
+    <config_alert>কনফিগারেশন ফাইলটি আগে তৈরি করা হয়েছিল। অতএব, আপনি সেটআপটি চালাতে পারবেন না। আপনাকে অবশ্যই কনফিগারেশন ফাইলটি মুছতে হবে এবং তারপরে সেটআপটি চালাতে হবে।</config_alert>
+    <tmp_dir>
+     <label>চিত্রের অস্থায়ী ডিরেক্টরি</label>
+     <placeholder>চিত্রের অস্থায়ী ডিরেক্টরি</placeholder>
+     <validate>চিত্রের অস্থায়ী ডিরেক্টরি</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>থাম্বনেইলের অস্থায়ী ডিরেক্টরি</label>
+     <placeholder>থাম্বনেইলের অস্থায়ী ডিরেক্টরি</placeholder>
+     <validate>থাম্বনেইলের অস্থায়ী ডিরেক্টরি</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ক্রপড থাম্বনেইলের অস্থায়ী ডিরেক্টরি</label>
+     <placeholder>ক্রপড থাম্বনেইলের অস্থায়ী ডিরেক্টরি</placeholder>
+     <validate>ক্রপড থাম্বনেইলের অস্থায়ী ডিরেক্টরি</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>স্লাইড চিত্রের অস্থায়ী ডিরেক্টরি</label>
+     <placeholder>স্লাইড চিত্রের অস্থায়ী ডিরেক্টরি</placeholder>
+     <validate>স্লাইড চিত্রের অস্থায়ী ডিরেক্টরি</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>চিত্র বেস ডিরেক্টরি</label>
+     <placeholder>চিত্র বেস ডিরেক্টরি</placeholder>
+     <validate>চিত্র বেস ডিরেক্টরি</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>চিত্র ডিরেক্টরি</label>
+     <placeholder>চিত্র ডিরেক্টরি</placeholder>
+     <validate>চিত্র ডিরেক্টরি</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>থাম্বনেইল ডিরেক্টরি</label>
+     <placeholder>থাম্বনেইল ডিরেক্টরি</placeholder>
+     <validate>থাম্বনেইল ডিরেক্টরি</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ক্রপযুক্ত থাম্বনেল ডিরেক্টরি</label>
+     <placeholder>ক্রপযুক্ত থাম্বনেল ডিরেক্টরি</placeholder>
+     <validate>ক্রপযুক্ত থাম্বনেল ডিরেক্টরি</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>স্লাইড চিত্র ডিরেক্টরি</label>
+     <placeholder>স্লাইড চিত্র ডিরেক্টরি</placeholder>
+     <validate>স্লাইড চিত্র ডিরেক্টরি</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>এক্সএমএল ফাইল ডিরেক্টরি</label>
+     <placeholder>এক্সএমএল ফাইল ডিরেক্টরি</placeholder>
+     <validate>এক্সএমএল ফাইল ডিরেক্টরি</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>ইনস্টল করা হচ্ছে। অনুগ্রহপূর্বক অপেক্ষা করুন...</installing>
+    <success>ইনস্টলেশন সফলভাবে সম্পন্ন হয়েছে।</success>
+    <error>ইনস্টলেশন সম্পন্ন করা যায়নি।</error>
+   </alert>
+  	
+   <submit>ইনস্টলেশন শুরু করুন</submit>
+   <submit_continue>চালিয়ে যান &gt;&gt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>গ্যালারী পরিচালনা</title>
+   <header>গ্যালারী পরিচালনা</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>গ্যালারী তালিকা</title>
+   <header>গ্যালারী তালিকা</header>
+   <sort>
+    <asc>প্রথম থেকে শেষ পর্যন্ত সাজান</asc>
+    <desc>সর্বশেষ থেকে প্রথম</desc>
+   </sort>
+   <card>
+    <view>
+     <button>দেখা</button>
+     <title>গ্যালারী দেখুন</title>
+    </view>
+    <delete>
+     <button>মুছে ফেলা</button>
+     <title>গ্যালারী মুছুন</title>
+    </delete>
+    <edit>
+     <button>সম্পাদক</button>
+     <title>গ্যালারী সম্পাদনা করুন</title>
+    </edit>
+    <images>ইমেজ</images>
+    <date>তারিখ</date>
+    <move>গ্যালারীগুলি মাউসের সাহায্যে টেনে এনে বাছাই করতে পারেন।</move>
+    <move_mobile>আপনার আঙুল দিয়ে কোনও আইটেমটি আলতো চাপুন এবং এটি নির্বাচনের জন্য অপেক্ষা করুন। আইটেমটি নির্বাচিত হওয়ার পরে, আপনি আপনার আঙুল দিয়ে টেনে নিয়ে আইটেমগুলি বাছাই করতে পারেন।</move_mobile>
+   </card>
+   <alert>কোনও গ্যালারী পাওয়া যায় নি।</alert>
+   <modal>
+    <del_gallery>
+     <label>গ্যালারী মুছুন</label>
+     <close>বন্ধ</close>
+     <text>আপনি কি এই গ্যালারীটি সাইট থেকে মুছতে চান?</text>
+     <command>মুছে ফেলা</command>
+     <cancel>বাতিল করুন</cancel>
+    </del_gallery>
+    <result>
+     <label>ত্রুটি</label>
+     <close>বন্ধ</close>
+     <text></text>
+     <command>বন্ধ</command>
+    </result>
+   </modal> 
+   <save_changes>গ্যালারী বাছাই সংরক্ষণ করুন</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>গ্যালারী দেখুন</title>
+   <header>গ্যালারী দেখুন</header>
+   <alert>কোনও চিত্র পাওয়া যায় নি।</alert>
+   <share>শেয়ার গ্যালারী</share>
+   <filedate>তারিখ আপলোড</filedate>
+   <filesize>ফাইলের আকার</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ক্লিপবোর্ডে অনুলিপি করুন</label>
+     <close>বন্ধ</close>
+     <text>লিঙ্কটি ক্লিপবোর্ডে অনুলিপি করা হয়েছে</text>
+     <command>কপি</command>
+     <cancel>বন্ধ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>নতুন গ্যালারী তৈরি করুন</title>
+    <header>নতুন গ্যালারী তৈরি করুন</header>
+   </new>
+   <edit>
+    <title>গ্যালারী সম্পাদনা করুন</title>
+    <header>গ্যালারী সম্পাদনা করুন</header>
+   </edit>
+   <gallery_info>
+    <title>গ্যালারী তথ্য</title>
+    <name>
+     <label>গ্যালারী নাম</label>
+     <placeholder>গ্যালারী নাম</placeholder>
+     <validate>গ্যালারী নাম লিখুন</validate>
+    </name>
+    <description>
+     <label>গ্যালারী বর্ণনা</label>
+     <placeholder>গ্যালারী বর্ণনা</placeholder>
+     <validate>গ্যালারী বর্ণনা লিখুন</validate>
+    </description>
+    <keywords>
+     <label>গ্যালারী কীওয়ার্ডগুলি কমা বা নিউলাইন দ্বারা আলাদা করা হয়েছে</label>
+     <placeholder>গ্যালারী কীওয়ার্ডগুলি কমা বা নিউলাইন দ্বারা আলাদা করা হয়েছে</placeholder>
+     <validate>গ্যালারী কীওয়ার্ড লিখুন</validate>
+    </keywords>
+    <submit>
+     <save>গ্যালারী সংরক্ষণ করুন</save>
+     <update>আপডেট গ্যালারী</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>আপলোডার গাইড</title>
+     <body>
+      <![CDATA[
+<b> চিত্রগুলি ব্রাউজ করুন </b> বোতামের সাহায্যে আপনার ডিভাইস থেকে চিত্র নির্বাচন করুন এবং <b> চিত্রগুলি আপলোড করুন </b> বোতামের সাহায্যে সাইটে আপলোড করুন।<br/>সমর্থিত চিত্র বিন্যাস: <b>JPG, PNG, GIF, BMP, WEBP</b> <br/> অনুমতিযোগ্য ন্যূনতম রেজোলিউশন: <b>%d x %d px</b> <br/> অনুমতিযোগ্য সর্বোচ্চ রেজোলিউশন: <b>%d x %d px</b> <br/> একক ফাইল সর্বাধিক আকার: <b>%d MB</b> <br/> গ্যালারী প্রতি ছবি সংখ্যা: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>সমস্ত নির্বাচন করুন</select_all>
+    <select_del>মুছে নির্বাচিত</select_del>
+    <thumb>
+     <exist>
+      <delete>সাইট থেকে আপলোড করা চিত্র মুছুন</delete>
+      <info>চিত্র তথ্য</info>
+     </exist>
+     <new>
+      <delete>সাইট থেকে আপলোড করা চিত্র মুছুন</delete>
+      <cancel>চিত্র আপলোড বাতিল করুন</cancel>
+      <info>চিত্র তথ্য</info>
+      <rotate>চিত্র ঘোরান</rotate>
+      <crop>ফসল ইমেজ</crop>
+     </new>
+     <move>আপনি ছবিগুলি মাউসের সাহায্যে টেনে নিয়ে বাছাই করতে পারেন।</move>
+     <move_mobile>আপনার আঙুল দিয়ে কোনও আইটেমটি আলতো চাপুন এবং এটি নির্বাচনের জন্য অপেক্ষা করুন। আইটেমটি নির্বাচিত হওয়ার পরে, আপনি আপনার আঙুল দিয়ে টেনে নিয়ে আইটেমগুলি বাছাই করতে পারেন।</move_mobile>
+    </thumb>
+    <browse>চিত্রগুলি ব্রাউজ করুন</browse>
+    <upload>চিত্রগুলি আপলোড করুন</upload>
+    <uploading>ছবিগুলি সাইটে আপলোড করা হচ্ছে। আপলোড সম্পূর্ণ না হওয়া পর্যন্ত পৃষ্ঠাটি বন্ধ করবেন না।</uploading>
+    <uploaded>ছবিগুলি সাইটে আপলোড করা হয়েছে।</uploaded>
+    <error>সার্ভারে ফাইলগুলি আপলোড করার সময় কিছু ত্রুটি ঘটেছে।</error>
+    <save_changes>চিত্র পরিবর্তনগুলি সংরক্ষণ করুন</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>ফসল</crop>
+     <cancel>বাতিল করুন</cancel>
+    </crop>
+    <del_up_img>
+     <label>চিত্র মুছুন</label>
+     <close>বন্ধ</close>
+     <text>আপনি কি এই চিত্রটি সাইট থেকে মুছতে চান?</text>
+     <command>মুছে ফেলা</command>
+     <cancel>বাতিল করুন</cancel>
+    </del_up_img>
+    <del_img>
+     <label>চিত্র মুছুন</label>
+     <close>বন্ধ</close>
+     <text>আপনি কি এই চিত্রটি সাইট থেকে মুছতে চান?</text>
+     <command>মুছে ফেলা</command>
+     <cancel>বাতিল করুন</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>নির্বাচিত চিত্রগুলি মুছুন</label>
+     <close>বন্ধ</close>
+     <text>আপনি কি সাইট থেকে নির্বাচিত চিত্রগুলি মুছতে চান?</text>
+     <command>মুছে ফেলা</command>
+     <cancel>বাতিল করুন</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>চিত্র তথ্য</label>
+     <close>বন্ধ</close>
+     <filename>ফাইলের নাম</filename>
+     <filesize>ফাইলের আকার</filesize>
+     <date>তারিখ আপলোড</date>
+     <title>
+      <label>শিরোনাম</label>
+      <placeholder>চিত্রের শিরোনাম</placeholder>
+     </title>
+     <desc>
+      <label>বর্ণনা</label>
+      <placeholder>ছবির বর্ণনা</placeholder>
+     </desc>
+     <keyw>
+      <label>কীওয়ার্ডস</label>
+      <placeholder>কমাগুলি বা নিউলাইন দ্বারা আলাদা করা কীওয়ার্ড</placeholder>
+     </keyw>
+     <command>সংরক্ষণ / আপডেট</command>
+     <cancel>বাতিল করুন</cancel>
+    </img_info>
+    <result>
+     <label>ত্রুটি</label>
+     <close>বন্ধ</close>
+     <text></text>
+     <command>বন্ধ</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>আপলোডযোগ্য চিত্র সেটিংস</title>
+    <upload_limit>
+     <label>গ্যালারী প্রতি সর্বাধিক চিত্র গণনা</label>
+     <placeholder>গ্যালারী প্রতি সর্বাধিক চিত্র গণনা</placeholder>
+     <validate>ইনপুট গ্যালারী প্রতি সর্বাধিক চিত্র গণনা</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>একক ফাইল সর্বাধিক আকার (MB)</label>
+     <placeholder>একক ফাইল সর্বাধিক আকার (MB)</placeholder>
+     <validate>ইনপুট একক ফাইল সর্বাধিক আকার (MB)</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>অনুমোদনযোগ্য ন্যূনতম রেজোলিউশন</label>
+     <width>
+      <placeholder>ন্যূনতম প্রস্থ</placeholder>
+      <validate>ইনপুট মান</validate>
+     </width>
+     <height>
+      <placeholder>ন্যূনতম উচ্চতা</placeholder>
+      <validate>ইনপুট মান</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>অনুমতিযোগ্য সর্বোচ্চ রেজোলিউশন</label>
+     <width>
+      <placeholder>সর্বোচ্চ প্রস্থ</placeholder>
+      <validate>ইনপুট মান</validate>
+     </width>
+     <height>
+      <placeholder>সর্বোচ্চ উচ্চতা</placeholder>
+      <validate>ইনপুট মান</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>চিত্র রূপান্তর</title>
+    <full_resolution>
+     <label>চিত্র পুরো আকার</label>
+     <width>
+      <placeholder>সর্বোচ্চ প্রস্থ</placeholder>
+      <validate>ইনপুট মান</validate>
+     </width>
+     <height>
+      <placeholder>সর্বোচ্চ উচ্চতা</placeholder>
+      <validate>ইনপুট মান</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>থাম্বনেল আকার</label>
+     <width>
+      <placeholder>থাম্ব প্রস্থ</placeholder>
+      <validate>ইনপুট মান</validate>
+     </width>
+     <height>
+      <placeholder>থাম্ব উচ্চতা</placeholder>
+      <validate>ইনপুট মান</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>স্লাইড আকার</label>
+     <width>
+      <placeholder>স্লাইড প্রস্থ</placeholder>
+      <validate>ইনপুট মান</validate>
+     </width>
+     <height>
+      <placeholder>স্লাইড উচ্চতা</placeholder>
+      <validate>ইনপুট মান</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>জেপিগ মানের</label>
+    </jpg_quality>
+    <png_compress>
+     <label>পিএনজি সংকোচন</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>ওয়াটারমার্ক</title>
+    <label>ওয়াটারমার্ক ব্যবহার করুন</label>
+    <position>ওয়াটারমার্ক অবস্থান</position>
+    <image>জলছবি ইমেজ</image>
+    <set>ওয়াটারমার্ক সেট করুন</set>
+    <browse>1- ওয়াটারমার্ক চিত্র ফাইল ব্রাউজ করুন</browse>
+    <adjust>2- ফ্রেম অনুযায়ী চিত্র সামঞ্জস্য করুন।</adjust>
+    <upload>3- নির্বাচিত ফাইল আপলোড করুন</upload>
+    <uploading>আপলোড হচ্ছে ...</uploading>
+    <uploaded>আপলোড করা হয়েছে।</uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page>পৃষ্ঠা</page>
+   <first>প্রথম পৃষ্ঠা</first>
+   <prev>আগের পৃষ্ঠা</prev>
+   <next>পরবর্তী পৃষ্ঠা</next>
+   <last>শেষ পৃষ্ঠা</last>
+  </pagination>
+
+</lang>

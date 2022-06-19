@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Тіл </title>
+   <label> Language таңдаңыз </label>
+  </lang>
+
+  <timezone>
+   <title>Уақыт белдеуі</title>
+   <label>Уақыт белдеуін таңдаңыз</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Галереяны басқару </gallery_man>
+   <gallery_list> галереялар тізімі </gallery_list>
+   <uploader> Жаңа галерея құру </uploader>
+   <back> Артқа </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery орнату </title>
+   <header> MIGallery орнату </header>
+
+   <img_direction>
+    <label> галерея, сурет және слайд бағыты </label>
+    <left> солдан оңға </left>
+    <right> оңға солға </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL мәліметтер қоры туралы ақпарат </title>
+    <host>
+     <label> мәліметтер базасының хост атауы </label>
+     <placeholder> мәліметтер базасының хост атауы </placeholder>
+     <validate> Мәліметтер базасының хост атын енгізіңіз </validate>
+    </host>
+    <user>
+     <label> Пайдаланушының аты </label>
+     <placeholder> дерекқордың пайдаланушы аты </placeholder>
+     <validate> Дерекқордың пайдаланушы атын енгізіңіз </validate>
+    </user>
+    <pass>
+     <label> мәліметтер қорының паролі </label>
+     <placeholder> мәліметтер қорының паролі </placeholder>
+     <validate> дерекқордың паролін енгізу </validate>
+    </pass>
+    <db>
+     <label> мәліметтер базасының атауы </label>
+     <placeholder> мәліметтер базасының атауы </placeholder>
+     <validate> Мәліметтер базасының атауын енгізіңіз </validate>
+    </db>
+    <gal_table>
+     <label> Галерея кестесінің атауы </label>
+     <placeholder> галерея кестесінің атауы </placeholder>
+     <validate> Галерея кестесінің атауын енгізіңіз </validate>
+    </gal_table>
+    <img_table>
+     <label> кескін кестесінің атауы </label>
+     <placeholder> кескін кестесінің атауы </placeholder>
+     <validate> Суреттер кестесінің атауын енгізіңіз </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Өңделетін каталогтар</title>
+    <db_alert>
+     <![CDATA[
+    <b> конфигурация </b>, <b> қателіктер журналы </b> және <b> анықтамалар </b> файлдары келесі каталогта жасалады. Егер сіз осы каталогтың атын өзгерткіңіз келсе, <b> definitions0.php </b> файлындағы <b> DB_DIR </b> анықтамасын өзгертіңіз және осы парақты жаңартыңыз.<br/><br/>Егер сіз конфигурация файлының, қателіктер журналының және анықтамалар файлының атын өзгерткіңіз келсе, definitions0.php ішіндегі <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> және <b> DEFINITIONS_FILE </b> анықтамаларын өзгертіңіз файл.<br/><br/>Егер сіздің жүйеңіз unix-негізделген болса, жазу рұқсаттарын келесі пәрменмен орнатыңыз:<br/><b>%s</b><br/><br/>Орнатуды бастамас бұрын, келесі жолдың бар екеніне көз жеткізіп, каталогқа жазуға рұқсатыңыз бар:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Орнатуды бастамас бұрын, келесі каталогтардың бар екеніне және каталогтарға жазуға рұқсатыңыз бар екеніне көз жеткізіңіз. <br/> <br/> Егер сіз келесі каталогтардан басқа каталогтарды қолданғыңыз келсе, егер каталогтар дискіде жоқ болса, алдымен каталогтарды құрыңыз және осы каталогтардың жазуға рұқсаттарын орнатыңыз және орнатуды бастаңыз.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Конфигурация, қателер журналы және анықтамалар файлдарының жолы</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Жаңа галерея сақталған кезде келесі каталогтар жасалады. <b>%d</b> галерея идентификаторын анықтайды. Бұл каталогтар жоғарыда анықталған <b> Суреттердің негізгі қалтасы </b> каталогында жасалған. Каталог форматының дұрыс екендігіне көз жеткізіңіз.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Конфигурация файлы бұрын жасалған. Сондықтан, сіз орнатуды орындай алмайсыз. Алдымен конфигурация файлын жою керек, содан кейін орнатуды іске қосу керек.</config_alert>
+    <tmp_dir>
+     <label>Кескіннің уақытша анықтамалығы</label>
+     <placeholder>Кескіннің уақытша анықтамалығы</placeholder>
+     <validate>Кескіннің уақытша анықтамалығы</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Нобай кескін файлдарының уақытша каталогы</label>
+     <placeholder>Нобай кескін файлдарының уақытша каталогы</placeholder>
+     <validate>Нобай кескін файлдарының уақытша каталогы</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Кесілген кішірейтілген сурет файлдарының уақытша анықтамалығы</label>
+     <placeholder>Кесілген кішірейтілген сурет файлдарының уақытша анықтамалығы</placeholder>
+     <validate>Кесілген кішірейтілген сурет файлдарының уақытша анықтамалығы</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Слайд өлшемді суреттердің уақытша анықтамалығы</label>
+     <placeholder>Слайд өлшемді суреттердің уақытша анықтамалығы</placeholder>
+     <validate>Слайд өлшемді суреттердің уақытша анықтамалығы</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Суреттердің негізгі қалтасы</label>
+     <placeholder>Суреттердің негізгі қалтасы</placeholder>
+     <validate>Суреттердің негізгі қалтасы</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Суреттер қалтасы</label>
+     <placeholder>Суреттер қалтасы</placeholder>
+     <validate>Суреттер қалтасы</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Нобай кескін файлдарының каталогы</label>
+     <placeholder>Нобай кескін файлдарының каталогы</placeholder>
+     <validate>Нобай кескін файлдарының каталогы</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Кесілген кішірейтілген сурет файлдарының анықтамалығы</label>
+     <placeholder>Кесілген кішірейтілген сурет файлдарының анықтамалығы</placeholder>
+     <validate>Кесілген кішірейтілген сурет файлдарының анықтамалығы</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Слайд өлшеміндегі суреттер қалтасы</label>
+     <placeholder>Слайд өлшеміндегі суреттер қалтасы</placeholder>
+     <validate>Слайд өлшеміндегі суреттер қалтасы</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML файлдар каталогы</label>
+     <placeholder>XML файлдар каталогы</placeholder>
+     <validate>XML файлдар каталогы</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Орнату. Күте тұрыңыз ... </installing>
+    <success> Орнату сәтті аяқталды. </success>
+    <error> Орнату аяқталмады. </error>
+   </alert>
+  
+   <submit> Орнатуды бастаңыз </submit>
+   <submit_continue> жалғастыру &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Галереяны басқару </title>
+   <header> Галереяны басқару </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Галереялар тізімі </title>
+   <header> Галерея тізімі </header>
+   <sort>
+    <asc> біріншіден соңғыға дейін </asc>
+    <desc> соңғыдан біріншіге </desc>
+   </sort>
+   <card>
+    <view>
+     <button> қарау </button>
+     <title> Галереяны қарау </title>
+    </view>
+    <delete>
+     <button> Жою </button>
+     <title> Галереяны жою </title>
+    </delete>
+    <edit>
+     <button> Өңдеу </button>
+     <title> Галереяны өңдеу </title>
+    </edit>
+    <images>кескіндер</images>
+    <date>Күні</date>
+    <move> Галереяларды тышқанмен сүйреу арқылы сұрыптауға болады. </move>
+    <move_mobile>Саусақпен нысанды түртіп ұстап тұрыңыз да, ол таңдалғанша күтіңіз. Элементті таңдағаннан кейін элементтерді сұрыптау үшін саусағыңызды сүйреңіз.</move_mobile>
+   </card>
+   <alert> Галерея табылған жоқ. </alert>
+   <modal>
+    <del_gallery>
+     <label> Галереяны жою </label>
+     <close> жабу </close>
+     <text> Осы галереяны сайттан жойғыңыз келе ме? </text>
+     <command> Жою </command>
+     <cancel> Бас тарту </cancel>
+    </del_gallery>
+    <result>
+     <label> Қате </label>
+     <close> жабу </close>
+     <text> </text>
+     <command> Жабық </command>
+    </result>
+   </modal>
+   <save_changes> Галерея сұрыптау ретін сақтау </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Галерея көрінісі </title>
+   <header> Галерея көрінісі </header>
+   <alert> Сурет табылған жоқ. </alert>
+   <share>Галереяны бөлісу</share>
+   <filedate>Жүктелген күні</filedate>
+   <filesize>Файл өлшемі</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Аралық сақтағышқа көшіру</label>
+     <close>жабу</close>
+     <text>Сілтеме буферге көшірілді</text>
+     <command>Көшіру</command>
+     <cancel>Жабық</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Жаңа галерея құру </title>
+    <header> Жаңа галерея құру </header>
+   </new>
+   <edit>
+    <title> Галереяны өңдеу </title>
+    <header> Галереяны өңдеу </header>
+   </edit>
+   <gallery_info>
+    <title> Галерея туралы ақпарат </title>
+    <name>
+     <label> галерея атауы </label>
+     <placeholder> галерея атауы </placeholder>
+     <validate> Кіріс галереясының атауы </validate>
+    </name>
+    <description>
+     <label> Галерея сипаттамасы </label>
+     <placeholder> галерея сипаттамасы </placeholder>
+     <validate> Кіріс галереясының сипаттамасы </validate>
+    </description>
+    <keywords>
+     <label> Галерея кілт сөздері үтірлермен немесе жаңа жолдармен бөлінген </label>
+     <placeholder> Галерея кілт сөздері үтірлермен немесе жаңа жолдармен бөлінген </placeholder>
+     <validate> Галерея кілт сөздерін енгізіңіз </validate>
+    </keywords>
+    <submit>
+     <save> Галереяны сақтау </save>
+     <update> Галереяны жаңарту </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> сурет жүктеушілерге арналған нұсқаулық </title>
+     <body>
+      <![CDATA[
+Құрылғыдан суреттерді <b> Суреттерді шолу </b> түймесін пайдаланып таңдаңыз және <b> Суреттерді жүктеу </b> батырмасы арқылы сайтқа жүктеңіз. <br/> Қолдау көрсетілетін кескін форматтары: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Рұқсат етілген минималды рұқсат: <b>%d x %d px</b> <br/> Шекті рұқсат: <b>%d x %d px</b> <br/> Бір файлдың максималды өлшемі: <b>%d МБ</b> <br/> Бір галереядағы сурет саны: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Барлығын таңдаңыз </select_all>
+    <select_del> Таңдалған кескіндерді жою </select_del>
+    <thumb>
+     <exist>
+      <delete> Жүктелген суретті сайттан жою </delete>
+      <info> Кескін туралы ақпарат </info>
+     </exist>
+     <new>
+      <delete> Жүктелген суретті сайттан жою </delete>
+      <cancel> Кескін жүктеуді болдырмау </cancel>
+      <info> Кескін туралы ақпарат </info>
+      <rotate> Кескінді бұру </rotate>
+      <crop> кескінді қию </crop>
+     </new>
+     <move> Суреттерді тышқанмен сүйреу арқылы сұрыптауға болады. </move>
+     <move_mobile>Саусақпен нысанды түртіп ұстап тұрыңыз да, ол таңдалғанша күтіңіз. Элементті таңдағаннан кейін элементтерді сұрыптау үшін саусағыңызды сүйреңіз.</move_mobile>
+    </thumb>
+    <browse> суреттерді шолу </browse>
+    <upload> Суреттерді жүктеу </upload>
+    <uploading> суреттер жүктелудесайт. Жүктеу аяқталғанға дейін парақты жаппаңыз. </uploading>
+    <uploaded> Суреттер сайтқа жүктелді. </uploaded>
+    <error>Файлдарды серверге жүктеу кезінде кейбір қателіктер орын алды.</error>
+    <save_changes> суреттердегі өзгерістерді сақтау </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Қиып алу </crop>
+     <cancel> Бас тарту </cancel>
+    </crop>
+    <del_up_img>
+     <label> Суретті жою </label>
+     <close> жабу </close>
+     <text> Сіз бұл суретті сайттан жойғыңыз келе ме? </text>
+     <command> Жою </command>
+     <cancel> Бас тарту </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Суретті жою </label>
+     <close> жабу </close>
+     <text> Сіз бұл суретті сайттан жойғыңыз келе ме? </text>
+     <command> Жою </command>
+     <cancel> Бас тарту </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Таңдалған кескіндерді жою </label>
+     <close> жабу </close>
+     <text> Таңдалған суреттерді сайттан жойғыңыз келе ме? </text>
+     <command> Жою </command>
+     <cancel> Бас тарту </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Кескін туралы ақпарат </label>
+     <close> жабу </close>
+     <filename> файл аты </filename>
+     <filesize> файл өлшемі </filesize>
+     <date> Жүктелген күні </date>
+     <title>
+      <label> тақырып </label>
+      <placeholder> сурет атауы </placeholder>
+     </title>
+     <desc>
+      <label> Сипаттама </label>
+      <placeholder> кескін сипаттамасы </placeholder>
+     </desc>
+     <keyw>
+      <label> Кілт сөздер </label>
+      <placeholder> Үтір немесе жаңа жолдармен бөлінген кілт сөздер </placeholder>
+     </keyw>
+     <command> Сақтау / жаңарту </command>
+     <cancel> Бас тарту </cancel>
+    </img_info>
+    <result>
+     <label> Қате </label>
+     <close> жабу </close>
+     <text> </text>
+     <command> Жабық </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Жүктеуге рұқсат етілген сурет параметрлері </title>
+    <upload_limit>
+     <label> Галереядағы кескіннің максималды саны </label>
+     <placeholder> галереядағы кескіннің максималды саны </placeholder>
+     <validate> Галереядағы кескіннің максималды санын енгізу </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Бір файлдың максималды өлшемі (МБ) </label>
+     <placeholder> бір файлдың максималды өлшемі (МБ) </placeholder>
+     <validate> Бір файлдың ең үлкен өлшемін енгізу (МБ) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Рұқсат етілген минималды рұқсат </label>
+     <width>
+      <placeholder> Минималды ен </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </width>
+     <height>
+      <placeholder> Минималды биіктік </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Рұқсат етілген максималды ажыратымдылық </label>
+     <width>
+      <placeholder> Максималды ені </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </width>
+     <height>
+      <placeholder> Максималды биіктік </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Кескін түрлендіру </title>
+    <full_resolution>
+     <label> кескіннің толық өлшемі </label>
+     <width>
+      <placeholder> Максималды ені </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </width>
+     <height>
+      <placeholder> Максималды биіктік </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> нобай өлшемі </label>
+     <width>
+      <placeholder> Басбармақ ені </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </width>
+     <height>
+      <placeholder> Басбармақ биіктігі </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Слайд өлшемі </label>
+     <width>
+      <placeholder> слайдтың ені </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </width>
+     <height>
+      <placeholder> слайд биіктігі </placeholder>
+      <validate> Мән енгізіңіз </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg сапасы </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG сығымдау </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> су белгісі </title>
+    <label> Су белгісін пайдаланыңыз </label>
+    <position> су таңбасының орны </position>
+    <image> су таңбасының кескіні </image>
+    <set> Су таңбасын орнату </set>
+    <browse> 1- су белгісінің кескін файлын шолу </browse>
+    <adjust> 2- Кескінді кадрға сәйкес реттеңіз. </adjust>
+    <upload> 3- Таңдалған файлды жүктеңіз </upload>
+    <uploading> Жүктеу ... </uploading>
+    <uploaded> Жүктелген. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Бет </page>
+   <first> бірінші бет </first>
+   <prev> Алдыңғы бет </prev>
+   <next> Келесі бет </next>
+   <last> соңғы бет </last>
+  </pagination>
+
+</lang>

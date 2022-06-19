@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Ulimi </title>
+   <label> Khetha Ulimi </label>
+  </lang>
+
+  <timezone>
+   <title>Indawo yesikhathi</title>
+   <label>Khetha indawo yesikhathi</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Ukuphathwa Kwegalari </gallery_man>
+   <gallery_list> Igalari Uhlu </gallery_list>
+   <uploader> Dala Igalari Entsha </uploader>
+   <back> Emuva </back>
+  </nav>
+
+  <install>
+ 
+   <title> Isethaphu ye-MIGallery </title>
+   <header> Isethaphu ye-MIGallery </header>
+
+   <img_direction>
+    <label> Igalari, isithombe nokuma kwesilayidi </label>
+    <left> Kwesobunxele uye Kwesokudla </left>
+    <right> Kwesokudla kuya Kwesobunxele </right>
+   </img_direction>
+
+   <db_info>
+    <title> Imininingwane Yesizinda sedatha ye-MySQL </title>
+    <host>
+     <label> Idatabase Igama lomethuleli </label>
+     <placeholder> Idatabase Igama lomethuleli </placeholder>
+     <validate> Faka igama lomethuleli we-database </validate>
+    </host>
+    <user>
+     <label> Igama lomsebenzisi le-database </label>
+     <placeholder> Igama lomsebenzisi le-database </placeholder>
+     <validate> Faka igama lomsebenzisi le-Database </validate>
+    </user>
+    <pass>
+     <label> Iphasiwedi le-database </label>
+     <placeholder> Iphasiwedi le-database </placeholder>
+     <validate> Faka igama Iphasiwedi le-database </validate>
+    </pass>
+    <db>
+     <label> Igama database </label>
+     <placeholder> Igama database </placeholder>
+     <validate> Faka Igama database </validate>
+    </db>
+    <gal_table>
+     <label> Igama Legalari Yezithombe Zethebula </label>
+     <placeholder> Igama Legalari Yezithombe Zethebula </placeholder>
+     <validate> Faka Igama Legalari Yezithombe Zethebula </validate>
+    </gal_table>
+    <img_table>
+     <label> Igama Lethebula Yezithombe </label>
+     <placeholder> Igama Lethebula Yezithombe </placeholder>
+     <validate> Faka Igama Lethebula Yezithombe </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Amafolda anemvume ebhalekayo</title>
+    <db_alert>
+     <![CDATA[
+    <b> ukumiswa </b>, <b> irekhodi lephutha </b> kanye <b> izincazelo </b> amafayela kuzokwakhiwa enkombeni elandelayo. Uma ufuna ukushintsha igama lalesi siqondisi, shintsha izincazelo ye- <b> DB_DIR </b> kufayela le- <b> definitions0.php </b> bese uvuselele leli khasi.<br/><br/>Uma ufuna ukuqamba kabusha ifayela lokumisa, ifayela lokungena ngephutha nefayela lezincazelo, shintsha izincazelo ze-<b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ne-<b>DEFINITIONS_FILE</b> kufayela le-definitions0.php.<br/><br/>Uma uhlelo lwakho lususelwa ku-unix, setha izimvume zokubhala kufolda ngomyalo olandelayo:<br/><b>%s</b><br/><br/>Ngaphambi kokuqala ukufakwa, qiniseka ukuthi ifolda elandelayo ikhona futhi unemvume yokubhalela kufolda:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Ngaphambi kokuqala ukufakwa, qiniseka ukuthi amafolda alandelayo ayatholakala nokuthi unemvume yokubhalela amafolda. <br/> <br/> Uma uzosebenzisa amafolda ngaphandle kwamafolda alandelayo, uma amafolda engekho kudiski, qala ngokwenza amafolda bese usetha izimvume zokubhala zalawa mafolda bese uqala ukufakwa.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Indlela eya kufayela lokumisa, ifayela lokungena kwephutha nefayela lokuchaza</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Amafolda alandelayo azokwakhiwa lapho kugcinwa igalari entsha. I- <b>%d</b> icacisa i-ID yegalari. Lawa mafolda adalwe kufolda ye- <b> Ifolda Eyisisekelo Yezithombe </b> echazwe ngenhla. Qiniseka ukuthi ifomethi yalawa mafolda ifanelekile.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Ifayela lokumisa lidalwe ngaphambilini. Ngakho-ke, awukwazi ukusebenzisa ukufakwa. Kufanele uqale ususe ifayela lokumisa bese usebenzisa ukufakwa.</config_alert>
+    <tmp_dir>
+     <label>Isiqondisi Sesikhashana Sesithombe</label>
+     <placeholder>Isiqondisi Sesikhashana Sesithombe</placeholder>
+     <validate>Isiqondisi Sesikhashana Sesithombe</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Uhla lwemibhalo lwesikhashana lwamafayela wezithonjana</label>
+     <placeholder>Uhla lwemibhalo lwesikhashana lwamafayela wezithonjana</placeholder>
+     <validate>Uhla lwemibhalo lwesikhashana lwamafayela wezithonjana</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Ifolda yesikhashana yezithombe ezincane ezisikiwe</label>
+     <placeholder>Ifolda yesikhashana yezithombe ezincane ezisikiwe</placeholder>
+     <validate>Ifolda yesikhashana yezithombe ezincane ezisikiwe</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Ifolda yesikhashana yezithombe zama-slide</label>
+     <placeholder>Ifolda yesikhashana yezithombe zama-slide</placeholder>
+     <validate>Ifolda yesikhashana yezithombe zama-slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Ifolda Eyisisekelo Yezithombe</label>
+     <placeholder>Ifolda Eyisisekelo Yezithombe</placeholder>
+     <validate>Ifolda Eyisisekelo Yezithombe</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Ifolda yezithombe</label>
+     <placeholder>Ifolda yezithombe</placeholder>
+     <validate>Ifolda yezithombe</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Ifolda yezithombe zesithonjana</label>
+     <placeholder>Ifolda yezithombe zesithonjana</placeholder>
+     <validate>Ifolda yezithombe zesithonjana</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Ifolda yamafayela wesithonjana esinqampuliwe</label>
+     <placeholder>Ifolda yamafayela wesithonjana esinqampuliwe</placeholder>
+     <validate>Ifolda yamafayela wesithonjana esinqampuliwe</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Ifolda yamafayela wesilayidi</label>
+     <placeholder>Ifolda yamafayela wesilayidi</placeholder>
+     <validate>Ifolda yamafayela wesilayidi</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Isiqondisi sefayela le-XML</label>
+     <placeholder>Isiqondisi sefayela le-XML</placeholder>
+     <validate>Isiqondisi sefayela le-XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Ukufaka. Sicela ulinde ... </installing>
+    <success> Ukufaka kuqediwe ngempumelelo. </success>
+    <error> Ukufakwa akukwazanga ukuqedwa. </error>
+   </alert>
+  
+   <submit> Qala Ukufaka </submit>
+   <submit_continue> Qhubeka &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Ukuphathwa Kwegalari </title>
+   <header> Ukuphathwa Kwegalari </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Uhlu Lwegalari </title>
+   <header> Uhlu Lwegalari </header>
+   <sort>
+    <asc> kusuka kuqala kuye ekugcineni </asc>
+    <desc> kusuka ekugcineni kuya ekuqaleni </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Buka </button>
+     <title> Buka Igalari </title>
+    </view>
+    <delete>
+     <button> Susa </button>
+     <title> Susa Igalari </title>
+    </delete>
+    <edit>
+     <button> Hlela </button>
+     <title> Hlela Igalari </title>
+    </edit>
+    <images>izithombe</images>
+    <date>Usuku</date>
+    <move> Ungakwazi ukuhlunga zemibukiso ngokuhudula nabo ngegundane. </move>
+    <move_mobile>Thepha bese ubamba into ngomunwe wakho bese uyilinda ukuthi iqokonyiswe. Ngemuva kokukhetha into, hudula umunwe wakho ukuhlunga izinto.</move_mobile>
+   </card>
+   <alert> Awekho amagalari atholakele. </alert>
+   <modal>
+    <del_gallery>
+     <label> Susa Igalari </label>
+     <close> vala </close>
+     <text> Uyafuna ukususa legalari kusuka kusayithi? </text>
+     <command> Susa </command>
+     <cancel> Khansela </cancel>
+    </del_gallery>
+    <result>
+     <label> Iphutha </label>
+     <close> vala </close>
+     <text> </text>
+     <command> Vala </command>
+    </result>
+   </modal>
+   <save_changes> Gcina isakhiwo segalari </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Ukubukwa Kwegalari </title>
+   <header> Ukubukwa Kwegalari </header>
+   <alert> Azikho izithombe ezitholakele. </alert>
+   <share>Yabelana ngegalari</share>
+   <filedate>Usuku Lokulayisha</filedate>
+   <filesize>Usayizi Wefayela</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopishela kubhodi yokunamathisela</label>
+     <close>vala</close>
+     <text>Isixhumanisi sikopishelwe kubhodi lokunamathisela</text>
+     <command>Kopisha</command>
+     <cancel>Vala</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Dala Igalari Entsha </title>
+    <header> Dala Igalari Entsha </header>
+   </new>
+   <edit>
+    <title> Hlela Igalari </title>
+    <header> Hlela Igalari </header>
+   </edit>
+   <gallery_info>
+    <title> Ulwazi lwegalari </title>
+    <name>
+     <label> Igama legalari yezithombe </label>
+     <placeholder> Igama legalari yezithombe </placeholder>
+     <validate> Igama Lokufaka Igalari </validate>
+    </name>
+    <description>
+     <label> Incazelo Yegalari </label>
+     <placeholder> Incazelo yeGalari </placeholder>
+     <validate> Incazelo Yegalari Yokufaka </validate>
+    </description>
+    <keywords>
+     <label> Amagama abalulekile wegalari ahlukaniswe ngamakhoma noma ngamakhefu wolayini </label>
+     <placeholder> Amagama abalulekile wegalari ahlukaniswe ngamakhoma noma ngamakhefu wolayini </placeholder>
+     <validate> Faka amagama angukhiye wegalari </validate>
+    </keywords>
+    <submit>
+     <save> Londoloza Igalari </save>
+     <update> Buyekeza Igalari </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Umhlahlandlela Wokulayisha Izithombe </title>
+     <body>
+      <![CDATA[
+Khetha izithombe kusuka kudivayisi yakho ngenkinobho ye- <b> Phequlula Izithombe </b> bese uyilayisha kusayithi ngenkinobho ye- <b> Layisha Izithombe </b>. <br/> Amafomethi Wezithombe Asekelwayo: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Ukuxazululwa Okuncane Okuvumelekile: <b>%d x %d px</b> <br/> Ukulungiswa Okuphezulu Okuvumelekile: <b>%d x %d px</b> <br/> Usayizi Ophezulu Wefayela Elodwa: <b>%d MB</b> <br/> Ukubalwa Kwezithombe Ngegalari ngayinye: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Khetha Konke </select_all>
+    <select_del> Susa Izithombe ezikhethiwe </select_del>
+    <thumb>
+     <exist>
+      <delete> Susa isithombe esilayishiwe kusuka kusayithi </delete>
+      <info> Imininingwane Yesithombe </info>
+     </exist>
+     <new>
+      <delete> Susa isithombe esilayishiwe kusuka kusayithi </delete>
+      <cancel> Khansela ukulayishwa kwesithombe </cancel>
+      <info> Imininingwane Yesithombe </info>
+      <rotate> Zungezisa isithombe </rotate>
+      <crop> Nqampuna isithombe </crop>
+     </new>
+     <move> Ungahlunga izithombe ngokuzihudula ngegundane. </move>
+     <move_mobile>Thepha bese ubamba into ngomunwe wakho bese uyilinda ukuthi iqokonyiswe. Ngemuva kokukhetha into, hudula umunwe wakho ukuhlunga izinto.</move_mobile>
+    </thumb>
+    <browse> Phequlula Izithombe </browse>
+    <upload> Layisha Izithombe </upload>
+    <uploading> Izithombe zikhonakulayishwe kusayithi. Ungalivali ikhasi kuze kube yilapho ukulayisha sekuqedile. </uploading>
+    <uploaded> Izithombe zilayishwe kusayithi. </uploaded>
+    <error>Amanye amaphutha enzekile ngenkathi kulayishwa amafayela kuseva.</error>
+    <save_changes> Gcina izinguquko zesithombe </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Nqampuna </crop>
+     <cancel> Khansela </cancel>
+    </crop>
+    <del_up_img>
+     <label> Susa isithombe </label>
+     <close> vala </close>
+     <text> Uyafuna ukususa lesi sithombe kuwebhusayithi? </text>
+     <command> Susa </command>
+     <cancel> Khansela </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Susa isithombe </label>
+     <close> vala </close>
+     <text> Uyafuna ukususa lesi sithombe kuwebhusayithi? </text>
+     <command> Susa </command>
+     <cancel> Khansela </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Susa izithombe ezikhethiwe </label>
+     <close> vala </close>
+     <text> Uyafuna ukususa izithombe ezikhethiwe kuwebhusayithi? </text>
+     <command> Susa </command>
+     <cancel> Khansela </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Ulwazi Lomfanekiso </label>
+     <close> vala </close>
+     <filename> Igama lefayela </filename>
+     <filesize> Usayizi Wefayela </filesize>
+     <date> Usuku Lokulayisha </date>
+     <title>
+      <label> Isihloko </label>
+      <placeholder> Isihloko Sesithombe </placeholder>
+     </title>
+     <desc>
+      <label> Incazelo </label>
+      <placeholder> Incazelo yesithombe </placeholder>
+     </desc>
+     <keyw>
+      <label> Amagama angukhiye </label>
+      <placeholder> Amagama angukhiye ahlukaniswe amakhoma noma amakhefu wolayini </placeholder>
+     </keyw>
+     <command> Gcina / Buyekeza </command>
+     <cancel> Khansela </cancel>
+    </img_info>
+    <result>
+     <label> Iphutha </label>
+     <close> vala </close>
+     <text> </text>
+     <command> Vala </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Izilungiselelo zesithombe sokulayisha okuvunyelwe </title>
+    <upload_limit>
+     <label> Inombolo enkulu yesithombe ngegalari ngayinye </label>
+     <placeholder> Inombolo enkulu yesithombe ngegalari ngayinye </placeholder>
+     <validate> Faka isibalo esiphezulu sezithombe ngegalari ngayinye </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Usayizi omkhulu wefayela elilodwa (MB) </label>
+     <placeholder> Usayizi omkhulu wefayela elilodwa (MB) </placeholder>
+     <validate> Faka usayizi omkhulu wefayela elilodwa (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Ubukhulu besithombe obuncane buvunyelwe </label>
+     <width>
+      <placeholder> Ububanzi okungenani </placeholder>
+      <validate> Faka inani </validate>
+     </width>
+     <height>
+      <placeholder> Ukuphakama okungenani </placeholder>
+      <validate> Faka inani </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Usayizi omkhulu wesithombe uvunyelwe </label>
+     <width>
+      <placeholder> Ububanzi obukhulu </placeholder>
+      <validate> Faka inani </validate>
+     </width>
+     <height>
+      <placeholder> Ukuphakama obukhulu </placeholder>
+      <validate> Faka inani </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Ukuguqulwa kwesithombe </title>
+    <full_resolution>
+     <label> Usayizi Ogcwele Wesithombe </label>
+     <width>
+      <placeholder> Ububanzi obukhulu </placeholder>
+      <validate> Faka inani </validate>
+     </width>
+     <height>
+      <placeholder> Ukuphakama obukhulu </placeholder>
+      <validate> Faka inani </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Usayizi Wesithonjana </label>
+     <width>
+      <placeholder> Ububanzi Wesithonjana </placeholder>
+      <validate> Faka inani </validate>
+     </width>
+     <height>
+      <placeholder> Ukuphakama Wesithonjana </placeholder>
+      <validate> Faka inani </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Usayizi weSilayidi </label>
+     <width>
+      <placeholder> Ububanzi besilayidi </placeholder>
+      <validate> Faka inani </validate>
+     </width>
+     <height>
+      <placeholder> Ukuphakama kwesilayidi </placeholder>
+      <validate> Faka inani </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Ikhwalithi ye-Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Ukucindezela kwe-PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> I-Watermark </title>
+    <label> Sebenzisa i-Watermark </label>
+    <position> Isikhundla se-Watermark </position>
+    <image> Isithombe se-Watermark </image>
+    <set> Setha i-Watermark </set>
+    <browse> 1- Dlulisa amehlo kufayela le-Watermark </browse>
+    <adjust> 2- Lungisa isithombe ngokuya ngohlaka. </adjust>
+    <upload> 3- Layisha Ifayela Elikhethiwe </upload>
+    <uploading> Iyalayisha ... </uploading>
+    <uploaded> Kulayishiwe. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Ikhasi </page>
+   <first> Ikhasi lokuqala </first>
+   <prev> Ikhasi langaphambilini </prev>
+   <next> Ikhasi elilandelayo </next>
+   <last> Ikhasi Lokugcina </last>
+  </pagination>
+
+</lang>

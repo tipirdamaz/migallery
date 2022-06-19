@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ഭാഷ </title>
+   <label> ഭാഷ തിരഞ്ഞെടുക്കുക </label>
+  </lang>
+
+  <timezone>
+   <title>സമയ മേഖല</title>
+   <label>സമയമേഖല തിരഞ്ഞെടുക്കുക</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ഗാലറി മാനേജുമെന്റ് </gallery_man>
+   <gallery_list> ഗാലറി പട്ടിക </gallery_list>
+   <uploader> പുതിയ ഗാലറി സൃഷ്ടിക്കുക </uploader>
+   <back> തിരികെ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery സജ്ജമാക്കുക </title>
+   <header> MIGallery സജ്ജമാക്കുക </header>
+
+   <img_direction>
+    <label> ഗാലറി, ഇമേജ്, സ്ലൈഡ് ദിശ </label>
+    <left> ഇടത്തുനിന്ന് വലത്തേക്ക് </left>
+    <right> വലത്തുനിന്ന് ഇടത്തോട്ട് </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ഡാറ്റാബേസ് വിവരങ്ങൾ </title>
+    <host>
+     <label> ഡാറ്റാബേസ് ഹോസ്റ്റ്നാമം </label>
+     <placeholder> ഡാറ്റാബേസ് ഹോസ്റ്റ്നാമം </placeholder>
+     <validate> ഇൻ‌പുട്ട് ഡാറ്റാബേസ് ഹോസ്റ്റ്നാമം </validate>
+    </host>
+    <user>
+     <label> ഡാറ്റാബേസ് ഉപയോക്തൃനാമം </label>
+     <placeholder> ഡാറ്റാബേസ് ഉപയോക്തൃനാമം </placeholder>
+     <validate> ഇൻ‌പുട്ട് ഡാറ്റാബേസ് ഉപയോക്തൃനാമം </validate>
+    </user>
+    <pass>
+     <label> ഡാറ്റാബേസ് പാസ്‌വേഡ് </label>
+     <placeholder> ഡാറ്റാബേസ് പാസ്‌വേഡ് </placeholder>
+     <validate> ഇൻ‌പുട്ട് ഡാറ്റാബേസ് പാസ്‌വേഡ് </validate>
+    </pass>
+    <db>
+     <label> ഡാറ്റാബേസിന്റെ പേര് </label>
+     <placeholder> ഡാറ്റാബേസിന്റെ പേര് </placeholder>
+     <validate> ഡാറ്റാബേസിന്റെ പേര് നൽകുക </validate>
+    </db>
+    <gal_table>
+     <label> ഗാലറി മേശയുടെ പേര് </label>
+     <placeholder> ഗാലറി മേശയുടെ പേര് </placeholder>
+     <validate> ഗാലറി മേശയുടെ പേര് നൽകുക </validate>
+    </gal_table>
+    <img_table>
+     <label> ഇമേജ് മേശയുടെ പേര് </label>
+     <placeholder> ഇമേജ് മേശയുടെ പേര് </placeholder>
+     <validate> ഇമേജ് മേശയുടെ പേര് നൽകുക </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>എഴുതാവുന്ന ചലനാത്മക ഉള്ളടക്കങ്ങൾക്കായുള്ള ഡയറക്ടറികൾ</title>
+    <db_alert>
+     <![CDATA[
+    <b> കോൺഫിഗറേഷൻ </b>, <b> പിശക് ലോഗ് </b>, <b> നിർവചനങ്ങൾ </b> ഫയലുകൾ സൃഷ്ടിക്കുന്നിടത്താണ് ഇനിപ്പറയുന്ന ഡയറക്‌ടറി. നിങ്ങൾക്ക് ഈ ഡയറക്ടറിയുടെ പേര് മാറ്റണമെങ്കിൽ, <b> definitions0.php </b> ഫയലിലെ <b> DB_DIR </b> നിർവചനം മാറ്റി ഈ പേജ് പുതുക്കുക.<br/><br/>കോൺഫിഗറേഷൻ, പിശക് ലോഗും നിർവചനങ്ങളും നിങ്ങൾക്ക് ഈ ഫയലുകളുടെ പേരുമാറ്റണമെങ്കിൽ, definitions0.php ഫയലിലെ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b>, <b>DEFINITIONS_FILE</b> എന്നിവയുടെ നിർവചനങ്ങൾ മാറ്റുക.<br/><br/>നിങ്ങളുടെ സിസ്റ്റം യുണിക്സ് അടിസ്ഥാനമാക്കിയുള്ളതാണെങ്കിൽ, ഇനിപ്പറയുന്ന കമാൻഡ് ഉപയോഗിച്ച് ഫോൾഡറിൽ റൈറ്റ് അനുമതികൾ സജ്ജമാക്കുക:<br/><b>%s</b><br/><br/>ഇൻസ്റ്റാളേഷൻ ആരംഭിക്കുന്നതിന് മുമ്പ്, ഇനിപ്പറയുന്ന പാത്ത് നിലവിലുണ്ടെന്നും ഡയറക്ടറിയിലേക്ക് എഴുതാൻ നിങ്ങൾക്ക് അനുമതിയുണ്ടെന്നും ഉറപ്പാക്കുക:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ഇൻസ്റ്റാളേഷൻ ആരംഭിക്കുന്നതിന് മുമ്പ്, ഇനിപ്പറയുന്ന ഡയറക്ടറികൾ നിലവിലുണ്ടെന്നും ഡയറക്ടറികളിലേക്ക് എഴുതാൻ നിങ്ങൾക്ക് അനുമതിയുണ്ടെന്നും ഉറപ്പാക്കുക. <br/> <br/> നിങ്ങൾ ഇനിപ്പറയുന്ന ഡയറക്ടറികൾ ഒഴികെയുള്ള ഡയറക്ടറികൾ ഉപയോഗിക്കാൻ പോകുകയാണെങ്കിൽ, ഡയറക്ടറികൾ നിലവിലില്ലെങ്കിൽ, ആദ്യം ഡയറക്ടറികൾ സൃഷ്ടിച്ച് ഈ ഡയറക്ടറികളുടെ റൈറ്റ് അനുമതികൾ സജ്ജമാക്കി ഇൻസ്റ്റാളേഷൻ ആരംഭിക്കുക.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>കോൺഫിഗറേഷൻ, പിശക് ലോഗ്, നിർവചനങ്ങൾ ഫയലുകൾ പാത്ത്</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    പുതിയ ഗാലറി സംരക്ഷിക്കുമ്പോൾ ഇനിപ്പറയുന്ന ഡയറക്ടറികൾ സൃഷ്ടിക്കപ്പെടുന്നു. <b>%d</b> ഗാലറി ഐഡിയെ സൂചിപ്പിക്കുന്നു. മുകളിൽ നിർവചിച്ചിരിക്കുന്ന <b> ഇമേജ് ബേസ് ഡയറക്ടറി </b> ഡയറക്ടറിയിലാണ് ഈ ഡയറക്ടറികൾ സൃഷ്ടിച്ചിരിക്കുന്നത്. ഈ ഡയറക്ടറികളുടെ ഫോർമാറ്റ് ഉചിതമാണെന്ന് ഉറപ്പാക്കുക.
+     ]]>
+    </img_dir_alert>
+    <config_alert>കോൺഫിഗറേഷൻ ഫയൽ മുമ്പ് സൃഷ്ടിച്ചു. അതിനാൽ, നിങ്ങൾക്ക് സജ്ജീകരണം പ്രവർത്തിപ്പിക്കാൻ കഴിയില്ല. നിങ്ങൾ ആദ്യം കോൺഫിഗറേഷൻ ഫയൽ ഇല്ലാതാക്കുകയും സജ്ജീകരണം പ്രവർത്തിപ്പിക്കുകയും വേണം.</config_alert>
+    <tmp_dir>
+     <label>ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</label>
+     <placeholder>ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</placeholder>
+     <validate>ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</label>
+     <placeholder>ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</placeholder>
+     <validate>ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ക്രോപ്പ്ഡ് ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</label>
+     <placeholder>ക്രോപ്പ്ഡ് ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</placeholder>
+     <validate>ക്രോപ്പ്ഡ് ലഘുചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>സ്ലൈഡ് ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</label>
+     <placeholder>സ്ലൈഡ് ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</placeholder>
+     <validate>സ്ലൈഡ് ചിത്രത്തിന്റെ താൽക്കാലിക ഡയറക്ടറി</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ഇമേജ് ബേസ് ഡയറക്ടറി</label>
+     <placeholder>ഇമേജ് ബേസ് ഡയറക്ടറി</placeholder>
+     <validate>ഇമേജ് ബേസ് ഡയറക്ടറി</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ഇമേജ് ഡയറക്ടറി</label>
+     <placeholder>ഇമേജ് ഡയറക്ടറി</placeholder>
+     <validate>ഇമേജ് ഡയറക്ടറി</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ലഘുചിത്ര ഡയറക്‌ടറി</label>
+     <placeholder>ലഘുചിത്ര ഡയറക്‌ടറി</placeholder>
+     <validate>ലഘുചിത്ര ഡയറക്‌ടറി</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ക്രോപ്പ് ചെയ്‌ത ലഘുചിത്ര ഡയറക്‌ടറി</label>
+     <placeholder>ക്രോപ്പ് ചെയ്‌ത ലഘുചിത്ര ഡയറക്‌ടറി</placeholder>
+     <validate>ക്രോപ്പ് ചെയ്‌ത ലഘുചിത്ര ഡയറക്‌ടറി</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>സ്ലൈഡ് ഇമേജ് ഡയറക്ടറി</label>
+     <placeholder>സ്ലൈഡ് ഇമേജ് ഡയറക്ടറി</placeholder>
+     <validate>സ്ലൈഡ് ഇമേജ് ഡയറക്ടറി</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>എക്സ്എം‌എൽ ഫയൽ ഡയറക്ടറി</label>
+     <placeholder>എക്സ്എം‌എൽ ഫയൽ ഡയറക്ടറി</placeholder>
+     <validate>എക്സ്എം‌എൽ ഫയൽ ഡയറക്ടറി</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ഇൻസ്റ്റാൾ ചെയ്യുന്നു. ദയവായി കാത്തിരിക്കുക ... </installing>
+    <success> ഇൻസ്റ്റാളേഷൻ വിജയകരമായി പൂർത്തിയായി. </success>
+    <error> ഇൻസ്റ്റാളേഷൻ പൂർത്തിയാക്കാൻ കഴിഞ്ഞില്ല. </error>
+   </alert>
+  
+   <submit> ഇൻസ്റ്റാളേഷൻ ആരംഭിക്കുക </submit>
+   <submit_continue> തുടരുക &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ഗാലറി മാനേജുമെന്റ് </title>
+   <header> ഗാലറി മാനേജുമെന്റ് </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ഗാലറി പട്ടിക </title>
+   <header> ഗാലറി പട്ടിക </header>
+   <sort>
+    <asc> തുടക്കം മുതൽ </asc>
+    <desc> ആരംഭിക്കാൻ അവസാനം </desc>
+   </sort>
+   <card>
+    <view>
+     <button> കാണുക </button>
+     <title> ഗാലറി കാണുക </title>
+    </view>
+    <delete>
+     <button> ചവറ്റുകുട്ട </button>
+     <title> ഗാലറി ഇല്ലാതാക്കുക </title>
+    </delete>
+    <edit>
+     <button> മാറ്റുക </button>
+     <title> ഗാലറി എഡിറ്റുചെയ്യുക </title>
+    </edit>
+    <images>ചിത്രങ്ങൾ</images>
+    <date>തീയതി</date>
+    <move> ഗാലറികൾ മൗസ് ഉപയോഗിച്ച് വലിച്ചിട്ടുകൊണ്ട് നിങ്ങൾക്ക് അവയെ അടുക്കാൻ കഴിയും. </move>
+    <move_mobile>നിങ്ങളുടെ വിരൽ ഉപയോഗിച്ച് ഒരു ഇനം ടാപ്പുചെയ്ത് പിടിക്കുക, അത് ഹൈലൈറ്റ് ചെയ്യുന്നതിനായി കാത്തിരിക്കുക. ഒരു ഇനം തിരഞ്ഞെടുത്ത ശേഷം, ഇനങ്ങൾ അടുക്കുന്നതിന് വിരൽ വലിച്ചിടുക.</move_mobile>
+   </card>
+   <alert> ഗാലറിയൊന്നും കണ്ടെത്തിയില്ല. </alert>
+   <modal>
+    <del_gallery>
+     <label> ഗാലറി ഇല്ലാതാക്കുക </label>
+     <close> അടയ്ക്കുക </close>
+     <text> സൈറ്റിൽ നിന്ന് ഈ ഗാലറി ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ? </text>
+     <command> ഇല്ലാതാക്കുക </command>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </del_gallery>
+    <result>
+     <label> പിശക് </label>
+     <close> അടയ്ക്കുക </close>
+     <text> </text>
+     <command> അടയ്ക്കുക </command>
+    </result>
+   </modal>
+   <save_changes> ഗാലറി സോർട്ടിംഗ് സംരക്ഷിക്കുക </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ഗാലറി കാഴ്ച </title>
+   <header> ഗാലറി കാഴ്ച </header>
+   <alert> ചിത്രമൊന്നും കണ്ടെത്തിയില്ല. </alert>
+   <share>ഗാലറി പങ്കിടുക</share>
+   <filedate>അപ്‌ലോഡ് തീയതി</filedate>
+   <filesize>ഫയൽ വലുപ്പം</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ക്ലിപ്പ്ബോർഡിലേയ്ക്ക് പകർത്തുക</label>
+     <close>അടയ്ക്കുക</close>
+     <text>ലിങ്ക് ക്ലിപ്പ്ബോർഡിലേക്ക് പകർത്തി</text>
+     <command>പകർത്തുക</command>
+     <cancel>അടയ്ക്കുക</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> പുതിയ ഗാലറി സൃഷ്ടിക്കുക </title>
+    <header> പുതിയ ഗാലറി സൃഷ്ടിക്കുക </header>
+   </new>
+   <edit>
+    <title> ഗാലറി എഡിറ്റുചെയ്യുക </title>
+    <header> ഗാലറി എഡിറ്റുചെയ്യുക </header>
+   </edit>
+   <gallery_info>
+    <title> ഗാലറി വിവരങ്ങൾ </title>
+    <name>
+     <label> ഗാലറിയുടെ പേര് </label>
+     <placeholder> ഗാലറിയുടെ പേര് </placeholder>
+     <validate> ഇൻ‌പുട്ട് ഗാലറി നാമം </validate>
+    </name>
+    <description>
+     <label> ഗാലറി വിവരണം </label>
+     <placeholder> ഗാലറി വിവരണം </placeholder>
+     <validate> ഇൻ‌പുട്ട് ഗാലറി വിവരണം </validate>
+    </description>
+    <keywords>
+     <label> ഗാലറി കീവേഡുകൾ കോമകളോ ലൈൻ ബ്രേക്കുകളോ ഉപയോഗിച്ച് വേർതിരിച്ചിരിക്കുന്നു </label>
+     <placeholder> ഗാലറി കീവേഡുകൾ കോമകളോ ലൈൻ ബ്രേക്കുകളോ ഉപയോഗിച്ച് വേർതിരിച്ചിരിക്കുന്നു </placeholder>
+     <validate> ഗാലറി കീവേഡുകൾ നൽകുക </validate>
+    </keywords>
+    <submit>
+     <save> ഗാലറി സംരക്ഷിക്കുക </save>
+     <update> ഗാലറി അപ്‌ഡേറ്റുചെയ്യുക </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> അപ്‌ലോഡർ ഗൈഡ് </title>
+     <body>
+      <![CDATA[
+<b> ഇമേജുകൾ ബ്ര rowse സ് ചെയ്യുക </b> ബട്ടൺ ഉപയോഗിച്ച് നിങ്ങളുടെ ഉപകരണത്തിൽ നിന്ന് ഇമേജുകൾ തിരഞ്ഞെടുത്ത് <b> ഇമേജുകൾ അപ്‌ലോഡുചെയ്യുക </b> ബട്ടൺ ഉപയോഗിച്ച് സൈറ്റിലേക്ക് അപ്‌ലോഡ് ചെയ്യുക. <br/> പിന്തുണയ്ക്കുന്ന ഇമേജ് ഫോർമാറ്റുകൾ: <b> JPEG, PNG, GIF, BMP, WEBP </b> <br/> അനുവദനീയമായ കുറഞ്ഞ മിഴിവ്: <b>%d x %d px</b> <br/> അനുവദനീയമായ പരമാവധി മിഴിവ്: <b>%d x %d px</b> <br/> സിംഗിൾ ഫയൽ പരമാവധി വലുപ്പം: <b>%d MB</b> <br/> ഓരോ ഗാലറിയിലും ചിത്രങ്ങളുടെ എണ്ണം: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> എല്ലാം തിരഞ്ഞെടുക്കുക </select_all>
+    <select_del> തിരഞ്ഞെടുത്ത ഇമേജുകൾ ഇല്ലാതാക്കുക </select_del>
+    <thumb>
+     <exist>
+      <delete> സൈറ്റിൽ നിന്ന് അപ്‌ലോഡ് ചെയ്ത ചിത്രം ഇല്ലാതാക്കുക </delete>
+      <info> ഇമേജ് വിവരം </info>
+     </exist>
+     <new>
+      <delete> സൈറ്റിൽ നിന്ന് അപ്‌ലോഡ് ചെയ്ത ചിത്രം ഇല്ലാതാക്കുക </delete>
+      <cancel> ഇമേജ് അപ്‌ലോഡ് റദ്ദാക്കുക </cancel>
+      <info> ഇമേജ് വിവരം </info>
+      <rotate> ചിത്രം തിരിക്കുക </rotate>
+      <crop> ക്രോപ്പ് ഇമേജ് </crop>
+     </new>
+     <move> ചിത്രങ്ങൾ മൗസ് ഉപയോഗിച്ച് വലിച്ചിട്ടുകൊണ്ട് നിങ്ങൾക്ക് അവയെ അടുക്കാൻ കഴിയും. </move>
+     <move_mobile>നിങ്ങളുടെ വിരൽ ഉപയോഗിച്ച് ഒരു ഇനം ടാപ്പുചെയ്ത് പിടിക്കുക, അത് ഹൈലൈറ്റ് ചെയ്യുന്നതിനായി കാത്തിരിക്കുക. ഒരു ഇനം തിരഞ്ഞെടുത്ത ശേഷം, ഇനങ്ങൾ അടുക്കുന്നതിന് വിരൽ വലിച്ചിടുക.</move_mobile>
+    </thumb>
+    <browse> ഇമേജുകൾ ബ്ര rowse സ് ചെയ്യുക </browse>
+    <upload> ഇമേജുകൾ അപ്‌ലോഡുചെയ്യുക </upload>
+    <uploading> ഇമേജുകൾ അപ്‌ലോഡുചെയ്യുന്നു tസൈറ്റ്. അപ്‌ലോഡ് പൂർത്തിയാകുന്നതുവരെ പേജ് അടയ്‌ക്കരുത്. </uploading>
+    <uploaded> ഇമേജുകൾ സൈറ്റിലേക്ക് അപ്‌ലോഡ് ചെയ്തു. </uploaded>
+    <error>സെർവറിലേക്ക് ഫയലുകൾ അപ്‌ലോഡുചെയ്യുമ്പോൾ ചില പിശകുകൾ സംഭവിച്ചു.</error>
+    <save_changes> ഇമേജ് മാറ്റങ്ങൾ സംരക്ഷിക്കുക </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> വിള </crop>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </crop>
+    <del_up_img>
+     <label> ചിത്രം ഇല്ലാതാക്കുക </label>
+     <close> അടയ്ക്കുക </close>
+     <text> വെബ്‌സൈറ്റിൽ നിന്ന് ഈ ചിത്രം ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ? </text>
+     <command> ഇല്ലാതാക്കുക </command>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ചിത്രം ഇല്ലാതാക്കുക </label>
+     <close> അടയ്ക്കുക </close>
+     <text> വെബ്‌സൈറ്റിൽ നിന്ന് ഈ ചിത്രം ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ? </text>
+     <command> ഇല്ലാതാക്കുക </command>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> തിരഞ്ഞെടുത്ത ഇമേജുകൾ ഇല്ലാതാക്കുക </label>
+     <close> അടയ്ക്കുക </close>
+     <text> വെബ്‌സൈറ്റിൽ നിന്ന് തിരഞ്ഞെടുത്ത ചിത്രങ്ങൾ ഇല്ലാതാക്കാൻ നിങ്ങൾ ആഗ്രഹിക്കുന്നുണ്ടോ? </text>
+     <command> ഇല്ലാതാക്കുക </command>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ഇമേജ് വിവരം </label>
+     <close> അടയ്ക്കുക </close>
+     <filename> ഫയലിന്റെ പേര് </filename>
+     <filesize> ഫയൽ വലുപ്പം </filesize>
+     <date> അപ്‌ലോഡ് തീയതി </date>
+     <title>
+      <label> ശീർഷകം </label>
+      <placeholder> ഇമേജ് ശീർഷകം </placeholder>
+     </title>
+     <desc>
+      <label> വിവരണം </label>
+      <placeholder> ഇമേജ് വിവരണം </placeholder>
+     </desc>
+     <keyw>
+      <label> കീവേഡുകൾ </label>
+      <placeholder> കീവേഡുകൾ കോമ അല്ലെങ്കിൽ ലൈൻ ബ്രേക്കുകൾ ഉപയോഗിച്ച് വേർതിരിച്ചിരിക്കുന്നു </placeholder>
+     </keyw>
+     <command> സംരക്ഷിക്കുക / അപ്‌ഡേറ്റ് ചെയ്യുക </command>
+     <cancel> റദ്ദാക്കുക </cancel>
+    </img_info>
+    <result>
+     <label> പിശക് </label>
+     <close> അടയ്ക്കുക </close>
+     <text> </text>
+     <command> അടയ്ക്കുക </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> അപ്‌ലോഡുചെയ്യാനാകുന്ന ഇമേജ് ക്രമീകരണങ്ങൾ </title>
+    <upload_limit>
+     <label> ഓരോ ഗാലറിയിലും പരമാവധി ചിത്രങ്ങളുടെ എണ്ണം </label>
+     <placeholder> ഓരോ ഗാലറിയിലും പരമാവധി ഇമേജ് എണ്ണം </placeholder>
+     <validate> ഓരോ ഗാലറിയിലും പരമാവധി ഇമേജ് എണ്ണം നൽകുക </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> സിംഗിൾ ഫയൽ പരമാവധി വലുപ്പം (MB) </label>
+     <placeholder> സിംഗിൾ ഫയൽ മാക്സ് വലുപ്പം (MB) </placeholder>
+     <validate> ഇൻ‌പുട്ട് സിംഗിൾ ഫയൽ മാക്സ് വലുപ്പം (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> അനുവദനീയമായ കുറഞ്ഞ മിഴിവ് </label>
+     <width>
+      <placeholder> കുറഞ്ഞ വീതി </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </width>
+     <height>
+      <placeholder> കുറഞ്ഞ ഉയരം </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> അനുവദനീയമായ പരമാവധി മിഴിവ് </label>
+     <width>
+      <placeholder> പരമാവധി വീതി </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </width>
+     <height>
+      <placeholder> പരമാവധി ഉയരം </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ഇമേജ് പരിവർത്തനം </title>
+    <full_resolution>
+     <label> ഇമേജ് പൂർണ്ണ വലുപ്പം </label>
+     <width>
+      <placeholder> പരമാവധി വീതി </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </width>
+     <height>
+      <placeholder> പരമാവധി ഉയരം </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ലഘുചിത്ര വലുപ്പം </label>
+     <width>
+      <placeholder> തമ്പ് വീതി </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </width>
+     <height>
+      <placeholder> തമ്പ് ഉയരം </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> സ്ലൈഡ് വലുപ്പം </label>
+     <width>
+      <placeholder> സ്ലൈഡ് വീതി </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </width>
+     <height>
+      <placeholder> സ്ലൈഡ് ഉയരം </placeholder>
+      <validate> മൂല്യം നൽകുക </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg ഗുണമേന്മ </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG കംപ്രസ് ചെയ്യുക </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> വാട്ടർമാർക്ക് </title>
+    <label> വാട്ടർമാർക്ക് ഉപയോഗിക്കുക </label>
+    <position> വാട്ടർമാർക്ക് സ്ഥാനം </position>
+    <image> വാട്ടർമാർക്ക് ചിത്രം </image>
+    <set> വാട്ടർമാർക്ക് സജ്ജമാക്കുക </set>
+    <browse> 1- വാട്ടർമാർക്ക് ഫയൽ തിരഞ്ഞെടുക്കുക </browse>
+    <adjust> 2- ഫ്രെയിമിനനുസരിച്ച് ചിത്രം ക്രമീകരിക്കുക. </adjust>
+    <upload> 3- ഫയൽ അപ്‌ലോഡുചെയ്യുക </upload>
+    <uploading> അപ്‌ലോഡുചെയ്യുന്നു ... </uploading>
+    <uploaded> അപ്‌ലോഡുചെയ്‌തു. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> പേജ് </page>
+   <first> ആദ്യ പേജ് </first>
+   <prev> മുമ്പത്തെ പേജ് </prev>
+   <next> അടുത്ത പേജ് </next>
+   <last> അവസാന പേജ് </last>
+  </pagination>
+
+</lang>

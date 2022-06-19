@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Jazyk </title>
+   <label> Vyberte jazyk </label>
+  </lang>
+
+  <timezone>
+   <title>Časové pásmo</title>
+   <label>Vyberte časové pásmo</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Správa galérie </gallery_man>
+   <gallery_list> Zoznam galérií </gallery_list>
+   <uploader> Vytvoriť novú galériu </uploader>
+   <back> Späť </back>
+  </nav>
+
+  <install>
+ 
+   <title> Nastavenie MIGallery </title>
+   <header> Nastavenie MIGallery </header>
+
+   <img_direction>
+    <label> Orientácia galérie, obrázka a snímky </label>
+    <left> zľava doprava </left>
+    <right> sprava doľava </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informácie o databáze MySQL </title>
+    <host>
+     <label> Názov hostiteľa databázy </label>
+     <placeholder> Názov hostiteľa databázy </placeholder>
+     <validate> Zadajte názov hostiteľa databázy </validate>
+    </host>
+    <user>
+     <label> Meno používateľa databázy </label>
+     <placeholder> Meno používateľa databázy </placeholder>
+     <validate> Zadajte užívateľské meno databázy </validate>
+    </user>
+    <pass>
+     <label> Heslo databázy </label>
+     <placeholder> Heslo databázy </placeholder>
+     <validate> Zadajte heslo databázy </validate>
+    </pass>
+    <db>
+     <label> Názov databázy </label>
+     <placeholder> Názov databázy </placeholder>
+     <validate> Zadajte názov databázy </validate>
+    </db>
+    <gal_table>
+     <label> Názov tabuľky galérie </label>
+     <placeholder> Názov tabuľky galérie </placeholder>
+     <validate> Zadajte názov tabuľky galérie </validate>
+    </gal_table>
+    <img_table>
+     <label> Názov tabuľky obrázka </label>
+     <placeholder> Názov tabuľky obrázka </placeholder>
+     <validate> Zadajte názov tabuľky obrázkov </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Adresáre pre zapisovateľný dynamický obsah</title>
+    <db_alert>
+     <![CDATA[
+    V nižšie uvedenom adresári sa vytvoria súbory <b> konfigurácie </b>, <b> denník chýb </b> a <b> definície </b>. Ak chcete zmeniť názov tohto adresára, zmeňte definíciu <b> DB_DIR </b> v súbore <b> definitions0.php </b> a obnovte túto stránku.<br/><br/>Ak chcete premenovať konfiguračný súbor, súbor denníka chýb a súbor definícií, zmeňte definície <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> a <b>DEFINITIONS_FILE</b> v súbore definitions0.php.<br/><br/>Ak je váš systém založený na systéme unix, nastavte oprávnenie na zápis do priečinka pomocou tohto príkazu:<br/><b>%s</b><br/><br/>Pred spustením inštalácie sa uistite, či existuje nasledujúca cesta a či máte oprávnenie na zápis do adresára:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Pred spustením inštalácie sa uistite, či sú k dispozícii nasledujúce adresáre a či máte povolenie na zápis do týchto adresárov. <br/> <br/> Ak chcete používať iné adresáre, ako sú nasledujúce adresáre, ak tieto adresáre na disku neexistujú, najskôr vytvorte adresáre a nastavte oprávnenie na zápis týchto adresárov a spustite inštaláciu.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Cesta ku konfigurácii, chybovému protokolu a definičným súborom</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Po uložení novej galérie sa vytvoria nasledujúce adresáre. <b>%d</b> označuje ID galérie. Tieto adresáre sa vytvoria v adresári <b> Adresár obrazovej základne </b>, ktorý je definovaný vyššie. Uistite sa, že formát týchto adresárov je vhodný.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfiguračný súbor bol vytvorený predtým. Preto nemôžete spustiť inštaláciu. Najprv musíte odstrániť konfiguračný súbor a potom spustiť inštaláciu.</config_alert>
+    <tmp_dir>
+     <label>Dočasný adresár obrázka</label>
+     <placeholder>Dočasný adresár obrázka</placeholder>
+     <validate>Dočasný adresár obrázka</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Dočasný adresár miniatúr</label>
+     <placeholder>Dočasný adresár miniatúr</placeholder>
+     <validate>Dočasný adresár miniatúr</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Dočasný adresár orezaných miniatúr</label>
+     <placeholder>Dočasný adresár orezaných miniatúr</placeholder>
+     <validate>Dočasný adresár orezaných miniatúr</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Dočasný adresár obrázkov prezentácie</label>
+     <placeholder>Dočasný adresár obrázkov prezentácie</placeholder>
+     <validate>Dočasný adresár obrázkov prezentácie</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Adresár obrazovej základne</label>
+     <placeholder>Adresár obrazovej základne</placeholder>
+     <validate>Adresár obrazovej základne</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Adresár obrázkov</label>
+     <placeholder>Adresár obrázkov</placeholder>
+     <validate>Adresár obrázkov</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Adresár miniatúr</label>
+     <placeholder>Adresár miniatúr</placeholder>
+     <validate>Adresár miniatúr</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Adresár orezaných miniatúr</label>
+     <placeholder>Adresár orezaných miniatúr</placeholder>
+     <validate>Adresár orezaných miniatúr</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Adresár obrázkov prezentácie</label>
+     <placeholder>Adresár obrázkov prezentácie</placeholder>
+     <validate>Adresár obrázkov prezentácie</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Adresár súborov XML</label>
+     <placeholder>Adresár súborov XML</placeholder>
+     <validate>Adresár súborov XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Inštalácia. Čakajte prosím ... </installing>
+    <success> Inštalácia bola úspešne dokončená. </success>
+    <error> Inštaláciu nebolo možné dokončiť. </error>
+   </alert>
+  
+   <submit> Spustiť inštaláciu </submit>
+   <submit_continue> Pokračovať &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Správa galérie </title>
+   <header> Správa galérie </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Zoznam galérií </title>
+   <header> Zoznam galérie </header>
+   <sort>
+    <asc> zoradiť od prvého po posledný </asc>
+    <desc> zoradiť od posledného po prvé </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Zobraziť </button>
+     <title> Zobraziť galériu </title>
+    </view>
+    <delete>
+     <button> Odstrániť </button>
+     <title> Odstrániť galériu </title>
+    </delete>
+    <edit>
+     <button> Upraviť </button>
+     <title> Upraviť galériu </title>
+    </edit>
+    <images>obrázok</images>
+    <date>Dátum</date>
+    <move> Galérie môžete triediť ich ťahaním myšou. </move>
+    <move_mobile>Klepnite a podržte prst na položke a počkajte, kým sa zvýrazní. Po výbere položky položky roztriedite presunutím prsta.</move_mobile>
+   </card>
+   <alert> Nenašla sa žiadna galéria. </alert>
+   <modal>
+    <del_gallery>
+     <label> Odstrániť galériu </label>
+     <close> zavrieť </close>
+     <text> Chcete odstrániť túto galériu zo stránok? </text>
+     <command> Odstrániť </command>
+     <cancel> Zrušiť </cancel>
+    </del_gallery>
+    <result>
+     <label> Chyba </label>
+     <close> zavrieť </close>
+     <text> </text>
+     <command> Zavrieť </command>
+    </result>
+   </modal>
+   <save_changes> Uložiť usporiadanie galérií </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Zobrazenie galérie </title>
+   <header> Zobrazenie galérie </header>
+   <alert> Neboli nájdené žiadne obrázky. </alert>
+   <share>Zdieľať galériu</share>
+   <filedate>Dátum nahrania</filedate>
+   <filesize>Veľkosť súboru</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Skopírovať do schránky</label>
+     <close>zavrieť</close>
+     <text>Odkaz bol skopírovaný do schránky</text>
+     <command>Kópia</command>
+     <cancel>Zavrieť</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Vytvoriť novú galériu </title>
+    <header> Vytvoriť novú galériu </header>
+   </new>
+   <edit>
+    <title> Upraviť galériu </title>
+    <header> Upraviť galériu </header>
+   </edit>
+   <gallery_info>
+    <title> Informácie o galérii </title>
+    <name>
+     <label> Názov galérie </label>
+     <placeholder> Názov galérie </placeholder>
+     <validate> Zadajte názov galérie </validate>
+    </name>
+    <description>
+     <label> Popis galérie </label>
+     <placeholder> Popis galérie </placeholder>
+     <validate> Popis galérie vstupov </validate>
+    </description>
+    <keywords>
+     <label> Kľúčové slová galérie sú oddelené čiarkami alebo zalomením riadkov </label>
+     <placeholder> Kľúčové slová galérie sú oddelené čiarkami alebo zalomením riadkov </placeholder>
+     <validate> Zadajte kľúčové slová galérie </validate>
+    </keywords>
+    <submit>
+     <save> Uložiť galériu </save>
+     <update> Aktualizovať galériu </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Sprievodca nahrávaním obrázkov </title>
+     <body>
+      <![CDATA[
+Vyberte obrázky zo svojho zariadenia pomocou tlačidla <b> Prehliadať obrázky </b> a nahrajte ich na web pomocou tlačidla <b> Odovzdajte obrázky </b>. <br/> Podporované formáty obrázkov: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Prípustné minimálne rozlíšenie: <b>%d x %d px</b> <br/> Maximálne prípustné rozlíšenie: <b>%d x %d px</b> <br/> Jeden súbor Maximálna veľkosť: <b>%d MB</b> <br/> Počet obrázkov na galériu: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Vyberte všetky </select_all>
+    <select_del> Odstrániť vybrané obrázky </select_del>
+    <thumb>
+     <exist>
+      <delete> Odstrániť nahraný obrázok zo stránok </delete>
+      <info> Informácie o obrázku </info>
+     </exist>
+     <new>
+      <delete> Odstrániť nahraný obrázok zo stránok </delete>
+      <cancel> Zrušiť nahrávanie obrázkov </cancel>
+      <info> Informácie o obrázku </info>
+      <rotate> Otočiť obrázok </rotate>
+      <crop> Orezať obrázok </crop>
+     </new>
+     <move> Obrázky môžete triediť ich ťahaním myšou. </move>
+     <move_mobile>Klepnite a podržte prst na položke a počkajte, kým sa zvýrazní. Po výbere položky položky roztriedite presunutím prsta.</move_mobile>
+    </thumb>
+    <browse> Prehliadať obrázky </browse>
+    <upload> Odovzdajte obrázky </upload>
+    <uploading> Obrázky sa práve načítajúnačítané na web. Nezatvárajte stránku, kým sa nahrávanie nedokončí. </uploading>
+    <uploaded> Na web sa nahrali obrázky. </uploaded>
+    <error>Pri nahrávaní súborov na server sa vyskytli chyby.</error>
+    <save_changes> Uložiť zmeny obrázka </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Orezať </crop>
+     <cancel> Zrušiť </cancel>
+    </crop>
+    <del_up_img>
+     <label> Odstrániť obrázok </label>
+     <close> zavrieť </close>
+     <text> Chcete odstrániť tento obrázok z webových stránok? </text>
+     <command> Odstrániť </command>
+     <cancel> Zrušiť </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Odstrániť obrázok </label>
+     <close> zavrieť </close>
+     <text> Chcete odstrániť tento obrázok z webových stránok? </text>
+     <command> Odstrániť </command>
+     <cancel> Zrušiť </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Odstrániť vybraté obrázky </label>
+     <close> zavrieť </close>
+     <text> Chcete odstrániť vybrané obrázky z webových stránok? </text>
+     <command> Odstrániť </command>
+     <cancel> Zrušiť </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informácie o obrázku </label>
+     <close> zavrieť </close>
+     <filename> Názov súboru </filename>
+     <filesize> Veľkosť súboru </filesize>
+     <date> Dátum nahrania </date>
+     <title>
+      <label> Názov </label>
+      <placeholder> Názov obrázka </placeholder>
+     </title>
+     <desc>
+      <label> Popis </label>
+      <placeholder> Popis obrázka </placeholder>
+     </desc>
+     <keyw>
+      <label> Kľúčové slová </label>
+      <placeholder> Kľúčové slová sú oddelené čiarkami alebo zalomením riadkov </placeholder>
+     </keyw>
+     <command> Uložiť / aktualizovať </command>
+     <cancel> Zrušiť </cancel>
+    </img_info>
+    <result>
+     <label> Chyba </label>
+     <close> zavrieť </close>
+     <text> </text>
+     <command> Zavrieť </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Nastavenia obrázka pre prípustné nahranie </title>
+    <upload_limit>
+     <label> Maximálny počet obrázkov na galériu </label>
+     <placeholder> Maximálny počet obrázkov na galériu </placeholder>
+     <validate> Zadajte maximálny počet obrázkov na galériu </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maximálna veľkosť jedného súboru (MB) </label>
+     <placeholder> Maximálna veľkosť jedného súboru (MB) </placeholder>
+     <validate> Zadajte maximálnu veľkosť jedného súboru (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Prípustné minimálne rozlíšenie </label>
+     <width>
+      <placeholder> minimálna šírka </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </width>
+     <height>
+      <placeholder> minimálna výška </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Maximálne prípustné rozlíšenie </label>
+     <width>
+      <placeholder> maximálna šírka </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </width>
+     <height>
+      <placeholder> maximálna výška </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformácia obrázka </title>
+    <full_resolution>
+     <label> Obrázok v plnej veľkosti </label>
+     <width>
+      <placeholder> maximálna šírka </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </width>
+     <height>
+      <placeholder> maximálna výška </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Veľkosť miniatúry </label>
+     <width>
+      <placeholder> Šírka miniatúry </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </width>
+     <height>
+      <placeholder> Výška miniatúry </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Veľkosť posuvného obrázka </label>
+     <width>
+      <placeholder> Šírka snímky </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </width>
+     <height>
+      <placeholder> Výška snímky </placeholder>
+      <validate> Zadajte hodnotu </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kvalita JPEG </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Kompresia PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vodoznak </title>
+    <label> Použiť vodoznak </label>
+    <position> Pozícia vodoznaku </position>
+    <image> Obrázok vodoznaku </image>
+    <set> Nastaviť vodoznak </set>
+    <browse> 1 - Prechádzajte obrazový súbor vodoznaku </browse>
+    <adjust> 2- Upravte obraz podľa rámčeka. </adjust>
+    <upload> 3- Nahranie vybraného súboru </upload>
+    <uploading> Nahráva sa ... </uploading>
+    <uploaded> Nahrané. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Stránka </page>
+   <first> Prvá stránka </first>
+   <prev> Predchádzajúca stránka </prev>
+   <next> Ďalšia stránka </next>
+   <last> Posledná stránka </last>
+  </pagination>
+
+</lang>

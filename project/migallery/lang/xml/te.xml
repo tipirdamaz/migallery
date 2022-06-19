@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> భాష </title>
+   <label> భాషను ఎంచుకోండి </label>
+  </lang>
+
+  <timezone>
+   <title>సమయమండలం</title>
+   <label>టైమ్‌జోన్ ఎంచుకోండి</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> గ్యాలరీ నిర్వహణ </gallery_man>
+   <gallery_list> గ్యాలరీ జాబితా </gallery_list>
+   <uploader> క్రొత్త గ్యాలరీని సృష్టించండి </uploader>
+   <back> తిరిగి </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery సెటప్ </title>
+   <header> MIGallery సెటప్ </header>
+
+   <img_direction>
+    <label> గ్యాలరీ, చిత్రం మరియు స్లైడ్ దిశ </label>
+    <left> ఎడమ నుండి కుడికి </left>
+    <right> కుడి నుండి ఎడమకు </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL డేటాబేస్ సమాచారం </title>
+    <host>
+     <label> డేటాబేస్ హోస్ట్ పేరు </label>
+     <placeholder> డేటాబేస్ హోస్ట్ పేరు </placeholder>
+     <validate> ఇన్‌పుట్ డేటాబేస్ హోస్ట్ పేరు </validate>
+    </host>
+    <user>
+     <label> డేటాబేస్ యూజర్ నేమ్ </label>
+     <placeholder> డేటాబేస్ యూజర్ నేమ్ </placeholder>
+     <validate> ఇన్‌పుట్ డేటాబేస్ యూజర్‌నేమ్ </validate>
+    </user>
+    <pass>
+     <label> డేటాబేస్ పాస్వర్డ్ </label>
+     <placeholder> డేటాబేస్ పాస్వర్డ్ </placeholder>
+     <validate> ఇన్పుట్ డేటాబేస్ పాస్వర్డ్ </validate>
+    </pass>
+    <db>
+     <label> డేటాబేస్ పేరు </label>
+     <placeholder> డేటాబేస్ పేరు </placeholder>
+     <validate> ఇన్‌పుట్ డేటాబేస్ పేరు </validate>
+    </db>
+    <gal_table>
+     <label> గ్యాలరీ పట్టిక పేరు </label>
+     <placeholder> గ్యాలరీ పట్టిక పేరు </placeholder>
+     <validate> గ్యాలరీ పట్టిక పేరును నమోదు చేయండి </validate>
+    </gal_table>
+    <img_table>
+     <label> చిత్ర పట్టిక పేరు </label>
+     <placeholder> చిత్ర పట్టిక పేరు </placeholder>
+     <validate> చిత్ర పట్టిక పేరును నమోదు చేయండి </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>వ్రాయగల డైనమిక్ విషయాల కోసం డైరెక్టరీలు</title>
+    <db_alert>
+     <![CDATA[
+    కింది డైరెక్టరీ ఇక్కడ <b> కాన్ఫిగరేషన్ </b>, <b> ఎర్రర్ లాగ్ </b> మరియు <b> నిర్వచనాలు </b> ఫైల్స్ సృష్టించబడతాయి. మీరు ఈ డైరెక్టరీ పేరును మార్చాలనుకుంటే, <b> definitions0.php </b> ఫైల్‌లోని <b> DB_DIR </b> నిర్వచనాన్ని మార్చండి మరియు ఈ పేజీని రిఫ్రెష్ చేయండి.<br/><br/>మీరు కాన్ఫిగరేషన్ ఫైల్, ఎర్రర్ లాగ్ ఫైల్ మరియు డెఫినిషన్స్ ఫైల్ పేరు మార్చాలనుకుంటే, definitions0.php ఫైల్‌లో <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> మరియు <b>DEFINITIONS_FILE</b> యొక్క నిర్వచనాలను మార్చండి.<br/><br/>మీ సిస్టమ్ యునిక్స్ ఆధారంగా ఉంటే, కింది ఆదేశంతో ఫోల్డర్‌కు వ్రాత అనుమతులను సెట్ చేయండి:<br/><b>%s</b><br/><br/>సంస్థాపనను ప్రారంభించడానికి ముందు, కింది మార్గం ఉందని నిర్ధారించుకోండి మరియు డైరెక్టరీకి వ్రాయడానికి మీకు అనుమతులు ఉన్నాయి:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ఇన్స్టాలేషన్ ప్రారంభించే ముందు, కింది డైరెక్టరీలు అందుబాటులో ఉన్నాయని మరియు డైరెక్టరీలకు వ్రాయడానికి మీకు అనుమతి ఉందని నిర్ధారించుకోండి. <br/> <br/> మీరు ఈ క్రింది డైరెక్టరీలు కాకుండా ఇతర డైరెక్టరీలను ఉపయోగించబోతున్నట్లయితే, డైరెక్టరీలు డిస్క్‌లో లేకపోతే, మొదట డైరెక్టరీలను సృష్టించి, ఈ డైరెక్టరీల యొక్క వ్రాత అనుమతులను సెట్ చేసి, సంస్థాపనను ప్రారంభించండి.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>కాన్ఫిగరేషన్, లోపం లాగ్ మరియు నిర్వచనాలు ఫైల్స్ మార్గం</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    క్రొత్త గ్యాలరీ సేవ్ చేయబడినప్పుడు క్రింది డైరెక్టరీలు సృష్టించబడతాయి. <b>%d</b> గ్యాలరీ ఐడిని సూచిస్తుంది. ఈ డైరెక్టరీలు పైన నిర్వచించిన <b> ఇమేజ్ బేస్ డైరెక్టరీ </b> డైరెక్టరీలో సృష్టించబడతాయి. ఈ డైరెక్టరీల ఆకృతి తగినదని నిర్ధారించుకోండి.
+     ]]>
+    </img_dir_alert>
+    <config_alert>కాన్ఫిగరేషన్ ఫైల్ ముందు సృష్టించబడింది. అందువల్ల, మీరు సంస్థాపనను అమలు చేయలేరు. మీరు మొదట కాన్ఫిగరేషన్ ఫైల్‌ను తొలగించి, ఆపై ఇన్‌స్టాలేషన్‌ను అమలు చేయాలి.</config_alert>
+    <tmp_dir>
+     <label>చిత్రాల తాత్కాలిక డైరెక్టరీ</label>
+     <placeholder>చిత్రాల తాత్కాలిక డైరెక్టరీ</placeholder>
+     <validate>చిత్రాల తాత్కాలిక డైరెక్టరీ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</label>
+     <placeholder>సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</placeholder>
+     <validate>సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>కత్తిరించిన సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</label>
+     <placeholder>కత్తిరించిన సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</placeholder>
+     <validate>కత్తిరించిన సూక్ష్మచిత్రాల తాత్కాలిక డైరెక్టరీ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>స్లైడ్ షో చిత్రాల తాత్కాలిక డైరెక్టరీ</label>
+     <placeholder>స్లైడ్ షో చిత్రాల తాత్కాలిక డైరెక్టరీ</placeholder>
+     <validate>స్లైడ్ షో చిత్రాల తాత్కాలిక డైరెక్టరీ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ఇమేజ్ బేస్ డైరెక్టరీ</label>
+     <placeholder>ఇమేజ్ బేస్ డైరెక్టరీ</placeholder>
+     <validate>ఇమేజ్ బేస్ డైరెక్టరీ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>చిత్ర డైరెక్టరీ</label>
+     <placeholder>చిత్ర డైరెక్టరీ</placeholder>
+     <validate>చిత్ర డైరెక్టరీ</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>సూక్ష్మచిత్ర డైరెక్టరీ</label>
+     <placeholder>సూక్ష్మచిత్ర డైరెక్టరీ</placeholder>
+     <validate>సూక్ష్మచిత్ర డైరెక్టరీ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>కత్తిరించిన సూక్ష్మచిత్ర డైరెక్టరీ</label>
+     <placeholder>కత్తిరించిన సూక్ష్మచిత్ర డైరెక్టరీ</placeholder>
+     <validate>కత్తిరించిన సూక్ష్మచిత్ర డైరెక్టరీ</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>స్లైడ్ ఇమేజ్ డైరెక్టరీ</label>
+     <placeholder>స్లైడ్ ఇమేజ్ డైరెక్టరీ</placeholder>
+     <validate>స్లైడ్ ఇమేజ్ డైరెక్టరీ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ఫైల్ డైరెక్టరీ</label>
+     <placeholder>XML ఫైల్ డైరెక్టరీ</placeholder>
+     <validate>XML ఫైల్ డైరెక్టరీ</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ఇన్‌స్టాల్ చేస్తోంది. దయచేసి వేచి ఉండండి ... </installing>
+    <success> ఇన్‌స్టాలేషన్ విజయవంతంగా పూర్తయింది. </success>
+    <error> ఇన్‌స్టాలేషన్ పూర్తి కాలేదు. </error>
+   </alert>
+  
+   <submit> సంస్థాపన ప్రారంభించండి </submit>
+   <submit_continue> కొనసాగించు &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> గ్యాలరీ నిర్వహణ </title>
+   <header> గ్యాలరీ నిర్వహణ </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> గ్యాలరీ జాబితా </title>
+   <header> గ్యాలరీ జాబితా </header>
+   <sort>
+    <asc> మొదటి నుండి చివరి వరకు </asc>
+    <desc> చివరి నుండి మొదటి వరకు </desc>
+   </sort>
+   <card>
+    <view>
+     <button> వీక్షణ </button>
+     <title> గ్యాలరీని వీక్షించండి </title>
+    </view>
+    <delete>
+     <button> తొలగించు </button>
+     <title> గ్యాలరీని తొలగించు </title>
+    </delete>
+    <edit>
+     <button> సవరించండి </button>
+     <title> గ్యాలరీని సవరించండి </title>
+    </edit>
+    <images>చిత్రాలు</images>
+    <date>తేదీ</date>
+    <move> మీరు గ్యాలరీలను మౌస్‌తో లాగడం ద్వారా వాటిని క్రమబద్ధీకరించవచ్చు. </move>
+    <move_mobile>మీ వేలితో ఒక వస్తువును తాకి పట్టుకోండి మరియు అది హైలైట్ అయ్యే వరకు వేచి ఉండండి. అంశాన్ని ఎంచుకున్న తర్వాత, అంశాలను క్రమబద్ధీకరించడానికి మీ వేలిని లాగండి.</move_mobile>
+   </card>
+   <alert> గ్యాలరీ కనుగొనబడలేదు. </alert>
+   <modal>
+    <del_gallery>
+     <label> గ్యాలరీని తొలగించు </label>
+     <close> క్లోజ్ </close>
+     <text> మీరు ఈ గ్యాలరీని సైట్ నుండి తొలగించాలనుకుంటున్నారా? </text>
+     <command> తొలగించు </command>
+     <cancel> రద్దు </cancel>
+    </del_gallery>
+    <result>
+     <label> లోపం </label>
+     <close> క్లోజ్ </close>
+     <text> </text>
+     <command> మూసివేయి </command>
+    </result>
+   </modal>
+   <save_changes> గ్యాలరీల అమరికను సేవ్ చేయండి </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> గ్యాలరీ వీక్షణ </title>
+   <header> గ్యాలరీ వీక్షణ </header>
+   <alert> చిత్రాలు ఏవీ కనుగొనబడలేదు. </alert>
+   <share>గ్యాలరీని భాగస్వామ్యం చేయండి</share>
+   <filedate>అప్‌లోడ్ తేదీ</filedate>
+   <filesize>ఫైల్ పరిమాణం</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>క్లిప్‌బోర్డ్‌కు కాపీ చేయండి</label>
+     <close>క్లోజ్</close>
+     <text>లింక్ క్లిప్‌బోర్డ్‌కు కాపీ చేయబడింది</text>
+     <command>కాపీ</command>
+     <cancel>మూసివేయి</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> క్రొత్త గ్యాలరీని సృష్టించండి </title>
+    <header> క్రొత్త గ్యాలరీని సృష్టించండి </header>
+   </new>
+   <edit>
+    <title> గ్యాలరీని సవరించండి </title>
+    <header> గ్యాలరీని సవరించండి </header>
+   </edit>
+   <gallery_info>
+    <title> గ్యాలరీ సమాచారం </title>
+    <name>
+     <label> గ్యాలరీ పేరు </label>
+     <placeholder> గ్యాలరీ పేరు </placeholder>
+     <validate> ఇన్‌పుట్ గ్యాలరీ పేరు </validate>
+    </name>
+    <description>
+     <label> గ్యాలరీ వివరణ </label>
+     <placeholder> గ్యాలరీ వివరణ </placeholder>
+     <validate> ఇన్‌పుట్ గ్యాలరీ వివరణ </validate>
+    </description>
+    <keywords>
+     <label> గ్యాలరీ కీలకపదాలు కామాలతో లేదా పంక్తి విరామాలతో వేరు చేయబడ్డాయి </label>
+     <placeholder> గ్యాలరీ కీలకపదాలు కామాలతో లేదా పంక్తి విరామాలతో వేరు చేయబడ్డాయి </placeholder>
+     <validate> గ్యాలరీ కీలకపదాలను నమోదు చేయండి </validate>
+    </keywords>
+    <submit>
+     <save> గ్యాలరీని సేవ్ చేయండి </save>
+     <update> గ్యాలరీని నవీకరించండి </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> చిత్ర అప్‌లోడర్ గైడ్ </title>
+     <body>
+      <![CDATA[
+<b> చిత్రాలను బ్రౌజ్ చేయండి </b> బటన్‌తో మీ పరికరం నుండి చిత్రాలను ఎంచుకోండి మరియు <b> చిత్రాలను అప్‌లోడ్ చేయండి </b> బటన్‌తో సైట్‌కు అప్‌లోడ్ చేయండి. <br/> మద్దతు ఉన్న చిత్ర ఆకృతులు: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> అనుమతించదగిన కనీస తీర్మానం: <b>%d x %d px</b> <br/> అనుమతించదగిన గరిష్ట తీర్మానం: <b>%d x %d px</b> <br/> ఒకే ఫైల్ గరిష్ట పరిమాణం: <b>%d MB</b> <br/> గ్యాలరీకి చిత్రాల సంఖ్య: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> అన్నీ ఎంచుకోండి </select_all>
+    <select_del> ఎంచుకున్న చిత్రాలను తొలగించండి </select_del>
+    <thumb>
+     <exist>
+      <delete> సైట్ నుండి అప్‌లోడ్ చేసిన చిత్రాన్ని తొలగించండి </delete>
+      <info> చిత్ర సమాచారం </info>
+     </exist>
+     <new>
+      <delete> సైట్ నుండి అప్‌లోడ్ చేసిన చిత్రాన్ని తొలగించండి </delete>
+      <cancel> చిత్రం అప్‌లోడ్‌ను రద్దు చేయండి </cancel>
+      <info> చిత్ర సమాచారం </info>
+      <rotate> చిత్రాన్ని తిప్పండి </rotate>
+      <crop> పంట చిత్రం </crop>
+     </new>
+     <move> మీరు చిత్రాలను మౌస్‌తో లాగడం ద్వారా వాటిని క్రమబద్ధీకరించవచ్చు. </move>
+     <move_mobile>మీ వేలితో ఒక వస్తువును తాకి పట్టుకోండి మరియు అది హైలైట్ అయ్యే వరకు వేచి ఉండండి. అంశాన్ని ఎంచుకున్న తర్వాత, అంశాలను క్రమబద్ధీకరించడానికి మీ వేలిని లాగండి.</move_mobile>
+    </thumb>
+    <browse> చిత్రాలను బ్రౌజ్ చేయండి </browse>
+    <upload> చిత్రాలను అప్‌లోడ్ చేయండి </upload>
+    <uploading> చిత్రాలు అప్ అవుతున్నాయిసైట్కు లోడ్ చేయబడింది. అప్‌లోడ్ పూర్తయ్యే వరకు పేజీని మూసివేయవద్దు. </uploading>
+    <uploaded> చిత్రాలు సైట్‌కు అప్‌లోడ్ చేయబడ్డాయి. </uploaded>
+    <error>ఫైల్‌లను సర్వర్‌కు అప్‌లోడ్ చేస్తున్నప్పుడు కొన్ని లోపాలు సంభవించాయి.</error>
+    <save_changes> చిత్ర మార్పులను సేవ్ చేయండి </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> పంట </crop>
+     <cancel> రద్దు </cancel>
+    </crop>
+    <del_up_img>
+     <label> చిత్రాన్ని తొలగించండి </label>
+     <close> క్లోజ్ </close>
+     <text> మీరు ఈ చిత్రాన్ని వెబ్‌సైట్ నుండి తొలగించాలనుకుంటున్నారా? </text>
+     <command> తొలగించు </command>
+     <cancel> రద్దు </cancel>
+    </del_up_img>
+    <del_img>
+     <label> చిత్రాన్ని తొలగించండి </label>
+     <close> క్లోజ్ </close>
+     <text> మీరు ఈ చిత్రాన్ని వెబ్‌సైట్ నుండి తొలగించాలనుకుంటున్నారా? </text>
+     <command> తొలగించు </command>
+     <cancel> రద్దు </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ఎంచుకున్న చిత్రాలను తొలగించండి </label>
+     <close> క్లోజ్ </close>
+     <text> మీరు ఎంచుకున్న చిత్రాలను వెబ్‌సైట్ నుండి తొలగించాలనుకుంటున్నారా? </text>
+     <command> తొలగించు </command>
+     <cancel> రద్దు </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> చిత్ర సమాచారం </label>
+     <close> క్లోజ్ </close>
+     <filename> ఫైల్ పేరు </filename>
+     <filesize> ఫైల్ పరిమాణం </filesize>
+     <date> అప్‌లోడ్ తేదీ </date>
+     <title>
+      <label> శీర్షిక </label>
+      <placeholder> చిత్ర శీర్షిక </placeholder>
+     </title>
+     <desc>
+      <label> వివరణ </label>
+      <placeholder> చిత్ర వివరణ </placeholder>
+     </desc>
+     <keyw>
+      <label> కీవర్డ్లు </label>
+      <placeholder> ముఖ్య పదాలు కామాలతో లేదా పంక్తి విరామాలతో వేరు చేయబడతాయి </placeholder>
+     </keyw>
+     <command> సేవ్ / అప్‌డేట్ </command>
+     <cancel> రద్దు </cancel>
+    </img_info>
+    <result>
+     <label> లోపం </label>
+     <close> క్లోజ్ </close>
+     <text> </text>
+     <command> మూసివేయి </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> అప్‌లోడ్ చేయగల చిత్ర సెట్టింగ్‌లు </title>
+    <upload_limit>
+     <label> గ్యాలరీకి గరిష్ట చిత్ర సంఖ్య </label>
+     <placeholder> గ్యాలరీకి గరిష్ట చిత్ర గణన </placeholder>
+     <validate> ప్రతి గ్యాలరీకి గరిష్ట చిత్ర గణనను నమోదు చేయండి </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> సింగిల్ ఫైల్ గరిష్ట పరిమాణం (MB) </label>
+     <placeholder> సింగిల్ ఫైల్ గరిష్ట పరిమాణం (MB) </placeholder>
+     <validate> ఒక ఫైల్ (MB) యొక్క గరిష్ట పరిమాణాన్ని నమోదు చేయండి </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> అనుమతించదగిన కనిష్ట తీర్మానం </label>
+     <width>
+      <placeholder> కనిష్ట వెడల్పు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </width>
+     <height>
+      <placeholder> కనిష్ట ఎత్తు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> అనుమతించదగిన గరిష్ట తీర్మానం </label>
+     <width>
+      <placeholder> గరిష్ట వెడల్పు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </width>
+     <height>
+      <placeholder> గరిష్ట ఎత్తు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> చిత్ర పరివర్తన </title>
+    <full_resolution>
+     <label> చిత్రం పూర్తి పరిమాణం </label>
+     <width>
+      <placeholder> గరిష్ట వెడల్పు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </width>
+     <height>
+      <placeholder> గరిష్ట ఎత్తు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> సూక్ష్మచిత్రం పరిమాణం </label>
+     <width>
+      <placeholder> సూక్ష్మచిత్రం వెడల్పు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </width>
+     <height>
+      <placeholder> సూక్ష్మచిత్రం ఎత్తు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> స్లైడ్ సైజు </label>
+     <width>
+      <placeholder> స్లైడ్ వెడల్పు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </width>
+     <height>
+      <placeholder> స్లైడ్ ఎత్తు </placeholder>
+      <validate> విలువను నమోదు చేయండి </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg నాణ్యత </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG కుదింపు </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> వాటర్‌మార్క్ </title>
+    <label> వాటర్‌మార్క్ ఉపయోగించండి </label>
+    <position> వాటర్‌మార్క్ స్థానం </position>
+    <image> వాటర్‌మార్క్ చిత్రం </image>
+    <set> వాటర్‌మార్క్ సెట్ చేయండి </set>
+    <browse> 1- వాటర్‌మార్క్ చిత్ర ఫైల్‌ను బ్రౌజ్ చేయండి </browse>
+    <adjust> 2- ఫ్రేమ్ ప్రకారం చిత్రాన్ని సర్దుబాటు చేయండి. </adjust>
+    <upload> 3- ఎంచుకున్న ఫైల్‌ను అప్‌లోడ్ చేయండి </upload>
+    <uploading> అప్‌లోడ్ అవుతోంది ... </uploading>
+    <uploaded> అప్‌లోడ్ చేయబడింది. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> పేజీ </page>
+   <first> మొదటి పేజీ </first>
+   <prev> మునుపటి పేజీ </prev>
+   <next> తదుపరి పేజీ </next>
+   <last> చివరి పేజీ </last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Språk </title>
+   <label> Välj språk </label>
+  </lang>
+
+  <timezone>
+   <title>Tidszon</title>
+   <label>Välj Tidszon</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Gallerihantering </gallery_man>
+   <gallery_list> Gallerilista </gallery_list>
+   <uploader> Skapa nytt galleri </uploader>
+   <back> Tillbaka </back>
+  </nav>
+
+  <install>
+ 
+   <title> Inställning av MIGallery </title>
+   <header> Inställning av MIGallery </header>
+
+   <img_direction>
+    <label> Galleri, foto och bildspel orientering </label>
+    <left> Vänster till höger </left>
+    <right> Höger till vänster </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-databasinformation </title>
+    <host>
+     <label> Värdnamn för databas </label>
+     <placeholder> databasvärdnamn </placeholder>
+     <validate> Värdnamn för inmatningsdatabas </validate>
+    </host>
+    <user>
+     <label> Användarnamn för databas </label>
+     <placeholder> användarnamn för databas </placeholder>
+     <validate> Inmatningsdatabas användarnamn </validate>
+    </user>
+    <pass>
+     <label> databaslösenord </label>
+     <placeholder> databaslösenord </placeholder>
+     <validate> Inmatningsdatabaslösenord </validate>
+    </pass>
+    <db>
+     <label> Databasnamn </label>
+     <placeholder> databasnamn </placeholder>
+     <validate> Inmatningsdatabasnamn </validate>
+    </db>
+    <gal_table>
+     <label> Namn på galleritabell </label>
+     <placeholder> Namn på galleritabell </placeholder>
+     <validate> Ange namnet på galleritabellen </validate>
+    </gal_table>
+    <img_table>
+     <label> Namn på bildtabell </label>
+     <placeholder> Namn på bildtabell </placeholder>
+     <validate> Ange bildtabellnamn </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Kataloger för skrivbart dynamiskt innehåll</title>
+    <db_alert>
+     <![CDATA[
+    Följande katalog är där filerna <b> konfiguration </b>, <b> fellogg </b> och <b> definitioner </b> skapas. Om du vill ändra namnet på den här katalogen ändrar du <b> DB_DIR </b> definitionen i filen <b> definitions0.php </b> och uppdaterar den här sidan.<br/><br/>Om du vill byta namn på konfigurationsfil, felloggfil och definitionsfil ändrar du definitionerna av <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> och <b>DEFINITIONS_FILE</b> i filen definitions0.php.<br/><br/>Om ditt system är baserat på unix, ställ in skrivbehörigheterna till mappen med följande kommando:<br/><b>%s</b><br/><br/>Innan du startar installationen, se till att följande sökväg finns och att du har behörighet att skriva till katalogen:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Innan du startar installationen, se till att följande kataloger är tillgängliga och att du har behörighet att skriva till katalogerna. <br/> <br/> Om du ska använda andra kataloger än följande kataloger, om katalogerna inte finns på disken, skapar du först katalogerna och ställer in skrivbehörigheterna för dessa kataloger och startar installationen.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurations-, fellogg- och definitionsfilsökväg</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Följande kataloger skapas när det nya galleriet sparas. <b>%d</b> anger galleriets id. Dessa kataloger skapas i katalogen <b> Huvudmapp för bilder </b> som definierats ovan. Se till att formatet på dessa kataloger är lämpligt.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfigurationsfilen har skapats tidigare. Därför kan du inte köra installationen. Du måste först radera konfigurationsfilen och sedan köra installationen.</config_alert>
+    <tmp_dir>
+     <label>Tillfällig mapp för bilder</label>
+     <placeholder>Tillfällig mapp för bilder</placeholder>
+     <validate>Tillfällig mapp för bilder</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Tillfällig mapp för miniatyrer</label>
+     <placeholder>Tillfällig mapp för miniatyrer</placeholder>
+     <validate>Tillfällig mapp för miniatyrer</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Tillfällig mapp för beskurna miniatyrbilder</label>
+     <placeholder>Tillfällig mapp för beskurna miniatyrbilder</placeholder>
+     <validate>Tillfällig mapp för beskurna miniatyrbilder</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tillfällig mapp för bildbilder</label>
+     <placeholder>Tillfällig mapp för bildbilder</placeholder>
+     <validate>Tillfällig mapp för bildbilder</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Huvudmapp för bilder</label>
+     <placeholder>Huvudmapp för bilder</placeholder>
+     <validate>Huvudmapp för bilder</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Mapp för bilder</label>
+     <placeholder>Mapp för bilder</placeholder>
+     <validate>Mapp för bilder</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Mapp för miniatyrer</label>
+     <placeholder>Mapp för miniatyrer</placeholder>
+     <validate>Mapp för miniatyrer</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Mapp för beskurna miniatyrbilder</label>
+     <placeholder>Mapp för beskurna miniatyrbilder</placeholder>
+     <validate>Mapp för beskurna miniatyrbilder</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Mapp för bildbilder</label>
+     <placeholder>Mapp för bildbilder</placeholder>
+     <validate>Mapp för bildbilder</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-filkatalog</label>
+     <placeholder>XML-filkatalog</placeholder>
+     <validate>XML-filkatalog</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Installerar. Vänta ... </installing>
+    <success> Installationen slutfördes. </success>
+    <error> Installationen kunde inte slutföras. </error>
+   </alert>
+  
+   <submit> Starta installationen </submit>
+   <submit_continue> Fortsätt &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gallerihantering </title>
+   <header> Gallerihantering </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Gallerilista </title>
+   <header> Gallerilista </header>
+   <sort>
+    <asc> sortera från första till sista </asc>
+    <desc> sortera från sista till första </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Visa </button>
+     <title> Visa galleri </title>
+    </view>
+    <delete>
+     <button> Radera </button>
+     <title> Radera galleri </title>
+    </delete>
+    <edit>
+     <button> Redigera </button>
+     <title> Redigera galleri </title>
+    </edit>
+    <images>bilder</images>
+    <date>Datum</date>
+    <move> Du kan sortera gallerierna genom att dra dem med musen. </move>
+    <move_mobile>Rör och håll ett objekt med fingret och vänta tills det är markerat. När du har valt ett objekt sveper du för att sortera objekten.</move_mobile>
+   </card>
+   <alert> Inget galleri hittades. </alert>
+   <modal>
+    <del_gallery>
+     <label> Radera galleri </label>
+     <close> stäng </close>
+     <text> Vill du radera det här galleriet från webbplatsen? </text>
+     <command> Radera </command>
+     <cancel> Annullera </cancel>
+    </del_gallery>
+    <result>
+     <label> Fel </label>
+     <close> stäng </close>
+     <text> </text>
+     <command> Stäng </command>
+    </result>
+   </modal>
+   <save_changes> Spara galleriorangemang </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Gallerivy </title>
+   <header> Gallerivy </header>
+   <alert> Inga bilder hittades. </alert>
+   <share>Dela galleri</share>
+   <filedate>Uppladdningsdatum</filedate>
+   <filesize>Filstorlek</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopiera till Urklipp</label>
+     <close>stäng</close>
+     <text>Länken kopierades till Urklipp</text>
+     <command>Kopiera</command>
+     <cancel>Stäng</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Skapa nytt galleri </title>
+    <header> Skapa nytt galleri </header>
+   </new>
+   <edit>
+    <title> Redigera galleri </title>
+    <header> Redigera galleri </header>
+   </edit>
+   <gallery_info>
+    <title> Galleriinformation </title>
+    <name>
+     <label> Gallerins namn </label>
+     <placeholder> Galleriets namn </placeholder>
+     <validate> Namn på inmatningsgalleri </validate>
+    </name>
+    <description>
+     <label> Galleribeskrivning </label>
+     <placeholder> Galleribeskrivning </placeholder>
+     <validate> Inmatningsgalleribeskrivning </validate>
+    </description>
+    <keywords>
+     <label> Galleri nyckelord åtskilda av komma eller nya rader </label>
+     <placeholder> Galleri nyckelord åtskilda av komma eller nya rader </placeholder>
+     <validate> Ange galleri nyckelord </validate>
+    </keywords>
+    <submit>
+     <save> Spara galleri </save>
+     <update> Uppdatera galleri </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Guide för bilduppladdning </title>
+     <body>
+      <![CDATA[
+Välj bilder från din enhet med knappen <b> Bläddra bland bilder </b> och ladda upp till webbplatsen med knappen <b> Ladda upp bilder </b>. <br/> Bildformat som stöds: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Tillåten minsta upplösning: <b>%d x %d px</b> <br/> Tillåten maximal upplösning: <b>%d x %d px</b> <br/> Maximal storlek för en fil: <b>%d MB</b> <br/> Antal bilder per galleri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Välj alla </select_all>
+    <select_del> Radera valda bilder </select_del>
+    <thumb>
+     <exist>
+      <delete> Radera uppladdad bild från webbplats </delete>
+      <info> Bildinfo </info>
+     </exist>
+     <new>
+      <delete> Radera uppladdad bild från webbplats </delete>
+      <cancel> Annullera bildöverföring </cancel>
+      <info> Bildinfo </info>
+      <rotate> Rotera bild </rotate>
+      <crop> Beskära bild </crop>
+     </new>
+     <move> Du kan sortera bilderna genom att dra dem med musen. </move>
+     <move_mobile>Rör och håll ett objekt med fingret och vänta tills det är markerat. När du har valt ett objekt sveper du för att sortera objekten.</move_mobile>
+    </thumb>
+    <browse> Bläddra bland bilder </browse>
+    <upload> Ladda upp bilder </upload>
+    <uploading> Bilder håller på att gå uppladdad till webbplatsen. Stäng inte sidan förrän uppladdningen är klar. </uploading>
+    <uploaded> Bilder har laddats upp till webbplatsen. </uploaded>
+    <error>Vissa fel inträffade när filer överfördes till servern.</error>
+    <save_changes> Spara bildändringar </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Beskära </crop>
+     <cancel> Annullera </cancel>
+    </crop>
+    <del_up_img>
+     <label> Radera bild </label>
+     <close> stäng </close>
+     <text> Vill du radera den här bilden från webbplatsen? </text>
+     <command> Radera </command>
+     <cancel> Annullera </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Radera bild </label>
+     <close> stäng </close>
+     <text> Vill du radera den här bilden från webbplatsen? </text>
+     <command> Radera </command>
+     <cancel> Annullera </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Radera valda bilder </label>
+     <close> stäng </close>
+     <text> Vill du radera de valda bilderna från webbplatsen? </text>
+     <command> Radera </command>
+     <cancel> Annullera </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Bildinformation </label>
+     <close> stäng </close>
+     <filename> Filnamn </filename>
+     <filesize> Filstorlek </filesize>
+     <date> Uppladdningsdatum </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> bildtitel </placeholder>
+     </title>
+     <desc>
+      <label> Beskrivning </label>
+      <placeholder> bildbeskrivning </placeholder>
+     </desc>
+     <keyw>
+      <label> Nyckelord </label>
+      <placeholder> Nyckelord åtskilda av kommatecken eller nya rader </placeholder>
+     </keyw>
+     <command> Spara / uppdatera </command>
+     <cancel> Annullera </cancel>
+    </img_info>
+    <result>
+     <label> Fel </label>
+     <close> stäng </close>
+     <text> </text>
+     <command> Stäng </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Bildinställningar för tillåten uppladdning </title>
+    <upload_limit>
+     <label> Max antal bilder per galleri </label>
+     <placeholder> Max antal bilder per galleri </placeholder>
+     <validate> Ange maximalt antal bilder per galleri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Max filstorlek (MB) </label>
+     <placeholder> Max filstorlek (MB) </placeholder>
+     <validate> Mata in enstaka fils maxstorlek (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Tillåten minsta upplösning </label>
+     <width>
+      <placeholder> minsta bredd </placeholder>
+      <validate> Ange värde </validate>
+     </width>
+     <height>
+      <placeholder> minsta höjd </placeholder>
+      <validate> Ange värde </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Tillåten maximal upplösning </label>
+     <width>
+      <placeholder> maximal bredd </placeholder>
+      <validate> Ange värde </validate>
+     </width>
+     <height>
+      <placeholder> maximal höjd </placeholder>
+      <validate> Ange värde </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Bildtransformation </title>
+    <full_resolution>
+     <label> Bild i full storlek </label>
+     <width>
+      <placeholder> maximal bredd </placeholder>
+      <validate> Ange värde </validate>
+     </width>
+     <height>
+      <placeholder> maximal höjd </placeholder>
+      <validate> Ange värde </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatyrstorlek </label>
+     <width>
+      <placeholder> Miniatyr bredd </placeholder>
+      <validate> Ange värde </validate>
+     </width>
+     <height>
+      <placeholder> Miniatyr höjd </placeholder>
+      <validate> Ange värde </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Glidande bild dimension </label>
+     <width>
+      <placeholder> Glidande bredd </placeholder>
+      <validate> Ange värde </validate>
+     </width>
+     <height>
+      <placeholder> Glidande höjd </placeholder>
+      <validate> Ange värde </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg-kvalitet </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG-komprimering </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vattenstämpel </title>
+    <label> Använd vattenstämpel </label>
+    <position> Position för vattenstämpel </position>
+    <image> Vattenstämpelbild </image>
+    <set> Ställ in vattenstämpel </set>
+    <browse> 1- Bläddra bland vattenmärkesfiler </browse>
+    <adjust> 2- Justera bilden efter ramen. </adjust>
+    <upload> 3- Ladda upp vald fil </upload>
+    <uploading> Uppladdning ... </uploading>
+    <uploaded> uppladdat. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> sida </page>
+   <first> Första sidan </first>
+   <prev> Föregående sida </prev>
+   <next> Nästa sida </next>
+   <last> Sista sidan </last>
+  </pagination>
+
+</lang>

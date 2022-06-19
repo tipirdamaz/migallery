@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Jezik </title>
+   <label> Izberite jezik </label>
+  </lang>
+
+  <timezone>
+   <title>Časovni pas</title>
+   <label>Izberite Časovni pas</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Upravljanje galerije </gallery_man>
+   <gallery_list> Seznam galerij </gallery_list>
+   <uploader> Ustvari novo galerijo </uploader>
+   <back> Nazaj </back>
+  </nav>
+
+  <install>
+ 
+   <title> Nastavitev MIGallery </title>
+   <header> Nastavitev MIGallery </header>
+
+   <img_direction>
+    <label> Usmerjenost galerije, slike in diaprojekcije </label>
+    <left> Od leve proti desni </left>
+    <right> Od desne proti levi </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informacije o zbirki podatkov MySQL </title>
+    <host>
+     <label> Ime gostitelja zbirke podatkov </label>
+     <placeholder> Ime gostitelja zbirke podatkov </placeholder>
+     <validate> Vnesite ime gostitelja zbirke podatkov </validate>
+    </host>
+    <user>
+     <label> Uporabniško ime zbirke podatkov </label>
+     <placeholder> Uporabniško ime zbirke podatkov </placeholder>
+     <validate> Vnesite uporabniško ime zbirke podatkov </validate>
+    </user>
+    <pass>
+     <label> Geslo zbirke podatkov </label>
+     <placeholder> Geslo zbirke podatkov </placeholder>
+     <validate> Vnos gesla za zbirko podatkov </validate>
+    </pass>
+    <db>
+     <label> Ime zbirke podatkov </label>
+     <placeholder> Ime zbirke podatkov </placeholder>
+     <validate> Vnesite ime baze podatkov </validate>
+    </db>
+    <gal_table>
+     <label> Ime tabele galerije </label>
+     <placeholder> Ime tabele galerije </placeholder>
+     <validate> Vnesite ime tabele galerije </validate>
+    </gal_table>
+    <img_table>
+     <label> Ime tabele slik </label>
+     <placeholder> Ime tabele slik </placeholder>
+     <validate> Vnesite ime slikovne tabele </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Imeniki za zapisljive dinamične vsebine</title>
+    <db_alert>
+     <![CDATA[
+    V spodnjem imeniku bodo ustvarjene datoteke <b> konfiguracije </b>, <b> dnevnika napak </b> in <b> definicij </b>. Če želite preimenovati ta imenik, spremenite definicijo <b> DB_DIR </b> v datoteki <b> definitions0.php </b> in osvežite to stran.<br/><br/>Če želite preimenovati konfiguracijsko datoteko, datoteko dnevnika napak in datoteko z definicijami, spremenite definicije <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> in <b>DEFINITIONS_FILE</b> v datoteki definitions0.php.<br/><br/>Če vaš sistem temelji na unixu, nastavite dovoljenja za pisanje v mapo z naslednjim ukazom:<br/><b>%s</b><br/><br/>Preden začnete z namestitvijo, se prepričajte, da obstaja naslednja pot in imate dovoljenja za pisanje v imenik:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Pred začetkom namestitve se prepričajte, da so na voljo naslednji imeniki in ali imate dovoljenje za pisanje v imenike. <br/> <br/> Če boste uporabili imenike, ki niso naslednji imeniki, če imeniki ne obstajajo na disku, najprej ustvarite imenike in nastavite dovoljenja za pisanje teh imenikov in zaženite namestitev.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Pot datotek do konfiguracije, dnevnika napak in definicij</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Ko se shrani nova galerija, bodo ustvarjeni naslednji imeniki. <b>%d</b> označuje ID galerije. Ti imeniki bodo ustvarjeni v zgornjem imeniku <b> Osnovni imenik slik </b>. Prepričajte se, da je oblika teh imenikov ustrezna.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfiguracijska datoteka je bila že ustvarjena. Zato namestitve ne morete zagnati. Najprej morate izbrisati konfiguracijsko datoteko in nato zagnati namestitev.</config_alert>
+    <tmp_dir>
+     <label>Začasni imenik slik</label>
+     <placeholder>Začasni imenik slik</placeholder>
+     <validate>Začasni imenik slik</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Začasni imenik sličic</label>
+     <placeholder>Začasni imenik sličic</placeholder>
+     <validate>Začasni imenik sličic</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Začasni imenik obrezanih sličic</label>
+     <placeholder>Začasni imenik obrezanih sličic</placeholder>
+     <validate>Začasni imenik obrezanih sličic</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Začasni imenik datotek diapozitivov</label>
+     <placeholder>Začasni imenik datotek diapozitivov</placeholder>
+     <validate>Začasni imenik datotek diapozitivov</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Osnovni imenik slik</label>
+     <placeholder>Osnovni imenik slik</placeholder>
+     <validate>Osnovni imenik slik</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Imenik slik</label>
+     <placeholder>Imenik slik</placeholder>
+     <validate>Imenik slik</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Imenik sličic</label>
+     <placeholder>Imenik sličic</placeholder>
+     <validate>Imenik sličic</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Imenik obrezanih sličic</label>
+     <placeholder>Imenik obrezanih sličic</placeholder>
+     <validate>Imenik obrezanih sličic</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Imenik datotek diapozitivov</label>
+     <placeholder>Imenik datotek diapozitivov</placeholder>
+     <validate>Imenik datotek diapozitivov</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Imenik datotek XML</label>
+     <placeholder>Imenik datotek XML</placeholder>
+     <validate>Imenik datotek XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Namestitev. Počakajte ... </installing>
+    <success> Namestitev je bila uspešno zaključena. </success>
+    <error> Namestitve ni bilo mogoče dokončati. </error>
+   </alert>
+  
+   <submit> Začni namestitev </submit>
+   <submit_continue> Nadaljuj &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Upravljanje galerije </title>
+   <header> Upravljanje galerije </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Seznam galerij </title>
+   <header> Seznam galerij </header>
+   <sort>
+    <asc> razvrsti od prve do zadnje </asc>
+    <desc> razvrsti od zadnjega do prvega </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Pogled </button>
+     <title> Ogled galerije </title>
+    </view>
+    <delete>
+     <button> Izbriši </button>
+     <title> Izbriši galerijo </title>
+    </delete>
+    <edit>
+     <button> Uredi </button>
+     <title> Uredi galerijo </title>
+    </edit>
+    <images>slike</images>
+    <date>Datum</date>
+    <move> Galerije lahko razvrstite tako, da jih povlečete z miško. </move>
+    <move_mobile>Dotaknite se elementa s prstom in počakajte, da bo označen. Po izbiri predmeta povlecite prst, da razvrstite elemente.</move_mobile>
+   </card>
+   <alert> Galerija ni najdena. </alert>
+   <modal>
+    <del_gallery>
+     <label> Izbriši galerijo </label>
+     <close> zapri </close>
+     <text> Ali želite izbrisati to galerijo s spletnega mesta? </text>
+     <command> Izbriši </command>
+     <cancel> Prekliči </cancel>
+    </del_gallery>
+    <result>
+     <label> Napaka </label>
+     <close> zapri </close>
+     <text> </text>
+     <command> Zapri </command>
+    </result>
+   </modal>
+   <save_changes> Shrani razpored galerij </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Pogled galerije </title>
+   <header> Pogled galerije </header>
+   <alert> Ni slik. </alert>
+   <share>Skupna raba galerije</share>
+   <filedate>Datum prenosa</filedate>
+   <filesize>Velikost datoteke</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopirati v odložišče</label>
+     <close>zapri</close>
+     <text>Povezava je kopirana v odložišče</text>
+     <command>Kopirati</command>
+     <cancel>Zapri</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Ustvari novo galerijo </title>
+    <header> Ustvari novo galerijo </header>
+   </new>
+   <edit>
+    <title> Uredi galerijo </title>
+    <header> Uredi galerijo </header>
+   </edit>
+   <gallery_info>
+    <title> Informacije o galeriji </title>
+    <name>
+     <label> Ime galerije </label>
+     <placeholder> Ime galerije </placeholder>
+     <validate> Vnesite ime galerije </validate>
+    </name>
+    <description>
+     <label> Opis galerije </label>
+     <placeholder> Opis galerije </placeholder>
+     <validate> Opis vnosa galerije </validate>
+    </description>
+    <keywords>
+     <label> Ključne besede v galeriji, ločene z vejicami ali prelomi vrstic </label>
+     <placeholder> Ključne besede v galeriji, ločene z vejicami ali prelomi vrstic </placeholder>
+     <validate> Vnesite ključne besede v galeriji </validate>
+    </keywords>
+    <submit>
+     <save> Shrani galerijo </save>
+     <update> Posodobi galerijo </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Priročnik za nalaganje slik </title>
+     <body>
+      <![CDATA[
+Izberite slike iz naprave z gumbom <b> Prebrskaj slike </b> in jih naložite na spletno mesto z gumbom <b> Naloži slike </b>. <br/> Podprti formati slik: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Dovoljena najmanjša ločljivost: <b>%d x %d px</b> <br/> Dovoljena največja ločljivost: <b>%d x %d px</b> <br/> Največja velikost ene datoteke: <b>%d MB</b> <br/> Število slik na galerijo: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Izberite vse </select_all>
+    <select_del> Izbriši izbrane slike </select_del>
+    <thumb>
+     <exist>
+      <delete> Izbriši naloženo sliko s spletnega mesta </delete>
+      <info> Informacije o sliki </info>
+     </exist>
+     <new>
+      <delete> Izbriši naloženo sliko s spletnega mesta </delete>
+      <cancel> Prekliči nalaganje slike </cancel>
+      <info> Informacije o sliki </info>
+      <rotate> Zavrti sliko </rotate>
+      <crop> Obreži sliko </crop>
+     </new>
+     <move> Slike lahko razvrstite tako, da jih povlečete z miško. </move>
+     <move_mobile>Dotaknite se elementa s prstom in počakajte, da bo označen. Po izbiri predmeta povlecite prst, da razvrstite elemente.</move_mobile>
+    </thumb>
+    <browse> Prebrskaj slike </browse>
+    <upload> Naloži slike </upload>
+    <uploading> Potekajo slikenaloženo na spletno mesto. Ne zapirajte strani, dokler nalaganje ni končano. </uploading>
+    <uploaded> Slike so bile naložene na spletno mesto. </uploaded>
+    <error>Med nalaganjem datotek na strežnik je prišlo do nekaterih napak.</error>
+    <save_changes> Shrani spremembe slik </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Obreži sliko </crop>
+     <cancel> Prekliči </cancel>
+    </crop>
+    <del_up_img>
+     <label> Izbriši sliko </label>
+     <close> zapri </close>
+     <text> Ali želite to sliko izbrisati s spletnega mesta? </text>
+     <command> Izbriši </command>
+     <cancel> Prekliči </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Izbriši sliko </label>
+     <close> zapri </close>
+     <text> Ali želite to sliko izbrisati s spletnega mesta? </text>
+     <command> Izbriši </command>
+     <cancel> Prekliči </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Izbriši izbrane slike </label>
+     <close> zapri </close>
+     <text> Ali želite izbrisati izbrane slike s spletnega mesta? </text>
+     <command> Izbriši </command>
+     <cancel> Prekliči </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informacije o sliki </label>
+     <close> zapri </close>
+     <filename> Ime datoteke </filename>
+     <filesize> Velikost datoteke </filesize>
+     <date> Datum prenosa </date>
+     <title>
+      <label> Naslov </label>
+      <placeholder> Naslov slike </placeholder>
+     </title>
+     <desc>
+      <label> Opis </label>
+      <placeholder> Opis slike </placeholder>
+     </desc>
+     <keyw>
+      <label> Ključne besede </label>
+      <placeholder> Ključne besede, ločene z vejicami ali prelomi vrstic </placeholder>
+     </keyw>
+     <command> Shrani / posodobi </command>
+     <cancel> Prekliči </cancel>
+    </img_info>
+    <result>
+     <label> Napaka </label>
+     <close> zapri </close>
+     <text> </text>
+     <command> Zapri </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Nastavitve slike za dovoljen prenos </title>
+    <upload_limit>
+     <label> Največje število slik na galerijo </label>
+     <placeholder> Največje število slik na galerijo </placeholder>
+     <validate> Vnesite največje število slik na galerijo </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Največja velikost posamezne datoteke (MB) </label>
+     <placeholder> Največja velikost ene datoteke (MB) </placeholder>
+     <validate> Vnesite največjo velikost ene datoteke (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Dovoljena najmanjša ločljivost </label>
+     <width>
+      <placeholder> Najmanjša širina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </width>
+     <height>
+      <placeholder> Najmanjša višina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Dovoljena največja ločljivost </label>
+     <width>
+      <placeholder> Največja širina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </width>
+     <height>
+      <placeholder> največja višina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Pretvorba slike </title>
+    <full_resolution>
+     <label> Polna velikost slike </label>
+     <width>
+      <placeholder> Največja širina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </width>
+     <height>
+      <placeholder> največja višina </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Velikost sličice </label>
+     <width>
+      <placeholder> Širina palca </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </width>
+     <height>
+      <placeholder> Višina palca </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Velikost diapozitiva </label>
+     <width>
+      <placeholder> Širina drsnika </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </width>
+     <height>
+      <placeholder> Višina drsnika </placeholder>
+      <validate> Vnesite vrednost </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kakovost JPEG </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Stiskanje PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Slika Vodni žig </title>
+    <label> Uporabite vodni žig </label>
+    <position> Položaj vodnega žiga </position>
+    <image> Slika vodnega žiga </image>
+    <set> Nastavite vodni žig </set>
+    <browse> 1- Brskanje po slikovni datoteki vodnega žiga </browse>
+    <adjust> 2- Prilagodite sliko glede na okvir. </adjust>
+    <upload> 3- Naloži izbrano datoteko </upload>
+    <uploading> Nalaganje ... </uploading>
+    <uploaded> Naloženo. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Stran </page>
+   <first> Prva stran </first>
+   <prev> Prejšnja stran </prev>
+   <next> Naslednja stran </next>
+   <last> Zadnja stran </last>
+  </pagination>
+
+</lang>

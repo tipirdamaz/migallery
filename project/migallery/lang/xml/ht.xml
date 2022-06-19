@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Lang </title>
+   <label> Chwazi lang </label>
+  </lang>
+
+  <timezone>
+   <title>Timezone</title>
+   <label>Chwazi Timezone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Jesyon Galeri </gallery_man>
+   <gallery_list> Lis Galeri </gallery_list>
+   <uploader> Kreye nouvo galeri </uploader>
+   <back> Retounen </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Enstalasyon </title>
+   <header> MIGallery Enstalasyon </header>
+
+   <img_direction>
+    <label> Galeri, imaj ak direksyon glise </label>
+    <left> De gòch a dwat </left>
+    <right> De dwat a goch </right>
+   </img_direction>
+
+   <db_info>
+    <title> Enfòmasyon baz done MySQL </title>
+    <host>
+     <label> DB Host </label>
+     <placeholder> DB Host </placeholder>
+     <validate> Antre nan baz done Hostname </validate>
+    </host>
+    <user>
+     <label> Non itilizatè DB </label>
+     <placeholder> Non itilizatè DB </placeholder>
+     <validate> Mete non itilizatè baz done a </validate>
+    </user>
+    <pass>
+     <label> DB Modpas </label>
+     <placeholder> Modpas DB </placeholder>
+     <validate> Mete modpas baz done a </validate>
+    </pass>
+    <db>
+     <label> Non baz done a </label>
+     <placeholder> Non baz done a </placeholder>
+     <validate> Mete non baz done a </validate>
+    </db>
+    <gal_table>
+     <label> Non Tablo Galeri a </label>
+     <placeholder> Non Tablo Galeri a </placeholder>
+     <validate> Antre Non Galeri Table </validate>
+    </gal_table>
+    <img_table>
+     <label> Non Tablo Imaj la </label>
+     <placeholder> Non Tablo Imaj la </placeholder>
+     <validate> Mete Non Tablo Imaj </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Anyè nan dosye editabl</title>
+    <db_alert>
+     <![CDATA[
+    Anyè sa a se kote <b> konfigirasyon </b>, <b> jounal erè </b> ak <b> definisyon </b> dosye yo pral kreye. Si ou vle chanje non anyè sa a, chanje definisyon <b> DB_DIR </b> nan dosye <b> definitions0.php </b> epi rafrechi paj sa a. <br/> <br/> Si ou vle chanje non dosye a konfigirasyon, dosye boutèy demi lit erè ak dosye definisyon, chanje definisyon yo nan <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ak <b>DEFINITIONS_FILE</b> soti nan dosye a definitions0.php. <br/> <br/> Si sistèm ou an baze sou UNIX, chanje pèmisyon ekri ak lòd sa a: <br/> <b>%s</b> <br/> <br/> Anvan ou kòmanse enstalasyon fè asire w ke chemen sa a egziste epi ou otorize pou ekri nan anyè a:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Anvan ou kòmanse enstalasyon an, asire w ke repèrtwar sa yo disponib e ke ou gen pèmisyon pou ekri nan repèrtwar yo. <br/> <br/> Si ou yo ale nan sèvi ak repèrtwar lòt pase repèrtwar sa yo, si repèrtwar yo pa egziste sou disk la, premye kreye repèrtwar yo, li mete otorizasyon yo ekri ak kòmanse enstalasyon an.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Dosye konfigirasyon, dosye log erè ak chemen dosye definisyon</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Anyè sa yo kreye lè nouvo galeri a sove. <b>%d</b> endike id galeri a. Anyè sa yo kreye sou anyè <b> Anyè Sèvi Imaj </b> defini pi wo a. Tcheke si fòma a nan repèrtwar yo apwopriye.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Te dosye a konfigirasyon te kreye anvan. Se poutèt sa, ou pa ka kouri konfigirasyon an. Ou dwe premye efase dosye a konfigirasyon ak Lè sa a, kouri konfigirasyon an.</config_alert>
+    <tmp_dir>
+     <label>Anyè Tanporè Imaj</label>
+     <placeholder>Anyè Tanporè Imaj</placeholder>
+     <validate>Anyè Tanporè Imaj</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Anyè Tanporè nan Thumbnail</label>
+     <placeholder>Anyè Tanporè nan Thumbnail</placeholder>
+     <validate>Anyè Tanporè nan Thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Katab tanporè nan dosye thumbnail tronke</label>
+     <placeholder>Katab tanporè nan dosye thumbnail tronke</placeholder>
+     <validate>Katab tanporè nan dosye thumbnail tronke</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tanporè Anyè nan imaj Slide</label>
+     <placeholder>Tanporè Anyè nan imaj Slide</placeholder>
+     <validate>Tanporè Anyè nan imaj Slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Anyè Sèvi Imaj</label>
+     <placeholder>Anyè Sèvi Imaj</placeholder>
+     <validate>Anyè Sèvi Imaj</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Anyè Imaj</label>
+     <placeholder>Anyè Imaj</placeholder>
+     <validate>Anyè Imaj</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Anyè Thumbnail</label>
+     <placeholder>Anyè Thumbnail</placeholder>
+     <validate>Anyè Thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Katab nan dosye thumbnail tronke</label>
+     <placeholder>Katab nan dosye thumbnail tronke</placeholder>
+     <validate>Katab nan dosye thumbnail tronke</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Anyè Imaj nan Slide</label>
+     <placeholder>Anyè Imaj nan Slide</placeholder>
+     <validate>Anyè Imaj nan Slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Anyè nan dosye XML</label>
+     <placeholder>Anyè nan dosye XML</placeholder>
+     <validate>Anyè nan dosye XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Enstale. Tanpri tann ... </installing>
+    <success> Enstalasyon konplete avèk siksè. </success>
+    <error> Enstalasyon an pat kapab fini. </error>
+   </alert>
+  
+   <submit> Kòmanse Enstalasyon </submit>
+   <submit_continue> Kontinye &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Jesyon Galeri </title>
+   <header> Jesyon Galeri </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lis Galeri </title>
+   <header> Lis Galeri </header>
+   <sort>
+    <asc> klase depi premye jiska dènye </asc>
+    <desc> sòt de dènye a premye </desc>
+   </sort>
+   <card>
+    <view>
+     <button> View </button>
+     <title> View Galeri </title>
+    </view>
+    <delete>
+     <button> Efase </button>
+     <title> Efase Galeri </title>
+    </delete>
+    <edit>
+     <button> Modifye </button>
+     <title> Edit Galeri </title>
+    </edit>
+    <images>imaj</images>
+    <date>Dat</date>
+    <move> Ou ka klase galeri yo avèk trenen yo avèk sourit la. </move>
+    <move_mobile>Tape epi kenbe yon atik ak dwèt ou epi rete tann pou yo chwazi li. Apre yo fin chwazi atik la, ou ka klase atik yo avèk trenen ak dwèt ou.</move_mobile>
+   </card>
+   <alert> Pa jwenn galeri. </alert>
+   <modal>
+    <del_gallery>
+     <label> Efase Galeri </label>
+     <close> fèmen </close>
+     <text> Èske ou vle efase galri sa a sou sit la? </text>
+     <command> Efase </command>
+     <cancel> Anile </cancel>
+    </del_gallery>
+    <result>
+     <label> Erè </label>
+     <close> fèmen </close>
+     <text> </text>
+     <command> Fèmen </command>
+    </result>
+   </modal>
+   <save_changes> Sove lòd sòt galri </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galeri View </title>
+   <header> Galeri View </header>
+   <alert> Pa gen imaj yo te jwenn. </alert>
+   <share>Pataje Galeri</share>
+   <filedate>Dat Upload</filedate>
+   <filesize>File Size</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopi nan Clipboard</label>
+     <close>fèmen</close>
+     <text>Link kopye nan clipboard</text>
+     <command>Kopi</command>
+     <cancel>Fèmen</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <nouvo>
+    <title> Kreye nouvo galeri </title>
+    <header> Kreye nouvo galeri </header>
+   </nouvo>
+   <edit>
+    <title> Edit Galeri </title>
+    <header> Edit Galeri </header>
+   </edit>
+   <gallery_info>
+    <title> Enfòmasyon sou Galeri </title>
+    <name>
+     <label> Non Galeri </label>
+     <placeholder> Non Galeri </placeholder>
+     <validate> Non Galeri Antre </validate>
+    </name>
+    <description>
+     <label> Deskripsyon Galeri </label>
+     <placeholder> Deskripsyon Galeri </placeholder>
+     <validate> Antre Galeri Deskripsyon </validate>
+    </description>
+    <keywords>
+     <label> Mo kle Galeri separe pa vigil oswa repo liy </label>
+     <placeholder> Mo kle Galeri separe pa vigil oswa repo liy </placeholder>
+     <validate> Antre mo kle nan Galeri </validate>
+    </keywords>
+    <submit>
+     <save> Sove Galeri </save>
+     <update> Galeri Mizajou </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Gid Uploader </title>
+     <body>
+      <![CDATA[
+Chwazi imaj nan aparèy ou an ak bouton <b> Browse Imaj </b> epi telechaje sou sit la ak bouton <b> Voye Imaj </b>. <br/> Fòma imaj ki sipòte yo: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Rezolisyon minimòm admisib: <b>%d x %d px</b> <br/> Rezolisyon maksimòm admisib: <b>%d x %d px</b> <br/> Single Size Maksimòm Size: <b>%d MB</b> <br/> Konte Imaj pou chak Galeri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Chwazi tout </select_all>
+    <select_del> Efase Chwazi </select_del>
+    <thumb>
+     <exist>
+      <delete> Efase Imaj Uploaded nan sit la </delete>
+      <info> Enfòmasyon sou Imaj </info>
+     </exist>
+     <new>
+      <delete> Efase Imaj Uploaded nan sit la </delete>
+      <cancel> Anile Upload Imaj </cancel>
+      <info> Enfòmasyon sou Imaj </info>
+      <rotate> Thorne Imaj </rotate>
+      <crop> Imaj Rekòt </crop>
+     </new>
+     <move> Ou ka klase imaj yo avèk trenen yo avèk sourit la. </move>
+     <move_mobile>Tape epi kenbe yon atik ak dwèt ou epi rete tann pou yo chwazi li. Apre yo fin chwazi atik la, ou ka klase atik yo avèk trenen ak dwèt ou.</move_mobile>
+    </thumb>
+    <browse> Browse Imaj </browse>
+    <upload> Voye Imaj </upload>
+    <uploading> Imaj yo te Uploaded sou sit la. Pa fèmen paj la jiskaske téléchargement la fini. </uploading>
+    <uploaded> Imaj yo te Uploaded sou sit la. </uploaded>
+    <error>Gen kèk erè ki te fèt pandan y ap monte-chaje dosye sou sèvè a.</error>
+    <save_changes> Sove Chanjman Imaj </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Rekòt </crop>
+     <cancel> Anile </cancel>
+    </crop>
+    <del_up_img>
+     <label> Efase Imaj </label>
+     <close> fèmen </close>
+     <text> Èske ou vle efase imaj sa a sou sit la? </text>
+     <command> Efase </command>
+     <cancel> Anile </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Efase Imaj </label>
+     <close> fèmen </close>
+     <text> Èske ou vle efase imaj sa a sou sit la? </text>
+     <command> Efase </command>
+     <cancel> Anile </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Efase Imaj Chwazi </label>
+     <close> fèmen </close>
+     <text> Èske ou vle efase imaj yo chwazi nan sit la? </text>
+     <command> Efase </command>
+     <cancel> Anile </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Enfòmasyon sou Imaj </label>
+     <close> fèmen </close>
+     <filename> Non dosye </filename>
+     <filesize> Gwosè dosye </filesize>
+     <date> Dat téléchargement </date>
+     <title>
+      <label> Tit </label>
+      <placeholder> Tit Imaj </placeholder>
+     </title>
+     <desc>
+      <label> Deskripsyon </label>
+      <placeholder> Deskripsyon Imaj </placeholder>
+     </desc>
+     <keyw>
+      <label> Mo kle </label>
+      <placeholder> Mo kle separe pa vigil oswa repo liy </placeholder>
+     </keyw>
+     <command> Sove / Mizajou </command>
+     <cancel> Anile </cancel>
+    </img_info>
+    <result>
+     <label> Erè </label>
+     <close> fèmen </close>
+     <text> </text>
+     <command> Fèmen </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Anviwònman Imaj Uploadable </title>
+    <upload_limit>
+     <label> Max imaj konte pou chak galri </label>
+     <placeholder> Max imaj konte pou chak galeri </placeholder>
+     <validate> Antre Max imaj konte pou chak galri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maksimòm Single File Size (MB) </label>
+     <placeholder> Maksimòm Single File Size (MB) </placeholder>
+     <validate> Antre Maksimòm Single File Size (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Pèmisib Rezolisyon Minimòm </label>
+     <width>
+      <placeholder> Min Lajè </placeholder>
+      <validate> Mete yon valè </validate>
+     </width>
+     <height>
+      <placeholder> Min Wotè </placeholder>
+      <validate> Mete yon valè </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Rezolisyon maksimòm admisib </label>
+     <width>
+      <placeholder> Max Lajè </placeholder>
+      <validate> Mete yon valè </validate>
+     </width>
+     <height>
+      <placeholder> Max Wotè </placeholder>
+      <validate> Mete yon valè </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transfòme Imaj </title>
+    <full_resolution>
+     <label> Imaj Full Size </label>
+     <width>
+      <placeholder> Max Lajè </placeholder>
+      <validate> Mete yon valè </validate>
+     </width>
+     <height>
+      <placeholder> Max Wotè </placeholder>
+      <validate> Mete yon valè </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Gwosè zong </label>
+     <width>
+      <placeholder> Lajè Thumb </placeholder>
+      <validate> Mete yon valè </validate>
+     </width>
+     <height>
+      <placeholder> Wotè Thumb </placeholder>
+      <validate> Mete yon valè </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Dimansyon glise </label>
+     <width>
+      <placeholder> Slide Lajè </placeholder>
+      <validate> Mete yon valè </validate>
+     </width>
+     <height>
+      <placeholder> Wotè glise </placeholder>
+      <validate> Mete yon valè </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kalite jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Konprese </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Sèvi ak Watermark </label>
+    <position> Watermark Position </position>
+    <image> Watermark Image </image>
+    <set> Mete Watermark </set>
+    <browse> 1- Browse Watermark Image File </browse>
+    <adjust> 2- Ajiste imaj la selon ankadreman an. </adjust>
+    <upload> 3- Voye dosye chwazi </upload>
+    <uploading> Uploading ... </uploading>
+    <uploaded> Uploaded. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Paj </page>
+   <first> Premye paj </first>
+   <prev> Paj Anvan </prev>
+   <next> pwochen paj </next>
+   <last> Dènye paj </last>
+  </pagination>
+
+</lang>

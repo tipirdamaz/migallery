@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Sprog </title>
+   <label> Vælg sprog </label>
+  </lang>
+
+  <timezone>
+   <title>Tidszone</title>
+   <label>Vælg Tidszone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galleristyring </gallery_man>
+   <gallery_list> Galleriliste </gallery_list>
+   <uploader> Opret nyt galleri </uploader>
+   <back> Tilbage </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery installation </title>
+   <header> MIGallery installation </header>
+
+   <img_direction>
+    <label> Galleri, billede og diasretning </label>
+    <left> Venstre til højre </left>
+    <right> Højre mod venstre </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-databaseinformation </title>
+    <host>
+     <label> Database værtsnavn </label>
+     <placeholder> Database værtsnavn </placeholder>
+     <validate> Indtast databasens værtsnavn </validate>
+    </host>
+    <user>
+     <label> Database Brugernavn </label>
+     <placeholder> Database Brugernavn </placeholder>
+     <validate> Indtast Database Brugernavn </validate>
+    </user>
+    <pass>
+     <label> Databaseadgangskode </label>
+     <placeholder> Databaseadgangskode </placeholder>
+     <validate> Indtast Databaseadgangskode </validate>
+    </pass>
+    <db>
+     <label> Database navn </label>
+     <placeholder> Database navn </placeholder>
+     <validate> Indtast Database navn </validate>
+    </db>
+    <gal_table>
+     <label> Galleriets tabelnavn </label>
+     <placeholder> Galleriets tabelnavn </placeholder>
+     <validate> Indtast Galleriets tabelnavn </validate>
+    </gal_table>
+    <img_table>
+     <label> Billedtabelnavn </label>
+     <placeholder> Billedtabelnavn </placeholder>
+     <validate> Indtast billedets tabelnavn </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Filstier til skrivbart dynamisk indhold</title>
+    <db_alert>
+     <![CDATA[
+    Følgende bibliotek er, hvor filerne <b> konfiguration </b>, <b> fejllog </b> og <b> definitioner </b> oprettes. Hvis du vil ændre navnet på denne mappe, skal du ændre definitionen <b> DB_DIR </b> i filen <b> definitions0.php </b> og opdatere denne side. <br/> <br/> Hvis du ønsker at ændre navnene på konfigurations-, fejllog- og definitionsfiler, ændre definitionerne af <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> og <b> DEFINITIONS_FILE </b> i filen definitions0.php. <br/> <br/> Hvis dit system er unix-baseret, skal du indstille skrivetilladelserne med følgende kommando: <br/> <b>%s</b> <br/> <br/> Før installationen påbegyndes, sørg for, at følgende sti findes og har skrivetilladelser:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Før du starter installationen, skal du sørge for, at følgende kataloger findes, og at du har tilladelse til at skrive til telefonbøgerne. <br/> <br/> Hvis du vil bruge andre kataloger end de følgende kataloger, hvis katalogerne ikke findes på disken skal du først oprette mapper og indstille skrivetilladelser og starte installationen.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Sti til konfiguration, fejllog og definitionsfiler</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Følgende mapper oprettes, når det nye galleri gemmes. <b>%d</b> angiver galleriets id. Disse mapper oprettes i mappen <b> Billedbasesti </b> defineret ovenfor. Kontroller, om mappens format er passende.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfigurationsfilen er oprettet før. Derfor kan du ikke køre opsætningen. Du skal først slette konfigurationsfilen og derefter køre opsætningen.</config_alert>
+    <tmp_dir>
+     <label>Billed midlertidig mappe</label>
+     <placeholder>Billed midlertidig mappe</placeholder>
+     <validate>Billed midlertidig mappe</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Midlertidig miniaturebillede-mappe</label>
+     <placeholder>Midlertidig miniaturebillede-mappe</placeholder>
+     <validate>Midlertidig miniaturebillede-mappe</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Midlertidig beskåret miniaturemappe</label>
+     <placeholder>Midlertidig beskåret miniaturemappe</placeholder>
+     <validate>Midlertidig beskåret miniaturemappe</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Midlertidig mappe dias billedfil</label>
+     <placeholder>Midlertidig mappe dias billedfil</placeholder>
+     <validate>Midlertidig mappe dias billedfil</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Billedbasesti</label>
+     <placeholder>Billedbasesti</placeholder>
+     <validate>Billedbasesti</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Billedmappe</label>
+     <placeholder>Billedmappe</placeholder>
+     <validate>Billedmappe</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Miniaturemappe</label>
+     <placeholder>Miniaturemappe</placeholder>
+     <validate>Miniaturemappe</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Beskåret miniaturemappe</label>
+     <placeholder>Beskåret miniaturemappe</placeholder>
+     <validate>Beskåret miniaturemappe</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Skub billedmappe</label>
+     <placeholder>Skub billedmappe</placeholder>
+     <validate>Skub billedmappe</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-filmappe</label>
+     <placeholder>XML-filmappe</placeholder>
+     <validate>XML-filmappe</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installation> Installation. Vent venligst ... </installation>
+    <success> Installationen blev gennemført. </success>
+    <error> Installationen kunne ikke gennemføres. </error>
+   </alert>
+  
+   <submit> Start installationen </submit>
+   <submit_continue> Fortsæt &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galleristyring </title>
+   <header> Galleristyring </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galleriliste </title>
+   <header> Galleriliste </header>
+   <sort>
+    <asc> sorter fra første til sidste </asc>
+    <desc> sorter fra sidste til første </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Visning </button>
+     <title> Vis galleri </title>
+    </view>
+    <delete>
+     <button> Slet </button>
+     <title> Slet galleri </title>
+    </delete>
+    <edit>
+     <button> Rediger </button>
+     <title> Rediger galleri </title>
+    </edit>
+    <images>billeder</images>
+    <date>Dato</date>
+    <move> Du kan sortere gallerierne ved at trække dem med musen. </move>
+    <move_mobile>Tryk og hold på et element med din finger, og vent på, at det vælges. Når elementet er valgt, kan du sortere elementerne ved at trække med fingeren.</move_mobile>
+   </card>
+   <alert> Intet galleri fundet. </alert>
+   <modal>
+    <del_gallery>
+     <label> Slet galleri </label>
+     <close> luk </close>
+     <text> Vil du slette dette galleri fra webstedet? </text>
+     <command> Slet </command>
+     <cancel> Annuller </cancel>
+    </del_gallery>
+    <result>
+     <label> Fejl </label>
+     <close> luk </close>
+     <text> </text>
+     <command> Luk </command>
+    </result>
+   </modal>
+   <save_changes> Gem gallerisortering </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Gallerivisning </title>
+   <header> Gallerivisning </header>
+   <alert> Intet billede fundet. </alert>
+   <share>Del galleri</share>
+   <filedate>Upload dato</filedate>
+   <filesize>Filstørrelse</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopier til udklipsholder</label>
+     <close>luk</close>
+     <text>Linket blev kopieret til udklipsholderen</text>
+     <command>Kopi</command>
+     <cancel>Luk</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Opret nyt galleri </title>
+    <header> Opret nyt galleri </header>
+   </new>
+   <edit>
+    <title> Rediger galleri </title>
+    <header> Rediger galleri </header>
+   </edit>
+   <gallery_info>
+    <title> Galleriinformation </title>
+    <name>
+     <label> Navn på galleri </label>
+     <placeholder> Navn på galleri </placeholder>
+     <validate> Input Gallery Name </validate>
+    </name>
+    <description>
+     <label> Galleribeskrivelse </label>
+     <placeholder> Galleribeskrivelse </placeholder>
+     <validate> Beskrivelse af inputgalleri </validate>
+    </description>
+    <keywords>
+     <label> Galleri nøgleord adskilt med kommaer eller nye linjer </label>
+     <placeholder> Galleri nøgleord adskilt med kommaer eller nye linjer </placeholder>
+     <validate> Indtast galleri nøgleord </validate>
+    </keywords>
+    <submit>
+     <save> Gem galleri </save>
+     <update> Opdater galleri </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Uploader-vejledning </title>
+     <body>
+      <![CDATA[
+Vælg billeder fra din enhed med knappen <b> Gennemse billeder </b>, og upload til webstedet med knappen <b> Upload billeder </b>. <br/> Understøttede billedformater: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Tilladelig minimumsopløsning: <b>%d x %d px</b> <br/> Tilladt maksimal opløsning: <b>%d x %d px</b> <br/> Maksimal størrelse for enkeltfil: <b>%d MB</b> <br/> Billedantal pr. galleri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Vælg alle </select_all>
+    <select_del> Slet valgt </select_del>
+    <thumb>
+     <exist>
+      <delete> Slet uploadet billede fra websted </delete>
+      <info> Billedinfo </info>
+     </exist>
+     <new>
+      <delete> Slet uploadet billede fra websted </delete>
+      <cancel> Annuller upload af billeder </cancel>
+      <info> Billedinformation </info>
+      <rotate> Roter billede </rotate>
+      <crop> Beskær billede </crop>
+     </new>
+     <move> Du kan sortere billederne ved at trække dem med musen. </move>
+     <move_mobile>Tryk og hold på et element med din finger, og vent på, at det vælges. Når elementet er valgt, kan du sortere elementerne ved at trække med fingeren.</move_mobile>
+    </thumb>
+    <browse> Gennemse billeder </browse>
+    <upload> Upload billeder </upload>
+    <uploading> Billeder uploades til webstedet. Luk ikke siden, før upload er afsluttet. </uploading>
+    <uploaded> Billeder er uploadet til webstedet. </uploaded>
+    <error>Der opstod nogle fejl under upload af filer til serveren.</error>
+    <save_changes> Gem billedændringer </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Beskær </crop>
+     <cancel> Annuller </cancel>
+    </crop>
+    <del_up_img>
+     <label> Slet billede </label>
+     <close> luk </close>
+     <text> Vil du slette dette billede fra webstedet? </text>
+     <command> Slet </command>
+     <cancel> Annuller </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Slet billede </label>
+     <close> luk </close>
+     <text> Vil du slette dette billede fra webstedet? </text>
+     <command> Slet </command>
+     <cancel> Annuller </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Slet valgte billeder </label>
+     <close> luk </close>
+     <text> Vil du slette de valgte billeder fra webstedet? </text>
+     <command> Slet </command>
+     <cancel> Annuller </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Billedoplysninger </label>
+     <close> luk </close>
+     <filename> Filnavn </filename>
+     <filesize> Filstørrelse </filesize>
+     <date> Upload dato </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> Billedtitel </placeholder>
+     </title>
+     <desc>
+      <label> Beskrivelse </label>
+      <placeholder> Billedbeskrivelse </placeholder>
+     </desc>
+     <keyw>
+      <label> Nøgleord </label>
+      <placeholder> Nøgleord adskilt af kommaer eller nye linjer </placeholder>
+     </keyw>
+     <command> Gem / opdater </command>
+     <cancel> Annuller </cancel>
+    </img_info>
+    <result>
+     <label> Fejl </label>
+     <close> luk </close>
+     <text> </text>
+     <command> Luk </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Billedindstillinger, der kan uploades </title>
+    <upload_limit>
+     <label> Maksimalt antal billeder pr. Galleri </label>
+     <placeholder> Maksimalt antal billeder pr. galleri </placeholder>
+     <validate> Indtast maksimalt antal billeder pr. galleri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maks. Enkelt filstørrelse (MB) </label>
+     <placeholder> Maks. Enkelt filstørrelse (MB) </placeholder>
+     <validate> Indtast Maks. Enkelt filstørrelse (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Tilladt min. opløsning </label>
+     <width>
+      <placeholder> Min bredde </placeholder>
+      <validate> Inputværdi </validate>
+     </width>
+     <height>
+      <placeholder> Min højde </placeholder>
+      <validate> Inputværdi </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Tilladt maksimal opløsning </label>
+     <width>
+      <placeholder> Maks bredde </placeholder>
+      <validate> Inputværdi </validate>
+     </width>
+     <height>
+      <placeholder> maks. højde </placeholder>
+      <validate> Inputværdi </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Billedtransformering </title>
+    <full_resolution>
+     <label> Billedets fulde størrelse </label>
+     <width>
+      <placeholder> Maks bredde </placeholder>
+      <validate> Inputværdi </validate>
+     </width>
+     <height>
+      <placeholder> maks. højde </placeholder>
+      <validate> Inputværdi </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniaturestørrelse </label>
+     <width>
+      <placeholder> Tommelfingerbredde </placeholder>
+      <validate> Inputværdi </validate>
+     </width>
+     <height>
+      <placeholder> tommelfingerhøjde </placeholder>
+      <validate> Inputværdi </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Diastørrelse </label>
+     <width>
+      <placeholder> Glidebredde </placeholder>
+      <validate> Inputværdi </validate>
+     </width>
+     <height>
+      <placeholder> Glidehøjde </placeholder>
+      <validate> Inputværdi </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg-kvalitet </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG-komprimering </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vandmærke </title>
+    <label> Brug vandmærke </label>
+    <position> Vandmærkeposition </position>
+    <image> Vandmærkebillede </image>
+    <set> Indstil vandmærke </set>
+    <browse> 1- Gennemse vandmærkefilen </browse>
+    <adjust> 2- Juster billedet efter rammen. </adjust>
+    <upload> 3- Upload den valgte fil </upload>
+    <uploading> Uploader ... </uploading>
+    <uploaded> Uploaded. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Side </page>
+   <first> Første side </first>
+   <prev> Forrige side </prev>
+   <next> Næste side </next>
+   <last> Sidste side </last>
+  </pagination>
+
+</lang>

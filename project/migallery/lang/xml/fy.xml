@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Taal </title>
+   <label> Taal selektearje </label>
+  </lang>
+
+  <timezone>
+   <title>Tiidsône</title>
+   <label>Selektearje tiidsône</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerybehear </gallery_man>
+   <gallery_list> Galerylist </gallery_list>
+   <uploader> Nije galery oanmeitsje </uploader>
+   <back> Werom </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery ynstelle </title>
+   <header> MIGallery ynstelle </header>
+
+   <img_direction>
+    <label> Galery, ôfbylding en slide rjochting </label>
+    <left> Lofts nei rjochts </left>
+    <right> Rjochts nei lofts </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-databankynformaasje </title>
+    <host>
+     <label> DB-host </label>
+     <placeholder> DB-host </placeholder>
+     <validate> Ynfier DB-hostnamme </validate>
+    </host>
+    <user>
+     <label> DB-brûkersnamme </label>
+     <placeholder> DB-brûkersnamme </placeholder>
+     <validate> Ynfier DB-brûkersnamme </validate>
+    </user>
+    <pass>
+     <label> DB-wachtwurd </label>
+     <placeholder> DB-wachtwurd </placeholder>
+     <validate> Ynfier DB-wachtwurd </validate>
+    </pass>
+    <db>
+     <label> DB-namme </label>
+     <placeholder> DB-namme </placeholder>
+     <validate> Ynfier DB-namme </validate>
+    </db>
+    <gal_table>
+     <label> Galerytabelnamme </label>
+     <placeholder> Namme fan galerytabel </placeholder>
+     <validate> Fier Galerytabelnamme yn </validate>
+    </gal_table>
+    <img_table>
+     <label> Namme ôfbyldtabel </label>
+     <placeholder> Namme ôfbyldtabel </placeholder>
+     <validate> Fier de namme fan ôfbyldingstabel yn </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Mappen foar skriuwbere dynamyske ynhâld</title>
+    <db_alert>
+     <![CDATA[
+    De folgjende map is wêr't de bestannen <b> konfiguraasje </b>, <b> flater log </b> en <b> definysjes </b> sille wurde oanmakke. As jo de namme fan dizze map wolle feroarje, feroarje dan de definysje <b> DB_DIR </b> yn it <b> definitions0.php </b> bestân en ferfarskje dizze side. <br/> <br/> As jo de namme fan konfiguraasjetriem, flater logbestân en definysjebestân werneame wolle, feroarje dan de definysjes fan <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> en <b> DEFINITIONS_FILE </b> fan de definitions0.php-bestân. <br/> <br/> As jo systeem unix-basearre is, set dan de skriuwrjochten yn mei it folgjende kommando: <br/> <b>%s</b> <br/> <br/> Foardat jo mei de ynstallaasje begjinne , soargje derfoar dat it folgjende paad bestiet en jo hawwe tagongsrjochten om nei map te skriuwen:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Foardat jo mei de ynstallaasje begjinne, moatte jo derfoar soargje dat de folgjende mappen beskikber binne en dat jo tastimming hawwe om nei de mappen te skriuwen. <br/> <br/> As jo oare mappen sille brûke dan de folgjende mappen, as de mappen net op 'e skiif besteane, meitsje dan earst de mappen en set de skriuwrjochten yn en begjin de ynstallaasje.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfiguraasjetriem, flater lochbestân en definysjebestânspaad</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    De folgjende mappen wurde makke as de nije galery wurdt bewarre. <b>%d</b> jout de galery-id oan. Dizze mappen wurde makke yn 'e folder <b> Basispaad fan ôfbyldings </b> hjirboppe definieare. Kontrolearje as it formaat fan de mappen passend is.
+     ]]>
+    </img_dir_alert>
+    <config_alert>It konfiguraasjetriem is earder makke. Dêrom kinne jo de opset net útfiere. Jo moatte earst it konfiguraasjetriem wiskje en dan de opset útfiere.</config_alert>
+    <tmp_dir>
+     <label>Tydlike folder fan ôfbylding</label>
+     <placeholder>Tydlike folder fan ôfbylding</placeholder>
+     <validate>Tydlike folder fan ôfbylding</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Tydlike folder fan miniatuer</label>
+     <placeholder>Tydlike folder fan miniatuer</placeholder>
+     <validate>Tydlike folder fan miniatuer</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Tydlike folder fan bysniene miniatuer</label>
+     <placeholder>Tydlike folder fan bysniene miniatuer</placeholder>
+     <validate>Tydlike folder fan bysniene miniatuer</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tydlike folder mei diaôfbyldingsbestannen</label>
+     <placeholder>Tydlike folder mei diaôfbyldingsbestannen</placeholder>
+     <validate>Tydlike folder mei diaôfbyldingsbestannen</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Basispaad fan ôfbyldings</label>
+     <placeholder>Basispaad fan ôfbyldings</placeholder>
+     <validate>Basispaad fan ôfbyldings</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Folder fan Ofbylding</label>
+     <placeholder>Folder fan Ofbylding</placeholder>
+     <validate>Folder fan Ofbylding</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Folder fan miniatuer</label>
+     <placeholder>Folder fan miniatuer</placeholder>
+     <validate>Folder fan miniatuer</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Folder fan bysniene miniatuer</label>
+     <placeholder>Folder fan bysniene miniatuer</placeholder>
+     <validate>Folder fan bysniene miniatuer</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Folder mei diaôfbyldingsbestannen</label>
+     <placeholder>Folder mei diaôfbyldingsbestannen</placeholder>
+     <validate>Folder mei diaôfbyldingsbestannen</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-bestannen Directory</label>
+     <placeholder>XML-bestannen Directory</placeholder>
+     <validate>XML-bestannen Directory</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Ynstallearje. Wachtsje asjebleaft ... </installing>
+    <success> Ynstallaasje is suksesfol foltôge. </success>
+    <error> Ynstallaasje koe net foltôge wurde. </error>
+   </alert>
+  
+   <submit> Ynstallaasje starte </submit>
+   <submit_continue> Trochgean &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerybehear </title>
+   <header> Galerybehear </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galerielist </title>
+   <header> Galerylist </header>
+   <sort>
+    <asc> sortearje fan earste nei lêste </asc>
+    <desc> sortearje fan lêste nei earste </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Werjefte </button>
+     <title> Galery besjen </title>
+    </view>
+    <delete>
+     <button> Wiskje </button>
+     <title> Galery wiskje </title>
+    </delete>
+    <edit>
+     <button> Bewurkje </button>
+     <title> Galery bewurkje </title>
+    </edit>
+    <images>ôfbyldings</images>
+    <date>Datum</date>
+    <move> Jo kinne de galeryen sortearje troch se mei de mûs te slepen. </move>
+    <move_mobile>Tikje en hâld in item mei jo finger en wachtsje oant it wurdt selekteare. Neidat it item is selekteare, kinne jo de items sortearje troch mei jo finger te slepen.</move_mobile>
+   </card>
+   <alert> Gjin galery fûn. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galery wiskje </label>
+     <close> slute </close>
+     <text> Wolle jo dizze galery fan de side wiskje? </text>
+     <command> Wiskje </command>
+     <cancel> Annulearje </cancel>
+    </del_gallery>
+    <result>
+     <label> Flater </label>
+     <close> slute </close>
+     <text> </text>
+     <command> Slute </command>
+    </result>
+   </modal>
+   <save_changes> Bewarje fan galery sortearje </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galerywerjefte </title>
+   <header> Galerywerjefte </header>
+   <alert> Gjin ôfbylding fûn. </alert>
+   <share>Share Gallery</share>
+   <filedate>Upload datum</filedate>
+   <filesize>Bestânsgrutte</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Nei it klamboerd ta kopiearje</label>
+     <close>slute</close>
+     <text>De sidekoppeling wurdt nei it klamboerd kopieare</text>
+     <command>Kopy</command>
+     <cancel>Slute</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Nije galery oanmeitsje </title>
+    <header> Nije galery oanmeitsje </header>
+   </new>
+   <edit>
+    <title> Galery bewurkje </title>
+    <header> Galery bewurkje </header>
+   </edit>
+   <gallery_info>
+    <title> Galeryynformaasje </title>
+    <name>
+     <label> Galerijnamme </label>
+     <placeholder> Galerijnamme </placeholder>
+     <validate> Ynfier Galerijnamme </validate>
+    </name>
+    <description>
+     <label> Galerybeskriuwing </label>
+     <placeholder> Galerybeskriuwing </placeholder>
+     <validate> Ynfier Galerybeskriuwing </validate>
+    </description>
+    <keywords>
+     <label> Galery-trefwurden skieden troch komma's as rigelpauzes </label>
+     <placeholder> Galery-trefwurden skieden troch komma's as rigelpauzes </placeholder>
+     <validate> Fier Galery Keywords yn </validate>
+    </keywords>
+    <submit>
+     <save> Bewarje galery </save>
+     <update> Galery bywurkje </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Gids foar uploader </title>
+     <body>
+      <![CDATA[
+Selektearje ôfbyldings fan jo apparaat mei de knop <b> Blêdzje trochbylden </b> en uploade nei de side mei de knop <b> Ofbyldings uploade </b>. <br/> Stipe ôfbyldingsformaten: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Tastiene minimale resolúsje: <b>%d x %d px</b> <br/> Tastiene maksimale resolúsje: <b>%d x %d px</b> <br/> Maksimumgrutte fan inkele bestannen: <b>%d MB</b> <br/> Aantal bylden per galery: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Alles selektearje </select_all>
+    <select_del> Wiskje selekteare </select_del>
+    <thumb>
+     <exist>
+      <delete> Uploaded ôfbylding fan side wiskje </delete>
+      <info> Ofbyldingsynformaasje </info>
+     </exist>
+     <new>
+      <delete> Uploaded ôfbylding fan side wiskje </delete>
+      <cancel> Ofbylding uploade annulearje </cancel>
+      <info> Ofbyldingsynfo </info>
+      <rotate> Ofbylding draaie </rotate>
+      <crop> Ofbylding crop </crop>
+     </new>
+     <move> Jo kinne de ôfbyldings sortearje troch se mei de mûs te slepen. </move>
+     <move_mobile>Tikje en hâld in item mei jo finger en wachtsje oant it wurdt selekteare. Neidat it item is selekteare, kinne jo de items sortearje troch mei jo finger te slepen.</move_mobile>
+    </thumb>
+    <browse> Blêdzje trochbylden </browse>
+    <upload> Ofbyldings uploade </upload>
+    <uploading> Ofbyldings wurde uploaden nei de side. Slút de side net foardat de upload is foltôge. </uploading>
+    <uploaded> Ofbyldings binne upload nei de side. </uploaded>
+    <error>Guon flaters barde by it uploaden fan bestannen nei de server.</error>
+    <save_changes> Ofbyldingswizigingen opslaan </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Crop </crop>
+     <cancel> Annulearje </cancel>
+    </crop>
+    <del_up_img>
+     <label> Ofbylding wiskje </label>
+     <close> slute </close>
+     <text> Wolle jo dizze ôfbylding fan de side wiskje? </text>
+     <command> Wiskje </command>
+     <cancel> Annulearje </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Ofbylding wiskje </label>
+     <close> slute </close>
+     <text> Wolle jo dizze ôfbylding fan 'e side wiskje? </text>
+     <command> Wiskje </command>
+     <cancel> Annulearje </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Selekteare ôfbyldings wiskje </label>
+     <close> slute </close>
+     <text> Wolle jo de selekteare ôfbyldings fan 'e side wiskje? </text>
+     <command> Wiskje </command>
+     <cancel> Annulearje </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Ofbyldingsynfo </label>
+     <close> slute </close>
+     <filename> Bestânsnamme </filename>
+     <filesize> Bestânsgrutte </filesize>
+     <date> Upload datum </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> Ofbyldingstitel </placeholder>
+     </title>
+     <desc>
+      <label> Beskriuwing </label>
+      <placeholder> Ofbyldingsbeskriuwing </placeholder>
+     </desc>
+     <keyw>
+      <label> Keywords </label>
+      <placeholder> Keywords skieden troch komma's of rigelpauzes </placeholder>
+     </keyw>
+     <command> Opslaan / bywurkje </command>
+     <cancel> Annulearje </cancel>
+    </img_info>
+    <result>
+     <label> Flater </label>
+     <close> slute </close>
+     <text> </text>
+     <command> Slute </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Ynstellings foar uploade ôfbyldings </title>
+    <upload_limit>
+     <label> Maksimum ôfbyldingsnûmer per galery </label>
+     <placeholder> Maksimum ôfbyldingsnûmer per galery </placeholder>
+     <validate> Fier maksimaal ôfbyldingsnûmer per galery yn </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maksimum grutte fan ien bestân (MB) </label>
+     <placeholder> Maksimum grutte fan ien bestân (MB) </placeholder>
+     <validate> Fier maksimale grutte fan ien bestân (MB) yn </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Tastiene minimale resolúsje </label>
+     <width>
+      <placeholder> Minste breedte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </width>
+     <height>
+      <placeholder> Minste Hichte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Tastiene maksimale resolúsje </label>
+     <width>
+      <placeholder> Maksimum breedte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </width>
+     <height>
+      <placeholder> Maksimum hichte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Ofbylding transformearje </title>
+    <full_resolution>
+     <label> Ofbylding yn folsleine grutte </label>
+     <width>
+      <placeholder> Maksimum breedte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </width>
+     <height>
+      <placeholder> Maksimum hichte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatuerôfbylding Grutte </label>
+     <width>
+      <placeholder> Thumbreedte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </width>
+     <height>
+      <placeholder> Thumbhichte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Slide Grutte </label>
+     <width>
+      <placeholder> Slidebreedte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </width>
+     <height>
+      <placeholder> Slidehichte </placeholder>
+      <validate> Wearde ynfiere </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg-kwaliteit </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG komprimearje </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Wettermark </title>
+    <label> Brûk wettermerk </label>
+    <position> Wettermerkposysje </position>
+    <image> Ofbylding foar wettermerk </image>
+    <set> Wettermark ynstelle </set>
+    <browse> 1- Blêdzje ôfbyldingsbestân foar wettermerken </browse>
+    <adjust> 2- Pas de ôfbylding oan neffens it frame. </adjust>
+    <upload> 3- Selektearre bestân uploade </upload>
+    <uploading> Uploade ... </uploading>
+    <uploaded> Uploaded. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Pagina </page>
+   <first> Earste pagina </first>
+   <prev> Foarige pagina </prev>
+   <next> Folgjende pagina </next>
+   <last> Lêste pagina </last>
+  </pagination>
+
+</lang>

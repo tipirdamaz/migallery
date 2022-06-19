@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ಭಾಷೆ </title>
+   <label> ಭಾಷೆಯನ್ನು ಆರಿಸಿ </label>
+  </lang>
+
+  <timezone>
+   <title>ಸಮಯ ವಲಯ</title>
+   <label>ಸಮಯವಲಯವನ್ನು ಆಯ್ಕೆಮಾಡಿ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ಗ್ಯಾಲರಿ ನಿರ್ವಹಣೆ </gallery_man>
+   <gallery_list> ಗ್ಯಾಲರಿ ಪಟ್ಟಿ </gallery_list>
+   <uploader> ಹೊಸ ಗ್ಯಾಲರಿ ರಚಿಸಿ </uploader>
+   <back> ಹಿಂದೆ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery ಸೆಟಪ್ </title>
+   <header> MIGallery ಸೆಟಪ್ </header>
+
+   <img_direction>
+    <label> ಗ್ಯಾಲರಿ, ಚಿತ್ರ ಮತ್ತು ಸ್ಲೈಡ್ ನಿರ್ದೇಶನ </label>
+    <ಎಡ> ಎಡದಿಂದ ಬಲಕ್ಕೆ </ಎಡ>
+    <right> ಬಲದಿಂದ ಎಡಕ್ಕೆ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ಡೇಟಾಬೇಸ್ ಮಾಹಿತಿ </title>
+    <host>
+     <label> ಡೇಟಾಬೇಸ್ ಹೋಸ್ಟ್ ಹೆಸರು </label>
+     <placeholder> ಡೇಟಾಬೇಸ್ ಹೋಸ್ಟ್ ಹೆಸರು </placeholder>
+     <validate> ಇನ್ಪುಟ್ ಡೇಟಾಬೇಸ್ ಹೋಸ್ಟ್ ಹೆಸರು </validate>
+    </host>
+    <user>
+     <label> ಡೇಟಾಬೇಸ್ ಬಳಕೆದಾರಹೆಸರು </label>
+     <placeholder> ಡೇಟಾಬೇಸ್ ಬಳಕೆದಾರಹೆಸರು </placeholder>
+     <validate> ಡೇಟಾಬೇಸ್ ಬಳಕೆದಾರ ಹೆಸರನ್ನು ನಮೂದಿಸಿ </validate>
+    </user>
+    <pass>
+     <label> ಡೇಟಾಬೇಸ್ ಪಾಸ್ವರ್ಡ್ </label>
+     <placeholder> ಡೇಟಾಬೇಸ್ ಪಾಸ್‌ವರ್ಡ್ </placeholder>
+     <validate> ಡೇಟಾಬೇಸ್ ಪಾಸ್ವರ್ಡ್ ಅನ್ನು ನಮೂದಿಸಿ </validate>
+    </pass>
+    <db>
+     <label> ಡೇಟಾಬೇಸ್ ಹೆಸರು </label>
+     <placeholder> ಡೇಟಾಬೇಸ್ ಹೆಸರು </placeholder>
+     <validate> ಡೇಟಾಬೇಸ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ </validate>
+    </db>
+    <gal_table>
+     <label> ಗ್ಯಾಲರಿ ಟೇಬಲ್ ಹೆಸರು </label>
+     <placeholder> ಗ್ಯಾಲರಿ ಟೇಬಲ್ ಹೆಸರು </placeholder>
+     <validate> ಗ್ಯಾಲರಿ ಟೇಬಲ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ </validate>
+    </gal_table>
+    <img_table>
+     <label> ಚಿತ್ರ ಟೇಬಲ್ ಹೆಸರು </label>
+     <placeholder> ಇಮೇಜ್ ಟೇಬಲ್ ಹೆಸರು </placeholder>
+     <validate> ಚಿತ್ರ ಟೇಬಲ್ ಹೆಸರನ್ನು ನಮೂದಿಸಿ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ಬರೆಯಬಹುದಾದ ಡೈನಾಮಿಕ್ ವಿಷಯಗಳಿಗೆ ಡೈರೆಕ್ಟರಿಗಳು</title>
+    <db_alert>
+     <![CDATA[
+    <b> ಸಂರಚನೆ </b>, <b> ದೋಷ ಲಾಗ್ </b> ಮತ್ತು <b> ವ್ಯಾಖ್ಯಾನಗಳು </b> ಫೈಲ್‌ಗಳನ್ನು ಈ ಕೆಳಗಿನ ಡೈರೆಕ್ಟರಿಯಲ್ಲಿ ರಚಿಸಲಾಗಿದೆ. ಈ ಡೈರೆಕ್ಟರಿಯ ಹೆಸರನ್ನು ಬದಲಾಯಿಸಲು ನೀವು ಬಯಸಿದರೆ, <b> definitions0.php </b> ಫೈಲ್‌ನಲ್ಲಿ <b> DB_DIR </b> ವ್ಯಾಖ್ಯಾನವನ್ನು ಬದಲಾಯಿಸಿ ಮತ್ತು ಈ ಪುಟವನ್ನು ರಿಫ್ರೆಶ್ ಮಾಡಿ. <br/> <br/> ನೀವು ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್, ದೋಷ ಲಾಗ್ ಫೈಲ್ ಮತ್ತು ವ್ಯಾಖ್ಯಾನಗಳ ಫೈಲ್ ಅನ್ನು ಮರುಹೆಸರಿಸಲು ಬಯಸಿದರೆ, definitions0.php ಫೈಲ್‌ನಲ್ಲಿ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ಮತ್ತು <b>DEFINITIONS_FILE</b> ವ್ಯಾಖ್ಯಾನಗಳನ್ನು ಸಂಪಾದಿಸಿ. ನಿಮ್ಮ ಸಿಸ್ಟಮ್ ಯುನಿಕ್ಸ್ ಆಧಾರಿತವಾಗಿದ್ದರೆ, ಈ ಡೈರೆಕ್ಟರಿಯ ಬರವಣಿಗೆಯ ಅನುಮತಿಗಳನ್ನು ಈ ಕೆಳಗಿನ ಆಜ್ಞೆಯೊಂದಿಗೆ ಹೊಂದಿಸಿ: <br/> <b>%s</b> <br/> ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು, ಈ ಕೆಳಗಿನ ಮಾರ್ಗ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ ಮತ್ತು ನೀವು ಈ ಡೈರೆಕ್ಟರಿಗೆ ಬರೆಯಲು ಅನುಮತಿ ಇದೆ:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು, ಈ ಕೆಳಗಿನ ಡೈರೆಕ್ಟರಿಗಳು ಲಭ್ಯವಿದೆಯೆ ಮತ್ತು ಡೈರೆಕ್ಟರಿಗಳಿಗೆ ಬರೆಯಲು ನಿಮಗೆ ಅನುಮತಿ ಇದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ. <br/> <br/> ನೀವು ಈ ಕೆಳಗಿನ ಡೈರೆಕ್ಟರಿಗಳನ್ನು ಹೊರತುಪಡಿಸಿ ಬೇರೆ ಡೈರೆಕ್ಟರಿಗಳನ್ನು ಬಳಸಲಿದ್ದರೆ, ಡೈರೆಕ್ಟರಿಗಳು ಡಿಸ್ಕ್ನಲ್ಲಿ ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲದಿದ್ದರೆ, ಮೊದಲು ಡೈರೆಕ್ಟರಿಗಳನ್ನು ರಚಿಸಿ ಮತ್ತು ಈ ಡೈರೆಕ್ಟರಿಗಳ ರೈಟ್ ಅನುಮತಿಗಳನ್ನು ಹೊಂದಿಸಿ ಮತ್ತು ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ಸಂರಚನೆ, ದೋಷ ಲಾಗ್ ಮತ್ತು ವ್ಯಾಖ್ಯಾನಗಳ ಫೈಲ್‌ಗಳ ಹಾದಿ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ಹೊಸ ಗ್ಯಾಲರಿಯನ್ನು ಉಳಿಸಿದಾಗ ಕೆಳಗಿನ ಡೈರೆಕ್ಟರಿಗಳನ್ನು ರಚಿಸಲಾಗುತ್ತದೆ. <b>%d</b> ಗ್ಯಾಲರಿ ಐಡಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಈ ಡೈರೆಕ್ಟರಿಗಳನ್ನು ಮೇಲೆ ವ್ಯಾಖ್ಯಾನಿಸಲಾದ <b> ಇಮೇಜ್ ಬೇಸ್ ಡೈರೆಕ್ಟರಿ </b> ಡೈರೆಕ್ಟರಿಯಲ್ಲಿ ರಚಿಸಲಾಗಿದೆ. ಡೈರೆಕ್ಟರಿಗಳ ಸ್ವರೂಪ ಸೂಕ್ತವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ.
+     ]]>
+    </img_dir_alert>
+    <config_alert>ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಅನ್ನು ಮೊದಲು ರಚಿಸಲಾಗಿದೆ. ಆದ್ದರಿಂದ, ನೀವು ಸೆಟಪ್ ಅನ್ನು ಚಲಾಯಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ. ನೀವು ಮೊದಲು ಕಾನ್ಫಿಗರೇಶನ್ ಫೈಲ್ ಅನ್ನು ಅಳಿಸಬೇಕು ಮತ್ತು ನಂತರ ಸೆಟಪ್ ಅನ್ನು ಚಲಾಯಿಸಬೇಕು.</config_alert>
+    <tmp_dir>
+     <label>ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್‌ನ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ಸ್ಲೈಡ್ ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಸ್ಲೈಡ್ ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಸ್ಲೈಡ್ ಚಿತ್ರದ ತಾತ್ಕಾಲಿಕ ಡೈರೆಕ್ಟರಿ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ಇಮೇಜ್ ಬೇಸ್ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಇಮೇಜ್ ಬೇಸ್ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಇಮೇಜ್ ಬೇಸ್ ಡೈರೆಕ್ಟರಿ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ಚಿತ್ರ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಚಿತ್ರ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಚಿತ್ರ ಡೈರೆಕ್ಟರಿ</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಮೊಟಕುಗೊಳಿಸಿದ ಥಂಬ್‌ನೇಲ್ ಡೈರೆಕ್ಟರಿ</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ಸ್ಲೈಡ್ ಚಿತ್ರದ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>ಸ್ಲೈಡ್ ಚಿತ್ರದ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>ಸ್ಲೈಡ್ ಚಿತ್ರದ ಡೈರೆಕ್ಟರಿ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ಫೈಲ್ಸ್ ಡೈರೆಕ್ಟರಿ</label>
+     <placeholder>XML ಫೈಲ್ಸ್ ಡೈರೆಕ್ಟರಿ</placeholder>
+     <validate>XML ಫೈಲ್ಸ್ ಡೈರೆಕ್ಟರಿ</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ಸ್ಥಾಪಿಸಲಾಗುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಕಾಯಿರಿ ... </installing>
+    <success> ಸ್ಥಾಪನೆ ಯಶಸ್ವಿಯಾಗಿ ಪೂರ್ಣಗೊಂಡಿದೆ. </success>
+    <error> ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಲಾಗಲಿಲ್ಲ. </error>
+   </alert>
+  
+   <submit> ಅನುಸ್ಥಾಪನೆಯನ್ನು ಪ್ರಾರಂಭಿಸಿ </submit>
+   <submit_continue> ಮುಂದುವರಿಸಿ &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ಗ್ಯಾಲರಿ ನಿರ್ವಹಣೆ </title>
+   <header> ಗ್ಯಾಲರಿ ನಿರ್ವಹಣೆ </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ಗ್ಯಾಲರಿ ಪಟ್ಟಿ </title>
+   <header> ಗ್ಯಾಲರಿ ಪಟ್ಟಿ </header>
+   <sort>
+    <asc> ಮೊದಲಿನಿಂದ ಕೊನೆಯವರೆಗೆ </asc>
+    <desc> ಕೊನೆಯಿಂದ ಪ್ರಾರಂಭ </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ವೀಕ್ಷಿಸಿ </button>
+     <title> ಗ್ಯಾಲರಿ ವೀಕ್ಷಿಸಿ </title>
+    </view>
+    <delete>
+     <button> ಅಳಿಸು </button>
+     <title> ಗ್ಯಾಲರಿಯನ್ನು ಅಳಿಸಿ </title>
+    </delete>
+    <edit>
+     <button> ಸಂಪಾದಿಸಿ </button>
+     <title> ಗ್ಯಾಲರಿಯನ್ನು ಸಂಪಾದಿಸಿ </title>
+    </edit>
+    <images>ಚಿತ್ರಗಳು</images>
+    <date>ದಿನಾಂಕ</date>
+    <move> ಗ್ಯಾಲರಿಗಳನ್ನು ಮೌಸ್ನೊಂದಿಗೆ ಎಳೆಯುವ ಮೂಲಕ ನೀವು ಅವುಗಳನ್ನು ವಿಂಗಡಿಸಬಹುದು. </move>
+    <move_mobile>ನಿಮ್ಮ ಬೆರಳಿನಿಂದ ಐಟಂ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು ಹಿಡಿದುಕೊಳ್ಳಿ ಮತ್ತು ಅದನ್ನು ಹೈಲೈಟ್ ಮಾಡಲು ಕಾಯಿರಿ. ಐಟಂ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ, ವಸ್ತುಗಳನ್ನು ವಿಂಗಡಿಸಲು ನಿಮ್ಮ ಬೆರಳನ್ನು ಎಳೆಯಿರಿ.</move_mobile>
+   </card>
+   <alert> ಯಾವುದೇ ಗ್ಯಾಲರಿ ಕಂಡುಬಂದಿಲ್ಲ. </alert>
+   <modal>
+    <del_gallery>
+     <label> ಗ್ಯಾಲರಿಯನ್ನು ಅಳಿಸಿ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> ಈ ಗ್ಯಾಲರಿಯನ್ನು ಸೈಟ್‌ನಿಂದ ಅಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ? </text>
+     <command> ಅಳಿಸಿ </command>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </del_gallery>
+    <result>
+     <label> ದೋಷ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> </text>
+     <command> ಮುಚ್ಚಿ </command>
+    </result>
+   </modal>
+   <save_changes> ಗ್ಯಾಲರಿ ವಿಂಗಡಣೆ ಆದೇಶವನ್ನು ಉಳಿಸಿ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ಗ್ಯಾಲರಿ ವೀಕ್ಷಣೆ </title>
+   <header> ಗ್ಯಾಲರಿ ವೀಕ್ಷಣೆ </header>
+   <alert> ಯಾವುದೇ ಚಿತ್ರ ಕಂಡುಬಂದಿಲ್ಲ. </alert>
+   <share>ಗ್ಯಾಲರಿ ಹಂಚಿಕೊಳ್ಳಿ</share>
+   <filedate>ಅಪ್‌ಲೋಡ್ ದಿನಾಂಕ</filedate>
+   <filesize>ಫೈಲ್ ಗಾತ್ರ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಿ</label>
+     <close>ಮುಚ್ಚಿ</close>
+     <text>ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ನಕಲಿಸಲಾಗಿದೆ</text>
+     <command>ನಕಲಿಸಿ</command>
+     <cancel>ಮುಚ್ಚಿ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ಹೊಸ ಗ್ಯಾಲರಿ ರಚಿಸಿ </title>
+    <header> ಹೊಸ ಗ್ಯಾಲರಿ ರಚಿಸಿ </header>
+   </new>
+   <edit>
+    <title> ಗ್ಯಾಲರಿಯನ್ನು ಸಂಪಾದಿಸಿ </title>
+    <header> ಗ್ಯಾಲರಿಯನ್ನು ಸಂಪಾದಿಸಿ </header>
+   </edit>
+   <gallery_info>
+    <title> ಗ್ಯಾಲರಿ ಮಾಹಿತಿ </title>
+    <name>
+     <label> ಗ್ಯಾಲರಿ ಹೆಸರು </label>
+     <placeholder> ಗ್ಯಾಲರಿ ಹೆಸರು </placeholder>
+     <validate> ಇನ್ಪುಟ್ ಗ್ಯಾಲರಿ ಹೆಸರು </validate>
+    </name>
+    <description>
+     <label> ಗ್ಯಾಲರಿ ವಿವರಣೆ </label>
+     <placeholder> ಗ್ಯಾಲರಿ ವಿವರಣೆ </placeholder>
+     <validate> ಇನ್ಪುಟ್ ಗ್ಯಾಲರಿ ವಿವರಣೆ </validate>
+    </description>
+    <keywords>
+     <label> ಗ್ಯಾಲರಿ ಕೀವರ್ಡ್ಗಳನ್ನು ಅಲ್ಪವಿರಾಮ ಅಥವಾ ಹೊಸ ಸಾಲುಗಳಿಂದ ಬೇರ್ಪಡಿಸಲಾಗಿದೆ </label>
+     <placeholder> ಗ್ಯಾಲರಿ ಕೀವರ್ಡ್ಗಳನ್ನು ಅಲ್ಪವಿರಾಮ ಅಥವಾ ಹೊಸ ಸಾಲುಗಳಿಂದ ಬೇರ್ಪಡಿಸಲಾಗಿದೆ </placeholder>
+     <validate> ಗ್ಯಾಲರಿ ಕೀವರ್ಡ್ಗಳನ್ನು ನಮೂದಿಸಿ </validate>
+    </keywords>
+    <submit>
+     <save> ಗ್ಯಾಲರಿಯನ್ನು ಉಳಿಸಿ </save>
+     <update> ಗ್ಯಾಲರಿಯನ್ನು ನವೀಕರಿಸಿ </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> ಅಪ್‌ಲೋಡರ್ ಮಾರ್ಗದರ್ಶಿ </title>
+     <body>
+      <![CDATA[
+<b> ಚಿತ್ರಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ </b> ಬಟನ್ ಮೂಲಕ ನಿಮ್ಮ ಸಾಧನದಿಂದ ಚಿತ್ರಗಳನ್ನು ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು <b> ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ </b> ಬಟನ್ ಮೂಲಕ ಸೈಟ್‌ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಿ. <br/> ಬೆಂಬಲಿತ ಚಿತ್ರ ಸ್ವರೂಪಗಳು: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ಅನುಮತಿಸಬಹುದಾದ ಕನಿಷ್ಠ ರೆಸಲ್ಯೂಶನ್: <b>%d x %d px</b> <br/> ಅನುಮತಿಸಬಹುದಾದ ಗರಿಷ್ಠ ರೆಸಲ್ಯೂಶನ್: <b>%d x %d px</b> <br/> ಏಕ ಫೈಲ್ ಗರಿಷ್ಠ ಗಾತ್ರ: <b>%d MB</b> <br/> ಪ್ರತಿ ಗ್ಯಾಲರಿಗೆ ಚಿತ್ರ ಎಣಿಕೆ: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆಮಾಡಿ </select_all>
+    <select_del> ಆಯ್ದ ಚಿತ್ರಗಳನ್ನು ಅಳಿಸಿ </select_del>
+    <thumb>
+     <exist>
+      <delete> ಸೈಟ್‌ನಿಂದ ಅಪ್‌ಲೋಡ್ ಮಾಡಿದ ಚಿತ್ರವನ್ನು ಅಳಿಸಿ </delete>
+      <info> ಚಿತ್ರ ಮಾಹಿತಿ </info>
+     </exist>
+     <new>
+      <delete> ಸೈಟ್‌ನಿಂದ ಅಪ್‌ಲೋಡ್ ಮಾಡಿದ ಚಿತ್ರವನ್ನು ಅಳಿಸಿ </delete>
+      <cancel> ಚಿತ್ರ ಅಪ್‌ಲೋಡ್ ರದ್ದುಗೊಳಿಸಿ </cancel>
+      <info> ಚಿತ್ರ ಮಾಹಿತಿ </info>
+      <rotate> ಚಿತ್ರವನ್ನು ತಿರುಗಿಸಿ </rotate>
+      <crop> ಬೆಳೆ ಚಿತ್ರ </crop>
+     </new>
+     <move> ನೀವು ಚಿತ್ರಗಳನ್ನು ಮೌಸ್ನೊಂದಿಗೆ ಎಳೆಯುವ ಮೂಲಕ ವಿಂಗಡಿಸಬಹುದು. </move>
+     <move_mobile>ನಿಮ್ಮ ಬೆರಳಿನಿಂದ ಐಟಂ ಅನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ ಮತ್ತು ಹಿಡಿದುಕೊಳ್ಳಿ ಮತ್ತು ಅದನ್ನು ಹೈಲೈಟ್ ಮಾಡಲು ಕಾಯಿರಿ. ಐಟಂ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ, ವಸ್ತುಗಳನ್ನು ವಿಂಗಡಿಸಲು ನಿಮ್ಮ ಬೆರಳನ್ನು ಎಳೆಯಿರಿ.</move_mobile>
+    </thumb>
+    <browse> ಚಿತ್ರಗಳನ್ನು ಬ್ರೌಸ್ ಮಾಡಿ </browse>
+    <upload> ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ </upload>
+    <uploading> ಚಿತ್ರಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆಸೈಟ್. ಅಪ್‌ಲೋಡ್ ಪೂರ್ಣಗೊಳ್ಳುವವರೆಗೆ ಪುಟವನ್ನು ಮುಚ್ಚಬೇಡಿ. </uploading>
+    <uploaded> ಚಿತ್ರಗಳನ್ನು ಸೈಟ್‌ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ. </uploaded>
+    <error>ಫೈಲ್‌ಗಳನ್ನು ಸರ್ವರ್‌ಗೆ ಅಪ್‌ಲೋಡ್ ಮಾಡುವಾಗ ಕೆಲವು ದೋಷಗಳು ಸಂಭವಿಸಿವೆ.</error>
+    <save_changes> ಇಮೇಜ್ ಬದಲಾವಣೆಗಳನ್ನು ಉಳಿಸಿ </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> ಬೆಳೆ </crop>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </crop>
+    <del_up_img>
+     <label> ಚಿತ್ರವನ್ನು ಅಳಿಸಿ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> ನೀವು ಈ ಚಿತ್ರವನ್ನು ಸೈಟ್‌ನಿಂದ ಅಳಿಸಲು ಬಯಸುವಿರಾ? </text>
+     <command> ಅಳಿಸಿ </command>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ಚಿತ್ರವನ್ನು ಅಳಿಸಿ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> ನೀವು ಈ ಚಿತ್ರವನ್ನು ಸೈಟ್‌ನಿಂದ ಅಳಿಸಲು ಬಯಸುವಿರಾ? </text>
+     <command> ಅಳಿಸಿ </command>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ಆಯ್ದ ಚಿತ್ರಗಳನ್ನು ಅಳಿಸಿ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> ಸೈಟ್‌ನಿಂದ ಆಯ್ದ ಚಿತ್ರಗಳನ್ನು ಅಳಿಸಲು ನೀವು ಬಯಸುವಿರಾ? </text>
+     <command> ಅಳಿಸಿ </command>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ಚಿತ್ರ ಮಾಹಿತಿ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <filename> ಫೈಲ್ ಹೆಸರು </filename>
+     <filesize> ಫೈಲ್ ಗಾತ್ರ </filesize>
+     <date> ಅಪ್‌ಲೋಡ್ ದಿನಾಂಕ </date>
+     <title>
+      <label> ಶೀರ್ಷಿಕೆ </label>
+      <placeholder> ಚಿತ್ರ ಶೀರ್ಷಿಕೆ </placeholder>
+     </title>
+     <desc>
+      <label> ವಿವರಣೆ </label>
+      <placeholder> ಚಿತ್ರ ವಿವರಣೆ </placeholder>
+     </desc>
+     <keyw>
+      <label> ಕೀವರ್ಡ್ಗಳು </label>
+      <placeholder> ಕೀಲಿಗಳನ್ನು ಅಲ್ಪವಿರಾಮ ಅಥವಾ ಹೊಸ ಲೈನ್‌ಗಳಿಂದ ಬೇರ್ಪಡಿಸಲಾಗಿದೆ </placeholder>
+     </keyw>
+     <command> ಉಳಿಸಿ / ನವೀಕರಿಸಿ </command>
+     <cancel> ರದ್ದುಮಾಡು </cancel>
+    </img_info>
+    <result>
+     <label> ದೋಷ </label>
+     <close>  ಮುಚ್ಚಿ</close>
+     <text> </text>
+     <command> ಮುಚ್ಚಿ </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> ಅಪ್‌ಲೋಡ್ ಮಾಡಬಹುದಾದ ಚಿತ್ರ ಸೆಟ್ಟಿಂಗ್‌ಗಳು </title>
+    <upload_limit>
+     <label> ಪ್ರತಿ ಗ್ಯಾಲರಿಗೆ ಗರಿಷ್ಠ ಚಿತ್ರ ಎಣಿಕೆ </label>
+     <placeholder> ಪ್ರತಿ ಗ್ಯಾಲರಿಗೆ ಗರಿಷ್ಠ ಚಿತ್ರ ಎಣಿಕೆ </placeholder>
+     <validate> ಪ್ರತಿ ಗ್ಯಾಲರಿಗೆ ಗರಿಷ್ಠ ಚಿತ್ರ ಎಣಿಕೆ ನಮೂದಿಸಿ </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ಏಕ ಫೈಲ್ ಗರಿಷ್ಠ ಗಾತ್ರ (MB) </label>
+     <placeholder> ಏಕ ಫೈಲ್ ಗರಿಷ್ಠ ಗಾತ್ರ (MB) </placeholder>
+     <validate> ಏಕ ಫೈಲ್ ಗರಿಷ್ಠ ಗಾತ್ರವನ್ನು (MB) ನಮೂದಿಸಿ </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> ಅನುಮತಿಸುವ ಕನಿಷ್ಠ ನಿರ್ಣಯ </label>
+     <width>
+      <placeholder> ಕನಿಷ್ಠ ಅಗಲ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </width>
+     <height>
+      <placeholder> ಕನಿಷ್ಠ ಎತ್ತರ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> ಅನುಮತಿಸುವ ಗರಿಷ್ಠ ರೆಸಲ್ಯೂಶನ್ </label>
+     <width>
+      <placeholder> ಗರಿಷ್ಠ ಅಗಲ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </width>
+     <height>
+      <placeholder> ಗರಿಷ್ಠ ಎತ್ತರ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ಚಿತ್ರ ಪರಿವರ್ತನೆ </title>
+    <full_resolution>
+     <label> ಚಿತ್ರ ಪೂರ್ಣ ಗಾತ್ರ </label>
+     <width>
+      <placeholder> ಗರಿಷ್ಠ ಅಗಲ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </width>
+     <height>
+      <placeholder> ಗರಿಷ್ಠ ಎತ್ತರ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ಥಂಬ್‌ನೇಲ್ ಗಾತ್ರ </label>
+     <width>
+      <placeholder> ಹೆಬ್ಬೆರಳು ಅಗಲ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </width>
+     <height>
+      <placeholder> ಹೆಬ್ಬೆರಳು ಎತ್ತರ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> ಸ್ಲೈಡ್ ಗಾತ್ರ </label>
+     <width>
+      <placeholder> ಸ್ಲೈಡ್ ಅಗಲ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </width>
+     <height>
+      <placeholder> ಸ್ಲೈಡ್ ಎತ್ತರ </placeholder>
+      <validate> ಮೌಲ್ಯವನ್ನು ನಮೂದಿಸಿ </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> ಜೆಪೆಗ್ ಗುಣಮಟ್ಟ </label>
+    </jpg_quality>
+    <png_compress>
+     <label> ಪಿಎನ್‌ಜಿ ಸಂಕುಚಿತಗೊಳಿಸಿ </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ವಾಟರ್‌ಮಾರ್ಕ್ </title>
+    <label> ವಾಟರ್‌ಮಾರ್ಕ್ ಬಳಸಿ </label>
+    <position> ವಾಟರ್‌ಮಾರ್ಕ್ ಸ್ಥಾನ </position>
+    <image> ವಾಟರ್‌ಮಾರ್ಕ್ ಚಿತ್ರ </image>
+    <set> ವಾಟರ್‌ಮಾರ್ಕ್ ಹೊಂದಿಸಿ </set>
+    <browse> 1- ವಾಟರ್‌ಮಾರ್ಕ್ ಫೈಲ್ ಬ್ರೌಸ್ ಮಾಡಿ </browse>
+    <adjust> 2- ಫ್ರೇಮ್‌ಗೆ ಅನುಗುಣವಾಗಿ ಚಿತ್ರವನ್ನು ಹೊಂದಿಸಿ. </adjust>
+    <upload> 3- ಆಯ್ದ ಫೈಲ್ ಅನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ </upload>
+    <uploading> ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ ... </uploading>
+    <uploaded> ಅಪ್‌ಲೋಡ್ ಮಾಡಲಾಗಿದೆ. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> ಪುಟ </page>
+   <first> ಮೊದಲ ಪುಟ </first>
+   <prev> ಹಿಂದಿನ ಪುಟ </prev>
+   <next> ಮುಂದಿನ ಪುಟ </next>
+   <last> ಕೊನೆಯ ಪುಟ </last>
+  </pagination>
+
+</lang>

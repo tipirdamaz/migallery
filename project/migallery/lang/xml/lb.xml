@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Sprooch </title>
+   <label> Sprooch auswielen </label>
+  </lang>
+
+  <timezone>
+   <title>Zäitzone</title>
+   <label>Wielt Timezone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerie Management </gallery_man>
+   <gallery_list> Galerielëscht </gallery_list>
+   <uploader> Neit Galerie erstellen </uploader>
+   <back> Zréck </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Opriichten </title>
+   <header> MIGallery Opriichten </header>
+
+   <img_direction>
+    <label> Galerie, Bild a Rutschorientéierung </label>
+    <left> lénks no riets </left>
+    <right> Riets no Lénks </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL Datebank Informatioun </title>
+    <host>
+     <label> Datebank Hostnumm </label>
+     <placeholder> Datebank Hostnumm </placeholder>
+     <validate> Input Datebank Hostname </validate>
+    </host>
+    <user>
+     <label> Datebank UserName </label>
+     <placeholder> Datebank Benotzernumm </placeholder>
+     <validate> Input Datebank Benotzernumm </validate>
+    </user>
+    <pass>
+     <label> Datebank Passwuert </label>
+     <placeholder> Datebank Passwuert </placeholder>
+     <validate> Input Datebank Passwuert </validate>
+    </pass>
+    <db>
+     <label> Datebank Numm </label>
+     <placeholder> Datebank Numm </placeholder>
+     <validate> Input Datebank Numm </validate>
+    </db>
+    <gal_table>
+     <label> Numm vum Galerie Dësch </label>
+     <placeholder> Numm vum Galerie Dësch </placeholder>
+     <validate> Input Numm vum Galerie Dësch </validate>
+    </gal_table>
+    <img_table>
+     <label> Numm vum Bildtabel </label>
+     <placeholder> Numm vum Bildtabel </placeholder>
+     <validate> Input Numm vum Bildtabel </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Classeure wou Dir Dateie schreiwe kënnt</title>
+    <db_alert>
+     <![CDATA[
+    Dee folgende Verzeechnes ass wou <b> Konfiguratioun </b>, <b> Feelerprotokoll </b> an <b> Definitiounen </b> Dateie erstallt ginn. Wann Dir den Numm vun dësem Verzeechnes ännere wëllt, ännert d'D <b> DB_DIR </b> Definitioun an der <b> definitions0.php </b> Datei an aktualiséiert dës Säit.<br/><br/>Wann Dir d'Nimm vu Konfiguratioun, Feelerprotokoll an Definitiounsdateie ännere wëllt, ännert d'Definitioune vu <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> an <b>DEFINITIONS_FILE</b> an der definitions0.php Datei.<br/><br/>Wann Äre System unix-baséiert ass, setzt d'Schreifrechter mam folgendem Kommando:<br/><b>%s</b><br/><br/>Ier Dir d'Installatioun starten, gitt sécher datt de folgende Wee existéiert an Dir hutt Permissiounen an de Verzeechnes ze schreiwen:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Ier Dir d'Installatioun ufänkt, gitt sécher datt déi folgend Verzeichnisser verfügbar sinn an datt Dir d'Erlaabnes hutt an d'Verzeichnisser ze schreiwen. <br/> <br/> Wann Dir aner Verzeichnunge benotzt wéi déi folgend Verzeichnisser, wann d'Verzeechner net op der Disk existéieren, erstellt éischt d'Verzeichnisser a setzt d'Schreifrechter vun dësen Verzeechnes an start d'Installatioun.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfiguratioun, Feelerprotokoll an Definitioun Dateien Wee</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Déi folgend Telefonsbicher ginn erstallt wann déi nei Galerie gespäichert gëtt. <b>%d</b> weist d'Galerie-ID un. Dës Verzeechnes ginn am <b> Base Verzeechnes vu Biller </b> Verzeechnes erstallt. Gitt sécher datt d'Format vun dësen Telefonsbicher passend ass.
+     ]]>
+    </img_dir_alert>
+    <config_alert>D'Konfiguratiounsdatei gouf virdrun erstallt. Dofir kënnt Dir de Setup net lafen. Dir musst als éischt d'Konfiguratiounsdatei läschen an dann de Setup ausféieren.</config_alert>
+    <tmp_dir>
+     <label>Temporären Dossier vu Bilddateien</label>
+     <placeholder>Temporären Dossier vu Bilddateien</placeholder>
+     <validate>Temporären Dossier vu Bilddateien</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Temporären Dossier vun Miniaturdateien</label>
+     <placeholder>Temporären Dossier vun Miniaturdateien</placeholder>
+     <validate>Temporären Dossier vun Miniaturdateien</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Temporären Dossier vu gekierzte Miniaturdateien</label>
+     <placeholder>Temporären Dossier vu gekierzte Miniaturdateien</placeholder>
+     <validate>Temporären Dossier vu gekierzte Miniaturdateien</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Temporärem Dossier vu Biller vun der Rutschgréisst</label>
+     <placeholder>Temporärem Dossier vu Biller vun der Rutschgréisst</placeholder>
+     <validate>Temporärem Dossier vu Biller vun der Rutschgréisst</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Base Verzeechnes vu Biller</label>
+     <placeholder>Base Verzeechnes vu Biller</placeholder>
+     <validate>Base Verzeechnes vu Biller</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Dossier vu Bilddateien</label>
+     <placeholder>Dossier vu Bilddateien</placeholder>
+     <validate>Dossier vu Bilddateien</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Dossier vun Miniaturdateien</label>
+     <placeholder>Dossier vun Miniaturdateien</placeholder>
+     <validate>Dossier vun Miniaturdateien</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Dossier vu gekierzte Miniaturdateien</label>
+     <placeholder>Dossier vu gekierzte Miniaturdateien</placeholder>
+     <validate>Dossier vu gekierzte Miniaturdateien</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Dossier vu Biller vun der Rutschgréisst</label>
+     <placeholder>Dossier vu Biller vun der Rutschgréisst</placeholder>
+     <validate>Dossier vu Biller vun der Rutschgréisst</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML Dateien Verzeechnes</label>
+     <placeholder>XML Dateien Verzeechnes</placeholder>
+     <validate>XML Dateien Verzeechnes</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Installéieren. Waart w.e.g. ... </installing>
+    <success> Installatioun erfollegräich ofgeschloss. </success>
+    <error> Installatioun konnt net ofgeschloss ginn. </error>
+   </alert>
+  
+   <submit> Installatioun starten </submit>
+   <submit_continue> Weider &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerie Management </title>
+   <header> Galerie Management </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galerielëscht </title>
+   <header> Galerielëscht </header>
+   <sort>
+    <asc> sortéiert vun éischt op lescht </asc>
+    <desc> sortéiert vu leschter bis éischt </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Vue </button>
+     <title> Galerie kucken </title>
+    </view>
+    <delete>
+     <button> Läschen </button>
+     <title> Galerie läschen </title>
+    </delete>
+    <edit>
+     <button> Änneren </button>
+     <title> Galerie änneren </title>
+    </edit>
+    <images>biller</images>
+    <date>Datum</date>
+    <move> Dir kënnt d'Galerien sortéieren andeems Dir se mat der Maus zitt. </move>
+    <move_mobile>Tippt an hält en Element mat Ärem Fanger a waart bis en ausgewielt gëtt. Nodeems Dir en Element gewielt hutt, zitt de Fanger fir d'Artikelen ze sortéieren.</move_mobile>
+   </card>
+   <alert> Keng Galerie fonnt. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galerie läschen </label>
+     <close> zoumaachen </close>
+     <text> Wëllt Dir dës Galerie vum Site läschen? </text>
+     <command> Läschen </command>
+     <cancel> Ofbriechen </cancel>
+    </del_gallery>
+    <result>
+     <label> Feeler </label>
+     <close> zoumaachen </close>
+     <text> </text>
+     <command> Zoumaachen </command>
+    </result>
+   </modal>
+   <save_changes> Retten Galerien Zortéieren </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galeriewäit </title>
+   <header> Gallery View </header>
+   <alert> Kee Bild fonnt. </alert>
+   <share>Deelen Galerie</share>
+   <filedate>Eroplueden Datum</filedate>
+   <filesize>Dateigréisst</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>op Clipboard kopéieren</label>
+     <close>zoumaachen</close>
+     <text>Link kopéiert op Clipboard</text>
+     <command>Kopéieren</command>
+     <cancel>Zoumaachen</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Neit Galerie erstellen </title>
+    <header> Neit Galerie erstellen </header>
+   </new>
+   <edit>
+    <title> Galerie änneren </title>
+    <header> Galerie änneren </header>
+   </edit>
+   <gallery_info>
+    <title> Galerie Informatiounen </title>
+    <name>
+     <label> Galerienumm </label>
+     <placeholder> Numm vum Galerie </placeholder>
+     <validate> Input Gallery Numm </validate>
+    </name>
+    <description>
+     <label> Galerie Beschreiwung </label>
+     <placeholder> Galerie Beschreiwung </placeholder>
+     <validate> Input Galerie Beschreiwung </validate>
+    </description>
+    <keywords>
+     <label> Galerie Schlësselwierder getrennt duerch Komma oder Newlines </label>
+     <placeholder> Galerie Schlësselwierder getrennt duerch Komma oder Newlines </placeholder>
+     <validate> Gitt Galerie Schlësselwieder an </validate>
+    </keywords>
+    <submit>
+     <save> Galerie späicheren </save>
+     <update> Update Galerie </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Uploader Guide </title>
+     <body>
+      <![CDATA[
+Wielt Biller vun Ärem Apparat mat der <b> Biller duerchsichen </b> Knäppchen a lued op de Site mat der <b> Eroplueden Biller </b> Knäppchen. <br/> Ënnerstëtzte Bildformater: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Zulässlech Mindestopléisung: <b>%d x %d px</b> <br/> Zulässlech Maximal Opléisung: <b>%d x %d px</b> <br/> Maximal Gréisst vun eenzeg Datei: <b>%d MB</b> <br/> Bildzuel pro Galerie: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Alles auswielen </select_all>
+    <select_del> Ausgewielte Biller läschen </select_del>
+    <thumb>
+     <exist>
+      <delete> Eroplueden Bild vum Site läschen </delete>
+      <info> Bild Info </info>
+     </exist>
+     <new>
+      <delete> Eroplueden Bild vum Site läschen </delete>
+      <cancel> Ofbriechen Bild Eroplueden </cancel>
+      <info> Bild Info </info>
+      <rotate> Bild dréien </rotate>
+      <crop> Crop Bild </crop>
+     </new>
+     <move> Dir kënnt d'Biller sortéieren andeems Dir se mat der Maus zitt. </move>
+     <move_mobile>Tippt an hält en Element mat Ärem Fanger a waart bis en ausgewielt gëtt. Nodeems Dir en Element gewielt hutt, zitt de Fanger fir d'Artikelen ze sortéieren.</move_mobile>
+    </thumb>
+    <browse> Biller duerchsichen </browse>
+    <upload> Eroplueden Biller </upload>
+    <uploading> Biller ginn eropgelueden to de Site. Maacht d'Säit net zou bis den Upload fäerdeg ass. </uploading>
+    <uploaded> Biller sinn op de Site eropgelueden. </uploaded>
+    <error>E puer Feeler sinn opgetruede beim eropluede vun Dateien op de Server.</error>
+    <save_changes> Bild Ännerunge späicheren </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Crop </crop>
+     <cancel> Ofbriechen </cancel>
+    </crop>
+    <del_up_img>
+     <label> Bild läschen </label>
+     <close> zoumaachen </close>
+     <text> Wëllt Dir dëst Bild vum Site läschen? </text>
+     <command> Läschen </command>
+     <cancel> Ofbriechen </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Bild läschen </label>
+     <close> zoumaachen </close>
+     <text> Wëllt Dir dëst Bild vum Site läschen? </text>
+     <command> Läschen </command>
+     <cancel> Ofbriechen </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ausgewielte Biller läschen </label>
+     <close> zoumaachen </close>
+     <text> Wëllt Dir déi gewielte Biller vum Site läschen? </text>
+     <command> Läschen </command>
+     <cancel> Ofbriechen </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Bild Info </label>
+     <close> zoumaachen </close>
+     <filename> Dateinumm </filename>
+     <filesize> Dateigréisst </filesize>
+     <date> Eroplueden Datum </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> Bildtitel </placeholder>
+     </title>
+     <desc>
+      <label> Beschreiwung </label>
+      <placeholder> Bildbeschreiwung </placeholder>
+     </desc>
+     <keyw>
+      <label> Schlësselwierder </label>
+      <placeholder> Schlësselwierder getrennt duerch Komma oder Newlines </placeholder>
+     </keyw>
+     <command> Späicheren / Update </command>
+     <cancel> Ofbriechen </cancel>
+    </img_info>
+    <result>
+     <label> Feeler </label>
+     <close> zoumaachen </close>
+     <text> </text>
+     <command> zoumaachen </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Bild Astellunge fir zoulässeg eropzelueden </title>
+    <upload_limit>
+     <label> Maximum Fotozuel fir all Galerie </label>
+     <placeholder> Maximum Fotozuel fir all Galerie </placeholder>
+     <validate> Gitt maximal Zuel vu Fotoen fir all Galerie an </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Eenzel Datei Max Gréisst (MB) </label>
+     <placeholder> Eenzel Datei Max Gréisst (MB) </placeholder>
+     <validate> Gitt eng Datei Max Gréisst (MB) an </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Zulässlech Mindestopléisung </label>
+     <width>
+      <placeholder> Min Breet </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </width>
+     <height>
+      <placeholder> Min Héicht </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Zulässlech maximal Opléisung </label>
+     <width>
+      <placeholder> Max Breet </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </width>
+     <height>
+      <placeholder> Max Héicht </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Bildtransformatioun </title>
+    <full_resolution>
+     <label> Bild Voll Gréisst </label>
+     <width>
+      <placeholder> Max Breet </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </width>
+     <height>
+      <placeholder> Max Héicht </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Thumbnail Gréisst </label>
+     <width>
+      <placeholder> Thumbnail Breet </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </width>
+     <height>
+      <placeholder> Thumbnail Héicht </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Rutsch Gréisst </label>
+     <width>
+      <placeholder> Rutsch Breet </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </width>
+     <height>
+      <placeholder> Rutsch héicht </placeholder>
+      <validate> Gitt e Wäert an </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Qualitéit </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Kompriméieren </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Waasserzeechen </title>
+    <label> Benotzt Waasserzeechen </label>
+    <position> Waassermarkpositioun </position>
+    <image> Waassermarkbild </image>
+    <set> Waassermark astellen </set>
+    <browse> 1- Kuckt Waassermerk Image Datei </browse>
+    <adjust> 2- Ajustéiert d'Bild no dem Frame. </adjust>
+    <upload> 3- Eroplueden ausgewielte Datei </upload>
+    <uploading> Eroplueden ... </uploading>
+    <uploaded> eropgelueden. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Säit </page>
+   <first> Éischt Säit </first>
+   <prev> Vireg Säit </prev>
+   <next> Nächst Säit </next>
+   <last> Lescht Säit </last>
+  </pagination>
+
+</lang>

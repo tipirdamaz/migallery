@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>ភាសា</title>
+   <label>ជ្រើសរើស​ភាសា</label>
+  </lang>
+
+  <timezone>
+   <title>ល្វែងម៉ោង</title>
+   <label>ជ្រើសរើសតំបន់ពេលវេលា</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>ការគ្រប់គ្រងវិចិត្រសាល</gallery_man>
+   <gallery_list>បញ្ជីវិចិត្រសាល</gallery_list>
+   <uploader>បង្កើតវិចិត្រសាលថ្មី</uploader>
+   <back>ថយក្រោយ</back>
+  </nav>
+
+  <install>
+ 
+   <title>ការរៀបចំ MIGallery</title>
+   <header>ការរៀបចំ MIGallery</header>
+
+   <img_direction>
+    <label>វិចិត្រសាលរូបភាពនិងទិសដៅរុញ</label>
+    <left>ពីឆ្វេងទៅស្តាំ</left>
+    <right>ស្តាំទៅឆ្វេង</right>
+   </img_direction>
+
+   <db_info>
+    <title>ព័ត៌មានមូលដ្ឋានទិន្នន័យ MySQL</title>
+    <host>
+     <label>ឈ្មោះម៉ាស៊ីនមូលដ្ឋានទិន្នន័យ</label>
+     <placeholder>ឈ្មោះម៉ាស៊ីនមូលដ្ឋានទិន្នន័យ</placeholder>
+     <validate>ឈ្មោះម៉ាស៊ីនមូលដ្ឋានទិន្នន័យបញ្ចូល</validate>
+    </host>
+    <user>
+     <label>ឈ្មោះអ្នកប្រើមូលដ្ឋានទិន្នន័យ</label>
+     <placeholder>ឈ្មោះអ្នកប្រើមូលដ្ឋានទិន្នន័យ</placeholder>
+     <validate>បញ្ចូលឈ្មោះអ្នកប្រើមូលដ្ឋានទិន្នន័យ</validate>
+    </user>
+    <pass>
+     <label>ពាក្យសម្ងាត់មូលដ្ឋានទិន្នន័យ</label>
+     <placeholder>ពាក្យសម្ងាត់មូលដ្ឋានទិន្នន័យ</placeholder>
+     <validate>បញ្ចូលពាក្យសម្ងាត់មូលដ្ឋានទិន្នន័យ</validate>
+    </pass>
+    <db>
+     <label>ឈ្មោះមូលដ្ឋានទិន្នន័យ</label>
+     <placeholder>ឈ្មោះមូលដ្ឋានទិន្នន័យ</placeholder>
+     <validate>ឈ្មោះមូលដ្ឋានទិន្នន័យបញ្ចូល</validate>
+    </db>
+    <gal_table>
+     <label>ឈ្មោះតារាងវិចិត្រសាល</label>
+     <placeholder>ឈ្មោះតារាងវិចិត្រសាល</placeholder>
+     <validate>បញ្ចូលឈ្មោះតារាងវិចិត្រសាល</validate>
+    </gal_table>
+    <img_table>
+     <label>ឈ្មោះតារាងរូបភាព</label>
+     <placeholder>ឈ្មោះតារាងរូបភាព</placeholder>
+     <validate>បញ្ចូលឈ្មោះតារាងរូបភាព</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ផ្លូវទៅមាតិកាដែលអាចសរសេរបាន</title>
+    <db_alert>
+     <![CDATA[
+    ថតខាងក្រោមគឺជាកន្លែងដែលឯកសារ <b> កំណត់រចនាសម្ព័ន្ធ </b> <b> កំណត់ហេតុកំហុស </b> និង <b> និយមន័យ </b> នឹងត្រូវបានបង្កើត។ ប្រសិនបើអ្នកចង់ប្តូរឈ្មោះថតឯកសារនេះសូមប្តូរនិយមន័យ <b> DB_DIR </b> ក្នុងឯកសារ <b> definitions0.php </b> ហើយផ្ទុកទំព័រនេះឡើងវិញ។<br/><br/>ប្រសិនបើអ្នកចង់ប្តូរឈ្មោះឯកសារកំណត់រចនាសម្ព័ន្ធឯកសារកំណត់ហេតុកំហុសនិងឯកសារនិយមន័យសូមប្តូរនិយមន័យនៃ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> និង <b>DEFINITIONS_FILE</b> ក្នុងឯកសារ definitions0.php ។<br/><br/>ប្រសិនបើប្រព័ន្ធរបស់អ្នកផ្អែកលើយូនីកកំណត់សិទ្ធិសរសេរដោយប្រើពាក្យបញ្ជាដូចខាងក្រោម៖<br/><b>%s</b><br/><br/>មុនពេលចាប់ផ្តើមដំឡើងត្រូវប្រាកដថាផ្លូវខាងក្រោមមានហើយអ្នកមានសិទ្ធិសរសេរទៅថតឯកសារ៖
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    មុនពេលចាប់ផ្តើមការដំឡើងត្រូវប្រាកដថាថតខាងក្រោមមានហើយអ្នកមានការអនុញ្ញាតឱ្យសរសេរទៅថត។ <br/> <br/> ប្រសិនបើអ្នកនឹងប្រើថតផ្សេងទៀតជាងថតខាងក្រោមប្រសិនបើថតមិនមាននៅលើឌីសដំបូងបង្កើតថតហើយកំណត់សិទ្ធិសរសេររបស់ថតទាំងនេះហើយចាប់ផ្តើមតំឡើង។
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ផ្លូវទៅកាន់ការកំណត់រចនាសម្ព័ន្ធកំណត់ហេតុកំហុសនិងឯកសារនិយមន័យ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ថតខាងក្រោមត្រូវបានបង្កើតនៅពេលវិចិត្រសាលថ្មីត្រូវបានរក្សាទុក។ <b>%d</b> បញ្ជាក់លេខសម្គាល់វិចិត្រសាល។ ថតទាំងនេះត្រូវបានបង្កើតនៅលើ <b> ថតមូលដ្ឋាននៃរូបភាព </b> ដែលបានកំណត់ខាងលើ។ ពិនិត្យមើលថាតើទ្រង់ទ្រាយថតទាំងនេះសមស្របឬអត់។
+     ]]>
+    </img_dir_alert>
+    <config_alert>ឯកសារកំណត់រចនាសម្ព័ន្ធត្រូវបានបង្កើតពីមុន។ ដូច្នេះអ្នកមិនអាចដំណើរការរៀបចំបានទេ។ ដំបូងអ្នកត្រូវលុបឯកសារកំណត់រចនាសម្ព័ន្ធហើយបន្ទាប់មកដំណើរការការរៀបចំ។</config_alert>
+    <tmp_dir>
+     <label>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាព</label>
+     <placeholder>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាព</placeholder>
+     <validate>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាព</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗ</label>
+     <placeholder>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗ</placeholder>
+     <validate>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗដែលត្រូវបានគេកាត់</label>
+     <placeholder>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗដែលត្រូវបានគេកាត់</placeholder>
+     <validate>ផ្លូវបណ្ដោះអាសន្ននៃឯកសាររូបភាពតូចៗដែលត្រូវបានគេកាត់</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ផ្លូវបណ្តោះអាសន្ននៃឯកសាររូបភាពស្លាយ</label>
+     <placeholder>ផ្លូវបណ្តោះអាសន្ននៃឯកសាររូបភាពស្លាយ</placeholder>
+     <validate>ផ្លូវបណ្តោះអាសន្ននៃឯកសាររូបភាពស្លាយ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ថតមូលដ្ឋាននៃរូបភាព</label>
+     <placeholder>ថតមូលដ្ឋាននៃរូបភាព</placeholder>
+     <validate>ថតមូលដ្ឋាននៃរូបភាព</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ថតឯកសាររូបភាព</label>
+     <placeholder>ថតឯកសាររូបភាព</placeholder>
+     <validate>ថតឯកសាររូបភាព</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ផ្លូវទៅឯកសាររូបភាពរូបភាពតូចៗ</label>
+     <placeholder>ផ្លូវទៅឯកសាររូបភាពរូបភាពតូចៗ</placeholder>
+     <validate>ផ្លូវទៅឯកសាររូបភាពរូបភាពតូចៗ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ថតឯកសារតូចៗដែលបានច្រឹប</label>
+     <placeholder>ថតឯកសារតូចៗដែលបានច្រឹប</placeholder>
+     <validate>ថតឯកសារតូចៗដែលបានច្រឹប</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ផ្លូវទៅឯកសាររូបភាពទំហំស្លាយ</label>
+     <placeholder>ផ្លូវទៅឯកសាររូបភាពទំហំស្លាយ</placeholder>
+     <validate>ផ្លូវទៅឯកសាររូបភាពទំហំស្លាយ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>ថតឯកសារ XML</label>
+     <placeholder>ថតឯកសារ XML</placeholder>
+     <validate>ថតឯកសារ XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>តំឡើង។ សូមរង់ចាំ ...</installing>
+    <success>ការដំឡើងបានបញ្ចប់ដោយជោគជ័យ។</success>
+    <error>ការដំឡើងមិនអាចបញ្ចប់បានទេ។</error>
+   </alert>
+  	
+   <submit>ចាប់ផ្តើមដំឡើង</submit>
+   <submit_continue>បន្ត &gt;&gt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>ការគ្រប់គ្រងវិចិត្រសាល</title>
+   <header>ការគ្រប់គ្រងវិចិត្រសាល</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>បញ្ជីវិចិត្រសាល</title>
+   <header>បញ្ជីវិចិត្រសាល</header>
+   <sort>
+    <asc>តម្រៀបពីដំបូងទៅចុងក្រោយ</asc>
+    <desc>តម្រៀបពីចុងក្រោយទៅទីមួយ</desc>
+   </sort>
+   <card>
+    <view>
+     <button>មើល</button>
+     <title>មើលវិចិត្រសាល</title>
+    </view>
+    <delete>
+     <button>លុប</button>
+     <title>លុបវិចិត្រសាល</title>
+    </delete>
+    <edit>
+     <button>កែសម្រួល</button>
+     <title>កែសម្រួលវិចិត្រសាល</title>
+    </edit>
+    <images>រូបភាព</images>
+    <date>កាលបរិច្ឆេទ</date>
+    <move>អ្នកអាចតម្រៀបវិចិត្រសាលដោយអូសវាដោយប្រើកណ្តុរ។</move>
+    <move_mobile>ប៉ះនិងសង្កត់ធាតុមួយដោយម្រាមដៃរបស់អ្នកហើយរង់ចាំឱ្យវាត្រូវបានបន្លិច។ បន្ទាប់ពីជ្រើសរើសធាតុសូមអូសម្រាមដៃរបស់អ្នកដើម្បីតម្រៀបធាតុ។</move_mobile>
+   </card>
+   <alert>រកមិនឃើញវិចិត្រសាល។</alert>
+   <modal>
+    <del_gallery>
+     <label>លុបវិចិត្រសាល</label>
+     <close>បិទ</close>
+     <text>តើអ្នកចង់លុបវិចិត្រសាលនេះពីគេហទំព័រទេ?</text>
+     <command>លុប</command>
+     <cancel>បោះបង់</cancel>
+    </del_gallery>
+    <result>
+     <label>កំហុស</label>
+     <close>បិទ</close>
+     <text></text>
+     <command>បិទ</command>
+    </result>
+   </modal> 
+   <save_changes>រក្សាទុកលំដាប់តម្រៀបវិចិត្រសាល</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>ទិដ្ឋភាពវិចិត្រសាល</title>
+   <header>ទិដ្ឋភាពវិចិត្រសាល</header>
+   <alert>រកមិនឃើញរូបភាព។</alert>
+   <share>ចែករំលែកវិចិត្រសាល</share>
+   <filedate>កាលបរិច្ឆេទផ្ទុកឡើង</filedate>
+   <filesize>ទំហំ​ឯកសារ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ចម្លងទៅក្ដារតម្បៀតខ្ទាស់</label>
+     <close>បិទ</close>
+     <text>បានចម្លងតំណទៅក្ដារតម្បៀតខ្ទាស់</text>
+     <command>ចម្លង</command>
+     <cancel>បិទ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title>បង្កើតវិចិត្រសាលថ្មី</title>
+    <header>បង្កើតវិចិត្រសាលថ្មី</header>
+   </new>
+   <edit>
+    <title>កែសម្រួលវិចិត្រសាល</title>
+    <header>កែសម្រួលវិចិត្រសាល</header>
+   </edit>
+   <gallery_info>
+    <title>ព័ត៌មានវិចិត្រសាល</title>
+    <name>
+     <label>ឈ្មោះវិចិត្រសាល</label>
+     <placeholder>ឈ្មោះវិចិត្រសាល</placeholder>
+     <validate>ឈ្មោះវិចិត្រសាលបញ្ចូល</validate>
+    </name>
+    <description>
+     <label>ការពិពណ៌នាវិចិត្រសាល</label>
+     <placeholder>ការពិពណ៌នាវិចិត្រសាល</placeholder>
+     <validate>ការពិពណ៌នាវិចិត្រសាលបញ្ចូល</validate>
+    </description>
+    <keywords>
+     <label> ពាក្យគន្លឹះវិចិត្រសាលដែលបំបែកដោយសញ្ញាក្បៀសឬបន្ទាត់ថ្មី </label>
+     <placeholder> ពាក្យគន្លឹះវិចិត្រសាលដែលបំបែកដោយសញ្ញាក្បៀសឬបន្ទាត់ថ្មី </placeholder>
+     <validate> បញ្ចូលពាក្យគន្លឹះវិចិត្រសាល </validate>
+    </keywords>
+    <submit>
+     <save>រក្សាទុកវិចិត្រសាល</save>
+     <update>ធ្វើបច្ចុប្បន្នភាពវិចិត្រសាល</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>ការណែនាំអំពីការអាប់ឡូត</title>
+     <body>
+      <![CDATA[
+ជ្រើសរើសរូបភាពពីឧបករណ៍របស់អ្នកដោយប្រើប៊ូតុង <b> រុករករូបភាព </b> រួចផ្ទុកឡើងលើគេហទំព័រដោយប្រើប៊ូតុង <b> ផ្ទុករូបភាពឡើង </b> ។ <br/> ទ្រង់ទ្រាយរូបភាពដែលគាំទ្រ៖ <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ដំណោះស្រាយអប្បបរមាដែលអាចអនុញ្ញាតិៈ <b>%d x %d px</b> <br/> ដំណោះស្រាយអតិបរមាដែលអាចអនុញ្ញាតិ៖ <b>%d x %d px</b> <br/> ទំហំឯកសារអតិបរមាតែមួយ៖ <b>%d មេកាបៃ </b> <br/> ចំនួនរូបភាពក្នុងវិចិត្រសាល៖ <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all>ជ្រើសរើស​ទាំងអស់</select_all>
+    <select_del>លុបរូបភាពដែលបានជ្រើសរើស</select_del>
+    <thumb>
+     <exist>
+      <delete>លុបរូបភាពដែលបានផ្ទុកចេញពីគេហទំព័រ</delete>
+      <info>ព័ត៌មានរូបភាព</info>
+     </exist>
+     <new>
+      <delete>លុបរូបភាពដែលបានផ្ទុកចេញពីគេហទំព័រ</delete>
+      <cancel>បោះបង់ការផ្ទុករូបភាពឡើង</cancel>
+      <info>ព័ត៌មានរូបភាព</info>
+      <rotate>បង្វិលរូបភាព</rotate>
+      <crop>ច្រឹបរូបភាព</crop>
+     </new>
+     <move>អ្នកអាចតម្រៀបរូបភាពដោយអូសវាដោយប្រើកណ្តុរ។</move>
+     <move_mobile>ប៉ះនិងសង្កត់ធាតុមួយដោយម្រាមដៃរបស់អ្នកហើយរង់ចាំឱ្យវាត្រូវបានបន្លិច។ បន្ទាប់ពីជ្រើសរើសធាតុសូមអូសម្រាមដៃរបស់អ្នកដើម្បីតម្រៀបធាតុ។</move_mobile>
+    </thumb>
+    <browse>រុករករូបភាព</browse>
+    <upload>ផ្ទុករូបភាពឡើង</upload>
+    <uploading>រូបភាពកំពុងត្រូវបានបញ្ចូលទៅគេហទំព័រ។ កុំបិទទំព័ររហូតដល់ការផ្ទុកឡើងចប់។</uploading>
+    <uploaded>រូបភាពត្រូវបានបញ្ចូលទៅគេហទំព័រ។</uploaded>
+    <error>កំហុសមួយចំនួនបានកើតឡើងខណៈពេលផ្ទុកឯកសារទៅម៉ាស៊ីនមេ។</error>
+    <save_changes>រក្សាទុកការផ្លាស់ប្តូររូបភាព</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>ច្រឹប</crop>
+     <cancel>បោះបង់</cancel>
+    </crop>
+    <del_up_img>
+     <label>លុបរូបភាព</label>
+     <close>បិទ</close>
+     <text>តើអ្នកចង់លុបរូបភាពនេះចេញពីគេហទំព័រទេ?</text>
+     <command>លុប</command>
+     <cancel>បោះបង់</cancel>
+    </del_up_img>
+    <del_img>
+     <label>លុបរូបភាព</label>
+     <close>បិទ</close>
+     <text>តើអ្នកចង់លុបរូបភាពនេះចេញពីគេហទំព័រទេ?</text>
+     <command>លុប</command>
+     <cancel>បោះបង់</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>លុបរូបភាពដែលបានជ្រើសរើស</label>
+     <close>បិទ</close>
+     <text>តើអ្នកចង់លុបរូបភាពដែលបានជ្រើសរើសចេញពីគេហទំព័រទេ?</text>
+     <command>លុប</command>
+     <cancel>បោះបង់</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>ព័ត៌មានរូបភាព</label>
+     <close>បិទ</close>
+     <filename>ឈ្មោះ​ឯកសារ</filename>
+     <filesize>ទំហំ​ឯកសារ</filesize>
+     <date> កាលបរិច្ឆេទផ្ទុកឡើង </date>
+     <title>
+      <label>ចំណងជើង</label>
+      <placeholder>ចំណងជើងរូបភាព</placeholder>
+     </title>
+     <desc>
+      <label>ការពិពណ៌នា</label>
+      <placeholder>ការពិពណ៌នារូបភាព</placeholder>
+     </desc>
+     <keyw>
+      <label> ពាក្យគន្លឹះ </label>
+      <placeholder> ពាក្យគន្លឹះដែលបំបែកដោយសញ្ញាក្បៀសឬបំបែកបន្ទាត់ </placeholder>
+     </keyw>
+     <command>រក្សាទុក / ធ្វើបច្ចុប្បន្នភាព</command>
+     <cancel>បោះបង់</cancel>
+    </img_info>
+    <result>
+     <label>កំហុស</label>
+     <close>បិទ</close>
+     <text></text>
+     <command>បិទ</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>ការកំណត់រូបភាពដែលអាចផ្ទុកបាន</title>
+    <upload_limit>
+     <label>ចំនួនរូបភាពអតិបរមាក្នុងមួយវិចិត្រសាល</label>
+     <placeholder>ចំនួនរូបភាពអតិបរមាក្នុងមួយវិចិត្រសាល</placeholder>
+     <validate>បញ្ចូលចំនួនរូបភាពអតិបរមាក្នុងមួយវិចិត្រសាល</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>ទំហំឯកសារតែមួយអតិបរមា (MB)</label>
+     <placeholder>ទំហំឯកសារតែមួយអតិបរមា (MB)</placeholder>
+     <validate>បញ្ចូលទំហំឯកសារតែមួយ អតិបរមា (MB)</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>គុណភាពបង្ហាញរូបភាពដែលអាចអនុញ្ញាតបានអប្បបរមា</label>
+     <width>
+      <placeholder>ទទឹងអប្បបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </width>
+     <height>
+      <placeholder>កម្ពស់អប្បបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>គុណភាពបង្ហាញអតិបរមាដែលអាចអនុញ្ញាតិបាន</label>
+     <width>
+      <placeholder>ទទឹងអតិបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </width>
+     <height>
+      <placeholder>កម្ពស់អតិបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>ការផ្លាស់ប្តូររូបភាព</title>
+    <full_resolution>
+     <label>រូបភាពទំហំពេញ</label>
+     <width>
+      <placeholder>ទទឹងអតិបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </width>
+     <height>
+      <placeholder>កម្ពស់អតិបរមា</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>ទំហំរូបភាពតូច</label>
+     <width>
+      <placeholder>ទទឹងមេដៃ</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </width>
+     <height>
+      <placeholder>កម្ពស់មេដៃ</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>ទំហំស្លាយ</label>
+     <width>
+      <placeholder>ទទឹងរុញ</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </width>
+     <height>
+      <placeholder>កម្ពស់រុញ</placeholder>
+      <validate>បញ្ចូលតម្លៃ</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>គុណភាព Jpeg</label>
+    </jpg_quality>
+    <png_compress>
+     <label>ការបង្ហាប់ PNG</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>ក្រដាសសម្គាល់ទឹក</title>
+    <label>បន្ថែមក្រដាសសម្គាល់ទឹក</label>
+    <position>ទីតាំងក្រដាសសម្គាល់ទឹក</position>
+    <image>ក្រដាសសម្គាល់ទឹក</image>
+    <set>បង្កើតក្រដាសសម្គាល់ទឹក</set>
+    <browse>1- រុករកក្រដាសសម្គាល់ទឹក</browse>
+    <adjust>2- កែតម្រូវរូបភាពស្របតាមស៊ុម។</adjust>
+    <upload>3- ផ្ទុកឯកសារដែលបានជ្រើសរើស</upload>
+    <uploading>កំពុងផ្ទុកឡើង ...</uploading>
+    <uploaded>បានផ្ទុកឡើង។</uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page>ទំព័រ</page>
+   <first>ទំព័រដំបូង</first>
+   <prev>ទំព័រ​មុន</prev>
+   <next>ទំ​ព​រ័​បន្ទាប់</next>
+   <last>ទំព័រ​ចុងក្រោយ</last>
+  </pagination>
+
+</lang>

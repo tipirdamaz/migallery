@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ٻولي </title>
+   <label> ٻولي چونڊيو </label>
+  </lang>
+
+  <timezone>
+   <title>ٽائيم زون</title>
+   <label>ٽائم زون چونڊيو</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> گيلري جو انتظام </gallery_man>
+   <gallery_list> گيلري لسٽ </gallery_list>
+   <uploader> نئون گيلري ٺاهيو </uploader>
+   <back> واپس </back>
+  </nav>
+
+  <install>
+ 
+   <title> سيٽ اپ ڪريو MIGallery </title>
+   <header> سيٽ اپ ڪريو MIGallery </header>
+
+   <img_direction>
+    <label> گيلري ، تصوير ۽ سلائيڊ سمت </label>
+    <left> ساftي کان کاٻي </left>
+    <right> سا toي کان کاٻي </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ڊيٽابيس سيٽنگون </title>
+    <host>
+     <label> ڊيٽابيس هسٽ نام </label>
+     <placeholder> ڊيٽابيس هسٽ نام </placeholder>
+     <validate> ڊيٽابيس ميزبان جو نالو داخل ڪريو </validate>
+    </host>
+    <user>
+     <label> ڊيٽابيس صارف جو نالو </label>
+     <placeholder> ڊيٽابيس صارف جو نالو </placeholder>
+     <validate> انپٽ ڊيٽابيس صارف جو نالو </validate>
+    </user>
+    <pass>
+     <label> ڊيٽابيس پاسورڊ </label>
+     <placeholder> ڊيٽابيس پاسورڊ </placeholder>
+     <validate> انٽابيس ڊيٽابيس پاسورڊ </validate>
+    </pass>
+    <db>
+     <label> ڊيٽابيس جو نالو </label>
+     <placeholder> ڊيٽابيس جو نالو </placeholder>
+     <validate> ڊيٽابيس جو نالو داخل ڪريو </validate>
+    </db>
+    <gal_table>
+     <label> گيلري ٽيبل جو نالو </label>
+     <placeholder> گيلري ٽيبل جو نالو </placeholder>
+     <validate> گيلري ٽيبل جو نالو داخل ڪريو </validate>
+    </gal_table>
+    <img_table>
+     <label> تصويري ٽيبل جو نالو </label>
+     <placeholder> تصوير ٽيبل جو نالو </placeholder>
+     <validate> انپٽ تصوير جي ٽيبل جو نالو </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>فولڊر جتي فائل لکڻ جي اجازت آهي</title>
+    <db_alert>
+     <![CDATA[
+    هيٺيون فولڊر اهو آهي جتي <b> ترتيب </b> ، <b> نقص لاگ </b> ۽ <b> وصفون </b> فائلون ٺاهيون وينديون. جيڪڏھن توھان ھن ڊاريڪٽري جو نالو تبديل ڪرڻ چاھيو ٿا ، تبديل ڪريو <b> DB_DIR </b> جي تعریف <b> definitions0.php </b> فائل ۾ ۽ ھن صفحي کي تازو ڪريو.<br/><br/>جيڪڏهن توهان ترتيبوار فائل جو نالو بدلڻ چاهيو ٿا ، نقص لاگ فائل ۽ تعريفون فائل ، تبديل ڪريو <b>CONFIG_FILE</b> ، <b>ERROR_LOG_FILE</b> ۽ <b>DEFINITIONS_FILE</b> وضاحتون definitions0.php فائل مان.<br/><br/>جيڪڏهن توهان جو سسٽم يونيڪس تي ٻڌل آهي ، هيٺ ڏنل حڪم سان فولڊر کي لکڻ جي اجازتن کي سيٽ ڪريو.<br/><b>%s</b><br/><br/>انسٽاليشن شروع ڪرڻ کان پهريان ، پڪ ڪريو ته هيٺ ڏنل رستو موجود آهي ۽ توهان کي ڊاريڪٽري تي لکڻ جي اجازت آهي:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    انسٽاليشن شروع ڪرڻ کان پهريان ، پڪ ڪري وٺو ته هيٺين ڊائريڪٽريٽ موجود آهن ۽ توهان کي ڊائريڪٽريٽس تي لکڻ جي اجازت آهي. <br/> <br/> جيڪڏهن توهان هيٺين ڊائريڪٽريٽس کان علاوه ڊائريڪٽريٽ استعمال ڪرڻ وارا آهيو ، ڊاريڪٽري ڊسڪ تي موجود نه هئڻ ڪري ، پهرين ڊائرڪٽريز ٺاهي ۽ انهن ڊائريڪٽريز جي لکڻ جي اجازتن کي ترتيب ڏيو ۽ انسٽاليشن شروع ڪريو.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ترتيب ، نقص لاگ ۽ وضاحتون فائلن جو رستو</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    جڏهن گيلري محفوظ ڪئي وئي ته هيٺيون ڊائريڪٽيون ٺاهيون وينديون. <b>%d </b> گيلري آءِ ڊي جي نشاندهي ڪري ٿي. مٿي ڏنل بيان ڪيل <b> تصويري بيس ڊاريڪٽري </b> تي ڊائريڪٽريٽ ٺاهي ويندي. پڪ ڪريو ته انهن ڊائريڪٽرن جو فارميٽ مناسب آهي.
+     ]]>
+    </img_dir_alert>
+    <config_alert>ڪنفگريشن فائيل اڳ ۾ ٺاهي وئي آهي. تنهن ڪري ، توهان انسٽاليشن نٿا هلائي سگهو. توهان کي لازمي طور تي پهريان ڪنفيگريشن فائل ختم ڪرڻ گهرجي ۽ پوءِ انسٽاليشن کي هلڻ گهرجي.</config_alert>
+    <tmp_dir>
+     <label>تصويرن جي عارضي ڊائريڪٽري</label>
+     <placeholder>تصويرن جي عارضي ڊائريڪٽري</placeholder>
+     <validate>تصويرن جي عارضي ڊائريڪٽري</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ٿمبنائل فائلن جي عارضي ڊاريڪٽري</label>
+     <placeholder>ٿمبنائل فائلن جي عارضي ڊاريڪٽري</placeholder>
+     <validate>ٿمبنائل فائلن جي عارضي ڊاريڪٽري</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ڪٽيل ٿامبيل تصويري فائلن جو عارضي فولڊر</label>
+     <placeholder>ڪٽيل ٿامبيل تصويري فائلن جو عارضي فولڊر</placeholder>
+     <validate>ڪٽيل ٿامبيل تصويري فائلن جو عارضي فولڊر</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>سلائيڊ تصويرون جي عارضي ڊاريڪٽري</label>
+     <placeholder>سلائيڊ تصويرون جي عارضي ڊاريڪٽري</placeholder>
+     <validate>سلائيڊ تصويرون جي عارضي ڊاريڪٽري</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>تصويري بيس ڊاريڪٽري</label>
+     <placeholder>تصويري بيس ڊاريڪٽري</placeholder>
+     <validate>تصويري بيس ڊاريڪٽري</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>تصويري ڊاريڪٽري</label>
+     <placeholder>تصويري ڊاريڪٽري</placeholder>
+     <validate>تصويري ڊاريڪٽري</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>تھمب نيل ڊاريڪٽري</label>
+     <placeholder>تھمب نيل ڊاريڪٽري</placeholder>
+     <validate>تھمب نيل ڊاريڪٽري</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ڪٽيل ٿامبيل تصويري فائلن جو فولڊر</label>
+     <placeholder>ڪٽيل ٿامبيل تصويري فائلن جو فولڊر</placeholder>
+     <validate>ڪٽيل ٿامبيل تصويري فائلن جو فولڊر</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>سلائيڊ تصويرون جي ڊاريڪٽري</label>
+     <placeholder>سلائيڊ تصويرون جي ڊاريڪٽري</placeholder>
+     <validate>سلائيڊ تصويرون جي ڊاريڪٽري</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>ايڪس ايم ايل فائل ڊاريڪٽري</label>
+     <placeholder>ايڪس ايم ايل فائل ڊاريڪٽري</placeholder>
+     <validate>ايڪس ايم ايل فائل ڊاريڪٽري</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> انسٽال ڪرڻ. مهرباني ڪري انتظار ڪريو ۔۔۔ </installing>
+    <success> انسٽاليشن ڪاميابي سان مڪمل ٿي. </success>
+    <error> انسٽاليشن مڪمل نه ٿي سگھي. </error>
+   </alert>
+  
+   <submit> انسٽاليشن شروع ڪريو </submit>
+   <submit_continue> &lt;&lt; جاري رکو </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> گيلري جو انتظام </title>
+   <header> گيلري جو انتظام </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> گيلري لسٽ </title>
+   <header> جي فهرست جي فهرست </header>
+   <sort>
+    <asc> پهرين کان آخر تائين ترتيب ڏيو </asc>
+    <desc> آخري کان پهرين تائين ترتيب ڏيو </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ڏسو </button>
+     <title> گيلري ڏسو </title>
+    </view>
+    <delete>
+     <button> ختم ڪريو </button>
+     <title> گيلري کي ختم ڪريو </title>
+    </delete>
+    <edit>
+     <button> ايڊٽ ڪريو </button>
+     <title> گيلري ۾ تبديلي آڻيو </title>
+    </edit>
+    <images>تصويرون</images>
+    <date>تاريخ</date>
+    <move> توهان ماؤس سان گيلريز جو بندوبست ڪري سگهو ٿا. </move>
+    <move_mobile>ھڪڙي اعتراض تي ٽيپ ڪريو ۽ رکو ۽ ان جي چونڊ ڪرڻ جو انتظار ڪريو. شئي منتخب ڪرڻ کان پوءِ ، شين کي ترتيب ڏيڻ لاءِ سوائپ ڪريو.</move_mobile>
+   </card>
+  <alert> ڪو به گيلري ناهي مليو. </alert>
+   <modal>
+    <del_gallery>
+     <label> گيلري کي ختم ڪريو </label>
+     <close> بند </close>
+     <text> ڇا توھان ھن گيلري کي سائيٽ مان ختم ڪرڻ چاھيو ٿا؟ </text>
+     <command> ختم ڪريو </command>
+     <cancel> منسوخ ڪريو </cancel>
+    </del_gallery>
+    <result>
+     <label> غلطي </label>
+     <close> بند </close>
+     <text> </text>
+     <command> بند ڪريو </command>
+    </result>
+   </modal> 
+   <save_changes> گيلري جو بندوبست محفوظ ڪريو </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> گيلري جو ڏيک </title>
+   <header> گيلري جو منظر </header>
+   <alert> تصويرون نه ملنديون. </alert>
+   <share>گيلري شيئر ڪريو</share>
+   <filedate>اپلوڊ ڪرڻ جي تاريخ</filedate>
+   <filesize>فائيل جي سائيز</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ڪلپ بورڊ ڏانهن نقل ڪريو</label>
+     <close>بند</close>
+     <text>لنڪ ڪلپ بورڊ ڏانهن نقل ڪيو ويو</text>
+     <command>ڪاپي</command>
+     <cancel>بند ڪريو</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> نئون گيلري ٺاهيو </title>
+    <header> نئون گيلري ٺاهيو </header>
+   </new>
+   <edit>
+    <title> گيلري ۾ تبديلي آڻيو </title>
+    <header> گيلري ۾ تبديلي ڪيو </header>
+   </edit>
+   <gallery_info>
+    <title> گيلري جي </title>
+    <name>
+     <label> گيلري جو نالو </label>
+     <placeholder> گيلري جو نالو </placeholder>
+     <validate> انٽلي گيلري جو نالو </validate>
+    </name>
+    <description>
+     <label> گيلري جي وضاحت </label>
+     <placeholder> گيلري جي وضاحت </placeholder>
+     <validate> انٽ جي گيلري جي وضاحت </validate>
+    </description>
+    <keywords>
+     <label> گيلري جا اهم لفظ ڪاما يا نون لائنن کان جدا آهن </label>
+     <placeholder> گيلري جا اهم لفظ ڪاما يا نون لائنن کان جدا آهن </placeholder>
+     <validate> گيلري جا لفظ داخل ڪريو </validate>
+    </keywords>
+    <submit>
+     <save> گيلري محفوظ ڪريو </save>
+     <update> تازه ڪاري گيلري </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> تصويري اپ لوڊ ڪندڙ گائيڊ </title>
+     <body>
+      <![CDATA[
+پنهنجي ڊوائيس مان تصويرون منتخب ڪريو <b> تصويرون براؤز </b> بٹن سان ۽ سائيٽ تي اپ لوڊ ڪريو <b> تصويرون اپ لوڊ ڪريو </b> بٹن <br/> <b> JPG ، PNG ، GIF ، BMP ، WEBP </b> :معاون تصويري فارميٽ <br/> <b>%d x %d px</b> :گھٽ ۾ گهٽ حل جي اجازت <br/> <b>%d x %d px</b> :اجازت ڏنل وڌ کان وڌ رزيووشن <br/> <b>%d MB</b> :سنگل فائل وڌ کان وڌ سائز <br/> <b>%d</b> :في گيلري ۾ تصويري ڳڻپ
+      ]]>
+     </body>
+    </info>
+    <select_all> سڀ چونڊيو </select_all>
+    <select_del> منتخب ٿيل تصويرن کي حذف ڪريو </select_del>
+    <thumb>
+     <exist>
+      <delete> سائيٽ مان اپ لوڊ ٿيل تصوير حذف ڪريو </delete>
+      <info> تصويري </info>
+     </exist>
+     <new>
+      <delete> سائيٽ مان اپ لوڊ ٿيل تصوير حذف ڪريو </delete>
+      <cancel> تصوير اپ لوڊ ڪرڻ منسوخ ڪريو </cancel>
+      <info> تصويري </info>
+      <rotate> تصويري کي گھرايو </rotate>
+      <crop> فصل واري تصوير </crop>
+     </new>
+     <move> ماؤس ذريعي گھڙڻ سان توهان تصويرون ترتيب ڏئي سگهو ٿا. </move>
+     <move_mobile>ھڪڙي اعتراض تي ٽيپ ڪريو ۽ رکو ۽ ان جي چونڊ ڪرڻ جو انتظار ڪريو. شئي منتخب ڪرڻ کان پوءِ ، شين کي ترتيب ڏيڻ لاءِ سوائپ ڪريو.</move_mobile>
+    </thumb>
+    <browse> تصويرون براؤز </browse>
+    <upload> تصويرون اپ لوڊ ڪريو </upload>
+    <uploading> تصويرون سائيٽ تي اپ لوڊ ٿي رهيون آهن. تيستائين اپ لوڊ نه ڪريو صفحو بند نه ڪريو. </uploading>
+    <uploaded> تصويرون سائيٽ تي اپلوڊ ڪيون ويون آهن. </uploaded>
+    <error>فائلن کي سرور تي اپ لوڊ ڪرڻ ۾ ڪجهه غلطيون هيون</error>
+    <save_changes> تصويري تبديلين کي محفوظ ڪريو </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> فصل واري تصوير </crop>
+     <cancel> منسوخ ڪريو </cancel>
+    </crop>
+    <del_up_img>
+     <label> تصوير ختم ڪريو </label>
+     <close> بند </close>
+     <text> ڇا توهان هن تصوير کي ويب سائيٽ تان حذف ڪرڻ چاهيو ٿا؟ </text>
+     <command> ختم ڪريو </command>
+     <cancel> منسوخ ڪريو </cancel>
+    </del_up_img>
+    <del_img>
+     <label> تصوير ختم ڪريو </label>
+     <close> بند </close>
+     <text> ڇا توهان هن تصوير کي ويب سائيٽ تان حذف ڪرڻ چاهيو ٿا؟ </text>
+     <command> ختم ڪريو </command>
+     <cancel> منسوخ ڪريو </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> چونڊيل تصويرن کي ختم ڪريو </label>
+     <close> بند </close>
+     <text> ڇا توهان ويب سائيٽ مان چونڊيل تصويرن کي حذف ڪرڻ چاهيو ٿا؟ </text>
+     <command> ختم ڪريو </command>
+     <cancel> منسوخ ڪريو </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> تصويري </label>
+     <close> بند </close>
+     <filename> فائيل جو نالو </filename>
+     <filesize> فائل سائيز </filesize>
+     <date> اپلوڊ ڪرڻ جي تاريخ </date>
+     <title>
+      <label> عنوان </label>
+      <placeholder> تصويري عنوان </placeholder>
+     </title>
+     <desc>
+      <label> وضاحت </label>
+      <placeholder> تصويري تفصيل </placeholder>
+     </desc>
+     <keyw>
+      <label> مکيه لفظئ </label>
+      <placeholder> اهم لفظ ڪاما کان يا نئين لائنن کان ڌار آهن </placeholder>
+     </keyw>
+     <command> محفوظ ڪريو / تازو ڪريو </command>
+     <cancel> منسوخ ڪريو </cancel>
+    </img_info>
+    <result>
+     <label> غلطي </label>
+     <close> بند </close>
+     <text> </text>
+     <command> بند ڪريو </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> سرور ڏانهن اجازت واري اپ لوڊ لاءِ تصويري سيٽنگ </title>
+    <upload_limit>
+     <label> في گيلري وڌ کان وڌ تصويري ڳڻپ </label>
+     <placeholder> ھڪڙي گيلري تي وڌ کان وڌ تصويري ڳڻپ </placeholder>
+     <validate> في گيلري وڌ کان وڌ تصويري ڳڻپ داخل ڪريو </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> سنگل فائل وڌ ۾ وڌ سائز (ايم بي) </label>
+     <placeholder> اڪيلو فائيل وڌ کان وڌ سائز (ايم بي) </placeholder>
+     <validate> انپٽ سنگل فائل وڌ کان وڌ سائز (ايم بي) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> اجازت ڏنل گهٽ قرارداد </label>
+     <width>
+      <placeholder> گهٽ ۾ گهٽ سانس </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </width>
+     <height>
+      <placeholder> گھٽ ۾ گھٽ قد </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> قابل اجازت وڌ کان وڌ ريزوليوشن </label>
+     <width>
+      <placeholder> وڌ کان وڌ چوڻي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </width>
+     <height>
+      <placeholder> وڌ کان وڌ اوچائي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> تصويري تبديلي </title>
+    <full_resolution>
+     <label> تصوير مڪمل شڪل </label>
+     <width>
+      <placeholder> وڌ کان وڌ چوڻي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </width>
+     <height>
+      <placeholder> وڌ کان وڌ اوچائي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ٿمبيل سائيز </label>
+     <width>
+      <placeholder> تھمبيل ويڪر </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </width>
+     <height>
+      <placeholder> تھمبيل اوچائي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> سلائيڊ سائيز </label>
+     <width>
+      <placeholder> سلائڊ ويڪر </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </width>
+     <height>
+      <placeholder> سلائيڊ جي اوچائي </placeholder>
+      <validate> انپٽ ويليو </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg ڪيفيت </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG ڪمپريشن </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> واٽر مارڪ </title>
+    <label> واٽر مارڪ استعمال ڪريو </label>
+    <position> پاڻي جي نشان واري پوزيشن </position>
+    <image> واٽر مارڪ جي تصوير </image>
+    <set> واٽر مارڪ سيٽ ڪريو </set>
+    <browse> 1- واٽر مارڪ تصويري فائل ڳوليو </browse>
+    <adjust> 2- فريم مطابق تصوير تبديل ڪريو. </adjust>
+    <upload> 3- منتخب ٿيل فائل اپ لوڊ ڪريو </upload>
+    <uploading> اپ لوڊ ٿي رهي آهي ... </uploading>
+    <uploaded> اپ لوڊ ٿيل. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> صفحو </page>
+   <first> پهريون صفحو </first>
+   <prev> پويون صفحو </prev>
+   <next> اڳيون صفحو </next>
+   <last> آخري صفحو </last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ภาษา </title>
+   <label> เลือกภาษา </label>
+  </lang>
+
+  <timezone>
+   <title>เขตเวลา</title>
+   <label>เลือกเขตเวลา</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> การจัดการแกลเลอรี </gallery_man>
+   <gallery_list> รายการแกลเลอรี </gallery_list>
+   <uploader> สร้างคลังภาพใหม่ </uploader>
+   <back> ย้อนกลับ </back>
+  </nav>
+
+  <install>
+ 
+   <title> การตั้งค่า MIGallery </title>
+   <header> การตั้งค่า MIGallery </header>
+
+   <img_direction>
+    <label> การวางแนวแกลเลอรีรูปภาพและสไลด์ </label>
+    <left> ซ้ายไปขวา </left>
+    <right> ขวาไปซ้าย </right>
+   </img_direction>
+
+   <db_info>
+    <title> ข้อมูลฐานข้อมูล MySQL </title>
+    <host>
+     <label> ชื่อโฮสต์ฐานข้อมูล </label>
+     <placeholder> ชื่อโฮสต์ฐานข้อมูล </placeholder>
+     <validate> ป้อนชื่อโฮสต์ฐานข้อมูล </validate>
+    </host>
+    <user>
+     <label> ชื่อผู้ใช้ฐานข้อมูล </label>
+     <placeholder> ฐานข้อมูลชื่อผู้ใช้ </placeholder>
+     <validate> ป้อนชื่อผู้ใช้ฐานข้อมูล </validate>
+    </user>
+    <pass>
+     <label> รหัสผ่านฐานข้อมูล </label>
+     <placeholder> รหัสผ่านฐานข้อมูล </placeholder>
+     <validate> ป้อนรหัสผ่านฐานข้อมูล </validate>
+    </pass>
+    <db>
+     <label> ชื่อฐานข้อมูล </label>
+     <placeholder> ชื่อฐานข้อมูล </placeholder>
+     <validate> ป้อนชื่อฐานข้อมูล </validate>
+    </db>
+    <gal_table>
+     <label> ชื่อตารางแกลเลอรี </label>
+     <placeholder> ชื่อตารางแกลเลอรี </placeholder>
+     <validate> ป้อนชื่อตารางแกลเลอรี </validate>
+    </gal_table>
+    <img_table>
+     <label> ชื่อตารางรูปภาพ </label>
+     <placeholder> ชื่อตารางรูปภาพ </placeholder>
+     <validate> ป้อนชื่อตารางรูปภาพ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ไดเร็กทอรีสำหรับเนื้อหาไดนามิกที่เขียนได้</title>
+    <db_alert>
+     <![CDATA[
+    ไดเร็กทอรีต่อไปนี้เป็นที่ที่จะสร้างไฟล์ <b> การกำหนดค่า </b>, <b> บันทึกข้อผิดพลาด </b> และ <b> คำจำกัดความ </b> หากคุณต้องการเปลี่ยนชื่อของไดเร็กทอรีนี้ให้เปลี่ยนนิยาม <b> DB_DIR </b> ในไฟล์ <b> definitions0.php </b> และรีเฟรชหน้านี้<br/><br/>หากคุณต้องการเปลี่ยนชื่อไฟล์คอนฟิกูเรชันไฟล์บันทึกข้อผิดพลาดและไฟล์นิยามให้เปลี่ยนนิยามของ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> และ <b>DEFINITIONS_FILE</b> ในไฟล์ definitions0.php<br/><br/>หากระบบของคุณใช้ Unix ให้ตั้งค่าสิทธิ์การเขียนไปยังโฟลเดอร์โดยใช้คำสั่งต่อไปนี้:<br/><b>%s</b><br/><br/>ก่อนเริ่มการติดตั้งตรวจสอบให้แน่ใจว่ามีพา ธ ต่อไปนี้และคุณมีสิทธิ์ในการเขียนลงไดเร็กทอรี:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ก่อนเริ่มการติดตั้งตรวจสอบให้แน่ใจว่ามีไดเร็กทอรีต่อไปนี้และคุณได้รับอนุญาตให้เขียนลงในไดเร็กทอรี <br/> <br/> หากคุณกำลังจะใช้ไดเร็กทอรีอื่นที่ไม่ใช่ไดเร็กทอรีต่อไปนี้หากไม่มีไดเร็กทอรีบนดิสก์ก่อนอื่นให้สร้างไดเร็กทอรีและกำหนดสิทธิ์การเขียนของไดเร็กทอรีเหล่านี้และเริ่มการติดตั้ง
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>การกำหนดค่าบันทึกข้อผิดพลาดและเส้นทางไฟล์คำจำกัดความ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ไดเรกทอรีต่อไปนี้จะถูกสร้างขึ้นเมื่อบันทึกแกลเลอรีใหม่ <b>%d</b> ระบุรหัสแกลเลอรี ไดเร็กทอรีเหล่านี้จะถูกสร้างขึ้นในไดเร็กทอรี <b> ไดเรกทอรีฐานภาพ </b> ที่กำหนดไว้ข้างต้น ตรวจสอบให้แน่ใจว่ารูปแบบของไดเร็กทอรีเหล่านี้เหมาะสม
+     ]]>
+    </img_dir_alert>
+    <config_alert>ไฟล์คอนฟิกูเรชันถูกสร้างขึ้นมาก่อน ดังนั้นคุณไม่สามารถเรียกใช้การติดตั้งได้ ก่อนอื่นคุณต้องลบไฟล์คอนฟิกูเรชันจากนั้นจึงรันการติดตั้ง</config_alert>
+    <tmp_dir>
+     <label>ไดเรกทอรีชั่วคราวของรูปภาพ</label>
+     <placeholder>ไดเรกทอรีชั่วคราวของรูปภาพ</placeholder>
+     <validate>ไดเรกทอรีชั่วคราวของรูปภาพ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ไดเรกทอรีชั่วคราวของภาพขนาดย่อ</label>
+     <placeholder>ไดเรกทอรีชั่วคราวของภาพขนาดย่อ</placeholder>
+     <validate>ไดเรกทอรีชั่วคราวของภาพขนาดย่อ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ไดเรกทอรีชั่วคราวของรูปขนาดย่อที่ครอบตัด</label>
+     <placeholder>ไดเรกทอรีชั่วคราวของรูปขนาดย่อที่ครอบตัด</placeholder>
+     <validate>ไดเรกทอรีชั่วคราวของรูปขนาดย่อที่ครอบตัด</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ไดเร็กทอรีชั่วคราวของสไลด์อิมเมจ</label>
+     <placeholder>ไดเร็กทอรีชั่วคราวของสไลด์อิมเมจ</placeholder>
+     <validate>ไดเร็กทอรีชั่วคราวของสไลด์อิมเมจ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ไดเรกทอรีฐานภาพ</label>
+     <placeholder>ไดเรกทอรีฐานภาพ</placeholder>
+     <validate>ไดเรกทอรีฐานภาพ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ไดเรกทอรีรูปภาพ</label>
+     <placeholder>ไดเรกทอรีรูปภาพ</placeholder>
+     <validate>ไดเรกทอรีรูปภาพ</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ไดเรกทอรีรูปขนาดย่อ</label>
+     <placeholder>ไดเรกทอรีรูปขนาดย่อ</placeholder>
+     <validate>ไดเรกทอรีรูปขนาดย่อ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ไดเรกทอรีรูปขนาดย่อที่ครอบตัด</label>
+     <placeholder>ไดเรกทอรีรูปขนาดย่อที่ครอบตัด</placeholder>
+     <validate>ไดเรกทอรีรูปขนาดย่อที่ครอบตัด</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ไดเร็กทอรีรูปภาพของสไลด์</label>
+     <placeholder>ไดเร็กทอรีรูปภาพของสไลด์</placeholder>
+     <validate>ไดเร็กทอรีรูปภาพของสไลด์</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>ไดเร็กทอรีไฟล์ XML</label>
+     <placeholder>ไดเร็กทอรีไฟล์ XML</placeholder>
+     <validate>ไดเร็กทอรีไฟล์ XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> กำลังติดตั้ง โปรดรอ ... </installing>
+    <success> การติดตั้งเสร็จสมบูรณ์ </success>
+    <error> ไม่สามารถทำการติดตั้งให้เสร็จสมบูรณ์ </error>
+   </alert>
+  
+   <submit> เริ่มการติดตั้ง </submit>
+   <submit_continue> ดำเนินการต่อ &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> การจัดการแกลเลอรี </title>
+   <header> การจัดการแกลเลอรี </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> รายการแกลเลอรี </title>
+   <header> รายการแกลเลอรี </header>
+   <sort>
+    <asc> เรียงลำดับจากแรกไปยังสุดท้าย </asc>
+    <desc> เรียงลำดับจากสุดท้ายไปหาก่อน </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ดู </button>
+     <title> ดูแกลเลอรี </title>
+    </view>
+    <delete>
+     <button> ลบ </button>
+     <title> ลบแกลเลอรี </title>
+    </delete>
+    <edit>
+     <button> แก้ไข </button>
+     <title> แก้ไขแกลเลอรี </title>
+    </edit>
+    <images>ภาพ</images>
+    <date>วันที่</date>
+    <move> คุณสามารถจัดเรียงแกลเลอรีได้โดยลากเมาส์ </move>
+    <move_mobile>ใช้นิ้วแตะรายการค้างไว้แล้วรอให้ไฮไลต์ หลังจากเลือกรายการแล้วให้ลากนิ้วเพื่อจัดเรียงรายการ</move_mobile>
+   </card>
+   <alert> ไม่พบแกลเลอรี </alert>
+   <modal>
+    <del_gallery>
+     <label> ลบแกลเลอรี </label>
+     <close> ปิด </close>
+     <text> คุณต้องการลบแกลเลอรีนี้ออกจากไซต์หรือไม่ </text>
+     <command> ลบ </command>
+     <cancel> ยกเลิก </cancel>
+    </del_gallery>
+    <result>
+     <label> ข้อผิดพลาด </label>
+     <close> ปิด </close>
+     <text> </text>
+     <command> ปิด </command>
+    </result>
+   </modal>
+   <save_changes> บันทึกการจัดเรียงแกลเลอรี </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> มุมมองแกลเลอรี </title>
+   <header> มุมมองแกลเลอรี </header>
+   <alert> ไม่พบรูปภาพ </alert>
+   <share>แบ่งปันคลังภาพ</share>
+   <filedate>วันที่อัปโหลด</filedate>
+   <filesize>ขนาดไฟล์</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>คัดลอกไปที่คลิปบอร์ด</label>
+     <close>ปิด</close>
+     <text>คัดลอกลิงก์ไปยังคลิปบอร์ดแล้ว</text>
+     <command>สำเนา</command>
+     <cancel>ปิด</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> สร้างแกลเลอรีใหม่ </title>
+    <header> สร้างคลังภาพใหม่ </header>
+   </new>
+   <edit>
+    <title> แก้ไขแกลเลอรี </title>
+    <header> แก้ไขแกลเลอรี </header>
+   </edit>
+   <gallery_info>
+    <title> ข้อมูลแกลเลอรี </title>
+    <name>
+     <label> ชื่อแกลเลอรี </label>
+     <placeholder> ชื่อแกลเลอรี </placeholder>
+     <validate> ป้อนชื่อแกลเลอรี </validate>
+    </name>
+    <description>
+     <label> คำอธิบายแกลเลอรี </label>
+     <placeholder> คำอธิบายแกลเลอรี </placeholder>
+     <validate> คำอธิบายแกลเลอรีอินพุต </validate>
+    </description>
+    <keywords>
+     <label> คำหลักในแกลเลอรีคั่นด้วยลูกน้ำหรือตัวแบ่งบรรทัด </label>
+     <placeholder> คำหลักในแกลเลอรีคั่นด้วยลูกน้ำหรือตัวแบ่งบรรทัด </placeholder>
+     <validate> ป้อนคำหลักของแกลเลอรี </validate>
+    </keywords>
+    <submit>
+     <save> บันทึกแกลเลอรี </save>
+     <update> อัปเดตแกลเลอรี </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> คู่มือการอัปโหลดรูปภาพ </title>
+     <body>
+      <![CDATA[
+เลือกรูปภาพจากอุปกรณ์ของคุณด้วยปุ่ม <b> เรียกดูรูปภาพ </b> และอัปโหลดไปยังไซต์ด้วยปุ่ม <b> อัปโหลดรูปภาพ </b> <br/> รูปแบบรูปภาพที่รองรับ: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ความละเอียดขั้นต่ำที่อนุญาต: <b>%d x %d px</b> <br/> ความละเอียดสูงสุดที่อนุญาต: <b>%d x %d px</b> <br/> ไฟล์เดียวขนาดสูงสุด: <b>%d MB</b> <br/> จำนวนภาพต่อแกลเลอรี: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> เลือกทั้งหมด </select_all>
+    <select_del> ลบภาพที่เลือก </select_del>
+    <thumb>
+     <exist>
+      <delete> ลบภาพที่อัปโหลดจากไซต์ </delete>
+      <info> ข้อมูลรูปภาพ </info>
+     </exist>
+     <new>
+      <delete> ลบภาพที่อัปโหลดจากไซต์ </delete>
+      <cancel> ยกเลิกการอัปโหลดภาพ </cancel>
+      <info> ข้อมูลรูปภาพ </info>
+      <rotate> หมุนภาพ </rotate>
+      <crop> ครอบตัดรูปภาพ </crop>
+     </new>
+     <move> คุณสามารถจัดเรียงรูปภาพได้โดยการลากด้วยเมาส์ </move>
+     <move_mobile>ใช้นิ้วแตะรายการค้างไว้แล้วรอให้ไฮไลต์ หลังจากเลือกรายการแล้วให้ลากนิ้วเพื่อจัดเรียงรายการ</move_mobile>
+    </thumb>
+    <browse> เรียกดูรูปภาพ </browse>
+    <upload> อัปโหลดรูปภาพ </upload>
+    <uploading> กำลังอัพรูปภาพโหลดไปที่ไซต์ อย่าปิดเพจจนกว่าการอัปโหลดจะเสร็จสมบูรณ์ </uploading>
+    <uploaded> อัปโหลดรูปภาพไปยังไซต์แล้ว </uploaded>
+    <error>เกิดข้อผิดพลาดบางอย่างขณะอัปโหลดไฟล์ไปยังเซิร์ฟเวอร์</error>
+    <save_changes> บันทึกการเปลี่ยนแปลงรูปภาพ </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> ครอบตัด </crop>
+     <cancel> ยกเลิก </cancel>
+    </crop>
+    <del_up_img>
+     <label> ลบรูปภาพ </label>
+     <close> ปิด </close>
+     <text> คุณต้องการลบภาพนี้ออกจากเว็บไซต์หรือไม่ </text>
+     <command> ลบ </command>
+     <cancel> ยกเลิก </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ลบรูปภาพ </label>
+     <close> ปิด </close>
+     <text> คุณต้องการลบภาพนี้ออกจากเว็บไซต์หรือไม่ </text>
+     <command> ลบ </command>
+     <cancel> ยกเลิก </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ลบภาพที่เลือก </label>
+     <close> ปิด </close>
+     <text> คุณต้องการลบภาพที่เลือกออกจากเว็บไซต์หรือไม่ </text>
+     <command> ลบ </command>
+     <cancel> ยกเลิก </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ข้อมูลรูปภาพ </label>
+     <close> ปิด </close>
+     <filename> ชื่อไฟล์ </filename>
+     <filesize> ขนาดไฟล์ </filesize>
+     <date> วันที่อัปโหลด </date>
+     <title>
+      <label> ชื่อ </label>
+      <placeholder> ชื่อรูปภาพ </placeholder>
+     </title>
+     <desc>
+      <label> คำอธิบาย </label>
+      <placeholder> คำอธิบายรูปภาพ </placeholder>
+     </desc>
+     <keyw>
+      <label> คำหลัก </label>
+      <placeholder> คำหลักคั่นด้วยลูกน้ำหรือตัวแบ่งบรรทัด </placeholder>
+     </keyw>
+     <command> บันทึก / อัปเดต </command>
+     <cancel> ยกเลิก </cancel>
+    </img_info>
+    <result>
+     <label> ข้อผิดพลาด </label>
+     <close> ปิด </close>
+     <text> </text>
+     <command> ปิด </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> การตั้งค่ารูปภาพที่อัปโหลดได้ </title>
+    <upload_limit>
+     <label> จำนวนภาพสูงสุดต่อแกลเลอรี </label>
+     <placeholder> จำนวนภาพสูงสุดต่อแกลเลอรี </placeholder>
+     <validate> ป้อนจำนวนภาพสูงสุดต่อแกลเลอรี </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ขนาดไฟล์เดียวสูงสุด (MB) </label>
+     <placeholder> ขนาดสูงสุดของไฟล์เดียว (MB) </placeholder>
+     <validate> ป้อนไฟล์เดียวขนาดสูงสุด (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> ความละเอียดขั้นต่ำที่อนุญาต </label>
+     <width>
+      <placeholder> ความกว้างขั้นต่ำ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </width>
+     <height>
+      <placeholder> ความสูงขั้นต่ำ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> ความละเอียดสูงสุดที่อนุญาต </label>
+     <width>
+      <placeholder> ความกว้างสูงสุด </placeholder>
+      <validate> ป้อนค่า </validate>
+     </width>
+     <height>
+      <placeholder> ความสูงสูงสุด </placeholder>
+      <validate> ป้อนค่า </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> การแปลงรูปภาพ </title>
+    <full_resolution>
+     <label> รูปภาพขนาดเต็ม </label>
+     <width>
+      <placeholder> ความกว้างสูงสุด </placeholder>
+      <validate> ป้อนค่า </validate>
+     </width>
+     <height>
+      <placeholder> ความสูงสูงสุด </placeholder>
+      <validate> ป้อนค่า </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ขนาดภาพขนาดย่อ </label>
+     <width>
+      <placeholder> ความกว้างของหัวแม่มือ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </width>
+     <height>
+      <placeholder> ความสูงของหัวแม่มือ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> ขนาดสไลด์ </label>
+     <width>
+      <placeholder> ความกว้างของสไลด์ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </width>
+     <height>
+      <placeholder> ความสูงของสไลด์ </placeholder>
+      <validate> ป้อนค่า </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> คุณภาพ Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> การบีบอัด PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ลายน้ำ </title>
+    <label> ใช้ลายน้ำ </label>
+    <position> ตำแหน่งลายน้ำ </position>
+    <image> ลายน้ำรูปภาพ </image>
+    <set> ตั้งลายน้ำ </set>
+    <browse> 1- เรียกดูไฟล์ภาพลายน้ำ </browse>
+    <adjust> 2- ปรับภาพตามกรอบ </adjust>
+    <upload> 3- อัปโหลดไฟล์ที่เลือก </upload>
+    <uploading> กำลังอัปโหลด ... </uploading>
+    <uploaded> อัพโหลดแล้ว </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> หน้า </page>
+   <first> หน้าแรก </first>
+   <prev> หน้าที่แล้ว </prev>
+   <next> หน้าถัดไป </next>
+   <last> หน้าสุดท้าย </last>
+  </pagination>
+
+</lang>

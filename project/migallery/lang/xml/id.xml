@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Bahasa </title>
+   <label> Pilih Bahasa </label>
+  </lang>
+
+  <timezone>
+   <title>Zona waktu</title>
+   <label>Pilih Zona Waktu</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Manajemen Galeri </gallery_man>
+   <gallery_list> Daftar Galeri </gallery_list>
+   <uploader> Buat Galeri Baru </uploader>
+   <back> Kembali </back>
+  </nav>
+
+  <install>
+ 
+   <title> Pengaturan MIGallery </title>
+   <header> Pengaturan MIGallery </header>
+
+   <img_direction>
+    <label> Galeri, gambar dan arah geser </label>
+    <left> Kiri ke Kanan </left>
+    <right> Kanan ke Kiri </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informasi Database MySQL </title>
+    <host>
+     <label> Nama Host Basis Data </label>
+     <placeholder> Nama Host Basis Data </placeholder>
+     <validate> Masukkan Nama Host Database </validate>
+    </host>
+    <user>
+     <label> Nama Pengguna Database </label>
+     <placeholder> Nama Pengguna Database </placeholder>
+     <validate> Masukkan Nama Pengguna Database </validate>
+    </user>
+    <pass>
+     <label> Kata Sandi Basis Data </label>
+     <placeholder> Kata Sandi Basis Data </placeholder>
+     <validate> Masukkan Kata Sandi Database </validate>
+    </pass>
+    <db>
+     <label> Nama Database </label>
+     <placeholder> Nama Database </placeholder>
+     <validate> Masukkan Nama Database </validate>
+    </db>
+    <gal_table>
+     <label> Nama Tabel Galeri </label>
+     <placeholder> Nama Tabel Galeri </placeholder>
+     <validate> Masukkan Nama Tabel Galeri </validate>
+    </gal_table>
+    <img_table>
+     <label> Nama Tabel Gambar </label>
+     <placeholder> Nama Tabel Gambar </placeholder>
+     <validate> Masukkan Nama Tabel Gambar </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direktori untuk konten dinamis yang dapat ditulis</title>
+    <db_alert>
+     <![CDATA[
+    Direktori berikut adalah tempat file <b> konfigurasi </b>, <b> log kesalahan </b> dan <b> definisi </b> akan dibuat. Jika Anda ingin mengubah nama direktori ini, ubah definisi <b> DB_DIR </b> di file <b> definitions0.php </b> dan segarkan halaman ini. <br/> <br/> Jika Anda ingin mengganti nama file konfigurasi, file log kesalahan dan file definisi, ubah definisi <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> dan <b> DEFINITIONS_FILE </b> di file definitions0.php. <br/> <br/> Jika sistem Anda berbasis unix, setel izin tulis dengan perintah berikut: <br/> <b>%s</b> <br/> <br/> Sebelum memulai penginstalan, pastikan jalur berikut ada dan Anda memiliki izin untuk menulis ke direktori:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Sebelum memulai penginstalan, pastikan bahwa direktori berikut ada dan Anda memiliki izin untuk menulis ke direktori. <br/> <br/> Jika Anda akan menggunakan direktori selain direktori berikut, jika direktori tersebut tidak ada pada disk, pertama-tama buat direktori dan setel izin tulis dan mulai penginstalan.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurasi, Log Kesalahan, dan Jalur File Definisi</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Direktori berikut dibuat saat galeri baru disimpan. <b>%d</b> menunjukkan id galeri. Direktori ini dibuat pada direktori <b> Direktori Basis Gambar </b> yang ditentukan di atas. Periksa apakah format direktori sudah sesuai.
+     ]]>
+    </img_dir_alert>
+    <config_alert>File konfigurasi telah dibuat sebelumnya. Oleh karena itu, Anda tidak dapat menjalankan penataan. Anda harus terlebih dahulu menghapus file konfigurasi dan kemudian menjalankan pengaturan.</config_alert>
+    <tmp_dir>
+     <label>Direktori Gambar Sementara</label>
+     <placeholder>Direktori Gambar Sementara</placeholder>
+     <validate>Direktori Gambar Sementara</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Direktori Sementara Gambar Kecil</label>
+     <placeholder>Direktori Sementara Gambar Kecil</placeholder>
+     <validate>Direktori Sementara Gambar Kecil</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Direktori Sementara dari Thumbnail yang Dipotong</label>
+     <placeholder>Direktori Sementara dari Thumbnail yang Dipotong</placeholder>
+     <validate>Direktori Sementara dari Thumbnail yang Dipotong</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Direktori Sementara Gambar Slide</label>
+     <placeholder>Direktori Sementara Gambar Slide</placeholder>
+     <validate>Direktori Sementara Gambar Slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Direktori Basis Gambar</label>
+     <placeholder>Direktori Basis Gambar</placeholder>
+     <validate>Direktori Basis Gambar</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Direktori Gambar</label>
+     <placeholder>Direktori Gambar</placeholder>
+     <validate>Direktori Gambar</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direktori Gambar Kecil</label>
+     <placeholder>Direktori Gambar Kecil</placeholder>
+     <validate>Direktori Gambar Kecil</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Direktori Thumbnail Terpotong</label>
+     <placeholder>Direktori Thumbnail Terpotong</placeholder>
+     <validate>Direktori Thumbnail Terpotong</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Direktori Gambar Slide</label>
+     <placeholder>Direktori Gambar Slide</placeholder>
+     <validate>Direktori Gambar Slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Direktori File XML</label>
+     <placeholder>Direktori File XML</placeholder>
+     <validate>Direktori File XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Menginstal. Harap tunggu ... </installing>
+    <success> Instalasi berhasil diselesaikan. </success>
+    <error> Instalasi tidak dapat diselesaikan. </error>
+   </alert>
+  
+   <submit> Mulai Instalasi </submit>
+   <submit_continue> Lanjutkan &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Manajemen Galeri </title>
+   <header> Manajemen Galeri </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Daftar Galeri </title>
+   <header> Daftar Galeri </header>
+   <sort>
+    <asc> urutkan dari awal hingga akhir </asc>
+    <desc> urutkan dari terakhir ke pertama </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Lihat </button>
+     <title> Lihat Galeri </title>
+    </view>
+    <delete>
+     <button> Hapus </button>
+     <title> Hapus Galeri </title>
+    </delete>
+    <edit>
+     <button> Edit </button>
+     <title> Edit Galeri </title>
+    </edit>
+    <images>gambar</images>
+    <date>Tanggal</date>
+    <move> Anda dapat mengurutkan galeri dengan menyeretnya menggunakan mouse. </move>
+    <move_mobile>Ketuk dan tahan item dengan jari Anda dan tunggu item itu disorot. Setelah memilih item, seret jari Anda untuk mengurutkan item.</move_mobile>
+   </card>
+   <alert> Tidak ada galeri yang ditemukan. </alert>
+   <modal>
+    <del_gallery>
+     <label> Hapus Galeri </label>
+     <close> tutup </close>
+     <text> Apakah Anda ingin menghapus galeri ini dari situs? </text>
+     <command> Hapus </command>
+     <cancel> Batal </cancel>
+    </del_gallery>
+    <result>
+     <label> Kesalahan </label>
+     <close> tutup </close>
+     <text> </text>
+     <command> Tutup </command>
+    </result>
+   </modal>
+   <save_changes> Simpan Urutan Sortir Galeri </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Tampilan Galeri </title>
+   <header> Tampilan Galeri </header>
+   <alert> Gambar tidak ditemukan. </alert>
+   <share>Bagikan Galeri</share>
+   <filedate>Tanggal Pengunggahan</filedate>
+   <filesize>Ukuran file</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Menyalin ke clipboard</label>
+     <close>tutup</close>
+     <text>Tautan disalin ke papan klip</text>
+     <command>Salinan</command>
+     <cancel>Tutup</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Buat Galeri Baru </title>
+    <header> Buat Galeri Baru </header>
+   </new>
+   <edit>
+    <title> Edit Galeri </title>
+    <header> Edit Galeri </header>
+   </edit>
+   <gallery_info>
+    <title> Informasi Galeri </title>
+    <name>
+     <label> Nama Galeri </label>
+     <placeholder> Nama Galeri </placeholder>
+     <validate> Masukkan Nama Galeri </validate>
+    </name>
+    <description>
+     <label> Deskripsi Galeri </label>
+     <placeholder> Deskripsi Galeri </placeholder>
+     <validate> Deskripsi Galeri Input </validate>
+    </description>
+    <keywords>
+     <label> Kata kunci galeri dipisahkan dengan koma atau jeda baris </label>
+     <placeholder> Kata kunci galeri dipisahkan dengan koma atau jeda baris </placeholder>
+     <validate> Masukkan Kata Kunci Galeri </validate>
+    </keywords>
+    <submit>
+     <save> Simpan Galeri </save>
+     <update> Perbarui Galeri </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Panduan Pengunggah </title>
+     <body>
+      <![CDATA[
+Pilih gambar dari perangkat Anda dengan tombol <b> Jelajahi Gambar </b> dan unggah ke situs dengan tombol <b> Unggah Gambar </b>. <br/> Format Gambar yang Didukung: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Resolusi Minimum yang Diijinkan: <b>%d x %d px</b> <br/> Resolusi Maksimum yang Diijinkan: <b>%d x %d px</b> <br/> Ukuran Maksimum File Tunggal: <b>%d MB</b> <br/> Jumlah Gambar per Galeri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Pilih Semua </select_all>
+    <select_del> Hapus yang Dipilih </select_del>
+    <thumb>
+     <exist>
+      <delete> Hapus Gambar Yang Diunggah Dari Situs </delete>
+      <info> Info Gambar </info>
+     </exist>
+     <new>
+      <delete> Hapus Gambar Yang Diunggah Dari Situs </delete>
+      <cancel> Batalkan Pengunggahan Gambar </cancel>
+      <info> Info Gambar </info>
+      <rotate> Putar Gambar </rotate>
+      <crop> Pangkas Gambar </crop>
+     </new>
+     <move> Anda dapat mengurutkan gambar dengan menyeretnya menggunakan mouse. </move>
+     <move_mobile>Ketuk dan tahan item dengan jari Anda dan tunggu item itu disorot. Setelah memilih item, seret jari Anda untuk mengurutkan item.</move_mobile>
+    </thumb>
+    <browse> Jelajahi Gambar </browse>
+    <upload> Unggah Gambar </upload>
+    <uploading> Gambar sedang diunggah ke situs. Jangan tutup halaman sampai upload selesai. </uploading>
+    <uploaded> Gambar telah diunggah ke situs. </uploaded>
+    <error>Beberapa kesalahan terjadi saat mengunggah file ke server.</error>
+    <save_changes> Simpan Perubahan Gambar </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Pangkas </crop>
+     <cancel> Batal </cancel>
+    </crop>
+    <del_up_img>
+     <label> Hapus Gambar </label>
+     <close> tutup </close>
+     <text> Apakah Anda ingin menghapus gambar ini dari situs? </text>
+     <command> Hapus </command>
+     <cancel> Batal </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Hapus Gambar </label>
+     <close> tutup </close>
+     <text> Apakah Anda ingin menghapus gambar ini dari situs? </text>
+     <command> Hapus </command>
+     <cancel> Batal </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Hapus Gambar yang Dipilih </label>
+     <close> tutup </close>
+     <text> Apakah Anda ingin menghapus gambar yang dipilih dari situs? </text>
+     <command> Hapus </command>
+     <cancel> Batal </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Info Gambar </label>
+     <close> tutup </close>
+     <filename> Nama File </filename>
+     <filesize> Ukuran File </filesize>
+     <date> Tanggal Pengunggahan </date>
+     <title>
+      <label> Judul </label>
+      <placeholder> Judul Gambar </placeholder>
+     </title>
+     <desc>
+      <label> Deskripsi </label>
+      <placeholder> Deskripsi Gambar </placeholder>
+     </desc>
+     <keyw>
+      <label> Kata kunci </label>
+      <placeholder> Kata kunci dipisahkan dengan koma atau baris baru </placeholder>
+     </keyw>
+     <command> Simpan / Perbarui </command>
+     <cancel> Batal </cancel>
+    </img_info>
+    <result>
+     <label> Kesalahan </label>
+     <close> tutup </close>
+     <text> </text>
+     <command> Tutup </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Pengaturan Gambar yang Dapat Diupload </title>
+    <upload_limit>
+     <label> Jumlah gambar maksimum per galeri </label>
+     <placeholder> Jumlah gambar maksimum per galeri </placeholder>
+     <validate> Input jumlah gambar Maks per galeri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Ukuran Maks. File Tunggal (MB) </label>
+     <placeholder> Ukuran Maksimum File Tunggal (MB) </placeholder>
+     <validate> Masukkan Ukuran Maksimum File Tunggal (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Resolusi Min yang Diijinkan </label>
+     <width>
+      <placeholder> Lebar Min </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Min </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Resolusi Maksimum yang Diijinkan </label>
+     <width>
+      <placeholder> Lebar Maks. </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Maks </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformasi Gambar </title>
+    <full_resolution>
+     <label> Gambar Ukuran Penuh </label>
+     <width>
+      <placeholder> Lebar Maks. </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Maks </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Ukuran Thumbnail </label>
+     <width>
+      <placeholder> Lebar Thumb </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Thumb </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Ukuran Slide </label>
+     <width>
+      <placeholder> Lebar Slide </placeholder>
+      <validate> Masukkan nilai </validate>
+     </width>
+     <height>
+      <placeholder> Tinggi Slide </placeholder>
+      <validate> Masukkan nilai </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kualitas Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Kompres PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Tanda Air </title>
+    <label> Gunakan Watermark </label>
+    <position> Watermark Position </position>
+    <image> Gambar Watermark </image>
+    <set> Setel Watermark </set>
+    <browse> 1- Jelajahi File Gambar Watermark </browse>
+    <adjust> 2- Sesuaikan gambar menurut frame. </adjust>
+    <upload> 3- Unggah File yang Dipilih </upload>
+    <uploading> Mengupload ... </uploading>
+    <uploaded> Diupload. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Halaman </page>
+   <first> First Page </first>
+   <prev> Halaman Sebelumnya </prev>
+   <next> Halaman Berikutnya </next>
+   <last> Halaman Terakhir </last>
+  </pagination>
+
+</lang>

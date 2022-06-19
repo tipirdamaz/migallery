@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Kalba </title>
+   <label> Pasirinkite kalbą </label>
+  </lang>
+
+  <timezone>
+   <title>Laiko zona</title>
+   <label>Pasirinkite Laiko juosta</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerijos valdymas </gallery_man>
+   <gallery_list> Galerijų sąrašas </gallery_list>
+   <uploader> Sukurti naują galeriją </uploader>
+   <back> atgal </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery sąranka </title>
+   <header> MIGallery sąranka </header>
+
+   <img_direction>
+    <label> Galerija, vaizdas ir skaidrės kryptis </label>
+    <left> iš kairės į dešinę </left>
+    <right> iš dešinės į kairę </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL duomenų bazės informacija </title>
+    <host>
+     <label> Duomenų bazės pagrindinio kompiuterio vardas </label>
+     <placeholder> Duomenų bazės pagrindinio kompiuterio vardas </placeholder>
+     <validate> Įveskite duomenų bazės pagrindinio kompiuterio pavadinimą </validate>
+    </host>
+    <user>
+     <label> Duomenų bazės vartotojo vardas </label>
+     <placeholder> Duomenų bazės vartotojo vardas </placeholder>
+     <validate> Įvesties duomenų bazės vartotojo vardas </validate>
+    </user>
+    <pass>
+     <label> Duomenų bazės slaptažodis </label>
+     <placeholder> Duomenų bazės slaptažodis </placeholder>
+     <validate> Įvesties duomenų bazės slaptažodis </validate>
+    </pass>
+    <db>
+     <label> Duomenų bazės pavadinimas </label>
+     <placeholder> Duomenų bazės pavadinimas </placeholder>
+     <validate> Įveskite duomenų bazės pavadinimą </validate>
+    </db>
+    <gal_table>
+     <label> Galerijos lentelės pavadinimas </label>
+     <placeholder> Galerijos lentelės pavadinimas </placeholder>
+     <validate> Įveskite galerijos lentelės pavadinimą </validate>
+    </gal_table>
+    <img_table>
+     <label> Vaizdo lentelės pavadinimas </label>
+     <placeholder> Vaizdo lentelės pavadinimas </placeholder>
+     <validate> Įveskite paveikslėlio lentelės pavadinimą </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Katalogai, kuriuose leidžiama rašyti failus</title>
+    <db_alert>
+     <![CDATA[
+    <b> konfigūracijos </b>, <b> klaidų žurnalo </b> ir <b> apibrėžimų </b> failai bus sukurti šiame kataloge. Jei norite pakeisti šio katalogo pavadinimą, pakeiskite <b> DB_DIR </b> apibrėžimą faile <b> definitions0.php </b> ir atnaujinkite šį puslapį.<br/><br/>Norėdami pervardyti konfigūracijos failą, klaidų žurnalo failą ir apibrėžimo failą, redaguokite <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ir <b>DEFINITIONS_FILE</b> reikšmes faile definitions0.php.<br/><br/>Jei jūsų sistema pagrįsta „unix“, nustatykite rašymo teises naudodami šią komandą:<br/><b>%s</b><br/><br/>Prieš pradėdami diegimą įsitikinkite, kad yra šis kelias ir jūs turite leidimus rašyti į katalogą:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Prieš pradėdami diegti, įsitikinkite, kad yra šie katalogai ir ar turite leidimą rašyti į katalogus. <br/> <br/> Jei ketinate naudoti kitus nei toliau išvardytus katalogus, jei katalogų diske nėra, pirmiausia sukurkite katalogus ir nustatykite šių katalogų rašymo teises ir pradėkite diegimą.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigūracijos, klaidų žurnalo ir apibrėžimų failų kelias</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Šie katalogai sukuriami išsaugojus naują galeriją. <b>%d</b> nurodo galerijos ID. Šie katalogai yra sukurti aukščiau apibrėžtame <b> Pagrindinis vaizdų aplankas </b> kataloge. Įsitikinkite, kad šių katalogų formatas yra tinkamas.
+     ]]>
+    </img_dir_alert>
+    <config_alert>The configuration file has been created before. Therefore, you cannot run the setup. You must first delete the configuration file and then run the setup.</config_alert>
+    <tmp_dir>
+     <label>Laikinas vaizdų aplankas</label>
+     <placeholder>Laikinas vaizdų aplankas</placeholder>
+     <validate>Laikinas vaizdų aplankas</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Laikinas miniatiūrų aplankas</label>
+     <placeholder>Laikinas miniatiūrų aplankas</placeholder>
+     <validate>Laikinas miniatiūrų aplankas</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Laikinas apkarpytų miniatiūrų aplankas</label>
+     <placeholder>Laikinas apkarpytų miniatiūrų aplankas</placeholder>
+     <validate>Laikinas apkarpytų miniatiūrų aplankas</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Laikinas skaidrių vaizdų failų aplankas</label>
+     <placeholder>Laikinas skaidrių vaizdų failų aplankas</placeholder>
+     <validate>Laikinas skaidrių vaizdų failų aplankas</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Pagrindinis vaizdų aplankas</label>
+     <placeholder>Pagrindinis vaizdų aplankas</placeholder>
+     <validate>Pagrindinis vaizdų aplankas</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Vaizdų aplankas</label>
+     <placeholder>Vaizdų aplankas</placeholder>
+     <validate>Vaizdų aplankas</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Miniatiūrų aplankas</label>
+     <placeholder>Miniatiūrų aplankas</placeholder>
+     <validate>Miniatiūrų aplankas</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Apkarpytų miniatiūrų aplankas</label>
+     <placeholder>Apkarpytų miniatiūrų aplankas</placeholder>
+     <validate>Apkarpytų miniatiūrų aplankas</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Skaidrių vaizdų failų aplankas</label>
+     <placeholder>Skaidrių vaizdų failų aplankas</placeholder>
+     <validate>Skaidrių vaizdų failų aplankas</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML failų katalogas</label>
+     <placeholder>XML failų katalogas</placeholder>
+     <validate>XML failų katalogas</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> diegimas. Palaukite ... </installing>
+    <success> Diegimas sėkmingai baigtas. </success>
+    <error> Nepavyko užbaigti diegimo. </error>
+   </alert>
+  
+   <submit> Pradėti diegimą </submit>
+   <submit_continue> Tęsti &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerijos valdymas </title>
+   <header> Galerijos valdymas </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galerijų sąrašas </title>
+   <header> Galerijų sąrašas </header>
+   <sort>
+    <asc> rūšiuoti nuo pirmo iki paskutinio </asc>
+    <desc> rūšiuoti nuo paskutinio iki pirmo </desc>
+   </sort>
+   <card>
+    <view>
+     <button> rodinys </button>
+     <title> Peržiūrėti galeriją </title>
+    </view>
+    <delete>
+     <button> ištrinti </button>
+     <title> Ištrinti galeriją </title>
+    </delete>
+    <edit>
+     <button> redaguoti </button>
+     <title> Redaguoti galeriją </title>
+    </edit>
+    <images>vaizdai</images>
+    <date>Data</date>
+    <move> Galėsite rūšiuoti galerijas vilkdami jas pele. </move>
+    <move_mobile>Palieskite ir palaikykite elementą pirštu ir palaukite, kol jis bus paryškintas. Pasirinkę elementą, vilkite pirštą, kad surūšiuotumėte elementus.</move_mobile>
+   </card>
+   <alert> Nerasta jokios galerijos. </alert>
+   <modal>
+    <del_gallery>
+     <label> Ištrinti galeriją </label>
+     <close> uždaryti </close>
+     <text> Ar norite ištrinti šią galeriją iš svetainės? </text>
+     <command> Ištrinti </command>
+     <cancel> atšaukti </cancel>
+    </del_gallery>
+    <result>
+     <label> klaida </label>
+     <close> uždaryti </close>
+     <text> </text>
+     <command> Uždaryti </command>
+    </result>
+   </modal>
+   <save_changes> Išsaugoti galerijų rūšiavimo tvarką </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galerijos rodinys </title>
+   <header> Galerijos rodinys </header>
+   <alert> Nerastas vaizdas. </alert>
+   <share>Bendrinti galeriją</share>
+   <filedate>Įkėlimo data</filedate>
+   <filesize>Failo dydis</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Nukopijuoti į iškarpinę</label>
+     <close>uždaryti</close>
+     <text>Nuoroda nukopijuota į mainų sritį</text>
+     <command>Kopijuoti</command>
+     <cancel>Uždaryti</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Sukurti naują galeriją </title>
+    <header> Sukurti naują galeriją </header>
+   </new>
+   <edit>
+    <title> Redaguoti galeriją </title>
+    <header> Redaguoti galeriją </header>
+   </edit>
+   <gallery_info>
+    <title> Galerijos informacija </title>
+    <name>
+     <label> Galerijos pavadinimas </label>
+     <placeholder> Galerijos pavadinimas </placeholder>
+     <validate> Įvesties galerijos pavadinimas </validate>
+    </name>
+    <description>
+     <label> Galerijos aprašas </label>
+     <placeholder> Galerijos aprašas </placeholder>
+     <validate> Įvesties galerijos aprašas </validate>
+    </description>
+    <keywords>
+     <label> Galerijos raktiniai žodžiai, atskirti kableliais arba eilučių pertraukomis </label>
+     <placeholder> Galerijos raktiniai žodžiai, atskirti kableliais arba eilučių pertraukomis </placeholder>
+     <validate> Įveskite galerijos raktinius žodžius </validate>
+    </keywords>
+    <submit>
+     <save> išsaugoti galeriją </save>
+     <update> Atnaujinti galeriją </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Įkėlėjų vadovas </title>
+     <body>
+      <![CDATA[
+Pasirinkite vaizdus iš savo įrenginio mygtuku <b> Naršyti vaizdus </b> ir įkelkite į svetainę mygtuku <b> Įkelti vaizdus </b>. <br/> Palaikomi vaizdų formatai: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Leistina minimali skiriamoji geba: <b>%d x %d px</b> <br/> Leistina didžiausia skiriamoji geba: <b>%d x %d px</b> <br/> Maksimalus vieno failo dydis: <b>%d MB</b> <br/> Vaizdų skaičius galerijoje: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Pasirinkite viską </select_all>
+    <select_del> Ištrinti pasirinktus vaizdus </select_del>
+    <thumb>
+     <exist>
+      <delete> Ištrinti įkeltą vaizdą iš svetainės </delete>
+      <info> Informacija apie vaizdą </info>
+     </exist>
+     <new>
+      <delete> Ištrinti įkeltą vaizdą iš svetainės </delete>
+      <cancel> Atšaukti nuotraukos įkėlimą </cancel>
+      <info> Informacija apie vaizdą </info>
+      <rotate> Pasukti vaizdą </rotate>
+      <crop> Apkarpyti vaizdą </crop>
+     </new>
+     <move> Galite rūšiuoti vaizdus vilkdami juos pele. </move>
+     <move_mobile>Palieskite ir palaikykite elementą pirštu ir palaukite, kol jis bus paryškintas. Pasirinkę elementą, vilkite pirštą, kad surūšiuotumėte elementus.</move_mobile>
+    </thumb>
+    <browse> Naršyti vaizdus </browse>
+    <upload> Įkelti vaizdus </upload>
+    <uploading> Vaizdai keliami to svetainė. Neuždarykite puslapio, kol baigsis įkėlimas. </uploading>
+    <uploaded> Vaizdai įkelti į svetainę. </uploaded>
+    <error>Įkeliant failus į serverį įvyko keletas klaidų.</error>
+    <save_changes> Išsaugoti vaizdo pakeitimus </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Apkirpti </crop>
+     <cancel> atšaukti </cancel>
+    </crop>
+    <del_up_img>
+     <label> Ištrinti vaizdą </label>
+     <close> uždaryti </close>
+     <text> Ar norite ištrinti šį vaizdą iš svetainės? </text>
+     <command> Ištrinti </command>
+     <cancel> atšaukti </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Ištrinti vaizdą </label>
+     <close> uždaryti </close>
+     <text> Ar norite ištrinti šį vaizdą iš svetainės? </text>
+     <command> Ištrinti </command>
+     <cancel> atšaukti </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ištrinti pasirinktus vaizdus </label>
+     <close> uždaryti </close>
+     <text> Ar norite ištrinti pasirinktus vaizdus iš svetainės? </text>
+     <command> Ištrinti </command>
+     <cancel> atšaukti </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informacija apie vaizdą </label>
+     <close> uždaryti </close>
+     <filename> failo pavadinimas </filename>
+     <filesize> failo dydis </filesize>
+     <date> Įkėlimo data </date>
+     <title>
+      <label> Pavadinimas </label>
+      <placeholder> Paveikslėlio pavadinimas </placeholder>
+     </title>
+     <desc>
+      <label> Aprašas </label>
+      <placeholder> Paveikslėlio aprašymas </placeholder>
+     </desc>
+     <keyw>
+      <label> Raktažodžiai </label>
+      <placeholder> Raktiniai žodžiai, atskirti kableliais arba eilučių pertraukomis </placeholder>
+     </keyw>
+     <command> Išsaugoti / atnaujinti </command>
+     <cancel> atšaukti </cancel>
+    </img_info>
+    <result>
+     <label> klaida </label>
+     <close> uždaryti </close>
+     <text> </text>
+     <command> Uždaryti </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Leistino įkėlimo paveikslėlio nustatymai </title>
+    <upload_limit>
+     <label> Didžiausias galerijos vaizdų skaičius </label>
+     <placeholder> Didžiausias galerijoje esančių vaizdų skaičius </placeholder>
+     <validate> Įveskite maksimalų vaizdų skaičių galerijoje </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maksimalus vieno failo dydis (MB) </label>
+     <placeholder> Vieno failo maksimalus dydis (MB) </placeholder>
+     <validate> Įveskite vieno failo maksimalų dydį (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Leistina mažiausia skiriamoji geba </label>
+     <width>
+      <placeholder> Mažiausias plotis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </width>
+     <height>
+      <placeholder> Mažiausias aukštis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Leistina didžiausia skiriamoji geba </label>
+     <width>
+      <placeholder> Maksimalus plotis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </width>
+     <height>
+      <placeholder> Maksimalus aukštis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Vaizdo transformacija </title>
+    <full_resolution>
+     <label> Visas vaizdas </label>
+     <width>
+      <placeholder> Maksimalus plotis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </width>
+     <height>
+      <placeholder> Maksimalus aukštis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatiūros dydis </label>
+     <width>
+      <placeholder> nykščio plotis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </width>
+     <height>
+      <placeholder> nykščio aukštis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> skaidrės dydis </label>
+     <width>
+      <placeholder> skaidrės plotis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </width>
+     <height>
+      <placeholder> skaidrės aukštis </placeholder>
+      <validate> Įveskite vertę </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG kokybė </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Suspausti </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vandenženklis </title>
+    <label> Naudokite vandens ženklą </label>
+    <position> Vandenženklio padėtis </position>
+    <image> Vandenženklio vaizdas </image>
+    <set> Nustatyti vandens ženklą </set>
+    <browse> 1- Naršykite vandenženklio vaizdo failą </browse>
+    <adjust> 2 - sureguliuokite vaizdą pagal rėmelį. </adjust>
+    <upload> 3- Įkelti pasirinktą failą </upload>
+    <uploading> Įkeliama ... </uploading>
+    <uploaded> Įkelta. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> puslapis </page>
+   <first> Pirmas puslapis </first>
+   <prev> Ankstesnis puslapis </prev>
+   <next> Kitas puslapis </next>
+   <last> paskutinis puslapis </last>
+  </pagination>
+
+</lang>

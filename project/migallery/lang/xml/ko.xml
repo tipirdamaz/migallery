@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> 언어 </title>
+   <label> 언어 선택 </label>
+  </lang>
+
+  <timezone>
+   <title>시간대</title>
+   <label>시간대 선택</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> 갤러리 관리 </gallery_man>
+   <gallery_list> 갤러리 목록 </gallery_list>
+   <uploader> 새 갤러리 만들기 </uploader>
+   <back> 뒤로 </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery 설정 </title>
+   <header> MIGallery 설정 </header>
+
+   <img_direction>
+    <label> 갤러리, 이미지 및 슬라이드 방향 </label>
+    <left> 왼쪽에서 오른쪽으로 </left>
+    <right> 오른쪽에서 왼쪽으로 </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL 데이터베이스 정보 </title>
+    <host>
+     <label> 데이터베이스 호스트 이름 </label>
+     <placeholder> 데이터베이스 호스트 이름 </placeholder>
+     <validate> 데이터베이스 호스트 이름 입력 </validate>
+    </host>
+    <user>
+     <label> 데이터베이스 사용자 이름 </label>
+     <placeholder> 데이터베이스 사용자 이름 </placeholder>
+     <validate> 데이터베이스 사용자 이름 입력 </validate>
+    </user>
+    <pass>
+     <label> 데이터베이스 비밀번호 </label>
+     <placeholder> 데이터베이스 비밀번호 </placeholder>
+     <validate> 데이터베이스 비밀번호 입력 </validate>
+    </pass>
+    <db>
+     <label> 데이터베이스 이름 </label>
+     <placeholder> 데이터베이스 이름 </placeholder>
+     <validate> 데이터베이스 이름 입력 </validate>
+    </db>
+    <gal_table>
+     <label> 갤러리 테이블 이름 </label>
+     <placeholder> 갤러리 테이블 이름 </placeholder>
+     <validate> 갤러리 테이블 이름 입력 </validate>
+    </gal_table>
+    <img_table>
+     <label> 이미지 테이블 이름 </label>
+     <placeholder> 이미지 테이블 이름 </placeholder>
+     <validate> 입력 이미지 테이블 이름 </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>쓰기 가능한 동적 콘텐츠를위한 디렉터리</title>
+    <db_alert>
+     <![CDATA[
+    다음 디렉토리는 <b> 구성 </b>, <b> 오류 로그 </b> 및 <b> 정의 </b> 파일이 생성되는 위치입니다. 이 디렉토리의 이름을 바꾸려면 <b> definitions0.php </b> 파일에서 <b> DB_DIR </b> 정의를 변경하고이 페이지를 새로 고치십시오. <br/> <br/> 구성, 오류 로그 및 정의 파일의 이름을 바꾸려면 definitions0.php 파일에서 <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> 및 <b>DEFINITIONS_FILE</b> 정의를 변경하십시오. <br/> <br/> 시스템이 Unix 기반 인 경우 다음 명령을 사용하여 쓰기 권한을 설정하십시오. <br/> <b>%s</b> <br/> <br/> 다음 경로가 존재하고 설치를 시작하기 전에 디렉토리에 대한 쓰기 권한이 있어야합니다.
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    설치를 시작하기 전에 다음 디렉토리를 사용할 수 있고 디렉토리에 쓸 수있는 권한이 있는지 확인하십시오. <br/> <br/> 다음 디렉토리 이외의 디렉토리를 사용하려는 경우 해당 디렉토리가 디스크에 존재하지 않는 경우 먼저 디렉토리를 만들고이 디렉토리의 쓰기 권한을 설정 한 다음 설치를 시작하십시오.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>구성, 오류 로그 및 정의 파일 경로</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    새 갤러리가 저장되면 다음 디렉터리가 생성됩니다. <b>%d</b>는 갤러리 ID를 나타냅니다. 이러한 디렉토리는 위에 정의 된 <b> 이미지베이스 디렉토리 </b> 디렉토리에 생성됩니다. 디렉토리 형식이 적절한 지 확인하십시오.
+     ]]>
+    </img_dir_alert>
+    <config_alert>구성 파일은 이전에 생성되었습니다. 따라서 설치를 실행할 수 없습니다. 먼저 구성 파일을 삭제 한 다음 설정을 실행해야합니다.</config_alert>
+    <tmp_dir>
+     <label>이미지의 임시 디렉토리</label>
+     <placeholder>이미지의 임시 디렉토리</placeholder>
+     <validate>이미지의 임시 디렉토리</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>썸네일의 임시 디렉토리</label>
+     <placeholder>썸네일의 임시 디렉토리</placeholder>
+     <validate>썸네일의 임시 디렉토리</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>잘린 썸네일의 임시 디렉토리</label>
+     <placeholder>잘린 썸네일의 임시 디렉토리</placeholder>
+     <validate>잘린 썸네일의 임시 디렉토리</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>슬라이드 이미지의 임시 디렉토리</label>
+     <placeholder>슬라이드 이미지의 임시 디렉토리</placeholder>
+     <validate>슬라이드 이미지의 임시 디렉토리</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>이미지베이스 디렉토리</label>
+     <placeholder>이미지베이스 디렉토리</placeholder>
+     <validate>이미지베이스 디렉토리</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>이미지 디렉토리</label>
+     <placeholder>이미지 디렉토리</placeholder>
+     <validate>이미지 디렉토리</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>썸네일 디렉토리</label>
+     <placeholder>썸네일 디렉토리</placeholder>
+     <validate>썸네일 디렉토리</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>잘린 썸네일 디렉토리</label>
+     <placeholder>잘린 썸네일 디렉토리</placeholder>
+     <validate>잘린 썸네일 디렉토리</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>슬라이드 이미지 디렉토리</label>
+     <placeholder>슬라이드 이미지 디렉토리</placeholder>
+     <validate>슬라이드 이미지 디렉토리</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML 파일 디렉토리</label>
+     <placeholder>XML 파일 디렉토리</placeholder>
+     <validate>XML 파일 디렉토리</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> 설치. 잠시만 기다려주십시오 ... </installing>
+    <success> 설치가 성공적으로 완료되었습니다. </success>
+    <error> 설치를 완료 할 수 없습니다. </error>
+   </alert>
+  
+   <submit> 설치 시작 </submit>
+   <submit_continue> 계속 &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> 갤러리 관리 </title>
+   <header> 갤러리 관리 </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> 갤러리 목록 </title>
+   <header> 갤러리 목록 </header>
+   <sort>
+    <asc> 처음부터 마지막까지 정렬 </asc>
+    <desc> 마지막에서 처음으로 정렬 </desc>
+   </sort>
+   <card>
+    <view>
+     <button>보기 </button>
+     <title> 갤러리보기 </title>
+    </view>
+    <delete>
+     <button> 삭제 </button>
+     <title> 갤러리 삭제 </title>
+    </delete>
+    <edit>
+     <button> 편집 </button>
+     <title> 갤러리 수정 </title>
+    </edit>
+    <images>이미지</images>
+    <date>데이트</date>
+    <move> 마우스로 갤러리를 드래그하여 정렬 할 수 있습니다. </move>
+    <move_mobile>손가락으로 항목을 길게 터치하고 강조 표시 될 때까지 기다립니다. 항목을 선택한 후 손가락을 드래그하여 항목을 정렬합니다.</move_mobile>
+   </card>
+   <alert> 갤러리가 없습니다. </alert>
+   <modal>
+    <del_gallery>
+     <label> 갤러리 삭제 </label>
+     <close> 닫기 </close>
+     <text> 사이트에서이 갤러리를 삭제 하시겠습니까? </text>
+     <command> 삭제 </command>
+     <cancel> 취소 </cancel>
+    </del_gallery>
+    <result>
+     <label> 오류 </label>
+     <close> 닫기 </close>
+     <text> </text>
+     <command> 닫기 </command>
+    </result>
+   </modal>
+   <save_changes> 갤러리 정렬 순서 저장 </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> 갤러리보기 </title>
+   <header> 갤러리보기 </header>
+   <alert> 이미지가 없습니다. </alert>
+   <share>갤러리 공유</share>
+   <filedate>업로드 날짜</filedate>
+   <filesize>파일 크기</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>클립 보드에 복사</label>
+     <close>닫기</close>
+     <text>링크가 클립 보드에 복사되었습니다.</text>
+     <command>복사</command>
+     <cancel>닫기</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> 새 갤러리 만들기 </title>
+    <header> 새 갤러리 만들기 </header>
+   </new>
+   <edit>
+    <title> 갤러리 수정 </title>
+    <header> 갤러리 수정 </header>
+   </edit>
+   <gallery_info>
+    <title> 갤러리 정보 </title>
+    <name>
+     <label> 갤러리 이름 </label>
+     <placeholder> 갤러리 이름 </placeholder>
+     <validate> 갤러리 이름 입력 </validate>
+    </name>
+    <description>
+     <label> 갤러리 설명 </label>
+     <placeholder> 갤러리 설명 </placeholder>
+     <validate> 갤러리 설명 입력 </validate>
+    </description>
+    <keywords>
+     <label> 쉼표 또는 줄 바꿈으로 구분 된 갤러리 키워드 </label>
+     <placeholder> 쉼표 또는 줄 바꿈으로 구분 된 갤러리 키워드 </placeholder>
+     <validate> 갤러리 키워드 입력 </validate>
+    </keywords>
+    <submit>
+     <save> 갤러리 저장 </save>
+     <update> 갤러리 업데이트 </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> 업 로더 가이드 </title>
+     <body>
+      <![CDATA[
+<b> 이미지 찾아보기 </b> 버튼으로 기기에서 이미지를 선택하고 <b> 이미지 업로드 </b> 버튼으로 사이트에 업로드하세요. <br/> 지원되는 이미지 형식 : <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> 허용되는 최소 해상도 : <b>%d x %d px</b> <br/> 허용되는 최대 해상도 : <b>%d x %d px</b> <br/> 단일 파일 최대 크기 : <b>%d MB</b> <br/> 갤러리 당 이미지 수 : <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> 모두 선택 </select_all>
+    <select_del> 선택한 이미지 삭제 </select_del>
+    <thumb>
+     <exist>
+      <delete> 사이트에서 업로드 된 이미지 삭제 </delete>
+      <info> 이미지 정보 </info>
+     </exist>
+     <new>
+      <delete> 사이트에서 업로드 된 이미지 삭제 </delete>
+      <cancel> 이미지 업로드 취소 </cancel>
+      <info> 이미지 정보 </info>
+      <rotate> 이미지 회전 </rotate>
+      <crop> 이미지 자르기 </crop>
+     </new>
+     <move> 이미지를 마우스로 드래그하여 정렬 할 수 있습니다. </move>
+     <move_mobile>손가락으로 항목을 길게 터치하고 강조 표시 될 때까지 기다립니다. 항목을 선택한 후 손가락을 드래그하여 항목을 정렬합니다.</move_mobile>
+    </thumb>
+    <browse> 이미지 찾아보기 </browse>
+    <upload> 이미지 업로드 </upload>
+    <uploading> 이미지 업로드 중사이트. 업로드가 완료 될 때까지 페이지를 닫지 마십시오. </uploading>
+    <uploaded> 이미지가 사이트에 업로드되었습니다. </uploaded>
+    <error>서버에 파일을 업로드하는 동안 일부 오류가 발생했습니다.</error>
+    <save_changes> 이미지 변경 사항 저장 </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> 자르기 </crop>
+     <cancel> 취소 </cancel>
+    </crop>
+    <del_up_img>
+     <label> 이미지 삭제 </label>
+     <close> 닫기 </close>
+     <text> 사이트에서이 이미지를 삭제 하시겠습니까? </text>
+     <command> 삭제 </command>
+     <cancel> 취소 </cancel>
+    </del_up_img>
+    <del_img>
+     <label> 이미지 삭제 </label>
+     <close> 닫기 </close>
+     <text> 사이트에서이 이미지를 삭제 하시겠습니까? </text>
+     <command> 삭제 </command>
+     <cancel> 취소 </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> 선택한 이미지 삭제 </label>
+     <close> 닫기 </close>
+     <text> 사이트에서 선택한 이미지를 삭제 하시겠습니까? </text>
+     <command> 삭제 </command>
+     <cancel> 취소 </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> 이미지 정보 </label>
+     <close> 닫기 </close>
+     <filename> 파일 이름 </filename>
+     <filesize> 파일 크기 </filesize>
+     <date> 업로드 날짜 </date>
+     <title>
+      <label> 제목 </label>
+      <placeholder> 이미지 제목 </placeholder>
+     </title>
+     <desc>
+      <label> 설명 </label>
+      <placeholder> 이미지 설명 </placeholder>
+     </desc>
+     <keyw>
+      <label> 키워드 </label>
+      <placeholder> 쉼표 또는 줄 바꿈으로 구분 된 키워드 </placeholder>
+     </keyw>
+     <command> 저장 / 업데이트 </command>
+     <cancel> 취소 </cancel>
+    </img_info>
+    <result>
+     <label> 오류 </label>
+     <close> 닫기 </close>
+     <text> </text>
+     <command> 닫기 </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> 업로드 가능한 이미지 설정 </title>
+    <upload_limit>
+     <label> 갤러리 당 최대 이미지 수 </label>
+     <placeholder> 갤러리 당 최대 이미지 수 </placeholder>
+     <validate> 갤러리 당 최대 이미지 수 입력 </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> 단일 파일 최대 크기 (MB) </label>
+     <placeholder> 단일 파일 최대 크기 (MB) </placeholder>
+     <validate> 입력 단일 파일 최대 크기 (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> 허용 최소 해상도 </label>
+     <width>
+      <placeholder> 최소 너비 </placeholder>
+      <validate> 값 입력 </validate>
+     </width>
+     <height>
+      <placeholder> 최소 높이 </placeholder>
+      <validate> 값 입력 </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> 허용 최대 해상도 </label>
+     <width>
+      <placeholder> 최대 너비 </placeholder>
+      <validate> 값 입력 </validate>
+     </width>
+     <height>
+      <placeholder> 최대 높이 </placeholder>
+      <validate> 값 입력 </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> 이미지 변환 </title>
+    <full_resolution>
+     <label> 이미지 전체 크기 </label>
+     <width>
+      <placeholder> 최대 너비 </placeholder>
+      <validate> 값 입력 </validate>
+     </width>
+     <height>
+      <placeholder> 최대 높이 </placeholder>
+      <validate> 값 입력 </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> 썸네일 크기 </label>
+     <width>
+      <placeholder> Thumb 너비 </placeholder>
+      <validate> 값 입력 </validate>
+     </width>
+     <height>
+      <placeholder> 엄지 손가락 높이 </placeholder>
+      <validate> 값 입력 </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> 슬라이드 크기 </label>
+     <width>
+      <placeholder> 슬라이드 너비 </placeholder>
+      <validate> 값 입력 </validate>
+     </width>
+     <height>
+      <placeholder> 슬라이드 높이 </placeholder>
+      <validate> 값 입력 </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg 품질 </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG 압축 </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> 워터 마크 </title>
+    <label> 워터 마크 사용 </label>
+    <position> 워터 마크 위치 </position>
+    <image> 워터 마크 이미지 </image>
+    <set> 워터 마크 설정 </set>
+    <browse> 1- 워터 마크 이미지 파일 찾아보기 </browse>
+    <adjust> 2- 프레임에 따라 이미지를 조정합니다. </adjust>
+    <upload> 3- 선택한 파일 업로드 </upload>
+    <uploading> 업로드 중 ... </uploading>
+    <uploaded> 업로드 됨. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> 페이지 </page>
+   <first> 첫 페이지 </first>
+   <prev> 이전 페이지 </prev>
+   <next> 다음 페이지 </next>
+   <last> 마지막 페이지 </last>
+  </pagination>
+
+</lang>

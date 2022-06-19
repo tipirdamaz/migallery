@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Til </title>
+   <label> Tilni tanlang </label>
+  </lang>
+
+  <timezone>
+   <title>Vaqt zonasi</title>
+   <label>Vaqt mintaqasini tanlang</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galereya menejmenti </gallery_man>
+   <gallery_list> galereya ro'yxati </gallery_list>
+   <uploader> Yangi galereya yarating </uploader>
+   <back> Orqaga </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery-ni sozlash </title>
+   <header> MIGallery-ni sozlash </header>
+
+   <img_direction>
+    <label> Galereya, rasm va slayd yo'nalishi </label>
+    <left> chapdan o'ngga </left>
+    <right> chapdan o'ngga </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ma'lumotlar bazasi haqida ma'lumot </title>
+    <host>
+     <label> Ma'lumotlar bazasi xost nomi </label>
+     <placeholder> ma'lumotlar bazasi xost nomi </placeholder>
+     <validate> Input Database Hostname </validate>
+    </host>
+    <user>
+     <label> Ma'lumotlar bazasi foydalanuvchi nomi </label>
+     <placeholder> Ma'lumotlar bazasining foydalanuvchi ismi </placeholder>
+     <validate> Ma'lumotlar bazasi foydalanuvchi nomini kiriting </validate>
+    </user>
+    <pass>
+     <label> Ma'lumotlar bazasi paroli </label>
+     <placeholder> ma'lumotlar bazasi paroli </placeholder>
+     <validate> Ma'lumotlar bazasi parolini kiritish </validate>
+    </pass>
+    <db>
+     <label> Ma'lumotlar bazasi nomi </label>
+     <placeholder> Ma'lumotlar bazasi nomi </placeholder>
+     <validate> Ma'lumotlar bazasi nomini kiriting </validate>
+    </db>
+    <gal_table>
+     <label> Galereya jadvalining nomi </label>
+     <placeholder> Galereya jadvalining nomi </placeholder>
+     <validate> Galereya jadvalining nomini kiriting </validate>
+    </gal_table>
+    <img_table>
+     <label> Rasm jadvalining nomi </label>
+     <placeholder> Rasmlar jadvalining nomi </placeholder>
+     <validate> Rasmlar jadvalining nomini kiriting </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Fayllarni yozishga ruxsat berilgan kataloglar</title>
+    <db_alert>
+     <![CDATA[
+    <b> konfiguratsiya </b>, <b> xatolar jurnali </b> va <b> ta'riflar </b> fayllari quyidagi katalogda yaratiladi. Agar siz ushbu katalog nomini o'zgartirmoqchi bo'lsangiz, <b> definitions0.php </b> faylidagi <b> DB_DIR </b> ta'rifini o'zgartiring va ushbu sahifani yangilang.<br/><br/>Agar siz konfiguratsiya fayli, xatolar jurnali va ta'riflar fayli nomini o'zgartirishni xohlasangiz, definitions0.php faylida <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> va <b>DEFINITIONS_FILE</b> ta'riflarini tahrirlang.<br/><br/>Agar sizning tizimingiz unix-ga asoslangan bo'lsa, quyidagi buyruq bilan papkaga yozish uchun ruxsatlarni o'rnating:<br/><b>%s</b><br/><br/>O'rnatishni boshlashdan oldin, quyidagi yo'l mavjudligiga ishonch hosil qiling va katalogga yozish uchun ruxsatlaringiz bor:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    O'rnatishni boshlashdan oldin, quyidagi kataloglar mavjudligiga va kataloglarga yozish uchun ruxsatingiz borligiga ishonch hosil qiling. <br/> <br/> Agar siz quyidagi kataloglardan boshqa kataloglardan foydalanmoqchi bo'lsangiz, agar kataloglar diskda mavjud bo'lmasa, avval kataloglarni yarating va ushbu kataloglarning yozish uchun ruxsatlarini o'rnating va o'rnatishni boshlang.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfiguratsiya, xatolar jurnali va ta'riflar fayllari yo'li</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Yangi galereya saqlanganda quyidagi kataloglar yaratiladi. <b>%d</b> galereya identifikatorini belgilaydi. Ushbu kataloglar yuqorida belgilangan <b> Tasvirlarning asosiy jildi </b> katalogida yaratiladi. Ushbu kataloglarning formatiga mos kelishiga ishonch hosil qiling.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfiguratsiya fayli ilgari yaratilgan. Shuning uchun siz o'rnatishni amalga oshira olmaysiz. Avval konfiguratsiya faylini o'chirib tashlashingiz va keyin o'rnatishni ishga tushirishingiz kerak.</config_alert>
+    <tmp_dir>
+     <label>Tasvirlarning vaqtinchalik papkasi</label>
+     <placeholder>Tasvirlarning vaqtinchalik papkasi</placeholder>
+     <validate>Tasvirlarning vaqtinchalik papkasi</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Kichik rasmlarning vaqtinchalik papkasi</label>
+     <placeholder>Kichik rasmlarning vaqtinchalik papkasi</placeholder>
+     <validate>Kichik rasmlarning vaqtinchalik papkasi</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Kesilgan kichik rasmlarning vaqtinchalik papkasi</label>
+     <placeholder>Kesilgan kichik rasmlarning vaqtinchalik papkasi</placeholder>
+     <validate>Kesilgan kichik rasmlarning vaqtinchalik papkasi</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Slayd tasvirlarning vaqtinchalik jildi</label>
+     <placeholder>Slayd tasvirlarning vaqtinchalik jildi</placeholder>
+     <validate>Slayd tasvirlarning vaqtinchalik jildi</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Tasvirlarning asosiy jildi</label>
+     <placeholder>Tasvirlarning asosiy jildi</placeholder>
+     <validate>Tasvirlarning asosiy jildi</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Rasm fayllari papkasi</label>
+     <placeholder>Rasm fayllari papkasi</placeholder>
+     <validate>Rasm fayllari papkasi</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Kichik rasmlarning papkasi</label>
+     <placeholder>Kichik rasmlarning papkasi</placeholder>
+     <validate>Kichik rasmlarning papkasi</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kesilgan kichik rasmlarning papkasi</label>
+     <placeholder>Kesilgan kichik rasmlarning papkasi</placeholder>
+     <validate>Kesilgan kichik rasmlarning papkasi</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slayd rasmlar papkasi</label>
+     <placeholder>Slayd rasmlar papkasi</placeholder>
+     <validate>Slayd rasmlar papkasi</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML fayl katalogi</label>
+     <placeholder>XML fayl katalogi</placeholder>
+     <validate>XML fayl katalogi</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> O'rnatish. Iltimos, kuting ... </installing>
+    <success> O'rnatish muvaffaqiyatli yakunlandi. </success>
+    <error> O'rnatish tugallanmadi. </error>
+   </alert>
+  
+   <submit> O'rnatishni boshlang </submit>
+   <submit_continue> Davom eting &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galereya menejmenti </title>
+   <header> Galereya menejmenti </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galereya ro'yxati </title>
+   <header> Galereya ro'yxati </header>
+   <sort>
+    <asc> birinchisidan oxirigacha saralash </asc>
+    <desc> oxiridan birinchigacha saralash </desc>
+   </sort>
+   <card>
+    <view>
+     <button> View </button>
+     <title> Galereyani ko'rish </title>
+    </view>
+    <delete>
+     <button> Delete </button>
+     <title> Galereyani o'chirish </title>
+    </delete>
+    <edit>
+     <button> Edit </button>
+     <title> Galereyani tahrirlash </title>
+    </edit>
+    <images>tasvir</images>
+    <date>Vaqt</date>
+    <move> Galereyalarni sichqoncha yordamida sudrab saralashingiz mumkin. </move>
+    <move_mobile>Ob'ektga barmog'ingiz bilan tegib turing va ta'kidlanishini kuting. Ob'ektni tanlagandan so'ng, moslamalarni saralash uchun barmog'ingizni torting.</move_mobile>
+   </card>
+   <alert> Galereya topilmadi. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galereyani o'chirish </label>
+     <close> yopish </close>
+     <text> Ushbu galereyani saytdan o'chirmoqchimisiz? </text>
+     <command> Delete </command>
+     <cancel> bekor qilish </cancel>
+    </del_gallery>
+    <result>
+     <label> Xato </label>
+     <close> yopish </close>
+     <text> </text>
+     <command> Yoping </command>
+    </result>
+   </modal>
+   <save_changes> galereyalar tartibini saqlash </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galereya ko'rinishi </title>
+   <header> Galereya ko'rinishi </header>
+   <alert> Hech qanday rasm topilmadi. </alert>
+   <share>Galereyani baham ko'ring</share>
+   <filedate>Yuklash vaqti</filedate>
+   <filesize>Fayl hajmi</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Buferga nusxalash</label>
+     <close>yopish</close>
+     <text>Havola buferga nusxa olindi</text>
+     <command>Nusxalash</command>
+     <cancel>Yoping</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Yangi galereya yarating </title>
+    <header> Yangi galereya yarating </header>
+   </new>
+   <edit>
+    <title> Galereyani tahrirlash </title>
+    <header> Galereyani tahrirlash </header>
+   </edit>
+   <gallery_info>
+    <title> Galereya haqida ma'lumot </title>
+    <name>
+     <label> Galereya nomi </label>
+     <placeholder> Galereya nomi </placeholder>
+     <validate> Kirish galereyasi nomi </validate>
+    </name>
+    <description>
+     <label> Galereya tavsifi </label>
+     <placeholder> Galereya tavsifi </placeholder>
+     <validate> Kirish galereyasi tavsifi </validate>
+    </description>
+    <keywords>
+     <label> Galereya kalit so'zlari vergul yoki yangi satr bilan ajratilgan </label>
+     <placeholder> Galereya kalit so'zlari vergul yoki yangi satr bilan ajratilgan </placeholder>
+     <validate> Galereya kalit so'zlarini kiriting </validate>
+    </keywords>
+    <submit>
+     <save> Galereyani saqlash </save>
+     <update> Galereyani yangilash </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Tasvirlarni yuklash bo'yicha qo'llanma </title>
+     <body>
+      <![CDATA[
+Qurilmangizdan <b> Rasmlarni ko'rib chiqish </b> tugmasi bilan rasmlarni tanlang va <b> Rasmlarni yuklash </b> tugmasi bilan saytga yuklang. <br/> Qo'llab-quvvatlanadigan rasm formatlari: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Minimal ruxsat etilgan ruxsat: <b>%d x %d px</b> <br/> Maksimal ruxsat etilgan ruxsat: <b>%d x %d px</b> <br/> Bitta faylning maksimal hajmi: <b>%d MB</b> <br/> Har bir galereya uchun rasm soni: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Hammasini tanlang </select_all>
+    <select_del> Tanlangan rasmlarni o'chirish </select_del>
+    <thumb>
+     <exist>
+      <delete> Yuklangan rasmni saytdan o'chirish </delete>
+      <info> Rasm haqida ma'lumot </info>
+     </exist>
+     <new>
+      <delete> Yuklangan rasmni saytdan o'chirish </delete>
+      <cancel> Rasmni yuklashni bekor qilish </cancel>
+      <info> Rasm haqida ma'lumot </info>
+      <rotate> Rasmni aylantirish </rotate>
+      <crop> Rasmni kesish </crop>
+     </new>
+     <move> Tasvirlarni sichqoncha yordamida sudrab saralashingiz mumkin. </move>
+     <move_mobile>Ob'ektga barmog'ingiz bilan tegib turing va ta'kidlanishini kuting. Ob'ektni tanlagandan so'ng, moslamalarni saralash uchun barmog'ingizni torting.</move_mobile>
+    </thumb>
+    <browse> Rasmlarni ko'rib chiqish </browse>
+    <upload> Rasmlarni yuklash </upload>
+    <uploading> Rasmlar tayyorlanmoqdasaytga yuklandi. Yuklash tugamaguncha sahifani yopmang. </uploading>
+    <uploaded> Saytga rasmlar yuklangan. </uploaded>
+    <error>Fayllarni serverga yuklashda ba'zi xatolar yuz berdi.</error>
+    <save_changes> Tasvirlarning o'zgarishini saqlang </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kesish </crop>
+     <cancel> bekor qilish </cancel>
+    </crop>
+    <del_up_img>
+     <label> Rasmni o'chirish </label>
+     <close> yopish </close>
+     <text> Ushbu rasmni veb-saytdan o'chirmoqchimisiz? </text>
+     <command> Delete </command>
+     <cancel> bekor qilish </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Rasmni o'chirish </label>
+     <close> yopish </close>
+     <text> Ushbu rasmni veb-saytdan o'chirmoqchimisiz? </text>
+     <command> Delete </command>
+     <cancel> bekor qilish </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Tanlangan rasmlarni o'chirish </label>
+     <close> yopish </close>
+     <text> Tanlangan rasmlarni veb-saytdan o'chirmoqchimisiz? </text>
+     <command> Delete </command>
+     <cancel> bekor qilish </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Tasvir haqida ma'lumot </label>
+     <close> yopish </close>
+     <filename> File name </filename>
+     <filesize> Fayl hajmi </filesize>
+     <date> Yuklangan sana </date>
+     <title>
+      <label> sarlavha </label>
+      <placeholder> Rasm sarlavhasi </placeholder>
+     </title>
+     <desc>
+      <label> tavsifi </label>
+      <placeholder> Rasm tavsifi </placeholder>
+     </desc>
+     <keyw>
+      <label> Kalit so'zlar </label>
+      <placeholder> Vergul yoki yangi qator bilan ajratilgan kalit so'zlar </placeholder>
+     </keyw>
+     <command> Saqlash / yangilash </command>
+     <cancel> bekor qilish </cancel>
+    </img_info>
+    <result>
+     <label> Xato </label>
+     <close> yopish </close>
+     <text> </text>
+     <command> Yoping </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Serverga ruxsat etilgan yuk uchun rasm sozlamalari </title>
+    <upload_limit>
+     <label> Galereya bo'yicha maksimal rasm soni </label>
+     <placeholder> Galereya bo'yicha maksimal rasm soni </placeholder>
+     <validate> Galereya bo'yicha maksimal rasm sonini kiritish </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Bitta faylning maksimal hajmi (MB) </label>
+     <placeholder> Bitta faylning maksimal hajmi (MB) </placeholder>
+     <validate> Bitta faylning maksimal hajmini (MB) kiriting </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Minimal ruxsat etilgan ruxsat </label>
+     <width>
+      <placeholder> Minimal Width </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </width>
+     <height>
+      <placeholder> Minimal balandlik </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Ruxsat etilgan maksimal ruxsat </label>
+     <width>
+      <placeholder> Maksimal kenglik </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </width>
+     <height>
+      <placeholder> Maksimal balandligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Rasmni konvertatsiya qilish </title>
+    <full_resolution>
+     <label> Rasmning to'liq hajmi </label>
+     <width>
+      <placeholder> Maksimal kenglik </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </width>
+     <height>
+      <placeholder> Maksimal balandligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Kichik rasm hajmi </label>
+     <width>
+      <placeholder> kichik rasm kengligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </width>
+     <height>
+      <placeholder> kichik rasm balandligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Slayd hajmi </label>
+     <width>
+      <placeholder> slayd kengligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </width>
+     <height>
+      <placeholder> slayd balandligi </placeholder>
+      <validate> Qiymatni kiriting </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg sifati </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG kompressi </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigran </title>
+    <label> Filigrandan foydalaning </label>
+    <position> Filigran pozitsiyasi </position>
+    <image> Filigran tasviri </image>
+    <set> Filigranni o'rnating </set>
+    <browse> 1- Filigran rasm faylini ko'rib chiqing </browse>
+    <adjust> 2- Rasmni ramkaga qarab sozlang. </adjust>
+    <upload> 3- Tanlangan faylni yuklash </upload>
+    <uploading> Yuklanmoqda ... </uploading>
+    <uploaded> Yuklandi. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Page </page>
+   <first> birinchi sahifa </first>
+   <prev> Oldingi sahifa </prev>
+   <next> Keyingi sahifa </next>
+   <last> oxirgi sahifa </last>
+  </pagination>
+
+</lang>

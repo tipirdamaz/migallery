@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Basa </title>
+   <label> Pilih Basa </label>
+  </lang>
+
+  <timezone>
+   <title> Zona Wektu </title>
+   <label> Pilih zona wektu </label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Manajemen Galeri </gallery_man>
+   <gallery_list> Dhaptar Galeri </gallery_list>
+   <uploader> Gawe Galeri Anyar </uploader>
+   <back> Bali </back>
+  </nav>
+
+  <install>
+ 
+   <title> Persiyapan MIGallery </title>
+   <header> Persiyapan MIGallery </header>
+
+   <img_direction>
+    <label> Orientasi Galeri, gambar lan slide </label>
+    <left> Ngiwa nengen </left>
+    <right> Saka Kanan Ngiwa </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informasi Database MySQL </title>
+    <host>
+     <label> Jeneng Host Database </label>
+     <placeholder> Jeneng Host Database </placeholder>
+     <validate> Ketik Jeneng Host Database </validate>
+    </host>
+    <user>
+     <label> Jeneng Pangguna Database </label>
+     <placeholder> Jeneng Pangguna Database </placeholder>
+     <validate> Ketik Jeneng Pangguna Database </validate>
+    </user>
+    <pass>
+     <label> Sandhi Database </label>
+     <placeholder> Sandhi Database </placeholder>
+     <validate> Ketik Sandhi Database </validate>
+    </pass>
+    <db>
+     <label> Jeneng Database </label>
+     <placeholder> Jeneng Database </placeholder>
+     <validate> Ketik Jeneng Database </validate>
+    </db>
+    <gal_table>
+     <label> Jeneng Tabel Galeri </label>
+     <placeholder> Jeneng Tabel Galeri </placeholder>
+     <validate> Ketik Jeneng Tabel Galeri </validate>
+    </gal_table>
+    <img_table>
+     <label> Jeneng Tabel Gambar </label>
+     <placeholder> Jeneng Tabel Gambar </placeholder>
+     <validate> Ketik Jeneng Tabel Gambar </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direktori kanggo konten dinamis sing bisa ditulis</title>
+    <db_alert>
+     <![CDATA[
+    <b> konfigurasi </b>, <b> log kesalahan </b> lan <b> definisi </b> file bakal digawe ing jalur ing ngisor iki. Yen sampeyan pengin ngganti jeneng direktori iki, ganti definisi <b> DB_DIR </b> ing file <b> definitions0.php </b> lan refresh kaca iki.<br/><br/>Yen sampeyan pengin ngganti jeneng file konfigurasi, file log kesalahan lan file definisi, ganti definisi <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> lan <b>DEFINITIONS_FILE</b> ing file definitions0.php.<br/><br/>Yen sistem sampeyan adhedhasar unix, atur idin nulis kanthi printah ing ngisor iki:<br/><b>%s</b><br/><br/>Sadurunge miwiti instalasi, priksa manawa ana path ing ngisor iki lan sampeyan duwe idin kanggo nulis menyang direktori:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Sadurunge miwiti instalasi, priksa manawa direktori ing ngisor iki kasedhiya lan sampeyan duwe idin kanggo nulis menyang direktori. <br/> <br/> Yen sampeyan nggunakake direktori liyane saka direktori ing ngisor iki, yen direktori ora ana ing disk, dhisik nggawe direktori lan atur ijin nulis banjur wiwiti instalasi.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Direktori file Konfigurasi, File Log Kesalahan lan File Definisi</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Direktori ing ngisor iki digawe nalika galeri anyar disimpen. <b>%d</b> nemtokake id galeri. Direktori kasebut digawe ing direktori <b> Direktori Dasar Gambar </b> sing ditetepake ing ndhuwur. Priksa manawa format direktori cocog.
+     ]]>
+    </img_dir_alert>
+    <config_alert>File konfigurasi wis digawe sadurunge. Mula, sampeyan ora bisa mbukak persiyapan. Sampeyan luwih dhisik kudu mbusak file konfigurasi banjur mbukak persiyapan.</config_alert>
+    <tmp_dir>
+     <label>Direktori Gambar Sementara</label>
+     <placeholder>Direktori Gambar Sementara</placeholder>
+     <validate>Direktori Gambar Sementara</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Path sementara gambar cilik</label>
+     <placeholder>Path sementara gambar cilik</placeholder>
+     <validate>Path sementara gambar cilik</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Direktori Sementara Thumbnail sing Dipotong</label>
+     <placeholder>Direktori Sementara Thumbnail sing Dipotong</placeholder>
+     <validate>Direktori Sementara Thumbnail sing Dipotong</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Direktori Sementara Gambar Geser</label>
+     <placeholder>Direktori Sementara Gambar Geser</placeholder>
+     <validate>Direktori Sementara Gambar Geser</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Direktori Dasar Gambar</label>
+     <placeholder>Direktori Dasar Gambar</placeholder>
+     <validate>Direktori Dasar Gambar</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Direktori Gambar</label>
+     <placeholder>Direktori Gambar</placeholder>
+     <validate>Direktori Gambar</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direktori Thumbnail</label>
+     <placeholder>Direktori Thumbnail</placeholder>
+     <validate>Direktori Thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Direktori Thumbnail sing Dipotong</label>
+     <placeholder>Direktori Thumbnail sing Dipotong</placeholder>
+     <validate>Direktori Thumbnail sing Dipotong</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Direktori Gambar Geser</label>
+     <placeholder>Direktori Gambar Geser</placeholder>
+     <validate>Direktori Gambar Geser</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Direktori File XML</label>
+     <placeholder>Direktori File XML</placeholder>
+     <validate>Direktori File XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Nginstal. Ngenteni ... </installing>
+    <success> Instalasi rampung kanthi sukses. </success>
+    <error> Instalasi ora bisa rampung. </error>
+   </alert>
+  
+   <submit> Mulai Instalasi </submit>
+   <submit_continue> Terusake &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Manajemen Galeri </title>
+   <header> Manajemen Galeri </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Dhaptar Galeri </title>
+   <header> Dhaptar Galeri </header>
+   <sort>
+    <asc> saka pisanan nganti pungkasan </asc>
+    <desc> wiwit pungkasan nganti dhisik </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Ndeleng </button>
+     <title> Ndeleng Galeri </title>
+    </view>
+    <delete>
+     <button> Mbusak </button>
+     <title> Busak Galeri </title>
+    </delete>
+    <edit>
+     <button> Sunting </button>
+     <title> Owahi Galeri </title>
+    </edit>
+    <images> gambar </images>
+    <date> Tanggal </date>
+    <move> Sampeyan bisa ngurutake galeri kanthi nyeret nganggo mouse. </move>
+    <move_mobile> Tutul terus item nganggo driji banjur enteni supaya disorot. Sawise milih item, seret driji kanggo ngurutake barang kasebut. </move_mobile>
+   </card>
+   <alert> Ora ditemokake galeri. </alert>
+   <modal>
+    <del_gallery>
+     <label> Busak Galeri </label>
+     <close> nutup </close>
+     <text> Apa sampeyan pengin mbusak galeri iki saka situs? </text>
+     <command> Mbusak </command>
+     <cancel> Batal </cancel>
+    </del_gallery>
+    <result>
+     <label> Kesalahan </label>
+     <close> nutup </close>
+     <text> </text>
+     <command> Nutup </command>
+    </result>
+   </modal>
+   <save_changes> Simpen noto galeri </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Tampilan Galeri </title>
+   <header> Tampilan Galeri </header>
+   <alert> Ora ditemokake gambar. </alert>
+   <share> Galeri Enggo bareng </share>
+   <filedate> Tanggal Upload </filedate>
+   <filesize> Ukuran File </filesize>
+   <modal>
+    <copy_clipboard>
+     <label> Salin menyang Papan Klip </label>
+     <close> nutup </close>
+     <text> Link disalin menyang clipboard </text>
+     <command> Copy </command>
+     <cancel> Nutup </cancel>
+    </copy_clipboard>
+   </modal>
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Gawe Galeri Anyar </title>
+    <header> Gawe Galeri Anyar </header>
+   </new>
+   <edit>
+    <title> Owahi Galeri </title>
+    <header> Sunting Galeri </header>
+   </edit>
+   <gallery_info>
+    <title> Informasi Galeri </title>
+    <name>
+     <label> Jeneng Galeri </label>
+     <placeholder> Jeneng Galeri </placeholder>
+     <validate> Ketik Jeneng Galeri </validate>
+    </name>
+    <description>
+     <label> Katrangan Galeri </label>
+     <placeholder> Deskripsi Galeri </placeholder>
+     <validate> Ketik Deskripsi Galeri </validate>
+    </description>
+    <keywords>
+     <label> Kata kunci galeri dipisahake karo koma utawa istirahat garis &#x23CE; </label>
+     <placeholder> Kata kunci galeri dipisahake karo koma utawa istirahat garis &#x23CE; </placeholder>
+     <validate> Ketik Kata Kunci Galeri </validate>
+    </keywords>
+    <submit>
+     <save> Simpen Galeri </save>
+     <update> Nganyari Galeri </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Pandhuan Pengunggah Gambar </title>
+     <body>
+      <![CDATA[
+Pilih gambar saka piranti kanthi tombol <b> Pilih Gambar </b> lan upload menyang situs kanthi tombol <b> Upload Gambar </b>. <br/> Format Gambar sing Didhukung: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Resolusi Minimal sing Diidini: <b>%d x %d px</b> <br/> Resolusi Maksimum sing Diidini: <b>%d x %d px</b> <br/> Ukuran Maksimum File Tunggal: <b>%d MB</b> <br/> Cacah Gambar saben Galeri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Pilih Kabeh </select_all>
+    <select_del> Mbusak Gambar sing Dipilih </select_del>
+    <thumb>
+     <exist>
+      <delete> Mbusak Gambar sing Diunggah Saka Situs </delete>
+      <info> Info Gambar </info>
+     </exist>
+     <new>
+      <delete> Mbusak Gambar sing Diunggah Saka Situs </delete>
+      <cancel> Batal Unggah Gambar </cancel>
+      <info> Info Gambar </info>
+      <rotate> Puter Gambar </rotate>
+      <crop> Potong Gambar </crop>
+     </new>
+     <move> Sampeyan bisa ngurutake gambar kanthi nyeret nganggo mouse. </move>
+     <move_mobile> Tutul terus item nganggo driji banjur enteni supaya disorot. Sawise milih item, seret driji kanggo ngurutake barang kasebut. </move_mobile>
+    </thumb>
+    <browse> Pilih Gambar </browse>
+    <upload> Upload Gambar </upload>
+    <uploading> Gambar lagi diunggah menyang situs iki. Aja nutup kaca nganti upload wis rampung. </uploading>
+    <uploaded> Gambar wis diunggah menyang situs iki. </uploaded>
+    <error> Ana sawetara kesalahan nalika ngunggah file menyang server. </error>
+    <save_changes> Simpen Owahi Gambar </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Potong </crop>
+     <cancel> Batal </cancel>
+    </crop>
+    <del_up_img>
+     <label> Mbusak Gambar </label>
+     <close> nutup </close>
+     <text> Apa sampeyan pengin mbusak gambar iki saka situs web? </text>
+     <command> Mbusak </command>
+     <cancel> Batal </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Mbusak Gambar </label>
+     <close> nutup </close>
+     <text> Apa sampeyan pengin mbusak gambar iki saka situs web? </text>
+     <command> Mbusak </command>
+     <cancel> Batal </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Mbusak Gambar sing Dipilih </label>
+     <close> nutup </close>
+     <text> Apa sampeyan pengin mbusak gambar sing dipilih saka situs web? </text>
+     <command> Mbusak </command>
+     <cancel> Batal </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Info Gambar </label>
+     <close> nutup </close>
+     <filename> Jeneng File </filename>
+     <filesize> Ukuran File </filesize>
+     <date> Tanggal Upload </date>
+     <title>
+      <label> Judhul </label>
+      <placeholder> Judhul Gambar </placeholder>
+     </title>
+     <desc>
+      <label> Katrangan </label>
+      <placeholder> Katrangan Gambar </placeholder>
+     </desc>
+     <keyw>
+      <label> Kata Kunci </label>
+      <placeholder> Tembung kunci dipisahake karo koma utawa garis anyar &#x23CE; </placeholder>
+     </keyw>
+     <command> Simpen / Nganyari </command>
+     <cancel> Batal </cancel>
+    </img_info>
+    <result>
+     <label> Kesalahan </label>
+     <close> nutup </close>
+     <text> </text>
+     <command> Nutup </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Setelan gambar kanggo upload sing diidinake </title>
+    <upload_limit>
+     <label> Jumlah gambar maksimum saben galeri </label>
+     <placeholder> Jumlah gambar maksimum saben galeri </placeholder>
+     <validate> Ketik jumlah gambar maksimum saben galeri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Ukuran maksimum siji file (MB) </label>
+     <placeholder> Ukuran maksimum siji file (MB) </placeholder>
+     <validate> Ketik ukuran maksimum siji file (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Resolusi Min sing Diidinake </label>
+     <width>
+      <placeholder> Jembar Min </placeholder>
+      <validate> Ketik regane </validate>
+     </width>
+     <height>
+      <placeholder> Min Dhuwur </placeholder>
+      <validate> Ketik regane </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Resolusi Maksimum sing Diidinake </label>
+     <width>
+      <placeholder> Jembar Maks </placeholder>
+      <validate> Ketik regane </validate>
+     </width>
+     <height>
+      <placeholder> Dhuwur Maks </placeholder>
+      <validate> Ketik regane </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformasi Gambar </title>
+    <full_resolution>
+     <label> Gambar Ukuran Lengkap </label>
+     <width>
+      <placeholder> Jembar Maks </placeholder>
+      <validate> Ketik regane </validate>
+     </width>
+     <height>
+      <placeholder> Dhuwur Maks </placeholder>
+      <validate> Ketik regane </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Ukuran Thumbnail </label>
+     <width>
+      <placeholder> Jembar Jempol </placeholder>
+      <validate> Ketik regane </validate>
+     </width>
+     <height>
+      <placeholder> Dhuwur Thumb </placeholder>
+      <validate> Ketik regane </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Ukuran Geser </label>
+     <width>
+      <placeholder> Lebar Geser </placeholder>
+      <validate> Ketik regane </validate>
+     </width>
+     <height>
+      <placeholder> Dhuwur Geser </placeholder>
+      <validate> Ketik regane </validate>
+     </height>
+    </slide_resolution>
+     <jpg_quality>
+      <label> Kualitas Jpeg </label>
+     </jpg_quality>
+     <png_compress>
+      <label> Kompresi PNG </label>
+     </png_compress>
+    </transform>
+
+    <watermark>
+     <title> Watermark </title>
+     <label> Gunakake Watermark </label>
+     <position> Posisi Watermark </position>
+     <image> Gambar Watermark </image>
+     <set> Setel Watermark </set>
+     <browse> 1- Telusuri Gambar Gambar Watermark </browse>
+     <adjust> 2- Nyetel gambar miturut pigura. </adjust>
+     <upload> 3- Upload File sing Dipilih </upload>
+     <uploading> Ngunggah ... </uploading>
+     <uploaded> Diunggah. </uploaded>
+    </watermark>
+
+   </image>
+  
+   <pagination>
+    <page> Kaca </page>
+    <first> Kaca Pertama </first>
+    <prev> Kaca Sadurunge </prev>
+    <next> Kaca Sabanjure </next>
+    <last> Kaca Pungkasan </last>
+   </pagination>
+
+</lang>

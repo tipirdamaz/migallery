@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Keel </title>
+   <label> Vali keel </label>
+  </lang>
+
+  <timezone>
+   <title>Ajavöönd</title>
+   <label>Valige Ajavöönd</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerii haldamine </gallery_man>
+   <gallery_list> Galeriiloend </gallery_list>
+   <uploader> Loo uus galerii </uploader>
+   <back> Tagasi </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery seadistamine </title>
+   <header> MIGallery seadistamine </header>
+
+   <img_direction>
+    <label> galerii, pilt ja slaidi suund </label>
+    <left> vasakult paremale </left>
+    <right> paremalt vasakule </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-i andmebaasiteave </title>
+    <host>
+     <label> Andmebaasi hostinimi </label>
+     <placeholder> Andmebaasi hostinimi </placeholder>
+     <validate> Sisestage andmebaasi hostinimi </validate>
+    </host>
+    <user>
+     <label> Andmebaasi kasutajanimi </label>
+     <placeholder> Andmebaasi kasutajanimi </placeholder>
+     <validate> Sisestage Andmebaasi kasutajanimi </validate>
+    </user>
+    <pass>
+     <label> Andmebaasi parool </label>
+     <placeholder> Andmebaasi parool </placeholder>
+     <validate> Sisestage Andmebaasi parool </validate>
+    </pass>
+    <db>
+     <label> Andmebaasi nimi </label>
+     <placeholder> Andmebaasi nimi </placeholder>
+     <validate> Sisestage Andmebaasi nimi </validate>
+    </db>
+    <gal_table>
+     <label> Pildigalerii tabeli nimi </label>
+     <placeholder> Pildigalerii tabeli nimi </placeholder>
+     <validate> Sisestage Pildigalerii tabeli nimi </validate>
+    </gal_table>
+    <img_table>
+     <label> Pilditabeli nimi </label>
+     <placeholder> Pilditabeli nimi </placeholder>
+     <validate> Sisestage Pilditabeli nimi </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Kirjutatava dünaamilise sisu kataloogid</title>
+    <db_alert>
+     <![CDATA[
+    Allpool on kataloog, kuhu luuakse failid <b> konfiguratsioon </b>, <b> vea logi </b> ja <b> definitsioonid </b>. Kui soovite selle kataloogi ümber nimetada, muutke failis <b> definitions0.php </b> määratlust <b> DB_DIR </b> ja värskendage seda lehte. <br/> <br/> Kui soovite ümber nimetada konfiguratsiooni-, tõrke- ja definitsioonifailid, muutke <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> ja <b> DEFINITIONS_FILE</b> 'definitsioone failis definitions0.php. <br/> <br/> Kui teie süsteem on Unix-põhine, määrake kirjutamisõigused järgmise käsuga: <br/> <b>%s</b> <br/> <br/> Enne kui alustate installimisel veenduge, et järgmine tee oleks olemas ja teil on kataloogile kirjutusõigus:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Enne installimise alustamist veenduge, et järgmised kataloogid oleksid saadaval ja teil oleks luba kataloogidesse kirjutamiseks. <br/> <br/> Kui kavatsete kasutada muid katalooge kui järgmised kataloogid, siis kui katalooge kettal pole, looge kõigepealt kataloogid, määrake kirjutamisõigused ja alustage installimist.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfiguratsiooni-, tõrkelogi ja definitsioonifailide tee</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Uue galerii salvestamisel luuakse järgmised kataloogid. <b>%d</b> tähistab galerii ID-d. Need kataloogid luuakse ülalpool määratletud kataloogis <b> Pildibaasi tee </b>. Kontrollige, kas kataloogide formaat on sobiv.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfiguratsioonifail on varem loodud. Seetõttu ei saa te seadistust käivitada. Kõigepealt peate konfigureerimisfaili kustutama ja seejärel installi käivitama.</config_alert>
+    <tmp_dir>
+     <label>Piltide ajutine kataloog</label>
+     <placeholder>Piltide ajutine kataloog</placeholder>
+     <validate>Piltide ajutine kataloog</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Pisipildi ajutine kataloog</label>
+     <placeholder>Pisipildi ajutine kataloog</placeholder>
+     <validate>Pisipildi ajutine kataloog</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Kärbitud pisipildi ajutine kataloog</label>
+     <placeholder>Kärbitud pisipildi ajutine kataloog</placeholder>
+     <validate>Kärbitud pisipildi ajutine kataloog</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Ajutine kataloog slaidi suuruse pildi jaoks</label>
+     <placeholder>Ajutine kataloog slaidi suuruse pildi jaoks</placeholder>
+     <validate>Ajutine kataloog slaidi suuruse pildi jaoks</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Pildibaasi tee</label>
+     <placeholder>Pildibaasi tee</placeholder>
+     <validate>Pildibaasi tee</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Piltide kataloog</label>
+     <placeholder>Piltide kataloog</placeholder>
+     <validate>Piltide kataloog</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Pisipiltide kataloog</label>
+     <placeholder>Pisipiltide kataloog</placeholder>
+     <validate>Pisipiltide kataloog</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kärbitud pisipiltide kataloog</label>
+     <placeholder>Kärbitud pisipiltide kataloog</placeholder>
+     <validate>Kärbitud pisipiltide kataloog</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slaidisuurune pildikataloog</label>
+     <placeholder>Slaidisuurune pildikataloog</placeholder>
+     <validate>Slaidisuurune pildikataloog</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-failide kataloog</label>
+     <placeholder>XML-failide kataloog</placeholder>
+     <validate>XML-failide kataloog</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Installimine. Palun oodake ... </installing>
+    <success> Installimine õnnestus edukalt. </success>
+    <error> Installimist ei õnnestunud lõpule viia. </error>
+   </alert>
+  
+   <submit> Alusta installimist </submit>
+   <submit_continue> Jätka &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerii haldamine </title>
+   <header> Galerii haldamine </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galeriiloend </title>
+   <header> Galeriide loend </header>
+   <sort>
+    <asc> sorteeri esimesest viimaseni </asc>
+    <desc> sorteeri viimasest esimesse </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Vaade </button>
+     <title> Kuva galerii </title>
+    </view>
+    <delete>
+     <button> Kustuta </button>
+     <title> Kustuta galerii </title>
+    </delete>
+    <edit>
+     <button> Muuda </button>
+     <title> Redigeeri galeriid </title>
+    </edit>
+    <images>pilte</images>
+    <date>Kuupäev</date>
+    <move> Galeriisid saab sortida hiirega lohistades. </move>
+    <move_mobile>Puudutage üksust sõrmega ja hoidke seda ning oodake selle valimist. Pärast üksuse valimist saate neid sõrmega lohistades sortida.</move_mobile>
+   </card>
+   <alert> Galeriid ei leitud. </alert>
+   <modal>
+    <del_gallery>
+     <label> Kustuta galerii </label>
+     <close> sulge </close>
+     <text> Kas soovite selle galerii saidilt kustutada? </text>
+     <command> Kustuta </command>
+     <cancel> Tühista </cancel>
+    </del_gallery>
+    <result>
+     <label> Viga </label>
+     <close> sulge </close>
+     <text> </text>
+     <command> Sulge </command>
+    </result>
+   </modal>
+   <save_changes> Salvesta galerii sortimine </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galeriivaade </title>
+   <header> Galeriivaade </header>
+   <alert> Pilti ei leitud. </alert>
+   <share>Jagage seda galeriid</share>
+   <filedate>Üleslaadimise kuupäev</filedate>
+   <filesize>Faili suurus</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopeerida lõikelauale</label>
+     <close>sulge</close>
+     <text>Link kopeeriti lõikelauale</text>
+     <command>Kopeeri</command>
+     <cancel>Sulge</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Loo uus galerii </title>
+    <header> Loo uus galerii </header>
+   </new>
+   <edit>
+    <title> Redigeeri galeriid </title>
+    <header> Redigeeri galeriid </header>
+   </edit>
+   <gallery_info>
+    <title> Galerii teave </title>
+    <name>
+     <label> galerii nimi </label>
+     <placeholder> galerii nimi </placeholder>
+     <validate> Sisestage galerii nimi </validate>
+    </name>
+    <description>
+     <label> galerii kirjeldus </label>
+     <placeholder> Galerii kirjeldus </placeholder>
+     <validate> Sisendgalerii kirjeldus </validate>
+    </description>
+    <keywords>
+     <label> Galerii märksõnad eraldatakse komadega või reavahetustega </label>
+     <placeholder> Galerii märksõnad eraldatakse komadega või reavahetustega </placeholder>
+     <validate> Sisestage galerii märksõnad </validate>
+    </keywords>
+    <submit>
+     <save> Salvesta galerii </save>
+     <update> Värskenda galeriid </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Üleslaadijate juhend </title>
+     <body>
+      <![CDATA[
+Valige oma seadmest pildid nupuga <b> Sirvige pilte </b> ja laadige saidile üles nupuga <b> Laadi üles pilte </b>. <br/> Toetatud pildivormingud: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Lubatud minimaalne eraldusvõime: <b>%d x %d px</b> <br/> Lubatud maksimaalne eraldusvõime: <b>%d x %d px</b> <br/> Ühe faili maksimaalne suurus: <b>%d MB</b> <br/> Piltide arv galeriis: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Valige kõik </select_all>
+    <select_del> Kustuta valitud </select_del>
+    <thumb>
+     <exist>
+      <delete> Kustuta üleslaaditud pilt saidilt </delete>
+      <info> Pilditeave </info>
+     </exist>
+     <new>
+      <delete> Kustuta üleslaaditud pilt saidilt </delete>
+      <cancel> Tühista pildi üleslaadimine </cancel>
+      <info> Pilditeave </info>
+      <rotate> Pööra pilti </rotate>
+      <crop> Kärbi pilti </crop>
+     </new>
+     <move> Pilte saab sortida hiirega lohistades. </move>
+     <move_mobile>Puudutage üksust sõrmega ja hoidke seda ning oodake selle valimist. Pärast üksuse valimist saate neid sõrmega lohistades sortida.</move_mobile>
+    </thumb>
+    <browse> Sirvige pilte </browse>
+    <upload> Laadi üles pilte </upload>
+    <uploading> Pilte laaditakse saidile üles. Ärge sulgege lehte enne, kui üleslaadimine on lõpule jõudnud. </uploading>
+    <uploaded> Pildid on saidile üles laaditud. </uploaded>
+    <error>Failide serverisse üleslaadimisel ilmnes mõningaid tõrkeid.</error>
+    <save_changes> Salvesta pildimuudatused </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kärbi </crop>
+     <cancel> Tühista </cancel>
+    </crop>
+    <del_up_img>
+     <label> Kustuta pilt </label>
+     <close> sulge </close>
+     <text> Kas soovite selle pildi saidilt kustutada? </text>
+     <command> Kustuta </command>
+     <cancel> Tühista </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Kustuta pilt </label>
+     <close> sulge </close>
+     <text> Kas soovite selle pildi saidilt kustutada? </text>
+     <command> Kustuta </command>
+     <cancel> Tühista </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Kustuta valitud pildid </label>
+     <close> sulge </close>
+     <text> Kas soovite valitud pildid saidilt kustutada? </text>
+     <command> Kustuta </command>
+     <cancel> Tühista </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> pilditeave </label>
+     <close> sulge </close>
+     <filename> faili nimi </filename>
+     <filesize> faili suurus </filesize>
+     <date> Üleslaadimise kuupäev </date>
+     <title>
+      <label> pealkiri </label>
+      <placeholder> Pildi pealkiri </placeholder>
+     </title>
+     <desc>
+      <label> kirjeldus </label>
+      <placeholder> Pildi kirjeldus </placeholder>
+     </desc>
+     <keyw>
+      <label> Märksõnad </label>
+      <placeholder> Koma või uue reaga eraldatud märksõnad </placeholder>
+     </keyw>
+     <command> Salvesta / uuenda </command>
+     <cancel> Tühista </cancel>
+    </img_info>
+    <result>
+     <label> Viga </label>
+     <close> sulge </close>
+     <text> </text>
+     <command> Sulge </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Üleslaaditava pildi seaded </title>
+    <upload_limit>
+     <label> Maksimaalne piltide arv galeriis </label>
+     <placeholder> Maksimaalne piltide arv galeriis </placeholder>
+     <validate> Sisestage galerii maksimaalne piltide arv </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ühe faili maksimaalne suurus (MB) </label>
+     <placeholder> Ühe faili maksimaalne suurus (MB) </placeholder>
+     <validate> Sisestage ühe faili maksimaalne suurus (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Lubatav minimaalne eraldusvõime </label>
+     <width>
+      <placeholder> Min. laius </placeholder>
+      <validate> Sisendväärtus </validate>
+     </width>
+     <height>
+      <placeholder> Min Kõrgus </placeholder>
+      <validate> Sisendväärtus </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Lubatud maksimaalne eraldusvõime </label>
+     <width>
+      <placeholder> Max Width </placeholder>
+      <validate> Sisendväärtus </validate>
+     </width>
+     <height>
+      <placeholder> Max Height </placeholder>
+      <validate> Sisendväärtus </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Pildi teisendamine </title>
+    <full_resolution>
+     <label> Pilt täissuuruses </label>
+     <width>
+      <placeholder> Max Width </placeholder>
+      <validate> Sisendväärtus </validate>
+     </width>
+     <height>
+      <placeholder> Max Height </placeholder>
+      <validate> Sisendväärtus </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> pisipildi suurus </label>
+     <width>
+      <placeholder> pöidla laius </placeholder>
+      <validate> Sisendväärtus </validate>
+     </width>
+     <height>
+      <placeholder> Pöidla kõrgus </placeholder>
+      <validate> Sisendväärtus </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> slaidi suurus </label>
+     <width>
+      <placeholder> Slide Width </placeholder>
+      <validate> Sisendväärtus </validate>
+     </width>
+     <height>
+      <placeholder> Slaidi kõrgus </placeholder>
+      <validate> Sisendväärtus </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> JPEG-kvaliteet </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG tihendamine </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Vesimärk </title>
+    <label> Kasuta vesimärki </label>
+    <position> Vesimärgi asukoht </position>
+    <image> Vesimärgi pilt </image>
+    <set> Vesimärgi määramine </set>
+    <browse> 1- Sirvige vesimärgi pildifaili </browse>
+    <adjust> 2 - reguleerige pilti vastavalt raamile. </adjust>
+    <upload> 3- Valitud faili üleslaadimine </upload>
+    <uploading> Üleslaadimine ... </uploading>
+    <uploaded> üles laaditud. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> leht </page>
+   <first> esimene leht </first>
+   <prev> Eelmine leht </prev>
+   <next> Järgmine leht </next>
+   <last> Viimane leht </last>
+  </pagination>
+
+</lang>

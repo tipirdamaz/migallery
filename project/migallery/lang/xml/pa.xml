@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ਭਾਸ਼ਾ </title>
+   <label> ਭਾਸ਼ਾ ਚੁਣੋ </label>
+  </lang>
+
+  <timezone>
+   <title>ਸਮਾਂ ਖੇਤਰ</title>
+   <label>ਟਾਈਮ ਜ਼ੋਨ ਚੁਣੋ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> ਗੈਲਰੀ ਪ੍ਰਬੰਧਨ </gallery_man>
+   <gallery_list> ਗੈਲਰੀ ਸੂਚੀ </gallery_list>
+   <uploader> ਨਵੀਂ ਗੈਲਰੀ ਬਣਾਓ </uploader>
+   <back> ਵਾਪਸ </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery ਸਥਾਪਨਾ ਕਰਨਾ </title>
+   <header> MIGallery ਸਥਾਪਨਾ ਕਰਨਾ </header>
+
+   <img_direction>
+    <label> ਗੈਲਰੀ, ਚਿੱਤਰ ਅਤੇ ਸਲਾਇਡ ਦਿਸ਼ਾ </label>
+    <left> ਖੱਬੇ ਤੋਂ ਸੱਜੇ </left>
+    <right> ਸੱਜੇ ਤੋਂ ਖੱਬੇ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ਡਾਟਾਬੇਸ ਜਾਣਕਾਰੀ </title>
+    <host>
+     <label> ਡਾਟਾਬੇਸ ਹੋਸਟ-ਨਾਮ </label>
+     <placeholder> ਡਾਟਾਬੇਸ ਹੋਸਟਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਡੇਟਾਬੇਸ ਹੋਸਟ-ਨਾਂ </validate>
+    </host>
+    <user>
+     <label> ਡਾਟਾਬੇਸ ਉਪਭੋਗਤਾ ਨਾਮ </label>
+     <placeholder> ਡਾਟਾਬੇਸ ਉਪਭੋਗਤਾ ਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਡਾਟਾਬੇਸ ਯੂਜ਼ਰਨੇਨਾਮ </validate>
+    </user>
+    <pass>
+     <label> ਡਾਟਾਬੇਸ ਪਾਸਵਰਡ </label>
+     <placeholder> ਡਾਟਾਬੇਸ ਪਾਸਵਰਡ </placeholder>
+     <validate> ਇਨਪੁਟ ਡਾਟਾਬੇਸ ਪਾਸਵਰਡ </validate>
+    </pass>
+    <db>
+     <label> ਡੇਟਾਬੇਸ ਦਾ ਨਾਮ </label>
+     <placeholder> ਡਾਟਾਬੇਸ ਦਾ ਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਡੇਟਾਬੇਸ ਦਾ ਨਾਮ </validate>
+    </db>
+    <gal_table>
+     <label> ਗੈਲਰੀ ਟੇਬਲ ਦਾ ਨਾਮ </label>
+     <placeholder> ਗੈਲਰੀ ਟੇਬਲ ਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਗੈਲਰੀ ਟੇਬਲ ਦਾ ਨਾਮ </validate>
+    </gal_table>
+    <img_table>
+     <label> ਚਿੱਤਰ ਸਾਰਣੀ ਦਾ ਨਾਮ </label>
+     <placeholder> ਚਿੱਤਰ ਸਾਰਣੀ ਦਾ ਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਚਿੱਤਰ ਟੇਬਲ ਦਾ ਨਾਮ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>ਲਿਖਣਯੋਗ ਗਤੀਸ਼ੀਲ ਸਮੱਗਰੀ ਲਈ ਡਾਇਰੈਕਟਰੀਆਂ</title>
+    <db_alert>
+     <![CDATA[
+    ਹੇਠ ਦਿੱਤੀ ਡਾਇਰੈਕਟਰੀ ਹੈ ਜਿਥੇ <b> ਕੌਂਫਿਗਰੇਸ਼ਨ </b>, <b> ਬੱਗ ਰਿਪੋਰਟ </b> ਅਤੇ <b> ਪਰਿਭਾਸ਼ਾ </b> ਫਾਈਲਾਂ ਬਣਾਈਆਂ ਜਾਣਗੀਆਂ. ਜੇ ਤੁਸੀਂ ਇਸ ਡਾਇਰੈਕਟਰੀ ਦਾ ਨਾਮ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ <b> definitions0.php </b> ਫਾਈਲ ਵਿੱਚ <b>DB_DIR</b> ਪਰਿਭਾਸ਼ਾ ਬਦਲੋ ਅਤੇ ਇਸ ਪੇਜ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ.<br/><br/>ਜੇ ਤੁਸੀਂ ਕੌਂਫਿਗਰੇਸ਼ਨ ਫਾਈਲ, ਐਰਰ ਲੌਗ ਫਾਈਲ ਅਤੇ ਪਰਿਭਾਸ਼ਾ ਫਾਈਲ ਦਾ ਨਾਮ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> ਅਤੇ <b>DEFINITIONS_FILE</b> ਦੀ ਪਰਿਭਾਸ਼ਾ definitions0.php ਫਾਈਲ ਤੋਂ ਬਦਲੋ.<br/><br/>ਜੇ ਤੁਹਾਡਾ ਸਿਸਟਮ ਯੂਨਿਕਸ ਅਧਾਰਿਤ ਹੈ, ਹੇਠ ਦਿੱਤੀ ਕਮਾਂਡ ਨਾਲ ਫੋਲਡਰ ਵਿਚ ਅਧਿਕਾਰ ਨਿਰਧਾਰਤ ਕਰੋ:<br/><b>%s</b><br/><br/>ਇੰਸਟਾਲੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਹੇਠਲਾ ਮਾਰਗ ਮੌਜੂਦ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਲਿਖਣ ਦੇ ਅਧਿਕਾਰ ਹਨ:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ਇੰਸਟਾਲੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ, ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਹੇਠ ਲਿਖੀਆਂ ਡਾਇਰੈਕਟਰੀਆਂ ਉਪਲਬਧ ਹਨ ਅਤੇ ਤੁਹਾਨੂੰ ਡਾਇਰੈਕਟਰੀਆਂ ਨੂੰ ਲਿਖਣ ਦਾ ਅਧਿਕਾਰ ਹੈ. <br/> <br/> ਜੇ ਤੁਸੀਂ ਹੇਠ ਲਿਖੀਆਂ ਡਾਇਰੈਕਟਰੀਆਂ ਤੋਂ ਇਲਾਵਾ ਡਾਇਰੈਕਟਰੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰ ਰਹੇ ਹੋ, ਜੇ ਡਾਇਰੈਕਟਰੀਆਂ ਡਿਸਕ ਤੇ ਮੌਜੂਦ ਨਹੀਂ ਹਨ, ਪਹਿਲਾਂ ਡਾਇਰੈਕਟਰੀਆਂ ਬਣਾਓ ਅਤੇ ਇਨ੍ਹਾਂ ਡਾਇਰੈਕਟਰੀਆਂ ਦੇ ਲਿਖਣ ਅਧਿਕਾਰ ਨਿਰਧਾਰਤ ਕਰੋ ਅਤੇ ਇੰਸਟਾਲੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ਕੌਨਫਿਗਰੇਸ਼ਨ, ਗਲਤੀ ਲਾਗ ਅਤੇ ਪਰਿਭਾਸ਼ਾ ਫਾਇਲਾਂ ਦਾ ਮਾਰਗ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    ਹੇਠਲੀ ਡਾਇਰੈਕਟਰੀਆਂ ਬਣਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ ਜਦੋਂ ਨਵੀਂ ਗੈਲਰੀ ਸੇਵ ਹੁੰਦੀ ਹੈ. <b>%d</b> ਗੈਲਰੀ id ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ. ਇਹ ਡਾਇਰੈਕਟਰੀਆਂ ਉੱਪਰ ਦਰਸਾਏ ਗਏ <b> ਚਿੱਤਰ ਬੇਸ ਡਾਇਰੈਕਟਰੀ </b> ਡਾਇਰੈਕਟਰੀ ਵਿੱਚ ਬਣੀਆਂ ਹਨ. ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕਰੋ ਕਿ ਇਨ੍ਹਾਂ ਡਾਇਰੈਕਟਰੀਆਂ ਦਾ ਫਾਰਮੈਟ isੁਕਵਾਂ ਹੈ.
+     ]]>
+    </img_dir_alert>
+    <config_alert>ਕੌਨਫਿਗਰੇਸ਼ਨ ਫਾਈਲ ਪਹਿਲਾਂ ਬਣਾਈ ਗਈ ਹੈ. ਇਸ ਲਈ, ਤੁਸੀਂ ਇੰਸਟਾਲੇਸ਼ਨ ਨੂੰ ਨਹੀਂ ਚਲਾ ਸਕਦੇ. ਤੁਹਾਨੂੰ ਪਹਿਲਾਂ ਕਨਫਿਗਰੇਸ਼ਨ ਫਾਈਲ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੀਦਾ ਹੈ ਅਤੇ ਫਿਰ ਇੰਸਟਾਲੇਸ਼ਨ ਨੂੰ ਚਲਾਉਣਾ ਚਾਹੀਦਾ ਹੈ.</config_alert>
+    <tmp_dir>
+     <label>ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>ਕੱਟੇ ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਕੱਟੇ ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਕੱਟੇ ਥੰਬਨੇਲ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>ਸਲਾਈਡ ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਸਲਾਈਡ ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਸਲਾਈਡ ਚਿੱਤਰ ਦੀ ਅਸਥਾਈ ਡਾਇਰੈਕਟਰੀ</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>ਚਿੱਤਰ ਬੇਸ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਚਿੱਤਰ ਬੇਸ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਚਿੱਤਰ ਬੇਸ ਡਾਇਰੈਕਟਰੀ</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>ਥੰਬਨੇਲ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਥੰਬਨੇਲ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਥੰਬਨੇਲ ਡਾਇਰੈਕਟਰੀ</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>ਕੱਟੇ ਥੰਮਨੇਲ ਦੀ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਕੱਟੇ ਥੰਮਨੇਲ ਦੀ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਕੱਟੇ ਥੰਮਨੇਲ ਦੀ ਡਾਇਰੈਕਟਰੀ</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>ਸਲਾਇਡ ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>ਸਲਾਇਡ ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>ਸਲਾਇਡ ਚਿੱਤਰ ਡਾਇਰੈਕਟਰੀ</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ਫਾਈਲ ਡਾਇਰੈਕਟਰੀ</label>
+     <placeholder>XML ਫਾਈਲ ਡਾਇਰੈਕਟਰੀ</placeholder>
+     <validate>XML ਫਾਈਲ ਡਾਇਰੈਕਟਰੀ</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ਇੰਸਟੌਲ ਕਰ ਰਿਹਾ ਹੈ. ਕ੍ਰਿਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ... </installing>
+    <success> ਇੰਸਟਾਲੇਸ਼ਨ ਸਫਲਤਾਪੂਰਕ ਮੁਕੰਮਲ ਹੋਈ. </success>
+    <error> ਇੰਸਟਾਲੇਸ਼ਨ ਪੂਰੀ ਨਹੀਂ ਹੋ ਸਕੀ. </error>
+   </alert>
+  
+   <submit> ਇੰਸਟਾਲੇਸ਼ਨ ਸ਼ੁਰੂ ਕਰੋ </submit>
+   <submit_continue> ਜਾਰੀ ਰੱਖੋ &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> ਗੈਲਰੀ ਪ੍ਰਬੰਧਨ </title>
+   <header> ਗੈਲਰੀ ਪ੍ਰਬੰਧਨ </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> ਗੈਲਰੀ ਸੂਚੀ </title>
+   <header> ਗੈਲਰੀ ਸੂਚੀ </header>
+   <sort>
+    <asc> ਪਹਿਲੇ ਤੋਂ ਲੈ ਕੇ ਆਖਰੀ ਤੱਕ ਕ੍ਰਮਬੱਧ </asc>
+    <desc> ਪਿਛਲੇ ਤੋਂ ਪਹਿਲੇ ਤੱਕ ਕ੍ਰਮਬੱਧ </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ਦੇਖੋ </button>
+     <title> ਗੈਲਰੀ ਵੇਖੋ </title>
+    </view>
+    <delete>
+     <button> ਮਿਟਾਓ </button>
+     <title> ਗੈਲਰੀ ਮਿਟਾਓ </title>
+    </delete>
+    <edit>
+     <button> ਸੰਪਾਦਿਤ ਕਰੋ </button>
+     <title> ਸੋਧ ਗੈਲਰੀ </title>
+    </edit>
+    <images>ਚਿੱਤਰ</images>
+    <date>ਤਾਰੀਖ਼</date>
+    <move> ਤੁਸੀਂ ਗੈਲਰੀਆਂ ਨੂੰ ਮਾ theਸ ਨਾਲ ਖਿੱਚ ਕੇ ਛਾਂਟ ਸਕਦੇ ਹੋ. </move>
+    <move_mobile>ਆਪਣੀ ਉਂਗਲ ਨਾਲ ਇਕ ਚੀਜ਼ ਨੂੰ ਟੈਪ ਕਰੋ ਅਤੇ ਹੋਲਡ ਕਰੋ ਅਤੇ ਇਸਦੇ ਉਭਾਰਨ ਲਈ ਉਡੀਕ ਕਰੋ. ਇਕ ਵਸਤੂ ਦੀ ਚੋਣ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਆਪਣੀ ਉਂਗਲ ਨੂੰ ਵਸਤੂਆਂ ਨੂੰ ਕ੍ਰਮਬੱਧ ਕਰਨ ਲਈ ਖਿੱਚੋ.</move_mobile>
+   </card>
+   <alert> ਕੋਈ ਗੈਲਰੀ ਨਹੀਂ ਲੱਭੀ. </alert>
+   <modal>
+    <del_gallery>
+     <label> ਗੈਲਰੀ ਮਿਟਾਓ </label>
+     <close> ਨੇੜੇ </close>
+     <text> ਕੀ ਤੁਸੀਂ ਇਸ ਗੈਲਰੀ ਨੂੰ ਸਾਈਟ ਤੋਂ ਹਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? </text>
+     <command> ਮਿਟਾਓ </command>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </del_gallery>
+    <result>
+     <label> ਗਲਤੀ </label>
+     <close> ਨੇੜੇ </close>
+     <text> </text>
+     <command> ਬੰਦ ਕਰੋ </command>
+    </result>
+   </modal>
+   <save_changes> ਗੈਲਰੀ ਲੜੀਬੱਧ ਕ੍ਰਮ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> ਗੈਲਰੀ ਵਿ View </title>
+   <header> ਗੈਲਰੀ ਵਿ View </header>
+   <alert> ਕੋਈ ਚਿੱਤਰ ਨਹੀਂ ਮਿਲਿਆ. </alert>
+   <share>ਸ਼ੇਅਰ ਗੈਲਰੀ</share>
+   <filedate>ਅਪਲੋਡ ਮਿਤੀ</filedate>
+   <filesize>ਫਾਈਲ ਅਕਾਰ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ</label>
+     <close>ਨੇੜੇ</close>
+     <text>ਲਿੰਕ ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕੀਤਾ ਗਿਆ</text>
+     <command>ਕਾੱਪੀ</command>
+     <cancel>ਬੰਦ ਕਰੋ</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ਨਵੀਂ ਗੈਲਰੀ ਬਣਾਓ </title>
+    <header> ਨਵੀਂ ਗੈਲਰੀ ਬਣਾਓ </header>
+   </new>
+   <edit>
+    <title> ਸੋਧ ਗੈਲਰੀ </title>
+    <header> ਸੋਧ ਗੈਲਰੀ </header>
+   </edit>
+   <gallery_info>
+    <title> ਗੈਲਰੀ ਜਾਣਕਾਰੀ </title>
+    <name>
+     <label> ਗੈਲਰੀ ਦਾ ਨਾਮ </label>
+     <placeholder> ਗੈਲਰੀ ਦਾ ਨਾਮ </placeholder>
+     <validate> ਇਨਪੁਟ ਗੈਲਰੀ ਦਾ ਨਾਮ </validate>
+    </name>
+    <description>
+     <label> ਗੈਲਰੀ ਵੇਰਵਾ </label>
+     <placeholder> ਗੈਲਰੀ ਵੇਰਵਾ </placeholder>
+     <validate> ਇਨਪੁਟ ਗੈਲਰੀ ਵੇਰਵਾ </validate>
+    </description>
+    <keywords>
+     <label> ਗੈਲਰੀ ਕੀਵਰਡਸ ਕਾਮੇ ਜਾਂ ਲਾਈਨ ਬਰੇਕਸ ਨਾਲ ਵੱਖ ਕੀਤੇ </label>
+     <placeholder> ਗੈਲਰੀ ਕੀਵਰਡਸ ਕਾਮੇ ਜਾਂ ਲਾਈਨ ਬਰੇਕਸ ਨਾਲ ਵੱਖ ਕੀਤੇ </placeholder>
+     <validate> ਗੈਲਰੀ ਕੀਵਰਡ ਦਿਓ </validate>
+    </keywords>
+    <submit>
+     <save> ਗੈਲਰੀ ਨੂੰ ਸੇਵ ਕਰੋ </save>
+     <update> ਗੈਲਰੀ ਅਪਡੇਟ ਕਰੋ </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> ਚਿੱਤਰ ਅਪਲੋਡਰ ਗਾਈਡ </title>
+     <body>
+      <![CDATA[
+<b> ਤਸਵੀਰਾਂ ਵੇਖੋ </b> ਬਟਨ ਨਾਲ ਆਪਣੀ ਡਿਵਾਈਸ ਤੋਂ ਚਿੱਤਰਾਂ ਦੀ ਚੋਣ ਕਰੋ ਅਤੇ <b> ਤਸਵੀਰਾਂ ਅਪਲੋਡ ਕਰੋ </b> ਬਟਨ ਨਾਲ ਸਾਈਟ ਤੇ ਅਪਲੋਡ ਕਰੋ. <br/> ਸਹਿਯੋਗੀ ਚਿੱਤਰ ਫਾਰਮੈਟ: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> ਆਗਿਆਕਾਰੀ ਘੱਟੋ ਘੱਟ ਰੈਜ਼ੋਲਿ :ਸ਼ਨ: <b>%d x %d px</b> <br/> ਆਗਿਆਕਾਰੀ ਅਧਿਕਤਮ ਰੈਜ਼ੋਲੂਸ਼ਨ: <b>%d x %d px</b> <br/> ਸਿੰਗਲ ਫਾਈਲ ਅਧਿਕਤਮ ਅਕਾਰ: <b>%d MB</b> <br/> ਪ੍ਰਤੀ ਗੈਲਰੀ ਪ੍ਰਤੀ ਚਿੱਤਰ ਗਿਣਤੀ: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> ਸਾਰਿਆ ਨੂੰ ਚੁਣੋ </select_all>
+    <select_del> ਚੁਣੀਆਂ ਹੋਈਆਂ ਤਸਵੀਰਾਂ ਮਿਟਾਓ </select_del>
+    <thumb>
+     <exist>
+      <delete> ਸਾਈਟ ਤੋਂ ਅਪਲੋਡ ਕੀਤੀ ਤਸਵੀਰ ਨੂੰ ਮਿਟਾਓ </delete>
+      <info> ਚਿੱਤਰ ਜਾਣਕਾਰੀ </info> ਜਾਣਕਾਰੀ
+     </exist>
+     <new>
+      <delete> ਸਾਈਟ ਤੋਂ ਅਪਲੋਡ ਕੀਤੀ ਤਸਵੀਰ ਨੂੰ ਮਿਟਾਓ </delete>
+      <cancel> ਚਿੱਤਰ ਅਪਲੋਡ ਰੱਦ ਕਰੋ </cancel>
+      <info> ਚਿੱਤਰ ਜਾਣਕਾਰੀ </info>
+      <rotate> ਚਿੱਤਰ ਘੁੰਮਾਓ </rotate>
+      <crop> ਚਿੱਤਰ ਨੂੰ ਕਰੋਪ ਕਰੋ </crop>
+     </new>
+     <move> ਤੁਸੀਂ ਚਿੱਤਰਾਂ ਨੂੰ ਮਾ theਸ ਨਾਲ ਖਿੱਚ ਕੇ ਛਾਂਟ ਸਕਦੇ ਹੋ. </move>
+     <move_mobile>ਆਪਣੀ ਉਂਗਲ ਨਾਲ ਇਕ ਚੀਜ਼ ਨੂੰ ਟੈਪ ਕਰੋ ਅਤੇ ਹੋਲਡ ਕਰੋ ਅਤੇ ਇਸਦੇ ਉਭਾਰਨ ਲਈ ਉਡੀਕ ਕਰੋ. ਇਕ ਵਸਤੂ ਦੀ ਚੋਣ ਕਰਨ ਤੋਂ ਬਾਅਦ, ਆਪਣੀ ਉਂਗਲ ਨੂੰ ਵਸਤੂਆਂ ਨੂੰ ਕ੍ਰਮਬੱਧ ਕਰਨ ਲਈ ਖਿੱਚੋ.</move_mobile>
+    </thumb>
+    <browse> ਤਸਵੀਰਾਂ ਵੇਖੋ </browse>
+    <upload> ਤਸਵੀਰਾਂ ਅਪਲੋਡ ਕਰੋ </upload>
+    <uploading> ਚਿੱਤਰ ਉਤਪੰਨ ਹੋ ਰਹੇ ਹਨਸਾਈਟ ਨੂੰ ਸਮਰਪਿਤ. ਅਪਲੋਡ ਪੂਰਾ ਹੋਣ ਤੱਕ ਪੇਜ ਨੂੰ ਬੰਦ ਨਾ ਕਰੋ. </uploading>
+    <uploaded> ਚਿੱਤਰ ਸਾਈਟ ਤੇ ਅਪਲੋਡ ਕੀਤੇ ਗਏ ਹਨ. </uploaded>
+    <error>ਸਰਵਰ ਉੱਤੇ ਫਾਈਲਾਂ ਅਪਲੋਡ ਕਰਨ ਵੇਲੇ ਕੁਝ ਗਲਤੀਆਂ ਹੋਈਆਂ.</error>
+    <save_changes> ਚਿੱਤਰ ਬਦਲਾਅ ਸੇਵ ਕਰੋ </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> ਚਿੱਤਰ ਨੂੰ ਕਰੋਪ ਕਰੋ </crop>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </crop>
+    <del_up_img>
+     <label> ਚਿੱਤਰ ਮਿਟਾਓ </label>
+     <close> ਨੇੜੇ </close>
+     <text> ਕੀ ਤੁਸੀਂ ਇਸ ਤਸਵੀਰ ਨੂੰ ਵੈਬਸਾਈਟ ਤੋਂ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? </text>
+     <command> ਮਿਟਾਓ </command>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </del_up_img>
+    <del_img>
+     <label> ਚਿੱਤਰ ਮਿਟਾਓ </label>
+     <close> ਨੇੜੇ </close>
+     <text> ਕੀ ਤੁਸੀਂ ਇਸ ਤਸਵੀਰ ਨੂੰ ਵੈਬਸਾਈਟ ਤੋਂ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? </text>
+     <command> ਮਿਟਾਓ </command>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> ਚੁਣੀਆਂ ਗਈਆਂ ਤਸਵੀਰਾਂ ਮਿਟਾਓ </label>
+     <close> ਨੇੜੇ </close>
+     <text> ਕੀ ਤੁਸੀਂ ਵੈਬਸਾਈਟ ਤੋਂ ਚੁਣੇ ਚਿੱਤਰਾਂ ਨੂੰ ਮਿਟਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ? </text>
+     <command> ਮਿਟਾਓ </command>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> ਚਿੱਤਰ ਜਾਣਕਾਰੀ </label>
+     <close> ਨੇੜੇ </close>
+     <filename> ਫਾਈਲ ਨਾਮ </filename>
+     <filesize> ਫਾਈਲ ਸਾਈਜ਼ </filesize>
+     <date> ਅਪਲੋਡ ਮਿਤੀ </date>
+     <title>
+      <label> ਸਿਰਲੇਖ </label>
+      <placeholder> ਚਿੱਤਰ ਸਿਰਲੇਖ </placeholder>
+     </title>
+     <desc>
+      <label> ਵਰਣਨ </label>
+      <placeholder> ਚਿੱਤਰ ਵੇਰਵਾ </placeholder>
+     </desc>
+     <keyw>
+      <label> ਕੀਵਰਡਸ </label>
+      <placeholder> ਕਾਮੇ ਜਾਂ ਲਾਈਨ ਬਰੇਕਸ ਨਾਲ ਵੱਖ ਕੀਤੇ ਕੀਵਰਡ </placeholder>
+     </keyw>
+     <command> ਸੇਵ / ਅਪਡੇਟ ਕਰੋ </command>
+     <cancel> ਰੱਦ ਕਰੋ </cancel>
+    </img_info>
+    <result>
+     <label> ਗਲਤੀ </label>
+     <close> ਨੇੜੇ </close>
+     <text> </text>
+     <command> ਬੰਦ ਕਰੋ </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> ਅਪਲੋਡ ਕਰਨ ਯੋਗ ਚਿੱਤਰ ਸੈਟਿੰਗਜ਼ </title>
+    <upload_limit>
+     <label> ਪ੍ਰਤੀ ਗੈਲਰੀ ਅਧਿਕਤਮ ਚਿੱਤਰ ਗਿਣਤੀ </label>
+     <placeholder> ਪ੍ਰਤੀ ਗੈਲਰੀ ਅਧਿਕਤਮ ਚਿੱਤਰ ਗਿਣਤੀ </placeholder>
+     <validate> ਪ੍ਰਤੀ ਗੈਲਰੀ ਚਿੱਤਰਾਂ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਗਿਣਤੀ ਦਰਜ ਕਰੋ </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ਸਿੰਗਲ ਫਾਈਲ ਮੈਕਸ ਸਾਈਜ਼ (ਐਮ ਬੀ) </label>
+     <placeholder> ਸਿੰਗਲ ਫਾਈਲ ਮੈਕਸ ਸਾਈਜ਼ (ਐਮ ਬੀ) </placeholder>
+     <validate> ਇਨਪੁਟ ਸਿੰਗਲ ਫਾਈਲ ਮੈਕਸ ਸਾਈਜ਼ (ਐਮ ਬੀ) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> ਆਗਿਆਯੋਗ ਘੱਟੋ ਘੱਟ ਰੈਜ਼ੋਲਿ .ਸ਼ਨ </label>
+     <width>
+      <placeholder> ਘੱਟੋ ਚੌੜਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </width>
+     <height>
+      <placeholder> ਘੱਟੋ ਘੱਟ ਉਚਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> ਆਗਿਆਯੋਗ ਅਧਿਕਤਮ ਰੈਜ਼ੋਲਿ </label>
+     <width>
+      <placeholder> ਅਧਿਕਤਮ ਚੌੜਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </width>
+     <height>
+      <placeholder> ਅਧਿਕਤਮ ਉਚਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> ਚਿੱਤਰ ਰੂਪਾਂਤਰਣ </title>
+    <full_resolution>
+     <label> ਚਿੱਤਰ ਪੂਰਾ ਆਕਾਰ </label>
+     <width>
+      <placeholder> ਅਧਿਕਤਮ ਚੌੜਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </width>
+     <height>
+      <placeholder> ਅਧਿਕਤਮ ਉਚਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> ਥੰਬਨੇਲ ਦਾ ਆਕਾਰ </label>
+     <width>
+      <placeholder> ਅੰਗੂਠੇ ਦੀ ਚੌੜਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </width>
+     <height>
+      <placeholder> ਥੰਬ ਕੱਦ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> ਸਲਾਈਡ ਆਕਾਰ </label>
+     <width>
+      <placeholder> ਸਲਾਈਡ ਦੀ ਚੌੜਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </width>
+     <height>
+      <placeholder> ਸਲਾਈਡ ਉਚਾਈ </placeholder>
+      <validate> ਮੁੱਲ ਦਾਖਲ ਕਰੋ </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> ਜੇਪੀਗ ਕੁਆਲਟੀ </label>
+    </jpg_quality>
+    <png_compress>
+     <label> ਪੀ ਐਨ ਜੀ ਕੰਪ੍ਰੈਸ </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ਵਾਟਰਮਾਰਕ </title>
+    <label> ਵਾਟਰਮਾਰਕ ਦੀ ਵਰਤੋਂ ਕਰੋ </label>
+    <position> ਵਾਟਰਮਾਰਕ ਸਥਿਤੀ </position>
+    <image> ਵਾਟਰਮਾਰਕ ਚਿੱਤਰ </image>
+    <set> ਵਾਟਰਮਾਰਕ ਸੈਟ ਕਰੋ </set>
+    <browse> 1- ਵਾਟਰਮਾਰਕ ਚਿੱਤਰ ਫਾਈਲ ਨੂੰ ਬ੍ਰਾਉਜ਼ ਕਰੋ </browse>
+    <adjust> 2- ਫਰੇਮ ਦੇ ਅਨੁਸਾਰ ਚਿੱਤਰ ਨੂੰ ਸਮਾਯੋਜਿਤ ਕਰੋ. </adjust>
+    <upload> 3- ਚੁਣੀ ਗਈ ਫਾਈਲ ਅਪਲੋਡ ਕਰੋ </upload>
+    <uploading> ਅਪਲੋਡ ਕਰ ਰਿਹਾ ਹੈ ... </uploading>
+    <uploaded> ਅਪਲੋਡ ਕੀਤਾ ਗਿਆ. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> ਪੇਜ </page>
+   <first> ਪਹਿਲਾ ਪੰਨਾ </first>
+   <prev> ਪਿਛਲਾ ਪੰਨਾ </prev>
+   <next> ਅਗਲਾ ਪੰਨਾ </next>
+   <last> ਆਖਰੀ ਪੰਨਾ </last>
+  </pagination>
+
+</lang>

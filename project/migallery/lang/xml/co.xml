@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Lingua </title>
+   <label> Selezziunà a lingua </label>
+  </lang>
+
+  <timezone>
+   <title>Fuseau horaire</title>
+   <label>Selezziunà u fuso orariu</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Gestione di e Gallerie </gallery_man>
+   <gallery_list> Lista di Galleria </gallery_list>
+   <uploader> Crea Nova Galleria </uploader>
+   <back> Indietro </back>
+  </nav>
+
+  <install>
+ 
+   <title> Configurazione di MIGallery </title>
+   <header> Configurazione di MIGallery </header>
+
+   <img_direction>
+    <label> Galleria, direzzione di l'immagine è di a diapositiva </label>
+    <left> Da manca à diritta </left>
+    <right> Da a diritta à a manca </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informazioni MySQL Database </title>
+    <host>
+     <label> Hostname di basa di dati </label>
+     <placeholder> Hostname di basa di dati </placeholder>
+     <validate> Entre in u Hostname di basa di dati </validate>
+    </host>
+    <user>
+     <label> Nome d'utilizatore di basa di dati </label>
+     <placeholder> Nome d'utilizatore di basa di dati </placeholder>
+     <validate> Ingressu NomeUsuariu di basa di dati </validate>
+    </user>
+    <pass>
+     <label> Password di basa di dati </label>
+     <placeholder> Password di basa di dati </placeholder>
+     <validate> Inserite a Password di basa di dati </validate>
+    </pass>
+    <db>
+     <label> Nome di basa di dati </label>
+     <placeholder> Nome di basa di dati </placeholder>
+     <validate> Ingressu u Nome di basa di dati </validate>
+    </db>
+    <gal_table>
+     <label> Nome di Tabella di Galleria </label>
+     <placeholder> Nome di Tabella di Galleria </placeholder>
+     <validate> Ingressu u Nome di Tabella di Galleria </validate>
+    </gal_table>
+    <img_table>
+     <label> Nome di Tabella di l'Imagine </label>
+     <placeholder> Nome di Tabella di l'Imagine </placeholder>
+     <validate> Ingressu u Nome di Tabella di l'Imagine </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Direttori per cuntenuti dinamichi scrivibili</title>
+    <db_alert>
+     <![CDATA[
+    U repertoriu seguente hè induve i <b> cunfigurazione </b>, <b> log di errore </b> è <b> definizioni </b> seranu creati. Se vulete cambià u nome di stu cartulare, cambiate a definizione <b> DB_DIR </b> in u fugliale <b> définitions0.php </b> è rinfriscate sta pagina.<br/><br/>Se vulete cambià u nome di u schedariu di cunfigurazione, u nome di u fugliale di log di errore è u nome di u schedariu di definizione, cambiate e definizioni di <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b>, è <b> DEFINITIONS_FILE </b> in u schedariu definition0.php.<br/><br/>Se u vostru sistema hè basatu in Unix, stabilisce i permessi di scrittura cù u cumandimu seguitu:<br/><b>%s</b><br/><br/>Prima di inizià a stallazione, assicuratevi chì u percorsu seguitu esiste è abbia permessi di scrittura:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Prima di principià a stallazione, assicuratevi chì i seguenti repertorii esistenu è chì avete u permessu di scrive in i repertorii.<br/><br/>If you are going to use directories other than the following directories, if the directories do not exist on disk, first create the directories and set the write permissions and start the installation.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>File di configurazione, file di Log di Errori, è percorso di u file di Definizione</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    I seguenti repertorii sò creati quandu a nova galleria hè salvata. <b>%d</b> indica l'identità di a galeria. Questi direttori sò creati nantu à u repertoriu <b> Repertoriu di Base di Image </b> definitu sopra. Verificate se u furmatu di i cartulari hè adattatu.
+     ]]>
+    </img_dir_alert>
+    <config_alert>U schedariu di cunfigurazione hè statu creatu prima. Per quessa, ùn pudete micca eseguisce a setup. Duvete prima sguassà u fugliale di cunfigurazione è dopu eseguisce a setup.</config_alert>
+    <tmp_dir>
+     <label>Imagine Directory Temporanea</label>
+     <placeholder>Imagine Directory Temporanea</placeholder>
+     <validate>Imagine Directory Temporanea</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Percorsu temporariu di e immagini in miniatura</label>
+     <placeholder>Percorsu temporariu di e immagini in miniatura</placeholder>
+     <validate>Percorsu temporariu di e immagini in miniatura</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Percorsu Tempurariu Miniatura Ritagliata</label>
+     <placeholder>Percorsu Tempurariu Miniatura Ritagliata</placeholder>
+     <validate>Percorsu Tempurariu Miniatura Ritagliata</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Percorsu temporariu di Image Slide</label>
+     <placeholder>Percorsu temporariu di Image Slide</placeholder>
+     <validate>Percorsu temporariu di Image Slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Repertoriu di Base di Image</label>
+     <placeholder>Repertoriu di Base di Image</placeholder>
+     <validate>Repertoriu di Base di Image</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Percorsu di l'Imagine</label>
+     <placeholder>Percorsu di l'Imagine</placeholder>
+     <validate>Percorsu di l'Imagine</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Percorsu di fugliale in miniatura</label>
+     <placeholder>Percorsu di fugliale in miniatura</placeholder>
+     <validate>Percorsu di fugliale in miniatura</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Percorsu di a Miniatura tronca</label>
+     <placeholder>Percorsu di a Miniatura tronca</placeholder>
+     <validate>Percorsu di a Miniatura tronca</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Percorsu di l'imagine di dimensione di diapositiva</label>
+     <placeholder>Percorsu di l'imagine di dimensione di diapositiva</placeholder>
+     <validate>Percorsu di l'imagine di dimensione di diapositiva</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Directory di fugliali XML</label>
+     <placeholder>Directory di fugliali XML</placeholder>
+     <validate>Directory di fugliali XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Stallendu. Aspettate per piacè ... </installing>
+    <success> L'installazione hè stata cumpletata. </success>
+    <error> L'installazione ùn pò micca esse cumpletata. </error>
+   </alert>
+  
+   <submit> Avvia l'installazione </submit>
+   <submit_continue> Cuntinuà &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gestione di a Galleria </title>
+   <header> Gestione Galleria </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lista di Galleria </title>
+   <header> Lista di Galleria </header>
+   <sort>
+    <asc> sorte da u primu à l'ultimu </asc>
+    <desc> sorta da l'ultimu à primu </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Vede </button>
+     <title> Vede a Galleria </title>
+    </view>
+    <delete>
+     <button> Eliminà </button>
+     <title> Elimina Galleria </title>
+    </delete>
+    <edit>
+     <button> Mudificà </button>
+     <title> Mudificà Galleria </title>
+    </edit>
+    <images>imagine</images>
+    <date>Data</date>
+    <move> Pudete sorte e gallerie trascinenduli cù u topu. </move>
+    <move_mobile>Tocca è tene un articulu cù u ditu è aspetta ch'ellu sia sceltu. Dopu chì l'articulu hè sceltu, pudete sorte l'articulu trascinendulu cù u ditu.</move_mobile>
+   </card>
+   <alert> Nisuna galleria trovata. </alert>
+   <modal>
+    <del_gallery>
+     <label> Elimina Galleria </label>
+     <close> chiudere </close>
+     <text> Vulete sguassà sta galleria da u situ? </text>
+     <command> Delete </command>
+     <cancel> Annulla </cancel>
+    </del_gallery>
+    <result>
+     <label> Errore </label>
+     <close> chiudere </close>
+     <text> </text>
+     <command> Chiudere </command>
+    </result>
+   </modal>
+   <save_changes> Salvà Ordine di a Galeria </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Vista di Galleria </title>
+   <header> Vista di Galleria </header>
+   <alert> Nessuna maghjina trovata. </alert>
+   <share>Sparte Galleria</share>
+   <filedate>Data di Caricamentu</filedate>
+   <filesize>Dimensione di u fugliale</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copia In Appunti</label>
+     <close>chiudere</close>
+     <text>Link cupiatu in u clipboard</text>
+     <command>Copia</command>
+     <cancel>Chiudere</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Crea Nova Galleria </title>
+    <header> Crea Nova Galleria </header>
+   </new>
+   <edit>
+    <title> Mudificà Galleria </title>
+    <header> Modificà a Galleria </header>
+   </edit>
+   <gallery_info>
+    <title> Informazioni Galleria </title>
+    <name>
+     <label> Nome di a Galleria </label>
+     <placeholder> Nome di a Galleria </placeholder>
+     <validate> Input Galleria Nome </validate>
+    </name>
+    <description>
+     <label> Descrizione di a Galleria </label>
+     <placeholder> Descrizione di a Galleria </placeholder>
+     <validate> Descrizzione di a Galleria d'entrata </validate>
+    </description>
+    <keywords>
+     <label> Parolle chjave di a galeria siparate da virgule o linee novi </label>
+     <placeholder> Parolle chjave di a galeria siparate da virgule o linee novi </placeholder>
+     <validate> Entre in Parolle Chjave di a Galleria </validate>
+    </keywords>
+    <submit>
+     <save> Salvà Galleria </save>
+     <update> Galleria d'aghjurnamentu </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Guida di uploader </title>
+     <body>
+      <![CDATA[
+Sceglite l'imagine da u vostru dispositivu cù u buttone <b> Sfoglia Immagini </b> è caricate nantu à u situ cù u buttone <b> Caricà Immagini </b>. <br/> Formati di l'Image Supportati: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Risoluzione minima ammissibile: <b>%d x %d px</b> <br/> Risoluzione massima ammissibile: <b>%d x %d px</b> <br/> Unicu File Dimensione Massima: <b>%d MB</b> <br/> Conti d'Imaghjini per Galleria: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Selezziunà tuttu </select_all>
+    <select_del> Cancellà a scelta </select_del>
+    <thumb>
+     <exist>
+      <delete> Elimina l'Imagine Caricata Da u situ </delete>
+      <info> Infurmazione di l'Imagine </info>
+     </exist>
+     <new>
+      <delete> Elimina l'Imagine Caricata Da u situ </delete>
+      <cancel> Annulla Caricamentu di l'Imagine </cancel>
+      <info> Infurmazione di l'Imagine </info>
+      <rotate> Rotate l'Imagine </rotate>
+      <crop> Ritaglia Immagine </crop>
+     </new>
+     <move> Pudete ordinà l'imaghjini trascinenduli cù u topu. </move>
+     <move_mobile>Tocca è tene un articulu cù u ditu è aspetta ch'ellu sia sceltu. Dopu chì l'articulu hè sceltu, pudete sorte l'articulu trascinendulu cù u ditu.</move_mobile>
+    </thumb>
+    <browse> Sfoglia Immagini </browse>
+    <upload> Caricà Immagini </upload>
+    <uploading> L'imaghjini sò caricati in u situ. Ùn chjudite micca a pagina finu à chì l'upload hè finitu. </uploading>
+    <uploaded> L'imaghjini sò stati caricati in u situ. </uploaded>
+    <error>Alcuni errori si sò verificati mentre caricavanu i fugliali in u servitore.</error>
+    <save_changes> Salvà Cambiamenti d'Imagine </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Ritaglia </crop>
+     <cancel> Annulla </cancel>
+    </crop>
+    <del_up_img>
+     <label> Eliminà l'immagine </label>
+     <close> chiudere </close>
+     <text> Vulete sguassà sta maghjina da u situ? </text>
+     <command> Delete </command>
+     <cancel> Annulla </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Eliminà l'immagine </label>
+     <close> chiudere </close>
+     <text> Vulete sguassà sta maghjina da u situ? </text>
+     <command> Delete </command>
+     <cancel> Annulla </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Eliminà l'Imagine Selezionate </label>
+     <close> chiudere </close>
+     <text> Vulete sguassà l'imaghjini selezziunati da u situ? </text>
+     <command> Delete </command>
+     <cancel> Annulla </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Infurmazione Image </label>
+     <close> chiudere </close>
+     <filename> Nome di u File </filename>
+     <filesize> Dimensione di u fugliale </filesize>
+     <date> Data di Caricamentu </date>
+     <title>
+      <label> Titulu </label>
+      <placeholder> Titulu di l'immagine </placeholder>
+     </title>
+     <desc>
+      <label> Description </label>
+      <placeholder> Descrizione di l'Imagine </placeholder>
+     </desc>
+     <keyw>
+      <label> Parolle chjave </label>
+      <placeholder> Parolle chjave siparate da virgule o linee novi </placeholder>
+     </keyw>
+     <command> Salvà / Mette à ghjornu </command>
+     <cancel> Annulla </cancel>
+    </img_info>
+    <result>
+     <label> Errore </label>
+     <close> chiudere </close>
+     <text> </text>
+     <command> Chiudere </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Impostazioni di l'Imagine caricabile </title>
+    <upload_limit>
+     <label> Contu massimu di maghjine per galleria </label>
+     <placeholder> Quantità massima di maghjine per galleria </placeholder>
+     <validate> Input Max image count per galeria </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Dimensione Max Unicu File (MB) </label>
+     <placeholder> Dimensione Max Unicu File (MB) </placeholder>
+     <validate> Input Single File Max Size (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Risoluzione Minima Permissibile </label>
+     <width>
+      <placeholder> Min Larghezza </placeholder>
+      <validate> Valore d'entrata </validate>
+     </width>
+     <height>
+      <placeholder> Altezza Minima </placeholder>
+      <validate> Valore d'entrata </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Risoluzione massima ammissibile </label>
+     <width>
+      <placeholder> Larghezza massima </placeholder>
+      <validate> Valore d'entrata </validate>
+     </width>
+     <height>
+      <placeholder> Altezza massima </placeholder>
+      <validate> Valore d'entrata </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Trasfurmazione di l'immagine </title>
+    <full_resolution>
+     <label> Image Full Size </label>
+     <width>
+      <placeholder> Larghezza massima </placeholder>
+      <validate> Valore d'entrata </validate>
+     </width>
+     <height>
+      <placeholder> Altezza massima </placeholder>
+      <validate> Valore d'entrata </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Dimensione Miniatura </label>
+     <width>
+      <placeholder> Larghezza di u Pollice </placeholder>
+      <validate> Valore d'entrata </validate>
+     </width>
+     <height>
+      <placeholder> Altezza Thumb </placeholder>
+      <validate> Valore d'entrata </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Dimensione di a diapositiva </label>
+     <width>
+      <placeholder> Larghezza di a diapositiva </placeholder>
+      <validate> Valore d'entrata </validate>
+     </width>
+     <height>
+      <placeholder> Altezza di a diapositiva </placeholder>
+      <validate> Valore d'entrata </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Qualità Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Cumpressà PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigrana </title>
+    <label> Utilizà a filigrana </label>
+    <position> Posizione Filigrana </position>
+    <image> Immagine Filigrana </image>
+    <set> Set Watermark </set>
+    <browse> 1- Sfoglia u File d'Imagine Filigrana </browse>
+    <adjust> 2- Ajuste l'imagine secondu u quadru. </adjust>
+    <upload> 3- Caricate u fugliale selezziunatu </upload>
+    <uploading> Caricamentu ... </uploading>
+    <uploaded> Caricatu. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Pagina </page>
+   <first> Prima Pagina </first>
+   <prev> Pagina Precedente </prev>
+   <next> Prossima Pagina </next>
+   <last> Ultima Pagina </last>
+  </pagination>
+
+</lang>

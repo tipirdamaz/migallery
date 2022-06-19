@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> भाषा </title>
+   <label> भाषा निवडा </label>
+  </lang>
+
+  <timezone>
+   <title>वेळ क्षेत्र</title>
+   <label>टाईमझोन निवडा</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> गॅलरी व्यवस्थापन </gallery_man>
+   <gallery_list> गॅलरी यादी </gallery_list>
+   <uploader> नवीन गॅलरी तयार करा </uploader>
+   <back> परत </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery सेटअप </title>
+   <header> MIGallery सेटअप </header>
+
+   <img_direction>
+    <label> गॅलरी, प्रतिमा आणि स्लाइड दिशा </label>
+    <left> डावीकडून उजवीकडे </left>
+    <right> उजवीकडून डावीकडे </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL डेटाबेस माहिती </title>
+    <host>
+     <label> डेटाबेस होस्टनाव </label>
+     <placeholder> डेटाबेस होस्टनाव </placeholder>
+     <validate> इनपुट डेटाबेस होस्टनाव </validate>
+    </host>
+    <user>
+     <label> डेटाबेस वापरकर्तानाव </label>
+     <placeholder> डेटाबेस वापरकर्तानाव </placeholder>
+     <validate> इनपुट डेटाबेस वापरकर्तानाव </validate>
+    </user>
+    <pass>
+     <label> डेटाबेस संकेतशब्द </label>
+     <placeholder> डेटाबेस संकेतशब्द </placeholder>
+     <validate> इनपुट डेटाबेस संकेतशब्द </validate>
+    </pass>
+    <db>
+     <label> डेटाबेस नाव </label>
+     <placeholder> डेटाबेस नाव </placeholder>
+     <validate> इनपुट डेटाबेस नाव </validate>
+    </db>
+    <gal_table>
+     <label> गॅलरी सारणीचे नाव </label>
+     <placeholder> गॅलरी सारणीचे नाव </placeholder>
+     <validate> गॅलरी टेबल नाव प्रविष्ट करा </validate>
+    </gal_table>
+    <img_table>
+     <label> प्रतिमेचे सारणी </label>
+     <placeholder> प्रतिमा सारणी नाव </placeholder>
+     <validate> इनपुट प्रतिमा सारणी नाव </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>लिहिण्यायोग्य डायनॅमिक सामग्रीसाठी निर्देशिका</title>
+    <db_alert>
+     <![CDATA[
+    खालील डिरेक्टरीमध्ये <b> कॉन्फिगरेशन </b> <b> त्रुटी लॉग </b> आणि <b> व्याख्या </b> फायली तयार केल्या जातील. आपण या निर्देशिकेचे नाव बदलू इच्छित असल्यास <b> definitions0.php </b> फाईलमधील <b> DB_DIR </b> परिभाषा बदला आणि हे पृष्ठ रीफ्रेश करा.<br/><br/>आपण कॉन्फिगरेशन फाइल, एरर लॉग फाइल आणि परिभाषा फाइलचे नाव बदलू इच्छित असल्यास, definitions0.php फाईलमधील <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> आणि <b>DEFINITIONS_FILE</b> ची व्याख्या बदला.<br/><br/>जर तुमची सिस्टम युनिक्स आधारित असेल तर खालील कमांडसह फोल्डरवर लेखन परवानग्या सेट करा:<br/><b>%s</b><br/><br/>स्थापना सुरू करण्यापूर्वी, पुढील पथ अस्तित्त्वात असल्याची खात्री करा आणि आपल्याकडे निर्देशिकेत लिहिण्यासाठी परवानग्या आहेतः
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    इंस्टॉलेशन सुरू करण्यापूर्वी, खात्री करा की खालील डिरेक्टरीज अस्तित्त्वात आहेत आणि तुम्हाला निर्देशिकांना लिहिण्याची परवानगी आहे. <br/> <br/> आपण खालील निर्देशिकांशिवाय इतर निर्देशिका वापरत असल्यास, निर्देशिका उपलब्ध नसल्यास प्रथम निर्देशिका तयार करा व या निर्देशिकांसाठी लेखन परवानग्या निश्चित करा व प्रतिष्ठापन सुरू करा.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>कॉन्फिगरेशन, त्रुटी लॉग आणि परिभाषा फायली पथ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    नवीन गॅलरी सेव्ह केल्यावर खालील डिरेक्टरीज तयार केल्या जातात. <b>%d</b> गॅलरी आयडी निर्दिष्ट करते. या निर्देशिका <b> प्रतिमा बेस निर्देशिका </b> निर्देशिकेत तयार केल्या आहेत. आपण तयार करत असलेल्या डिरेक्टरीचे स्वरूप त्या निर्देशिकांच्या स्वरूपासाठी योग्य असल्याचे सुनिश्चित करा.
+     ]]>
+    </img_dir_alert>
+    <config_alert>कॉन्फिगरेशन फाइल यापूर्वी तयार केली गेली आहे. म्हणून, आपण स्थापना चालवू शकत नाही. आपण प्रथम कॉन्फिगरेशन फाईल हटवा आणि नंतर स्थापना चालवा.</config_alert>
+    <tmp_dir>
+     <label>प्रतिमेची तात्पुरती निर्देशिका</label>
+     <placeholder>प्रतिमेची तात्पुरती निर्देशिका</placeholder>
+     <validate>प्रतिमेची तात्पुरती निर्देशिका</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>थंबनेलची तात्पुरती निर्देशिका</label>
+     <placeholder>थंबनेलची तात्पुरती निर्देशिका</placeholder>
+     <validate>थंबनेलची तात्पुरती निर्देशिका</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>क्रॉप केलेल्या थंबनेलची तात्पुरती निर्देशिका</label>
+     <placeholder>क्रॉप केलेल्या थंबनेलची तात्पुरती निर्देशिका</placeholder>
+     <validate>क्रॉप केलेल्या थंबनेलची तात्पुरती निर्देशिका</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>स्लाइड प्रतिमेची तात्पुरती निर्देशिका</label>
+     <placeholder>स्लाइड प्रतिमेची तात्पुरती निर्देशिका</placeholder>
+     <validate>स्लाइड प्रतिमेची तात्पुरती निर्देशिका</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>प्रतिमा बेस निर्देशिका</label>
+     <placeholder>प्रतिमा बेस निर्देशिका</placeholder>
+     <validate>प्रतिमा बेस निर्देशिका</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>प्रतिमा निर्देशिका</label>
+     <placeholder>प्रतिमा निर्देशिका</placeholder>
+     <validate>प्रतिमा निर्देशिका</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>लघुप्रतिमा डिरेक्टरी</label>
+     <placeholder>लघुप्रतिमा डिरेक्टरी</placeholder>
+     <validate>लघुप्रतिमा डिरेक्टरी</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>क्रॉप केलेला लघुप्रतिमा निर्देशिका</label>
+     <placeholder>क्रॉप केलेला लघुप्रतिमा निर्देशिका</placeholder>
+     <validate>क्रॉप केलेला लघुप्रतिमा निर्देशिका</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>स्लाइड प्रतिमा निर्देशिका</label>
+     <placeholder>स्लाइड प्रतिमा निर्देशिका</placeholder>
+     <validate>स्लाइड प्रतिमा निर्देशिका</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>एक्सएमएल फाइल निर्देशिका</label>
+     <placeholder>एक्सएमएल फाइल निर्देशिका</placeholder>
+     <validate>एक्सएमएल फाइल निर्देशिका</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> स्थापित करत आहे. कृपया थांबा... </installing>
+    <success> स्थापना यशस्वीरित्या पूर्ण झाली. </success>
+    <error> स्थापना पूर्ण होऊ शकली नाही. </error>
+   </alert>
+  
+   <submit> स्थापना प्रारंभ करा </submit>
+   <submit_continue> सुरू ठेवा &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> गॅलरी व्यवस्थापन </title>
+   <header> गॅलरी व्यवस्थापन </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> गॅलरी सूची </title>
+   <header> गॅलरी सूची </header>
+   <sort>
+    <asc> प्रथम पासून शेवटपर्यंत क्रमवारी लावा </asc>
+    <desc> शेवटी पासून सुरू करण्यासाठी </desc>
+   </sort>
+   <card>
+    <view>
+     <button> पहा </button>
+     <title> गॅलरी पहा </title>
+    </view>
+    <delete>
+     <button> हटवा </button>
+     <title> गॅलरी हटवा </title>
+    </delete>
+    <edit>
+     <button> संपादित करा </button>
+     <title> संपादन गॅलरी </title>
+    </edit>
+    <images>प्रतिमा</images>
+    <date>तारीख</date>
+    <move> आपण गॅलरी त्यास माउसने ड्रॅग करुन क्रमवारी लावू शकता. </move>
+    <move_mobile>आपल्या बोटाने आयटम टॅप करा आणि धरून ठेवा आणि त्या हायलाइट होण्याची प्रतीक्षा करा. आयटम निवडल्यानंतर आयटमची क्रमवारी लावण्यासाठी आपले बोट ड्रॅग करा.</move_mobile>
+   </card>
+   <alert> कोणतीही गॅलरी आढळली नाही. </alert>
+   <modal>
+    <del_gallery>
+     <label> गॅलरी हटवा </label>
+     <close> बंद करा </close>
+     <text> आपण ही गॅलरी साइटवरून हटवू इच्छिता? </text>
+     <command> हटवा </command>
+     <cancel> रद्द करा </cancel>
+    </del_gallery>
+    <result>
+     <label> त्रुटी </label>
+     <close> बंद करा </close>
+     <text> </text>
+     <command> बंद </command>
+    </result>
+   </modal>
+   <save_changes> गॅलरी सॉर्ट ऑर्डर सेव्ह करा </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> गॅलरी दृश्य </title>
+   <header> गॅलरी दृश्य </header>
+   <alert> कोणतीही प्रतिमा आढळली नाही. </alert>
+   <share>सामायिक गॅलरी</share>
+   <filedate>अपलोड तारीख</filedate>
+   <filesize>फाईलचा आकार</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>क्लिपबोर्डवर कॉपी करा</label>
+     <close>बंद करा</close>
+     <text>क्लिपबोर्डवर दुवा कॉपी केला</text>
+     <command>कॉपी करा</command>
+     <cancel>बंद</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> नवीन गॅलरी तयार करा </title>
+    <header> नवीन गॅलरी तयार करा </header>
+   </new>
+   <edit>
+    <title> संपादन गॅलरी </title>
+    <header> गॅलरी संपादित करा </header>
+   </edit>
+   <gallery_info>
+    <title> गॅलरी माहिती </title>
+    <name>
+     <label> गॅलरी नाव </label>
+     <placeholder> गॅलरी नाव </placeholder>
+     <validate> इनपुट गॅलरी नाव </validate>
+    </name>
+    <description>
+     <label> गॅलरी वर्णन </label>
+     <placeholder> गॅलरी वर्णन </placeholder>
+     <validate> इनपुट गॅलरी वर्णन </validate>
+    </description>
+    <keywords>
+     <label> स्वल्पविरामाने किंवा लाइन ब्रेकद्वारे विभक्त गॅलरी कीवर्ड </label>
+     <placeholder> स्वल्पविरामाने किंवा लाइन ब्रेकद्वारे विभक्त गॅलरी कीवर्ड </placeholder>
+     <validate> गॅलरी कीवर्ड प्रविष्ट करा </validate>
+    </keywords>
+    <submit>
+     <save> गॅलरी सेव्ह करा </save>
+     <update> गॅलरी अद्यतनित करा </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> प्रतिमा अपलोडर मार्गदर्शक </title>
+     <body>
+      <![CDATA[
+<b> प्रतिमा ब्राउझ करा </b> बटणासह आपल्या डिव्हाइसमधून प्रतिमा निवडा आणि <b> या प्रतिमा अपलोड करा </b> बटणासह साइटवर अपलोड करा. <br/> समर्थित प्रतिमा स्वरूप: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> अनुमत न्यूनतम रिझोल्यूशन: <b>%d x %d px</b> <br/> अनुज्ञेय कमाल रिझोल्यूशन: <b>%d x %d px</b> <br/> एकल फाईल कमाल आकारः <b>%d MB</b> <br/> प्रति गॅलरी प्रतिमा गणना: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> सर्व निवडा </select_all>
+    <select_del> निवडलेल्या प्रतिमा हटवा </select_del>
+    <thumb>
+     <exist>
+      <delete> साइटवरून अपलोड केलेली प्रतिमा हटवा </delete>
+      <info> प्रतिमा माहिती </info>
+     </exist>
+     <new>
+      <delete> साइटवरून अपलोड केलेली प्रतिमा हटवा </delete>
+      <cancel> प्रतिमा अपलोड रद्द करा </cancel>
+      <info> प्रतिमा माहिती </info>
+      <rotate> फिरवा प्रतिमा </rotate>
+      <crop> प्रतिमा क्रॉप करा </crop>
+     </new>
+     <move> आपण प्रतिमांना माउसने ड्रॅग करुन क्रमवारी लावू शकता. </move>
+     <move_mobile>आपल्या बोटाने आयटम टॅप करा आणि धरून ठेवा आणि त्या हायलाइट होण्याची प्रतीक्षा करा. आयटम निवडल्यानंतर आयटमची क्रमवारी लावण्यासाठी आपले बोट ड्रॅग करा.</move_mobile>
+    </thumb>
+    <browse> प्रतिमा ब्राउझ करा </browse>
+    <upload> या प्रतिमा अपलोड करा </upload>
+    <uploading> प्रतिमा उत्कृष्ट आहेतसाइटला चिकटवले. अपलोड पूर्ण होईपर्यंत पृष्ठ बंद करू नका. </uploading>
+    <uploaded> प्रतिमा साइटवर अपलोड केल्या गेल्या आहेत. </uploaded>
+    <error>Some errors occurred while uploading files to the server.</error>
+    <save_changes> प्रतिमा बदल जतन करा </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> क्रॉप </crop>
+     <cancel> रद्द करा </cancel>
+    </crop>
+    <del_up_img>
+     <label> प्रतिमा हटवा </label>
+     <close> बंद </close>
+     <text> आपण ही प्रतिमा वेबसाइटवरून हटवू इच्छिता? </text>
+     <command> हटवा </command>
+     <cancel> रद्द करा </cancel>
+    </del_up_img>
+    <del_img>
+     <label> प्रतिमा हटवा </label>
+     <close> बंद </close>
+     <text> आपण ही प्रतिमा वेबसाइटवरून हटवू इच्छिता? </text>
+     <command> हटवा </command>
+     <cancel> रद्द करा </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> निवडलेल्या प्रतिमा हटवा </label>
+     <close> बंद </close>
+     <text> आपण वेबसाइटवरून निवडलेल्या प्रतिमा हटवू इच्छिता? </text>
+     <command> हटवा </command>
+     <cancel> रद्द करा </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> प्रतिमा माहिती </label>
+     <close> बंद </close>
+     <filename> फाईलचे नाव </filename>>
+     <filesize> फाइल आकार </filesize>
+     <date> अपलोड तारीख </date>
+     <title>
+      <label> शीर्षक </label>
+      <placeholder> प्रतिमा शीर्षक </placeholder>
+     </title>
+     <desc>
+      <label> वर्णन </label>
+      <placeholder> प्रतिमा वर्णन </placeholder>
+     </desc>
+     <keyw>
+      <label> कीवर्ड </label>
+      <placeholder> स्वल्पविराम किंवा लाइन ब्रेकद्वारे विभक्त केलेले कीवर्ड </placeholder>
+     </keyw>
+     <command> सेव्ह / अपडेट </command>
+     <cancel> रद्द करा </cancel>
+    </img_info>
+    <result>
+     <label> त्रुटी </label>
+     <close> बंद </close>
+     <text> </text>
+     <command> बंद </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> अपलोड करण्यायोग्य प्रतिमा सेटिंग्ज </title>
+    <upload_limit>
+     <label> प्रति गॅलरी कमाल प्रतिमा गणना </label>
+     <placeholder> प्रति गॅलरी कमाल प्रतिमा गणना </placeholder>
+     <validate> प्रति गॅलरी कमाल प्रतिमा संख्या प्रविष्ट करा </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> सिंगल फाईल मॅक्स साइज (एमबी) </label>
+     <placeholder> सिंगल फाईल मॅक्स साइज (एमबी) </placeholder>
+     <validate> इनपुट सिंगल फाईल मॅक्स साइज (एमबी) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> अनुज्ञेय न्यूनतम रिझोल्यूशन </label>
+     <width>
+      <placeholder> किमान रुंदी </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </width>
+     <height>
+      <placeholder> किमान उंची </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> परवानगीयोग्य जास्तीत जास्त रिझोल्यूशन </label>
+     <width>
+      <placeholder> जास्तीत जास्त रुंदी </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </width>
+     <height>
+      <placeholder> जास्तीत जास्त उंची </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> प्रतिमा रूपांतर </title>
+    <full_resolution>
+     <label> प्रतिमा पूर्ण आकार </label>
+     <width>
+      <placeholder> जास्तीत जास्त रुंदी </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </width>
+     <height>
+      <placeholder> जास्तीत जास्त उंची </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> लघुप्रतिमा आकार </label>
+     <width>
+      <placeholder> अंगठा रुंदी </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </width>
+     <height>
+      <placeholder> अंगठा उंची </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> स्लाइड आकार </label>
+     <width>
+      <placeholder> स्लाइड रूंदी </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </width>
+     <height>
+      <placeholder> स्लाइड उंची </placeholder>
+      <validate> इनपुट मूल्य </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> जेपीईजी गुणवत्ता </label>
+    </jpg_quality>
+    <png_compress>
+     <label> पीएनजी कॉम्प्रेस </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> वॉटरमार्क </title>
+    <label> वॉटरमार्क वापरा </label>
+    <position> वॉटरमार्क स्थान </position>>
+    <image> वॉटरमार्क प्रतिमा </image>
+    <set> वॉटरमार्क सेट करा </set>
+    <browse> 1- वॉटरमार्क प्रतिमा फाइल ब्राउझ करा </browse>
+    <adjust> 2- फ्रेमनुसार प्रतिमा समायोजित करा. </adjust>
+    <upload> 3- निवडलेली फाइल अपलोड करा </upload>
+    <uploading> अपलोड करीत आहे ... </uploading>
+    <uploaded> अपलोड केले. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> पृष्ठ </page>
+   <first> पहिले पान </first>
+   <prev> मागील पान </prev>
+   <next> पुढील पृष्ठ </next>
+   <last> शेवटचं पान </last>
+  </pagination>
+
+</lang>

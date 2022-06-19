@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Телне </title>
+   <label> Телне сайлагыз </label>
+  </lang>
+
+  <timezone>
+   <title>Вакыт зонасы</title>
+   <label>Вакыт зонасын сайлагыз</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Галерея белән идарә итү </gallery_man>
+   <gallery_list> Галерея исемлеге </gallery_list>
+   <uploader> Яңа Галерея булдыру </uploader>
+   <back> Артка </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Урнаштыру </title>
+   <header> MIGallery Урнаштыру </header>
+
+   <img_direction>
+    <label> Галерея, рәсем һәм слайд юнәлеше </label>
+    <left> Сулдан уңга </left>
+    <right> Уңдан сулга </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL мәгълүмат базасы турында мәгълүмат </title>
+    <host>
+     <label> Мәгълүматлар базасының хост исеме </label>
+     <placeholder> Мәгълүматлар базасы хост исеме </placeholder>
+     <validate> Мәгълүматлар базасының хост исемен кертегез </validate>
+    </host>
+    <user>
+     <label> Мәгълүматлар базасы кулланучы исеме </label>
+     <placeholder> Мәгълүматлар базасы кулланучы исеме </placeholder>
+     <validate> Мәгълүматлар базасының кулланучы исемен кертегез </validate>
+    </user>
+    <pass>
+     <label> Мәгълүматлар базасы серсүзе </label>
+     <placeholder> Мәгълүматлар базасы серсүзе </placeholder>
+     <validate> Мәгълүматлар базасы серсүзен кертү </validate>
+    </pass>
+    <db>
+     <label> Мәгълүматлар базасы исеме </label>
+     <placeholder> Мәгълүматлар базасы исеме </placeholder>
+     <validate> Мәгълүматлар базасы исемен кертегез </validate>
+    </db>
+    <gal_table>
+     <label> Галерея таблицасы исеме </label>
+     <placeholder> Галерея таблицасы исеме </placeholder>
+     <validate> Галерея таблицасының исемен кертегез </validate>
+    </gal_table>
+    <img_table>
+     <label> Фото таблицаның исеме </label>
+     <placeholder> Фото таблицаның исеме </placeholder>
+     <validate> Фото таблицасының исемен кертегез </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Языла торган динамик эчтәлеккә юл</title>
+    <db_alert>
+     <![CDATA[
+    <b> конфигурация </b>, <b> хата журналы </b> һәм <b> билгеләмәләр </b> файллары түбәндәге каталогта ясалачак. Әгәр дә сез бу каталогның исемен үзгәртергә телисез икән, <b> DB_DIR </b> билгеләмәсен <b> definitions0.php </b> файлыннан үзгәртегез һәм бу битне яңартыгыз.<br/><br/>Әгәр дә конфигурация файлының, хата журналының файлының һәм билгеләмә файлының исемен үзгәртергә телисез икән, definitions0.php'да <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> һәм <b>DEFINITIONS_FILE</b> кыйммәтен үзгәртегез.<br/><br/>Әгәр сезнең система UNIX нигезендә булса, каталогның язу рөхсәтен түбәндәге боерык белән куегыз:<br/><b>%s</b><br/><br/>Урнаштыруны башлар алдыннан, түбәндәге юлның барлыгына инаныгыз һәм каталогка язарга рөхсәтегез бар:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Урнаштыруны башлар алдыннан, түбәндәге каталоглар барлыгына һәм сезнең каталогларга язарга рөхсәтегез барлыгына инаныгыз. <br/> <br/> Әгәр сез түбәндәге каталоглардан башка каталогларны кулланырга җыенасыз икән, дискта каталоглар булмаса, башта каталоглар төзегез һәм язу рөхсәтләрен куегыз һәм урнаштыруны башлап җибәрегез.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Конфигурация, хаталар журналы һәм билгеләмәләр каталогы</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Яңа галерея сакланган вакытта түбәндәге каталоглар ясала. <b>%d</b> галерея идентификаторын күрсәтә. Бу каталоглар өстә <b> Рәсемнәрнең төп папкасы </b> ясалачак. Бу форматларның дөреслеген тикшерегез.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Конфигурация файлы моңа кадәр ясалган. Шуңа күрә сез монтажны эшли алмыйсыз. Сез башта конфигурация файлын бетерергә, аннары урнаштыру эшләрен башкарырга тиеш.</config_alert>
+    <tmp_dir>
+     <label>Рәсемнәрнең вакытлыча папкасы</label>
+     <placeholder>Рәсемнәрнең вакытлыча папкасы</placeholder>
+     <validate>Рәсемнәрнең вакытлыча папкасы</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Эскиз рәсем файлларының вакытлыча папкасы</label>
+     <placeholder>Эскиз рәсем файлларының вакытлыча папкасы</placeholder>
+     <validate>Эскиз рәсем файлларының вакытлыча папкасы</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Киселгән кечкенә рәсем файлларының вакытлыча папкасы</label>
+     <placeholder>Киселгән кечкенә рәсем файлларының вакытлыча папкасы</placeholder>
+     <validate>Киселгән кечкенә рәсем файлларының вакытлыча папкасы</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Слайд рәсеменең вакытлыча каталогы</label>
+     <placeholder>Слайд рәсеменең вакытлыча каталогы</placeholder>
+     <validate>Слайд рәсеменең вакытлыча каталогы</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Рәсемнәрнең төп папкасы</label>
+     <placeholder>Рәсемнәрнең төп папкасы</placeholder>
+     <validate>Рәсемнәрнең төп папкасы</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Рәсемнәр папкасы</label>
+     <placeholder>Рәсемнәр папкасы</placeholder>
+     <validate>Рәсемнәр папкасы</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Эскиз рәсем файллары папкасы</label>
+     <placeholder>Эскиз рәсем файллары папкасы</placeholder>
+     <validate>Эскиз рәсем файллары папкасы</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Киселгән кечкенә рәсем файлларының папкасы</label>
+     <placeholder>Киселгән кечкенә рәсем файлларының папкасы</placeholder>
+     <validate>Киселгән кечкенә рәсем файлларының папкасы</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Слайд рәсеменең каталогы</label>
+     <placeholder>Слайд рәсеменең каталогы</placeholder>
+     <validate>Слайд рәсеменең каталогы</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML файллар белешмәсе</label>
+     <placeholder>XML файллар белешмәсе</placeholder>
+     <validate>XML файллар белешмәсе</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> урнаштыру. Зинһар, көтегез ... </installing>
+    <success> урнаштыру уңышлы тәмамланды. </success>
+    <error> Урнаштыру тәмамланып булмады. </error>
+   </alert>
+  
+   <submit> Урнаштыруны башлау </submit>
+   <submit_continue> дәвам итегез &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Галерея белән идарә итү </title>
+   <header> Галерея белән идарә итү </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Галерея исемлеге </title>
+   <header> Галерея исемлеге </header>
+   <sort>
+    <asc> беренчедән соңгысына сортлау </asc>
+    <desc> соңгыдан беренчегә кадәр </desc>
+   </sort>
+   <card>
+    <view>
+     <button> карау </button>
+     <title> Галереяны карау </title>
+    </view>
+    <delete>
+     <button> бетерү </button>
+     <title> Галереяны бетерү </title>
+    </delete>
+    <edit>
+     <button> үзгәртү </button>
+     <title> Галереяны үзгәртү </title>
+    </edit>
+    <images>рәсемнәр</images>
+    <date>Дата</date>
+    <move> Сез галереяларны тычкан белән сөйрәп тәртипкә китерә аласыз. </move>
+    <move_mobile>Бармак белән берәр нәрсәгә кагылыгыз һәм аның сайланганын көтегез. Берәр әйберне сайлаганнан соң, әйберләрне тәртипкә китерү өчен бармагыгызны сөртегез.</move_mobile>
+   </card>
+   <alert> Галерея табылмады. </alert>
+   <modal>
+    <del_gallery>
+     <label> Галереяны бетерү </label>
+     <close> ябу </close>
+     <text> Сез бу галереяны сайттан бетерергә телисезме? </text>
+     <command> бетерү </command>
+     <cancel> Баш тарту </cancel>
+    </del_gallery>
+    <result>
+     <label> Хата </label>
+     <close> ябу </close>
+     <text> </text>
+     <command> Ябу </command>
+    </result>
+   </modal>
+   <save_changes> Галереялар аранжировкасын саклагыз </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Галерея күренеше </title>
+   <header> Галерея күренеше </header>
+   <alert> Рәсемнәр табылмады. </alert>
+   <share>Бу галереяны бүлешегез</share>
+   <filedate>Йөкләү датасы</filedate>
+   <filesize>Файлның размеры</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>буферга күчерү</label>
+     <close>ябу</close>
+     <text>буфер тактасына күчерелгән сылтама</text>
+     <command>Күчермә</command>
+     <cancel>Ябу</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Яңа Галерея булдыру </title>
+    <header> Яңа Галерея булдыру </header>
+   </new>
+   <edit>
+    <title> Галереяны үзгәртү </title>
+    <header> Галереяны үзгәртү </header>
+   </edit>
+   <gallery_info>
+    <title> Галерея турында мәгълүмат </title>
+    <name>
+     <label> Галерея исеме </label>
+     <placeholder> Галерея исеме </placeholder>
+     <validate> Керү галереясе исеме </validate>
+    </name>
+    <description>
+     <label> Галерея тасвирламасы </label>
+     <placeholder> Галерея тасвирламасы </placeholder>
+     <validate> Керү галереясе тасвирламасы </validate>
+    </description>
+    <keywords>
+     <label> Галерея ачкыч сүзләре үтем яки сызык тәнәфесләре белән аерыла (керегез) </label>
+     <placeholder> Галерея ачкыч сүзләре үтем яки сызык тәнәфесләре белән аерыла (керегез) </placeholder>
+     <validate> Галерея ачкыч сүзләрен кертегез </validate>
+    </keywords>
+    <submit>
+     <save> Галереяны саклагыз </save>
+     <update> Галереяны яңарту </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Рәсем йөкләүче кулланма </title>
+     <body>
+      <![CDATA[
+<b> Рәсемнәрне карау </b> төймәсе белән җайланмадагы рәсемнәрне сайлагыз һәм <b> Рәсемнәрне йөкләү </b> төймәсе белән сайтка йөкләгез. <br/> Ярдәм ителгән рәсем форматлары: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Рөхсәт ителгән минималь карар: <b>%d x %d px</b> <br/> Рөхсәт ителгән максималь карар: <b>%d x %d px</b> <br/> Бер файлның максималь размеры: <b>%d МБ</b> <br/> Галереяга рәсем саны: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Барысын да сайлагыз </select_all>
+    <select_del> Сайланган рәсемнәрне бетерү </select_del>
+    <thumb>
+     <exist>
+      <delete> Сайттан йөкләнгән рәсемне бетерү </delete>
+      <info> Рәсем турында мәгълүмат </info>
+     </exist>
+     <new>
+      <delete> Сайттан йөкләнгән рәсемне бетерү </delete>
+      <cancel> Рәсем йөкләүдән баш тарту </cancel>
+      <info> Рәсем турында мәгълүмат </info>
+      <rotate> Рәсемне әйләндерү </rotate>
+      <crop> киселгән рәсем </crop>
+     </new>
+     <move> Рәсемнәрне тычкан белән сөйрәп тәртипкә китерә аласыз. </move>
+     <move_mobile>Бармак белән берәр нәрсәгә кагылыгыз һәм аның сайланганын көтегез. Берәр әйберне сайлаганнан соң, әйберләрне тәртипкә китерү өчен бармагыгызны сөртегез.</move_mobile>
+    </thumb>
+    <browse> Рәсемнәрне карау </browse>
+    <upload> Рәсемнәрне йөкләү </upload>
+    <uploading> Рәсемнәр күтәреләсайтка йөкләнгән. Йөкләү тәмамланганчы битне япмагыз. </uploading>
+    <uploaded> Рәсемнәр сайтка йөкләнде. </uploaded>
+    <error>Серверга файллар йөкләгәндә кайбер хаталар килеп чыкты.</error>
+    <save_changes> Рәсем үзгәрешләрен саклагыз </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> киселгән рәсем </crop>
+     <cancel> Баш тарту </cancel>
+    </crop>
+    <del_up_img>
+     <label> Рәсемне бетерү </label>
+     <close> ябу </close>
+     <text> Сез бу рәсемне сайттан бетерергә телисезме? </text>
+     <command> бетерү </command>
+     <cancel> Баш тарту </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Рәсемне бетерү </label>
+     <close> ябу </close>
+     <text> Сез бу рәсемне сайттан бетерергә телисезме? </text>
+     <command> бетерү </command>
+     <cancel> Баш тарту </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Сайланган рәсемнәрне бетерү </label>
+     <close> ябу </close>
+     <text> Сайланган рәсемнәрне сайттан бетерергә телисезме? </text>
+     <command> бетерү </command>
+     <cancel> Баш тарту </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Рәсем турында мәгълүмат </label>
+     <close> ябу </close>
+     <filename> Файлның исеме </filename>
+     <filesize> Файлның размеры </filesize>
+     <date> Йөкләү датасы </date>
+     <title>
+      <label> Титул </label>
+      <placeholder> Рәсемнең исеме </placeholder>
+     </title>
+     <desc>
+      <label> тасвирлау </label>
+      <placeholder> Рәсем тасвирламасы </placeholder>
+     </desc>
+     <keyw>
+      <label> ачкыч сүзләр </label>
+      <placeholder> Ачкыч сүзләр үтем яки яңа сызык белән аерыла (керегез) </placeholder>
+     </keyw>
+     <command> Саклау / Яңарту </command>
+     <cancel> Баш тарту </cancel>
+    </img_info>
+    <result>
+     <label> Хата </label>
+     <close> ябу </close>
+     <text> </text>
+     <command> Ябу </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Серверны йөкләү өчен рөхсәт ителгән рәсем көйләүләре </title>
+    <upload_limit>
+     <label> Галереяга максималь рәсем саны </label>
+     <placeholder> Галереяга максималь рәсем саны </placeholder>
+     <validate> Галереяга максималь рәсем саны </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Бер файлның максималь зурлыгы (МБ) </label>
+     <placeholder> Бер файлның максималь зурлыгы (МБ) </placeholder>
+     <validate> Максималь бер файл күләмен кертегез (МБ) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Рөхсәт ителгән минималь карар </label>
+     <width>
+      <placeholder> минималь киңлек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </width>
+     <height>
+      <placeholder> минималь биеклек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Рөхсәт ителгән максималь карар </label>
+     <width>
+      <placeholder> максималь киңлек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </width>
+     <height>
+      <placeholder> максималь биеклек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Рәсем Трансформациясе </title>
+    <full_resolution>
+     <label> Рәсемнең тулы размеры </label>
+     <width>
+      <placeholder> максималь киңлек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </width>
+     <height>
+      <placeholder> максималь биеклек </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Миниатюр зурлыгы </label>
+     <width>
+      <placeholder> Миниатюр киңлеге </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </width>
+     <height>
+      <placeholder> Миниатюр биеклеге </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Слайд размеры </label>
+     <width>
+      <placeholder> Слайд киңлеге </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </width>
+     <height>
+      <placeholder> Слайд биеклеге </placeholder>
+      <validate> Кыйммәт кертегез </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Сыйфат </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG кысу </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Су билгесе </title>
+    <label> Су билгесен кулланыгыз </label>
+    <position> Су билгесе позициясе </position>
+    <image> Су билгесе рәсеме </image>
+    <set> Су билгесен куегыз </set>
+    <browse> 1- Су билгесенең рәсем файлын карагыз </browse>
+    <adjust> 2- Рәсемне рамка буенча көйләгез. </adjust>
+    <upload> 3- Сайланган файлны серверга йөкләү </upload>
+    <uploading> серверга йөкләү ... </uploading>
+    <uploaded> Йөкләнде. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Бит </page>
+   <first> беренче бит </first>
+   <prev> Алдагы бит </prev>
+   <next> Киләсе бит </next>
+   <last> Соңгы бит </last>
+  </pagination>
+
+</lang>

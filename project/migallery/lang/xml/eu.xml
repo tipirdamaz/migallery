@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Hizkuntza </title>
+   <label> Aukeratu hizkuntza </label>
+  </lang>
+
+  <timezone>
+   <title>Ordu eremu</title>
+   <label>Aukeratu ordu-zona</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galeriaren kudeaketa </gallery_man>
+   <gallery_list> Galeria zerrenda </gallery_list>
+   <uploader> Sortu galeria berria </uploader>
+   <back> Itzuli </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery konfigurazioa </title>
+   <header> MIGallery konfigurazioa </header>
+
+   <img_direction>
+    <label> Galeria, irudia eta diapositibaren norabidea </label>
+    <left> Ezkerretik eskuinera </left>
+    <right> eskuinetik ezkerrera </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL datu basearen informazioa </title>
+    <host>
+     <label> DB ostalaria </label>
+     <placeholder> DB ostalaria </placeholder>
+     <validate> Sartu datu-basearen ostalari izena </validate>
+    </host>
+    <user>
+     <label> DB erabiltzaile izena </label>
+     <placeholder> DB erabiltzaile izena </placeholder>
+     <validate> Sartu datu-basearen erabiltzaile izena </validate>
+    </user>
+    <pass>
+     <label> DB pasahitza </label>
+     <placeholder> DB pasahitza </placeholder>
+     <validate> Idatzi datu-basearen pasahitza </validate>
+    </pass>
+    <db>
+     <label> DB izena </label>
+     <placeholder> DB izena </placeholder>
+     <validate> Idatzi datu-basearen izena </validate>
+    </db>
+    <gal_table>
+     <label> Galeria taularen izena </label>
+     <placeholder> Galeria taularen izena </placeholder>
+     <validate> Idatzi galeria taulako izena </validate>
+    </gal_table>
+    <img_table>
+     <label> Irudi taularen izena </label>
+     <placeholder> Irudi taularen izena </placeholder>
+     <validate> Idatzi irudiaren taularen izena </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Idazteko moduko edukien direktorioak</title>
+    <db_alert>
+     <![CDATA[
+    <b> konfigurazioa </b>, <b> errore-erregistroa </b> eta <b> definizioak </b> fitxategiak beheko direktorioan sortuko dira. Direktorio honen izena aldatu nahi baduzu, aldatu <b> DB_DIR </b> definizioa <b> definitions0.php </b> fitxategian eta freskatu orrialde hau. <br/><br/>Konfigurazio fitxategia, erroreen erregistro fitxategia eta definizio fitxategia berrizendatu nahi badituzu, aldatu definitions0.php fitxategiaren <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> eta <b>DEFINITIONS_FILE</b> definizioak.<br/><br/>Zure sistema unix-en oinarrituta badago, ezarri idazketa baimenak komando honekin: <br/> <b>%s</b> <br/> <br/> Instalazioa hasi aurretik, ziurtatu hurrengo bidea badagoela eta direktorioan idazteko baimenak dituzu:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Instalazioa hasi aurretik, ziurtatu direktorio hauek erabilgarri daudela eta direktorioetan idazteko baimena duzula. <br/> <br/> Zuzendari hauek ez diren beste direktorio batzuk erabiliko badituzu, direktorioak diskoan existitzen ez badira, sortu direktorioak eta ezarri idazteko baimenak eta hasi instalazioa.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurazioa, akatsen erregistroa eta definizioen fitxategien bidea</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Galeria berria gordetzen denean sortzen dira direktorio hauek. <b>%d</b> k galeriaren IDa adierazten du. Direktorio hauek goian definitutako <b> Irudien oinarrizko direktorioa </b> direktorioan sortzen dira. Egiaztatu direktorioen formatua egokia den.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Konfigurazio fitxategia aurretik sortu zen. Beraz, ezin duzu instalazioa exekutatu. Konfigurazio fitxategia ezabatu behar duzu lehenik eta ondoren instalazioa exekutatu.</config_alert>
+    <tmp_dir>
+     <label>Irudiaren aldi baterako direktorioa</label>
+     <placeholder>Irudiaren aldi baterako direktorioa</placeholder>
+     <validate>Irudiaren aldi baterako direktorioa</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Irudi txikiaren aldi baterako direktorioa</label>
+     <placeholder>Irudi txikiaren aldi baterako direktorioa</placeholder>
+     <validate>Irudi txikiaren aldi baterako direktorioa</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Moztutako miniaturaren aldi baterako bidea</label>
+     <placeholder>Moztutako miniaturaren aldi baterako bidea</placeholder>
+     <validate>Moztutako miniaturaren aldi baterako bidea</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Diapositiben irudiaren aldi baterako direktorioa</label>
+     <placeholder>Diapositiben irudiaren aldi baterako direktorioa</placeholder>
+     <validate>Diapositiben irudiaren aldi baterako direktorioa</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Irudien oinarrizko direktorioa</label>
+     <placeholder>Irudien oinarrizko direktorioa</placeholder>
+     <validate>Irudien oinarrizko direktorioa</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Irudi direktorioa</label>
+     <placeholder>Irudi direktorioa</placeholder>
+     <validate>Irudi direktorioa</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Irudi txikien direktorioa</label>
+     <placeholder>Irudi txikien direktorioa</placeholder>
+     <validate>Irudi txikien direktorioa</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Moztutako irudi txikien direktorioa</label>
+     <placeholder>Moztutako irudi txikien direktorioa</placeholder>
+     <validate>Moztutako irudi txikien direktorioa</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Diapositiben irudien direktorioa</label>
+     <placeholder>Diapositiben irudien direktorioa</placeholder>
+     <validate>Diapositiben irudien direktorioa</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML fitxategien direktorioa</label>
+     <placeholder>XML fitxategien direktorioa</placeholder>
+     <validate>XML fitxategien direktorioa</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instalatzen. Itxaron mesedez ... </installing>
+    <success> Instalazioa ongi burutu da. </success>
+    <error> Instalazioa ezin izan da amaitu. </error>
+   </alert>
+  
+   <submit> Hasi instalazioa </submit>
+   <submit_continue> Jarraitu &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galeriaren kudeaketa </title>
+   <header> Galeria kudeaketa </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galeria zerrenda </title>
+   <header> Galeria zerrenda </header>
+   <sort>
+    <asc> ordenatu lehenetik azkenera </asc>
+    <desc> ordenatu azkenetik lehenera </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Ikusi </button>
+     <title> Ikusi galeria </title>
+    </view>
+    <delete>
+     <button> Ezabatu </button>
+     <title> Ezabatu galeria </title>
+    </delete>
+    <edit>
+     <button> Editatu </button>
+     <title> Editatu galeria </title>
+    </edit>
+    <images>irudiak</images>
+    <date>Data</date>
+    <move> Galeriak saguarekin arrastatuz ordenatu ditzakezu. </move>
+    <move_mobile>Eduki ukituta elementu bat hatzarekin eta itxaron hautatzen den arte. Elementua hautatu ondoren, elementuak ordenatu ditzakezu hatzarekin arrastatuz.</move_mobile>
+   </card>
+   <alert> Ez da galeriarik aurkitu. </alert>
+   <modal>
+    <del_gallery>
+     <label> Ezabatu galeria </label>
+     <close> itxi </close>
+     <text> Galeria hau gunetik ezabatu nahi duzu? </text>
+     <command> Ezabatu </command>
+     <cancel> Utzi </cancel>
+    </del_gallery>
+    <result>
+     <label> Errorea </label>
+     <close> itxi </close>
+     <text> </text>
+     <command> Itxi </command>
+    </result>
+   </modal>
+   <save_changes> Gorde galeriaren ordenaketa </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galeria ikuspegia </title>
+   <header> Galeria ikuspegia </header>
+   <alert> Ez da irudirik aurkitu. </alert>
+   <share>Partekatu galeria</share>
+   <filedate>Kargatzeko Data</filedate>
+   <filesize>Fitxategiaren tamaina</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopiatu arbelera</label>
+     <close>itxi</close>
+     <text>Esteka arbelera kopiatu da</text>
+     <command>Kopiatu</command>
+     <cancel>Itxi</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Sortu galeria berria </title>
+    <header> Sortu galeria berria </header>
+   </new>
+   <edit>
+    <title> Editatu galeria </title>
+    <header> Editatu galeria </header>
+   </edit>
+   <gallery_info>
+    <title> Galeriaren informazioa </title>
+    <name>
+     <label> Galeriaren izena </label>
+     <placeholder> Galeriaren izena </placeholder>
+     <validate> Sartu galeriaren izena </validate>
+    </name>
+    <description>
+     <label> Galeriaren deskribapena </label>
+     <placeholder> Galeriaren deskribapena </placeholder>
+     <validate> Sarrerako galeriaren deskribapena </validate>
+    </description>
+    <keywords>
+     <label> Galeriako gako hitzak komaz edo lerro berriez bereizita </label>
+     <placeholder> Galeriako gako hitzak komaz edo lerro berriez bereizita </placeholder>
+     <validate> Idatzi galeriaren gako-hitzak </validate>
+    </keywords>
+    <submit>
+     <save> Gorde galeria </save>
+     <update> Eguneratu galeria </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Kargatzeko Gida </title>
+     <body>
+      <![CDATA[
+Aukeratu zure gailuko irudiak <b> Arakatu irudiak </b> botoiarekin eta igo gunera <b> Kargatu irudiak </b> botoiarekin. <br/> Onartutako irudi formatuak: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Onartutako gutxieneko bereizmena: <b>%d x %d px</b> <br/> Onartutako gehieneko bereizmena: <b>%d x %d px</b> <br/> Fitxategi bakarra Gehieneko tamaina: <b>%d MB</b> <br/> Galeria bakoitzeko irudi kopurua: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Aukeratu guztiak </select_all>
+    <select_del> Ezabatu hautatutako </select_del>
+    <thumb>
+     <exist>
+      <delete> Ezabatu kargatutako irudia webgunetik </delete>
+      <info> Irudiaren informazioa </info>
+     </exist>
+     <new>
+      <delete> Ezabatu kargatutako irudia webgunetik </delete>
+      <cancel> Utzi irudiaren karga </cancel>
+      <info> Irudiaren informazioa </info>
+      <rotate> Biratu irudia </rotate>
+      <crop> Moztu irudia </crop>
+     </new>
+     <move> Irudiak saguarekin arrastatuz ordenatu ditzakezu. </move>
+     <move_mobile>Eduki ukituta elementu bat hatzarekin eta itxaron hautatzen den arte. Elementua hautatu ondoren, elementuak ordenatu ditzakezu hatzarekin arrastatuz.</move_mobile>
+    </thumb>
+    <browse> Arakatu irudiak </browse>
+    <upload> Kargatu irudiak </upload>
+    <uploading> Irudiak gunera kargatzen ari dira. Ez itxi orria kargatzea amaitu arte. </uploading>
+    <uploaded> Irudiak gunera kargatu dira. </uploaded>
+    <error>Akats batzuk gertatu dira zerbitzarira fitxategiak kargatzean.</error>
+    <save_changes> Gorde irudiaren aldaketak </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Moztu </crop>
+     <cancel> Utzi </cancel>
+    </crop>
+    <del_up_img>
+     <label> Ezabatu irudia </label>
+     <close> itxi </close>
+     <text> Irudi hau gunetik ezabatu nahi duzu? </text>
+     <command> Ezabatu </command>
+     <cancel> Utzi </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Ezabatu irudia </label>
+     <close> itxi </close>
+     <text> Irudi hau gunetik ezabatu nahi duzu? </text>
+     <command> Ezabatu </command>
+     <cancel> Utzi </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Ezabatu hautatutako irudiak </label>
+     <close> itxi </close>
+     <text> Aukeratutako irudiak gunetik ezabatu nahi dituzu? </text>
+     <command> Ezabatu </command>
+     <cancel> Utzi </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Irudiaren informazioa </label>
+     <close> itxi </close>
+     <filename> Fitxategiaren izena </filename>
+     <filesize> Fitxategiaren tamaina </filesize>
+     <date> Kargatzeko Data </date>
+     <title>
+      <label> Izenburua </label>
+      <placeholder> Irudiaren izenburua </placeholder>
+     </title>
+     <desc>
+      <label> Deskribapena </label>
+      <placeholder> Irudiaren deskribapena </placeholder>
+     </desc>
+     <keyw>
+      <label> Hitz gakoak </label>
+      <placeholder> Hitz gakoak komaz edo lerro berriez bereizita </placeholder>
+     </keyw>
+     <command> Gorde / Eguneratu </command>
+     <cancel> Utzi </cancel>
+    </img_info>
+    <result>
+     <label> Errorea </label>
+     <close> itxi </close>
+     <text> </text>
+     <command> Itxi </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Irudien ezarpen kargagarriak </title>
+    <upload_limit>
+     <label> Gehienezko irudi kopurua galeria bakoitzeko </label>
+     <placeholder> Gehieneko irudi kopurua galeria bakoitzeko </placeholder>
+     <validate> Sartu gehieneko irudi kopurua galeria bakoitzeko </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Fitxategi bakarreko gehieneko tamaina (MB) </label>
+     <placeholder> Fitxategi bakarreko gehieneko tamaina (MB) </placeholder>
+     <validate> Sartu fitxategi bakarreko gehieneko tamaina (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Onartutako gutxieneko bereizmena </label>
+     <width>
+      <placeholder> Gutxienekoa zabalera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </width>
+     <height>
+      <placeholder> Gutxienekoa Altuera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Baimendutako gehieneko bereizmena </label>
+     <width>
+      <placeholder> Gehieneko zabalera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </width>
+     <height>
+      <placeholder> Gehienezko altuera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Irudiaren eraldaketa </title>
+    <full_resolution>
+     <label> Irudia tamaina osoan </label>
+     <width>
+      <placeholder> Gehieneko zabalera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </width>
+     <height>
+      <placeholder> Gehienezko altuera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Irudi txikiaren tamaina </label>
+     <width>
+      <placeholder> Erpuruaren zabalera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </width>
+     <height>
+      <placeholder> Erpuruaren Altuera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Diapositibaren tamaina </label>
+     <width>
+      <placeholder> Diapositiba zabalera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </width>
+     <height>
+      <placeholder> Diapositibaren altuera </placeholder>
+      <validate> Idatzi balioa </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg Kalitatea </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG konprimitu </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Erabili Watermark </label>
+    <position> Watermark Position </position>
+    <image> Watermark Image </image>
+    <set> Ezarri filigrana </set>
+    <browse> 1- Arakatu Watermark Irudi Fitxategia </browse>
+    <adjust> 2- Doitu irudia markoaren arabera. </adjust>
+    <upload> 3- Kargatu hautatutako fitxategia </upload>
+    <uploading> Kargatzen ... </uploading>
+    <uploaded> Igotako. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Orria </page>
+   <first> Lehen orria </first>
+   <prev> Aurreko orria </prev>
+   <next> Hurrengo orria </next>
+   <last> Azken orria </last>
+  </pagination>
+
+</lang>

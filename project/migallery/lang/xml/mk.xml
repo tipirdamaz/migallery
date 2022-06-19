@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Јазик </title>
+   <label> Изберете јазик </label>
+  </lang>
+
+  <timezone>
+   <title>Временска зона</title>
+   <label>Изберете временска зона</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Управување со галеријата </gallery_man>
+   <gallery_list> список со галерии </gallery_list>
+   <uploader> Создајте нова галерија </uploader>
+   <back> назад </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery Поставување </title>
+   <header> MIGallery Поставување </header>
+
+   <img_direction>
+    <label> Галерија, слика и насока на слајд </label>
+    <left> Лево надесно </left>
+    <right> Десно кон лево </right>
+   </img_direction>
+
+   <db_info>
+    <title> Информации за базата на податоци на MySQL </title>
+    <host>
+     <label> Име на домаќин на базата на податоци </label>
+     <placeholder> Име на домаќин на базата на податоци </placeholder>
+     <validate> Внесете име на домаќин на базата на податоци </validate>
+    </host>
+    <user>
+     <label> Име на корисник на базата на податоци </label>
+     <placeholder> Име на корисник на базата на податоци </placeholder>
+     <validate> Внесете го името на корисничката база на податоци </validate>
+    </user>
+    <pass>
+     <label> Лозинка на базата на податоци </label>
+     <placeholder> Лозинка во базата на податоци </placeholder>
+     <validate> Внесете ја лозинката за базата на податоци </validate>
+    </pass>
+    <db>
+     <label> Име на база на податоци </label>
+     <placeholder> Име на базата на податоци </placeholder>
+     <validate> Внесете име на база на податоци </validate>
+    </db>
+    <gal_table>
+     <label> Име на табелата со галерија на слики </label>
+     <placeholder> Име на табелата со галерија на слики </placeholder>
+     <validate> Внесете име на табелата со галерија </validate>
+    </gal_table>
+    <img_table>
+     <label> Име на табелата со слика </label>
+     <placeholder> Име на табелата за слика </placeholder>
+     <validate> Внесете име на табелата за слика </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Директориуми каде што е дозволено да се запишуваат датотеки</title>
+    <db_alert>
+     <![CDATA[
+    Следниот директориум е местото каде што ќе се креираат датотеките <b> конфигурација </b>, <b> дневник на грешки </b> и <b> дефиниции </b>. Ако сакате да го смените името на овој директориум, променете ја дефиницијата <b> DB_DIR </b> во датотеката <b> definitions0.php </b> и освежете ја оваа страница.<br/><br/>Ако сакате да ја преименувате конфигурациската датотека, датотеката за евиденција на грешки и датотеката со дефиниции, променете ја вредноста на <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> и <b>DEFINITIONS_FILE</b> од датотеката definitions0.php.<br/><br/>Ако вашиот систем е заснован на уникс, поставете ги дозволите за запишување на датотеката во папката со следнава команда:<br/><b>%s</b><br/><br/>Пред да започнете со инсталацијата, проверете дали постои следната патека и дали имате дозволи да напишете датотека во овој директориум:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Пред да започнете со инсталацијата, проверете дали се достапни следниве директориуми и дали имате дозвола да пишувате во директориумите. <br/> <br/> Ако сакате да користите директориуми освен следниве директориуми, ако директориумите не постојат на дискот, прво креирајте ги директориумите и поставете ги дозволите за запишување на овие директориуми и започнете со инсталацијата.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Конфигурација, дневник за грешки и патека за датотеки со дефиниции</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Следните директориуми се создаваат кога ќе се зачува новата галерија. <b>%d</b> го означува ID-то на галеријата. Овие директориуми се креирани во директориумот <b> Основен директориум на слики </b> дефиниран погоре. Осигурете се дека форматот на овие директориуми е соодветен.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Конфигурациската датотека е креирана претходно. Затоа, не можете да го извршите поставувањето. Прво, мора да ја избришете датотеката за конфигурација и да ја извршите поставката.</config_alert>
+    <tmp_dir>
+     <label>Привремен директориум за слика</label>
+     <placeholder>Привремен директориум за слика</placeholder>
+     <validate>Привремен директориум за слика</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Привремен директориум на сликичка</label>
+     <placeholder>Привремен директориум на сликичка</placeholder>
+     <validate>Привремен директориум на сликичка</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Привремен директориум на исечени сликички</label>
+     <placeholder>Привремен директориум на исечени сликички</placeholder>
+     <validate>Привремен директориум на исечени сликички</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Привремен директориум за слика на слајд</label>
+     <placeholder>Привремен директориум за слика на слајд</placeholder>
+     <validate>Привремен директориум за слика на слајд</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Основен директориум на слики</label>
+     <placeholder>Основен директориум на слики</placeholder>
+     <validate>Основен директориум на слики</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Директориум за слики</label>
+     <placeholder>Директориум за слики</placeholder>
+     <validate>Директориум за слики</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Директориум на датотеки со сликички</label>
+     <placeholder>Директориум на датотеки со сликички</placeholder>
+     <validate>Директориум на датотеки со сликички</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Директориум на исечени сликички</label>
+     <placeholder>Директориум на исечени сликички</placeholder>
+     <validate>Директориум на исечени сликички</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Директориум за слика на слајд</label>
+     <placeholder>Директориум за слика на слајд</placeholder>
+     <validate>Директориум за слика на слајд</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Директориум на датотеки XML</label>
+     <placeholder>Директориум на датотеки XML</placeholder>
+     <validate>Директориум на датотеки XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Инсталирање. Ве молиме почекајте ... </installing>
+    <success> Инсталирањето заврши успешно. </success>
+    <error> Инсталацијата не може да се заврши. </error>
+   </alert>
+  
+   <submit> Започнете со инсталирање </submit>
+   <submit_continue> Продолжете &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Управување со галеријата </title>
+   <header> Управување со галерија </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Список на галерии </title>
+   <header> Список на галерии </header>
+   <sort>
+    <asc> подреди од прво до последно </asc>
+    <desc> подреди од последно до прво </desc>
+   </sort>
+   <card>
+    <view>
+     <button> поглед </button>
+     <title> Погледнете галерија </title>
+    </view>
+    <delete>
+     <button> Избриши </button>
+     <title> Избриши галерија </title>
+    </delete>
+    <edit>
+     <button> Уреди </button>
+     <title> Уреди галерија </title>
+    </edit>
+    <images>слики</images>
+    <date>Датум</date>
+    <move> Можете да ги сортирате галериите со влечење со глувчето. </move>
+    <move_mobile>Допрете и задржете ставка со прстот и почекајте да биде обележана. Откако ќе изберете ставка, повлечете го прстот за да ги сортирате предметите.</move_mobile>
+   </card>
+   <alert> Не е пронајдена галерија. </alert>
+   <modal>
+    <del_gallery>
+     <label> Избриши галерија </label>
+     <close> затвори </close>
+     <text> Дали сакате да ја избришете оваа галерија од страницата? </text>
+     <command> Избриши </command>
+     <cancel> Откажи </cancel>
+    </del_gallery>
+    <result>
+     <label> Грешка </label>
+     <close> затвори </close>
+     <text> </text>
+     <command> Затвори </command>
+    </result>
+   </modal>
+   <save_changes> Зачувајте сортирање на галерии </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Поглед на галерија </title>
+   <header> Поглед на галерија </header>
+   <alert> Не е пронајдена слика. </alert>
+   <share>Споделете ја галеријата</share>
+   <filedate>Датум на полнење</filedate>
+   <filesize>Големина на Фајлот</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Копирајте во таблата со исечоци</label>
+     <close>затвори</close>
+     <text>Врската е копирана во таблата со исечоци</text>
+     <command>Копирај</command>
+     <cancel>Затвори</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Создадете нова галерија </title>
+    <header> Создадете нова галерија </header>
+   </new>
+   <edit>
+    <title> Уреди галерија </title>
+    <header> Уредете ја галеријата </header>
+   </edit>
+   <gallery_info>
+    <title> Информации за галеријата </title>
+    <name>
+     <label> Име на галеријата </label>
+     <placeholder> Име на галерија </placeholder>
+     <validate> Име на галерија на влезови </validate>
+    </name>
+    <description>
+     <label> Опис на галеријата </label>
+     <placeholder> Опис на галеријата </placeholder>
+     <validate> Опис на галеријата за внесување </validate>
+    </description>
+    <keywords>
+     <label> Клучни зборови на галеријата одделени со запирки или паузи за редови </label>
+     <placeholder> Клучни зборови на галеријата одделени со запирки или паузи за редови </placeholder>
+     <validate> Внесете клучни зборови во галеријата </validate>
+    </keywords>
+    <submit>
+     <save> Зачувајте галерија </save>
+     <update> Галерија за ажурирање </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Водич за поставување на слики </title>
+     <body>
+      <![CDATA[
+Изберете слики од вашиот уред со копчето <b> Прелистајте ги сликите </b> и прикачете ги на страницата со копчето <b> Поставете слики </b>. <br/> Поддржани формати на слики: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Дозволена минимална резолуција: <b>%d x %d px</b> <br/> Дозволена максимална резолуција: <b>%d x %d px</b> <br/> Максимална големина на единечна датотека: <b>%d MB</b> <br/> Број на слики по галерија: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Изберете ги сите </select_all>
+    <select_del> Избриши ги избраните слики </select_del>
+    <thumb>
+     <exist>
+      <delete> Избришете ја поставената слика од страницата </delete>
+      <info> Информации за сликата </info>
+     </exist>
+     <new>
+      <delete> Избришете ја поставената слика од страницата </delete>
+      <cancel> Откажи Поставете ја оваа слика </cancel>
+      <info> Информации за сликата </info>
+      <rotate> Ротирај ја сликата </rotate>
+      <crop> Исечете ја оваа слика </crop>
+     </new>
+     <move> Сликите можете да ги сортирате со влечење со глувчето. </move>
+     <move_mobile>Допрете и задржете ставка со прстот и почекајте да биде обележана. Откако ќе изберете ставка, повлечете го прстот за да ги сортирате предметите.</move_mobile>
+    </thumb>
+    <browse> Прелистајте ги сликите </browse>
+    <upload> Поставете слики </upload>
+    <uploading> Сликите се поставуваат тo страницата. Не затворајте ја страницата додека не заврши поставувањето. </uploading>
+    <uploaded> Сликите се поставени на страницата. </uploaded>
+    <error>Се појавија некои грешки при поставување датотеки на серверот.</error>
+    <save_changes> Зачувајте ги промените на сликите </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Исечете </crop>
+     <cancel> Откажи </cancel>
+    </crop>
+    <del_up_img>
+     <label> Избриши ја сликата </label>
+     <close> затвори </close>
+     <text> Дали сакате да ја избришете оваа слика од веб-страницата? </text>
+     <command> Избриши </command>
+     <cancel> Откажи </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Избриши ја сликата </label>
+     <close> затвори </close>
+     <text> Дали сакате да ја избришете оваа слика од веб-страницата? </text>
+     <command> Избриши </command>
+     <cancel> Откажи </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Избриши избрани слики </label>
+     <close> затвори </close>
+     <text> Дали сакате да ги избришете избраните слики од веб-страницата? </text>
+     <command> Избриши </command>
+     <cancel> Откажи </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Информации за слика </label>
+     <close> затвори </close>
+     <filename> Име на датотека </filename>
+     <filesize> Големина на датотека </filesize>
+     <date> Датум на полнење </date>
+     <title>
+      <label> Наслов </label>
+      <placeholder> Наслов на слика </placeholder>
+     </title>
+     <desc>
+      <label> Опис </label>
+      <placeholder> Опис на сликата </placeholder>
+     </desc>
+     <keyw>
+      <label> Клучни зборови </label>
+      <placeholder> Клучни зборови разделени со запирки или паузи на редови </placeholder>
+     </keyw>
+     <command> Зачувај / ажурирај </command>
+     <cancel> Откажи </cancel>
+    </img_info>
+    <result>
+     <label> Грешка </label>
+     <close> затвори </close>
+     <text> </text>
+     <command> Затвори </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Поставки за дозволени слики што можат да се прикачуваат на серверот </title>
+    <upload_limit>
+     <label> Максимален број на слики по галерија </label>
+     <placeholder> Максимален број на слики по галерија </placeholder>
+     <validate> Внесете го максималниот број на слики по галерија </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Максимална големина на единечна датотека (MB) </label>
+     <placeholder> Максимална големина на единечна датотека (MB) </placeholder>
+     <validate> Внесете единечна датотека Максимална големина (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Дозволена минимална резолуција </label>
+     <width>
+      <placeholder> Минимална ширина </placeholder>
+      <validate> Внесете вредност </validate>
+     </width>
+     <height>
+      <placeholder> Минимална висина </placeholder>
+      <validate> Внесете вредност </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Дозволена максимална резолуција </label>
+     <width>
+      <placeholder> Максимална ширина </placeholder>
+      <validate> Внесете вредност </validate>
+     </width>
+     <height>
+      <placeholder> Максимална висина </placeholder>
+      <validate> Внесете вредност </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Трансформација на сликата </title>
+    <full_resolution>
+     <label> Целосна големина на сликата </label>
+     <width>
+      <placeholder> Максимална ширина </placeholder>
+      <validate> Внесете вредност </validate>
+     </width>
+     <height>
+      <placeholder> Максимална висина </placeholder>
+      <validate> Внесете вредност </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Големина на сликичката </label>
+     <width>
+      <placeholder> Ширина на палецот </placeholder>
+      <validate> Внесете вредност </validate>
+     </width>
+     <height>
+      <placeholder> Висина на палецот </placeholder>
+      <validate> Внесете вредност </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Големина на слајд </label>
+     <width>
+      <placeholder> Ширина на слајд </placeholder>
+      <validate> Внесете вредност </validate>
+     </width>
+     <height>
+      <placeholder> Висина на слајдот </placeholder>
+      <validate> Внесете вредност </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Квалитет на Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Компресирај PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Водени жигови на слики </title>
+    <label> Користете воден печат </label>
+    <position> Позиција на воден жиг </position>
+    <image> Слика на воден печат </image>
+    <set> Изберете воден жиг </set>
+    <browse> 1- Прелистајте ја датотеката за воден печат </browse>
+    <adjust> 2- Прилагодете ја сликата во согласност со рамката. </adjust>
+    <upload> 3- Поставување избрана датотека </upload>
+    <uploading> Се поставува ... </uploading>
+    <uploaded> Поставени. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Страница </page>
+   <first> прва страница </first>
+   <prev> Претходна страница </prev>
+   <next> Следна страница </next>
+   <last> Последната страница </last>
+  </pagination>
+
+</lang>

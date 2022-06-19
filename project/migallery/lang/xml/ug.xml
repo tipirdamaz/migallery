@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> تىل </title>
+   <label> تىل تاللاڭ </label>
+  </lang>
+
+  <timezone>
+   <title>ۋاقىت رايونى</title>
+   <label>ۋاقىت رايونىنى تاللاڭ</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> رەسىمخانا باشقۇرۇش </gallery_man>
+   <gallery_list> رەسىملەر تىزىملىكى </gallery_list>
+   <uploader> يېڭى رەسىمخانا قۇرۇش </uploader>
+   <back> قايتىش </back>
+  </nav>
+
+  <install>
+ 
+   <title> تەڭشەش MIGallery </title>
+   <header> تەڭشەش MIGallery </header>
+
+   <img_direction>
+    <label> رەسىمخانا ، رەسىم ۋە سىيرىلىش ئورۇنلاشتۇرۇشلىرى </label>
+    <left> سولدىن ئوڭغا </left>
+    <right> ئوڭدىن سولغا </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL ساندان ئۇچۇرى </title>
+    <host>
+     <label> ساندان مۇلازىمېتىر ئىسمى </label>
+     <placeholder> ساندان مۇلازىمېتىر ئىسمى </placeholder>
+     <validate> ساندان مۇلازىمېتىرىنىڭ نامىنى كىرگۈزۈڭ </validate>
+    </host>
+    <user>
+     <label> ساندان ئىشلەتكۈچى ئىسمى </label>
+     <placeholder> ساندان ئىشلەتكۈچى ئىسمى </placeholder>
+     <validate> سانداننى كىرگۈزۈش ئىشلەتكۈچى ئىسمى </validate>
+    </user>
+    <pass>
+     <label> ساندان پارولى </label>
+     <placeholder> ساندان پارولى </placeholder>
+     <validate> ساندان پارولى كىرگۈزۈش </validate>
+    </pass>
+    <db>
+     <label> ساندان ئىسمى </label>
+     <placeholder> ساندان ئىسمى </placeholder>
+     <validate> ساندان نامىنى كىرگۈزۈڭ </validate>
+    </db>
+    <gal_table>
+     <label> رەسىمخانا جەدۋىلى ئىسمى </label>
+     <placeholder> رەسىمخانا جەدۋىلى ئىسمى </placeholder>
+     <validate> رەسىمخانا جەدۋىلى ئىسمى </validate>
+    </gal_table>
+    <img_table>
+     <label> رەسىم جەدۋىلىنىڭ ئىسمى </label>
+     <placeholder> رەسىم جەدۋىلىنىڭ ئىسمى </placeholder>
+     <validate> رەسىم جەدۋىلى نامىنى كىرگۈزۈڭ </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>يازغىلى بولىدىغان ھەرىكەتچان مەزمۇنلارنىڭ مۇندەرىجىسى</title>
+    <db_alert>
+     <![CDATA[
+    سەپلىمە ، خاتالىق خاتىرىسى ۋە چۈشەندۈرۈش ھۆججىتى تۆۋەندىكى مۇندەرىجىدە قۇرۇلدى. ئەگەر بۇ مۇندەرىجىنىڭ نامىنى ئۆزگەرتمەكچى بولسىڭىز ، <b> definitions0.php </b> ھۆججىتىدىكى <b> DB_DIR </b> ئېنىقلىمىسىنى ئۆزگەرتىپ ، بۇ بەتنى يېڭىلاڭ.<br/><br/>سەپلىمە ھۆججىتى ، خاتالىق خاتىرىسى ھۆججىتى ۋە چۈشەندۈرۈش ھۆججىتىنىڭ نامىنى ئۆزگەرتمەكچى بولسىڭىز ، definitions0.php ھۆججىتىدىكى <b>CONFIG_FILE</b> ، <b>ERROR_LOG_FILE</b> ۋە <b>DEFINITIONS_FILE</b> نىڭ ئېنىقلىمىسىنى ئۆزگەرتىڭ.<br/><br/>ئەگەر سىستېمىڭىز Unix نى ئاساس قىلغان بولسا ، تۆۋەندىكى بۇيرۇق بىلەن ھۆججەت قىسقۇچقا يېزىش ئىجازەتنامىسىنى بەلگىلەڭ:<br/><b>%s</b><br/><br/>قاچىلاشنى باشلاشتىن بۇرۇن ، تۆۋەندىكى يولنىڭ بارلىقىنى جەزملەشتۈرۈڭ ھەمدە مۇندەرىجىگە يېزىش ھوقۇقىڭىز بار:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    قاچىلاشنى باشلاشتىن بۇرۇن تۆۋەندىكى مۇندەرىجىلەرنىڭ بار-يوقلۇقىنى ۋە مۇندەرىجىلەرگە خەت يېزىش ھوقۇقىڭىزنىڭ بار-يوقلۇقىنى جەزملەشتۈرۈڭ. <br/> <br/> تۆۋەندىكى مۇندەرىجىلەردىن باشقا مۇندەرىجىلەرنى ئىشلەتمەكچى بولسىڭىز ھەمدە قاتتىق دىسكىدا مۇندەرىجە بولمىسا ، ئالدى بىلەن مۇندەرىجە قۇرۇڭ ، بۇ مۇندەرىجىلەرنىڭ يېزىش ئىجازەتنامىسىنى بەلگىلەڭ ۋە قاچىلاشنى باشلاڭ.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>سەپلىمىسى ، خاتالىق خاتىرىسى ۋە ئېنىقلىما ھۆججەتلىرى يولى</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    يېڭى رەسىم ئامبىرى ساقلانغاندا تۆۋەندىكى مۇندەرىجىلەر قۇرۇلىدۇ. <b>% d </b> رەسىم ئامبىرىنى كۆرسىتىدۇ. بۇ مۇندەرىجىلەر يۇقىرىدا ئېنىقلانغان <b> رەسىم ئاساسى مۇندەرىجىسى </b> مۇندەرىجىسىدە قۇرۇلىدۇ. بۇ مۇندەرىجىلەرنىڭ فورماتىنىڭ مۇۋاپىق ئىكەنلىكىنى جەزملەشتۈرۈڭ.
+     ]]>
+    </img_dir_alert>
+    <config_alert>سەپلىمە ھۆججىتى ئىلگىرى قۇرۇلدى. شۇڭلاشقا ، قاچىلاشنى ئىجرا قىلالمايسىز. سىز ئالدى بىلەن سەپلىمە ھۆججىتىنى ئۆچۈرۈپ ئاندىن قاچىلاشنى ئىجرا قىلىشىڭىز كېرەك.</config_alert>
+    <tmp_dir>
+     <label>رەسىملەرنىڭ ۋاقىتلىق مۇندەرىجىسى</label>
+     <placeholder>رەسىملەرنىڭ ۋاقىتلىق مۇندەرىجىسى</placeholder>
+     <validate>رەسىملەرنىڭ ۋاقىتلىق مۇندەرىجىسى</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>كىچىك كۆرۈنۈشنىڭ ۋاقىتلىق مۇندەرىجىسى</label>
+     <placeholder>كىچىك كۆرۈنۈشنىڭ ۋاقىتلىق مۇندەرىجىسى</placeholder>
+     <validate>كىچىك كۆرۈنۈشنىڭ ۋاقىتلىق مۇندەرىجىسى</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>كېسىلگەن كىچىك كۆرۈنۈشلەرنىڭ ۋاقىتلىق مۇندەرىجىسى</label>
+     <placeholder>كېسىلگەن كىچىك كۆرۈنۈشلەرنىڭ ۋاقىتلىق مۇندەرىجىسى</placeholder>
+     <validate>كېسىلگەن كىچىك كۆرۈنۈشلەرنىڭ ۋاقىتلىق مۇندەرىجىسى</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>تونۇشتۇرۇش رەسىملىرىنىڭ ۋاقىتلىق مۇندەرىجىسى</label>
+     <placeholder>تونۇشتۇرۇش رەسىملىرىنىڭ ۋاقىتلىق مۇندەرىجىسى</placeholder>
+     <validate>تونۇشتۇرۇش رەسىملىرىنىڭ ۋاقىتلىق مۇندەرىجىسى</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>رەسىم ئاساسى مۇندەرىجىسى</label>
+     <placeholder>رەسىم ئاساسى مۇندەرىجىسى</placeholder>
+     <validate>رەسىم ئاساسى مۇندەرىجىسى</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>رەسىم مۇندەرىجىسى</label>
+     <placeholder>رەسىم مۇندەرىجىسى</placeholder>
+     <validate>رەسىم مۇندەرىجىسى</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>كىچىك رەسىملەر مۇندەرىجىسى</label>
+     <placeholder>كىچىك رەسىملەر مۇندەرىجىسى</placeholder>
+     <validate>كىچىك رەسىملەر مۇندەرىجىسى</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>كېسىلگەن كىچىك رەسىملەر مۇندەرىجىسى</label>
+     <placeholder>كېسىلگەن كىچىك رەسىملەر مۇندەرىجىسى</placeholder>
+     <validate>كېسىلگەن كىچىك رەسىملەر مۇندەرىجىسى</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>تونۇشتۇرۇش رەسىم ھۆججىتىنىڭ مۇندەرىجىسى</label>
+     <placeholder>تونۇشتۇرۇش رەسىم ھۆججىتىنىڭ مۇندەرىجىسى</placeholder>
+     <validate>تونۇشتۇرۇش رەسىم ھۆججىتىنىڭ مۇندەرىجىسى</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ھۆججەت مۇندەرىجىسى</label>
+     <placeholder>XML ھۆججەت مۇندەرىجىسى</placeholder>
+     <validate>XML ھۆججەت مۇندەرىجىسى</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> قاچىلاش. ساقلاپ تۇرۇڭ ... </installing>
+    <success> قاچىلاش مۇۋەپپەقىيەتلىك تاماملاندى. </success>
+    <error> قاچىلاش تاماملانمىدى. </error>
+   </alert>
+  
+   <submit> قاچىلاشنى باشلاش </submit>
+   <submit_continue> &lt;&lt; داۋاملاشتۇرۇش </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> رەسىم ئامبىرىنى باشقۇرۇش </title>
+   <header> رەسىم ئامبىرىنى باشقۇرۇش </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> رەسىملەر تىزىملىكى </title>
+   <header> رەسىم تىزىملىكى </header>
+   <sort>
+    <asc> بىرىنچىدىن ئاخىرىغىچە رەتلەش </asc>
+    <desc> ئاخىرقىدىن بىرىنچىغىچە رەتلەش </desc>
+   </sort>
+   <card>
+    <view>
+     <button> كۆرۈش </button>
+     <title> رەسىم ئامبىرىنى كۆرۈش </title>
+    </view>
+    <delete>
+     <button> ئۆچۈرۈش </button>
+     <title> رەسىم ئامبىرىنى ئۆچۈرۈش </title>
+    </delete>
+    <edit>
+     <button> تەھرىرلەش </button>
+     <title> رەسىم ئامبىرىنى تەھرىرلەش </title>
+    </edit>
+    <images>سۈرەتلەر</images>
+    <date>چېسلا</date>
+    <move> رەسىم ئامبىرىنى مائۇس بىلەن سۆرەپ رەتلىيەلەيسىز. </move>
+    <move_mobile>بارمىقىڭىز بىلەن بىر نەرسىنى چېكىپ تۇتۇپ ، ئۇنىڭ تاللىنىشىنى ساقلاڭ. بىر تۈرنى تاللىغاندىن كېيىن ، بارمىقىڭىزنى سۆرەپ تۈرلەرنى رەتلەڭ.</move_mobile>
+   </card>
+   <alert> رەسىمخانا تېپىلمىدى. </alert>
+   <modal>
+    <del_gallery>
+     <label> رەسىم ئامبىرىنى ئۆچۈرۈڭ </label>
+     <close> تاقاش </close>
+     <text> بۇ رەسىمخانىنى تور بېكەتتىن ئۆچۈرمەكچىمۇ؟ </text>
+     <command> ئۆچۈرۈش </command>
+     <cancel> بىكار قىلىش </cancel>
+    </del_gallery>
+    <result>
+     <label> خاتالىق </label>
+     <close> تاقاش </close>
+     <text> </text>
+     <command> تاقاش </command>
+    </result>
+   </modal>
+   <save_changes> رەسىم ئامبىرىنى ئورۇنلاشتۇرۇڭ </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> رەسىم ئامبىرى </title>
+   <header> رەسىمخانا كۆرۈنۈشى </header>
+   <alert> رەسىم تېپىلمىدى. </alert>
+   <share>رەسىم ئامبىرىنى ھەمبەھىرلەش</share>
+   <filedate>يۈكلەش ۋاقتى</filedate>
+   <filesize>ھۆججەت چوڭلۇقى</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>چاپلاش تاختىسىغا كۆچۈرۈڭ</label>
+     <close>تاقاش</close>
+     <text>ئۇلىنىش چاپلاش تاختىسىغا كۆچۈرۈلدى</text>
+     <command>كۆچۈرۈڭ</command>
+     <cancel>تاقاش</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> يېڭى رەسىمخانا قۇرۇش </title>
+    <header> يېڭى رەسىمخانا قۇرۇش </header>
+   </new>
+   <edit>
+    <title> رەسىم ئامبىرىنى تەھرىرلەش </title>
+    <header> رەسىم ئامبىرىنى تەھرىرلەش </header>
+   </edit>
+   <gallery_info>
+    <title> رەسىمخانا ئۇچۇرى </title>
+    <name>
+     <label> رەسىمخانا ئىسمى </label>
+     <placeholder> رەسىمخانا ئىسمى </placeholder>
+     <validate> كىرگۈزگەن رەسىم ئامبىرى ئىسمى </validate>
+    </name>
+    <description>
+     <label> رەسىمخانا چۈشەندۈرۈشى </label>
+     <placeholder> رەسىمخانا چۈشەندۈرۈشى </placeholder>
+     <validate> كىرگۈزۈش كارىدورى چۈشەندۈرۈشى </validate>
+    </description>
+    <keywords>
+     <label> ھالقىلىق سۆز پەش ياكى يېڭى قۇر بىلەن ئايرىلىدۇ (Enter) </label>
+     <placeholder> ھالقىلىق سۆز پەش ياكى يېڭى قۇر بىلەن ئايرىلىدۇ (Enter) </placeholder>
+     <validate> رەسىمخانا ئاچقۇچلۇق سۆزلەرنى كىرگۈزۈڭ </validate>
+    </keywords>
+    <submit>
+     <save> رەسىم ئامبىرىنى ساقلاش </save>
+     <update> رەسىم ئامبىرىنى يېڭىلاش </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> رەسىم يۈكلىگۈچى قوللانمىسى </title>
+     <body>
+      <![CDATA[
+ئۈسكۈنىڭىزدىن <b> رەسىملەرنى كۆرۈش </b> كۇنۇپكىسى ئارقىلىق رەسىملەرنى تاللاڭ ۋە <b> رەسىملەرنى يۈكلەش </b> كۇنۇپكىسى بىلەن تور بېكەتكە يۈكلەڭ. <br/> <b> JPG ، PNG ، GIF ، BMP ، WEBP </b> :قوللايدىغان رەسىم فورماتى <br/> <b>%d x %d px</b> :رۇخسەت قىلىنغان ئەڭ تۆۋەن ئېنىقلىق دەرىجىسى <br/> <b>%d x %d px</b> :رۇخسەت قىلىنغان ئەڭ چوڭ ئېنىقلىق دەرىجىسى <br/> <b>%d MB</b> :يەككە ھۆججەتنىڭ ئەڭ چوڭ چوڭلۇقى <br/> <b>%d</b> :ھەر بىررەسىم ئامبىرى
+      ]]>
+     </body>
+    </info>
+    <select_all> ھەممىنى تاللاڭ </select_all>
+    <select_del> تاللانغان رەسىملەرنى ئۆچۈرۈڭ </select_del>
+    <thumb>
+     <exist>
+      <delete> يۈكلەنگەن رەسىمنى تور بېكەتتىن ئۆچۈرۈڭ </delete>
+      <info> رەسىم ئۇچۇرى </info>
+     </exist>
+     <new>
+      <delete> يۈكلەنگەن رەسىمنى تور بېكەتتىن ئۆچۈرۈڭ </delete>
+      <cancel> رەسىم يوللاشنى ئەمەلدىن قالدۇرۇش </cancel>
+      <info> رەسىم ئۇچۇرى </info>
+      <rotate> رەسىمنى ئايلاندۇرۇش </rotate>
+      <crop> Crop Image </crop>
+     </new>
+     <move> رەسىملەرنى مائۇس بىلەن سۆرەپ رەتلىيەلەيسىز. </move>
+     <move_mobile>بارمىقىڭىز بىلەن بىر نەرسىنى چېكىپ تۇتۇپ ، ئۇنىڭ تاللىنىشىنى ساقلاڭ. بىر تۈرنى تاللىغاندىن كېيىن ، بارمىقىڭىزنى سۆرەپ تۈرلەرنى رەتلەڭ.</move_mobile>
+    </thumb>
+    <browse> رەسىملەرنى كۆرۈش </browse>
+    <upload> رەسىملەرنى يۈكلەش </upload>
+    <uploading> رەسىملەر كۆتۈرۈلۈۋاتىدۇبېكەتكە يۈكلەندى. يوللاش تاماملانمىغۇچە بەتنى ياپماڭ. </uploading>
+    <uploaded> رەسىملەر تور بېكەتكە يوللاندى. </uploaded>
+    <error>مۇلازىمېتىرغا ھۆججەت يوللاش جەريانىدا بەزى خاتالىقلار يۈز بەردى</error>
+    <save_changes> رەسىم ئۆزگەرتىشلىرىنى ساقلاش </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> زىرائەت </crop>
+     <cancel> بىكار قىلىش </cancel>
+    </crop>
+    <del_up_img>
+     <label> رەسىمنى ئۆچۈرۈڭ </label>
+     <close> تاقاش </close>
+     <text> بۇ رەسىمنى تور بەتتىن ئۆچۈرمەكچىمۇ؟ </text>
+     <command> ئۆچۈرۈش </command>
+     <cancel> بىكار قىلىش </cancel>
+    </del_up_img>
+    <del_img>
+     <label> رەسىمنى ئۆچۈرۈڭ </label>
+     <close> تاقاش </close>
+     <text> بۇ رەسىمنى تور بەتتىن ئۆچۈرمەكچىمۇ؟ </text>
+     <command> ئۆچۈرۈش </command>
+     <cancel> بىكار قىلىش </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> تاللانغان رەسىملەرنى ئۆچۈرۈڭ </label>
+     <close> تاقاش </close>
+     <text> تاللانغان رەسىملەرنى تور بەتتىن ئۆچۈرمەكچىمۇ؟ </text>
+     <command> ئۆچۈرۈش </command>
+     <cancel> بىكار قىلىش </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> رەسىم ئۇچۇرى </label>
+     <close> تاقاش </close>
+     <filename> ھۆججەت ئىسمى </filename>
+     <filesize> ھۆججەت چوڭلۇقى </filesize>
+     <date> يۈكلەش ۋاقتى </date>
+     <title>
+      <label> تېما </label>
+      <placeholder> رەسىم ئىسمى </placeholder>
+     </title>
+     <desc>
+      <label> چۈشەندۈرۈش </label>
+      <placeholder> رەسىم چۈشەندۈرۈشى </placeholder>
+     </desc>
+     <keyw>
+      <label> ئاچقۇچلۇق سۆزلەر </label>
+      <placeholder> ھالقىلىق سۆز پەش ياكى يېڭى قۇر بىلەن ئايرىلىدۇ (Enter) </placeholder>
+     </keyw>
+     <command> ساقلاش / يېڭىلاش </command>
+     <cancel> بىكار قىلىش </cancel>
+    </img_info>
+    <result>
+     <label> خاتالىق </label>
+     <close> تاقاش </close>
+     <text> </text>
+     <command> تاقاش </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> يۈكلىگىلى بولىدىغان رەسىم تەڭشىكى </title>
+    <upload_limit>
+     <label> ھەر بىر رەسىمخانىنىڭ ئەڭ چوڭ رەسىم سانى </label>
+     <placeholder> ھەر بىر رەسىمخانىنىڭ ئەڭ چوڭ رەسىم سانى </placeholder>
+     <validate> رەسىم ئامبىرىدىكى رەسىملەرنىڭ ئەڭ كۆپ سانىنى كىرگۈزۈڭ </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> يەككە ھۆججەتنىڭ ئەڭ چوڭ چوڭلۇقى (MB) </label>
+     <placeholder> يەككە ھۆججەتنىڭ ئەڭ چوڭ چوڭلۇقى (MB) </placeholder>
+     <validate> ئەڭ چوڭ يەككە ھۆججەت چوڭلۇقى (MB) نى كىرگۈزۈڭ </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> رۇخسەت قىلىنغان ئەڭ تۆۋەن ئېنىقلىق </label>
+     <width>
+      <placeholder> ئەڭ تۆۋەن كەڭلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </width>
+     <height>
+      <placeholder> ئەڭ تۆۋەن ئېگىزلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> رۇخسەت قىلىنغان ئەڭ چوڭ ئېنىقلىق </label>
+     <width>
+      <placeholder> ئەڭ چوڭ كەڭلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </width>
+     <height>
+      <placeholder> ئەڭ يۇقىرى ئېگىزلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> رەسىمگە ئايلاندۇرۇش </title>
+    <full_resolution>
+     <label> رەسىم تولۇق چوڭلۇقى </label>
+     <width>
+      <placeholder> ئەڭ چوڭ كەڭلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </width>
+     <height>
+      <placeholder> ئەڭ يۇقىرى ئېگىزلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> كىچىك كۆرۈنۈش چوڭلۇقى </label>
+     <width>
+      <placeholder> كىچىك كەڭلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </width>
+     <height>
+      <placeholder> بارماق ئېگىزلىكى </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> سىيرىلما چوڭلۇقى </label>
+     <width>
+      <placeholder> سىيرىلىش كەڭلىكى </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </width>
+     <height>
+      <placeholder> سىيرىلما ئېگىزلىك </placeholder>
+      <validate> قىممەت كىرگۈزۈڭ </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg سۈپىتى </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG پىرىسلاش </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> سۇ بەلگىسى </title>
+    <label> سۇ بەلگىسىنى ئىشلىتىڭ </label>
+    <position> سۇ بەلگىسى ئورنى </position>
+    <image> سۇ بەلگىسى سۈرىتى </image>
+    <set> سۇ بەلگىسىنى تەڭشەش </set>
+    <browse> 1- سۇ بەلگىسى رەسىم ھۆججىتىنى كۆرۈش </browse>
+    <adjust> 2- رەسىمنى رامكا بويىچە تەڭشەڭ. </adjust>
+    <upload> 3- تاللانغان ھۆججەتنى يۈكلەش </upload>
+    <uploading> يۈكلەش ... </uploading>
+    <uploaded> يۈكلەندى. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> بەت </page>
+   <first> بىرىنچى بەت </first>
+   <prev> ئالدىنقى بەت </prev>
+   <next> كېيىنكى بەت </next>
+   <last> ئاخىرقى بەت </last>
+  </pagination>
+
+</lang>

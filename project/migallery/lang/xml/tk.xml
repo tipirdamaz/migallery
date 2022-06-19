@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Dil </title>
+   <label> Dil saýlaň </label>
+  </lang>
+
+  <timezone>
+   <title>Sagat guşaklygy</title>
+   <label>Wagt guşagyny saýlaň</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galereýa Dolandyryşy </gallery_man>
+   <gallery_list> Galereýa sanawy </gallery_list>
+   <uploader> Täze Galereýa dörediň </uploader>
+   <back> Yzyna </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery gurmak </title>
+   <header> MIGallery gurmak </header>
+
+   <img_direction>
+    <label> Galereýa, surat we slaýd ugry </label>
+    <left> Çepden saga </left>
+    <right> Sagdan çepe </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL maglumat bazasynyň maglumatlary </title>
+    <host>
+     <label> Maglumat bazasynyň host ady </label>
+     <placeholder> Maglumat bazasynyň host ady </placeholder>
+     <validate> Maglumat bazasynyň host adyny giriziň </validate>
+    </host>
+    <user>
+     <label> Maglumat bazasynyň ulanyjy ady </label>
+     <placeholder> Maglumat bazasynyň ulanyjy ady </placeholder>
+     <validate> Maglumat bazasynyň ulanyjy adyny giriziň </validate>
+    </user>
+    <pass>
+     <label> Maglumat bazasynyň paroly </label>
+     <placeholder> Maglumat bazasynyň paroly </placeholder>
+     <validate> Maglumat bazasynyň paroly giriziň </validate>
+    </pass>
+    <db>
+     <label> Maglumat bazasynyň ady </label>
+     <placeholder> Maglumat bazasynyň ady </placeholder>
+     <validate> Maglumat bazasynyň adyny giriziň </validate>
+    </db>
+    <gal_table>
+     <label> Galereýa tablisasynyň ady </label>
+     <placeholder> Galereýa tablisasynyň ady </placeholder>
+     <validate> Galereýa tablisasynyň adyny giriziň </validate>
+    </gal_table>
+    <img_table>
+     <label> Surat tablisasynyň ady </label>
+     <placeholder> Surat tablisasynyň ady </placeholder>
+     <validate> Surat tablisasynyň adyny giriziň </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Faýllaryň ýazylmagyna rugsat berlen bukjalar</title>
+    <db_alert>
+     <![CDATA[
+    Aşakdaky bukjada, <b> konfigurasiýa </b>, <b> säwlik gündeligi </b> we <b> kesgitlemeler </b> faýllary dörediler. Bu bukjanyň adyny üýtgetmek isleseňiz, <b> definitions0.php </b> faýlyndaky <b> DB_DIR </b> kesgitlemesini üýtgediň we bu sahypany täzeläň.<br/><br/>Konfigurasiýa faýlynyň, ýalňyşlyk gündeliginiň faýlynyň we kesgitleme faýlynyň adyny üýtgetmek isleseňiz, definitions0.php faýlyndaky <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> we <b>DEFINITIONS_FILE</b> kesgitlemelerini üýtgediň.<br/><br/>Ulgamyňyz “unix” -e esaslanan bolsa, aşakdaky buýruk bilen bukja ýazmaga rugsat beriň:<br/><b>%s</b><br/><br/>Gurnamaga başlamazdan ozal aşakdaky ýoluň bardygyna göz ýetiriň we bukja ýazmaga rugsatlaryňyz bar:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Gurnamaga başlamazdan ozal aşakdaky bukjalaryň bardygyny we bukjalara ýazmaga rugsadyňyzyň bardygyna göz ýetiriň. <br/> <br/> Aşakdaky bukjalardan başga bukjalary ulanjak bolsaňyz, eger bukjalar diskde ýok bolsa, ilki bilen bukjalary dörediň we bu bukjalaryň ýazmak rugsatlaryny belläň we gurnamaga başlaň.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Sazlama, säwlik ýazgysy we kesgitlemeler faýllary ýoly</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Täze galereýa ýatda saklananda aşakdaky bukjalar dörediler. <b>%d </b> galereýa idini görkezýär. Bu bukjalar ýokarda kesgitlenen <b> Suratlaryň esasy bukjasy </b> bukjaynda dörediler. Bu bukjalaryň formatynyň laýykdygyna göz ýetiriň.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Sazlama faýly öň döredilipdi. Şonuň üçin gurnamany işledip bilmersiňiz. Ilki bilen konfigurasiýa faýlyny pozmaly we gurnamany işletmeli.</config_alert>
+    <tmp_dir>
+     <label>Suratlaryň wagtlaýyn bukjasy</label>
+     <placeholder>Suratlaryň wagtlaýyn bukjasy</placeholder>
+     <validate>Suratlaryň wagtlaýyn bukjasy</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Kiçijik suratlaryň wagtlaýyn bukjasy</label>
+     <placeholder>Kiçijik suratlaryň wagtlaýyn bukjasy</placeholder>
+     <validate>Kiçijik suratlaryň wagtlaýyn bukjasy</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Kesilen kiçijik suratlaryň wagtlaýyn bukjasy</label>
+     <placeholder>Kesilen kiçijik suratlaryň wagtlaýyn bukjasy</placeholder>
+     <validate>Kesilen kiçijik suratlaryň wagtlaýyn bukjasy</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Slaýd surat faýllarynyň wagtlaýyn bukjasy</label>
+     <placeholder>Slaýd surat faýllarynyň wagtlaýyn bukjasy</placeholder>
+     <validate>Slaýd surat faýllarynyň wagtlaýyn bukjasy</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Suratlaryň esasy bukjasy</label>
+     <placeholder>Suratlaryň esasy bukjasy</placeholder>
+     <validate>Suratlaryň esasy bukjasy</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Suratlaryň bukjasy</label>
+     <placeholder>Suratlaryň bukjasy</placeholder>
+     <validate>Suratlaryň bukjasy</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Kiçijik suratlaryň bukjasy</label>
+     <placeholder>Kiçijik suratlaryň bukjasy</placeholder>
+     <validate>Kiçijik suratlaryň bukjasy</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Kesilen kiçijik suratlaryň bukjasy</label>
+     <placeholder>Kesilen kiçijik suratlaryň bukjasy</placeholder>
+     <validate>Kesilen kiçijik suratlaryň bukjasy</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Slaýd surat faýllarynyň bukjasy</label>
+     <placeholder>Slaýd surat faýllarynyň bukjasy</placeholder>
+     <validate>Slaýd surat faýllarynyň bukjasy</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML faýl bukjasy</label>
+     <placeholder>XML faýl bukjasy</placeholder>
+     <validate>XML faýl bukjasy</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> gurmak. Garaşmagyňyzy haýyş edýäris ... </installing>
+    <success> Gurmak üstünlikli tamamlandy. </success>
+    <error> Gurmak gutaryp bilmedi. </error>
+   </alert>
+  
+   <submit> Gurmaga başlaň </submit>
+   <submit_continue> Dowam et &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galereýa Dolandyryşy </title>
+   <header> Galereýa Dolandyryşy </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galereýa sanawy </title>
+   <header> Galereýa sanawy </header>
+   <sort>
+    <asc> ilkibaşdan ahyryna </asc> tertipläň
+    <desc> iň soňundan birinji </desc> tertiplemek
+   </sort>
+   <card>
+    <view>
+     <button> Görmek </button>
+     <title> Galereýa görmek </title>
+    </view>
+    <delete>
+     <button> Aýyrmak </button>
+     <title> Galereýany öçürmek </title>
+    </delete>
+    <edit>
+     <button> Düzediş </button>
+     <title> Galereýany redaktirlemek </title>
+    </edit>
+    <images>surat</images>
+    <date>Wagt</date>
+    <move> Galereýalary syçan bilen süýräp tertipläp bilersiňiz. </move>
+    <move_mobile>Barmagyňyz bilen bir zada degiň we onuň saýlanmagyna garaşyň. Bir obýekt saýlanyňyzdan soň, zatlary tertiplemek üçin barmagyňyzy süýräň.</move_mobile>
+   </card>
+   <alert> Galereýa tapylmady. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galereýany öçüriň </label>
+     <close> ýakyn </close>
+     <text> Bu galereýany saýtdan pozmak isleýärsiňizmi? </text>
+     <command> Aýyrmak </command>
+     <cancel> ýatyr </cancel>
+    </del_gallery>
+    <result>
+     <label> ýalňyşlyk </label>
+     <close> ýakyn </close>
+     <text> </text>
+     <command> Ýakyn </command>
+    </result>
+   </modal>
+   <save_changes> Galereýa tertibi saklamak </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galereýa görnüşi </title>
+   <header> Galereýa görnüşi </header>
+   <alert> Surat tapylmady. </alert>
+   <share>Galereýa paýlaş</share>
+   <filedate>Ýüklemek wagty</filedate>
+   <filesize>Faýl ölçegi</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Gysgyç tagtasyna göçüriň</label>
+     <close>ýakyn</close>
+     <text>Baglanyşyk gysgyç tagtasyna göçürildi</text>
+     <command>Göçüriň</command>
+     <cancel>Ýakyn</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Täze galereýa dörediň </title>
+    <header> Täze Galereýa dörediň </header>
+   </new>
+   <edit>
+    <title> Galereýany redaktirlemek </title>
+    <header> Galereýany redaktirlemek </header>
+   </edit>
+   <gallery_info>
+    <title> Galereýa maglumatlary </title>
+    <name>
+     <label> Galereýanyň ady </label>
+     <placeholder> Galereýa ady </placeholder>
+     <validate> Giriş Galereýasynyň ady </validate>
+    </name>
+    <description>
+     <label> Galereýa beýany </label>
+     <placeholder> Galereýa beýany </placeholder>
+     <validate> Giriş Galereýasynyň beýany </validate>
+    </description>
+    <keywords>
+     <label> Galereýa açar sözler vergul ýa-da setir arakesmeleri bilen bölünýär </label>
+     <placeholder> Galereýa açar sözler vergul ýa-da setir arakesmeleri bilen bölünýär </placeholder>
+     <validate> Galereýa açar sözleri giriziň </validate>
+    </keywords>
+    <submit>
+     <save> Galereýa saklamak </save>
+     <update> Galereýany täzeläň </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Surat ýükleýji gollanma </title>
+     <body>
+      <![CDATA[
+Enjamyňyzdan <b> Suratlara göz aýlamak </b> düwmesi bilen saýlaň we <b> Suratlary ýüklemek </b> düwmesi bilen sahypa ýükläň. <br/> Goldaw berilýän surat formatlary: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Rugsat berilýän iň pes çözgüt: <b>%d x %d px</b> <br/> Rugsat berilýän iň ýokary çözgüt: <b>%d x %d px</b> <br/> Fileeke faýl Iň uly ululygy: <b>%d MB</b> <br/> Galereýa üçin surat sany: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Hemmesini saýlaň </select_all>
+    <select_del> Saýlanan suratlary pozuň </select_del>
+    <thumb>
+     <exist>
+      <delete> Siteüklenen suraty Saýtdan öçüriň </delete>
+      <info> Surat maglumatlary </info>
+     </exist>
+     <new>
+      <delete> Siteüklenen suraty Saýtdan öçüriň </delete>
+      <cancel> Surat ýüklemesini ýatyryň </cancel>
+      <info> Surat maglumatlary </info>
+      <rotate> Suraty aýlamak </rotate>
+      <crop> Ekin suraty </crop>
+     </new>
+     <move> Suratlary syçan bilen süýräp tertipläp bilersiňiz. </move>
+     <move_mobile>Barmagyňyz bilen bir zada degiň we onuň saýlanmagyna garaşyň. Bir obýekt saýlanyňyzdan soň, zatlary tertiplemek üçin barmagyňyzy süýräň.</move_mobile>
+    </thumb>
+    <browse> Suratlara göz aýlamak </browse>
+    <upload> Suratlary ýüklemek </upload>
+    <uploading> Suratlar ýokarlanýarsahypa ýüklendi. Uploadüklemek gutarýança sahypany ýapmaň. </uploading>
+    <uploaded> Suratlar sahypa ýüklendi. </uploaded>
+    <error>Faýllary serwere ýüklemekde käbir ýalňyşlyklar ýüze çykdy.</error>
+    <save_changes> Surat üýtgemelerini saklaň </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Ekin suraty </crop>
+     <cancel> ýatyr </cancel>
+    </crop>
+    <del_up_img>
+     <label> Suraty öçüriň </label>
+     <close> ýakyn </close>
+     <text> Bu suraty web sahypasyndan pozmak isleýärsiňizmi? </text>
+     <command> Aýyrmak </command>
+     <cancel> ýatyr </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Suraty öçüriň </label>
+     <close> ýakyn </close>
+     <text> Bu suraty web sahypasyndan pozmak isleýärsiňizmi? </text>
+     <command> Aýyrmak </command>
+     <cancel> ýatyr </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Saýlanan suratlary pozuň </label>
+     <close> ýakyn </close>
+     <text> Saýlanan suratlary web sahypasyndan pozmak isleýärsiňizmi? </text>
+     <command> Aýyrmak </command>
+     <cancel> ýatyr </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Surat maglumatlary </label>
+     <close> ýakyn </close>
+     <filename> Faýlyň ady </filename>
+     <filesize> Faýl ölçegi </filesize>
+     <date> Ýüklemek wagty </date>
+     <title>
+      <label> Ady </label>
+      <placeholder> Suratyň ady </placeholder>
+     </title>
+     <desc>
+      <label> Düşündiriş </label>
+      <placeholder> Surat beýany </placeholder>
+     </desc>
+     <keyw>
+      <label> Açar sözler </label>
+      <placeholder> Açar sözler vergul ýa-da setir arakesmeleri bilen bölünýär </placeholder>
+     </keyw>
+     <command> Saklamak / täzelemek </command>
+     <cancel> ýatyr </cancel>
+    </img_info>
+    <result>
+     <label> ýalňyşlyk </label>
+     <close> ýakyn </close>
+     <text> </text>
+     <command> Ýakyn </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Uploadükläp boljak surat sazlamalary </title>
+    <upload_limit>
+     <label> Galereýa üçin iň köp surat sany </label>
+     <placeholder> Galereýa üçin iň köp surat sany </placeholder>
+     <validate> Galereýa üçin iň köp surat sany giriziň </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Fileeke faýl maksimum ululygy (MB) </label>
+     <placeholder> Fileeke faýl maksimum ululygy (MB) </placeholder>
+     <validate> Fileeke faýl iň uly ululygy giriziň (MB) </validate> giriziň
+    </max_file_size>
+    <min_resolution>
+     <label> Rugsat berilýän minimal çözgüt </label>
+     <width>
+      <placeholder> iň az giňlik </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </width>
+     <height>
+      <placeholder> iň az beýiklik </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Rugsat berilýän maksimum çözgüt </label>
+     <width>
+      <placeholder> iň ýokary giňligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </width>
+     <height>
+      <placeholder> iň ýokary beýiklik </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Suratyň üýtgemegi </title>
+    <full_resolution>
+     <label> Suratyň doly ölçegi </label>
+     <width>
+      <placeholder> iň ýokary giňligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </width>
+     <height>
+      <placeholder> iň ýokary beýiklik </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatýur ululygy </label>
+     <width>
+      <placeholder> Miniatýur giňligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </width>
+     <height>
+      <placeholder> Miniatýur beýikligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Slaýd ölçegi </label>
+     <width>
+      <placeholder> Slaýd giňligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </width>
+     <height>
+      <placeholder> Slaýd beýikligi </placeholder>
+      <validate> Bir zady giriziň </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg hili </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG gysylmagy </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermark </title>
+    <label> Watermark ulanyň </label>
+    <position> Watermark ýagdaýy </position>
+    <image> Watermark suraty </image>
+    <set> Watermark belläň </set>
+    <browse> 1- Watermark surat faýlyna göz aýlaň </browse>
+    <adjust> 2- Suraty çarçuwa laýyklykda sazlaň. </adjust>
+    <upload> 3- Saýlanan faýly ýüklemek </upload>
+    <uploading> ingüklemek ... </uploading>
+    <uploaded> edükledi. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> sahypa </page>
+   <first> birinji sahypa </first>
+   <prev> Öňki sahypa </prev>
+   <next> Indiki sahypa </next>
+   <last> Soňky sahypa </last>
+  </pagination>
+
+</lang>

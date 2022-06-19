@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> ენა </title>
+   <label> აირჩიეთ ენა </label>
+  </lang>
+
+  <timezone>
+   <title>დროის სარტყელი</title>
+   <label>აირჩიეთ დროის სარტყელი</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> გალერეის მენეჯმენტი </gallery_man>
+   <gallery_list> გალერეების სია </gallery_list>
+   <uploader> შექმენით ახალი გალერეა </uploader>
+   <back> დაბრუნება </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery- ის დაყენება </title>
+   <header> MIGallery- ის დაყენება </header>
+
+   <img_direction>
+    <label> გალერეა, სურათი და სლაიდის ორიენტაცია </label>
+    <left> მარცხნიდან მარჯვნივ </left>
+    <right> მარჯვნივ მარცხნივ </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL მონაცემთა ბაზის ინფორმაცია </title>
+    <host>
+     <label> მონაცემთა ბაზის ჰოსტის სახელი </label>
+     <placeholder> მონაცემთა ბაზის მასპინძლის სახელი </placeholder>
+     <validate> შეიყვანეთ მონაცემთა ბაზის ჰოსტის სახელი </validate>
+    </host>
+    <user>
+     <label> მონაცემთა ბაზის მომხმარებლის სახელი </label>
+     <placeholder> მონაცემთა ბაზის მომხმარებლის სახელი </placeholder>
+     <validate> შეიყვანეთ მონაცემთა ბაზის მომხმარებლის სახელი </validate>
+    </user>
+    <pass>
+     <label> მონაცემთა ბაზის პაროლი </label>
+     <placeholder> მონაცემთა ბაზის პაროლი </placeholder>
+     <validate> შეყვანის მონაცემთა ბაზის პაროლი </validate>
+    </pass>
+    <db>
+     <label> მონაცემთა ბაზის სახელი </label>
+     <placeholder> მონაცემთა ბაზის სახელი </placeholder>
+     <validate> შეყვანის მონაცემთა ბაზის სახელი </validate>
+    </db>
+    <gal_table>
+     <label> გალერეის ცხრილის სახელი </label>
+     <placeholder> გალერეის ცხრილის სახელი </placeholder>
+     <validate> შეიყვანეთ გალერეის ცხრილის სახელი </validate>
+    </gal_table>
+    <img_table>
+     <label> სურათის ცხრილის სახელი </label>
+     <placeholder> გამოსახულების ცხრილის სახელი </placeholder>
+     <validate> შეიყვანეთ სურათის ცხრილის სახელი </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>დასაწერადი შინაარსის საქაღალდეები</title>
+    <db_alert>
+     <![CDATA[
+    შემდეგი დირექტორია, სადაც შეიქმნება <b> კონფიგურაცია </b>, <b> შეცდომის ჟურნალი </b> და <b> განსაზღვრებები </b> ფაილი. თუ გსურთ ამ დირექტორიის შეცვლა, შეცვალეთ <b> DB_DIR </b> განმარტება <b> definitions0.php </b> ფაილიდან და განაახლეთ ეს გვერდი. <br/> <br/> თუ გსურთ შეცვალოთ კონფიგურაციის ფაილი, შეცდომების ჟურნალი და განმარტება ფაილი, definitions0.php ფაილში შეცვალეთ <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> და <b>DEFINITIONS_FILE</b> განმარტებები.<br/><br/>თუ თქვენი სისტემა დაფუძნებულია unix- ზე, დააყენეთ დაწერის ნებართვები შემდეგი ბრძანებით:<br/><b>%s</b><br/><br/>ინსტალაციის დაწყებამდე დარწმუნდით, რომ არსებობს შემდეგი გზა და გაქვთ დირექტორიაში დასაწერად ნებართვები:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    ინსტალაციის დაწყებამდე დარწმუნდით, რომ არსებობს შემდეგი დირექტორიები და გაქვთ ამ კატალოგებზე ჩაწერის უფლებები. <br/> <br/> თუ აპირებთ გამოიყენოთ შემდეგი დირექტორიების გარდა სხვა დირექტორიები, თუ დირექტორიები არ არის ხელმისაწვდომი დისკზე, ჯერ შექმენით დირექტორიები და დააყენეთ დაწერის უფლებები და დაიწყეთ ინსტალაცია.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>კონფიგურაციის ფაილი, შეცდომების ჟურნალი ფაილი და განმარტებების ფაილის გზა</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    შემდეგი საქაღალდეები იქმნება ახალი გალერეის შენახვისას. <b>%d</b> მიუთითებს გალერეის ID. ეს დირექტორიები იქმნება ზემოთ <b> სურათების ძირითადი საქაღალდე </b> დირექტორიაში. შეამოწმეთ, არის თუ არა დირექტორიის ფორმატი შესაბამისი.
+     ]]>
+    </img_dir_alert>
+    <config_alert>კონფიგურაციის ფაილი შეიქმნა ადრე. ამიტომ, ინსტალაციის გაშვება შეუძლებელია. თქვენ ჯერ წაშლით კონფიგურაციის ფაილს და შემდეგ აწარმოებთ ინსტალაციას.</config_alert>
+    <tmp_dir>
+     <label>სურათის დროებითი დირექტორია</label>
+     <placeholder>სურათის დროებითი დირექტორია</placeholder>
+     <validate>სურათის დროებითი დირექტორია</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>მინიატურული სურათების დროებითი საქაღალდე</label>
+     <placeholder>მინიატურული სურათების დროებითი საქაღალდე</placeholder>
+     <validate>მინიატურული სურათების დროებითი საქაღალდე</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>შეკვეცილი მინიატურების გამოსახულების ფაილების დროებითი საქაღალდე</label>
+     <placeholder>შეკვეცილი მინიატურების გამოსახულების ფაილების დროებითი საქაღალდე</placeholder>
+     <validate>შეკვეცილი მინიატურების გამოსახულების ფაილების დროებითი საქაღალდე</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>სლაიდის სურათის დროებითი დირექტორია</label>
+     <placeholder>სლაიდის სურათის დროებითი დირექტორია</placeholder>
+     <validate>სლაიდის სურათის დროებითი დირექტორია</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>სურათების ძირითადი საქაღალდე</label>
+     <placeholder>სურათების ძირითადი საქაღალდე</placeholder>
+     <validate>სურათების ძირითადი საქაღალდე</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>გამოსახულების დირექტორია</label>
+     <placeholder>გამოსახულების დირექტორია</placeholder>
+     <validate>გამოსახულების დირექტორია</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>მინიატურების დირექტორია</label>
+     <placeholder>მინიატურების დირექტორია</placeholder>
+     <validate>მინიატურების დირექტორია</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>შეკვეცილი მინიატურების გამოსახულების ფაილების საქაღალდე</label>
+     <placeholder>შეკვეცილი მინიატურების გამოსახულების ფაილების საქაღალდე</placeholder>
+     <validate>შეკვეცილი მინიატურების გამოსახულების ფაილების საქაღალდე</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>სლაიდის სურათის საქაღალდე</label>
+     <placeholder>სლაიდის სურათის საქაღალდე</placeholder>
+     <validate>სლაიდის სურათის საქაღალდე</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML ფაილების დირექტორია</label>
+     <placeholder>XML ფაილების დირექტორია</placeholder>
+     <validate>XML ფაილების დირექტორია</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> ინსტალაცია. გთხოვთ, დაელოდოთ ... </installing>
+    <success> ინსტალაცია წარმატებით დასრულდა. </success>
+    <error> ინსტალაცია ვერ დასრულდა. </error>
+   </alert>
+  
+   <submit> ინსტალაციის დაწყება </submit>
+   <submit_continue> გაგრძელება &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> გალერეის მენეჯმენტი </title>
+   <header> გალერეის მენეჯმენტი </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> გალერეების სია </title>
+   <header> გალერეების სია </header>
+   <sort>
+    <asc> პირველი ბოლო </asc>
+    <desc> ბოლო პირველი </desc>
+   </sort>
+   <card>
+    <view>
+     <button> ხედი </button>
+     <title> გალერეის ნახვა </title>
+    </view>
+    <delete>
+     <button> წაშლა </button>
+     <title> გალერეის წაშლა </title>
+    </delete>
+    <edit>
+     <button> რედაქტირება </button>
+     <title> გალერეის რედაქტირება </title>
+    </edit>
+    <images>სურათები</images>
+    <date>თარიღი</date>
+    <move> გალერეების დალაგება შეგიძლიათ თაგუნით აზიდვით. </move>
+    <move_mobile>თითი შეეხეთ და გამართეთ ერთზე და დაელოდეთ მის მონიშნვას. ნივთის არჩევის შემდეგ, გადაიტანეთ თითი ნივთების დასალაგებლად.</move_mobile>
+   </card>
+   <alert> გალერეა ვერ მოიძებნა. </alert>
+   <modal>
+    <del_gallery>
+     <label> გალერეის წაშლა </label>
+     <close> დახურვა </close>
+     <text> გსურთ ამ გალერეის წაშლა საიტიდან? </text>
+     <command> წაშლა </command>
+     <cancel> გაუქმება </cancel>
+    </del_gallery>
+    <result>
+     <label> შეცდომა </label>
+     <close> დახურვა </close>
+     <text> </text>
+     <command> დახურვა </command>
+    </result>
+   </modal>
+   <save_changes> შეინახეთ ეს დახარისხება </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> გალერეის ხედი </title>
+   <header> გალერეის ხედი </header>
+   <alert> სურათი ვერ მოიძებნა. </alert>
+   <share>გალერეის გაზიარება</share>
+   <filedate>ატვირთვის თარიღი</filedate>
+   <filesize>ფაილის ზომა</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>კოპირება ბუფერში</label>
+     <close>დახურვა</close>
+     <text>ბმული კოპირებულია ბუფერში</text>
+     <command>კოპირება</command>
+     <cancel>დახურვა</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> ახალი გალერეის შექმნა </title>
+    <header> შექმენით ახალი გალერეა </header>
+   </new>
+   <edit>
+    <title> გალერეის რედაქტირება </title>
+    <header> გალერეის რედაქტირება </header>
+   </edit>
+   <gallery_info>
+    <title> ინფორმაცია გალერეის შესახებ </title>
+    <name>
+     <label> გალერეის სახელი </label>
+     <placeholder> გალერეის სახელი </placeholder>
+     <validate> შეყვანის გალერეის სახელი </validate>
+    </name>
+    <description>
+     <label> გალერეის აღწერა </label>
+     <placeholder> გალერეის აღწერა </placeholder>
+     <validate> შეყვანის გალერეის აღწერა </validate>
+    </description>
+    <keywords>
+     <label> გალერეის საკვანძო სიტყვები გამოყოფილია მძიმით ან ხაზთა წყვეტებით </label>
+     <placeholder> გალერეის საკვანძო სიტყვები გამოყოფილია მძიმით ან ხაზთა წყვეტებით </placeholder>
+     <validate> შეიყვანეთ გალერეის საკვანძო სიტყვები </validate>
+    </keywords>
+    <submit>
+     <save> შეინახეთ გალერეა </save>
+     <update> გალერეის განახლება </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> ატვირთვის სახელმძღვანელო </title>
+     <body>
+      <![CDATA[
+აირჩიეთ სურათები თქვენი აპარატიდან <b> დაათვალიერეთ სურათები </b> და ატვირთეთ საიტზე ღილაკით <b>სურათების ატვირთვა</b>. <br/> მხარდაჭერილი სურათების ფორმატები: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> დასაშვები მინიმალური გარჩევადობა: <b>%d x %d px</b> <br/> დასაშვები მაქსიმალური გარჩევადობა: <b>%d x %d px</b> <br/> ერთი ფაილი მაქსიმალური ზომა: <b>%d MB</b> <br/> სურათების რაოდენობა გალერეაში: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> აირჩიეთ ყველა </select_all>
+    <select_del> არჩეული სურათების წაშლა </select_del>
+    <thumb>
+     <exist>
+      <delete> ატვირთული სურათის წაშლა საიტიდან </delete>
+      <info> სურათის ინფორმაცია </info>
+     </exist>
+     <new>
+      <delete> ატვირთული სურათის წაშლა საიტიდან </delete>
+      <cancel> სურათის ატვირთვის გაუქმება </cancel>
+      <info> სურათის ინფორმაცია </info>
+      <rotate> სურათის როტაცია </rotate>
+      <crop> გამოსახულების მოჭრა </crop>
+     </new>
+     <move> სურათების დასალაგებლად შეგიძლიათ მაუსით გადაიტანოთ. </move>
+     <move_mobile>თითი შეეხეთ და გამართეთ ერთზე და დაელოდეთ მის მონიშნვას. ნივთის არჩევის შემდეგ, გადაიტანეთ თითი ნივთების დასალაგებლად.</move_mobile>
+    </thumb>
+    <browse> დაათვალიერეთ სურათები </browse>
+    <upload> სურათების ატვირთვა </upload>
+    <uploading> სურათები აიტვირთებასაიტი არ დახუროთ გვერდი ატვირთვის დასრულებამდე. </uploading>
+    <uploaded> სურათები აიტვირთა საიტზე. </uploaded>
+    <error>გარკვეული შეცდომები მოხდა სერვერზე ფაილების ატვირთვის დროს.</error>
+    <save_changes> სურათის ცვლილებების შენახვა </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> მოსავალი </crop>
+     <cancel> გაუქმება </cancel>
+    </crop>
+    <del_up_img>
+     <label> სურათის წაშლა </label>
+     <close> დახურვა </close>
+     <text> გსურთ ამ სურათის წაშლა საიტიდან? </text>
+     <command> წაშლა </command>
+     <cancel> გაუქმება </cancel>
+    </del_up_img>
+    <del_img>
+     <label> სურათის წაშლა </label>
+     <close> დახურვა </close>
+     <text> გსურთ ამ სურათის წაშლა საიტიდან? </text>
+     <command> წაშლა </command>
+     <cancel> გაუქმება </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> არჩეული სურათების წაშლა </label>
+     <close> დახურვა </close>
+     <text> გსურთ წაშალოთ შერჩეული სურათები საიტიდან? </text>
+     <command> წაშლა </command>
+     <cancel> გაუქმება </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> სურათის ინფორმაცია </label>
+     <close> დახურვა </close>
+     <filename> ფაილის სახელი </filename>
+     <filesize> ფაილის ზომა </filesize>
+     <date> ატვირთვის თარიღი </date>
+     <title>
+      <label> სათაური </label>
+      <placeholder> სურათის სათაური </placeholder>
+     </title>
+     <desc>
+      <label> აღწერა </label>
+      <placeholder> სურათის აღწერა </placeholder>
+     </desc>
+     <keyw>
+      <label> საკვანძო სიტყვები </label>
+      <placeholder> საკვანძო სიტყვები გამოყოფილია მძიმით ან ხაზთა წყვეტებით </placeholder>
+     </keyw>
+     <command> შენახვა / განახლება </command>
+     <cancel> გაუქმება </cancel>
+    </img_info>
+    <result>
+     <label> შეცდომა </label>
+     <close> დახურვა </close>
+     <text> </text>
+     <command> დახურვა </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> დასაშვები ფოტოების პარამეტრები ატვირთვისთვის </title>
+    <upload_limit>
+     <label> სურათების მაქსიმალური რაოდენობა თითო გალერეაში </label>
+     <placeholder> სურათების მაქსიმალური რაოდენობა თითო გალერეაში </placeholder>
+     <validate> შეიყვანეთ სურათების მაქსიმალური რაოდენობა თითო გალერეაში </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> ერთი ფაილის მაქსიმალური ზომა (MB) </label>
+     <placeholder> ერთი ფაილი მაქსიმალური ზომა (MB) </placeholder>
+     <validate> ერთი ფაილი მაქსიმალური ზომა (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> დასაშვები მინიმალური გარჩევადობა </label>
+     <width>
+      <placeholder> მინიმალური სიგანე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </width>
+     <height>
+      <placeholder> მინიმალური სიმაღლე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> დასაშვები მაქსიმალური გარჩევადობა </label>
+     <width>
+      <placeholder> მაქსიმალური სიგანე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </width>
+     <height>
+      <placeholder> მაქს სიმაღლე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> სურათის ტრანსფორმაცია </title>
+    <full_resolution>
+     <label> სურათის სრული ზომა </label>
+     <width>
+      <placeholder> მაქსიმალური სიგანე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </width>
+     <height>
+      <placeholder> მაქს სიმაღლე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> მინიატურის ზომა </label>
+     <width>
+      <placeholder> თითის სიგრძის სიგანე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </width>
+     <height>
+      <placeholder> ცერის სიმაღლე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> სლაიდის ზომა </label>
+     <width>
+      <placeholder> სლაიდის სიგანე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </width>
+     <height>
+      <placeholder> სლაიდის სიმაღლე </placeholder>
+      <validate> შეიყვანეთ მნიშვნელობა </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg ხარისხი </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG შეკუმშვა </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> ჭვირნიშანი </title>
+    <label> გამოყენება ჭვირნიშანი </label>
+    <position> ჭვირნიშანი პოზიცია </position>
+    <image> ჭვირნიშანი </image>
+    <set> აწყობა ჭვირნიშანი </set>
+    <browse> 1- დაათვალიერეთ ჭვირნიშანი გამოსახულების ფაილი </browse>
+    <adjust> 2- სურათის კორექტირება ჩარჩოს შესაბამისად. </adjust>
+    <upload> 3- არჩეული ფაილის ატვირთვა </upload>
+    <uploading> ატვირთვა ... </uploading>
+    <uploaded> ატვირთული. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> გვერდი </page>
+   <first> პირველი გვერდი </first>
+   <prev> წინა გვერდი </prev>
+   <next> შემდეგი გვერდი </next>
+   <last> ბოლო გვერდი </last>
+  </pagination>
+
+</lang>

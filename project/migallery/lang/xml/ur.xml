@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> زبان </title>
+   <label> زبان منتخب کریں </label>
+  </lang>
+
+  <timezone>
+   <title>ٹائم زون</title>
+   <label>ٹائم زون کو منتخب کریں</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> گیلری مینجمنٹ </gallery_man>
+   <gallery_list> گیلری ، نگارخانہ کی فہرست </gallery_list>
+   <uploader> نیا گیلری بنائیں </uploader>
+   <back> واپس </back>
+  </nav>
+
+  <install>
+ 
+   <title> سیٹ اپ MIGallery </title>
+   <header> سیٹ اپ MIGallery </header>
+
+   <img_direction>
+    <label> گیلری ، نگارخانہ ، تصویر اور سلائڈ سمت </label>
+    <left> دائیں سے بائیں </left>
+    <right> دائیں سے بائیں </right>
+   </img_direction>
+
+   <db_info>
+    <title> ایس کیو ایل ڈیٹا بیس کی معلومات </title>
+    <host>
+     <label> ڈیٹا بیس کا میزبان نام </label>
+     <placeholder> ڈیٹا بیس ہوسٹ نام </placeholder>
+     <validate> ان پٹ ڈیٹا بیس ہوسٹ نام </validate>
+    </host>
+    <user>
+     <label> ڈیٹا بیس صارف نام </label>
+     <placeholder> ڈیٹا بیس صارف نام </placeholder>
+     <validate> ان پٹ ڈیٹا بیس صارف نام </validate>
+    </user>
+    <pass>
+     <label> ڈیٹا بیس پاس ورڈ </label>
+     <placeholder> ڈیٹا بیس پاس ورڈ </placeholder>
+     <validate> ان پٹ ڈیٹا بیس پاس ورڈ </validate>
+    </pass>
+    <db>
+     <label> ڈیٹا بیس کا نام </label>
+     <placeholder> ڈیٹا بیس کا نام </placeholder>
+     <validate> ان پٹ ڈیٹا بیس کا نام </validate>
+    </db>
+    <gal_table>
+     <label> گیلری ، نگارخانہ ٹیبل کا نام </label>
+     <placeholder> گیلری ، نگارخانہ جدول کا نام </placeholder>
+     <validate> گیلری جدول کا نام درج کریں </validate>
+    </gal_table>
+    <img_table>
+     <label> فوٹو ٹیبل کا نام </label>
+     <placeholder> فوٹو ٹیبل کا نام </placeholder>
+     <validate> ان پٹ امیج ٹیبل کا نام </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>قابل تحرک متحرک مواد کے لئے ڈائریکٹریز</title>
+    <db_alert>
+     <![CDATA[
+    مندرجہ ذیل ڈائرکٹری وہ جگہ ہے جہاں <b> تشکیل </b> ، <b> لاگنگ میں خرابی </b> اور <b> تعریفیں </b> فائلیں بنائی جائیں گی۔. اگر آپ اس ڈائرکٹری کا نام تبدیل کرنا چاہتے ہیں تو <b> definitions0.php </b> فائل میں <b> DB_DIR </b> تعریف میں تبدیلی کریں اور اس صفحے کو تازہ دم کریں۔<br/><br/>اگر آپ کنفیگریشن فائل ، غلطی لاگ فائل اور ڈیفینیشن فائل کا نام تبدیل کرنا چاہتے ہیں تو فائل definitions0.php میں <b>CONFIG_FILE</b>، <b>ERROR_LOG_FILE</b> اور <b>DEFINITIONS_FILE</b> کی تعریفیں تبدیل کریں۔<br/><br/>اگر آپ کا نظام یونکس پر مبنی ہے تو ، درج ذیل کمانڈ کے ساتھ فولڈر میں تحریری اجازتیں مرتب کریں:<br/><b>%s</b><br/><br/>تنصیب شروع کرنے سے پہلے ، یقینی بنائیں کہ درج ذیل راستہ موجود ہے اور آپ کو ڈائریکٹری میں لکھنے کی اجازت ہے۔
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    تنصیب شروع کرنے سے پہلے ، یہ یقینی بنائیں کہ درج ذیل ڈائریکٹریز دستیاب ہیں اور آپ کو ڈائریکٹریوں کو لکھنے کی اجازت ہے۔ <br/> <br/> اگر آپ مندرجہ ذیل ڈائریکٹریوں کے علاوہ کوئی اور ڈائریکٹریز استعمال کرنے جارہے ہیں ، اگر ڈسک پر ڈائریکٹریاں موجود نہیں ہیں تو پہلے ڈائریکٹریز بنائیں اور ان ڈائریکٹریوں کی تحریری اجازتیں ترتیب دیں اور انسٹالیشن شروع کریں۔
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>ترتیب ، خامی لاگ اور تعریف فائلوں کا راستہ</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    جب نئی گیلری محفوظ ہوجائے گی تو درج ذیل ڈائریکٹریز بنائیں گیں۔ <b>%d </b> گیلری ID کی نشاندہی کرتا ہے۔ یہ ڈائریکٹریوں کو اوپر بیان کردہ <b> امیج بیس ڈائرکٹری </b> ڈائریکٹری میں بنایا جائے گا۔ یقینی بنائیں کہ ان ڈائریکٹریوں کی شکل مناسب ہے۔
+     ]]>
+    </img_dir_alert>
+    <config_alert>کنفگریشن فائل پہلے بنائی جا چکی ہے۔ لہذا ، آپ سیٹ اپ نہیں چلا سکتے۔ پہلے آپ کو کنفگریشن فائل کو ڈیلیٹ کرنا ہوگا اور پھر سیٹ اپ چلائیں۔</config_alert>
+    <tmp_dir>
+     <label>تصویر کی عارضی ڈائرکٹری</label>
+     <placeholder>تصویر کی عارضی ڈائرکٹری</placeholder>
+     <validate>تصویر کی عارضی ڈائرکٹری</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>تھمب نیلز کی عارضی ڈائرکٹری</label>
+     <placeholder>تھمب نیلز کی عارضی ڈائرکٹری</placeholder>
+     <validate>تھمب نیلز کی عارضی ڈائرکٹری</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>کٹے ہوئے تھمب نیل امیجز کا عارضی فولڈر</label>
+     <placeholder>کٹے ہوئے تھمب نیل امیجز کا عارضی فولڈر</placeholder>
+     <validate>کٹے ہوئے تھمب نیل امیجز کا عارضی فولڈر</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>سلائیڈ امیجز کی عارضی ڈائرکٹری</label>
+     <placeholder>سلائیڈ امیجز کی عارضی ڈائرکٹری</placeholder>
+     <validate>سلائیڈ امیجز کی عارضی ڈائرکٹری</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>امیج بیس ڈائرکٹری</label>
+     <placeholder>امیج بیس ڈائرکٹری</placeholder>
+     <validate>امیج بیس ڈائرکٹری</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>تصویری ڈائرکٹری</label>
+     <placeholder>تصویری ڈائرکٹری</placeholder>
+     <validate>تصویری ڈائرکٹری</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>تھمب نیل ڈائرکٹری</label>
+     <placeholder>تھمب نیل ڈائرکٹری</placeholder>
+     <validate>تھمب نیل ڈائرکٹری</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>تراشے ہوئے تھمب نیل تصاویر کی ڈائرکٹری</label>
+     <placeholder>تراشے ہوئے تھمب نیل تصاویر کی ڈائرکٹری</placeholder>
+     <validate>تراشے ہوئے تھمب نیل تصاویر کی ڈائرکٹری</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>سلائیڈ تصویری ڈائرکٹری</label>
+     <placeholder>سلائیڈ تصویری ڈائرکٹری</placeholder>
+     <validate>سلائیڈ تصویری ڈائرکٹری</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML فائل ڈائرکٹری</label>
+     <placeholder>XML فائل ڈائرکٹری</placeholder>
+     <validate>XML فائل ڈائرکٹری</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> انسٹال ہو رہا ہے۔ براہ کرم انتظار کریں ... </installing>
+    <success> انسٹالیشن کامیابی کے ساتھ مکمل ہوگئی۔ </success>
+    <error> تنصیب مکمل نہیں ہو سکی۔ </error>
+   </alert>
+  
+   <submit> انسٹالیشن اسٹارٹ کریں </submit>
+   <submit_continue> &lt;&lt; جاری رکھیں </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> گیلری ، نگارخانہ انتظام </title>
+   <header> گیلری ، نگارخانہ مینجمنٹ </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> گیلری ، نگارخانہ کی فہرست </title>
+   <header> گیلری ، نگارخانہ کی فہرست </header>
+   <sort>
+    <asc> پہلے سے آخری تک ترتیب دیں </asc>
+    <desc> آخری سے پہلے تک ترتیب دیں </desc>
+   </sort>
+   <card>
+    <view>
+     <button> دیکھیں </button>
+     <title> گیلری دیکھیں </title>
+    </view>
+    <delete>
+     <button> ڈیلیٹ کریں </button>
+     <title> گیلری کو حذف کریں </title>
+    </delete>
+    <edit>
+     <button> ترمیم کریں </button>
+     <title> گیلری میں ترمیم کریں </title>
+    </edit>
+    <images>تصاویر</images>
+    <date>تاریخ</date>
+    <move> آپ گیلریوں کو ماؤس کے ساتھ گھسیٹ کر ترتیب دے سکتے ہیں۔ </move>
+    <move_mobile>اپنی انگلی سے کسی آئٹم کو تھپتھپائیں اور پکڑیں اور اس کے منتخب ہونے کا انتظار کریں۔ آئٹم کو منتخب کرنے کے بعد ، اشیاء کو ترتیب دینے کے لئے اپنی انگلی کو گھسیٹیں۔</move_mobile>
+   </card>
+   <alert> کوئی گیلری نہیں ملی </alert>
+   <modal>
+    <del_gallery>
+     <label> گیلری کو حذف کریں </label>
+     <close> بند کریں </close>
+     <text> کیا آپ اس گیلری کو سائٹ سے حذف کرنا چاہتے ہیں؟ </text>
+     <command> ڈیلیٹ کریں </command>
+     <cancel> منسوخ کریں </cancel>
+    </del_gallery>
+    <result>
+     <label> خرابی </label>
+     <close> بند کریں </close>
+     <text> </text>
+     <command> بند کریں </command>
+    </result>
+   </modal>
+   <save_changes> ترتیب شدہ گیلریوں کو محفوظ کریں </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> گیلری کا نظارہ </title>
+   <header> گیلری ویو </header>
+   <alert> کوئی تصاویر نہیں ملیں۔ </alert>
+   <share>شیئر گیلری</share>
+   <filedate>اپ لوڈ کرنے کی تاریخ</filedate>
+   <filesize>فائل کا ناپ</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>کلپ بورڈ پر کاپی کریں</label>
+     <close>بند کریں</close>
+     <text>لنک کاپی کلپ بورڈ میں کیا گیا</text>
+     <command>کاپی</command>
+     <cancel>بند کریں</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> نیا گیلری بنائیں </title>
+    <header> نیا گیلری بنائیں </header>
+   </new>
+   <edit>
+    <title> گیلری میں ترمیم کریں </title>
+    <header> گیلری میں ترمیم کریں </header>
+   </edit>
+   <gallery_info>
+    <title> گیلری سے متعلق معلومات </title>
+    <name>
+     <label> گیلری ، نگارخانہ نام </label>
+     <placeholder> گیلری کا نام </placeholder>
+     <validate> ان پٹ گیلری کا نام </validate>
+    </name>
+    <description>
+     <label> گیلری ، نگارخانہ تفصیل </label>
+     <placeholder> گیلری ، نگارخانہ تفصیل </placeholder>
+     <validate> ان پٹ گیلری کی تفصیل </validate>
+    </description>
+    <keywords>
+     <label> گیلری ، نگارخانہ کے کلیدی الفاظ کوما یا لائن وقفے سے الگ ہوگئے </label>
+     <placeholder> گیلری ، نگارخانہ کے کلیدی الفاظ کوما یا لائن وقفے سے الگ ہوگئے </placeholder>
+     <validate> گیلری ، نگارخانہ کے مطلوبہ الفاظ درج کریں </validate>
+    </keywords>
+    <submit>
+     <save> گیلری محفوظ کریں </save>
+     <update> گیلری کو اپ ڈیٹ کریں </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> تصویری اپلوڈر گائیڈ </title>
+     <body>
+      <![CDATA[
+<b> امیجز براؤز کریں </b> بٹن کے ذریعہ اپنے آلہ سے تصاویر منتخب کریں اور <b> امیجز اپلوڈ کریں </b><br/> <b> JPG ، PNG ، GIF ، BMP ، WEBP </b> :تائید شدہ تصویری فارمیٹس <br/> <b>%d x %d px</b> :قابل اجازت کم سے کم قرارداد <br/> <b>%d x %d px</b> :قابل اجازت زیادہ سے زیادہ قرارداد <br/> <b>%d MB</b> :سنگل فائل زیادہ سے زیادہ سائز <br/> <b>%d</b> :فی گیلری میں تصویری گنتی
+      ]]>
+     </body>
+    </info>
+    <select_all> سبھی کو منتخب کریں </select_all>
+    <select_del> منتخب کردہ تصاویر کو حذف کریں </select_del>
+    <thumb>
+     <exist>
+      <delete> سائٹ سے اپلوڈ امیج کو ڈیلیٹ کریں </delete>
+      <info> تصویری معلومات </info>
+     </exist>
+     <new>
+      <delete> سائٹ سے اپلوڈ امیج کو ڈیلیٹ کریں </delete>
+      <cancel> تصویری اپ لوڈ منسوخ کریں </cancel>
+      <info> تصویری معلومات </info>
+      <rotate> گھمائیں امیج </rotate>
+      <crop> فصل کی تصویر </crop>
+     </new>
+     <move> آپ ماؤس کی مدد سے تصاویر کو گھسیٹ کر ترتیب دے سکتے ہیں۔ </move>
+     <move_mobile>اپنی انگلی سے کسی آئٹم کو تھپتھپائیں اور پکڑیں اور اس کے منتخب ہونے کا انتظار کریں۔ آئٹم کو منتخب کرنے کے بعد ، اشیاء کو ترتیب دینے کے لئے اپنی انگلی کو گھسیٹیں۔</move_mobile>
+    </thumb>
+    <browse> امیجز براؤز کریں </browse>
+    <upload> امیجز اپلوڈ کریں </upload>
+    <uploading> امیجز تیار ہو رہی ہیںسائٹ پر بھری ہوئی۔ اپ لوڈ مکمل ہونے تک صفحے کو بند نہ کریں۔ </uploading>
+    <uploaded> تصاویر سائٹ پر اپ لوڈ کردی گئیں۔ </uploaded>
+    <error>سرور پر فائلیں اپ لوڈ کرتے وقت کچھ خرابیاں پیش آئیں</error>
+    <save_changes> امیج چینجز کو محفوظ کریں </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> فصل </crop>
+     <cancel> منسوخ کریں </cancel>
+    </crop>
+    <del_up_img>
+     <label> امیج کو ڈیلیٹ کریں </label>
+     <close> بند کریں </close>
+     <text> کیا آپ اس تصویر کو ویب سائٹ سے حذف کرنا چاہتے ہیں؟ </text>
+     <command> ڈیلیٹ کریں </command>
+     <cancel> منسوخ کریں </cancel>
+    </del_up_img>
+    <del_img>
+     <label> امیج کو ڈیلیٹ کریں </label>
+     <close> بند کریں </close>
+     <text> کیا آپ اس تصویر کو ویب سائٹ سے حذف کرنا چاہتے ہیں؟ </text>
+     <command> ڈیلیٹ کریں </command>
+     <cancel> منسوخ کریں </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> منتخب کردہ تصاویر کو حذف کریں </label>
+     <close> بند کریں </close>
+     <text> کیا آپ منتخب کردہ تصاویر کو ویب سائٹ سے حذف کرنا چاہتے ہیں؟ </text>
+     <command> ڈیلیٹ کریں </command>
+     <cancel> منسوخ کریں </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> تصویری معلومات </label>
+     <close> بند کریں </close>
+     <filename> فائل کا نام </filename>
+     <filesize> فائل کا سائز </filesize>
+     <date> اپ لوڈ کرنے کی تاریخ </date>
+     <title>
+      <label> ٹائٹل </label>
+      <placeholder> تصویری عنوان </placeholder>
+     </title>
+     <desc>
+      <label> تفصیل </label>
+      <placeholder> تصویری تفصیل </placeholder>
+     </desc>
+     <keyw>
+      <label> کلیدی الفاظ </label>
+      <placeholder> کوما یا لائن بریک کے ذریعہ الگ کردہ کلیدی الفاظ </placeholder>
+     </keyw>
+     <command> محفوظ کریں / تازہ کاری کریں </command>
+     <cancel> منسوخ کریں </cancel>
+    </img_info>
+    <result>
+     <label> خرابی </label>
+     <close> بند کریں </close>
+     <text> </text>
+     <command> بند کریں </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> اپ لوڈ کے قابل تصویری ترتیبات </title>
+    <upload_limit>
+     <label> زیادہ سے زیادہ امیج گنتی فی گیلری </label>
+     <placeholder> زیادہ سے زیادہ امیج گنتی فی گیلری </placeholder>
+     <validate> ان پٹ زیادہ سے زیادہ تصویری گنتی فی گیلری </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> سنگل فائل میکس سائز (ایم بی) </label>
+     <placeholder> سنگل فائل میکس سائز (ایم بی) </placeholder>
+     <validate> ان پٹ سنگل فائل میکس سائز (ایم بی) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> قابل اجازت سے کم سے کم قرارداد </label>
+     <width>
+      <placeholder> کم سے کم چوڑائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </width>
+     <height>
+      <placeholder> کم سے کم اونچائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> قابل اجازت زیادہ سے زیادہ ریزولوشن </label>
+     <width>
+      <placeholder> زیادہ سے زیادہ چوڑائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </width>
+     <height>
+      <placeholder> زیادہ سے زیادہ اونچائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> تصویری ٹرانسفارم </title>
+    <full_resolution>
+     <label> تصویری فل سائز </label>
+     <width>
+      <placeholder> زیادہ سے زیادہ چوڑائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </width>
+     <height>
+      <placeholder> زیادہ سے زیادہ اونچائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> تھمب نیل سائز </label>
+     <width>
+      <placeholder> انگوٹھے کی چوڑائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </width>
+     <height>
+      <placeholder> انگوٹھے کی اونچائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> سلائیڈ سائز </label>
+     <width>
+      <placeholder> سلائیڈ چوڑائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </width>
+     <height>
+      <placeholder> سلائیڈ اونچائی </placeholder>
+      <validate> ان پٹ ویلیو </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg معیار </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG سکیڑیں </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> واٹرمارک </title>
+    <label> واٹرمارک کا استعمال کریں </label>
+    <position> واٹر مارک پوزیشن </position>
+    <image> واٹر مارک امیج </image>
+    <set> واٹرمارک سیٹ کریں </set>
+    <browse> 1- واٹر مارک امیجیو فائل کو براؤز کریں </browse>
+    <adjust> 2- فریم کے مطابق امیج کو ایڈجسٹ کریں۔ </adjust>
+    <upload> 3- منتخب فائل اپلوڈ کریں </upload>
+    <uploading> اپ لوڈ ہو رہا ہے… </uploading>
+    <uploaded> اپ لوڈ کردہ۔ </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> صفحہ </page>
+   <first> پہلا صفحہ </first>
+   <prev> پچھلا صفحہ </prev>
+   <next> اگلا صفحہ </next>
+   <last> آخری صفحہ </last>
+  </pagination>
+
+</lang>

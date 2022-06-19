@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Gjuha </title>
+   <label> Zgjidhni gjuhën </label>
+  </lang>
+
+  <timezone>
+   <title>Zona kohore</title>
+   <label>Zgjidhni zonën e orës</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Menaxhimi i Galerisë </gallery_man>
+   <gallery_list> Lista e Galerive </gallery_list>
+   <uploader> Krijoni Galeri të Re </uploader>
+   <back> mbrapa </back>
+  </nav>
+
+  <install>
+ 
+   <title> Konfigurimi i MIGallery </title>
+   <header> Konfigurimi i MIGallery </header>
+
+   <img_direction>
+    <label> Galeria, imazhi dhe drejtimi i rrëshqitjes </label>
+    <left> Nga e majta në të djathtë </left>
+    <right> E djathta në të majtë </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informacioni i bazës së të dhënave MySQL </title>
+    <host>
+     <label> Emri i hostit të bazës së të dhënave </label>
+     <placeholder> Emri i hostit të bazës së të dhënave </placeholder>
+     <validate> Vendosni emrin e hostit të bazës së të dhënave </validate>
+    </host>
+    <user>
+     <label> Emri i përdoruesit të bazës së të dhënave </label>
+     <placeholder> Emri i përdoruesit i bazës së të dhënave </placeholder>
+     <validate> Futni emrin e përdoruesit të bazës së të dhënave </validate>
+    </user>
+    <pass>
+     <label> Fjalëkalimi i bazës së të dhënave </label>
+     <placeholder> Fjalëkalimi i bazës së të dhënave </placeholder>
+     <validate> Futni fjalëkalimin e bazës së të dhënave </validate>
+    </pass>
+    <db>
+     <label> Emri i bazës së të dhënave </label>
+     <placeholder> Emri i bazës së të dhënave </placeholder>
+     <validate> Vendosni emrin e bazës së të dhënave </validate>
+    </db>
+    <gal_table>
+     <label> Emri i tryezës së galerisë </label>
+     <placeholder> Emri i tryezës së galerisë </placeholder>
+     <validate> Vendosni emrin e tryezës së galerisë </validate>
+    </gal_table>
+    <img_table>
+     <label> Emri i Tabelës së Imazhit </label>
+     <placeholder> Emri i Tabelës së Imazhit </placeholder>
+     <validate> Vendosni emrin e tabelës së imazhit </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Drejtoritë ku lejohen të shkruhen skedarët</title>
+    <db_alert>
+     <![CDATA[
+    Direktoria e mëposhtme është vendi ku do të krijohen skedarët <b> konfigurim </b>, <b> regjistër gabimesh </b> dhe <b> përkufizime </b>. Nëse dëshironi të ndryshoni emrin e këtij direktoria, ndryshoni përkufizimin <b> DB_DIR </b> në skedarin <b> definitions0.php </b> dhe rifreskoni këtë faqe.<br/><br/>Nëse dëshironi të riemërtoni skedarin e konfigurimit, skedarin e regjistrit të gabimit dhe skedarin e përkufizimeve, ndryshoni përkufizimet e <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> dhe <b>DEFINITIONS_FILE</b> në skedarin definitions0.php.<br/><br/>Nëse sistemi juaj është i bazuar në unix, vendosni lejet e shkrimit në dosje me komandën e mëposhtme:<br/><b>%s</b><br/><br/>Para fillimit të instalimit, sigurohuni që rruga e mëposhtme ekziston dhe keni leje për të shkruar në direktori:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Para se të filloni instalimin, sigurohuni që drejtoritë e mëposhtme janë të disponueshme dhe që keni leje të shkruani në drejtori. <br/> <br/> Nëse do të përdorni direktori të tjera përveç drejtorive të mëposhtme, nëse drejtoritë nuk ekzistojnë në disk, së pari krijoni direktori dhe vendosni lejet e shkrimit të këtyre direktorive dhe filloni instalimin.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Rruga për tek Skedari i Konfigurimit, Skedari i Regjistrimit të Gabimeve dhe Skedari i Përkufizimeve</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Drejtoritë e mëposhtme do të krijohen kur galeria e re të ruhet. <b>%d</b> specifikon id-në e galerisë. Këto direktori do të krijohen në <b> Drejtoria bazë e imazheve </b> specifikuar më sipër. Sigurohuni që formati i këtyre drejtorive të jetë i përshtatshëm.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Skedari i konfigurimit është krijuar më parë. Prandaj, nuk mund ta ekzekutoni instalimin. Së pari duhet të fshini skedarin e konfigurimit dhe më pas të ekzekutoni instalimin.</config_alert>
+    <tmp_dir>
+     <label>Drejtoria e Përkohshme e Imazhit</label>
+     <placeholder>Drejtoria e Përkohshme e Imazhit</placeholder>
+     <validate>Drejtoria e Përkohshme e Imazhit</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Drejtoria e përkohshme e skedarëve të miniaturave</label>
+     <placeholder>Drejtoria e përkohshme e skedarëve të miniaturave</placeholder>
+     <validate>Drejtoria e përkohshme e skedarëve të miniaturave</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Drejtoria e Përkohshme e Skedarëve të Miniaturave të Prera</label>
+     <placeholder>Drejtoria e Përkohshme e Skedarëve të Miniaturave të Prera</placeholder>
+     <validate>Drejtoria e Përkohshme e Skedarëve të Miniaturave të Prera</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Drejtoria e Përkohshme e Skedarëve të Imazheve Slide</label>
+     <placeholder>Drejtoria e Përkohshme e Skedarëve të Imazheve Slide</placeholder>
+     <validate>Drejtoria e Përkohshme e Skedarëve të Imazheve Slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Drejtoria bazë e imazheve</label>
+     <placeholder>Drejtoria bazë e imazheve</placeholder>
+     <validate>Drejtoria bazë e imazheve</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Drejtoria e Imazheve</label>
+     <placeholder>Drejtoria e Imazheve</placeholder>
+     <validate>Drejtoria e Imazheve</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Drejtoria e skedarëve të miniaturave</label>
+     <placeholder>Drejtoria e skedarëve të miniaturave</placeholder>
+     <validate>Drejtoria e skedarëve të miniaturave</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Drejtoria e Skedarëve të Miniaturave të Prera</label>
+     <placeholder>Drejtoria e Skedarëve të Miniaturave të Prera</placeholder>
+     <validate>Drejtoria e Skedarëve të Miniaturave të Prera</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Drejtoria e Skedarëve të Imazheve Slide</label>
+     <placeholder>Drejtoria e Skedarëve të Imazheve Slide</placeholder>
+     <validate>Drejtoria e Skedarëve të Imazheve Slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Drejtoria e Skedarëve XML</label>
+     <placeholder>Drejtoria e Skedarëve XML</placeholder>
+     <validate>Drejtoria e Skedarëve XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Po instalon. Ju lutemi prisni ... </installing>
+    <success> Instalimi përfundoi me sukses. </success>
+    <error> Instalimi nuk mund të përfundojë. </error>
+   </alert>
+  
+   <submit> Filloni instalimin </submit>
+   <submit_continue> Vazhdo &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Menaxhimi i Galerisë </title>
+   <header> Menaxhimi i Galerisë </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lista e Galerive </title>
+   <header> Lista e Galerive </header>
+   <sort>
+    <asc> rendit nga e para te e fundit </asc>
+    <desc> rendit nga e fundit te e para </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Pamja </button>
+     <title> Shikoni Galerinë </title>
+    </view>
+    <delete>
+     <button> Fshij </button>
+     <title> Fshi Galerinë </title>
+    </delete>
+    <edit>
+     <button> Redakto </button>
+     <title> Redakto Galerinë </title>
+    </edit>
+    <images>imazhe</images>
+    <date>Data</date>
+    <move> Mund të renditni galeritë duke i tërhequr ato me miun. </move>
+    <move_mobile>Prekni dhe mbani një send me gishtin tuaj dhe prisni të zgjidhet. Pasi të keni zgjedhur një artikull, tërhiqni gishtin për të renditur artikujt.</move_mobile>
+   </card>
+   <alert> Asnjë galeri nuk u gjet. </alert>
+   <modal>
+    <del_gallery>
+     <label> Fshi Galerinë </label>
+     <close> mbyll </close>
+     <text> A doni ta fshini këtë galeri nga faqja? </text>
+     <command> Fshij </command>
+     <cancel> Anulo </cancel>
+    </del_gallery>
+    <result>
+     <label> Gabim </label>
+     <close> mbyll </close>
+     <text> </text>
+     <command> Mbyll </command>
+    </result>
+   </modal>
+   <save_changes> Ruaj urdhrin e klasifikimit të galerisë </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Pamja e Galerisë </title>
+   <header> Pamja e Galerisë </header>
+   <alert> Asnjë imazh nuk u gjet. </alert>
+   <share>Ndani galerinë</share>
+   <filedate>Data e ngarkimit</filedate>
+   <filesize>Madhësia e skedarit</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopjoni në Clipboard</label>
+     <close>mbyll</close>
+     <text>Lidhja u kopjua në kujtesën e fragmenteve</text>
+     <command>Kopjoni</command>
+     <cancel>Mbyll</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Krijoni Galeri të Re </title>
+    <header> Krijoni Galeri të Re </header>
+   </new>
+   <edit>
+    <title> Redakto Galerinë </title>
+    <header> Redakto Galerinë </header>
+   </edit>
+   <gallery_info>
+    <title> Informacioni i Galerisë </title>
+    <name>
+     <label> Emri i Galerisë </label>
+     <placeholder> Emri i Galerisë </placeholder>
+     <validate> Emri i Galerisë Hyrëse </validate>
+    </name>
+    <description>
+     <label> Përshkrimi i Galerisë </label>
+     <placeholder> Përshkrimi i galerisë </placeholder>
+     <validate> Përshkrimi i Galerisë Hyrëse </validate>
+    </description>
+    <keywords>
+     <label> Fjalët kyçe të galerisë të ndara me presje ose rreshta të rinj </label>
+     <placeholder> Fjalët kyçe të galerisë të ndara me presje ose rreshta të rinj </placeholder>
+     <validate> Futni Fjalët kyçe të Galerisë </validate>
+    </keywords>
+    <submit>
+     <save> Ruaj Galerinë </save>
+     <update> Azhurnoni Galerinë </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Udhëzuesi i Ngarkuesit të Imazheve </title>
+     <body>
+      <![CDATA[
+Zgjidhni imazhet nga pajisja juaj me butonin <b> Shfletoni imazhe </b> dhe ngarkoni në sit me butonin <b> Ngarko imazhe </b>. <br/> Formatet e mbështetura të imazheve: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Rezolucioni minimal i lejueshëm: <b>%d x %d px</b> <br/> Rezolucioni maksimal i lejueshëm: <b>%d x %d px</b> <br/> Madhësia maksimale e një skedari të vetëm: <b>%d MB</b> <br/> Numërimi i imazhit për galeri: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Zgjidhni All </select_all>
+    <select_del> Fshi imazhet e zgjedhura </select_del>
+    <thumb>
+     <exist>
+      <delete> Fshi imazhin e ngarkuar nga faqja </delete>
+      <info> Informacioni i Imazhit </info>
+     </exist>
+     <new>
+      <delete> Fshi imazhin e ngarkuar nga faqja </delete>
+      <cancel> Anulo Ngarkimi i Imazhit </cancel>
+      <info> Informacioni i Imazhit </info>
+      <rotate> Rotate Image </rotate>
+      <crop> Prerë Imazhin </crop>
+     </new>
+     <move> Mund t'i renditni imazhet duke i tërhequr me miun. </move>
+     <move_mobile>Prekni dhe mbani një send me gishtin tuaj dhe prisni të zgjidhet. Pasi të keni zgjedhur një artikull, tërhiqni gishtin për të renditur artikujt.</move_mobile>
+    </thumb>
+    <browse> Shfletoni imazhe </browse>
+    <upload> Ngarko Imazhe </upload>
+    <uploading> Imazhet janë duke u rriturngarkuar në sit. Mos e mbyllni faqen derisa të përfundojë ngarkimi. </uploading>
+    <uploaded> Imazhet janë ngarkuar në sit. </uploaded>
+    <error>Disa gabime ndodhën gjatë ngarkimit të skedarëve në server.</error>
+    <save_changes> Ruaj Ndryshimet e Imazhit </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Prerë </crop>
+     <cancel> Anulo </cancel>
+    </crop>
+    <del_up_img>
+     <label> Fshi imazhin </label>
+     <close> mbyll </close>
+     <text> A doni ta fshini këtë imazh nga faqja e internetit? </text>
+     <command> Fshij </command>
+     <cancel> Anulo </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Fshi imazhin </label>
+     <close> mbyll </close>
+     <text> A doni ta fshini këtë imazh nga faqja e internetit? </text>
+     <command> Fshij </command>
+     <cancel> Anulo </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Fshi imazhet e zgjedhura </label>
+     <close> mbyll </close>
+     <text> A doni të fshini imazhet e zgjedhura nga faqja e internetit? </text>
+     <command> Fshij </command>
+     <cancel> Anulo </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informacioni i Imazhit </label>
+     <close> mbyll </close>
+     <filename> Emri i Skedarit </filename>
+     <filesize> Madhësia e Skedarit </filesize>
+     <date> Data e ngarkimit </date>
+     <title>
+      <label> Titulli </label>
+      <placeholder> Titulli i Imazhit </placeholder>
+     </title>
+     <desc>
+      <label> Përshkrimi </label>
+      <placeholder> Përshkrimi i Imazhit </placeholder>
+     </desc>
+     <keyw>
+      <label> Fjalë kyçe </label>
+      <placeholder> Fjalët kyçe të ndara me presje ose rreshta të rinj </placeholder>
+     </keyw>
+     <command> Ruaj / Përditëso </command>
+     <cancel> Anulo </cancel>
+    </img_info>
+    <result>
+     <label> Gabim </label>
+     <close> mbyll </close>
+     <text> </text>
+     <command> Mbyll </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Cilësimet e Imazhit të Ngarkueshëm </title>
+    <upload_limit>
+     <label> Numri maksimal i imazheve për galeri </label>
+     <placeholder> Numri maksimal i imazheve për galeri </placeholder>
+     <validate> Vendosni numrin maksimal të imazheve për galeri </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Madhësia maksimale e skedarit të vetëm (MB) </label>
+     <placeholder> Madhësia maksimale e skedarit të vetëm (MB) </placeholder>
+     <validate> Vendosni madhësinë maksimale të një skedari (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Rezolucioni i Lejueshëm i Minorës </label>
+     <width>
+      <placeholder> Gjerësia minimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </width>
+     <height>
+      <placeholder> Lartësia minimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Rezolucioni maksimal i lejueshëm </label>
+     <width>
+      <placeholder> Gjerësia maksimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </width>
+     <height>
+      <placeholder> Lartësia maksimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformimi i Imazhit </title>
+    <full_resolution>
+     <label> Madhësia e plotë e imazhit </label>
+     <width>
+      <placeholder> Gjerësia maksimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </width>
+     <height>
+      <placeholder> Lartësia maksimale </placeholder>
+      <validate> Vendos vlerën </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Madhësia e miniaturës </label>
+     <width>
+      <placeholder> Gjerësia e miniaturës </placeholder>
+      <validate> Vendos vlerën </validate>
+     </width>
+     <height>
+      <placeholder> Lartësia e miniaturës </placeholder>
+      <validate> Vendos vlerën </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Madhësia e rrëshqitjes </label>
+     <width>
+      <placeholder> Gjerësia e Slide-it </placeholder>
+      <validate> Vendos vlerën </validate>
+     </width>
+     <height>
+      <placeholder> Lartësia e Slide-it </placeholder>
+      <validate> Vendos vlerën </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Cilësia Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Ngjesh PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigranë </title>
+    <label> Filigranë përdorim </label>
+    <position> Pozicioni i Filigranë </position>
+    <image> Imazhi i Filigranë </image>
+    <set> Rregulloj Filigranë </set>
+    <browse> 1- Shikoni Skedarin e Imazhit të Filigranë </browse>
+    <adjust> 2- Rregulloni imazhin sipas kornizës. </adjust>
+    <upload> 3- Ngarko Skedarin e Zgjedhur </upload>
+    <uploading> Ngarkimi ... </uploading>
+    <uploaded> Ngarkuar. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Faqja </page>
+   <first> Faqja e Parë </first>
+   <prev> Faqja e mëparshme </prev>
+   <next> Faqja tjetër </next>
+   <last> Faqja e fundit </last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Taal </title>
+   <label> Selecteer taal </label>
+  </lang>
+
+  <timezone>
+   <title>Tijdzone</title>
+   <label>Selecteer Tijdzone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galerijbeheer </gallery_man>
+   <gallery_list> Galerielijst </gallery_list>
+   <uploader> Nieuwe galerij maken </uploader>
+   <back> Terug </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery-installatie </title>
+   <header> MIGallery-installatie </header>
+
+   <img_direction>
+    <label> Galerij, afbeelding en dia-richting </label>
+    <left> Links naar rechts </left>
+    <right> Rechts naar links </right>
+   </img_direction>
+
+   <db_info>
+    <title> MySQL-database-informatie </title>
+    <host>
+     <label> Database hostnaam </label>
+     <placeholder> Database hostnaam </placeholder>
+     <validate> Hostnaam van database invoeren </validate>
+    </host>
+    <user>
+     <label> Database gebruikersnaam </label>
+     <placeholder> Database gebruikersnaam </placeholder>
+     <validate> Voer Database gebruikersnaam in </validate>
+    </user>
+    <pass>
+     <label> Database wachtwoord </label>
+     <placeholder> Databasewachtwoord </placeholder>
+     <validate> Databasewachtwoord invoeren </validate>
+    </pass>
+    <db>
+     <label> Database naam </label>
+     <placeholder> Database naam </placeholder>
+     <validate> Voer de databasenaam in </validate>
+    </db>
+    <gal_table>
+     <label> Naam galerijtabel </label>
+     <placeholder> Galerijtabelnaam </placeholder>
+     <validate> Voer de naam van de galerietabel in </validate>
+    </gal_table>
+    <img_table>
+     <label> Naam afbeeldingstabel </label>
+     <placeholder> Naam afbeeldingstabel </placeholder>
+     <validate> Voer de naam van de afbeeldingstabel in </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Directory's voor beschrijfbare dynamische inhoud</title>
+    <db_alert>
+     <![CDATA[
+    De volgende directory is waar de <b> configuratie </b>, <b> foutenlogboek </b> en <b> definities </b> bestanden zullen worden aangemaakt. Als u de naam van deze map wilt wijzigen, wijzigt u de <b> DB_DIR </b> -definitie in het <b> definitions0.php </b> -bestand en vernieuwt u deze pagina. <br/> <br/> Als u de namen van configuratie-, foutenlogboek- en definitiebestanden wilt wijzigen, verander de definities van <b> CONFIG_FILE </b>, <b> ERROR_LOG_FILE </b> en <b> DEFINITIONS_FILE </b> in het definitions0.php-bestand . <br/> <br/> Als uw systeem is gebaseerd op unix, stelt u de schrijfrechten voor de map in met het volgende commando: <br/> <b>%s</b> <br/> <br/> Voordat u met de installatie begint, moet u ervoor zorgen dat het volgende pad bestaat en dat u toestemming hebt om naar de directory te schrijven:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Voordat u met de installatie begint, moet u ervoor zorgen dat de volgende mappen beschikbaar zijn en dat u toestemming heeft om naar de mappen te schrijven. <br/> <br/> Als je andere mappen gaat gebruiken dan de volgende mappen en de mappen niet op de schijf staan, maak dan eerst de mappen aan en stel de schrijfrechten van deze mappen in en start de installatie.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Configuratie, foutenlogboek en definitiebestanden Pad</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    De volgende mappen worden gemaakt wanneer de nieuwe galerij wordt opgeslagen. <b>%d</b> geeft de galerij-ID aan. Deze directories worden aangemaakt in de <b> Basismap voor afbeeldingen </b> directory die hierboven is gedefinieerd. Zorg ervoor dat de indeling van deze mappen geschikt is.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Het configuratiebestand is eerder gemaakt. Daarom kunt u de installatie niet uitvoeren. U moet eerst het configuratiebestand verwijderen en vervolgens de installatie uitvoeren.</config_alert>
+    <tmp_dir>
+     <label>Tijdelijke map voor afbeeldingen</label>
+     <placeholder>Tijdelijke map voor afbeeldingen</placeholder>
+     <validate>Tijdelijke map voor afbeeldingen</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Tijdelijke map voor miniatuur</label>
+     <placeholder>Tijdelijke map voor miniatuur</placeholder>
+     <validate>Tijdelijke map voor miniatuur</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Tijdelijke map voor bijgesneden miniatuur</label>
+     <placeholder>Tijdelijke map voor bijgesneden miniatuur</placeholder>
+     <validate>Tijdelijke map voor bijgesneden miniatuur</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tijdelijke map voor dia-afbeelding</label>
+     <placeholder>Tijdelijke map voor dia-afbeelding</placeholder>
+     <validate>Tijdelijke map voor dia-afbeelding</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Basismap voor afbeeldingen</label>
+     <placeholder>Basismap voor afbeeldingen</placeholder>
+     <validate>Basismap voor afbeeldingen</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Afbeeldingsmap</label>
+     <placeholder>Afbeeldingsmap</placeholder>
+     <validate>Afbeeldingsmap</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Map voor miniatuur</label>
+     <placeholder>Map voor miniatuur</placeholder>
+     <validate>Map voor miniatuur</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Map voor bijgesneden miniatuur</label>
+     <placeholder>Map voor bijgesneden miniatuur</placeholder>
+     <validate>Map voor bijgesneden miniatuur</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Map voor dia-afbeelding</label>
+     <placeholder>Map voor dia-afbeelding</placeholder>
+     <validate>Map voor dia-afbeelding</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-bestandsmap</label>
+     <placeholder>XML-bestandsmap</placeholder>
+     <validate>XML-bestandsmap</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Installeren. Een ogenblik geduld ... </installing>
+    <success> Installatie succesvol voltooid. </success>
+    <error> Installatie kon niet worden voltooid. </error>
+   </alert>
+  
+   <submit> Start de installatie </submit>
+   <submit_continue> Ga verder &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galerijbeheer </title>
+   <header> Galerijbeheer </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Gallery List </title>
+   <header> Galerielijst </header>
+   <sort>
+    <asc> sorteren van eerste naar laatste </asc>
+    <desc> sorteren van laatste naar eerste </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Weergeven </button>
+     <title> Bekijk galerij </title>
+    </view>
+    <delete>
+     <button> Verwijderen </button>
+     <title> Galerij verwijderen </title>
+    </delete>
+    <edit>
+     <button> Bewerken </button>
+     <title> Galerij bewerken </title>
+    </edit>
+    <images>afbeeldingen</images>
+    <date>Datum</date>
+    <move> U kunt de galerijen sorteren door ze met de muis te slepen. </move>
+    <move_mobile>Tik en houd een item vast met uw vinger en wacht tot het wordt gemarkeerd. Nadat u een item hebt geselecteerd, sleept u uw vinger om de items te sorteren.</move_mobile>
+   </card>
+   <alert> Geen galerij gevonden. </alert>
+   <modal>
+    <del_gallery>
+     <label> Galerij verwijderen </label>
+     <close> sluiten </close>
+     <text> Wilt u deze galerij van de site verwijderen? </text>
+     <command> Verwijderen </command>
+     <cancel> Annuleren </cancel>
+    </del_gallery>
+    <result>
+     <label> Fout </label>
+     <close> sluiten </close>
+     <text> </text>
+     <command> Sluiten </command>
+    </result>
+   </modal>
+   <save_changes> Sla galerij-sortering op </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galerijweergave </title>
+   <header> Galerijweergave </header>
+   <alert> Geen afbeelding gevonden. </alert>
+   <share>Galerij delen</share>
+   <filedate>Upload datum</filedate>
+   <filesize>Bestandsgrootte</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopieer naar klembord</label>
+     <close>sluiten</close>
+     <text>Link gekopieerd naar klembord</text>
+     <command>Kopiëren</command>
+     <cancel>Sluiten</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Nieuwe galerij maken </title>
+    <header> Nieuwe galerij maken </header>
+   </new>
+   <edit>
+    <title> Galerij bewerken </title>
+    <header> Galerij bewerken </header>
+   </edit>
+   <gallery_info>
+    <title> Galerij-informatie </title>
+    <name>
+     <label> Galerijnaam </label>
+     <placeholder> Galerijnaam </placeholder>
+     <validate> Voer galerijnaam in </validate>
+    </name>
+    <description>
+     <label> Galerijbeschrijving </label>
+     <placeholder> Galerijbeschrijving </placeholder>
+     <validate> Beschrijving invoergalerij </validate>
+    </description>
+    <keywords>
+     <label> Galerijzoekwoorden gescheiden door komma's of regeleinden </label>
+     <placeholder> Galerijzoekwoorden gescheiden door komma's of regeleinden </placeholder>
+     <validate> Voer galerij-trefwoorden in </validate>
+    </keywords>
+    <submit>
+     <save> Galerij opslaan </save>
+     <update> Update galerij </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Gids voor het uploaden van afbeeldingen </title>
+     <body>
+      <![CDATA[
+Selecteer afbeeldingen op uw apparaat met de knop <b> Bladeren door afbeeldingen </b> en upload ze naar de site met de knop <b> Afbeeldingen uploaden </b>. <br/> Ondersteunde afbeeldingsindelingen: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Toegestane minimale resolutie: <b>%d x %d px</b> <br/> Toegestane maximale resolutie: <b>%d x %d px</b> <br/> Maximale grootte van één bestand: <b>%d MB</b> <br/> Aantal afbeeldingen per galerij: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Alles selecteren </select_all>
+    <select_del> Verwijder geselecteerde afbeeldingen </select_del>
+    <thumb>
+     <exist>
+      <delete> Verwijder geüploade afbeelding van site </delete>
+      <info> Afbeeldingsinformatie </info>
+     </exist>
+     <new>
+      <delete> Verwijder geüploade afbeelding van site </delete>
+      <cancel> Afbeelding uploaden annuleren </cancel>
+      <info> Afbeeldingsinformatie </info>
+      <rotate> Rotate Image </rotate>
+      <crop> Afbeelding bijsnijden </crop>
+     </new>
+     <move> U kunt de afbeeldingen sorteren door ze met de muis te slepen. </move>
+     <move_mobile>Tik en houd een item vast met uw vinger en wacht tot het wordt gemarkeerd. Nadat u een item hebt geselecteerd, sleept u uw vinger om de items te sorteren.</move_mobile>
+    </thumb>
+    <browse> Bladeren door afbeeldingen </browse>
+    <upload> Afbeeldingen uploaden </upload>
+    <uploading> Afbeeldingen worden geüploadded naar de site. Sluit de pagina niet voordat het uploaden is voltooid. </uploading>
+    <uploaded> Afbeeldingen zijn geüpload naar de site. </uploaded>
+    <error>Er zijn enkele fouten opgetreden tijdens het uploaden van bestanden naar de server.</error>
+    <save_changes> Bewaar afbeeldingswijzigingen </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Bijsnijden </crop>
+     <cancel> Annuleren </cancel>
+    </crop>
+    <del_up_img>
+     <label> Afbeelding verwijderen </label>
+     <close> sluiten </close>
+     <text> Wilt u deze afbeelding van de website verwijderen? </text>
+     <command> Verwijderen </command>
+     <cancel> Annuleren </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Afbeelding verwijderen </label>
+     <close> sluiten </close>
+     <text> Wilt u deze afbeelding van de website verwijderen? </text>
+     <command> Verwijderen </command>
+     <cancel> Annuleren </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Verwijder geselecteerde afbeeldingen </label>
+     <close> sluiten </close>
+     <text> Wilt u de geselecteerde afbeeldingen van de website verwijderen? </text>
+     <command> Verwijderen </command>
+     <cancel> Annuleren </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Afbeeldingsinformatie </label>
+     <close> sluiten </close>
+     <filename> Bestandsnaam </filename>
+     <filesize> Bestandsgrootte </filesize>
+     <date> Upload datum </date>
+     <title>
+      <label> Titel </label>
+      <placeholder> Afbeeldingstitel </placeholder>
+     </title>
+     <desc>
+      <label> Beschrijving </label>
+      <placeholder> Beschrijving afbeelding </placeholder>
+     </desc>
+     <keyw>
+      <label> Sleutelwoorden </label>
+      <placeholder> Sleutelwoorden gescheiden door komma's of regeleinden </placeholder>
+     </keyw>
+     <command> Opslaan / bijwerken </command>
+     <cancel> Annuleren </cancel>
+    </img_info>
+    <result>
+     <label> Fout </label>
+     <close> sluiten </close>
+     <text> </text>
+     <command> Sluiten </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Uploadbare afbeeldingsinstellingen </title>
+    <upload_limit>
+     <label> Maximaal aantal afbeeldingen per galerij </label>
+     <placeholder> Maximaal aantal afbeeldingen per galerij </placeholder>
+     <validate> Voer het maximale aantal afbeeldingen per galerij in </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maximale grootte van één bestand (MB) </label>
+     <placeholder> Maximale grootte van één bestand (MB) </placeholder>
+     <validate> Voer de maximale grootte van één bestand (MB) in </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Toegestane minimale resolutie </label>
+     <width>
+      <placeholder> minimale breedte </placeholder>
+      <validate> voer een waarde in </validate>
+     </width>
+     <height>
+      <placeholder> minimale hoogte </placeholder>
+      <validate> voer een waarde in </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Toegestane maximale resolutie </label>
+     <width>
+      <placeholder> maximale breedte </placeholder>
+      <validate> voer een waarde in </validate>
+     </width>
+     <height>
+      <placeholder> maximale hoogte </placeholder>
+      <validate> voer een waarde in </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Afbeelding transformeren </title>
+    <full_resolution>
+     <label> Afbeelding op volledige grootte </label>
+     <width>
+      <placeholder> maximale breedte </placeholder>
+      <validate> voer een waarde in </validate>
+     </width>
+     <height>
+      <placeholder> maximale hoogte </placeholder>
+      <validate> voer een waarde in </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Miniatuurgrootte </label>
+     <width>
+      <placeholder> Thumb Breedte </placeholder>
+      <validate> voer een waarde in </validate>
+     </width>
+     <height>
+      <placeholder> Thumb hoogte </placeholder>
+      <validate> voer een waarde in </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Diagrootte </label>
+     <width>
+      <placeholder> Dia breedte </placeholder>
+      <validate> voer een waarde in </validate>
+     </width>
+     <height>
+      <placeholder> Dia hoogte </placeholder>
+      <validate> voer een waarde in </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg-kwaliteit </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG-compressie </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Watermerk </title>
+    <label> Watermerk gebruiken </label>
+    <position> Watermerkpositie </position>
+    <image> Watermerk afbeelding </image>
+    <set> Watermerk instellen </set>
+    <browse> 1- Browse Watermark Image File </browse>
+    <adjust> 2- Pas de afbeelding aan volgens het frame. </adjust>
+    <upload> 3- Upload geselecteerd bestand </upload>
+    <uploading> Uploaden ... </uploading>
+    <uploaded> Geüpload. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Page </page>
+   <first> Eerste pagina </first>
+   <prev> Vorige pagina </prev>
+   <next> Volgende pagina </next>
+   <last> Laatste pagina </last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title>Taal</title>
+   <label>Kies Taal</label>
+  </lang>
+
+  <timezone>
+   <title>Tydsone</title>
+   <label>Kies Tydsone</label>
+  </timezone>
+
+  <nav>
+   <gallery_man>Galerybestuur</gallery_man>
+   <gallery_list>Beeldgalerye</gallery_list>
+   <uploader>Skep nuwe gallery</uploader>
+   <back>Terug</back>
+  </nav>
+  
+  <install>
+
+   <title>MIGallery Stel Op</title>
+   <header>MIGallery Stel Op</header>
+
+   <img_direction>
+    <label>Galery-, beeld- en skyfie-oriëntasies</label>
+    <left>Van links na regs</left>
+    <right>Van regs na links</right>
+   </img_direction>
+
+   <db_info>
+    <title>MySQL Databasis Inligting</title>
+    <host>
+     <label>Databasis gasheernaam</label>
+     <placeholder>Databasis gasheernaam</placeholder>
+     <validate>Insette Databasis gasheernaam</validate>
+    </host>
+    <user>
+     <label>Databasis Gebruikersnaam</label>
+     <placeholder>Databasis Gebruikersnaam</placeholder>
+     <validate>Insette Databasis Gebruikersnaam</validate>
+    </user>
+    <pass>
+     <label>Databasis Wagwoord</label>
+     <placeholder>Databasis Wagwoord</placeholder>
+     <validate>Insette Databasis Wagwoord</validate>
+    </pass>
+    <db>
+     <label>Databasis Naam</label>
+     <placeholder>Databasis Naam</placeholder>
+     <validate>Insette Databasis Naam</validate>
+    </db>
+    <gal_table>
+     <label>Naam galerytabel</label>
+     <placeholder>Naam galerytabel</placeholder>
+     <validate>Insette Naam galerytabel</validate>
+    </gal_table>
+    <img_table>
+     <label>Naam beeldtabel</label>
+     <placeholder>Naam beeldtabel</placeholder>
+     <validate>Insette Naam beeldtabel</validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Gidse van skryfbare dinamiese inhoud</title>
+    <db_alert>
+     <![CDATA[
+    Die volgende gids is waar die lêers <b> konfigurasie </b>, <b> foutlogboek </b> en <b> definisies </b> geskep word. As u die naam van hierdie gids wil verander, verander die definisie <b> DB_DIR </b> in die lêer <b> definitions0.php </b> en verfris hierdie bladsy.<br/><br/>As u die konfigurasie-, foutlogboek- en definisie-lêers wil herdoop, verander die definisies van <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> en <b>DEFINITIONS_FILE</b> in die definitions0.php-lêer.<br/><br/>As u stelsel unix-gebaseer is, stel die skryftoestemmings in met die volgende opdrag:<br/><b>%s</b><br/><br/>Voordat u met die installasie begin, moet u seker maak dat die volgende pad bestaan en dat u die toestemming het om na die gids te skryf:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Voordat u met die installasie begin, moet u seker maak dat die volgende gidse bestaan en dat u toestemming het om na die gidse te skryf.<br/><br/>As u ander gidse as die volgende gidse gaan gebruik, as die gidse nie op die skyf bestaan nie, skep u eers die gidse en stel die skryftoestemmings in en begin die installasie.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Konfigurasie, foutlêer en definisie lêerpad</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Die volgende gidse word geskep wanneer die nuwe galery gestoor word. <b>%d</b> dui die galery-ID aan. Hierdie gidse word geskep in die <b> Beeldbasispad </b> -gids wat hierbo gedefinieer word. Kyk of die formaat van die gidse toepaslik is.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Die konfigurasielêer is al voorheen geskep. Daarom kan u nie die installasie uitvoer nie. U moet eers die konfigurasielêer verwyder en dan die installasie uitvoer.</config_alert>
+    <tmp_dir>
+     <label>Tydelike beeldpad</label>
+     <placeholder>Tydelike beeldpad</placeholder>
+     <validate>Tik naam van tydelike prentpad in</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Tydelike duimnaelpad</label>
+     <placeholder>Tydelike duimnaelpad</placeholder>
+     <validate>Voer die naam van die tydelike miniatuurpad in</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Geknipte duimnael tydelike pad</label>
+     <placeholder>Geknipte duimnael tydelike pad</placeholder>
+     <validate>Voer tydelike padnaam vir geknipte miniatuur in</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Tydelike skuifbeeldpad</label>
+     <placeholder>Tydelike skuifbeeldpad</placeholder>
+     <validate>Voer die naam van die tydelike skuifbeeld se pad in</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Beeldbasispad</label>
+     <placeholder>Beeldbasispad</placeholder>
+     <validate>Voer naam van die beeldbasispad in</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Beeldpad</label>
+     <placeholder>Beeldpad</placeholder>
+     <validate>Voer naam van prentpad in</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Miniatuurpad</label>
+     <placeholder>Miniatuurpad</placeholder>
+     <validate>Voer naam van miniatuurpad in</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Geknipte Miniatuurpad</label>
+     <placeholder>Geknipte Miniatuurpad</placeholder>
+     <validate>Voer naam van geknipte miniatuurpad in</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Skyfievertoning grootte beeldpad</label>
+     <placeholder>Skyfievertoning grootte beeldpad</placeholder>
+     <validate>Skyfievertoning grootte beeldpad</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-pad</label>
+     <placeholder>XML-pad</placeholder>
+     <validate>Voer die XML-padnaam in</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing>Installeer. Wag asseblief...</installing>
+    <success>installasie suksesvol voltooi</success>
+    <error>Installasie kon nie voltooi word nie.</error>
+   </alert>
+
+   <submit>Begin die installasie</submit>
+   <submit_continue>Aanhou &gt;&gt;</submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title>Galerybestuur</title>
+   <header>Galerybestuur</header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title>Galery lys</title>
+   <header>Galery lys</header>
+   <sort>
+    <asc>sorteer van eerste tot laaste</asc>
+    <desc>sorteer van laaste na eerste</desc>
+   </sort>
+   <card>
+    <view>
+     <button>Beskou</button>
+     <title>Kyk na die galery</title>
+    </view>
+    <delete>
+     <button>Verwyder</button>
+     <title>Vee galery uit</title>
+    </delete>
+    <edit>
+     <button>Wysig</button>
+     <title>Galery wysig</title>
+    </edit>
+    <images>beelde</images>
+    <date>Datum</date>
+    <move>U kan die galerye sorteer deur dit met die muis te sleep.</move>
+    <move_mobile>Tik en hou 'n item met jou vinger vas en wag totdat dit gekies word. Nadat die item gekies is, kan u die items sorteer deur met u vinger te sleep.</move_mobile>
+   </card>
+   <alert>Geen galery gevind nie.</alert>
+   <modal>
+    <del_gallery>
+     <label>Vee galery uit</label>
+     <close>toemaak</close>
+     <text>Wil u hierdie gallery van die webwerf verwyder?</text>
+     <command>Verwyder</command>
+     <cancel>Kanselleer</cancel>
+    </del_gallery>
+    <result>
+     <label>Fout</label>
+     <close>toemaak</close>
+     <text></text>
+     <command>Toemaak</command>
+    </result>
+   </modal> 
+   <save_changes>Stoor galerysortering</save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title>Kyk na die galery</title>
+   <header>Kyk na die galery</header>
+   <alert>Geen beeld gevind nie.</alert>
+   <share>Deel gallery</share>
+   <filedate>Oplaaidatum</filedate>
+   <filesize>Lêergrootte</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopieer na knipbord</label>
+     <close>maak toe</close>
+     <text>Skakel is na die knipbord gekopieer</text>
+     <command>Kopieer</command>
+     <cancel>Maak toe</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+  
+  <uploader>
+   <new>
+    <title>Skep nuwe galery</title>
+    <header>Skep nuwe galery</header>
+   </new>
+   <edit>
+    <title>Galery wysig</title>
+    <header>Galery wysig</header>
+   </edit>
+   <gallery_info>
+    <title>Galery-inligting</title>
+    <name>
+     <label>Galery Naam</label>
+     <placeholder>Galery Naam</placeholder>
+     <validate>Invoer gallery naam</validate>
+    </name>
+    <description>
+     <label>Galery Beskrywing</label>
+     <placeholder>Galery Beskrywing</placeholder>
+     <validate>Invoer Galery Beskrywing</validate>
+    </description>
+    <keywords>
+     <label>Galery sleutelwoorde geskei deur komma's of nuwe reëls</label>
+     <placeholder>Galery sleutelwoorde geskei deur komma's of nuwe reëls</placeholder>
+     <validate>Voer galery sleutelwoorde in</validate>
+    </keywords>
+    <submit>
+     <save>Stoor galery</save>
+     <update>Update Gallery</update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title>Oplaaiergids</title>
+     <body>
+      <![CDATA[
+Kies beelde vanaf u toestel met die knoppie <b> Blaai deur beelde </b> en laai dit op na die werf met die knoppie <b> Beelde oplaai </b>. <br/> Ondersteunde beeldformate: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Toelaatbare minimum resolusie: <b>% dx% d px </b> <br/> Toelaatbare maksimum resolusie: <b>% dx% d px </b> <br/> Maksimum grootte enkellêer: <b>% d MB </b> <br/> Beeldtelling per galery: <b>% d </b>
+      ]]>
+     </body>
+    </info>
+    <select_all>Kies Alles</select_all>
+    <select_del>Skrap geselekteerde</select_del>
+    <thumb>
+     <exist>
+      <delete>Verwyder die opgelaaide prentjie van die werf af</delete>
+      <info>Beeld Info</info>
+     </exist>
+     <new>
+      <delete>Verwyder die opgelaaide prentjie van die werf af</delete>
+      <cancel>Kanselleer oplaai van beeld</cancel>
+      <info>Beeld Info</info>
+      <rotate>Draai beeld</rotate>
+      <crop>Sny beeld</crop>
+     </new>
+     <move>U kan die beelde sorteer deur dit met die muis te sleep.</move>
+     <move_mobile>Tik en hou 'n item met jou vinger vas en wag totdat dit gekies word. Nadat die item gekies is, kan u die items sorteer deur met u vinger te sleep.</move_mobile>
+    </thumb>
+    <browse>Blaai deur beelde</browse>
+    <upload>Beelde oplaai</upload>
+    <uploading>Beelde word na die webwerf gelaai. Moenie die bladsy toemaak voordat die oplaai klaar is nie.</uploading>
+    <uploaded>Beelde is na die webwerf gelaai.</uploaded>
+    <error>Sommige foute het voorgekom tydens die oplaai van lêers na die bediener.</error>
+    <save_changes>Stoor beeldveranderings</save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop>Sny</crop>
+     <cancel>Kanselleer</cancel>
+    </crop>
+    <del_up_img>
+     <label>Beeld uitvee</label>
+     <close>toemaak</close>
+     <text>Wil u hierdie prentjie van die webwerf verwyder?</text>
+     <command>Verwyder</command>
+     <cancel>Kanselleer</cancel>
+    </del_up_img>
+    <del_img>
+     <label>Beeld uitvee</label>
+     <close>toemaak</close>
+     <text>Wil u hierdie prentjie van die webwerf verwyder?</text>
+     <command>Verwyder</command>
+     <cancel>Kanselleer</cancel>
+    </del_img>
+    <del_img_multi>
+     <label>Verwyder geselekteerde beelde</label>
+     <close>toemaak</close>
+     <text>Wil u die geselekteerde beelde van die webwerf verwyder?</text>
+     <command>Verwyder</command>
+     <cancel>Kanselleer</cancel>
+    </del_img_multi>
+    <img_info>
+     <label>Beeld Info</label>
+     <close>toemaak</close>
+     <filename>Lêernaam</filename>
+     <filesize>Lêergrootte</filesize>
+     <date>Oplaaidatum</date>
+     <title>
+      <label>Titel</label>
+      <placeholder>Beeldtitel</placeholder>
+     </title>
+     <desc>
+      <label>Beskrywing</label>
+      <placeholder>Beeldbeskrywing</placeholder>
+     </desc>
+     <keyw>
+      <label>Sleutelwoorde</label>
+      <placeholder>Sleutelwoorde geskei deur komma's of nuwe reëls</placeholder>
+     </keyw>
+     <command>Stoor / opdater</command>
+     <cancel>Kanselleer</cancel>
+    </img_info>
+    <result>
+     <label>Fout</label>
+     <close>toemaak</close>
+     <text></text>
+     <command>Toemaak</command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title>Oplaaibare beeldinstellings</title>
+    <upload_limit>
+     <label>Maksimum aantal beeld per galery</label>
+     <placeholder>Maksimum aantal beeld per galery</placeholder>
+     <validate>Insette Maksimum aantal beeld per galery</validate>
+    </upload_limit>
+    <max_file_size>
+     <label>Enkele lêer maksimum grootte (MB)</label>
+     <placeholder>Enkele lêer maksimum grootte (MB)</placeholder>
+     <validate>Insette Enkele lêer maksimum grootte (MB)</validate>
+    </max_file_size>
+    <min_resolution>
+     <label>Toelaatbare minimum resolusie</label>
+     <width>
+      <placeholder>Min breedte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </width>
+     <height>
+      <placeholder>Min Hoogte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label>Toelaatbare maksimum resolusie</label>
+     <width>
+      <placeholder>Maks breedte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </width>
+     <height>
+      <placeholder>Maks Hoogte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title>Beeldtransformasie</title>
+    <full_resolution>
+     <label>Volle beeldgrootte</label>
+     <width>
+      <placeholder>Maks breedte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </width>
+     <height>
+      <placeholder>Maks Hoogte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label>Miniatuur grootte</label>
+     <width>
+      <placeholder>Duimwydte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </width>
+     <height>
+      <placeholder>Duim Hoogte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label>Skyfie beeld Grootte</label>
+     <width>
+      <placeholder>Skyfie wydte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </width>
+     <height>
+      <placeholder>skuif hoogte</placeholder>
+      <validate>Invoerwaarde</validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label>Jpeg Kwaliteit</label>
+    </jpg_quality>
+    <png_compress>
+     <label>PNG Komprimeer</label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title>Watermerkbeeld</title>
+    <label>Gebruik 'n watermerkbeeld</label>
+    <position>Watermerkbeeld Posisie</position>
+    <image>Watermerkbeeld</image>
+    <set>Stel watermerk beeld</set>
+    <browse>1- Blaai deur 'n watermerklêer</browse>
+    <adjust>2- Pas die prentjie aan volgens die raam.</adjust>
+    <upload>3- Laai die gekose lêer op</upload>
+    <uploading>oplaai...</uploading>
+    <uploaded>opgelaai.</uploaded>
+   </watermark>
+
+  </image>
+
+  <pagination>
+   <page>Bladsy</page>
+   <first>Eerste bladsy</first>
+   <prev>Vorige bladsy</prev>
+   <next>Volgende bladsy</next>
+   <last>Laaste bladsy</last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Idioma </title>
+   <label> Selecciona un idioma </label>
+  </lang>
+
+  <timezone>
+   <title>Fus horari</title>
+   <label>Seleccioneu la zona horària</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Gestió de galeries </gallery_man>
+   <gallery_list> Llista de galeries </gallery_list>
+   <uploader> Crea una nova galeria </uploader>
+   <back> Enrere </back>
+  </nav>
+
+  <install>
+ 
+   <title> Configuració de MIGallery </title>
+   <header> Configuració de MIGallery </header>
+
+   <img_direction>
+    <label> Galeria, imatge i direcció de la diapositiva </label>
+    <left> D'esquerra a dreta </left>
+    <right> De dreta a esquerra </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informació de la base de dades MySQL </title>
+    <host>
+     <label> Amfitrió de la base de dades </label>
+     <placeholder> Amfitrió de base de dades </placeholder>
+     <validate> Introduïu Nom de l'amfitrió de la base </validate>
+    </host>
+    <user>
+     <label> Nom d'usuari de la base de dades </label>
+     <placeholder> Nom d'usuari de la base de dades </placeholder>
+     <validate> Introduïu Nom d'usuari de la base </validate>
+    </user>
+    <pass>
+     <label> Contrasenya de la base de dades </label>
+     <placeholder> Contrasenya de base de dades </placeholder>
+     <validate> Introduïu Contrasenya de base de dades </validate>
+    </pass>
+    <db>
+     <label> Nom de la base de dades </label>
+     <placeholder> Nom de la base de dades </placeholder>
+     <validate> Introduïu Nom de la base </validate>
+    </db>
+    <gal_table>
+     <label> Nom de la taula de galeria </label>
+     <placeholder> Nom de la taula de galeria </placeholder>
+     <validate> Introduïu Nom de la taula de la galeria </validate>
+    </gal_table>
+    <img_table>
+     <label> Nom de la taula d'imatges </label>
+     <placeholder> Nom de la taula d'imatges </placeholder>
+     <validate> Introduïu Nom de la taula d'imatges </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Directoris per a continguts dinàmics escriptibles</title>
+    <db_alert>
+     <![CDATA[
+    El camí següent és on es crearan els fitxers <b> configuració </b>, <b> registre d'errors </b> i <b> definicions </b>. Si voleu canviar el nom d'aquest directori, canvieu la definició de <b>DB_DIR</b> al fitxer <b>definition0.php</b> i actualitzeu aquesta pàgina.<br/><br/>Si voleu canviar el nom dels fitxers de configuració, registre d'errors i definicions, canvieu les definicions de <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> i <b>DEFINITIONS_FILE</b> al fitxer definition0.php.<br/><br/>Si el vostre sistema es basa en unix, configureu els permisos d'escriptura de la manera següent:<br/><b>%s</b><br/><br/>Abans d’iniciar la instal·lació, assegureu-vos que existeixi el següent camí i tingui permisos d’escriptura:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Abans de començar la instal·lació, assegureu-vos que existeixen els directoris següents i que teniu permís per escriure als directoris.<br/><br/>Si utilitzeu directoris diferents dels següents, si no hi ha directoris al disc, primer creeu-los i configureu els permisos d'escriptura i inicieu la instal·lació.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Fitxer de configuració, fitxer de registre d'errors i ruta del fitxer de definició</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Els següents directoris es creen quan es desa la nova galeria. <b>%d</b> indica l'identificador de la galeria. Aquests directoris es creen al directori <b> Directori d'imatges base </b> definit anteriorment. Comproveu si el format dels directoris és adequat.
+     ]]>
+    </img_dir_alert>
+    <config_alert>El fitxer de configuració ja s'ha creat. Per tant, no podeu executar la configuració. Primer heu de suprimir el fitxer de configuració i després executar la configuració.</config_alert>
+    <tmp_dir>
+     <label>Directori temporal de la imatge</label>
+     <placeholder>Directori temporal de la imatge</placeholder>
+     <validate>Directori temporal de la imatge</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Directori temporal de miniatures</label>
+     <placeholder>Directori temporal de miniatures</placeholder>
+     <validate>Directori temporal de miniatures</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Directori temporal de miniatures retallades</label>
+     <placeholder>Directori temporal de miniatures retallades</placeholder>
+     <validate>Directori temporal de miniatures retallades</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Directori temporal d'imatges de diapositives</label>
+     <placeholder>Directori temporal d'imatges de diapositives</placeholder>
+     <validate>Directori temporal d'imatges de diapositives</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Directori d'imatges base</label>
+     <placeholder>Directori d'imatges base</placeholder>
+     <validate>Directori d'imatges base</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Directori d’imatges</label>
+     <placeholder>Directori d’imatges</placeholder>
+     <validate>Directori d’imatges</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Directori de miniatures</label>
+     <placeholder>Directori de miniatures</placeholder>
+     <validate>Directori de miniatures</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Directori de miniatures retallades</label>
+     <placeholder>Directori de miniatures retallades</placeholder>
+     <validate>Directori de miniatures retallades</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Directori d'imatges de diapositives</label>
+     <placeholder>Directori d'imatges de diapositives</placeholder>
+     <validate>Directori d'imatges de diapositives</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Directori de fitxers XML</label>
+     <placeholder>Directori de fitxers XML</placeholder>
+     <validate>Directori de fitxers XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instal·lant. Espereu ... </installing>
+    <success> La instal·lació s'ha completat correctament. </success>
+    <error> No s'ha pogut completar la instal·lació. </error>
+   </alert>
+  
+   <submit> Inicieu la instal·lació </submit>
+   <submit_continue> Continua &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gestió de galeries </title>
+   <header> Gestió de galeries </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Llista de galeries </title>
+   <header> Llista de galeries </header>
+   <sort>
+    <asc> ordena del primer a l'últim </asc>
+    <desc> ordena de l'últim al primer </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Visualitza </button>
+     <title> Mostra la galeria </title>
+    </view>
+    <delete>
+     <button> Suprimeix </button>
+     <title> Suprimeix la galeria </title>
+    </delete>
+    <edit>
+     <button> Edita </button>
+     <title> Edita galeria </title>
+    </edit>
+    <images>imatges</images>
+    <date>Data</date>
+    <move> Podeu ordenar les galeries arrossegant-les amb el ratolí. </move>
+    <move_mobile>Mantén premut un element amb el dit i espera que se seleccioni. Després de seleccionar l'element, podeu ordenar-los arrossegant-los amb el dit.</move_mobile>
+   </card>
+   <alert> No s'ha trobat cap galeria. </alert>
+   <modal>
+    <del_gallery>
+     <label> Suprimeix la galeria </label>
+     <close> tanca </close>
+     <text> Voleu suprimir aquesta galeria del lloc? </text>
+     <command> Suprimeix </command>
+     <cancel> Cancel·la </cancel>
+    </del_gallery>
+    <result>
+     <label> Error </label>
+     <close> tanca </close>
+     <text> </text>
+     <command> Tanca </command>
+    </result>
+   </modal>
+   <save_changes> Desa l'ordenació de la galeria </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Visualització de la galeria </title>
+   <header> Visualització de la galeria </header>
+   <alert> No s'ha trobat cap imatge. </alert>
+   <share>Comparteix la galeria</share>
+   <filedate>Data de pujada</filedate>
+   <filesize>Mida de l'arxiu</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copiar al portapapers</label>
+     <close>tanca</close>
+     <text>Enllaç copiat al porta-retalls</text>
+     <command>Copia</command>
+     <cancel>Tanca</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Crea una nova galeria </title>
+    <header> Crea una nova galeria </header>
+   </new>
+   <edit>
+    <title> Edita galeria </title>
+    <header> Edita galeria </header>
+   </edit>
+   <gallery_info>
+    <title> Informació de la galeria </title>
+    <name>
+     <label> Nom de la galeria </label>
+     <placeholder> Nom de la galeria </placeholder>
+     <validate> Introduïu el nom de la galeria </validate>
+    </name>
+    <description>
+     <label> Descripció de la galeria </label>
+     <placeholder> Descripció de la galeria </placeholder>
+     <validate> Introduïu Descripció de la galeria </validate>
+    </description>
+    <keywords>
+     <label> Paraules clau de la galeria separades per comes o línies noves </label>
+     <placeholder> Paraules clau de la galeria separades per comes o línies noves </placeholder>
+     <validate> Introduïu les paraules clau de la galeria </validate>
+    </keywords>
+    <submit>
+     <save> Desa la galeria </save>
+     <update> Galeria d'actualitzacions </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Guia de càrrega </title>
+     <body>
+      <![CDATA[
+Seleccioneu imatges del dispositiu amb el botó <b> Cerca d'imatges </b> i pengeu-les al lloc amb el botó <b> Penja imatges </b>. <br/> Formats d'imatge compatibles: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Resolució mínima permesa: <b>%d x %d px</b> <br/> Resolució màxima permesa: <b>%d x %d px</b> <br/> Mida màxima d'un fitxer únic: <b>%d MB</b> <br/> Recompte d'imatges per galeria: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Selecciona-ho tot </select_all>
+    <select_del> Suprimeix els seleccionats </select_del>
+    <thumb>
+     <exist>
+      <delete> Suprimeix la imatge carregada del lloc </delete>
+      <info> Informació de la imatge </info>
+     </exist>
+     <new>
+      <delete> Suprimeix la imatge carregada del lloc </delete>
+      <cancel> Cancel·la la càrrega d'imatges </cancel>
+      <info> Informació de la imatge </info>
+      <rotate> Gira la imatge </rotate>
+      <crop> Retalla la imatge </crop>
+     </new>
+     <move> Podeu ordenar les imatges arrossegant-les amb el ratolí. </move>
+     <move_mobile>Mantén premut un element amb el dit i espera que se seleccioni. Després de seleccionar l'element, podeu ordenar-los arrossegant-los amb el dit.</move_mobile>
+    </thumb>
+    <browse> Cerca d'imatges </browse>
+    <upload> Penja imatges </upload>
+    <uploading> S'estan penjant imatges al lloc. No tanqueu la pàgina fins que no s'hagi completat la càrrega. </uploading>
+    <uploaded> S'han penjat imatges al lloc. </uploaded>
+    <error>S'han produït alguns errors en penjar fitxers al servidor.</error>
+    <save_changes> Desa els canvis d'imatge </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Retalla </crop>
+     <cancel> Cancel·la </cancel>
+    </crop>
+    <del_up_img>
+     <label> Suprimeix la imatge </label>
+     <close> tanca </close>
+     <text> Voleu suprimir aquesta imatge del lloc? </text>
+     <command> Suprimeix </command>
+     <cancel> Cancel·la </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Suprimeix la imatge </label>
+     <close> tanca </close>
+     <text> Voleu suprimir aquesta imatge del lloc? </text>
+     <command> Suprimeix </command>
+     <cancel> Cancel·la </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Suprimeix les imatges seleccionades </label>
+     <close> tanca </close>
+     <text> Voleu eliminar les imatges seleccionades del lloc? </text>
+     <command> Suprimeix </command>
+     <cancel> Cancel·la </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informació de la imatge </label>
+     <close> tanca </close>
+     <filename> Nom del fitxer </filename>
+     <filesize> Mida del fitxer </filesize>
+     <date> Data de pujada </date>
+     <title>
+      <label> Títol </label>
+      <placeholder> Títol de la imatge </placeholder>
+     </title>
+     <desc>
+      <label> Descripció </label>
+      <placeholder> Descripció de la imatge </placeholder>
+     </desc>
+     <keyw>
+      <label> Paraules clau </label>
+      <placeholder> Paraules clau separades per comes o línies noves </placeholder>
+     </keyw>
+     <command> Desa / Actualitza </command>
+     <cancel> Cancel·la </cancel>
+    </img_info>
+    <result>
+     <label> Error </label>
+     <close> tanca </close>
+     <text> </text>
+     <command> Tanca </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Configuració d'imatges carregables </title>
+    <upload_limit>
+     <label> Recompte màxim d'imatges per galeria </label>
+     <placeholder> Recompte màxim d'imatges per galeria </placeholder>
+     <validate> Nombre màxim d'imatges d'entrada per galeria </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Mida màxima d'un fitxer únic (MB) </label>
+     <placeholder> Mida màxima d'un fitxer únic (MB) </placeholder>
+     <validate> Mida màxima d'entrada d'un fitxer únic (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Resolució mínima permesa </label>
+     <width>
+      <placeholder> Amplada mínima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </width>
+     <height>
+      <placeholder> Alçada mínima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Resolució màxima permesa </label>
+     <width>
+      <placeholder> Amplada màxima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </width>
+     <height>
+      <placeholder> Alçada màxima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformació de la imatge </title>
+    <full_resolution>
+     <label> Imatge a mida completa </label>
+     <width>
+      <placeholder> Amplada màxima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </width>
+     <height>
+      <placeholder> Alçada màxima </placeholder>
+      <validate> Valor d'entrada </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Mida de la miniatura </label>
+     <width>
+      <placeholder> Amplada del polze </placeholder>
+      <validate> Valor d'entrada </validate>
+     </width>
+     <height>
+      <placeholder> Alçada del polze </placeholder>
+      <validate> Valor d'entrada </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Mida de la diapositiva </label>
+     <width>
+      <placeholder> Amplada de la diapositiva </placeholder>
+      <validate> Valor d'entrada </validate>
+     </width>
+     <height>
+      <placeholder> Alçada de la diapositiva </placeholder>
+      <validate> Valor d'entrada </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Qualitat Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Comprimir PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Filigrana </title>
+    <label> Utilitzeu la filigrana </label>
+    <position> Posició de la filigrana </position>
+    <image> Imatge de filigrana </image>
+    <set> Establir filigrana </set>
+    <browse> 1- Navega pel fitxer d'imatge de filigrana </browse>
+    <adjust> 2- Ajusteu la imatge segons el marc. </adjust>
+    <upload> 3- Penja el fitxer seleccionat </upload>
+    <uploading> S'està penjant ... </uploading>
+    <uploaded> Pujat. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Pàgina </page>
+   <first> Primera pàgina </first>
+   <prev> Pàgina anterior </prev>
+   <next> Pàgina següent </next>
+   <last> Darrera pàgina </last>
+  </pagination>
+
+</lang>

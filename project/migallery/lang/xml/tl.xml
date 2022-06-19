@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Wika </title>
+   <label> Piliin ang Wika </label>
+  </lang>
+
+  <timezone>
+   <title> Timezone </title>
+   <label> Piliin ang Timezone </label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Pamamahala sa Gallery </gallery_man>
+   <gallery_list> Listahan ng Gallery </gallery_list>
+   <uploader> Lumikha ng Bagong Gallery </uploader>
+   <back> Bumalik </back>
+  </nav>
+
+  <install>
+ 
+   <title> Pag-setup ng MIGallery </title>
+   <header> Pag-setup ng MIGallery </header>
+
+   <img_direction>
+    <label> Gallery, imahe at orientation ng slide </label>
+    <left> Kaliwa hanggang Kanan </left>
+    <right> Kanan sa Kaliwa </right>
+   </img_direction>
+
+   <db_info>
+    <title> Impormasyon ng MySQL Database </title>
+    <host>
+     <label> Hostname ng Database </label>
+     <placeholder> Hostname ng Database </placeholder>
+     <validate> Ipasok ang Hostname ng Database </validate>
+    </host>
+    <user>
+     <label> Pangalan ng Gumagamit ng Database </label>
+     <placeholder> Pangalan ng Gumagamit ng Database </placeholder>
+     <validate> Ipasok ang Pangalan ng Gumagamit ng Database </validate>
+    </user>
+    <pass>
+     <label> Database Password </label>
+     <placeholder> Database Password </placeholder>
+     <validate> Ipasok ang Database Password </validate>
+    </pass>
+    <db>
+     <label> Pangalan ng Database </label>
+     <placeholder> Pangalan ng Database </placeholder>
+     <validate> Ipasok ang Pangalan ng Database </validate>
+    </db>
+    <gal_table>
+     <label> Pangalan ng Talaan ng Gallery </label>
+     <placeholder> Pangalan ng Talaan ng Gallery </placeholder>
+     <validate> Ipasok ang Pangalan ng Talaan ng Gallery </validate>
+    </gal_table>
+    <img_table>
+     <label> Pangalan ng Talahanayan ng Larawan </label>
+     <placeholder> Pangalan ng Talahanayan ng Larawan </placeholder>
+     <validate> Ipasok ang Pangalan ng Talahanayan ng Larawan </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Mga folder kung saan pinapayagan na maisulat ang mga file</title>
+    <db_alert>
+     <![CDATA[
+    Ang <b> pagsasaayos </b>, <b> log ng error </b> at mga kahulugan ng </b> mga file ay malilikha sa sumusunod na direktoryo. Kung nais mong baguhin ang pangalan ng direktoryo na ito, baguhin ang kahulugan ng <b> DB_DIR </b> sa <b> definitions0.php </b> file at i-refresh ang pahinang ito.<br/><br/>Kung nais mong palitan ang pangalan ng file ng pagsasaayos, ang file ng error log, at ang file ng mga kahulugan, pagkatapos ay baguhin ang mga kahulugan ng <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> at <b>DEFINITIONS_FILE</b> sa definitions0.php file.<br/><br/>Kung ang iyong system ay batay sa unix, itakda ang mga pahintulot sa pagsulat sa folder na may sumusunod na utos:<br/><b>%s</b><br/><br/>Bago simulan ang pag-install, tiyaking mayroon ang sumusunod na landas at mayroon kang mga pahintulot na sumulat sa direktoryo:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Bago simulan ang pag-install, tiyaking magagamit ang mga sumusunod na direktoryo at mayroon kang pahintulot na sumulat sa mga direktoryo. <br/> <br/> Kung gagamit ka ng mga direktoryo maliban sa mga sumusunod na direktoryo, kung ang mga direktoryo ay hindi umiiral sa disk, unang lumikha ng mga direktoryo at itakda ang mga pahintulot sa pagsulat ng mga direktoryo na ito at simulan ang pag-install.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>File ng Pag-configure, Error Log File, at Mga Path ng File ng kahulugan</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Ang mga sumusunod na direktoryo ay malilikha kapag nai-save ang bagong gallery. Tinutukoy ng <b>%d</b> ang gallery ID. Ang mga direktoryo na ito ay malilikha sa <b> Pangunahing folder ng mga larawan </b> na tinukoy sa itaas. Tiyaking maayos na nai-format ang mga direktoryong ito.
+     ]]>
+    </img_dir_alert>
+    <config_alert>Ang file ng pagsasaayos ay nilikha dati. Samakatuwid, hindi mo maaaring patakbuhin ang pag-install. Dapat mo munang tanggalin ang file ng pagsasaayos at pagkatapos ay patakbuhin ang pag-install.</config_alert>
+    <tmp_dir>
+     <label>Pansamantalang Direktoryo ng Larawan</label>
+     <placeholder>Pansamantalang Direktoryo ng Larawan</placeholder>
+     <validate>Pansamantalang Direktoryo ng Larawan</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Pansamantalang Direktoryo ng Thumbnail</label>
+     <placeholder>Pansamantalang Direktoryo ng Thumbnail</placeholder>
+     <validate>Pansamantalang Direktoryo ng Thumbnail</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Pansamantalang Direktoryo ng Na-crop na Mga Thumbnail</label>
+     <placeholder>Pansamantalang Direktoryo ng Na-crop na Mga Thumbnail</placeholder>
+     <validate>Pansamantalang Direktoryo ng Na-crop na Mga Thumbnail</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Pansamantalang Direktoryo ng Mga Slide Imahe</label>
+     <placeholder>Pansamantalang Direktoryo ng Mga Slide Imahe</placeholder>
+     <validate>Pansamantalang Direktoryo ng Mga Slide Imahe</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Pangunahing folder ng mga Imahe</label>
+     <placeholder>Pangunahing folder ng mga Imahe</placeholder>
+     <validate>Pangunahing folder ng mga Imahe</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Direktoryo ng Imahe</label>
+     <placeholder>Direktoryo ng Imahe</placeholder>
+     <validate>Direktoryo ng Imahe</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Direktoryo ng Thumbnail</label>
+     <placeholder>Direktoryo ng Thumbnail</placeholder>
+     <validate>Direktoryo ng Thumbnail</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Direktoryo ng Na-crop na Mga Thumbnail</label>
+     <placeholder>Direktoryo ng Na-crop na Mga Thumbnail</placeholder>
+     <validate>Direktoryo ng Na-crop na Mga Thumbnail</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Direktoryo ng Mga Slide Imahe</label>
+     <placeholder>Direktoryo ng Mga Slide Imahe</placeholder>
+     <validate>Direktoryo ng Mga Slide Imahe</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Direktoryo ng XML Files</label>
+     <placeholder>Direktoryo ng XML Files</placeholder>
+     <validate>Direktoryo ng XML Files</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Pag-install. Mangyaring maghintay ... </installing>
+    <success> Matagumpay na nakumpleto ang pag-install. </success>
+    <error> Hindi makumpleto ang pag-install. </error>
+   </alert>
+  
+   <submit> Simulan ang Pag-install </submit>
+   <submit_continue> Magpatuloy &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Pamamahala sa Gallery </title>
+   <header> Pamamahala ng Gallery </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Listahan ng Gallery </title>
+   <header> Listahan ng Gallery </header>
+   <sort>
+    <asc> mula sa umpisa hanggang sa dulo </asc>
+    <desc> mula huli hanggang una </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Tingnan </button>
+     <title> Tingnan ang Gallery </title>
+    </view>
+    <delete>
+     <button> Tanggalin </button>
+     <title> Tanggalin ang Gallery </title>
+    </delete>
+    <edit>
+     <button> I-edit </button>
+     <title> I-edit ang Gallery </title>
+    </edit>
+    <images> mga imahe </images>
+    <date> Petsa </date>
+    <move> Maaari mong pag-uri-uriin ang mga gallery sa pamamagitan ng pag-drag sa kanila gamit ang mouse. </move>
+    <move_mobile> I-tap at hawakan ang isang item gamit ang iyong daliri at hintaying ma-highlight ito. Pagkatapos pumili ng isang item, i-drag ang iyong daliri upang pag-uri-uriin ang mga item. </move_mobile>
+   </card>
+   <alert> Walang natagpuang mga gallery. </alert>
+   <modal>
+    <del_gallery>
+     <label> Tanggalin ang Gallery </label>
+     <close> isara </close>
+     <text> Nais mo bang tanggalin ang gallery na ito mula sa site? </text>
+     <command> Tanggalin </command>
+     <cancel> Kanselahin </cancel>
+    </del_gallery>
+    <result>
+     <label> Kamalian </label>
+     <close> isara </close>
+     <text> </text>
+     <command> Isara </command>
+    </result>
+   </modal>
+   <save_changes> I-save ang mga pag-uuri ng mga gallery </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> View ng Gallery </title>
+   <header> View ng Gallery </header>
+   <alert> Walang nahanap na mga imahe. </alert>
+   <share> Ibahagi ang Gallery </share>
+   <filedate> Petsa ng Pag-upload </filedate>
+   <filesize> Laki ng File </filesize>
+   <modal>
+    <copy_clipboard>
+     <label> Kopyahin Sa Clipboard </label>
+     <close> isara </close>
+     <text> Nakopya ang link sa clipboard </text>
+     <command> Kopyahin </command>
+     <cancel> Isara </cancel>
+    </copy_clipboard>
+   </modal>
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Lumikha ng Bagong Gallery </title>
+    <header> Lumikha ng Bagong Gallery </header>
+   </new>
+   <edit>
+    <title> I-edit ang Gallery </title>
+    <header> I-edit ang Gallery </header>
+   </edit>
+   <gallery_info>
+    <title> Impormasyon sa Gallery </title>
+    <name>
+     <label> Pangalan ng Gallery </label>
+     <placeholder> Pangalan ng Gallery </placeholder>
+     <validate> Ipasok ang Pangalan ng Gallery </validate>
+    </name>
+    <description>
+     <label> Paglalarawan ng Gallery </label>
+     <placeholder> Paglalarawan ng Gallery </placeholder>
+     <validate> Ipasok ang Paglalarawan ng Gallery </validate>
+    </description>
+    <keywords>
+     <label> Ang mga keyword sa gallery ay pinaghiwalay ng mga kuwit o line break &#x23CE; </label>
+     <placeholder> Ang mga keyword sa gallery ay pinaghihiwalay ng mga kuwit o line break &#x23CE; </placeholder>
+     <validate> Ipasok ang Mga Keyword sa Gallery </validate>
+    </keywords>
+    <submit>
+     <save> I-save ang Gallery </save>
+     <update> Update Gallery </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Gabay sa Nag-upload ng Larawan </title>
+     <body>
+      <![CDATA[
+Pumili ng mga larawan mula sa iyong aparato gamit ang pindutang <b> Mag-browse ng Mga Larawan </b> at i-upload sa site gamit ang pindutang <b> Mag-upload ng Mga Larawan </b>. <br/> Mga Sinusuportahang Format ng Larawan: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Pinapayagan na Minimum na Resolusyon: <b>%d x %d px</b> <br/> Pinapayagan na Maximum Resolution: <b>%d x %d px</b> <br/> Single Laki ng Maximum na Laki: <b>%d MB</b> <br/> Bilang ng Larawan bawat Gallery: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Piliin ang Lahat </select_all>
+    <select_del> Tanggalin ang Napiling Mga Larawan </select_del>
+    <thumb>
+     <exist>
+      <delete> Tanggalin ang Na-upload na Larawan Mula sa Site </delete>
+      <info> Impormasyon ng Imahe </info>
+     </exist>
+     <new>
+      <delete> Tanggalin ang Na-upload na Larawan Mula sa Site </delete>
+      <cancel> Kanselahin ang I-upload ang Larawan </cancel>
+      <info> Impormasyon ng Imahe </info>
+      <rotate> Paikutin ang Imahe </rotate>
+      <crop> I-crop ang Imahe </crop>
+     </new>
+     <move> Maaari mong pag-uri-uriin ang mga imahe sa pamamagitan ng pag-drag sa kanila gamit ang mouse. </move>
+     <move_mobile> I-tap at hawakan ang isang item gamit ang iyong daliri at hintaying ma-highlight ito. Pagkatapos pumili ng isang item, i-drag ang iyong daliri upang pag-uri-uriin ang mga item. </move_mobile>
+    </thumb>
+    <browse> Mag-browse ng Mga Larawan </browse>
+    <upload> Mag-upload ng Mga Larawan </upload>
+    <uploading> Ina-upload ang mga imahe sa site. Huwag isara ang pahina hanggang sa makumpleto ang pag-upload. </uploading>
+    <uploaded> Na-upload ang mga imahe sa site. </uploaded>
+    <error> May ilang mga error na naganap habang ina-upload ang mga file sa server. </error>
+    <save_changes> I-save ang Mga Pagbabago ng Imahe </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> I-crop </crop>
+     <cancel> Kanselahin </cancel>
+    </crop>
+    <del_up_img>
+     <label> Tanggalin ang Imahe </label>
+     <close> isara </close>
+     <text> Nais mo bang burahin ang imaheng ito mula sa website? </text>
+     <command> Tanggalin </command>
+     <cancel> Kanselahin </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Tanggalin ang Imahe </label>
+     <close> isara </close>
+     <text> Nais mo bang burahin ang imaheng ito mula sa website? </text>
+     <command> Tanggalin </command>
+     <cancel> Kanselahin </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Tanggalin ang Napiling Mga Larawan </label>
+     <close> isara </close>
+     <text> Nais mo bang burahin ang mga napiling larawan mula sa website? </text>
+     <command> Tanggalin </command>
+     <cancel> Kanselahin </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Impormasyon sa Imahe </label>
+     <close> isara </close>
+     <filename> Pangalan ng File </filename>
+     <filesize> Laki ng File </filesize>
+     <date> Petsa ng Pag-upload </date>
+     <title>
+      <label> Pamagat </label>
+      <placeholder> Pamagat ng Larawan </placeholder>
+     </title>
+     <desc>
+      <label> Paglalarawan </label>
+      <placeholder> Paglalarawan ng Imahe </placeholder>
+     </desc>
+     <keyw>
+      <label> Mga Keyword </label>
+      <placeholder> Mga keyword na pinaghihiwalay ng mga kuwit o line break &#x23CE; </placeholder>
+     </keyw>
+     <command> I-save / I-update ang </command>
+     <cancel> Kanselahin </cancel>
+    </img_info>
+    <result>
+     <label> Kamalian </label>
+     <close> isara </close>
+     <text> </text>
+     <command> Isara </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Mga setting ng imahe para sa pinahihintulutang pag-upload </title>
+    <upload_limit>
+     <label> Max na bilang ng imahe bawat gallery </label>
+     <placeholder> Max na bilang ng imahe bawat gallery </placeholder>
+     <validate> Mag-input ng bilang ng imahe ng Max sa bawat gallery </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Maximum na laki ng isang file (MB) </label>
+     <placeholder> Maximum na laki ng isang file (MB) </placeholder>
+     <validate> I-input ang maximum na laki ng isang file (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Pinapayagan na Min Resolution </label>
+     <width>
+      <placeholder> Min Lapad </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </width>
+     <height>
+      <placeholder> Min Taas </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Pinapayagan ang Max Resolution </label>
+     <width>
+      <placeholder> Max Lapad </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </width>
+     <height>
+      <placeholder> Max Taas </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Pagbabago ng Imahe </title>
+    <full_resolution>
+     <label> Buong Laki ng Larawan </label>
+     <width>
+      <placeholder> Max Lapad </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </width>
+     <height>
+      <placeholder> Max Taas </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Laki ng Thumbnail </label>
+     <width>
+      <placeholder> Lapad ng Thumb </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </width>
+     <height>
+      <placeholder> Taas ng Thumb </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Laki ng Slide </label>
+     <width>
+      <placeholder> Lapad ng Slide </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </width>
+     <height>
+      <placeholder> Taas ng Slide </placeholder>
+      <validate> Maglagay ng isang halaga </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Kalidad ng Jpeg </label>
+     </jpg_quality>
+     <png_compress>
+      <label> Pag-compress ng PNG </label>
+     </png_compress>
+    </transform>
+
+    <watermark>
+     <title> Watermark </title>
+     <label> Gumamit ng Watermark </label>
+     <position> Posisyon ng Watermark </position>
+     <image> Imahe ng Watermark </image>
+     <set> Itakda ang Watermark </set>
+     <browse> 1- Mag-browse ng File ng Larawan ng Watermark </browse>
+     <adjust> 2- Ayusin ang imahe ayon sa frame. </adjust>
+     <upload> 3- I-upload ang Napiling File </upload>
+     <uploading> Pag-upload ... </uploading>
+     <uploaded> Na-upload. </uploaded>
+    </watermark>
+
+   </image>
+  
+   <pagination>
+    <page> Pahina </page>
+    <first> Unang Pahina </first>
+    <prev> Nakaraang Pahina </prev>
+    <next> Susunod na Pahina </next>
+    <last> Huling Pahina </last>
+   </pagination>
+
+</lang>

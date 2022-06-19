@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Idioma </title>
+   <label> Selecione o idioma </label>
+  </lang>
+
+  <timezone>
+   <title>Fuso horário</title>
+   <label>Selecione o fuso horário</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Gerenciamento de galeria </gallery_man>
+   <gallery_list> Lista da galeria </gallery_list>
+   <uploader> Criar nova galeria </uploader>
+   <back> Voltar </back>
+  </nav>
+
+  <install>
+ 
+   <title> Configuração MIGallery </title>
+   <header> Configuração MIGallery </header>
+
+   <img_direction>
+    <label> Galeria, imagem e orientação de slides </label>
+    <left> Da esquerda para a direita </left>
+    <right> Da direita para a esquerda </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informações do banco de dados MySQL </title>
+    <host>
+     <label> Nome do host do banco de dados </label>
+     <placeholder> Nome do host do banco de dados </placeholder>
+     <validate> Insira o nome do host do banco de dados </validate>
+    </host>
+    <user>
+     <label> Nome do usuário do banco de dados </label>
+     <placeholder> Database UserName </placeholder>
+     <validate> Nome do usuário do banco de dados de entrada </validate>
+    </user>
+    <pass>
+     <label> Senha do banco de dados </label>
+     <placeholder> Senha do banco de dados </placeholder>
+     <validate> Senha do banco de dados de entrada </validate>
+    </pass>
+    <db>
+     <label> Nome do banco de dados </label>
+     <placeholder> Nome do banco de dados </placeholder>
+     <validate> Nome do banco de dados de entrada </validate>
+    </db>
+    <gal_table>
+     <label> Nome da tabela da galeria </label>
+     <placeholder> Nome da tabela da galeria </placeholder>
+     <validate> Digite o nome da tabela da galeria </validate>
+    </gal_table>
+    <img_table>
+     <label> Nome da tabela de imagem </label>
+     <placeholder> Nome da tabela de imagem </placeholder>
+     <validate> Digite o nome da tabela de imagens </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Diretórios para conteúdos dinâmicos graváveis</title>
+    <db_alert>
+     <![CDATA[
+    O seguinte diretório é onde os arquivos de <b> configuração </b>, <b> log de erros </b> e <b> definições </b> serão criados. Se você quiser mudar o nome deste diretório, mude a definição <b>DB_DIR</b> no arquivo <b> definitions0.php </b> e atualize esta página.<br/><br/>Se você deseja renomear o arquivo de configuração, o arquivo de log de erros e o arquivo de definições, altere as definições de <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> e <b>DEFINITIONS_FILE</b> no arquivo definitions0.php.<br/><br/>Se o seu sistema for baseado em unix, defina as permissões de gravação para a pasta com o seguinte comando:<br/><b>%s</b><br/><br/>Antes de iniciar a instalação, verifique se o seguinte caminho existe e se você tem permissão para gravar no diretório:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Antes de iniciar a instalação, certifique-se de que os diretórios a seguir estejam disponíveis e de que você tenha permissão para gravar neles. <br/> <br/> Se você for usar diretórios diferentes dos seguintes, se os diretórios não existirem no disco, primeiro crie os diretórios e defina as permissões de gravação desses diretórios e inicie a instalação.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Caminho dos arquivos de configuração, log de erros e definições</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    Os seguintes diretórios são criados quando a nova galeria é salva. <b>%d</b> indica o id da galeria. Esses diretórios são criados no diretório <b> Diretório base da imagem </b> definido acima. Certifique-se de que o formato desses diretórios seja apropriado.
+     ]]>
+    </img_dir_alert>
+    <config_alert>O arquivo de configuração já foi criado. Portanto, você não pode executar a instalação. Você deve primeiro excluir o arquivo de configuração e, em seguida, executar a instalação.</config_alert>
+    <tmp_dir>
+     <label>Diretório Temporário de Imagem</label>
+     <placeholder>Diretório Temporário de Imagem</placeholder>
+     <validate>Diretório Temporário de Imagem</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Diretório Temporário de Miniatura</label>
+     <placeholder>Diretório Temporário de Miniatura</placeholder>
+     <validate>Diretório Temporário de Miniatura</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Diretório temporário para miniatura cortada</label>
+     <placeholder>Diretório temporário para miniatura cortada</placeholder>
+     <validate>Diretório temporário para miniatura cortada</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Diretório temporário de imagem de slide</label>
+     <placeholder>Diretório temporário de imagem de slide</placeholder>
+     <validate>Diretório temporário de imagem de slide</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Diretório base da imagem</label>
+     <placeholder>Diretório base da imagem</placeholder>
+     <validate>Diretório base da imagem</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Diretório de Imagens</label>
+     <placeholder>Diretório de Imagens</placeholder>
+     <validate>Diretório de Imagens</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Diretório de Miniatura</label>
+     <placeholder>Diretório de Miniatura</placeholder>
+     <validate>Diretório de Miniatura</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Diretório para miniatura cortada</label>
+     <placeholder>Diretório para miniatura cortada</placeholder>
+     <validate>Diretório para miniatura cortada</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Diretório de imagem de slide</label>
+     <placeholder>Diretório de imagem de slide</placeholder>
+     <validate>Diretório de imagem de slide</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>Diretório de arquivos XML</label>
+     <placeholder>Diretório de arquivos XML</placeholder>
+     <validate>Diretório de arquivos XML</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instalando. Aguarde ... </installing>
+    <success> Instalação concluída com sucesso. </success>
+    <error> A instalação não pôde ser concluída. </error>
+   </alert>
+  
+   <submit> Iniciar instalação </submit>
+   <submit_continue> Continue &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Gerenciamento de galeria </title>
+   <header> Gerenciamento de galeria </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Lista da galeria </title>
+   <header> Lista da galeria </header>
+   <sort>
+    <asc> do primeiro ao último </asc>
+    <desc> do último ao primeiro </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Exibir </button>
+     <title> Exibir galeria </title>
+    </view>
+    <delete>
+     <button> Excluir </button>
+     <title> Excluir galeria </title>
+    </delete>
+    <edit>
+     <button> Editar </button>
+     <title> Editar galeria </title>
+    </edit>
+    <images>imagens</images>
+    <date>Data</date>
+    <move> Você pode classificar as galerias arrastando-as com o mouse. </move>
+    <move_mobile>Toque e segure um item com o dedo e espere que ele seja destacado. Depois de selecionar um item, arraste o dedo para classificar os itens.</move_mobile>
+   </card>
+   <alert> Nenhuma galeria encontrada. </alert>
+   <modal>
+    <del_gallery>
+     <label> Excluir galeria </label>
+     <close> fechar </close>
+     <text> Deseja excluir esta galeria do site? </text>
+     <command> Excluir </command>
+     <cancel> Cancelar </cancel>
+    </del_gallery>
+    <result>
+     <label> Erro </label>
+     <close> fechar </close>
+     <text> </text>
+     <command> Fechar </command>
+    </result>
+   </modal>
+   <save_changes> Salvar a ordem de classificação das galerias </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Visualização da galeria </title>
+   <header> Visualização da galeria </header>
+   <alert> Nenhuma imagem encontrada. </alert>
+   <share>Galeria de compartilhamento</share>
+   <filedate>Data de upload</filedate>
+   <filesize>Tamanho do arquivo</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Copiar para área de transferência</label>
+     <close>fechar</close>
+     <text>Link copiado para a área de transferência</text>
+     <command>Cópia</command>
+     <cancel>Fechar</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Criar nova galeria </title>
+    <header> Criar nova galeria </header>
+   </new>
+   <edit>
+    <title> Editar galeria </title>
+    <header> Editar galeria </header>
+   </edit>
+   <gallery_info>
+    <title> Informações da galeria </title>
+    <name>
+     <label> Nome da galeria </label>
+     <placeholder> Nome da galeria </placeholder>
+     <validate> Nome da galeria de entrada </validate>
+    </name>
+    <description>
+     <label> Descrição da galeria </label>
+     <placeholder> Descrição da galeria </placeholder>
+     <validate> Descrição da galeria de entrada </validate>
+    </description>
+    <keywords>
+     <label> Palavras-chave da galeria separadas por vírgulas ou quebras de linha </label>
+     <placeholder> Palavras-chave da galeria separadas por vírgulas ou quebras de linha </placeholder>
+     <validate> Digite as palavras-chave da galeria </validate>
+    </keywords>
+    <submit>
+     <save> Salvar galeria </save>
+     <update> Galeria de atualização </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Guia de upload de imagens </title>
+     <body>
+      <![CDATA[
+Selecione imagens de seu dispositivo com o botão <b> Navegar nas imagens </b> e faça upload para o site com o botão <b> Enviar imagens </b>. <br/> Formatos de imagem compatíveis: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Resolução mínima permitida: <b>%d x %d px</b> <br/> Resolução máxima permitida: <b>%d x %d px</b> <br/> Tamanho máximo de arquivo único: <b>%d MB</b> <br/> Contagem de imagens por galeria: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Selecionar tudo </select_all>
+    <select_del> Excluir imagens selecionadas </select_del>
+    <thumb>
+     <exist>
+      <delete> Excluir imagem carregada do site </delete>
+      <info> Informações da imagem </info>
+     </exist>
+     <new>
+      <delete> Excluir imagem carregada do site </delete>
+      <cancel> Cancelar upload de imagem </cancel>
+      <info> Informações da imagem </info>
+      <rotate> Girar imagem </rotate>
+      <crop> Cortar imagem </crop>
+     </new>
+     <move> Você pode classificar as imagens arrastando-as com o mouse. </move>
+     <move_mobile>Toque e segure um item com o dedo e espere que ele seja destacado. Depois de selecionar um item, arraste o dedo para classificar os itens.</move_mobile>
+    </thumb>
+    <browse> Navegar nas imagens </browse>
+    <upload> Enviar imagens </upload>
+    <uploading> Imagens estão sendo enviadasadicionado ao site. Não feche a página até que o upload seja concluído. </uploading>
+    <uploaded> As imagens foram enviadas para o site. </uploaded>
+    <error>Alguns erros ocorreram durante o upload de arquivos para o servidor.</error>
+    <save_changes> Salvar alterações de imagem </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Cortar </crop>
+     <cancel> Cancelar </cancel>
+    </crop>
+    <del_up_img>
+     <label> Excluir imagem </label>
+     <close> fechar </close>
+     <text> Deseja excluir esta imagem do site? </text>
+     <command> Excluir </command>
+     <cancel> Cancelar </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Excluir imagem </label>
+     <close> fechar </close>
+     <text> Deseja excluir esta imagem do site? </text>
+     <command> Excluir </command>
+     <cancel> Cancelar </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Excluir imagens selecionadas </label>
+     <close> fechar </close>
+     <text> Deseja excluir as imagens selecionadas do site? </text>
+     <command> Excluir </command>
+     <cancel> Cancelar </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Informações da imagem </label>
+     <close> fechar </close>
+     <filename> Nome do arquivo </filename>
+     <filesize> Tamanho do arquivo </filesize>
+     <date> Data de upload </date>
+     <title>
+      <label> Título </label>
+      <placeholder> Título da imagem </placeholder>
+     </title>
+     <desc>
+      <label> Descrição </label>
+      <placeholder> Descrição da imagem </placeholder>
+     </desc>
+     <keyw>
+      <label> Palavras-chave </label>
+      <placeholder> Palavras-chave separadas por vírgulas ou quebras de linha </placeholder>
+     </keyw>
+     <command> Salvar / Atualizar </command>
+     <cancel> Cancelar </cancel>
+    </img_info>
+    <result>
+     <label> Erro </label>
+     <close> fechar </close>
+     <text> </text>
+     <command> Fechar </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Configurações de imagem carregável </title>
+    <upload_limit>
+     <label> Contagem máxima de imagens por galeria </label>
+     <placeholder> Contagem máxima de imagens por galeria </placeholder>
+     <validate> Insira a contagem máxima de imagens por galeria </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Tamanho máximo de arquivo único (MB) </label>
+     <placeholder> Tamanho máximo de arquivo único (MB) </placeholder>
+     <validate> Insira o tamanho máximo de um arquivo (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Resolução mínima permitida </label>
+     <width>
+      <placeholder> Largura mínima </placeholder>
+      <validate> insira o valor </validate>
+     </width>
+     <height>
+      <placeholder> Altura mínima </placeholder>
+      <validate> insira o valor </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Resolução máxima permitida </label>
+     <width>
+      <placeholder> Largura máxima </placeholder>
+      <validate> insira o valor </validate>
+     </width>
+     <height>
+      <placeholder> Altura máxima </placeholder>
+      <validate> insira o valor </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Transformação da imagem </title>
+    <full_resolution>
+     <label> Imagem em tamanho real </label>
+     <width>
+      <placeholder> Largura máxima </placeholder>
+      <validate> insira o valor </validate>
+     </width>
+     <height>
+      <placeholder> Altura máxima </placeholder>
+      <validate> insira o valor </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Tamanho da miniatura </label>
+     <width>
+      <placeholder> Largura do polegar </placeholder>
+      <validate> insira o valor </validate>
+     </width>
+     <height>
+      <placeholder> Altura do polegar </placeholder>
+      <validate> insira o valor </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Tamanho do slide </label>
+     <width>
+      <placeholder> Largura do slide </placeholder>
+      <validate> insira o valor </validate>
+     </width>
+     <height>
+      <placeholder> Altura do slide </placeholder>
+      <validate> insira o valor </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Qualidade Jpeg </label>
+    </jpg_quality>
+    <png_compress>
+     <label> Compactação PNG </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Imagem de marca d'água </title>
+    <label> Usar marca d'água </label>
+    <position> Posição da marca d'água </position>
+    <image> Imagem de marca d'água </image>
+    <set> Definir marca d'água </set>
+    <browse> 1- Navegar no arquivo de imagem de marca d'água </browse>
+    <adjust> 2- Ajuste a imagem de acordo com o quadro. </adjust>
+    <upload> 3- Carregar o arquivo selecionado </upload>
+    <uploading> Enviando ... </uploading>
+    <uploaded> Carregado. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Página </page>
+   <first> Primeira página </first>
+   <prev> Página anterior </prev>
+   <next> Próxima página </next>
+   <last> Última página </last>
+  </pagination>
+
+</lang>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<lang>
+
+  <lang>
+   <title> Lingvo </title>
+   <label> Elektu lingvon </label>
+  </lang>
+
+  <timezone>
+   <title>Horzono</title>
+   <label>Elektu Horzonon</label>
+  </timezone>
+
+  <nav>
+   <gallery_man> Galeria Administrado </gallery_man>
+   <gallery_list> Galeria Listo </gallery_list>
+   <uploader> Krei Novan Galerion </uploader>
+   <back> Reen </back>
+  </nav>
+
+  <install>
+ 
+   <title> MIGallery-Agordo </title>
+   <header> MIGallery-Agordo </header>
+
+   <img_direction>
+    <label> Galerio, bildo kaj glitada direkto </label>
+    <left> Maldekstre Dekstren </left>
+    <right> Dekstre maldekstren </right>
+   </img_direction>
+
+   <db_info>
+    <title> Informoj pri MySQL-Datumbazo </title>
+    <host>
+     <label> DB-Gastiganto </label>
+     <placeholder> DB-Gastiganto </placeholder>
+     <validate> Enigu DB-Gastiganta nomo </validate>
+    </host>
+    <user>
+     <label> DB-Uzanto-Nomo </label>
+     <placeholder> Nomo de uzanto de DB </placeholder>
+     <validate> Enigu Datumbazan Uzantnomon </validate>
+    </user>
+    <pass>
+     <label> DB-Pasvorto </label>
+     <placeholder> DB-Pasvorto </placeholder>
+     <validate> Enigu DB-Pasvorto </validate>
+    </pass>
+    <db>
+     <label> Datumbaza Nomo </label>
+     <placeholder> Datumbaza Nomo </placeholder>
+     <validate> Enigu Datumbaza Nomo </validate>
+    </db>
+    <gal_table>
+     <label> Nomo de Galeria Tabelo </label>
+     <placeholder> Nomo de Galeria Tabelo </placeholder>
+     <validate> Enigu Galerian Tabelan nomon </validate>
+    </gal_table>
+    <img_table>
+     <label> Bilda Tabela Nomo </label>
+     <placeholder> Bilda Tabela Nomo </placeholder>
+     <validate> Enigu Bildan Tabelan Nomon </validate>
+    </img_table>
+   </db_info>
+   
+   <directories>
+    <title>Dosierujoj por skribeblaj dinamikaj enhavoj</title>
+    <db_alert>
+     <![CDATA[
+    La sekva dosierujo estas kie vi kreos la <b>agordajn</b>, <b>erarajn protokolojn</b> kaj <b>difinajn</b> dosierojn. Se vi volas alinomi ĉi tiun dosierujon, ŝanĝu la difinon <b>DB_DIR</b> en la dosiero <b>definitions0.php</b> kaj refreŝigu ĉi tiun paĝon. <br/> <br/> Se vi volas ŝanĝi la agordodosieron, erarregistran dosieron kaj difinajn dosiernomojn, ŝanĝu la difinojn de <b>CONFIG_FILE</b>, <b>ERROR_LOG_FILE</b> kaj <b>DEFINITIONS_FILE</b> en la definitions0.php-dosiero. <br/> <br/> Se via sistemo estas uniks-bazita, agordu la skribajn permesojn per la jena komando: <br/> <b>%s</b> <br/> <br/> Antaŭ ol komenci la instaladon, certigu, ke la sekva vojo ekzistas kaj vi havas permesojn skribi al ĉi tiu dosierujo:
+     ]]>
+    </db_alert>
+    <dir_perm_alert>
+     <![CDATA[
+    Antaŭ ol komenci la instaladon, certigu, ke la jenaj dosierujoj disponeblas kaj ke vi havas permeson skribi al la dosierujoj. <br/> <br/> Se vi uzas malsamajn dosierujojn de la sekvaj dosierujoj, se la dosierujoj ne ekzistas sur la disko, unue kreu la dosierujojn kaj starigu la skribajn permesojn kaj komencu la instaladon.
+     ]]>
+    </dir_perm_alert>
+    <db_dir>
+     <label>Agorda, Erara Registro kaj Difinoj-Dosiera Vojo</label>
+    </db_dir>
+    <img_dir_alert>
+     <![CDATA[
+    La jenaj adresaroj estas kreitaj kiam la nova galerio estas konservita. <b>%d</b> indikas la galerian identigilon. Ĉi tiuj adresaroj estas kreitaj sur la supre difinita <b> Baza dosierujo de bildo </b>. Kontrolu ĉu la formato de la dosierujoj taŭgas.
+     ]]>
+    </img_dir_alert>
+    <config_alert>La agorda dosiero estis kreita antaŭe. Tial vi ne povas lanĉi la aranĝon. Vi devas unue forigi la agordan dosieron kaj poste lanĉi la instalinstrukciojn.</config_alert>
+    <tmp_dir>
+     <label>Provizora dosierujo de bildo</label>
+     <placeholder>Provizora dosierujo de bildo</placeholder>
+     <validate>Provizora dosierujo de bildo</validate>
+    </tmp_dir>
+    <tmp_thumb_dir>
+     <label>Provizora Dosierujo de Bildeto</label>
+     <placeholder>Provizora Dosierujo de Bildeto</placeholder>
+     <validate>Provizora Dosierujo de Bildeto</validate>
+    </tmp_thumb_dir>
+    <tmp_thumb_c_dir>
+     <label>Tranĉita Bildeto Bildo Provizora Vojo</label>
+     <placeholder>Tranĉita Bildeto Bildo Provizora Vojo</placeholder>
+     <validate>Tranĉita Bildeto Bildo Provizora Vojo</validate>
+    </tmp_thumb_c_dir>
+    <tmp_slide_dir>
+     <label>Provizora Slide-foto-Dosierujo</label>
+     <placeholder>Provizora Slide-foto-Dosierujo</placeholder>
+     <validate>Provizora Slide-foto-Dosierujo</validate>
+    </tmp_slide_dir>
+    <img_base_dir>
+     <label>Baza dosierujo de bildo</label>
+     <placeholder>Baza dosierujo de bildo</placeholder>
+     <validate>Baza dosierujo de bildo</validate>
+    </img_base_dir>
+    <img_dir>
+     <label>Bilda Dosierujo</label>
+     <placeholder>Bilda Dosierujo</placeholder>
+     <validate>Bilda Dosierujo</validate>
+    </img_dir>
+    <img_thumb_dir>
+     <label>Adresaro de Bildeto</label>
+     <placeholder>Adresaro de Bildeto</placeholder>
+     <validate>Adresaro de Bildeto</validate>
+    </img_thumb_dir>
+    <img_thumb_c_dir>
+     <label>Tranĉita Bildeto Bildo Vojo</label>
+     <placeholder>Tranĉita Bildeto Bildo Vojo</placeholder>
+     <validate>Tranĉita Bildeto Bildo Vojo</validate>
+    </img_thumb_c_dir>
+    <img_slide_dir>
+     <label>Glitiga Bilda Dosierujo</label>
+     <placeholder>Glitiga Bilda Dosierujo</placeholder>
+     <validate>Glitiga Bilda Dosierujo</validate>
+    </img_slide_dir>
+    <xml_dir>
+     <label>XML-dosierujo</label>
+     <placeholder>XML-dosierujo</placeholder>
+     <validate>XML-dosierujo</validate>
+    </xml_dir>
+   </directories>
+
+   <alert>
+    <installing> Instalado. Bonvolu atendi ... </installing>
+    <success> Instalado sukcese finiĝis. </success>
+    <error> Instalado ne povis esti kompletigita. </error>
+   </alert>
+  
+   <submit> Komenci Instaladon </submit>
+   <submit_continue> Daŭrigu &gt;&gt; </submit_continue>
+
+  </install>
+
+  <gallery_man>
+   <title> Galeria Administrado </title>
+   <header> Galeria Administrado </header>
+  </gallery_man>
+  
+  <gallery_list>
+   <title> Galeria Listo </title>
+   <header> Galeria Listo </header>
+   <sort>
+    <asc> ordigi de la unua ĝis la lasta </asc>
+    <desc> ordigi de lasta al unua </desc>
+   </sort>
+   <card>
+    <view>
+     <button> Vidigi </button>
+     <title> Vidi Galerion </title>
+    </view>
+    <delete>
+     <button> Forigi </button>
+     <title> Forigi Galerion </title>
+    </delete>
+    <edit>
+     <button> Redakti </button>
+     <title> Redakti Galerion </title>
+    </edit>
+    <images>bildoj</images>
+    <date>Dato</date>
+    <move> Vi povas ordigi la galeriojn trenante ilin per la muso. </move>
+    <move_mobile>Frapu kaj tenu eron per via fingro kaj atendu, ke ĝi estu elektita. Post kiam la ero estas elektita, vi povas ordigi la erojn trenante per via fingro.</move_mobile>
+   </card>
+   <alert> Neniu galerio trovita. </alert>
+   <modal>
+    <del_gallery>
+     <label> Forigi Galerion </label>
+     <close> fermi </close>
+     <text> Ĉu vi volas forigi ĉi tiun galerion de la retejo? </text>
+     <command> Forigi </command>
+     <cancel> Nuligi </cancel>
+    </del_gallery>
+    <result>
+     <label> Eraro </label>
+     <close> fermi </close>
+     <text> </text>
+     <command> Fermi </command>
+    </result>
+   </modal>
+   <save_changes> Konservi Galerian Ordigon </save_changes>
+  </gallery_list>
+
+  <gallery_view>
+   <title> Galeria Vido </title>
+   <header> Galeria Vido </header>
+   <alert> Neniu bildo trovita. </alert>
+   <share>Kunhavigi Galerion</share>
+   <filedate>Alŝuta dato</filedate>
+   <filesize>Dosiera Grandeco</filesize>
+   <modal>
+    <copy_clipboard>
+     <label>Kopii al tondujo</label>
+     <close>fermi</close>
+     <text>Ligo kopiita al tondujo</text>
+     <command>Kopiu</command>
+     <cancel>Fermi</cancel>
+    </copy_clipboard>
+   </modal> 
+  </gallery_view>
+    
+  <uploader>
+   <new>
+    <title> Krei Novan Galerion </title>
+    <header> Krei Novan Galerion </header>
+   </new>
+   <edit>
+    <title> Redakti Galerion </title>
+    <header> Redakti Galerion </header>
+   </edit>
+   <gallery_info>
+    <title> Informoj pri Galerio </title>
+    <name>
+     <label> Galeria nomo </label>
+     <placeholder> Galeria nomo </placeholder>
+     <validate> Enigu Galerio-Nomo </validate>
+    </name>
+    <description>
+     <label> Galeria Priskribo </label>
+     <placeholder> Galeria Priskribo </placeholder>
+     <validate> Enigu Galerio Priskribo </validate>
+    </description>
+    <keywords>
+     <label> Ŝlosilvortoj de galerio apartigitaj per komoj aŭ liniaj rompoj </label>
+     <placeholder> Ŝlosilvortoj de galerio apartigitaj per komoj aŭ liniaj rompoj </placeholder>
+     <validate> Enigu Galerio-Ŝlosilvortojn </validate>
+    </keywords>
+    <submit>
+     <save> Konservi Galerion </save>
+     <update> Ĝisdatiga Galerio </update>
+    </submit>
+   </gallery_info>
+   <uploader>
+    <info>
+     <title> Alŝutila Gvidilo </title>
+     <body>
+      <![CDATA[
+Elektu bildojn de via aparato per la butono <b> Foliumi bildojn </b> kaj alŝutu al la retejo per la butono <b> Alŝuti Bildojn </b>. <br/> Subtenitaj bildformatoj: <b> JPG, PNG, GIF, BMP, WEBP </b> <br/> Permesebla Minimuma Rezolucio: <b>%d x %d px</b> <br/> Permesebla Maksimuma Rezolucio: <b>%d x %d px</b> <br/> Ununura Dosiero Maksimuma Grandeco: <b>%d MB</b> <br/> Bildkalkulo por Galerio: <b>%d</b>
+      ]]>
+     </body>
+    </info>
+    <select_all> Elektu Ĉion </select_all>
+    <select_del> Forigi Elektitan </select_del>
+    <thumb>
+     <exist>
+      <delete> Forigi Alŝutitan Bildon De Retejo </delete>
+      <info> Bildaj Informoj </info>
+     </exist>
+     <new>
+      <delete> Forigi Alŝutitan Bildon El Retejo </delete>
+      <cancel> Nuligi Bildan Alŝutadon </cancel>
+      <info> Bildaj Informoj </info>
+      <rotate> Rotacii Bildon </rotate>
+      <crop> Tranĉi Bildon </crop>
+     </new>
+     <move> Vi povas ordigi la bildojn trenante ilin per la muso. </move>
+     <move_mobile>Frapu kaj tenu eron per via fingro kaj atendu, ke ĝi estu elektita. Post kiam la ero estas elektita, vi povas ordigi la erojn trenante per via fingro.</move_mobile>
+    </thumb>
+    <browse> Foliumi bildojn </browse>
+    <upload> Alŝuti Bildojn </upload>
+    <uploading> Bildoj estas alŝutitaj al la retejo. Ne fermu la paĝon ĝis la alŝuto finiĝos. </uploading>
+    <uploaded> Bildoj estis alŝutitaj al la retejo. </uploaded>
+    <error>Iuj eraroj okazis dum alŝutado de dosieroj al la servilo.</error>
+    <save_changes> Konservi Bildajn Ŝanĝojn </save_changes>
+   </uploader>
+   <modal>
+    <crop>
+     <crop> Kultivaĵo </crop>
+     <cancel> Nuligi </cancel>
+    </crop>
+    <del_up_img>
+     <label> Forigi Bildon </label>
+     <close> fermi </close>
+     <text> Ĉu vi volas forigi ĉi tiun bildon de la retejo? </text>
+     <command> Forigi </command>
+     <cancel> Nuligi </cancel>
+    </del_up_img>
+    <del_img>
+     <label> Forigi Bildon </label>
+     <close> fermi </close>
+     <text> Ĉu vi volas forigi ĉi tiun bildon de la retejo? </text>
+     <command> Forigi </command>
+     <cancel> Nuligi </cancel>
+    </del_img>
+    <del_img_multi>
+     <label> Forigi Elektitajn Bildojn </label>
+     <close> fermi </close>
+     <text> Ĉu vi volas forigi la elektitajn bildojn de la retejo? </text>
+     <command> Forigi </command>
+     <cancel> Nuligi </cancel>
+    </del_img_multi>
+    <img_info>
+     <label> Bildaj Informoj </label>
+     <close> fermi </close>
+     <filename> Dosiernomo </filename>
+     <filesize> Grandeco de dosiero </filesize>
+     <date> Alŝuta dato </date>
+     <title>
+      <label> Titolo </label>
+      <placeholder> Titolo de Bildo </placeholder>
+     </title>
+     <desc>
+      <label> Priskribo </label>
+      <placeholder> Bilda Priskribo </placeholder>
+     </desc>
+     <keyw>
+      <label> Ŝlosilvortoj </label>
+      <placeholder> Ŝlosilvortoj apartigitaj per komoj aŭ liniaj rompoj </placeholder>
+     </keyw>
+     <command> Konservi / Ĝisdatigi </command>
+     <cancel> Nuligi </cancel>
+    </img_info>
+    <result>
+     <label> Eraro </label>
+     <close> fermi </close>
+     <text> </text>
+     <command> Fermi </command>
+    </result>
+   </modal>
+  </uploader>
+
+  <image>
+
+   <settings>
+    <title> Alŝuteblaj Bildaj Agordoj </title>
+    <upload_limit>
+     <label> Maksimuma bildkalkulo por galerio </label>
+     <placeholder> Maksimuma bildkalkulo por galerio </placeholder>
+     <validate> Enigu Maksimuma bildkalkulo por galerio </validate>
+    </upload_limit>
+    <max_file_size>
+     <label> Ununura Dosiera Maksimuma Grandeco (MB) </label>
+     <placeholder> Ununura Dosiera Maksimuma Grandeco (MB) </placeholder>
+     <validate> Enigu Ununura Dosiera Maksimuma Grandeco (MB) </validate>
+    </max_file_size>
+    <min_resolution>
+     <label> Permesebla Minimuma-Rezolucio </label>
+     <width>
+      <placeholder> Minimuma Larĝo </placeholder>
+      <validate> Enigu valoro </validate>
+     </width>
+     <height>
+      <placeholder> Minimuma Alteco </placeholder>
+      <validate> Enigu valoro </validate>
+     </height>
+    </min_resolution>
+    <max_resolution>
+     <label> Permesebla Maksimuma Rezolucio </label>
+     <width>
+      <placeholder> Maksimuma larĝo </placeholder>
+      <validate> Enigu valoro </validate>
+     </width>
+     <height>
+      <placeholder> Maksimuma alto </placeholder>
+      <validate> Enigu valoro </validate>
+     </height>
+    </max_resolution>
+   </settings>
+
+   <transform>
+    <title> Bilda Transformo </title>
+    <full_resolution>
+     <label> Bildo Plena Grandeco </label>
+     <width>
+      <placeholder> Maksimuma larĝo </placeholder>
+      <validate> Enigu valoro </validate>
+     </width>
+     <height>
+      <placeholder> Maksimuma alto </placeholder>
+      <validate> Enigu valoro </validate>
+     </height>
+    </full_resolution>
+    <thumb_resolution>
+     <label> Bildeto Grandeco </label>
+     <width>
+      <placeholder> Dikfingra Larĝo </placeholder>
+      <validate> Enigu valoro </validate>
+     </width>
+     <height>
+      <placeholder> Dikfingra Alteco </placeholder>
+      <validate> Enigu valoro </validate>
+     </height>
+    </thumb_resolution>
+    <slide_resolution>
+     <label> Diapozicia Grandeco </label>
+     <width>
+      <placeholder> Diapozicia larĝo </placeholder>
+      <validate> Enigu valoro </validate>
+     </width>
+     <height>
+      <placeholder> Glita Alteco </placeholder>
+      <validate> Enigu valoro </validate>
+     </height>
+    </slide_resolution>
+    <jpg_quality>
+     <label> Jpeg-Kvalito </label>
+    </jpg_quality>
+    <png_compress>
+     <label> PNG Kunpremi </label>
+    </png_compress>
+   </transform>
+
+   <watermark>
+    <title> Akvomarko </title>
+    <label> Uzi Akvomarkon </label>
+    <position> Akvomarka Pozicio </position>
+    <image> Akvomarka Bildo </image>
+    <set> Agordi Akvomarkon </set>
+    <browse> 1- Foliumi Bildan Dosieron de Akvomarko </browse>
+    <adjust> 2- Ĝustigu la bildon laŭ la kadro. </adjust>
+    <upload> 3- Alŝutu Elektitan Dosieron </upload>
+    <uploading> Alŝutante ... </uploading>
+    <uploaded> Alŝutita. </uploaded>
+   </watermark>
+
+  </image>
+  
+  <pagination>
+   <page> Paĝo </page>
+   <first> Unua Paĝo </first>
+   <prev> Antaŭa Paĝo </prev>
+   <next> Sekva Paĝo </next>
+   <last> Lasta Paĝo </last>
+  </pagination>
+
+</lang>
