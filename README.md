@@ -11,8 +11,7 @@ This script has been developed for multiple image uploads. It can be used not on
 Images can be cropped, rotated before uploading. It can be sorted by dragging with the mouse on computers or by finger dragging on mobile devices, and information can be added for each picture.
 
 
-FileAPI javascript tools are used for client side cropping, rotating and uploading images 
-[https://github.com/mailru/FileAPI](https://github.com/mailru/FileAPI)
+[FileAPI](https://github.com/mailru/FileAPI) javascript tools are used for client side cropping, rotating and uploading images.
 
 
 Uploaded images can be reordered later, new images can be added between them.
