@@ -158,11 +158,3 @@ Type {your_domain}/project/mi-install.php in the address line and install it.
 # Live Demo
 
 [Live Demo](https://emlakbim.online/demo/)
-
-# Donate
-### BTC : 1CASunNSibqCsR5Y6kniSW2t22Rt5Bwtgu
-![alt text](https://github.com/tipirdamaz/migallery/blob/main/donate/btc.png)
-### ETH : 0x3ea58816d52d3a18a447b41a9e65aefb32700551
-![alt text](https://github.com/tipirdamaz/migallery/blob/main/donate/eth.png)
-### USDT : 0x3ea58816d52d3a18a447b41a9e65aefb32700551
-![alt text](https://github.com/tipirdamaz/migallery/blob/main/donate/usdt.png)
